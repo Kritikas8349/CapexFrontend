@@ -1,15 +1,15 @@
-/* 🌍 Main Flex Container */
+🌍 Main Flex Container
 .container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 2px;
   padding: 32px;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-/* 📱 Mobile & Tablet View (Stack layout) */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
