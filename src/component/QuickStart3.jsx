@@ -87,6 +87,8 @@ function QuickStart3() {
         </div>
       </section>
 
+    
+
 
       <div className="payment-container">
         <div className="payment-grid">
