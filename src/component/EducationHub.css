@@ -1,0 +1,49 @@
+/* .education-section{
+  height: 80vh;
+  background: linear-gradient(to top, rgb(62, 62, 174), black);
+} */
+.education-section {
+    background-image: url('/images/EducationHub.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    
+    min-height: 80vh;
+    display: flex;
+    align-items: center;      /* Vertical center */
+    justify-content: flex-start; /* Horizontal left */
+    color: white;
+    
+}
+
+.content-box {
+    background-color: transparent;
+    
+    padding: 2rem;
+}
+.demo1{
+    background-color: aquamarine;
+    color:white;
+}
+
+/* /---------------For Learn Trade-------------------------------/ */
+.s1{
+ background-color: rgb(133, 177, 239);
+}
+.s2{
+background-color: rgb(107, 167, 219);
+}
+.s3{
+background-color: rgb(99, 156, 235);
+}
+
+
+/* /---------FOr TradingVideo------/ */
+.pdiv  {
+    background-color: rgb(221, 225, 229);
+    
+}
+
+/* .education-section {
+    background-color: transparent !important;
+    color: white;
+} */

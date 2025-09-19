@@ -1,0 +1,173 @@
+.right-container {
+    flex: 1;
+    max-width: 600px;
+    transform: translateX(-20px);
+    padding: 40px;
+    background: linear-gradient(to bottom right, #1e1eec, #000000);
+    color: #fff;
+    border-radius: 16px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 780px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .welcome-content {
+    text-align: left;
+    margin-bottom: 24px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  
+  
+  .welcome-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  
+  
+  .logo-account-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+  }
+  
+ 
+  .logo-image {
+    max-height: 32px;
+  }
+  
+  .account-heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  
+  .rank-info {
+    font-size: 14px;
+    color: #d1d1ff;
+  }
+   
+  .image-section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px 0 0 12px;
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    .right-container {
+      padding: 50px;
+    }
+  
+    .welcome-content h1 {
+      font-size: 32px;
+    }
+  
+    .account-heading {
+      font-size: 32px;
+    }
+  }
+  
+  
+  @media (max-width: 1199px) {
+    .right-container {
+      padding: 35px;
+    }
+  
+    .welcome-content h1 {
+      font-size: 26px;
+    }
+  
+    .account-heading {
+      font-size: 26px;
+    }
+  }
+  
+  
+  @media (max-width: 991px) {
+    .right-container {
+      width: 100%;
+      order: 1;
+      padding: 30px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .welcome-content h1 {
+      font-size: 24px;
+    }
+  
+    .account-heading {
+      font-size: 24px;
+    }
+  
+    .rank-info {
+      font-size: 13px;
+    }
+  
+    .image-section {
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    .image-section img {
+      border-radius: 12px;
+    }
+  
+    .logo-account-row {
+      justify-content: center;
+    }
+  }
+  
+  
+  @media (max-width: 767px) {
+    .right-container {
+      padding: 25px 20px;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      margin-left: 30px;
+    }
+  
+    .welcome-content h1 {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  
+    .account-heading {
+      font-size: 22px;
+    }
+  
+    .logo-account-row {
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    .rank-info {
+      font-size: 13px;
+    }
+  
+    .logo-image {
+      max-height: 28px;
+    }
+  }

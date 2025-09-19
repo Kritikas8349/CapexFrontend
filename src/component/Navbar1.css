@@ -1,0 +1,318 @@
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #2f2ef3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    z-index: 1100;
+    font-size: 13px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  
+  .top-left {
+    flex: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+  }
+  
+  .top-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    min-width: 80px;
+  }
+  
+  .top-search {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 220px;
+    max-width: 100%;
+    height: 34px;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+  
+  .top-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 10px;
+    transform: translateX(-8px);
+  }
+  
+  .top-link {
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+  
+  .language-select.blue {
+    border-radius: 10px;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  
+  .refer-link {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 6px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  .refer-link:hover {
+    color: #2f2ef3;
+    text-decoration: underline;
+  }
+  
+  .login-btn,
+  .join-btn2 {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .login-btn:hover,
+  .join-btn2:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .login-btn {
+    background: #444;
+    color: #fff;
+  }
+  
+  .join-btn2 {
+    background: #00c853;
+    color: #fff;
+  }
+  
+  /* ================== NAVBAR ================== */
+  .navbar {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-wrap: wrap;
+    padding: 0 12px;
+    box-sizing: border-box;
+  }
+  
+  .navbar-logo {
+    height: 34px;
+    margin-left: 5px;
+    max-width: 140px;
+    object-fit: contain;
+  }
+  
+  .navbar-center .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-center .nav-links li {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 14px; /* ✅ gap badhaya */
+    flex-wrap: wrap;
+  }
+  
+  .language-select {
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+  }
+  
+  /* ================== HAMBURGER ================== */
+  .hamburger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    z-index: 1200;
+  }
+  
+  /* ================== FULLSCREEN HAMBURGER OVERLAY ================== */
+  .hamburger-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 2000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .hamburger-overlay.open {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .close-btn {
+    align-self: flex-end;
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .overlay-links {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .overlay-links li {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .overlay-links .login-btn {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .overlay-links .join-btn2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  /* ✅ Extra Bottom Row */
+  .overlay-bottom-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .overlay-bottom-row span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999d9c;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .overlay-bottom-row span:hover {
+    color: #2f2ef3;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* ================== HERO ================== */
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  /* ================== MEDIA QUERIES ================== */
+  @media (max-width: 768px) {
+    .navbar-center,
+    .navbar-right,
+    .top-center,
+    .top-right {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+  }

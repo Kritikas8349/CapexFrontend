@@ -1,0 +1,109 @@
+.right-container {
+  height: 80x;
+  min-height: 750px;
+  max-width: 650px;
+  padding: 32px 24px;
+  background: linear-gradient(to bottom right, #493FFD, #000000);
+  color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+}
+#container{
+    width: 800px;
+}
+
+.welcome-content {
+  margin-bottom: 24px;
+}
+
+.welcome-content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: -20px;
+  
+}
+
+.highlight {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.rank-info {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #d1d1ff;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12.5%;           /* 🔥 Remove any default padding */
+  margin: 0 ;       /* 🔥 Center align if not full width */
+  width: 100%;
+  align-self: end;
+}
+
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;     /* ✅ Adjust based on your layout */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  padding: 0;           
+  margin: 0 ; 
+ 
+
+    ;
+}
+  
+
+
+/* Responsive Design */
+
+/* Mobile (width <= 480px) */
+@media (max-width: 480px) {
+  .right-container {
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .welcome-content h1 {
+    font-size: 20px;
+
+  }
+
+  .rank-info {
+    font-size: 12px;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .right-container {
+    padding: 28px;
+  }
+
+  .welcome-content h1 {
+    font-size: 24px;
+  }
+}
+
+/* Laptop/Desktop (769px and up) */
+@media (min-width: 769px) {
+  .right-container {
+    padding: 32px;
+  }
+
+  .welcome-content h1 {
+    font-size: 28px;
+  }
+}
