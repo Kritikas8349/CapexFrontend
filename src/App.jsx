@@ -1,32 +1,43 @@
 import React from "react";
-import LeftDiv from "./component/leftDiv";
-import RightDiv from "./component/RightDiv";
-import QuickStart from"./component/QuickStart";
-// import "./App.css"; 
-import QuickStart3 from "./component/QuickStart3";
-import QuickStart4 from "./component/QuickStart4";
-import QuickStart5 from "./component/QuickStart5";
-import Navbar from "./component/Navbar1";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
+// import LoginForm from "./component/LoginForm1";
+// import WelcomeSection from "./component/WelcomeSection";
 
-function App() {
+import About2 from "./component/About2";  
+import NewsSection from "./component/NewsSection";
+import Compliance from "./component/Compliance";
+
+const App = () => {
   return (
-    <div className="container">
-     {/* <LeftDiv />
-      <RightDiv />  
-      <QuickStart/>
-      <QuickStart3/> 
-      <QuickStart2/> 
-      <QuickStart4/>
-      */}
+   
+      <div className="app-container">
+        
+        {/* <div className="main-sections">
+          <div className="login-section">
+            <LoginForm />
+          </div>
+          <div className="welcome-section">
+            <WelcomeSection />
+          </div>
+        </div> */}
 
-      {/* <QuickStart5/> */}
+        <div className="About2-section">
+          <About2 />
+        </div>
 
-     <Navbar/>
-    
+        <div className="NewsSection-section">
+          <NewsSection />
+        </div>
 
-    </div>
+        <Compliance/>
+       
+      </div>
+   
+
+
   );
-}
+};
 
 export default App;

@@ -1,66 +1,211 @@
-/* General styles for the compliance section */
+/* ================= Main Compliance Container ================= */
 .compliance-container {
-    position: relative;
-    width: 100%;
-    height: 60vh; 
-    background: url('compliance.avif') no-repeat center center/cover; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+/* ================= Image Container ================= */
+.compliance-image-container {
+  position: relative;
+  width: 98%;        /* slightly wider */
+  max-width: 1500px;
+  margin: 20px auto;
+}
+
+.compliance-image {
+  width: 100%;
+  height: 80vh;      /* default desktop height */
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Heading on Image */
+.compliance-image-container .compliance-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  pointer-events: none;
+  padding: 0 10px;
+}
+
+/* ================= MT Compliance Container ================= */
+.mt-compliance-container {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto 60px auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.mt-compliance-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.mt-compliance-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.mt-compliance-text p {
+  margin-bottom: 16px;
+}
+
+/* ================= Grey Boxes Wrapper ================= */
+.mt-compliance-boxes {
+  display: flex;
+  flex-direction: column; /* stacked vertically */
+  gap: 30px; /* space between boxes */
+  width: 100%;
+  align-items: center; /* center boxes on smaller screens */
+}
+
+/* Each Grey Box */
+.mt-compliance-box {
+  width: 100%;
+  max-width: 1100px; /* default maximum width */
+  background: #ebefee;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.mt-compliance-box:hover {
+  transform: translateY(-5px);
+}
+
+.mt-compliance-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.mt-compliance-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ================= Responsive Media Queries ================= */
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+  .mt-compliance-container {
+    padding: 60px 40px;
+  }
+}
+
+/* Laptops & Normal Screens (1024px - 1199px) */
+@media (max-width: 1199px) and (min-width: 1024px) {
+  .mt-compliance-heading {
+    font-size: 2.5rem;
+  }
+  .mt-compliance-box {
+    max-width: 1000px; /* slightly wider on laptops */
+  }
+  .mt-compliance-box h2 {
+    font-size: 1.4rem;
+  }
+  .mt-compliance-box p {
+    font-size: 0.98rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .compliance-image {
+    height: 60vh; /* reduce image height */
+  }
+
+  .mt-compliance-container {
+    padding: 30px 15px;
+  }
+
+  .mt-compliance-heading {
+    font-size: 2.2rem;
     text-align: center;
-    color: #fff;
   }
-  
-  /* Content inside the container */
-  .compliance-content {
-    max-width: 80%;
+
+  .mt-compliance-box {
+    padding: 25px;
+    max-width: 95%;
+  }
+}
+
+/* Mobile (480px - 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  .compliance-image {
+    height: 45vh;
+  }
+
+  .mt-compliance-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .mt-compliance-text {
+    font-size: 0.95rem;
+  }
+
+  .mt-compliance-box {
     padding: 20px;
+    max-width: 100%; /* full width */
   }
-  
-  /* Heading styles */
-  .compliance-heading {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for better readability */
+
+  .mt-compliance-box h2 {
+    font-size: 1.3rem;
   }
-  
-  /* Media Queries for Responsiveness */
-  
-  /* Desktop and larger screens */
-  @media (min-width: 1024px) {
-    .compliance-heading {
-      font-size: 4rem;
-    }
+
+  .mt-compliance-box p {
+    font-size: 0.95rem;
   }
-  
-  /* Laptop screens */
-  @media (max-width: 1024px) {
-    .compliance-heading {
-      font-size: 3.5rem; /* Adjust font size */
-    }
+}
+
+/* Small Mobile (below 480px) */
+@media (max-width: 479px) {
+  .compliance-image {
+    height: 35vh; /* smallest height for tiny screens */
   }
-  
-  /* Tablets */
-  @media (max-width: 768px) {
-    .compliance-container {
-      height: 50vh; /* Reduce height on tablet */
-    }
-  
-    .compliance-heading {
-      font-size: 2.5rem; /* Adjust font size */
-    }
+
+  .mt-compliance-container {
+    padding: 20px 10px;
   }
-  
-  /* Mobile screens */
-  @media (max-width: 480px) {
-    .compliance-container {
-      height: 45vh; /* Reduce height on mobile */
-    }
-  
-    .compliance-heading {
-      font-size: 2rem; /* Adjust font size */
-    }
+
+  .mt-compliance-heading {
+    font-size: 1.6rem;
+    text-align: center;
   }
+
+  .mt-compliance-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .mt-compliance-box {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .mt-compliance-box h2 {
+    font-size: 1.1rem;
+  }
+
+  .mt-compliance-box p {
+    font-size: 0.85rem;
+  }
+}

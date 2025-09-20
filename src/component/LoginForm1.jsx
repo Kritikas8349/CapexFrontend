@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/LoginForm.css";
+import "./LoginForm1.css";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";

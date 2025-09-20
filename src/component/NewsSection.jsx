@@ -4,7 +4,7 @@ import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { FaSearch } from "react-icons/fa";
 
-import "../styles/NewsSection.css";
+import "./NewsSection.css";
 
 const articles = [
   {
