@@ -6,6 +6,7 @@ import "./App.css";
 import QuickStart3 from "./component/QuickStart3";
 import QuickStart4 from "./component/QuickStart4";
 import QuickStart5 from "./component/QuickStart5";
+import QuickStart6 from "./component/QuickStart6";
 // import Navbar from "./component/Navbar";
 
 
@@ -20,7 +21,7 @@ function App() {
       <QuickStart4/>
       */}
 
-      <QuickStart5/>
+      <QuickStart6/>
 
      {/* <Navbar/>
      */}
