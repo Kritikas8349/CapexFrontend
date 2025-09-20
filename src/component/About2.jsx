@@ -3,7 +3,7 @@ import React, { useState } from 'react';
   import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
   import { HiOutlineMenu } from 'react-icons/hi';
   import { FaSearch } from "react-icons/fa";
-  import "../styles/About2.css";
+  import "./About2.css";
 
   const About2 = () => {
     const [language, setLanguage] = useState("en");
@@ -121,19 +121,20 @@ import React, { useState } from 'react';
     
 
 
-        {/* 🏆 Hero Section */}
-        <section
-          className="hero"
-          style={{ backgroundImage: url('awards.jpg') }}
-        >
-          <div className="hero-content">
-            <h1>Awards</h1>
-            <p>
-              Market.trad is a proud recipient of numerous awards and recognition for its exceptional service and commitment to the
-              trading community.
-            </p>
-          </div>
-        </section>
+       {/* 🏆 Hero Section */}
+<section
+  className="hero"
+  style={{ backgroundImage: "url('/awards.jpg')" }}
+>
+  <div className="hero-content">
+    <h1>Awards</h1>
+    <p>
+      Market.trad is a proud recipient of numerous awards and recognition
+      for its exceptional service and commitment to the trading community.
+    </p>
+  </div>
+</section>
+
 
         <div className="container">
     {/* Award 1 */}

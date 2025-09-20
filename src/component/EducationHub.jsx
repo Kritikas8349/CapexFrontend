@@ -14,47 +14,47 @@ function EducationHub() {
   ];
 
   //.......Card data for Trading Platform;
-  const cards = [
+  const platforms = [
     {
       id: 1,
       title: "TradingView",
       desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-      img: "../public/images/logo1.png",
+      icon: "Frame84151.png",
       isNew: true,
     },
     {
       id: 2,
       title: "MetaTrader 4",
       desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-      img: "../public/images/logo2.png",
+      icon: "Frame84152.png",
       isNew: false,
     },
     {
       id: 3,
       title: "MetaTrader 5",
       desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-      img: "../public/images/logo3.png",
+      icon: "Frame84153.png",
       isNew: false,
     },
     {
       id: 4,
       title: "cTrader",
       desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-      img: "../public/images/logo1.png",
+      icon: "Frame84155.png",
       isNew: true,
     },
     {
       id: 5,
       title: "BlackBull CopyTrader",
       desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-      img: "../public/images/logo2.png",
+      icon: "Frame84156.png",
       isNew: true,
     },
     {
       id: 6,
       title: "BlackBull Invest",
       desc: "Access 26,000+ Shares, Options, ETFs, Bonds, and other underlying assets.",
-      img: "../public/images/logo3.png",
+      icon: "Frame84151.png",
       isNew: false,
     },
   ];
@@ -89,21 +89,21 @@ function EducationHub() {
       id: 1,
       title: "FOMC doves now in the driver’s seat?",
       date: "SEPTEMBER 18, 2025",
-      image: "../public/images/banner1.png",
+      image: "dollar.webp",
       link: "#",
     },
     {
       id: 2,
       title: "The push for a 50bps Fed cut and its effect on EUR/USD",
       date: "SEPTEMBER 17, 2025",
-      image: "../public/images/banner1.png",
+      image: "dollar.webp",
       link: "#",
     },
     {
       id: 3,
       title: "Euro shrugs off France’s credit downgrade | FX Research",
       date: "SEPTEMBER 16, 2025",
-      image: "../public/images/banner1.png",
+      image: "dollar.webp",
       link: "#",
     },
   ];
@@ -134,7 +134,7 @@ function EducationHub() {
   ];
     return (
         <>
-       <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/images/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '80vh' }}>
+       <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '80vh' }}>
       <div className="container bg-transparent"> 
         <div className="row bg-transparent">
           <div className="col-12 col-lg-6 bg-transparent">
@@ -149,12 +149,14 @@ function EducationHub() {
         </div>
       </div>
     </div>
+
+    {/* ----------For Learn Trad--------------------- */}
        <div className='bg-light py-5'>
       <div className="container">
         <h1 className='text-primary fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
         <div className='row justify-content-center'>
           {cardsData.map((card, index) => (
-            <div className='col-12 col-md-6 col-lg-3 d-flex ' key={index}>
+            <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
               <div className='bg-white p-4 m-2 w-100 shadow-sm'>
                 <h2 className='mb-3 fw-bold text-dark'>{card.title}</h2>
                 <p className='text-secondary mb-4'>{card.desc}</p>
@@ -170,21 +172,46 @@ function EducationHub() {
       </div>
     </div>
 
-    {/-------For TradingPlatform1--------------/}
-    <div className='bg-white  m-3 p-4'>
-        <div className=' d-flex h1 fw-bold  bg-white text-primary justify-content-center'><p>Trading Platform</p></div>
-        <div className='d-flex flex-wrap bg-white'>
-            {
-                cards.map((card)=>(
-                    <div className=" border-primary border-3  card bg-transparent p-4">
-                        <div className="d-flex bg-transparent"><span className="logo"><img src={card.img} alt="" /></span><span className="h2 ms-3 fw-bold">{card.title}</span></div>
-                        <div className="h5 bg-transparent"><p>{card.desc}</p></div>
-                        <div className='bg-transparent'><button className='btn btn-info text-white'>Learn More</button></div>
-                    </div>
-                ))
-            }
+   
+{/* -------For Trading Platform------------------ */}
+      <section className="bg-white py-5">
+  <div className="container">
+    <h2 className="text-center fw-bold mb-5 text-primary">Trading Platforms</h2>
+
+    <div className="row g-4">
+      {platforms.map((platform, index) => (
+        <div className="col-md-6 col-lg-4 " key={index}>
+          <div className="border rounded p-4 position-relative h-100">
+            <div className="d-flex align-items-center bg-white mb-3">
+              <img
+                src={platform.icon}
+                alt={platform.name}
+                className="me-2"
+                style={{ width: "60px", height: "50px", objectFit: "contain" }}
+              />
+              <h5 className="mb-0 fw-bold text-dark">{platform.title}</h5>
+
+              {platform.isNew && (
+                <span
+                  className="badge bg-success position-absolute top-0 end-0 mt-2 me-2"
+                  style={{ fontSize: "0.75rem" }}
+                >
+                  New
+                </span>
+              )}
+            </div>
+
+            <p className="text-dark">{platform.desc}</p>
+
+            <button className="btn btn-primary bg-opacity-10 text-white fw-semibold">
+              Learn More
+            </button>
+          </div>
         </div>
+      ))}
     </div>
+  </div>
+</section>
 
 
     {/* -----------For TradingVideo----------------- */}
@@ -230,7 +257,7 @@ function EducationHub() {
             </div>
           ))}
           <div className="col-12 text-center mt-4">
-            <button className="btn btn-outline-primary text-white px-4 py-2">View More Videos</button>
+            <button className="btn btn-primary text-white px-4 py-2">View More Videos</button>
           </div>
         </div>
       </div>
@@ -272,7 +299,7 @@ function EducationHub() {
 
       {/* View More Button */}
       <div className="text-center mt-4">
-        <button className="btn btn-primary   fs-3 fw-semibold">View More</button>
+        <button className="btn btn-primary   fs-6 fw-semibold">View More</button>
       </div>
     </div>
 
@@ -331,10 +358,10 @@ function EducationHub() {
         {/* Image Column */}
         <div className="col-lg-6 mb-4 mb-lg-0" >
           <img
-            src="../public/images/banner1.png" 
+            src="/spotify.avif" 
             alt="Man in a recording studio"
             className="img-fluid rounded " 
-            height={'800px'}
+            height={'100%'}
           />
         </div>
 
