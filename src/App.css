@@ -1,5 +1,5 @@
 /* 🌍 Main Flex Container */
-.container {
+.container1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -12,7 +12,7 @@
 
 /* 📱 Mobile & Tablet View (Stack layout) */
 @media (max-width: 768px) {
-  .container {
+  .container1 {
     flex-direction: column;
     align-items: center;
     padding: 16px;
