@@ -10,6 +10,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // import QuickStart5 from "./component/QuickStart5";
 import Navbar from "./component/Navbar1";
 import EducationHub from "./component/EducationHub"
+import { Route, Routes } from "react-router-dom";
+import Webinars from "./component/Webinars";
 
 
 function App() {
@@ -26,7 +28,10 @@ function App() {
       {/* <QuickStart5/> */}
 
      <Navbar/>
-     <EducationHub></EducationHub>
+     <Routes>
+        <Route path="/EducationHub" element={<EducationHub></EducationHub>}></Route>
+        <Route path="/Webinars" element={<Webinars></Webinars>}></Route>
+     </Routes>
     
 
     </div>
