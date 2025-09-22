@@ -1,5 +1,6 @@
 import React from "react";
 
+<<<<<<< HEAD
 // import LeftDiv from "./component/leftDiv";
 // import RightDiv from "./component/RightDiv";
 // import QuickStart from"./component/QuickStart";
@@ -24,12 +25,32 @@ import React from "react";
 // // import QuickStart5 from "./component/QuickStart5";
 // import Navbar from "./component/Navbar1";
 // import EducationHub from "./component/EducationHub"
+=======
+import LeftDiv from "./component/leftDiv";
+import RightDiv from "./component/RightDiv";
+import QuickStart from "./component/QuickStart";
+import "./App.css";
+import QuickStart3 from "./component/QuickStart3";
+import QuickStart4 from "./component/QuickStart4";
+import QuickStart5 from "./component/QuickStart5";
+import QuickStart6 from "./component/QuickStart6";
+import QuickStart7 from "./component/QuickStart7";
+import Market from "./component/Market";
+
+// import Navbar from "./component/Navbar";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Navbar from "./component/Navbar1";
+import EducationHub from "./component/EducationHub"
+>>>>>>> 22d5bfd9e7e8b64590bdac893817356b8565be47
 
 
 // import LoginForm from "./component/LoginForm1";
 // import WelcomeSection from "./component/WelcomeSection";
 
-import About2 from "./component/About2";  
+import About2 from "./component/About2";
 import NewsSection from "./component/NewsSection";
 import Compliance from "./component/Compliance";
 import SecurityFunds from "./SecurityFunds";
@@ -42,27 +63,36 @@ import EconomicCalendar from "./component/EconomicCalendar";
 const App = () => {
   return (
 
-   
-      <div className="app-container">
-        
-        {/* <div className="main-sections">
+    <div>
+
+      {/* <div className="app-container">
+
+        <div className="main-sections">
           <div className="login-section">
             <LoginForm />
           </div>
           <div className="welcome-section">
             <WelcomeSection />
           </div>
-        </div> */}
+        </div>
+      </div> */}
 
-    <div className="container1">
-     {/* <LeftDiv />
+
+      <div className="container1">
+        {/* <LeftDiv />
       <RightDiv />  
       <QuickStart/>
       <QuickStart3/> 
       <QuickStart2/> 
       <QuickStart4/>
-      */}
+      <QuickStart5/>
+      <QuickStart6 />
+      <QuickStart7 />
+      <Navbar/>*/}
+      
+      <Market/>
 
+<<<<<<< HEAD
 
 
       {/* <QuickStart6/> */}
@@ -95,7 +125,12 @@ const App = () => {
     //  <EducationHub></EducationHub>
     
 
+=======
+          
+      </div>
+>>>>>>> 22d5bfd9e7e8b64590bdac893817356b8565be47
 
+    </div>
   );
 };
 

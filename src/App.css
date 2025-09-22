@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+=======
+/* 🌍 Main Flex Container */
+.container1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 32px;
+
+  flex-wrap: wrap;
+
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+
+}
+
+>>>>>>> 22d5bfd9e7e8b64590bdac893817356b8565be47
 
 @media (max-width: 768px) {
   .container1 {
