@@ -1,22 +1,18 @@
-<<<<<<< HEAD
-🌍 Main Flex Container
-.container {
-=======
 /* 🌍 Main Flex Container */
 .container1 {
->>>>>>> 7599afab5ae4786c2c4171adcd397eea981f5fc1
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 2px;
   padding: 32px;
-<<<<<<< HEAD
+
   flex-wrap: wrap;
-=======
-  flex-wrap: wrap; 
->>>>>>> 7599afab5ae4786c2c4171adcd397eea981f5fc1
+
+  flex-wrap: wrap;
+
   box-sizing: border-box;
-  
+
 }
 
 

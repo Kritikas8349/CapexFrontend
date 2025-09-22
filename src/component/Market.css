@@ -1,0 +1,90 @@
+.market1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+  padding: 60px 10%;
+  background: linear-gradient(to right, #121212, #0033a0);
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Left text content */
+.market-left {
+  flex: 1;
+  min-width: 280px;
+  max-width: 600px;
+}
+
+.market-left h1 {
+  font-size: 4.5rem;
+  color: #0066ff;
+  margin-bottom: 20px;
+}
+
+.market-left p {
+  font-size: 1.1rem;
+  color: #ded7d7;
+  line-height: 1.6;
+}
+
+/* Right image content */
+.market-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.market-img {
+  width: 100%;
+  max-width: 500px;
+  height:auto;
+  object-fit: contain;
+}
+
+/* ----------------------------- */
+/* 💻 Laptop & Tablet (≤1024px) */
+/* ----------------------------- */
+@media (max-width: 1024px) {
+  .market1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .market-left h1 {
+    font-size: 3rem;
+  }
+
+  .market-left p {
+    font-size: 1rem;
+  }
+
+  .market-img {
+    max-width: 400px;
+  }
+}
+
+/* ---------------------- */
+/* 📱 Phone (≤600px)      */
+/* ---------------------- */
+@media (max-width: 300px) {
+  .market-left h1 {
+    font-size: 2.3rem;
+  }
+
+  .market-left p {
+    font-size: 0.95rem;
+  }
+
+  .market-img {
+    max-width: 300px;
+  }
+
+  .market1 {
+    padding: 30px 5%;
+    gap: 30px;
+  }
+}
