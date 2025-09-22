@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+=======
+/* 🌍 Main Flex Container */
+>>>>>>> 18ce2d8cee9e11485815198587ac442de455ffbf
 .container1 {
 
   display: flex;
@@ -9,12 +15,18 @@
   padding: 32px;
 
   flex-wrap: wrap;
+<<<<<<< HEAD
   flex-wrap: wrap; 
+=======
+
+  flex-wrap: wrap;
+>>>>>>> 18ce2d8cee9e11485815198587ac442de455ffbf
 
   box-sizing: border-box;
-  
+
 }
 
+>>>>>>> 22d5bfd9e7e8b64590bdac893817356b8565be47
 
 @media (max-width: 768px) {
   .container1 {

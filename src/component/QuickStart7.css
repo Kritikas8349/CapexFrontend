@@ -5,14 +5,14 @@ html {
     box-sizing: border-box;
 }
 
-#Main5 {
+#Main7 {
     width: 100%;
     min-height: 300px;
-    padding: 20px;
+
 
 }
 
-.deposit-section {
+.withdraw-section7 {
     display: flex;
     height: 600px;
     align-items: center;
@@ -26,25 +26,27 @@ html {
 }
 
 /* ==== LEFT SIDE ==== */
-.deposit-left {
+.withdraw-left7 {
     flex: 1;
     color: white;
     z-index: 2;
+
 }
 
-.deposit-left h1 {
-    font-size: 3.5rem;
+
+.withdraw-left7 h1 {
+    font-size: 3.3rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
 
-.deposit-left p {
+.withdraw-left7 p {
     font-size: 1.2rem;
     line-height: 1.6;
 }
 
 /* ==== RIGHT SIDE ==== */
-.deposit-right {
+.withdraw-right7 {
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -53,7 +55,7 @@ html {
     z-index: 1;
 }
 
-.deposit-right img {
+.withdraw-right7 img {
 
     padding-right: 200px;
     max-width: 100%;
@@ -66,15 +68,15 @@ html {
 
 /* Tablets */
 @media (max-width: 1024px) {
-    .deposit-left h1 {
+    .withdraw-left7 h1 {
         font-size: 2.8rem;
     }
 
-    .deposit-left p {
+    .withdraw-left7 p {
         font-size: 1rem;
     }
 
-    .deposit-right img {
+    .withdraw-right7 img {
         transform: translateX(50px);
         max-width: 80%;
     }
@@ -82,48 +84,48 @@ html {
 
 /* Mobiles */
 @media (max-width: 768px) {
-    .deposit-section {
+    .withdraw-section7 {
         flex-direction: column;
         text-align: center;
         padding: 60px 20px;
     }
 
-    .deposit-left {
+    .withdraw-left7 {
         margin-bottom: 40px;
     }
 
-    .deposit-left h1 {
+    .withdraw-left7 h1 {
         font-size: 2rem;
     }
 
-    .deposit-left p {
+    .withdraw-left7 p {
         font-size: 0.95rem;
     }
 
-    .deposit-right {
+    .withdrawwithdraw-right7 {
         justify-content: center;
     }
 
-    .deposit-right img {
+    withdraw-right7 img {
         transform: translateX(0);
         max-width: 70%;
     }
 }
 
-.payment-section {
+.payment-section7 {
     padding: 40px 20px;
     max-width: 1300px;
     margin: auto;
 }
 
-.filter-buttons {
+.filter-buttons7 {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
     margin-bottom: 30px;
 }
 
-.filter-buttons button {
+.filter-buttons7 button {
     background-color: white;
     border: 1px solid #007bff;
     color: #007bff;
@@ -134,20 +136,20 @@ html {
     transition: 0.3s ease;
 }
 
-.filter-buttons .active,
-.filter-buttons button:hover {
+.filter-buttons7 .active7,
+.filter-buttons7 button:hover {
     background-color: #007bff;
     color: white;
 }
 
-.payment-grid {
+.payment-grid7 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 /* ==== Card ==== */
-.payment-card {
+.payment-card7 {
     background-color: white;
     padding: 25px;
     width: 95%;
@@ -157,27 +159,27 @@ html {
     transition: transform 0.3s ease;
 }
 
-.payment-card:hover {
+.payment-card7:hover {
     transform: translateY(-5px);
 }
 
-.payment-card img {
+.payment-card7 img {
     height: 40px;
     margin-bottom: 15px;
 }
 
-.payment-card h3 {
+.payment-card7 h3 {
     color: #007bff;
     margin-bottom: 10px;
 }
 
-.payment-card p {
+.payment-card7 p {
     margin: 4px 0;
     color: #444;
     font-size: 0.95rem;
 }
 
-.payment-card .add-funds {
+.payment-card7 .add-funds7 {
     margin-top: 15px;
     padding: 10px 20px;
     background-color: #0066ff;
@@ -189,11 +191,11 @@ html {
     transition: background 0.3s ease;
 }
 
-.payment-card .add-funds:hover {
+.payment-card7 .add-funds7:hover {
     background-color: #004bcc;
 }
 
-.payment-card .note {
+.payment-card7 .note7 {
     font-size: 0.75rem;
     color: gray;
     margin-top: 10px;
@@ -203,68 +205,75 @@ html {
 
 /* Tablet */
 @media (max-width: 1024px) {
-    .payment-grid {
+    .payment-grid7 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    .payment-grid {
-        display: flex;              /* ✅ Grid ki jagah flex use */
-        flex-direction: column;     /* ✅ Cards ek ke niche ek */
-        align-items: center;        /* ✅ Cards center aligned */
+    .payment-grid7 {
+        display: flex;
+        /* ✅ Grid ki jagah flex use */
+        flex-direction: column;
+        /* ✅ Cards ek ke niche ek */
+        align-items: center;
+        /* ✅ Cards center aligned */
     }
 
-    .filter-buttons {
+    .filter-buttons7 {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .filter-buttons button {
+    .filter-buttons7 button {
         width: 100%;
     }
 
-    .payment-card {
-        width: 90%;                 /* ✅ Phone me card ki width thodi chhoti */
-        max-width: 400px;           /* ✅ Extra bada na ho */
+    .payment-card7 {
+        width: 90%;
+        /* ✅ Phone me card ki width thodi chhoti */
+        max-width: 400px;
+        /* ✅ Extra bada na ho */
     }
 }
 
 /* Very Small Mobile (<= 300px) */
 @media (max-width: 300px) {
-    .payment-section {
+    .payment-section7 {
         padding: 20px 10px;
     }
 
-    .payment-grid {
+    .payment-grid7 {
         display: flex;
         flex-direction: column;
-        align-items: center;        /* ✅ Ultra small me bhi center aligned */
+        align-items: center;
+        /* ✅ Ultra small me bhi center aligned */
     }
 
-    .payment-card {
+    .payment-card7 {
         padding: 15px;
-        width: 95%; 
-        max-width: 280px;           /* ✅ Fix chhoti width */
+        width: 95%;
+        max-width: 280px;
+        /* ✅ Fix chhoti width */
     }
 
-    .payment-card h3 {
+    .payment-card7 h3 {
         font-size: 1rem;
     }
 
-    .payment-card p {
+    .payment-card7 p {
         font-size: 0.8rem;
     }
 
-    .payment-card .add-funds {
+    .payment-card7 .add-funds {
         width: 100%;
         padding: 8px 10px;
         font-size: 0.85rem;
     }
 }
 
-.deposit-section6 {
+.withdraw7 {
     background: linear-gradient(to right, #000000, #0033a0);
     /* Blue background */
     color: white;
@@ -272,13 +281,13 @@ html {
     padding: 60px 20px;
 }
 
-.deposit-header6 h1 {
+.withdraw-header7 h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.deposit-header6 p {
+.withdraw-header7 p {
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 40px auto;
@@ -286,7 +295,7 @@ html {
 }
 
 /* Steps container */
-.deposit-steps6 {
+.withdraw-steps7 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -294,8 +303,9 @@ html {
     flex-wrap: wrap;
 }
 
+
 /* Each Step */
-.step-card6 {
+.step-card7 {
     flex: 1;
     min-width: 280px;
     max-width: 350px;
@@ -303,66 +313,70 @@ html {
     text-align: center;
 }
 
-.step-card6 img {
+/* Adjust image styling to match the second image layout */
+.step-card7 img {
     width: 100%;
-    max-width: 280px;
+    max-width: 280px; /* Image width adjustment */
     height: auto;
     margin-bottom: 20px;
+    object-fit: contain;  /* Ensures the image maintains aspect ratio */
 }
 
-.step-card6 h2 {
+/* Apply scaling for specific image if needed */
+
+.step-card7 h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-.step-card6 p {
+.step-card7 p {
     font-size: 1rem;
     line-height: 1.4;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .deposit-header6 h1 {
+    .withdraw-header7 h1 {
         font-size: 2rem;
     }
 
-    .deposit-header6 p {
+    .withdrawt-header7 p {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .deposit-steps6 {
+    .withdraw-steps7 {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
 
-    .step-card6 h2 {
+    .step-card7 h2 {
         font-size: 1.3rem;
     }
 
-    .step-card6 p {
+    .step-card7 p {
         font-size: 0.95rem;
     }
 }
 
 @media (max-width: 480px) {
-    .deposit-header6 h1 {
+    .withdraw-header7 h1 {
         font-size: 1.6rem;
     }
 
-    .deposit-header6 p {
+    .withdraw-header7 p {
         font-size: 0.9rem;
     }
 
-    .step-card6 img {
-        max-width: 220px;
+    .step-card7 img {
+        max-width: 220px;  /* Smaller images on mobile */
     }
 }
 
-.deposit-container6 {
+.withdraw-container7 {
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
@@ -376,26 +390,26 @@ html {
 }
 
 /* Left Side Text */
-.deposit-text6 {
+.withdraw-text7 {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
 }
 
-.deposit-text6 h1 {
+.withdraw-text7 h1 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
-.deposit-text6 p {
+.withdraw-text7 p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 25px;
 }
 
-.deposit-btn6 {
+.withdraw-btn7 {
     background: #00c851;
     /* Green button */
     color: white;
@@ -407,19 +421,19 @@ html {
     transition: 0.3s;
 }
 
-.deposit-btn6:hover {
+.withdraw-btn7:hover {
     background: #009e3f;
 }
 
 /* Right Side Video */
-.deposit-video6 {
+.withdraw-video7 {
     flex: 1;
     min-width: 320px;
     max-width: 600px;
     aspect-ratio: 16/9;
 }
 
-.deposit-video6 iframe {
+.withdraw-video7 iframe {
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -427,47 +441,47 @@ html {
 
 /* Responsiveness */
 @media (max-width: 1024px) {
-    .deposit-text6 h1 {
+    .withdraw-text7 h1 {
         font-size: 2.2rem;
     }
 
-    .deposit-text6 p {
+    .withdraw-text7 p {
         font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .deposit-container6 {
+    .withdraw-container7 {
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
     }
 
-    .deposit-text6 {
+    .withdraw-text7 {
         max-width: 100%;
     }
 
-    .deposit-text6 h1 {
+    .withdraw-text7 h1 {
         font-size: 1.8rem;
     }
 
-    .deposit-btn6 {
+    .withdraw-btn7 {
         width: 100%;
         padding: 14px;
     }
 }
 
 @media (max-width: 480px) {
-    .deposit-text66 h1 {
+    .withdraw-text7 h1 {
         font-size: 1.5rem;
     }
 
-    .deposit-text6 p {
+    .withdraw-text7 p {
         font-size: 0.9rem;
     }
 }
 
-.faq-container6 {
+.faq-container7 {
     max-width: 1500px;
     margin-top: 20px;
     height: 400px;
@@ -479,38 +493,38 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-.faq-title6 {
+.faq-title7 {
     font-size: 3rem;
     font-weight: 800;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.faq-item6 {
+.faq-item7 {
     border-bottom: 1px solid #444;
     padding: 20px 0;
 }
 
-.faq-question6 {
+.faq-question7 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
 
-.faq-question6 h3 {
+.faq-question7 h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0;
 }
 
-.faq-question6 .icon {
+.faq-question7 .icon7 {
     font-size: 1.5rem;
     color: #fff;
     transition: transform 0.5s ease;
 }
 
-.faq-answer6 {
+.faq-answer7 {
     margin-top: 10px;
     font-size: 1rem;
     color: #bbb;
@@ -519,37 +533,37 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .faq-container6 {
+    .faq-container7 {
         padding: 30px 15px;
     }
 
-    .faq-title6 {
+    .faq-title7 {
         font-size: 2rem;
     }
 
-    .faq-question6 h3 {
+    .faq-question7 h3 {
         font-size: 1rem;
     }
 
-    .faq-answer6 {
+    .faq-answer7 {
         font-size: 0.95rem;
     }
 }
 
 @media (max-width: 480px) {
-    .faq-container6 {
+    .faq-container7 {
         padding: 20px 10px;
     }
 
-    .faq-title6 {
+    .faq-title7 {
         font-size: 1.8rem;
     }
 
-    .faq-question6 h3 {
+    .faq-question7 h3 {
         font-size: 0.95rem;
     }
 
-    .faq-answer6 {
+    .faq-answer7 {
         font-size: 0.9rem;
     }
 }
