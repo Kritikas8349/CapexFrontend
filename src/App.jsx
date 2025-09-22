@@ -1,20 +1,5 @@
 import React from "react";
 
-import LeftDiv from "./component/leftDiv";
-import RightDiv from "./component/RightDiv";
-import QuickStart from"./component/QuickStart";
-import "./App.css"; 
-import QuickStart3 from "./component/QuickStart3";
-import QuickStart4 from "./component/QuickStart4";
-import QuickStart5 from "./component/QuickStart5";
-import QuickStart6 from "./component/QuickStart6";
-// import Navbar from "./component/Navbar";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
 // import LeftDiv from "./component/leftDiv";
 // import RightDiv from "./component/RightDiv";
 // import QuickStart from"./component/QuickStart";
@@ -22,8 +7,23 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // import QuickStart3 from "./component/QuickStart3";
 // import QuickStart4 from "./component/QuickStart4";
 // import QuickStart5 from "./component/QuickStart5";
-import Navbar from "./component/Navbar1";
-import EducationHub from "./component/EducationHub"
+// import QuickStart6 from "./component/QuickStart6";
+// // import Navbar from "./component/Navbar";
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import "./App.css";
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap-icons/font/bootstrap-icons.css";
+// // import LeftDiv from "./component/leftDiv";
+// // import RightDiv from "./component/RightDiv";
+// // import QuickStart from"./component/QuickStart";
+// // import "./App.css"; 
+// // import QuickStart3 from "./component/QuickStart3";
+// // import QuickStart4 from "./component/QuickStart4";
+// // import QuickStart5 from "./component/QuickStart5";
+// import Navbar from "./component/Navbar1";
+// import EducationHub from "./component/EducationHub"
 
 
 // import LoginForm from "./component/LoginForm1";
@@ -32,6 +32,12 @@ import EducationHub from "./component/EducationHub"
 import About2 from "./component/About2";  
 import NewsSection from "./component/NewsSection";
 import Compliance from "./component/Compliance";
+import SecurityFunds from "./SecurityFunds";
+import GettingStarted from "./GettingStarted";
+import AccountSupport from "./AccountSupport";
+import PlatformSupport from "./PlatformSupport";
+import MarketSupport from "./MarketSupport";
+import EconomicCalendar from "./component/EconomicCalendar";
 
 const App = () => {
   return (
@@ -59,10 +65,12 @@ const App = () => {
 
 
 
-      <QuickStart6/>
+      {/* <QuickStart6/> */}
 
      {/* <Navbar/>
      */}
+
+</div>
 
         <div className="About2-section">
           <About2 />
@@ -73,14 +81,18 @@ const App = () => {
         </div>
 
         <Compliance/>
-       
-      </div>
+        <SecurityFunds/>
+        <GettingStarted/>
+        <AccountSupport/>
+        <PlatformSupport/>
+        <MarketSupport/>
+        <EconomicCalendar/>
    
+     </div>
 
 
-
-     <Navbar/>
-     <EducationHub></EducationHub>
+    //  <Navbar/>
+    //  <EducationHub></EducationHub>
     
 
 
