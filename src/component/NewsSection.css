@@ -7,7 +7,7 @@
 
 /* Heading */
 .news-heading {
-  font-size: 36px;
+  font-size: 46px;
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
@@ -22,7 +22,7 @@
 
 /* Card */
 .news-card {
-  background-color: #d6d7d7;
+  background-color: #ebefee;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);

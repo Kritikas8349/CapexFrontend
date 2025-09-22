@@ -1,0 +1,225 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Main5 {
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+
+}
+
+.deposit-section {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    background: linear-gradient(to right, #000000, #0033a0);
+    /* black to blue */
+    position: relative;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+/* ==== LEFT SIDE ==== */
+.deposit-left {
+    flex: 1;
+    color: white;
+    z-index: 2;
+}
+
+.deposit-left h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.deposit-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* ==== RIGHT SIDE ==== */
+.deposit-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.deposit-right img {
+
+    padding-right: 200px;
+    max-width: 100%;
+    height: 100%;
+    transform: translateX(100px);
+    /* Phone thoda bahar nikalta hai */
+}
+
+/* ======== RESPONSIVE ========= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .deposit-left h1 {
+        font-size: 2.8rem;
+    }
+
+    .deposit-left p {
+        font-size: 1rem;
+    }
+
+    .deposit-right img {
+        transform: translateX(50px);
+        max-width: 80%;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .deposit-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .deposit-left {
+        margin-bottom: 40px;
+    }
+
+    .deposit-left h1 {
+        font-size: 2rem;
+    }
+
+    .deposit-left p {
+        font-size: 0.95rem;
+    }
+
+    .deposit-right {
+        justify-content: center;
+    }
+
+    .deposit-right img {
+        transform: translateX(0);
+        max-width: 70%;
+    }
+}
+
+.payment-section {
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-buttons button {
+    background-color: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.filter-buttons .active,
+.filter-buttons button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* ==== Card ==== */
+.payment-card {
+    background-color: white;
+    padding: 25px;
+    width:95%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+}
+
+.payment-card img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.payment-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.payment-card p {
+    margin: 4px 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.payment-card .add-funds {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.payment-card .add-funds:hover {
+    background-color: #004bcc;
+}
+
+.payment-card .note {
+    font-size: 0.75rem;
+    color: gray;
+    margin-top: 10px;
+}
+
+/* ========== Responsive ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .payment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-buttons button {
+        width: 100%;
+    }
+}

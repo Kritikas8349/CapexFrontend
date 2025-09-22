@@ -1,15 +1,15 @@
 body,
 html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #Main5 {
-    width: 100%;
-    /* background-color: red; */
-    min-height: 300px;
-    padding: 20px;
+  width: 100%;
+  min-height: 300px;
+  padding: 20px;
+  
 }
 
 /* Reset box sizing */
@@ -19,99 +19,247 @@ html {
   box-sizing: border-box;
 }
 
-/* Container with background image */
-.hero-container {
-  min-height: 100vh; /* Full viewport height */
-  background-image: url('/path/to/your/image.jpg'); /* Change to your image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Container */
+.hero-container5 {
+   position: relative;
+  width: 100%;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  overflow: hidden; /* video bahar na nikle */
+}
+
+/* Background video */
+.bg-video5 {
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 /* Space reserved for navbar */
-.nav-placeholder {
-  height: 70px; /* Adjust according to your navbar height */
-  flex-shrink: 0; /* Don't shrink */
+.nav-placeholder5 {
+  height: 70px;
+  flex-shrink: 0;
 }
 
 /* Content styles */
-.content {
+.content5 {
   color: white;
   padding: 20px;
-  max-width: 600px;
-  margin: auto;
+  max-width: 800px;
+  /* margin: auto; */
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: overlay for better text visibility */
+  /* background-color: rgba(0, 0, 0, 0.4); y */
   border-radius: 8px;
+  z-index: 1;
+  /* position: relative; */
 }
 
-.content h1 {
-  font-size: 2.5rem;
+.content5 h1 {
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-.content p {
+.content5 p {
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
-.content select {
-  width: 100%;
-  padding: 10px;
+.content5 select {
+  width: 40%;
+  /* padding:  px; */
   margin-bottom: 1.5rem;
   border-radius: 5px;
   border: none;
+ /* margin-left: 1.5rem; */
+ margin-right: 1rem;
   font-size: 1rem;
 }
 
-.content button {
-  background-color: #28a745; /* Green */
+.content5 button {
+  background-color: #3563ec;
   color: white;
   padding: 12px 24px;
   border: none;
+  gap: 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
 }
 
 /* Responsive styles */
-
-/* Tablets */
 @media (max-width: 768px) {
-  .content {
+  .content5 {
     max-width: 90%;
     padding: 15px;
   }
 
-  .content h1 {
+  .content5 h1 {
     font-size: 2rem;
   }
 
-  .content p {
+  .content5 p {
     font-size: 1rem;
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
-  .nav-placeholder {
-    height: 60px; /* smaller nav on mobile */
+  .nav-placeholder5 {
+    height: 60px;
   }
 
-  .content h1 {
+  .content5 h1 {
     font-size: 1.5rem;
   }
 
-  .content p {
+  .content5 p {
     font-size: 0.9rem;
   }
 
-  .content button,
+  .content5 button,
   .content select {
     font-size: 0.9rem;
     padding: 10px;
   }
 }
+
+.text{  
+
+  display: flex;
+  width: 100%;
+  padding: 40px;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+
+
+/* Main container */
+.documents-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 50px;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Identity Section */
+.identity-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Left side Aadhaar image + upload */
+.identity-left {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.identity-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section {
+  text-align: center;
+  margin-top: 10px;
+  max-width: 90%;
+}
+
+.upload-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.upload-btn {
+  background: #3120e7;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-btn:hover {
+  background: #100a56;
+}
+
+/* Right side details */
+.identity-right {
+  flex: 1 1 500px;
+  /* background: #f8f8f8; */
+  padding: 20px;
+  /* width: 100%; */
+  border-radius: 8px;
+}
+.identity-right ul{
+  background-color: #f9f3f3;;
+  border-radius:10px ;
+}
+
+.identity-right h3 {
+  font-size: 30px;
+  /* margin-bottom: 8px; */
+}
+
+.identity-right p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  
+}
+
+.identity-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.identity-right ul li {
+  margin-bottom: 6px;
+  text-align: left; /* text bullets ke baad se left aligned */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .identity-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .identity-right {
+    width: 100%;
+  }
+}
+
+
 
