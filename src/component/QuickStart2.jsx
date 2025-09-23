@@ -3,9 +3,10 @@ import './QuickStart2.css';
 import { FiSearch, FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom"; // ✅ for routing
+import QuickStart from './QuickStart';
+// import { Link } from "react-router-dom"; // ✅ for routing
 
-const Market = () => {
+function QuickStart2()  {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdowns, setDropdowns] = useState({
     Markets: false,
@@ -288,7 +289,7 @@ const Market = () => {
     ].map((item, index) => (
       <div className="platform-card" key={index}>
         <div className="icon-placeholder">
-          <img src={item.icon} alt={item.title} />
+          <img src="" alt={item.title} />
         </div>
         <div className="card-content">
           <h3>{item.title}</h3>
@@ -356,6 +357,8 @@ const Market = () => {
   </div>
 </div>
 
+
+
 <div className="hero-container">
   <div className="hero-overlay">
     <h1>
@@ -370,6 +373,8 @@ const Market = () => {
       </div>
   </div>
 </div>
+
+
 
 <div className="footer-container">
     <div className="footer-top">
@@ -476,4 +481,4 @@ const Market = () => {
   );
 };
 
-export default Market;
+export default QuickStart2;
