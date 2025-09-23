@@ -1,6 +1,6 @@
 import React from "react";
 
-<<<<<<< HEAD
+
 // import LeftDiv from "./component/leftDiv";
 // import RightDiv from "./component/RightDiv";
 // import QuickStart from"./component/QuickStart";
@@ -25,26 +25,26 @@ import React from "react";
 // // import QuickStart5 from "./component/QuickStart5";
 // import Navbar from "./component/Navbar1";
 // import EducationHub from "./component/EducationHub"
-=======
-import LeftDiv from "./component/leftDiv";
-import RightDiv from "./component/RightDiv";
-import QuickStart from "./component/QuickStart";
-import "./App.css";
-import QuickStart3 from "./component/QuickStart3";
-import QuickStart4 from "./component/QuickStart4";
-import QuickStart5 from "./component/QuickStart5";
-import QuickStart6 from "./component/QuickStart6";
-import QuickStart7 from "./component/QuickStart7";
-import Market from "./component/Market";
 
-// import Navbar from "./component/Navbar";
+// import LeftDiv from "./component/leftDiv";
+// import RightDiv from "./component/RightDiv";
+// import QuickStart from "./component/QuickStart";
+// import "./App.css";
+// import QuickStart3 from "./component/QuickStart3";
+// import QuickStart4 from "./component/QuickStart4";
+// import QuickStart5 from "./component/QuickStart5";
+// import QuickStart6 from "./component/QuickStart6";
+// import QuickStart7 from "./component/QuickStart7";
+// import Market from "./component/Market";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
-import Navbar from "./component/Navbar1";
-import EducationHub from "./component/EducationHub"
->>>>>>> 22d5bfd9e7e8b64590bdac893817356b8565be47
+// // import Navbar from "./component/Navbar";
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap-icons/font/bootstrap-icons.css";
+// import Navbar from "./component/Navbar1";
+// import EducationHub from "./component/EducationHub"
+
 
 
 // import LoginForm from "./component/LoginForm1";
@@ -59,6 +59,7 @@ import AccountSupport from "./AccountSupport";
 import PlatformSupport from "./PlatformSupport";
 import MarketSupport from "./MarketSupport";
 import EconomicCalendar from "./component/EconomicCalendar";
+import ContactSupport from "./ContactSupport";
 
 const App = () => {
   return (
@@ -90,9 +91,9 @@ const App = () => {
       <QuickStart7 />
       <Navbar/>*/}
       
-      <Market/>
+      {/* <Market/>
 
-<<<<<<< HEAD
+
 
 
       {/* <QuickStart6/> */}
@@ -117,6 +118,7 @@ const App = () => {
         <PlatformSupport/>
         <MarketSupport/>
         <EconomicCalendar/>
+        <ContactSupport/>
    
      </div>
 
@@ -125,12 +127,12 @@ const App = () => {
     //  <EducationHub></EducationHub>
     
 
-=======
-          
-      </div>
->>>>>>> 22d5bfd9e7e8b64590bdac893817356b8565be47
 
-    </div>
+          
+//       </div>
+
+
+    // </div>
   );
 };
 
