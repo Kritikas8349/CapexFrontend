@@ -1,8 +1,6 @@
 import React, { useState } from "react"; // ✅ Yeh import zaroori hai
 import "./QuickStart.css";
 import { FaSearch } from "react-icons/fa";
-
-
 function QuickStart() {
 
   const videos = [
