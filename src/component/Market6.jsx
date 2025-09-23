@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import './Market.css';
+import './Market6.css';
 
-function Market() {
+function Market6() {
 
     const platforms = [
         {
@@ -34,12 +34,7 @@ function Market() {
             icon: "Frame84155.png",
             isNew: true,
         },
-        {
-            name: "BlackBull Invest",
-            desc: "Access 26,000+ Shares, Options, ETFs, Bonds, and other underlying assets.",
-            icon: "Frame84155.png",
-            isNew: false,
-        },
+        
     ];
 
     const initialInstruments = [
@@ -48,7 +43,7 @@ function Market() {
             name: "XAUUSD",
             desc: "Gold vs US-Dollar",
             buy: 3752.41000,
-            sell: 3752.53000,
+            sell: 3752.53000, 
             spread: 1.2,
             change: -0.003
         },
@@ -267,12 +262,9 @@ function Market() {
 
             <section className="m1-hero">
                 <div className="m1-hero-left">
-                    <h1>Markets <br /> &nbsp; Overview</h1>
+                    <h1>Trade Indices</h1>
                     <p>
-                        We provide access to diverse markets on all our accounts, offering superior trade execution,
-                        &nbsp;competitive costs, and a wide range of tradable products. These include 70 currency pairs,
-                        &nbsp; major market indices and stocks, precious metals like gold and silver, cryptocurrency, and
-                        commodities such as gas and oil.
+Diversify with Index CFDs. All major Indices are available to trade at BlackBull Markets, including the NASDAQ 100, S&P 500, the Dow Jones Industrial Average, and many more.
                     </p>
                 </div>
                 <div className="m1-hero-right">
@@ -282,7 +274,7 @@ function Market() {
 
 
 
-            <div className="m1-stats-container">
+            {/* <div className="m1-stats-container">
                 <div className="m1-stat-item">
                     <h2>26k+</h2>
                     <p>Tradable Assets</p>
@@ -303,7 +295,7 @@ function Market() {
                     <h2>$0</h2>
                     <p>No Minimum Deposit</p>
                 </div>
-            </div>
+            </div> */}
 
 
 
@@ -511,4 +503,4 @@ function Market() {
     )
 }
 
-export default Market
+export default Market6;
