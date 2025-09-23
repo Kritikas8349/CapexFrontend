@@ -1,8 +1,34 @@
 import React from 'react'
-import PastWebinar from './PastWebinar'
+import ForexTutorials from './ForexToutorials';
+// import PastWebinar from './PastWebinar'
 
 function Webinars() {
+  //------------Past Webinar video data---------------
+  const videos1 = [
+    {
+      id: 1,
+      title: "2025 H2 Playbook: How institutions are trading the second half",
+      date: "7/28/2025",
+      url: "https://www.youtube.com/embed/MFqvLMctU_U", 
+      badge: "WEBINAR",
+    },
+    {
+      id: 2,
+      title: "The truth about trading: It's not just the strategy (Feat. Cam Hawkins)",
+      date: "5/2/2025",
+      url: "https://www.youtube.com/embed/phphBbRex1M", 
+      badge: "WEBINAR RECORDING",
+    },
+    {
+      id: 3,
+      title: "Webinar: What the charts reveal about Bitcoin's new record",
+      date: "4/3/2025",
+      url: "https://www.youtube.com/embed/FmKJDOSUAUY", 
+      badge: "WEBINAR",
+    },
+  ];
   return (
+    <>
     <div className="bg-light py-5">
       <div className="container">
         <div className="text-center mb-5">
@@ -42,10 +68,12 @@ function Webinars() {
               </div>
             </div>
           ))}
-          {/* Add a placeholder for the right navigation arrow if desired, but typically handled by a carousel component */}
+          
         </div>
       </div>
     </div>
+    <ForexTutorials></ForexTutorials>
+    </>
   )
 }
 

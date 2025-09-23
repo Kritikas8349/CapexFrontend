@@ -316,3 +316,7 @@
       display: block;
     }
   }
+/* ------For Dispaly other pages beside NAVBAR ------------- */
+  #nav_main{
+    margin-bottom: 123px;
+  }

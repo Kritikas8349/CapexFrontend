@@ -1,12 +1,13 @@
 import React from 'react';
 import "./EducationHub.css";
-import 'bootstrap/dist/css/bootstrap.min.css';  
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
 
+
 function EducationHub() {
-     const cardsData = [
+  const cardsData = [
     { title: "Forex", desc: "Learn to Trade Forex" },
     { title: "Crypto", desc: "Learn to Trade Crypto" },
     { title: "Commodities", desc: "Learn to Trade Commodities" },
@@ -84,7 +85,7 @@ function EducationHub() {
   ];
 
   //-----Trading oppor. data
-   const posts = [
+  const posts = [
     {
       id: 1,
       title: "FOMC doves now in the driver’s seat?",
@@ -132,266 +133,268 @@ function EducationHub() {
       badge: "WEBINAR",
     },
   ];
-    return (
-        <>
-       <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '80vh' }}>
-      <div className="container bg-transparent"> 
-        <div className="row bg-transparent">
-          <div className="col-12 col-lg-6 bg-transparent">
-            <div className="content-box p-4 p-md-5 bg-transparent"> {/* Add responsive padding */}
-              <h1 className="fw-bold text-white text-start mb-3" style={{ fontFamily: 'Arial, sans-serif' }}>Education Hub</h1> {/* mb-3 for spacing */}
-              <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}> 
-                Learn to trade forex, crypto, commodities, and shares, with our trading tutorials. Explore trading videos, podcasts, webinars, and market analysis.
-              </h6>
-              <button className="btn btn-primary btn-lg fw-bold">Demo Trade</button> {/* btn-lg for a larger button */}
+  return (
+    <>
+      <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '90vh' }}>
+        <div className="container bg-transparent">
+          <div className="row bg-transparent">
+            <div className="col-12 col-lg-6 bg-transparent">
+              <div className="content-box p-4 p-md-5 bg-transparent"> {/* Add responsive padding */}
+                <h1 className="fw-bold text-white display-4 text-start mb-3" style={{ fontFamily: 'Arial, sans-serif' }}>Education Hub</h1> {/* mb-3 for spacing */}
+                <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
+                  Learn to trade forex, crypto, commodities, and shares, with our trading tutorials. Explore trading videos, podcasts, webinars, and market analysis.
+                </h6>
+                <button className="btn btn-primary btn-lg fw-bold">Demo Trade</button> {/* btn-lg for a larger button */}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    {/* ----------For Learn Trad--------------------- */}
-       <div className='bg-light py-5'>
-      <div className="container">
-        <h1 className='text-primary fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
-        <div className='row justify-content-center'>
-          {cardsData.map((card, index) => (
-            <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
-              <div className='bg-white p-4 m-2 w-100 shadow-sm'>
-                <h2 className='mb-3 fw-bold text-dark'>{card.title}</h2>
-                <p className='text-secondary mb-4'>{card.desc}</p>
-                <div className='d-flex flex-wrap mt-auto'>
-                  <span className='badge bg-primary text-white p-2 m-1'>BEGINNER</span>
-                  <span className='badge bg-primary text-white p-2 m-1'>INTERMEDIATE</span>
-                  <span className='badge bg-primary text-white p-2 m-1'>PRO</span>
+      {/* ----------For Learn Trad--------------------- */}
+      <div className='bg-light py-5'>
+        <div className="container">
+          <h1 className='text-primary fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
+          <div className='row justify-content-center'>
+            {cardsData.map((card, index) => (
+              <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
+                <div className='bg-white p-4 m-2 w-100 shadow-sm'>
+                  <h2 className='mb-3 fw-bold text-dark'>{card.title}</h2>
+                  <p className='text-secondary mb-4'>{card.desc}</p>
+                  <div className='d-flex flex-wrap input-group mt-auto'>
+                    <span className='badge  text-white p-2 m-1 s1'>BEGINNER</span>
+                    <span className='badge text-white p-2 m-1 s2'>INTERMEDIATE</span>
+                    <span className='badge  text-white p-2 m-1 s3'>PRO</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
-   
-{/* -------For Trading Platform------------------ */}
+
+      {/* -------For Trading Platform------------------ */}
       <section className="bg-white py-5">
-  <div className="container">
-    <h2 className="text-center fw-bold mb-5 text-primary">Trading Platforms</h2>
+        <div className="container">
+          <h1 className="text-center fw-bold mb-5 display-4  text-primary">Trading Platforms</h1>
 
-    <div className="row g-4">
-      {platforms.map((platform, index) => (
-        <div className="col-md-6 col-lg-4 " key={index}>
-          <div className="border rounded p-4 position-relative h-100">
-            <div className="d-flex align-items-center bg-white mb-3">
-              <img
-                src={platform.icon}
-                alt={platform.name}
-                className="me-2"
-                style={{ width: "60px", height: "50px", objectFit: "contain" }}
-              />
-              <h5 className="mb-0 fw-bold text-dark">{platform.title}</h5>
+          <div className="row g-4">
+            {platforms.map((platform, index) => (
+              <div className="col-md-6 col-lg-4 " key={index}>
+                <div className="border border-2 border-primary bg-opacity-10 rounded p-4 position-relative h-100">
+                  <div className="d-flex align-items-center bg-white mb-3">
+                    <img
+                      src={platform.icon}
+                      alt={platform.name}
+                      className="me-2"
+                      style={{ width: "60px", height: "50px", objectFit: "contain" }}
+                    />
+                    <h5 className="mb-0 fw-bold text-dark">{platform.title}</h5>
 
-              {platform.isNew && (
-                <span
-                  className="badge bg-success position-absolute top-0 end-0 mt-2 me-2"
-                  style={{ fontSize: "0.75rem" }}
-                >
-                  New
-                </span>
-              )}
-            </div>
+                    {platform.isNew && (
+                      <span
+                        className="badge bg-success position-absolute top-0 end-0 mt-2 me-2"
+                        style={{ fontSize: "0.75rem" }}
+                      >
+                        New
+                      </span>
+                    )}
+                  </div>
 
-            <p className="text-dark">{platform.desc}</p>
+                  <p className="text-dark">{platform.desc}</p>
 
-            <button className="btn btn-primary bg-opacity-10 text-white fw-semibold">
-              Learn More
-            </button>
+                  <button className="btn btn-primary bg-opacity-10 text-white fw-semibold">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
 
-    {/* -----------For TradingVideo----------------- */}
-    <div className="bg-light py-5">
-      <div className="container">
-        <div className="text-center mb-5">
-          <h1 className="fw-bold text-primary mb-3 display-4">Trading Video Tutorials</h1>
-          <p className="lead text-dark d-flex align-items-center justify-content-center">
-            Watch and learn with 3000+ videos on YouTube
-            <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
-          </p>
-        </div>
+      {/* -----------For TradingVideo----------------- */}
+      <div className="bg-light py-5">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h1 className="fw-bold text-primary mb-3 display-4">Trading Video Tutorials</h1>
+            <p className="lead text-dark d-flex align-items-center justify-content-center">
+              Watch and learn with 3000+ videos on YouTube
+              <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
+            </p>
+          </div>
 
-        <div className="row  justify-content-center  p-2">
-          {videos.map((video) => (
-            <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex" key={video.id}>
-              <div className=" border-0 shadow-sm h-100 bg-white">
-                <div className="position-relative">
-                  <iframe
-                    width="100%"
-                    height="220"
-                    src={video.url}
-                    title={video.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="rounded-top"
-                  ></iframe>
-                  {video.badge && (
-                    <span
-                      className="position-absolute top-0 start-0 bg-white text-dark small px-2 py-1 m-2 fw-bold"
-                      style={{ borderRadius: "3px" }}
-                    >
-                      {video.badge}
-                    </span>
-                  )}
+          <div className="row  justify-content-center  p-2">
+            {videos.map((video) => (
+              <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex" key={video.id}>
+                <div className=" border-0 shadow-sm h-100 bg-white">
+                  <div className="position-relative">
+                    <iframe
+                      width="100%"
+                      height="220"
+                      src={video.url}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="rounded-top"
+                    ></iframe>
+                    {video.badge && (
+                      <span
+                        className="position-absolute top-0 start-0 bg-white text-dark small px-2 py-1 m-2 fw-bold"
+                        style={{ borderRadius: "3px" }}
+                      >
+                        {video.badge}
+                      </span>
+                    )}
+                  </div>
+                  <div className="px-2">
+                    <h6 className="fw-bold text-dark">{video.title}</h6>
+                    <p className="text-secondary mb-0 small">{video.date}</p>
+                  </div>
                 </div>
-                <div className="px-2">
-                  <h6 className="fw-bold text-dark">{video.title}</h6>
-                  <p className="text-secondary mb-0 small">{video.date}</p>
+              </div>
+            ))}
+            <div className="col-12 text-center mt-4">
+              <button className="btn btn-primary text-white px-4 py-2">View More Videos</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* ----------For Trading Opportu..------------ */}
+      <div className="container  py-5">
+        {/* Heading */}
+        <h2 className="fw-bold text-primary display-5 mb-4">Trading Opportunities</h2>
+
+        {/* Row of Posts */}
+        <div className="row g-4">
+          {posts.map((post) => (
+            <div className="col-md-4" key={post.id}>
+              <div className="card border-0">
+                {/* Post Image */}
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  height={"259px"}
+                  className="card-img-top "
+                />
+
+                {/* Post Content */}
+                <div className="card-body px-0">
+                  <h5 className="fw-bold">{post.title}</h5>
+                  <div className="d-flex justify-content-between align-items-center mt-2">
+                    <small className=" text-primary">{post.date}</small>
+                    <a href={post.link} className="text-primary px-4 text-decoration-none fw-semibold">
+                      VIEW POST
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-          <div className="col-12 text-center mt-4">
-            <button className="btn btn-primary text-white px-4 py-2">View More Videos</button>
+        </div>
+
+        {/* View More Button */}
+        <div className="text-center mt-4">
+          <button className="btn btn-primary   fs-6 fw-semibold">View More</button>
+        </div>
+      </div>
+
+
+
+      {/* ---------For Past Webinar------------ */}
+      <div className="bg-light py-5">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h1 className="fw-bold text-primary mb-3 display-4">Past Webinars</h1>
+            <p className="lead text-dark d-flex align-items-center justify-content-center">
+              Watch all of our past webinars on YouTube
+              <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
+            </p>
+          </div>
+
+          <div className="row justify-content-center">
+            {videos1.map((video) => (
+              <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex" key={video.id}>
+                <div className="bg-white p-0 shadow-sm rounded h-100 d-flex flex-column overflow-hidden">
+                  <div className="position-relative" style={{ paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+                    <iframe
+                      className="position-absolute top-0 start-0 w-100 h-100"
+                      src={video.url}
+                      title={video.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                    {video.badge && (
+                      <span
+                        className="position-absolute top-0 start-0 bg-white text-dark small px-2 py-1 m-2 fw-bold"
+                        style={{ borderRadius: "3px" }}
+                      >
+                        {video.badge}
+                      </span>
+                    )}
+                  </div>
+                  <div className="p-3">
+                    <h6 className="fw-bold text-dark">{video.title}</h6>
+                    <p className="text-secondary mb-0 small">{video.date}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {/* Add a placeholder for the right navigation arrow if desired, but typically handled by a carousel component */}
           </div>
         </div>
       </div>
-    </div>
 
 
-    {/* ----------For Trading Opportu..------------ */}
-    <div className="container  py-5">
-      {/* Heading */}
-      <h2 className="fw-bold text-primary mb-4">Trading Opportunities</h2>
 
-      {/* Row of Posts */}
-      <div className="row g-4">
-        {posts.map((post) => (
-          <div className="col-md-4" key={post.id}>
-            <div className="card border-0">
-              {/* Post Image */}
-              <img
-                src={post.image}
-                alt={post.title}
-                height={"259px"}
-                className="card-img-top "
-              />
-
-              {/* Post Content */}
-              <div className="card-body px-0">
-                <h5 className="fw-bold">{post.title}</h5>
-                <div className="d-flex justify-content-between align-items-center mt-2">
-                  <small className=" text-primary">{post.date}</small>
-                  <a href={post.link} className="text-primary px-4 text-decoration-none fw-semibold">
-                    VIEW POST
-                  </a>
-                </div>
-              </div>
-            </div>
+      {/* ------For Spotify story/podcast------- */}
+      <section className="container  my-5">
+        <div className="row g-6 align-items-center">
+          {/* Image Column */}
+          <div className="col-lg-6 mb-4 mb-lg-0" >
+            <img
+              src="/spotify.avif"
+              alt="Man in a recording studio"
+              className="img-fluid rounded "
+              height={'100%'}
+            />
           </div>
-        ))}
-      </div>
 
-      {/* View More Button */}
-      <div className="text-center mt-4">
-        <button className="btn btn-primary   fs-6 fw-semibold">View More</button>
-      </div>
-    </div>
-
-
-
-    {/* ---------For Past Webinar------------ */}
-    <div className="bg-light py-5">
-      <div className="container">
-        <div className="text-center mb-5">
-          <h1 className="fw-bold text-primary mb-3 display-4">Past Webinars</h1>
-          <p className="lead text-dark d-flex align-items-center justify-content-center">
-            Watch all of our past webinars on YouTube
-            <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
-          </p>
+          {/* Text and Button Column */}
+          <div className="col-lg-6">
+            <h2 className="display-4 fw-bold text-primary mb-4">
+              Discover Our Daily Trading Analysis Podcast
+            </h2>
+            <p className="lead mb-4">
+              Join us for our Daily Trading Analysis podcast on Spotify, where we
+              break down the latest market trends and provide actionable
+              insights. Whether you're a seasoned trader or just starting, our in-
+              depth discussions and expert interviews can help you sharpen your
+              skills and make informed decisions in your trading journey.
+            </p>
+            <a
+              href="https://spotify.com" // Replace with your Spotify podcast link
+              className="btn btn-success btn-lg d-inline-flex align-items-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="bi bi-spotify me-2"></i> {/* Spotify icon */}
+              Listen Now
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div className="row justify-content-center">
-          {videos1.map((video) => (
-            <div className="col-12 col-md-6 col-lg-4 mb-4 d-flex" key={video.id}>
-              <div className="bg-white p-0 shadow-sm rounded h-100 d-flex flex-column overflow-hidden">
-                <div className="position-relative" style={{ paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
-                  <iframe
-                    className="position-absolute top-0 start-0 w-100 h-100"
-                    src={video.url}
-                    title={video.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                  {video.badge && (
-                    <span
-                      className="position-absolute top-0 start-0 bg-white text-dark small px-2 py-1 m-2 fw-bold"
-                      style={{ borderRadius: "3px" }}
-                    >
-                      {video.badge}
-                    </span>
-                  )}
-                </div>
-                <div className="p-3">
-                  <h6 className="fw-bold text-dark">{video.title}</h6>
-                  <p className="text-secondary mb-0 small">{video.date}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-          {/* Add a placeholder for the right navigation arrow if desired, but typically handled by a carousel component */}
-        </div>
-      </div>
-    </div>
+      
 
-
-
-    {/* ------For Spotify story/podcast------- */}
-    <section className="container  my-5">
-      <div className="row g-6 align-items-center">
-        {/* Image Column */}
-        <div className="col-lg-6 mb-4 mb-lg-0" >
-          <img
-            src="/spotify.avif" 
-            alt="Man in a recording studio"
-            className="img-fluid rounded " 
-            height={'100%'}
-          />
-        </div>
-
-        {/* Text and Button Column */}
-        <div className="col-lg-6">
-          <h2 className="display-4 fw-bold text-primary mb-4">
-            Discover Our Daily Trading Analysis Podcast
-          </h2>
-          <p className="lead mb-4">
-            Join us for our Daily Trading Analysis podcast on Spotify, where we
-            break down the latest market trends and provide actionable
-            insights. Whether you're a seasoned trader or just starting, our in-
-            depth discussions and expert interviews can help you sharpen your
-            skills and make informed decisions in your trading journey.
-          </p>
-          <a
-            href="https://spotify.com" // Replace with your Spotify podcast link
-            className="btn btn-success btn-lg d-inline-flex align-items-center"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bi bi-spotify me-2"></i> {/* Spotify icon */}
-            Listen Now
-          </a>
-        </div>
-      </div>
-    </section>
-
-                </>
-    );
+    </>
+  );
 }
 
 export default EducationHub;
