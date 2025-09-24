@@ -1,0 +1,261 @@
+/* === Global Styling === */
+.beginner-forex-tutorial {
+  background: linear-gradient(to left, #241ab5, #090552, #000000);
+  color: #fff;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 95%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-sizing: border-box;
+
+  /* make height auto for responsiveness */
+  height: auto;
+  min-height: 750px; /* keeps desktop size */
+}
+
+/* Heading */
+.beginner-tutorial-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+/* Grid Layout */
+.beginner-tutorial-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Left Section */
+.beginner-left-section {
+  flex: 2 1 400px;
+  max-width: 750px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+/* Lesson 1 Image */
+.beginner-lesson1-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.beginner-lesson1-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.beginner-lesson1-text {
+  margin-top: 15px;
+}
+
+.beginner-lesson1-text h3 {
+  margin-bottom: 10px;
+}
+
+.beginner-lesson1-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Right Section */
+.beginner-right-section {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: start;
+  height: auto; /* make responsive */
+  box-sizing: border-box;
+}
+
+/* Lesson Cards */
+.beginner-lesson-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border-bottom: 2px solid #fff;
+  align-items: stretch;
+}
+
+.beginner-lesson-card-image {
+  width: 60%;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.beginner-lesson-card-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.beginner-lesson-card-text {
+  padding: 15px;
+  flex: 1;
+}
+
+.beginner-lesson-card-text h4 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.beginner-lesson-card-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Extra Right Section Class */
+.beginnerrightsection {
+  width: 70%;
+  max-width: 350px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Lesson 1 Extra Classes */
+.beginnerlesson1image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.beginnerlesson1title {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.beginnerlesson1text {
+  margin-top: 15px;
+}
+
+.beginnerlesson1text h3 {
+  margin-bottom: 10px;
+}
+
+.beginnerlesson1text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* === Responsive Styling === */
+
+/* Tablets / Medium screens */
+@media (max-width: 1024px) {
+  .beginnerrightsection {
+    width: 80%;
+    max-width: 300px;
+    margin-left: 20px;
+  }
+
+  .beginnerlesson1image {
+    height: 250px;
+  }
+
+  .beginnerlesson1title {
+    font-size: 1.4rem;
+  }
+
+  .beginnerlesson1text p {
+    font-size: 1rem;
+  }
+
+  .beginner-lesson-card-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .beginner-lesson-card-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile / Small screens */
+@media (max-width: 767px) {
+  .beginner-tutorial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beginner-left-section {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  .beginner-right-section,
+  .beginnerrightsection {
+    width: 95%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .beginner-lesson-card {
+    flex-direction: column;
+  }
+
+  .beginner-lesson-card-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .beginnerlesson1image {
+    height: 200px;
+    padding: 15px;
+    margin-left: 20px;
+  }
+
+  .beginnerlesson1title {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    margin-left: 20px;
+  }
+
+  .beginnerlesson1text{
+    margin-left: 20px;
+  }
+
+  .beginnerlesson1text p {
+    font-size: 0.95rem;
+    
+  }
+
+  .beginner-tutorial-heading {
+    font-size: 2rem;
+  }
+}

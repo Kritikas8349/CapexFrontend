@@ -1,0 +1,150 @@
+    .fixapi-trading-container {
+        max-width: 1400px;
+        width: 95%;
+        margin: -40px auto 60px auto;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .fixapi-wrapper {
+        width: 100%;
+        padding: 60px 20px;
+        border-radius: 12px;
+        background: linear-gradient(to bottom right, #000000, #493ffd);
+    }
+    
+    .fixapi-heading {
+        font-size: clamp(3rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: 10px;
+        color: #493ffd;
+    }
+    
+    .fixapi-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+    
+    .fixapi-description h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #ebefee;
+    }
+    
+    .fixapi-description p {
+        margin-bottom: 16px;
+        color: #ebefee;
+    }
+    
+    /* ================= Benefits Box Wrapper ================= */
+    .fixapi-benefits-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    /* Each Benefits Box */
+    .fixapi-benefits-box {
+        width: 100%;
+        max-width: 1400px;
+        background: #ebefee;
+        padding: 30px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+    }
+    
+    .fixapi-benefits-box:hover {
+        transform: translateY(-5px);
+    }
+    
+    .fixapi-benefits-box h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .fixapi-benefits-box p,
+    .fixapi-benefits-box ul {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .fixapi-benefits-box ul {
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+    
+    .fixapi-benefits-box ul li {
+        margin-bottom: 10px;
+    }
+    
+    /* ================= Responsive Media Queries ================= */
+    
+    /* Large Desktops */
+    @media (min-width: 1200px) {
+        .fixapi-wrapper {
+        padding: 60px 40px;
+        }
+    }
+    
+    /* Laptops & Normal Screens (1024px - 1199px) */
+    @media (max-width: 1199px) and (min-width: 1024px) {
+        .fixapi-heading {
+        font-size: 2.5rem;
+        }
+        .fixapi-benefits-box {
+        max-width: 1000px;
+        }
+        .fixapi-benefits-box h2 {
+        font-size: 1.4rem;
+        }
+        .fixapi-benefits-box p,
+        .fixapi-benefits-box ul {
+        font-size: 0.98rem;
+        }
+    }
+    
+    /* Tablets (768px - 1023px) */
+    @media (max-width: 1023px) and (min-width: 768px) {
+        .fixapi-heading {
+        font-size: 2.2rem;
+        text-align: center;
+        }
+        .fixapi-description {
+        text-align: center;
+        }
+        .fixapi-benefits-box {
+        padding: 25px;
+        }
+    }
+    
+    /* Mobile (max-width: 767px) */
+    @media (max-width: 767px) {
+        .fixapi-heading {
+        font-size: 2rem;
+        text-align: center;
+        }
+        .fixapi-description {
+        font-size: 0.95rem;
+        text-align: center;
+        }
+        .fixapi-benefits-box {
+        padding: 20px;
+        }
+        .fixapi-benefits-box h2 {
+        font-size: 1.2rem;
+        }
+        .fixapi-benefits-box ul {
+        font-size: 0.9rem;
+        }
+    }
+    

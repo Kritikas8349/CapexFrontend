@@ -1,0 +1,256 @@
+.vps-trading-container {
+    max-width: 14500px;
+    width: 95%;
+    margin: 0 auto 60px auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+    .vps-trading-wrapper {
+        width: 100%;
+        padding: 60px 20px;
+        border-radius: 12px ;
+        background: linear-gradient(to bottom right, #000000, #493ffd);
+    }
+    
+    .vps-trading-heading {
+        font-size: clamp(3rem, 5vw, 4rem);
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: left;
+        margin-left: 10px;
+        color: #493ffd;
+    }
+    
+    .vps-trading-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+
+    .vps-trading-text h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #ebefee;
+    }
+    
+    .vps-trading-text p {
+        margin-bottom: 16px;
+        color: #ebefee;
+    }
+    
+    /* ================= Grey Boxes Wrapper ================= */
+    .vps-trading-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+        margin-top: 40px;
+    }
+    
+    /* Each Grey Box */
+    .vps-trading-box {
+        width: 100%;
+        max-width: 1400px;
+        background: #ebefee;
+        padding: 30px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+    }
+    
+    .vps-trading-box:hover {
+        transform: translateY(-5px);
+    }
+    
+    .vps-trading-box h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        font-weight: 800;
+        color: black;
+    }
+    
+    .vps-trading-box p,
+    .vps-trading-box ul {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .vps-trading-box ul {
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+    
+    .vps-trading-box ul li {
+        margin-bottom: 10px;
+    }
+    
+    /* ================= Responsive Media Queries ================= */
+    
+    /* Large Desktops */
+    @media (min-width: 1200px) {
+        .vps-trading-container {
+        padding: 60px 40px;
+        }
+    }
+    
+    /* Laptops & Normal Screens (1024px - 1199px) */
+    @media (max-width: 1199px) and (min-width: 1024px) {
+        .vps-trading-heading {
+        font-size: 2.5rem;
+        }
+        .vps-trading-box {
+        max-width: 1000px;
+        }
+        .vps-trading-box h2 {
+        font-size: 1.4rem;
+        }
+        .vps-trading-box p,
+        .vps-trading-box ul {
+        font-size: 0.98rem;
+        }
+    }
+    
+    /* Tablets (768px - 1023px) */
+    @media (max-width: 1023px) and (min-width: 768px) {
+        .vps-trading-heading {
+        font-size: 2.2rem;
+        text-align: center;
+        }
+        .vps-trading-text {
+        text-align: center;
+        }
+        .vps-trading-box {
+        padding: 25px;
+        }
+    }
+    
+    /* Mobile (max-width: 767px) */
+    @media (max-width: 767px) {
+        .vps-trading-heading {
+        font-size: 2rem;
+        text-align: center;
+        }
+        .vps-trading-text {
+        font-size: 0.95rem;
+        text-align: center;
+        }
+        .vps-trading-box {
+        padding: 20px;
+        }
+        .vps-trading-box h2 {
+        font-size: 1.2rem;
+        }
+        .vps-trading-box ul {
+        font-size: 0.9rem;
+        }
+    }
+    
+
+  .vps-register-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 15px;
+    background-color: #ebefee;
+    margin-top: 30px;
+    border-radius: 12px;
+  }
+  
+  .vps-register-container {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .vps-register-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .vps-register-label {
+    font-weight: bold;
+    display: block;
+    margin: 15px 0 5px;
+  }
+  
+  .vps-register-required {
+    color: #493ffd;
+    font-size: 14px;
+    margin-left: 3px;
+  }
+  
+  .vps-register-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  
+  .vps-register-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .vps-register-row .vps-register-input {
+    flex: 1;
+  }
+  
+  .vps-register-subtext {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .vps-register-note {
+    font-size: 14px;
+    color: black;
+    margin: 15px 0;
+  }
+  
+  .vps-register-btn {
+    background: #006aff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .vps-register-btn:hover {
+    background: #0050cc;
+  }
+  .vps-register-video {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .vps-register-video video {
+    width: 100%;
+    height: 430px;  
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .vps-register-row {
+      flex-direction: column;
+    }
+  }
+  

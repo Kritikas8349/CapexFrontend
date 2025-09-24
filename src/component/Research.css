@@ -5,5 +5,19 @@
     }
 
     .tr-container{
-        height: 80vh;
+        min-height: 80vh;
+        
     }
+    #tr-container-bg{
+     background: linear-gradient(to left,#493FFD, #000000 ) ;
+    }
+
+    .ir-container{
+      min-height: 80vh;
+    }
+
+    .btn-learn{
+      background-color: #493FFD;
+    }
+
+     
