@@ -287,81 +287,91 @@ function Research() {
 
 
             {/* -----------Daily Research Artical----------------- */}
-            <div className="container  py-5 tr-container align-content-center">
-                {/* Heading */}
-                <h2 className="fw-bold text-primary display-5 text-center mb-4">Daily Research Artical</h2>
+           <div className="container py-5 mb-5 tr-container">
+  {/* Heading */}
+  <h2 className="fw-bold text-primary display-6 display-md-5 text-center mb-4">
+    Daily Research Articles
+  </h2>
 
-                {/* Row of Posts */}
-                <div className="row g-4">
-                    {articles.map((article) => (
-                        <div className="col-md-4" key={article.id}>
-                            <div className="card border-0">
-                                {/* Post Image */}
-                                <img
-                                    src={article.image}
-                                    alt={article.title}
-                                    height={"259px"}
-                                    className="card-img-top "
-                                />
+  {/* Article Cards */}
+  <div className="row g-4">
+    {articles.map((article) => (
+      <div className="col-12 col-sm-6 col-md-4" key={article.id}>
+        <div className="card h-100 border-0 shadow-sm">
+          {/* Image */}
+          <img
+            src={article.image}
+            alt={article.title}
+            className="card-img-top img-fluid"
+          />
 
-                                {/* Post Content */}
-                                <div className="card-body px-0">
-                                    <h5 className="fw-bold">{article.title}</h5>
-                                    <div className="d-flex justify-content-between align-items-center mt-2">
-                                        <small className=" text-primary">{article.date}</small>
-                                        <a href={article.link} className="text-primary px-4 text-decoration-none fw-semibold">
-                                            VIEW POST
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* View More Button */}
-                <div className="text-center mt-4">
-                    <a href='' className="btn btn-outline-primary   fs-6 fw-semibold">View More</a>
-                </div>
+          {/* Content */}
+          <div className="card-body px-3">
+            <h5 className="fw-bold">{article.title}</h5>
+            <div className="d-flex justify-content-between align-items-center mt-2">
+              <small className="text-primary">{article.date}</small>
+              <a
+                href={article.link}
+                className="text-primary fw-semibold text-decoration-none"
+              >
+                VIEW POST
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {/* View More Button */}
+  <div className="text-center mt-5">
+    <a href="#" className="btn btn-outline-primary fw-semibold">
+      View More
+    </a>
+  </div>
+</div>
+
+
+
 
             {/* -------------Investment Research---------- */}
-            <section className="container border py-lg-5  my-5 align-content-center tr-container">
-                <div className="row my-lg-5 g-6 align-items-center">
-                    {/* Image Column */}
-                    <div className="col-lg-6 mb-4 mb-lg-0" >
-                        <img
-                            src="/banner1.png"
-                            alt="Man in a recording studio"
-                            className="img-fluid rounded "
-                            height={'100%'}
-                        />
-                    </div>
+            <section className=" border py-3 align-content-center py-lg-5 my-5 ir-container">
+  <div className="row g-4 px-4 align-items-center">
+    {/* Image Column */}
+    <div className="col-12 col-lg-6 text-center">
+      <img
+        src="/banner1.png"
+        alt="Investment Research"
+        className="img-fluid rounded w-100"
+      />
+    </div>
 
-                    {/* Text and Button Column */}
-                    <div className="col-lg-6">
-                        <h2 className="display-5 fw-bold text-primary mb-4">
-                            Investment Research
-                        </h2>
-                        <p className="lead mb-4">
-                            It is essential for anyone investing in the stock market to have the very best knowledge at all times.<br />
-                            BlackBull Research provides timely and jargon-free Institutional-grade stock recommendations to aid your investing decisions.
-                        </p>
-                        <a
-                            href="https://spotify.com"
-                            className="btn btn-primary btn-lg d-inline-flex align-items-center"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+    {/* Text & Button Column */}
+    <div className="col-12 col-lg-6 text-center text-lg-start px-3 px-lg-4">
+      <h2 className="display-6 display-lg-5 fw-bold text-primary mb-3">
+        Investment Research
+      </h2>
+      <p className="lead mb-4">
+        It is essential for anyone investing in the stock market to have the very best knowledge at all times.<br />
+        BlackBull Research provides timely and jargon-free Institutional-grade stock recommendations to aid your investing decisions.
+      </p>
+      <a
+        href="https://spotify.com"
+        className="btn btn-learn text-white btn-lg"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Subscribe
+      </a>
+    </div>
+  </div>
+</section>
 
-                            Subscribe
-                        </a>
-                    </div>
-                </div>
-            </section>
+
+
 
             {/* --------Trading Research---------- */}
-            <section className=" border align-content-center  py-lg-5 bg-primary text-white p-lg-5 p-5 tr-container ">
+            <section className=" border align-content-center  py-lg-5 bg-primary text-white p-lg-5 p-5 tr-container" id='tr-container-bg'>
                 <div className="row my-5 my-lg-5 g-6 align-items-center">
 
                     {/* Text and Button Column */}
@@ -374,7 +384,7 @@ function Research() {
                         </p>
                         <a
                             href="https://spotify.com"
-                            className="btn btn-info btn-lg d-inline-flex align-items-center"
+                            className="btn text-white btn-lg d-inline-flex align-items-center btn-learn"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -395,8 +405,8 @@ function Research() {
 
                 </div>
             </section>
-          {/* -------------Economic Calender--------        */}
-          <section className=" border align-content-center  py-lg-5   p-lg-5 p-5 ec-container ">
+            {/* -------------Economic Calender--------        */}
+            <section className=" border align-content-center  py-lg-5   p-lg-5 p-5 ec-container ">
                 <div className="row my-5 my-lg-5 g-6 align-items-center">
 
                     {/* Text and Button Column */}
@@ -409,7 +419,7 @@ function Research() {
                         </p>
                         <a
                             href="https://spotify.com"
-                            className="btn btn-info btn-lg d-inline-flex align-items-center"
+                            className="btn btn-learn text-white btn-lg d-inline-flex align-items-center"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
