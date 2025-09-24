@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from "react";
-
-
-
-
+import React from "react";
 
 //import LeftDiv from "./component/leftDiv";
 //import RightDiv from "./component/RightDiv";
@@ -23,6 +19,10 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // import RightDiv from "./component/RightDiv";
 // import QuickStart from"./component/QuickStart";
 // import "./App.css"; 
+// All commented imports remain untouched
+// import LeftDiv from "./component/leftDiv";
+// import RightDiv from "./component/RightDiv";
+// import QuickStart from "./component/QuickStart";
 // import QuickStart3 from "./component/QuickStart3";
 // import QuickStart4 from "./component/QuickStart4";
 // import QuickStart5 from "./component/QuickStart5";
@@ -93,7 +93,31 @@ import CTrader from "./component/CTrader";
 
 
 
+// import Navbar from "./component/Navbar1";
+// import EducationHub from "./component/EducationHub";
+// import Webinars from "./component/Webinars";
+// import ForexTutorials from "./component/ForexToutorials";
+// import CommoditiesTutorials from "./component/CommoditiesTutorials";
+// import SharesTutorials from "./component/SharesTutorials";
+// import Research from "./component/Research";
+// import LoginForm from "./component/LoginForm1";
+// import WelcomeSection from "./component/WelcomeSection";
+import "./App.css";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap-icons/font/bootstrap-icons.css";
 
+// 
+import About2 from "./component/About2";
+import NewsSection from "./component/NewsSection";
+import Compliance from "./component/Compliance";
+import SecurityFunds from "./SecurityFunds";
+import GettingStarted from "./GettingStarted";
+import AccountSupport from "./AccountSupport";
+import PlatformSupport from "./PlatformSupport";
+import MarketSupport from "./MarketSupport";
+import EconomicCalendar from "./component/EconomicCalendar";
+import ContactSupport from "./ContactSupport";
 
 //import About2 from "./component/About2";
 //import NewsSection from "./component/NewsSection";
@@ -117,79 +141,10 @@ const App = () => {
 
     <div className="app-container">
 
-      {/* <div className="main-sections">
-
-       <div>
-
-      {/* <div className="app-container">
-
-        <div className="main-sections">
-
-          <div className="login-section">
-            <LoginForm />
-          </div>
-          <div className="welcome-section">
-            <WelcomeSection />
-          </div>
-        </div>
-      </div> */}
-
-
-      {/* <div className="container1"> */}
-      {/* <LeftDiv />
-
-      <div className="container1">
-        {/* <LeftDiv />
-
-
-const App = () => {
-  return (
-    <div className="container1">
-       <LeftDiv />
-
-      <RightDiv />  
-      <QuickStart/>
-      <QuickStart3/> 
-      <QuickStart2/> 
-      <QuickStart4/>
-      <QuickStart5/>
-      <QuickStart6 />
-      <QuickStart7 />
-
-      <Navbar/>*/}
-      
-      {/* <Market/> */}
 
 
 
-      {/* <QuickStart6 /> */}
 
-      {/* <QuickStart6/> */}
-
-
-      {/* <Navbar/>
-     */}
-      {/* 
-          <div className="About2-section">
-            <About2 />
-          </div>
-
-
-          <div className="NewsSection-section">
-            <NewsSection />
-          </div>
-
-</div>
-
-        <div className="About2-section">
-          <About2 />
-        </div>
-
-
-          <Compliance />
-
-
-        </div> */}
 
 
 
@@ -207,46 +162,9 @@ const App = () => {
           <Route path="/CTrader" element={<CTrader></CTrader>}></Route>
         </Routes>
       </div>
-         
-         {/* <Compliance/>
-        <SecurityFunds/>
-        <GettingStarted/>
-        <AccountSupport/>
-        <PlatformSupport/>
-        <MarketSupport/>
-        <EconomicCalendar/> */}
-   
-     {/* </div> */}
 
-
-    {/* //  <Navbar/>
-    //  <EducationHub></EducationHub> */}
-    
-
-
-          
-      {/* </div>
-
-
-    </div> */}
-
-      {/* <Market /> 
-      <Market2 />
-      <Market3 />
-      <Market4 />
-      <Market5 />
-      <Market6 /> 
-      <Market7 /> 
-     
-
-      <CreateAccount/>  */}
-    </div>
-
-        
+    </div >
   );
 };
-
-
-
 
 export default App;

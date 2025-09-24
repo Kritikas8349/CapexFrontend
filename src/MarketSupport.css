@@ -1,4 +1,3 @@
-/* ================= MAIN CONTAINER ================= */
 .market-container {
     position: relative;
     width: 100%;
@@ -8,11 +7,11 @@
     overflow: hidden;
 }
 
-/* ================= IMAGE CONTAINER ================= */
+
 .market-image-container {
     position: relative;
     width: 100%;
-    height: 60vh; /* default desktop height */
+    height: 60vh; 
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -24,7 +23,7 @@
 .market-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* ensures image covers the container */
+    object-fit: cover; 
     border-radius: 20px;
 }
 
@@ -54,17 +53,17 @@
     text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
-/* ================= GRID ================= */
+
 .market-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* two cards side by side */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
     margin: 40px auto;
     max-width: 1400px;
     padding: 20px;
 }
 
-/* ================= INDIVIDUAL CARD ================= */
+
 .market-card {
     background: #ebefee;
     border-radius: 16px;
@@ -81,7 +80,7 @@
     transform: translateY(-5px);
 }
 
-/* ================= CARD HEADER ================= */
+
 .market-header {
     display: flex;
     align-items: center;
@@ -111,7 +110,7 @@
     border-radius: 50%;
 }
 
-/* ================= LIST ================= */
+
 .market-card-list {
     list-style: none;
     padding: 0;
@@ -119,7 +118,7 @@
 }
 
 .market-card-list li {
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     margin: 10px 0;
     display: flex;
@@ -132,7 +131,7 @@
     font-size: 15px;
 }
 
-/* ================= BUTTON ================= */
+
 .market-btn {
     border: 1px solid #0057ff;
     background-color: #0057ff;
@@ -151,7 +150,7 @@
     transform: scale(1.05); 
 }
 
-/* ================= RESPONSIVE IMAGE & TEXT ================= */
+
 @media (max-width: 992px) {
     .market-image-container {
         height: 50vh;
@@ -186,7 +185,7 @@
     }
 }
 
-/* ================= GRID RESPONSIVENESS ================= */
+
 @media (max-width: 1024px) {
     .market-grid {
         grid-template-columns: 1fr 1fr; 
