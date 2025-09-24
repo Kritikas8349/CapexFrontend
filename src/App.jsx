@@ -26,13 +26,20 @@ import "./App.css";
 import About2 from "./component/About2";
 import NewsSection from "./component/NewsSection";
 import Compliance from "./component/Compliance";
-import SecurityFunds from "./SecurityFunds";
-import GettingStarted from "./GettingStarted";
-import AccountSupport from "./AccountSupport";
-import PlatformSupport from "./PlatformSupport";
-import MarketSupport from "./MarketSupport";
+import SecurityFunds from "./component/SecurityFunds";
+import GettingStarted from "./component/GettingStarted";
+import AccountSupport from "./component/AccountSupport";
+import PlatformSupport from "./component/PlatformSupport";
+import MarketSupport from "./component/MarketSupport";
 import EconomicCalendar from "./component/EconomicCalendar";
-import ContactSupport from "./ContactSupport";
+import ContactSupport from "./component/ContactSupport";
+import VPStrading from "./component/SubPages/VPStrading";
+import FixAPI from "./component/SubPages/FixAPI";
+import ZuluTrade from "./component/SubPages/Zulutrade";
+import Myfxbook from "./component/SubPages/Myfxbook";
+import BeginnerShare from "./component/SubPages/BeginnerShare";
+import Intermediate from "./component/SubPages/Intermediate";
+import AdvShare from "./component/SubPages/AdvShare";
 
 const App = () => {
   return (
@@ -55,7 +62,15 @@ const App = () => {
         <MarketSupport />
         <EconomicCalendar />
         <ContactSupport />
+        <VPStrading/>
+        <FixAPI/>
+        <ZuluTrade/>
+        <Myfxbook/>
+        <BeginnerShare/>
+        <Intermediate/>
+        <AdvShare/>
 
+        </div>
         {/*
         <div className="container1">
           <LeftDiv />
@@ -81,7 +96,7 @@ const App = () => {
           </Routes>
         </div>
         */}
-      </div> 
+        
     </div>  
   );
 };
