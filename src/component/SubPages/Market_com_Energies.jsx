@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import './Market6.css';
+import './Market_com_Energies.css';
 
-function Market6() {
+function Market_com_Energies() {
 
     const platforms = [
         {
@@ -34,7 +34,7 @@ function Market6() {
             icon: "Frame84155.png",
             isNew: true,
         },
-        
+
     ];
 
     const initialInstruments = [
@@ -43,7 +43,7 @@ function Market6() {
             name: "XAUUSD",
             desc: "Gold vs US-Dollar",
             buy: 3752.41000,
-            sell: 3752.53000, 
+            sell: 3752.53000,
             spread: 1.2,
             change: -0.003
         },
@@ -65,78 +65,78 @@ function Market6() {
             spread: 0.1,
             change: 0.103
         },
-        {
-            icon: "icons/nas100.png",
-            name: "NAS100",
-            desc: "NAS100 Index",
-            buy: 24754.50000,
-            sell: 24756.30000,
-            spread: 1.8,
-            change: -0.017
-        },
-        {
-            icon: "icons/audusd.png",
-            name: "AUDUSD",
-            desc: "Australian Dollar vs US-Dollar",
-            buy: 0.65868,
-            sell: 0.65869,
-            spread: 0.1,
-            change: 0.058
-        },
-        {
-            icon: "icons/usdjpy.png",
-            name: "USDJPY",
-            desc: "US-Dollar vs Japanese Yen",
-            buy: 147.81200,
-            sell: 147.81300,
-            spread: 0.1,
-            change: -0.015
-        },
-        {
-            icon: "icons/us30.png",
-            name: "US30",
-            desc: "Dow Jones 30",
-            buy: 46398.00000,
-            sell: 46400.00000,
-            spread: 0.2,
-            change: -0.019
-        },
-        {
-            icon: "icons/gbpjpy.png",
-            name: "GBPJPY",
-            desc: "Great Britain Pound vs Japanese Yen",
-            buy: 199.62900,
-            sell: 199.63800,
-            spread: 0.9,
-            change: 0.044
-        },
-        {
-            icon: "icons/usdcad.png",
-            name: "USDCAD",
-            desc: "US-Dollar vs Canadian Dollar",
-            buy: 1.38271,
-            sell: 1.38273,
-            spread: 0.2,
-            change: 0.008
-        },
-        {
-            icon: "icons/eurjpy.png",
-            name: "EURJPY",
-            desc: "Euro vs Japanese Yen",
-            buy: 174.38000,
-            sell: 174.38700,
-            spread: 0.7,
-            change: 0.083
-        },
-        {
-            icon: "icons/audnzd.png",
-            name: "AUDNZD",
-            desc: "Australian Dollar vs New Zealand Dollar",
-            buy: 1.12566,
-            sell: 1.12580,
-            spread: 1.4,
-            change: 0.016
-        }
+        // {
+        //     icon: "icons/nas100.png",
+        //     name: "NAS100",
+        //     desc: "NAS100 Index",
+        //     buy: 24754.50000,
+        //     sell: 24756.30000,
+        //     spread: 1.8,
+        //     change: -0.017
+        // },
+        // {
+        //     icon: "icons/audusd.png",
+        //     name: "AUDUSD",
+        //     desc: "Australian Dollar vs US-Dollar",
+        //     buy: 0.65868,
+        //     sell: 0.65869,
+        //     spread: 0.1,
+        //     change: 0.058
+        // },
+        // {
+        //     icon: "icons/usdjpy.png",
+        //     name: "USDJPY",
+        //     desc: "US-Dollar vs Japanese Yen",
+        //     buy: 147.81200,
+        //     sell: 147.81300,
+        //     spread: 0.1,
+        //     change: -0.015
+        // },
+        // {
+        //     icon: "icons/us30.png",
+        //     name: "US30",
+        //     desc: "Dow Jones 30",
+        //     buy: 46398.00000,
+        //     sell: 46400.00000,
+        //     spread: 0.2,
+        //     change: -0.019
+        // },
+        // {
+        //     icon: "icons/gbpjpy.png",
+        //     name: "GBPJPY",
+        //     desc: "Great Britain Pound vs Japanese Yen",
+        //     buy: 199.62900,
+        //     sell: 199.63800,
+        //     spread: 0.9,
+        //     change: 0.044
+        // },
+        // {
+        //     icon: "icons/usdcad.png",
+        //     name: "USDCAD",
+        //     desc: "US-Dollar vs Canadian Dollar",
+        //     buy: 1.38271,
+        //     sell: 1.38273,
+        //     spread: 0.2,
+        //     change: 0.008
+        // },
+        // {
+        //     icon: "icons/eurjpy.png",
+        //     name: "EURJPY",
+        //     desc: "Euro vs Japanese Yen",
+        //     buy: 174.38000,
+        //     sell: 174.38700,
+        //     spread: 0.7,
+        //     change: 0.083
+        // },
+        // {
+        //     icon: "icons/audnzd.png",
+        //     name: "AUDNZD",
+        //     desc: "Australian Dollar vs New Zealand Dollar",
+        //     buy: 1.12566,
+        //     sell: 1.12580,
+        //     spread: 1.4,
+        //     change: 0.016
+        // }
     ];
 
     const commodities = [
@@ -262,16 +262,18 @@ function Market6() {
 
             <section className="m-section">
                 <div className="m-content">
-                    <h1 className="m-title">Trade Indices</h1>
+                    <h1 className="m-title">Trade Energies</h1>
                     <p className="m-description">
-                        Diversify with Index CFDs. All major Indices are available to trade at BlackBull Markets, including the NASDAQ 100, S&P 500, the Dow Jones Industrial Average, and many more.
+                        Assets such as crude oil and natural gas are crucial to the global economy. At BlackBull Markets, we provide a range of energy CFDs with competitive spreads and favorable trading conditions.
+
+
+
                     </p>
                 </div>
                 <div className="m-wrapper">
-                    <img src="mob6.webp" alt="Trading chart" className="m-image" />
+                    <img src="subimg1.png" alt="Trading chart" className="m-image" />
                 </div>
             </section>
-
 
 
 
@@ -283,7 +285,7 @@ function Market6() {
                 <div className="m1-stat-item">
                     <h2>1:500</h2>
                     <p>Leverage Up To</p>
-                </div>
+                </div>    
                 <div className="m1-stat-item">
                     <h2>Regulated</h2>
                     <p>Multi-Regulated</p>
@@ -333,7 +335,7 @@ function Market6() {
                         onChange={(e) => setSortBy(e.target.value)}
                     >
 
-                        <option  value="" disabled hidden>
+                        <option value="" disabled hidden>
                             Sort By
                         </option>
                         <option value="name-asc">Name A → Z</option>
@@ -394,7 +396,7 @@ function Market6() {
                     </table>
                 </div>
 
-                <div className="mt-pagination">
+                {/* <div className="mt-pagination">
                     <span>1</span>
                     <span>2</span>
                     <span>3</span>
@@ -404,7 +406,7 @@ function Market6() {
                     <span>...</span>
                     <span>164</span>
                     <span className="mt-next">Next</span>
-                </div>
+                </div> */}
             </div>
 
 
@@ -416,7 +418,7 @@ function Market6() {
 
 
             <section className="trade-platforms1">
-                <h2 className="title-section1">Trading Platforms</h2>
+                <h2 className="title-section1">Energies Trading Platforms</h2>
 
                 <div className="platforms-wrapper1">
                     {platforms.map((platform, index) => (
@@ -438,7 +440,7 @@ function Market6() {
                 <h1 className="T-heading">Trading Opportunities</h1>
                 <div className="T-card-container">
                     <div className="T-card">
-                        <img src="card1.webp" alt="Supreme Court" className="T-card-image" />
+                        <img src="subcard1.webp" alt="Supreme Court" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">Supreme Court ruling could lift gold further</h2>
                             <p className="T-card-description">The Supreme Court has apparently scheduled arguments for December on the issue of whether President Trump can fire Fed governor Lisa Cook...</p>
@@ -448,7 +450,7 @@ function Market6() {
                     </div>
 
                     <div className="T-card">
-                        <img src="card2.webp" alt="BlackBull Markets" className="T-card-image" />
+                        <img src="card1.webp" alt="BlackBull Markets" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">BlackBull Markets Becomes Official Auckland FC Partner</h2>
                             <p className="T-card-description">BlackBull Markets is excited to announce a new partnership with Auckland FC, joining the club as an official partner ahead of the upcoming A-League Men’s season....</p>
@@ -458,7 +460,7 @@ function Market6() {
                     </div>
 
                     <div className="T-card">
-                        <img src="card3.webp" alt="Peso Resilience" className="T-card-image" />
+                        <img src="card2.webp" alt="Peso Resilience" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">Peso resilience tested ahead of Banxico decision</h2>
                             <p className="T-card-description">This technical setup frames the importance of Banxico’s upcoming decision. All 24 analysts surveyed by Reuters expect a 25-basis-point cut to 7.50%....</p>
@@ -468,7 +470,7 @@ function Market6() {
                     </div>
 
                     <div className="T-card">
-                        <img src="card4.webp" alt="Dot Plot Divide" className="T-card-image" />
+                        <img src="card3.webp" alt="Dot Plot Divide" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">Dot Plot Divide: Dollar Gains, Gold Stalls</h2>
                             <p className="T-card-description">The USDJPY spiked lower following the Fed’s 25 basis point cut yesterday but quickly reversed trajectory as the dot plot projections from the FOMC came in softer than markets had expected....</p>
@@ -504,4 +506,4 @@ function Market6() {
     )
 }
 
-export default Market6;
+export default Market_com_Energies;

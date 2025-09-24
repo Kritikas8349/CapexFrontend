@@ -34,7 +34,7 @@ function Market7() {
             icon: "Frame84155.png",
             isNew: true,
         },
-        
+
     ];
 
     const initialInstruments = [
@@ -43,7 +43,7 @@ function Market7() {
             name: "XAUUSD",
             desc: "Gold vs US-Dollar",
             buy: 3752.41000,
-            sell: 3752.53000, 
+            sell: 3752.53000,
             spread: 1.2,
             change: -0.003
         },
@@ -260,16 +260,16 @@ function Market7() {
         <div id='Main'>
 
 
-            <section className="m1-hero">
-                <div className="m1-hero-left">
-                    <h1>Trade Crypto</h1>
-                    <p>
-                  Cryptocurrency CFDs offers the opportunity to trade cryptos without having to own or manage these assets. 
-                  Enjoy up to 1:100 leverage, lightning-fast execution, and tight spreads at BlackBull Markets on 22 major cryptocurrency pairs.
+            <section className="m-section">
+                <div className="m-content">
+                    <h1 className="m-title">Trade Crypto</h1>
+                    <p className="m-description">
+                        Cryptocurrency CFDs offers the opportunity to trade cryptos without having to own or manage these assets. Enjoy up to 1:100 leverage, lightning-fast execution, and tight spreads at BlackBull Markets on 22 major cryptocurrency pairs.
+
                     </p>
                 </div>
-                <div className="m1-hero-right">
-                    <img src="phone.png" alt="Trading chart" className="m1-mobile-image" />
+                <div className="m-wrapper">
+                    <img src="mob7.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
 
@@ -333,7 +333,7 @@ function Market7() {
                         onChange={(e) => setSortBy(e.target.value)}
                     >
 
-                        <option  value="" disabled hidden>
+                        <option value="" disabled hidden>
                             Sort By
                         </option>
                         <option value="name-asc">Name A → Z</option>

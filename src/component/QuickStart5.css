@@ -20,9 +20,10 @@ html {
 }
 
 /* Container */
-.hero-container5 {
+.m-hero-container5 {
    position: relative;
   width: 100%;
+   /* background: linear-gradient(to bottom right, #241ad5, #090552,#000000); */
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -31,7 +32,7 @@ html {
 }
 
 /* Background video */
-.bg-video5 {
+.m-bg-video5 {
  position: absolute;
   top: 50%;
   left: 50%;
@@ -45,13 +46,13 @@ html {
 }
 
 /* Space reserved for navbar */
-.nav-placeholder5 {
+.m-nav-placeholder5 {
   height: 70px;
   flex-shrink: 0;
 }
 
 /* Content styles */
-.content5 {
+.m-content5 {
   color: white;
   padding: 20px;
   max-width: 800px;
@@ -63,17 +64,17 @@ html {
   /* position: relative; */
 }
 
-.content5 h1 {
+.m-content5 h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-.content5 p {
+.m-content5 p {
   font-weight: bold;
   margin-bottom: 2rem;
 }
 
-.content5 select {
+.m-content5 select {
   width: 40%;
   /* padding:  px; */
   margin-bottom: 1.5rem;
@@ -84,7 +85,7 @@ html {
   font-size: 1rem;
 }
 
-.content5 button {
+.m-content5 button {
   background-color: #3563ec;
   color: white;
   padding: 12px 24px;
@@ -97,35 +98,35 @@ html {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .content5 {
+  .m-content5 {
     max-width: 90%;
     padding: 15px;
   }
 
-  .content5 h1 {
+  .m-content5 h1 {
     font-size: 2rem;
   }
 
-  .content5 p {
+  .m-content5 p {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .nav-placeholder5 {
+  .m-nav-placeholder5 {
     height: 60px;
   }
 
-  .content5 h1 {
+  .m-content5 h1 {
     font-size: 1.5rem;
   }
 
-  .content5 p {
+  .m-content5 p {
     font-size: 0.9rem;
   }
 
-  .content5 button,
-  .content select {
+  .m-content5 button,
+  .m-content select {
     font-size: 0.9rem;
     padding: 10px;
   }

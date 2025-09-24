@@ -264,19 +264,18 @@ function Market() {
 
         <div id='Main'>
 
-
-            <section className="m1-hero">
-                <div className="m1-hero-left">
-                    <h1>Markets <br /> &nbsp; Overview</h1>
-                    <p>
+            <section className="m-section">
+                <div className="m-content">
+                    <h1 className="m-title">Markets Overview</h1>
+                    <p className="m-description">
                         We provide access to diverse markets on all our accounts, offering superior trade execution,
-                        &nbsp;competitive costs, and a wide range of tradable products. These include 70 currency pairs,
-                        &nbsp; major market indices and stocks, precious metals like gold and silver, cryptocurrency, and
+                        competitive costs, and a wide range of tradable products. These include 70 currency pairs,
+                        major market indices and stocks, precious metals like gold and silver, cryptocurrency, and
                         commodities such as gas and oil.
                     </p>
                 </div>
-                <div className="m1-hero-right">
-                    <img src="phone.png" alt="Trading chart" className="m1-mobile-image" />
+                <div className="m-wrapper">
+                    <img src="mob.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
 
@@ -340,7 +339,7 @@ function Market() {
                         onChange={(e) => setSortBy(e.target.value)}
                     >
 
-                        <option  value="" disabled hidden>
+                        <option value="" disabled hidden>
                             Sort By
                         </option>
                         <option value="name-asc">Name A → Z</option>

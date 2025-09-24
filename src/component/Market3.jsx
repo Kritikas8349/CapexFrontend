@@ -260,18 +260,18 @@ function Market3() {
         <div id='Main'>
 
 
-            <section className="m1-hero">
-                <div className="m1-hero-left">
-                    <h1>Trade Equities</h1>
-                    <p>
-Trade popular share CFDs like Tesla, Apple, and Amazon without having to own the underlying asset. BlackBull Markets offers shares from all major share markets with 24/7 customer service, lightning-fast execution, and adequate leverage.
-
+           <section className="m-section">
+                <div className="m-content">
+                    <h1 className="m-title">Trade Equities</h1>
+                    <p className="m-description">
+                       Trade popular share CFDs like Tesla, Apple, and Amazon without having to own the underlying asset. BlackBull Markets offers shares from all major share markets with 24/7 customer service, lightning-fast execution, and adequate leverage.
                     </p>
                 </div>
-                <div className="m1-hero-right">
-                    <img src="phone.png" alt="Trading chart" className="m1-mobile-image" />
+                <div className="m-wrapper">
+                    <img src="mob3.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
+
 
 
 
