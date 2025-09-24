@@ -69,7 +69,6 @@ import ForexTutorials from "./component/ForexToutorials";
 import CommoditiesTutorials from "./component/CommoditiesTutorials";
 import SharesTutorials from "./component/SharesTutorials";
 import Research from "./component/Research";
-import EconomicCalendarRC from "./component/EconomicCalendarRC";
 import TradingView from "./component/TradingView";
 import CTrader from "./component/CTrader";
 // import LeftDiv from "./component/leftDiv";
@@ -107,17 +106,22 @@ import "./App.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 // import "bootstrap-icons/font/bootstrap-icons.css";
 
-// 
-import About2 from "./component/About2";
-import NewsSection from "./component/NewsSection";
-import Compliance from "./component/Compliance";
-import SecurityFunds from "./SecurityFunds";
-import GettingStarted from "./GettingStarted";
-import AccountSupport from "./AccountSupport";
-import PlatformSupport from "./PlatformSupport";
-import MarketSupport from "./MarketSupport";
+
+// import About2 from "./component/About2";
+// import NewsSection from "./component/NewsSection";
+// import Compliance from "./component/Compliance";
+// import SecurityFunds from "./SecurityFunds";
+// import GettingStarted from "./GettingStarted";
+// import AccountSupport from "./AccountSupport";
+// import PlatformSupport from "./PlatformSupport";
+// import MarketSupport from "./MarketSupport";
 import EconomicCalendar from "./component/EconomicCalendar";
-import ContactSupport from "./ContactSupport";
+// import ContactSupport from "./ContactSupport";
+import CreateAccount from "./component/CreateAccount";
+import MetaTrader4 from "./component/MetaTrader4";
+import MetaTrader5 from "./component/MetaTrader5";
+import CopyTrader from "./component/CopyTrader";
+import Invest from "./component/invest";
 
 //import About2 from "./component/About2";
 //import NewsSection from "./component/NewsSection";
@@ -140,14 +144,6 @@ const App = () => {
 
 
     <div className="app-container">
-
-
-
-
-
-
-
-
       <div className="rohan">
         <Navbar />
         <Routes>
@@ -156,10 +152,15 @@ const App = () => {
           <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>}></Route>
           <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>}></Route>
           <Route path="/SharesTutorials" element={<SharesTutorials></SharesTutorials>}></Route>
-          <Route path="/EconomicCalendarRC" element={<EconomicCalendarRC></EconomicCalendarRC>}></Route>
+          <Route path="/EconomicCalendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
+          <Route path="/CreateAccount" element={<CreateAccount></CreateAccount>}></Route>
           <Route path="/Research" element={<Research></Research>}></Route>
           <Route path="/TradingView" element={<TradingView></TradingView>}></Route>
           <Route path="/CTrader" element={<CTrader></CTrader>}></Route>
+          <Route path="/MetaTrader4" element={<MetaTrader4></MetaTrader4>}></Route>
+          <Route path="/MetaTrader5" element={<MetaTrader5></MetaTrader5>}></Route>
+          <Route path="/CopyTrader" element={<CopyTrader></CopyTrader>}></Route>
+          <Route path="/Invest" element={<Invest></Invest>}></Route>
         </Routes>
       </div>
 
