@@ -551,20 +551,20 @@ html, body {
   }
 }
 
-.tradable-assets-section {
+.tradable-assets-section2 {
   padding: 50px 20px;
   background-color: #ede6e6;
   text-align: center;
   border-radius: 20px;
 }
 
-.section-title {
+.section-title2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #111;
 }
 
-.assets-grid {
+.assets-grid2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
   gap: 30px;
@@ -574,7 +574,7 @@ html, body {
   
 }
 
-.asset-card {
+.asset-card2 {
   height: 200px;
   width: 350px;
   background-color: #f4efef;
@@ -585,14 +585,14 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-.asset-card:hover {
+.asset-card2:hover {
   transform: translateY(-5px);
 }
 
-.icon-placeholder {
+.icon-placeholder2 {
   height: 50px;
   width: 50px;
-  background-color: #000;
+  /* background-color: #000; */
   color: white;
   font-size: 14px;
   display: flex;
@@ -601,16 +601,16 @@ html, body {
   border-radius: 8px;
   margin-bottom: 15px;
 }
-.icon-placeholder img{
+.icon-placeholder2 img{
 
     width: 50px;
 }
 
-.asset-card h3{
+.asset-card2 h3{
     font-size: 30px;
     padding-top: 20px;
 }
-.asset-card p{
+.asset-card2 p{
 
     
     font-weight: 700;
@@ -619,37 +619,37 @@ html, body {
 
 
 /* Text Styling */
-.asset-card h3 {
+.asset-card2 h3 {
   font-size: 1.2rem;
   margin: 10px 0 5px;
 }
 
-.asset-card p {
+.asset-card2 p {
   font-size: 0.95rem;
   color: #444;
 }
 
 /* Responsive Design */
 @media(max-width: 1024px) {
-  .assets-grid {
+  .assets-grid2 {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
   }
 
 }
 
 @media (min-width:500px) {
-  assets-grid {
+  assets-grid2 {
     grid-template-rows: repeat(2, 1fr); /* 2 cards per row on tablets */
   }
 }
 
 @media (min-width: 200px)and (max-width:500px) {
-  .assets-grid {
+  .assets-grid2 {
     
     grid-template-columns: 1fr; /* 1 card per row on phones */
   }
 
-  .asset-card{
+  .asset-card2{
     width: 80%;
     height: 220px;
   }

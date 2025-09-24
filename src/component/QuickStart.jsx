@@ -165,42 +165,42 @@ function QuickStart() {
 
 
 
-        <div className="tradable-assets-section">
-          <h2 className="section-title">Tradable Assets</h2>
+        <div className="tradable-assets-section2">
+          <h2 className="section-title2">Tradable Assets</h2>
 
-          <div className="assets-grid">
-            <div className="asset-card">
-              <div className="icon-placeholder"><img src="Frame8415.png" alt="" /></div>
+          <div className="assets-grid2">
+            <div className="asset-card2">
+              <div className="icon-placeholder2"><img src="Frame8415.png" alt="" /></div>
               <h3>Forex</h3>
               <p>70+ major, minor, and exotic currency pairs.</p>
             </div>
 
-            <div className="asset-card">
-              <div className="icon-placeholder"><img src="Frame8416.png" alt="" /></div>
+            <div className="asset-card2">
+              <div className="icon-placeholder2"><img src="Frame8416.png" alt="" /></div>
               <h3>Commodities</h3>
               <p>Energies like crude oil, and agricultural cash crops.</p>
             </div>
 
-            <div className="asset-card">
-              <div className="icon-placeholder"><img src="Frame8417.png" alt="" /></div>
+            <div className="asset-card2">
+              <div className="icon-placeholder2"><img src="Frame8417.png" alt="" /></div>
               <h3>Equities</h3>
               <p>We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
             </div>
 
-            <div className="asset-card">
-              <div className="icon-placeholder"><img src="Frame8418.png" alt="" /></div>
+            <div className="asset-card2">
+              <div className="icon-placeholder2"><img src="Frame8418.png" alt="" /></div>
               <h3>Indices</h3>
               <p>Major stock indices like US30, S&P500, and NAS100.</p>
             </div>
 
-            <div className="asset-card">
-              <div className="icon-placeholder"><img src="Frame8419.png" alt="" /></div>
+            <div className="asset-card2">
+              <div className="icon-placeholder2"><img src="Frame8419.png" alt="" /></div>
               <h3>Metals</h3>
               <p>Precious and industry metals like gold, silver, and copper.</p>
             </div>
 
-            <div className="asset-card">
-              <div className="icon-placeholder"><img src="Frame8411.png" alt="" /></div>
+            <div className="asset-card2">
+              <div className="icon-placeholder2"><img src="Frame8411.png" alt="" /></div>
               <h3>View all</h3>
               <p>Explore Market.Trad's diverse range of tradable assets.</p>
             </div>
