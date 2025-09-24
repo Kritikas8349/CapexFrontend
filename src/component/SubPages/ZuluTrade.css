@@ -1,0 +1,181 @@
+.zulutrade-container {
+    max-width: 1400px;
+    width: 95%;
+    margin: -40px auto 60px auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  
+  .zulutrade-wrapper {
+    width: 100%;
+    padding: 60px 20px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #000000, #493ffd);
+  }
+  
+  .zulutrade-heading {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 10px;
+    color: #493ffd;
+  }
+  
+  .zulutrade-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    margin-left: 10px;
+  }
+  
+  .zulutrade-description h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ebefee;
+  }
+  
+  .zulutrade-description p {
+    margin-bottom: 16px;
+    color: #ebefee;
+  }
+  
+  /* ================= Features Box Wrapper ================= */
+  .zulutrade-features-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  /* Each Features Box */
+  .zulutrade-features-box {
+    width: 100%;
+    max-width: 1400px;
+    background: #ebefee;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .zulutrade-features-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .zulutrade-features-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: black;
+  }
+  
+  .zulutrade-features-box p,
+  .zulutrade-features-box ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .zulutrade-features-box ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .zulutrade-features-box ul li {
+    margin-bottom: 10px;
+  }
+
+
+  /* Register Button Section */
+.zulutrade-register-wrapper {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .zulutrade-register-btn {
+    background: #493ffd;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .zulutrade-register-btn:hover {
+    background: #1a0eff;
+    transform: translateY(-2px);
+  }
+  
+  .zulutrade-register-note {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 12px;
+  }
+  
+  
+  /* ================= Responsive Media Queries ================= */
+  
+  /* Large Desktops */
+  @media (min-width: 1200px) {
+    .zulutrade-wrapper {
+      padding: 60px 40px;
+    }
+  }
+  
+  /* Laptops & Normal Screens (1024px - 1199px) */
+  @media (max-width: 1199px) and (min-width: 1024px) {
+    .zulutrade-heading {
+      font-size: 2.5rem;
+    }
+    .zulutrade-features-box {
+      max-width: 1000px;
+    }
+    .zulutrade-features-box h2 {
+      font-size: 1.4rem;
+    }
+    .zulutrade-features-box p,
+    .zulutrade-features-box ul {
+      font-size: 0.98rem;
+    }
+  }
+  
+  /* Tablets (768px - 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .zulutrade-heading {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    .zulutrade-description {
+      text-align: center;
+    }
+    .zulutrade-features-box {
+      padding: 25px;
+    }
+  }
+  
+  /* Mobile (max-width: 767px) */
+  @media (max-width: 767px) {
+    .zulutrade-heading {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .zulutrade-description {
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    .zulutrade-features-box {
+      padding: 20px;
+    }
+    .zulutrade-features-box h2 {
+      font-size: 1.2rem;
+    }
+    .zulutrade-features-box ul {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -260,17 +260,17 @@ function Market2() {
         <div id='Main'>
 
 
-            <section className="m1-hero">
-                <div className="m1-hero-left">
-                    <h1>Trade forex</h1>
-                    <p>
-                        Access forex trading with spreads starting from 0.0 pips, leverage up to 1:500, and industry leading execution speeds averaging less than 20 milliseconds.
+           
 
-
+            <section className="m-section">
+                <div className="m-content">
+                    <h1 className="m-title">Trade Forex</h1>
+                    <p className="m-description">
+                       Access forex trading with spreads starting from 0.0 pips, leverage up to 1:500, and industry leading execution speeds averaging less than 20 milliseconds.
                     </p>
                 </div>
-                <div className="m1-hero-right">
-                    <img src="phone.png" alt="Trading chart" className="m1-mobile-image" />
+                <div className="m-wrapper">
+                    <img src="mobile.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
 

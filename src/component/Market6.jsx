@@ -260,17 +260,18 @@ function Market6() {
         <div id='Main'>
 
 
-            <section className="m1-hero">
-                <div className="m1-hero-left">
-                    <h1>Trade Indices</h1>
-                    <p>
-Diversify with Index CFDs. All major Indices are available to trade at BlackBull Markets, including the NASDAQ 100, S&P 500, the Dow Jones Industrial Average, and many more.
+            <section className="m-section">
+                <div className="m-content">
+                    <h1 className="m-title">Trade Indices</h1>
+                    <p className="m-description">
+                        Diversify with Index CFDs. All major Indices are available to trade at BlackBull Markets, including the NASDAQ 100, S&P 500, the Dow Jones Industrial Average, and many more.
                     </p>
                 </div>
-                <div className="m1-hero-right">
-                    <img src="phone.png" alt="Trading chart" className="m1-mobile-image" />
+                <div className="m-wrapper">
+                    <img src="mob6.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
+
 
 
 

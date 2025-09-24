@@ -17,7 +17,7 @@ const ComplianceSection = () => {
 
       {/* ================= MT Compliance Content ================= */}
       <div className="mt-compliance-container">
-        <h1 className="mt-compliance-heading">Compliance</h1>
+        <h1 className="mt-compliance-heading">Compliance</h1> 
 
         <div className="mt-compliance-text">
           <p>

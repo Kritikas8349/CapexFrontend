@@ -264,7 +264,7 @@ body {
   .enquiry-title,
   .support-title {
     font-size: 30px;
-    color: #007bff;
+    color: #493ffd;
     margin-bottom: 12px;
   }
   
@@ -301,7 +301,7 @@ body {
   
   /* Submit Button */
   .submit-btn {
-    background: #007bff;
+    background: #493ffd;
     color: #fff;
     border: none;
     padding: 12px;
@@ -330,7 +330,7 @@ body {
     padding: 12px 16px;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    color: #007bff;
+    color: #493ffd;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;

@@ -34,7 +34,7 @@ function Market5() {
             icon: "Frame84155.png",
             isNew: true,
         },
-        
+
     ];
 
     const initialInstruments = [
@@ -43,7 +43,7 @@ function Market5() {
             name: "XAUUSD",
             desc: "Gold vs US-Dollar",
             buy: 3752.41000,
-            sell: 3752.53000, 
+            sell: 3752.53000,
             spread: 1.2,
             change: -0.003
         },
@@ -260,15 +260,16 @@ function Market5() {
         <div id='Main'>
 
 
-            <section className="m1-hero">
-                <div className="m1-hero-left">
-                    <h1>Trade Futures</h1>
-                    <p>
-CFD futures offer the opportunity to trade based on the future price of an asset such as commodities, indices, and currencies. Trade Futures with BlackBull Markets with just a fraction of the capital required to buy the underlying asset.
+            <section className="m-section">
+                <div className="m-content">
+                    <h1 className="m-title">Trade Futures</h1>
+                    <p className="m-description">
+                        CFD futures offer the opportunity to trade based on the future price of an asset such as commodities, indices, and currencies. Trade Futures with BlackBull Markets with just a fraction of the capital required to buy the underlying asset.
+
                     </p>
                 </div>
-                <div className="m1-hero-right">
-                    <img src="phone.png" alt="Trading chart" className="m1-mobile-image" />
+                <div className="m-wrapper">
+                    <img src="mob5.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
 
@@ -332,7 +333,7 @@ CFD futures offer the opportunity to trade based on the future price of an asset
                         onChange={(e) => setSortBy(e.target.value)}
                     >
 
-                        <option  value="" disabled hidden>
+                        <option value="" disabled hidden>
                             Sort By
                         </option>
                         <option value="name-asc">Name A → Z</option>
