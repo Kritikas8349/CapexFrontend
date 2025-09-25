@@ -339,16 +339,16 @@ function QuickStart2()  {
 </div>
 </div>
 
-<div className="payment-container">
-  <h2 className="title">
+<div className="payment-container12">
+  <h2 className="title12">
     Market.Trad <span>Payment Accept</span>
   </h2>
 
-  <div className="payment-grid">
+  <div className="payment-grid12">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
     <img src="mastercard.png" alt="MasterCard" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo"/>
-    <img src="googlepay.png" alt="Google Pay" className="small-logo"/>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo12"/>
+    <img src="googlepay.png" alt="Google Pay" className="small-logo12"/>
     <img src="banktransfer.png" alt="Bank Transfer" />
     <img src="crypto.png" alt="Crypto" />
     <img src="neteller.png" alt="Neteller" />

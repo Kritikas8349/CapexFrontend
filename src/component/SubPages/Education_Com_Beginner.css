@@ -1,0 +1,310 @@
+/* Global Styling */
+/* Global Styling */
+.forex-tutorial {
+   background: linear-gradient(to left, #241ad5, #090552,#000000);
+  color: #fff;
+  
+  height: 750px;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tutorial-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #007aff;
+  padding-bottom: 10px;
+}
+
+/* Grid Layout */
+.tutorial-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* === Left Section (Lesson 1) === */
+.left-section {
+  flex: 1 1 100%;
+   width: 90%;
+  max-width: 750px;
+
+}
+
+.lesson1-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+ 
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.lesson1-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.lesson1-text {
+  margin-top: 15px;
+}
+
+.lesson1-text h3 {
+  margin-bottom: 10px;
+}
+
+/* === Right Section (Lesson 2–4) === */
+.right-section {
+   flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  height: 600px;
+
+}
+
+.lesson-card {
+  display: flex;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #007aff;
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.lesson-card-image {
+  width: 60%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 180px;
+
+}
+
+.lesson-card-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 6px 10px;
+  font-size: 1rem;
+  
+  font-weight: bold;
+}
+
+.lesson-card-text {
+  padding: 15px;
+  flex: 1;
+}
+
+.lesson-card-text h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.lesson-card-text p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* === Responsive Styling === */
+@media (min-width: 768px) {
+  .left-section {
+    flex: 2;
+  }
+
+  .right-section {
+    flex: 1;
+  }
+}
+
+@media (max-width: 767px) {
+
+.forex-tutorial {
+        height:100%;
+    }
+
+  .tutorial-grid {
+    flex-direction: column;
+  }
+
+  .lesson-card {
+    flex-direction: column;
+  }
+
+  .lesson-card-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .lesson-card-overlay {
+    font-size: 0.95rem;
+  }
+
+  .lesson1-image {
+    height: 220px;
+  }
+
+  .lesson1-title {
+    font-size: 1.2rem;
+  }
+
+  .tutorial-heading {
+    font-size: 2rem;
+  }
+}
+
+
+.card-bottom-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 70px;
+    background-color: #fff;
+    /* Use #000 if you're using dark theme */
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-bottom-image {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-bottom-overlay {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.card-bottom-title {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    /* or white if background is dark */
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .card-bottom-image {
+        height: 160px;
+    }
+
+    .card-bottom-overlay {
+        font-size: 1rem;
+    }
+
+    .card-bottom-title {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-bottom-image {
+        width: 200px;
+        margin-right: 100px;
+        height: 150px;
+    }
+
+    .card-bottom-overlay {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .card-bottom-title {
+        font-size: 0.9rem;
+    }
+}
+
+
+.m1-payment-container {
+  max-width: 100%;
+  margin-top: 40px;
+  padding: 30px;
+  background: #e8e7e7;
+  text-align: center;
+}
+
+.m1-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.m1-title span {
+  color: #3b82f6;
+  /* blue */
+}
+
+.m1-payment-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 0;
+  padding-left: 80px;
+}
+
+.m1-payment-grid img {
+  max-width: 100px;
+  max-height: 50px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.m1-payment-grid img:hover {
+  transform: scale(1.05);
+}
+
+.m1-small-logo {
+  max-height: 35px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .m1-title {
+    font-size: 1.3rem;
+  }
+
+  .m1-payment-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* mobile me 2-2 icon ek line me */
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .m1-payment-grid img {
+    max-width: 90px;
+    max-height: 40px;
+  }
+}
