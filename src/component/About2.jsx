@@ -24,7 +24,7 @@ import React, { useState } from 'react';
 
     return (
       <div className="about2-container">
-      {/* 🔵 Top Bar */}
+      {/* 🔵 Top Bar
       <div className="top-bar">
     <div className="top-left">Welcome to Market.trad</div>
 
@@ -52,12 +52,12 @@ import React, { useState } from 'react';
   </div>
 
   {/* 🔳 Navbar */}
-  <nav className="navbar">
+  {/* <nav className="navbar">
     <div className="navbar-left">
       <img src="logo.png" alt="Logo" className="navbar-logo" />
     </div>
 
-    {/* Hide center+right in mobile */}
+   
     <div className="navbar-center">
       <ul className="nav-links">
         <li>Quick Start</li>
@@ -75,7 +75,7 @@ import React, { useState } from 'react';
       <button className="join-btn2">Join Now</button>
     </div>
 
-    {/* 🍔 Hamburger */}
+   
     <div
       className="hamburger-menu"
       onClick={() =>
@@ -84,10 +84,10 @@ import React, { useState } from 'react';
     >
       ☰
     </div>
-  </nav>
+  </nav> */}
 
-  {/* 📂 Fullscreen Overlay Menu */}
-  <div className="hamburger-overlay">
+  
+  {/* <div className="hamburger-overlay">
     <div
       className="close-btn"
       onClick={() =>
@@ -95,9 +95,9 @@ import React, { useState } from 'react';
       }
     >
       ✖
-    </div>
+    </div> */}
 
-    <ul className="overlay-links">
+    {/* <ul className="overlay-links">
       <li>Quick Start</li>
       <li>Markets</li>
       <li>Platform</li>
@@ -107,16 +107,16 @@ import React, { useState } from 'react';
       <li><a href="#" className="refer-link">Refer a friends</a></li>
       <li><button className="login-btn">Log In</button></li>
       <li><button className="join-btn2">Join Now</button></li>
-    </ul>
+    </ul> */}
 
-    {/* ✅ Extra Row */}
-    <div className="overlay-bottom-row">
+   
+    {/* <div className="overlay-bottom-row">
       <span>Personal</span>
       <span>Partners</span>
       <span>Research</span>
       <span>Academy</span>
     </div>
-  </div>
+  </div>  */}
 
     
 
