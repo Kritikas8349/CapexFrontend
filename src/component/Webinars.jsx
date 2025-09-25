@@ -32,7 +32,7 @@ function Webinars() {
     <div className="bg-light py-5">
       <div className="container">
         <div className="text-center mb-5">
-          <h1 className="fw-bold text-primary mb-3 display-4">Past Webinars</h1>
+          <h1 className="fw-bold text-heading mb-3 display-4">Past Webinars</h1>
           <p className="lead text-dark d-flex align-items-center justify-content-center">
             Watch all of our past webinars on YouTube
             <i className="bi bi-youtube fs-3 text-danger ms-2"></i>

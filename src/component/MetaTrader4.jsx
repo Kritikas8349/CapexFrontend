@@ -6,16 +6,16 @@ function MetaTrader4() {
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to left, #4028E9, #000000);}            
+                         background: linear-gradient(to bottom, #4028E9, #000000);}            
                     `
                 }
 
             </style>
             <div className="container-fluid bg-black text-white py-5 trading-view">
-                <div className="container">
+                <div className="container py-5">
                     <div className="row align-items-center">
                         {/* Left Section */}
-                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                        <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 MetaTrader 4 (MT4){" "}
                                 <span className="text-primary"></span>
@@ -96,11 +96,11 @@ function MetaTrader4() {
             {/* ----------- WHy choose CTrader ----------- */}
 
             <div className="container-fluid bg-light text-black py-5">
-                <div className="container">
+                <div className="container py-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
                             <h1 className="fw-bold">Why choose MT4 with<br />
                                 BlackBull Markets?</h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
@@ -108,7 +108,7 @@ function MetaTrader4() {
                             </p>
 
                             {/* Feature List */}
-                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
+                            <div className="d-flex align-items-start text-start mb-4 justify-content-center justify-content-md-start">
                                 <i className="bi bi-bar-chart fs-1 text-primary me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">1:500 Leverage</p>
@@ -157,7 +157,7 @@ function MetaTrader4() {
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
                                 How to trade on <span className='text-primary '> MT4 &nbsp;</span><br/>
                                 with BlackBull Markets
@@ -276,7 +276,7 @@ function MetaTrader4() {
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-primary-emphasis">
                                 Why Market Trad ?
                             </h1>
@@ -395,7 +395,7 @@ function MetaTrader4() {
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
                             <h1 className="fw-bold">How to copy trade on
                                 cTrader?</h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">

@@ -23,7 +23,7 @@ html {
 .m-hero-container5 {
    position: relative;
   width: 100%;
-   /* background: linear-gradient(to bottom right, #241ad5, #090552,#000000); */
+   background: linear-gradient(to bottom right, #241ad5, #090552,#000000);
   min-height: 90vh;
   display: flex;
   flex-direction: column;

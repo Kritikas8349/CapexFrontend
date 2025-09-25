@@ -1412,7 +1412,7 @@ body {
   }
 
 
-  .payment-container {
+  .payment-container12 {
     max-width: 1500px;
     margin: 30px auto;
     padding: 20px;
@@ -1422,19 +1422,19 @@ body {
     text-align: center;
   }
   
-  .title {
+  .title12 {
     font-size: 2.3rem;
     font-weight: bold;
     margin-bottom: 25px;
     color: #222;
   }
   
-  .title span {
+  .title12 span {
     color: #3b82f6; 
   }
 
   
-  .payment-grid {
+  .payment-grid12 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 70px;
@@ -1443,31 +1443,31 @@ body {
     padding-top: 20px;
   }
   
-  .payment-grid img {
+  .payment-grid12 img {
     max-width: 120px;
     max-height: 50px;
     object-fit: contain;
     transition: transform 0.2s ease;
   }
   
-  .payment-grid img:hover {
+  .payment-grid12 img:hover {
     transform: scale(1.05);
   }
   
-  .small-logo {
+  .small-logo12 {
     max-height: 35px;
   }
   
   /* Responsive */
   @media (max-width: 768px) {
-    .title {
+    .title12 {
       font-size: 1.3rem;
     }
-    .payment-grid {
+    .payment-grid12 {
       grid-template-columns: repeat(2, 1fr); /* mobile me 2-2 icon ek line me */
       gap: 15px;
     }
-    .payment-grid img {
+    .payment-grid12 img {
       max-width: 90px;
       max-height: 40px;
     }
