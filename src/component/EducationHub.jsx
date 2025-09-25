@@ -144,7 +144,7 @@ function EducationHub() {
                 <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                   Learn to trade forex, crypto, commodities, and shares, with our trading tutorials. Explore trading videos, podcasts, webinars, and market analysis.
                 </h6>
-                <button className="btn btn-primary btn-lg fw-bold">Demo Trade</button> {/* btn-lg for a larger button */}
+                <button className="btn btn-bg-start text-white btn-lg fw-bold">Demo Trade</button> {/* btn-lg for a larger button */}
               </div>
             </div>
           </div>
@@ -154,7 +154,7 @@ function EducationHub() {
       {/* ----------For Learn Trad--------------------- */}
       <div className='bg-light py-5'>
         <div className="container">
-          <h1 className='text-primary fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
+          <h1 className='text-heading fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
           <div className='row justify-content-center'>
             {cardsData.map((card, index) => (
               <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
@@ -177,7 +177,7 @@ function EducationHub() {
       {/* -------For Trading Platform------------------ */}
       <section className="bg-white py-5">
         <div className="container">
-          <h1 className="text-center fw-bold mb-5 display-4  text-primary">Trading Platforms</h1>
+          <h1 className="text-center fw-bold mb-5 display-4  text-heading">Trading Platforms</h1>
 
           <div className="row g-4">
             {platforms.map((platform, index) => (
@@ -204,7 +204,7 @@ function EducationHub() {
 
                   <p className="text-dark">{platform.desc}</p>
 
-                  <button className="btn btn-primary bg-opacity-10 text-white fw-semibold">
+                  <button className="btn btn-bg-start bg-opacity-10 text-white fw-semibold">
                     Learn More
                   </button>
                 </div>
@@ -219,7 +219,7 @@ function EducationHub() {
       <div className="bg-light py-5">
         <div className="container">
           <div className="text-center mb-5">
-            <h1 className="fw-bold text-primary mb-3 display-4">Trading Video Tutorials</h1>
+            <h1 className="fw-bold text-heading mb-3 display-4">Trading Video Tutorials</h1>
             <p className="lead text-dark d-flex align-items-center justify-content-center">
               Watch and learn with 3000+ videos on YouTube
               <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
@@ -258,7 +258,7 @@ function EducationHub() {
               </div>
             ))}
             <div className="col-12 text-center mt-4">
-              <button className="btn btn-primary text-white px-4 py-2">View More Videos</button>
+              <button className="btn btn-bg-start text-white px-4 py-2">View More Videos</button>
             </div>
           </div>
         </div>
@@ -268,7 +268,7 @@ function EducationHub() {
       {/* ----------For Trading Opportu..------------ */}
       <div className="container  py-5">
         {/* Heading */}
-        <h2 className="fw-bold text-primary display-5 mb-4">Trading Opportunities</h2>
+        <h2 className="fw-bold text-heading display-5 mb-4">Trading Opportunities</h2>
 
         {/* Row of Posts */}
         <div className="row g-4">
@@ -287,8 +287,8 @@ function EducationHub() {
                 <div className="card-body px-0">
                   <h5 className="fw-bold">{post.title}</h5>
                   <div className="d-flex justify-content-between align-items-center mt-2">
-                    <small className=" text-primary">{post.date}</small>
-                    <a href={post.link} className="text-primary px-4 text-decoration-none fw-semibold">
+                    <small className=" text-heading">{post.date}</small>
+                    <a href={post.link} className="text-heading px-4 text-decoration-none fw-semibold">
                       VIEW POST
                     </a>
                   </div>
@@ -300,7 +300,7 @@ function EducationHub() {
 
         {/* View More Button */}
         <div className="text-center mt-4">
-          <button className="btn btn-primary   fs-6 fw-semibold">View More</button>
+          <button className="btn btn-bg-start text-white   fs-6 fw-semibold">View More</button>
         </div>
       </div>
 
@@ -310,7 +310,7 @@ function EducationHub() {
       <div className="bg-light py-5">
         <div className="container">
           <div className="text-center mb-5">
-            <h1 className="fw-bold text-primary mb-3 display-4">Past Webinars</h1>
+            <h1 className="fw-bold text-heading mb-3 display-4">Past Webinars</h1>
             <p className="lead text-dark d-flex align-items-center justify-content-center">
               Watch all of our past webinars on YouTube
               <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
@@ -368,7 +368,7 @@ function EducationHub() {
 
           {/* Text and Button Column */}
           <div className="col-lg-6">
-            <h2 className="display-4 fw-bold text-primary mb-4">
+            <h2 className="display-4 fw-bold text-heading mb-4">
               Discover Our Daily Trading Analysis Podcast
             </h2>
             <p className="lead mb-4">
@@ -380,7 +380,7 @@ function EducationHub() {
             </p>
             <a
               href="https://spotify.com" // Replace with your Spotify podcast link
-              className="btn btn-success btn-lg d-inline-flex align-items-center"
+              className="btn btn-bg-start text-white btn-lg d-inline-flex align-items-center"
               target="_blank"
               rel="noopener noreferrer"
             >
