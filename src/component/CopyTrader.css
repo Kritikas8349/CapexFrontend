@@ -1,0 +1,15 @@
+.gradient-bg {
+  background: linear-gradient(135deg, #3067ce, #2954a9);
+  color: white;
+  padding: 4rem;
+}
+
+/* Small screens (flipped gradient: white on top, blue bottom) */
+@media (max-width: 768px) {
+  .gradient-bg {
+    background: linear-gradient(to top,#0058ff 30%, white 70%, );
+    color: black;
+    text-align: left;
+    padding: 2rem 1.5rem;
+  }
+}

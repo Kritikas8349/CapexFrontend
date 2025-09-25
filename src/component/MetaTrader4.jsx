@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CTrader() {
+function MetaTrader4() {
     return (
         <div>
             <style>
@@ -14,35 +14,28 @@ function CTrader() {
             <div className="container-fluid bg-black text-white py-5 trading-view">
                 <div className="container">
                     <div className="row align-items-center">
-
-                        {/* LEFT SECTION */}
-                        <div className="col-lg-6 text-start mb-4 mb-lg-0">
+                        {/* Left Section */}
+                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
-                                cTrader <br />
-                                <span className="text-primary">With Market Trad</span>
+                                MetaTrader 4 (MT4){" "}
+                                <span className="text-primary"></span>
+                                <br />
+                                with BlackBull Markets
                             </h1>
-                            <p className="fs-4 mt-3 text-white fw-semibold">
-                                Access cTrader with no minimum deposit.
+                            <p className="fs-2 mt-3 text-white fw-bold">
+                                Access MetaTrader 4 <br />with no minimum deposit.
                             </p>
 
-                            {/* Email Input & Button */}
-                            <div className="row g-3 mt-4">
-                                <div className="col-12 col-md-8">
-                                    <input
-                                        type="email"
-                                        className="form-control form-control-lg"
-                                        placeholder="Email address"
-                                    />
-                                </div>
-                                <div className="col-12 col-md-4">
-                                    <button className="btn btn-success w-100 fw-bold py-2 py-md-3">
-                                        Join Now
-                                    </button>
-                                </div>
+                            {/* Buttons */}
+                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
+                                <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
+                                <button className="btn btn-success px-4 py-2 fw-bold">
+                                    Join Now
+                                </button>
                             </div>
                         </div>
 
-                        {/* RIGHT SECTION */}
+                        {/* Right Section */}
                         <div className="col-lg-6 text-center">
                             <img
                                 src="/leptop1.webp"
@@ -53,8 +46,9 @@ function CTrader() {
                         </div>
                     </div>
 
-                    {/* STORE BUTTONS */}
+                    {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
+                        {/* TradingView Button */}
                         <a href="#" className="btn btn-dark d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
@@ -64,45 +58,57 @@ function CTrader() {
                             GET IT FOR WEB
                         </a>
 
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
-                            <img src="/microsoft.svg" alt="Microsoft Store" style={{ height: "35px" }} />
+                        {/* Other Store Logos */}
+                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                            <img
+                                src="/microsoft.svg"
+                                alt="Microsoft Store"
+                                style={{ height: "35px" }}
+                            />
+                        </a>
+
+                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                            <img
+                                src="/Mac.webp"
+                                alt="Mac App Store"
+                                style={{ height: "35px" }}
+                            />
+                        </a>
+
+                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                            <img
+                                src="/Google-Play (1).svg"
+                                alt="Google Play"
+                                style={{ height: "35px" }}
+                            />
                         </a>
 
                         <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
-                            <img src="/Mac.webp" alt="Mac App Store" style={{ height: "35px" }} />
-                        </a>
-
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
-                            <img src="/Google-Play (1).svg" alt="Google Play" style={{ height: "35px" }} />
-                        </a>
-
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
-                            <img src="/Mac.webp" alt="App Store" style={{ height: "35px" }} />
+                            <img
+                                src="/Mac.webp"
+                                alt="App Store"
+                                style={{ height: "35px" }}
+                            />
                         </a>
                     </div>
                 </div>
             </div>
-
-
             {/* ----------- WHy choose CTrader ----------- */}
 
             <div className="container-fluid bg-light text-black py-5">
                 <div className="container">
-                    <div className="row align-items-center g-5">
+                    <div className="row align-items-center  g-5">
 
-                        {/* LEFT SECTION */}
-                        <div className="col-12 col-lg-6 text-start">
-                            <h1 className="fw-bold">Why Market Trad</h1>
-                            <p className="text-secondary mt-3 fs-6 fs-md-5 pb-3 border-bottom">
-                                BlackBull Markets is a multi-regulated broker headquartered in
-                                Auckland, New Zealand, providing an institutional trading experience
-                                globally. Our mission is to provide traders with a superior trading
-                                experience through innovative technology like TradingView, and
-                                exceptional customer service.
+                        {/* Left Section */}
+                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                            <h1 className="fw-bold">Why choose MT4 with<br />
+                                BlackBull Markets?</h1>
+                            <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
+                                Access MetaTrader 4 on desktop, web, or mobile app, and harness its powerful suite of technical analysis tools, fundamental data feeds, and Expert Advisor (EA) integrations.
                             </p>
 
                             {/* Feature List */}
-                            <div className="d-flex align-items-start mb-4 justify-content-start">
+                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
                                 <i className="bi bi-bar-chart fs-1 text-primary me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">1:500 Leverage</p>
@@ -112,7 +118,7 @@ function CTrader() {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-start mb-4 justify-content-start">
+                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
                                 <i className="bi bi-currency-exchange fs-1 text-primary me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Low Spreads</p>
@@ -122,7 +128,7 @@ function CTrader() {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-start mb-4 justify-content-start">
+                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
                                 <i className="bi bi-shield-lock fs-1 text-primary me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Secure Trading</p>
@@ -133,28 +139,27 @@ function CTrader() {
                             </div>
                         </div>
 
-                        {/* RIGHT SECTION */}
-                        <div className="col-12 col-lg-6 text-center">
+                        {/* Right Section */}
+                        <div className="col-12 col-lg-6  text-center ">
                             <img
                                 src="/leptop1.webp"
                                 alt="TradingView Chart"
-                                className="img-fluid w-100 mt-4 mt-lg-0"
-                                style={{ objectFit: "contain" }}
+                                className="img-fluid mt-4 mt-lg-0"
+                                style={{ maxHeight: "500px", objectFit: "contain" }}
                             />
                         </div>
 
                     </div>
                 </div>
             </div>
-
             {/* -------How to Trade--------- */}
             <div className="container-fluid bg-light align-content-center border " style={{ height: '80vh' }}>
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
                             <h1 className="fw-bold">
-                                How to trade on <span className='text-primary '> cTrader &nbsp;</span>
+                                How to trade on <span className='text-primary '> MT4 &nbsp;</span><br/>
                                 with BlackBull Markets
                             </h1>
                             <p className="text-secondary mt-3 fs-5">
@@ -187,9 +192,9 @@ function CTrader() {
 
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 ">
-                                <div className="mb-3">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                                <div className="mb-3 ">
                                     <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
@@ -199,10 +204,9 @@ function CTrader() {
                             </div>
                         </div>
 
-
                         {/* Commodities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100  ">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
                                     <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
@@ -267,13 +271,12 @@ function CTrader() {
                     </div>
                 </div>
             </div>
-
             {/* --------Why Market Trad Markets?-------- */}
             <div className="container-fluid bg-light align-content-center border " style={{ height: '80vh' }}>
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
                             <h1 className="fw-bold text-primary-emphasis">
                                 Why Market Trad ?
                             </h1>
@@ -392,7 +395,7 @@ function CTrader() {
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
                             <h1 className="fw-bold">How to copy trade on
                                 cTrader?</h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
@@ -451,12 +454,11 @@ function CTrader() {
                     <div className="row align-items-center">
                         {/* Left Section */}
                         <div className="col-12 text-start mb-4">
-                            <h1 className="fw-bold display-5">Download cTrader</h1>
+                            <h1 className="fw-bold display-5">Download MetaTrader 4 (MT4)</h1>
                             <p className="fs-5 mt-3 text-white">
-                                Click on the appropriate link for your device to download cTrader.<br />
-                                Windows, macOS, Android, and iOS users can download and run the
-                                installer as normal. Linux users should use cTrader Web to access the
-                                platform.
+                                Click on the appropriate link for your device to download MetaTrader 4 (MT4).
+
+Windows, Android, and iOS users can download and run the installer as normal. Mac users can find a guide for installing the platform here.
                             </p>
                         </div>
                     </div>
@@ -539,7 +541,7 @@ function CTrader() {
                                     data-bs-target="#faqCollapseOne"
                                     aria-expanded="true"
                                     aria-controls="faqCollapseOne">
-                                    What is cTrader?
+                                    Is there a minimum deposit to open a MetaTrader 4 (MT4) account?
                                 </button>
                             </h2>
                             <div
@@ -562,7 +564,7 @@ function CTrader() {
                                     data-bs-target="#faqCollapseTwo"
                                     aria-expanded="false"
                                     aria-controls="faqCollapseTwo">
-                                    How do I download cTrader?
+                                    Can you trade on MetaTrader 4 (MT4) on mobile?
                                 </button>
                             </h2>
                             <div
@@ -586,7 +588,7 @@ function CTrader() {
                                     data-bs-target="#faqCollapseThree"
                                     aria-expanded="false"
                                     aria-controls="faqCollapseThree">
-                                    Can I use cTrader on Linux?
+                                    Does MetaTrader 4 (MT4) allow algo trading?
                                 </button>
                             </h2>
                             <div
@@ -610,4 +612,4 @@ function CTrader() {
     )
 }
 
-export default CTrader
+export default MetaTrader4

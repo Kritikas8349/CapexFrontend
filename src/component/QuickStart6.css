@@ -240,13 +240,15 @@ html {
     .payment-grid {
         display: flex;
         flex-direction: column;
-        align-items: center;        /* ✅ Ultra small me bhi center aligned */
+        align-items: center;
+        /* ✅ Ultra small me bhi center aligned */
     }
 
     .payment-card {
         padding: 15px;
-        width: 95%; 
-        max-width: 280px;           /* ✅ Fix chhoti width */
+        width: 95%;
+        max-width: 280px;
+        /* ✅ Fix chhoti width */
     }
 
     .payment-card h3 {

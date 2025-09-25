@@ -45,24 +45,24 @@ function QuickStart3() {
     <div id='Main' >
 
 
-      <section className="landing-section">
-        <div className="left-section">
-          <h1 className="title">Integrated <br /> Trading Platforms</h1>
-          <p className="description">
+      <section className="landing-section3">
+        <div className="left-section3">
+          <h1 className="title3">Integrated <br /> Trading Platforms</h1>
+          <p className="description3">
             Explore our range of leading trading platforms including <br /> MetaTrader 4, MetaTrader 5, cTrader, and TradingView.
           </p>
-          <form className="email-form">
+          <form className="email-form3">
             <input
               type="email"
-              className="email-input"
+              className="email-input3"
               placeholder="Email address"
               required
             />
             <button type="submit" className="join-btn">  Join Now</button>
           </form>
         </div>
-        <div className="right-section">
-          <img src="1.png" alt="Phone" className="phone-image" />
+        <div className="right-section3">
+          <img src="1.png" alt="Phone" className="phone-image3" />
         </div>
       </section>
 

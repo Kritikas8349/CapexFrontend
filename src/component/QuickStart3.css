@@ -12,39 +12,40 @@ html {
 
 }
 
-.landing-section {
+.landing-section3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70vh;
-  padding: 0 20px;
+  padding: 40px 20px;
   /* background-image: url('https://via.placeholder.com/1200x800');  */
-  background:#fff;
+  background: linear-gradient(to bottom right, #000000, #493ffd);
+  margin-top: 30px;
   color: #fff;
   background-size: cover;
   background-position: center;
 }
 
-.left-section {
+.left-section3 {
   width: 50%;
   color: white;
   text-align: left;
   padding-left: 20px;
 }
 
-.title {
+.title3 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.description {
+.description3 {
   font-size: 1.2rem;
   margin-bottom: 30px;
   color:gray;
 }
 
-.email-form {
+.email-form3 {
   display: flex;
   gap: 10px;
   /* border: 1px solid black; */
@@ -52,7 +53,7 @@ html {
   
 }
 
-.email-input {
+.email-input3 {
   /* padding: 10px; */
   font-size: 1rem;
   border-radius: 5px;
@@ -61,7 +62,7 @@ html {
   width: 250px;
 }
 
-.join-btn {
+.join-btn3 {
   padding: 10px 20px;
   background-color: #00b15e;
   color: white;
@@ -70,18 +71,18 @@ html {
   cursor: pointer;
 }
 
-.join-btn:hover {
+.join-btn3:hover {
   background-color: #381bdc;
 }
 
-.right-section {
+.right-section3 {
   width: 50%;
   display: flex;
   height: 500px;
   justify-content: center;
 }
 
-.phone-image {
+.phone-image3 {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -90,53 +91,59 @@ html {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .landing-section {
+  .landing-section3 {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
 
-  .left-section, .right-section {
+  .left-section3, .right-section3 {
     width: 100%;
   }
 
-  .title {
+  .title3 {
     font-size: 2.5rem;
   }
 
-  .description {
+  .description3 {
     font-size: 1rem;
   }
 
-  .email-form {
+  .email-form3 {
     flex-direction: column;
     gap: 15px;
   }
 
-  .email-input, .join-btn {
+  .email-input3, .join-btn3 {
     width: 100%;
     max-width: 300px;
   }
 }
 
 @media (max-width: 600px) {
-  .title {
+
+
+  .landing-section3{
+    height: 80%;
+  }
+
+  .title3 {
     font-size: 2rem;
   }
 
-  .description {
+  .description3 {
     font-size: 0.9rem;
   }
 
-  .email-input {
+  .email-input3 {
     font-size: 0.9rem;
   }
 
-  .join-btn {
+  .join-btn3 {
     font-size: 0.9rem;
   }
 
-  .phone-image {
+  .phone-image3 {
     max-width: 300px;
   }
 }
@@ -362,10 +369,10 @@ html {
     .payment-grid img {
         max-width: 90px;
         max-height: 40px;
-
-
+       
     }
 }
+
 
 .hero {
     position: relative;

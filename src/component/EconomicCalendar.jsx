@@ -208,31 +208,31 @@ const EconomicCalendar = () => {
           </div>
 
           <div class="trading-banner">
-  <div class="banner-wrapper">
-    <div class="banner-left">
-      <img src="logo2.png" alt="Market.trad Logo" class="banner-logo"/>
-      <h1 class="banner-title">Transform Market.trad Insights into Smarter Trading</h1>
-      <p class="banner-subtitle">Leverage Market.trad’s advanced tools to expand your portfolio, access competitive spreads, and execute trades with unmatched speed—built for serious traders like you</p>
-      <div class="banner-buttons">
-        <button class="btn-live">Open Live Account →</button>
-        <button class="btn-demo">Try Demo Account</button>
-      </div>
-    </div>
-    <div class="banner-right">
-      <div class="info-panel">
-        <p><span class="panel-label">Live Spreads</span> <span class="panel-value green-text">From 0.0 pips</span></p>
-        <p><span class="panel-label">Execution</span> <span class="panel-value blue-text">&lt;12ms avg</span></p>
-        <p><span class="panel-label">Leverage</span> <span class="panel-value">Up to 1:500</span></p>
-        <p class="market-status"><span class="status-dot green-dot"></span> Markets Open - Ready to Trade</p>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="banner-wrapper">
+              <div class="banner-left">
+                <img src="logo2.png" alt="Market.trad Logo" class="banner-logo" />
+                <h1 class="banner-title">Transform Market.trad Insights into Smarter Trading</h1>
+                <p class="banner-subtitle">Leverage Market.trad’s advanced tools to expand your portfolio, access competitive spreads, and execute trades with unmatched speed—built for serious traders like you</p>
+                <div class="banner-buttons">
+                  <button class="btn-live">Open Live Account →</button>
+                  <button class="btn-demo">Try Demo Account</button>
+                </div>
+              </div>
+              <div class="banner-right">
+                <div class="info-panel">
+                  <p><span class="panel-label">Live Spreads</span> <span class="panel-value green-text">From 0.0 pips</span></p>
+                  <p><span class="panel-label">Execution</span> <span class="panel-value blue-text">&lt;12ms avg</span></p>
+                  <p><span class="panel-label">Leverage</span> <span class="panel-value">Up to 1:500</span></p>
+                  <p class="market-status"><span class="status-dot green-dot"></span> Markets Open - Ready to Trade</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
         </div>
 
-                
+
 
       </div>
     </>
