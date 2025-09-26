@@ -1,0 +1,320 @@
+.fund-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    min-height: 100vh;
+    flex-wrap: wrap; 
+}
+
+/* Sidebar */
+.fund-sidebar {
+    width: 440px;
+    border-right: 1px solid #eee;
+    padding: 80px 0 20px 0; 
+    height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.fund-sidebar-item {
+    margin-bottom: 10px;
+}
+
+.fund-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.fund-sidebar-header:hover {
+    background: #f5f5f5;
+}
+
+.fund-sidebar-header.active {
+    background: #eef4ff;
+    font-weight: bold;
+}
+
+.fund-sidebar-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.fund-title {
+    flex: 1;
+}
+
+.fund-count {
+    background: #493ffd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 36px;      
+    height: 36px;    
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.fund-dropdown {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.fund-dropdown p {
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+.fund-dropdown p:hover {
+    text-decoration: underline;
+    color: #493ffd;
+}
+
+/* Content */
+.fund-content {
+    flex: 1;
+    padding: 40px 80px;
+    max-width: 1250px;
+    margin-left: 60px;
+    position: relative;
+}
+
+/* Breadcrumbs */
+.fund-breadcrumbs {
+    position: relative;   /* ✅ no overlap */
+    top: 30px;
+    margin-bottom: 20px;  /* space between breadcrumbs & heading */
+    font-size: 18px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Segoe UI", sans-serif;
+    flex-wrap: wrap;
+}
+
+.fund-breadcrumbs span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.fund-breadcrumbs span:hover {
+    color: #493ffd;
+}
+
+.fund-breadcrumbs .separator {
+    color: #999;
+}
+
+.fund-breadcrumbs .current {
+    color: #000;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Title */
+.fund-content h1 {
+    font-size: 46px;
+    margin-top: 80px;   /* ✅ reduced so it sits well below breadcrumbs */
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+/* Video Section */
+.fund-video-section {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    background: #fff;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.fund-video-thumbnail {
+    background: #000;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.fund-video-thumbnail iframe {
+    background: #333;
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 100%;      
+    max-width: 1000px; 
+    height: 420px;     
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .fund-page {
+        flex-wrap: wrap;
+    }
+
+    .fund-sidebar {
+        width: 340px;
+        height: auto;
+    }
+
+    .fund-content {
+        padding: 30px 40px;
+        margin-left: 0;
+    }
+
+    .fund-video-thumbnail iframe {
+        max-width: 100%;
+        height: 360px;
+    }
+}
+
+/* Mobile (width < 768px) */
+@media (max-width: 768px) {
+    .fund-page {
+        flex-direction: column;
+    }
+
+    .fund-sidebar {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .fund-content {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .fund-breadcrumbs {
+        font-size: 14px;
+        position: relative;
+        top: auto;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .fund-video-thumbnail iframe {
+        height: 240px;
+    }
+}
+
+/* Small Phones (width < 480px) */
+@media (max-width: 480px) {
+    .fund-breadcrumbs {
+        font-size: 12px;
+        gap: 4px;
+        position: relative;
+        top: auto;
+        margin-bottom: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 8px;
+    }
+
+    .fund-sidebar-header {
+        font-size: 14px;
+    }
+
+    .fund-video-thumbnail iframe {
+        height: 200px;
+    }
+}
+
+/* Steps Section */
+.fund-steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.fund-step h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.fund-step p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.fund-step span {
+    color: #493ffd;
+}
+
+.fund-step-image {
+    width: 100%;
+    max-width: 768px;
+    height: 432px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #000;
+}
+
+/* Steps Responsive */
+@media (max-width: 1024px) {
+    .fund-step h3 {
+        font-size: 22px;
+    }
+
+    .fund-step p {
+        font-size: 15px;
+    }
+
+    .fund-step-image {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .fund-steps-container {
+        padding: 0 15px;
+    }
+
+    .fund-step h3 {
+        font-size: 20px;
+    }
+
+    .fund-step p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fund-step h3 {
+        font-size: 18px;
+    }
+
+    .fund-step p {
+        font-size: 13px;
+    }
+}

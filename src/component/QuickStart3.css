@@ -20,7 +20,7 @@ html {
   padding: 40px 20px;
   /* background-image: url('https://via.placeholder.com/1200x800');  */
   background: linear-gradient(to bottom right, #000000, #493ffd);
-  margin-top: 30px;
+  /* margin-top: 30px; */
   color: #fff;
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@ html {
 
 .email-form3 {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   /* border: 1px solid black; */
   padding:5px;
   
@@ -64,11 +64,12 @@ html {
 
 .join-btn3 {
   padding: 10px 20px;
-  background-color: #00b15e;
+  background-color: #2900b1;
   color: white;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  min-width: 200px;
 }
 
 .join-btn3:hover {
@@ -436,7 +437,7 @@ html {
 }
 
 .join-btn:hover {
-    background: #00b85b;
+    background: #011548;
 }
 
 .awards {

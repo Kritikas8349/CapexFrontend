@@ -1,0 +1,303 @@
+.firsttrade-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.firsttrade-sidebar {
+    width: 440px;
+    border-right: 1px solid #eee;
+    padding: 120px 0 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.firsttrade-sidebar-item {
+    margin-bottom: 10px;
+}
+
+.firsttrade-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.firsttrade-sidebar-header:hover {
+    background: #f5f5f5;
+}
+
+.firsttrade-sidebar-header.active {
+    background: #eef4ff;
+    font-weight: bold;
+}
+
+.firsttrade-sidebar-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.firsttrade-title {
+    flex: 1;
+}
+
+.firsttrade-count {
+    background: #493ffd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firsttrade-dropdown {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.firsttrade-dropdown p {
+    margin: 4px 0;
+    cursor: pointer;
+}
+
+.firsttrade-dropdown p:hover {
+    text-decoration: underline;
+    color: #493ffd;
+}
+
+.firsttrade-content {
+    flex: 1;
+    padding: 140px 80px 40px 80px; 
+    max-width: 1250px;
+    margin-left: 60px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.firsttrade-breadcrumbs {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #666;
+    gap: 6px;
+    font-family: "Segoe UI", sans-serif;
+    flex-wrap: wrap;
+}
+
+.firsttrade-breadcrumbs span {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.firsttrade-breadcrumbs span:hover {
+    color: #493ffd;
+}
+
+.firsttrade-breadcrumbs .separator {
+    color: #999;
+}
+
+.firsttrade-breadcrumbs .current {
+    color: #000;
+    font-weight: bold;
+    cursor: default;
+}
+
+h1 {
+    font-size: 46px;
+    margin: 20px 0;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+/* Video Section */
+.firsttrade-video-section {
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    background: #fff;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.firsttrade-video-thumbnail {
+    background: #000;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.firsttrade-video-thumbnail iframe {
+    background: #333;
+    border-radius: 6px;
+    width: 100%;
+    height: 420px;
+}
+
+.firsttrade-steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.firsttrade-step h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+    word-break: break-word;
+}
+
+.firsttrade-step p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.firsttrade-step span {
+    color: #493ffd;
+}
+
+.firsttrade-step-image {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #000;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .firsttrade-sidebar {
+        width: 300px;
+        height: auto;
+        padding: 60px 0 20px 0;
+    }
+
+    .firsttrade-content {
+        padding: 30px 40px;
+        margin-left: 0;
+        padding-top: 80px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .firsttrade-breadcrumbs {
+        font-size: 16px;
+    }
+
+    .firsttrade-video-thumbnail iframe {
+        height: 320px;
+    }
+
+    .firsttrade-step h3 {
+        font-size: 22px;
+    }
+
+    .firsttrade-step p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .firsttrade-page {
+        flex-direction: column;
+    }
+
+    .firsttrade-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 20px 0;
+    }
+
+    .firsttrade-content {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .firsttrade-breadcrumbs {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .firsttrade-video-thumbnail iframe {
+        height: 240px;
+    }
+
+    .firsttrade-step h3 {
+        font-size: 20px;
+    }
+
+    .firsttrade-step p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 8px;
+    }
+
+    .firsttrade-breadcrumbs {
+        font-size: 12px;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .firsttrade-sidebar-header {
+        font-size: 14px;
+    }
+
+    .firsttrade-video-thumbnail iframe {
+        height: 200px;
+    }
+
+    .firsttrade-step h3 {
+        font-size: 18px;
+    }
+
+    .firsttrade-step p {
+        font-size: 13px;
+    }
+
+    .firsttrade-steps-container {
+        margin-top: 30px; 
+    }
+}

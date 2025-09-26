@@ -1,261 +1,255 @@
-/* === Global Styling === */
+/* === INTERMEDIATE TUTORIAL === */
 .intermediate-tutorial {
-    background: linear-gradient(to left, #241ab5, #090552, #000000);
-    color: #fff;
-    padding: 20px;
-    font-family: 'Segoe UI', sans-serif;
-    max-width: 95%;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-sizing: border-box;
-  
-    /* make height auto for responsiveness */
-    height: auto;
-    min-height: 750px; /* keeps desktop size */
-  }
-  
-  /* Heading */
-  .intermediate-tutorial-heading {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
-  }
-  
-  /* Grid Layout */
-  .intermediate-tutorial-grid {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-  /* Left Section */
+  background: linear-gradient(to left, #000000, #090552,#000000);
+  color: #fff;
+  padding: 10px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 95%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.intermediate-tutorial-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+}
+
+.intermediate-tutorial-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.intermediate-left-section {
+  flex: 2 1 400px;
+  max-width: 750px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.intermediate-lesson1-image,
+.intermediate-lesson1-extra-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.intermediate-lesson1-title,
+.intermediate-lesson1-extra-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.intermediate-lesson1-text,
+.intermediate-lesson1-extra-text {
+  margin-top: 15px;
+}
+
+.intermediate-lesson1-text h3,
+.intermediate-lesson1-extra-text h3 {
+  margin-bottom: 10px;
+}
+
+.intermediate-lesson1-text p,
+.intermediate-lesson1-extra-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.intermediate-right-section,
+.intermediate-right-extra {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: start;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.intermediate-right-extra {
+  width: 70%;
+  max-width: 350px;
+  margin: 20px 0 20px 40px;
+}
+
+.intermediate-lesson-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border-bottom: 2px solid #fff;
+  align-items: stretch;
+}
+
+.intermediate-lesson-card-image {
+  width: 60%;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.intermediate-lesson-card-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.intermediate-lesson-card-text {
+  padding: 15px;
+  flex: 1;
+}
+
+.intermediate-lesson-card-text h4 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.intermediate-lesson-card-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* === Responsive Styling === */
+
+/* Tablets / Medium screens */
+@media (max-width: 1024px) {
   .intermediate-left-section {
-    flex: 2 1 400px;
-    max-width: 750px;
-    width: 90%;
-    box-sizing: border-box;
+    width: 100%;
   }
-  
-  /* Lesson 1 Image */
-  .intermediate-lesson1-image {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-  }
-  
-  .intermediate-lesson1-title {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 15px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  
-  .intermediate-lesson1-text {
-    margin-top: 15px;
-  }
-  
-  .intermediate-lesson1-text h3 {
-    margin-bottom: 10px;
-  }
-  
-  .intermediate-lesson1-text p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
-  
-  /* Right Section */
-  .intermediate-right-section {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    text-align: start;
-    height: auto; /* make responsive */
-    box-sizing: border-box;
-  }
-  
-  /* Lesson Cards */
-  .intermediate-lesson-card {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    overflow: hidden;
-    border-bottom: 2px solid #fff;
-    align-items: stretch;
-  }
-  
-  .intermediate-lesson-card-image {
-    width: 60%;
-    min-height: 180px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .intermediate-lesson-card-overlay {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.65);
-    padding: 6px 10px;
-    font-size: 1rem;
-    border-radius: 4px;
-    font-weight: bold;
-  }
-  
-  .intermediate-lesson-card-text {
-    padding: 15px;
-    flex: 1;
-  }
-  
-  .intermediate-lesson-card-text h4 {
-    font-size: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  
-  .intermediate-lesson-card-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  /* Extra Right Section Class */
+
   .intermediate-right-extra {
-    width: 70%;
-    max-width: 350px;
-    margin-top: 20px;
-    margin-left: 40px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 60%;
+    max-width: 280px;
+    margin-left: 20px;
   }
-  
-  /* Lesson 1 Extra Classes */
+
+  .intermediate-lesson1-image,
   .intermediate-lesson1-extra-image {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
+    height: 250px;
   }
-  
+
+  .intermediate-lesson1-title,
   .intermediate-lesson1-extra-title {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px 15px;
-    font-size: 1.6rem;
-    font-weight: bold;
-    border-radius: 5px;
+    font-size: 1.4rem;
   }
-  
-  .intermediate-lesson1-extra-text {
-    margin-top: 15px;
-  }
-  
-  .intermediate-lesson1-extra-text h3 {
-    margin-bottom: 10px;
-  }
-  
+
+  .intermediate-lesson1-text p,
   .intermediate-lesson1-extra-text p {
+    font-size: 1rem;
+  }
+
+  .intermediate-lesson-card-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .intermediate-lesson-card-text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile / Small screens */
+@media (max-width: 767px) {
+  .intermediate-tutorial-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intermediate-right-section,
+  .intermediate-right-extra {
+    width: 95%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .intermediate-lesson-card {
+    flex-direction: column;
+  }
+
+  .intermediate-lesson-card-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .intermediate-lesson1-extra-image {
+    height: 200px;
+    padding: 15px;
+    margin-left: 20px;
+  }
+
+  .intermediate-lesson1-extra-title {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    margin-left: 20px;
+  }
+
+  .intermediate-lesson1-extra-text {
+    margin-left: 20px;
+  }
+
+  .intermediate-lesson1-extra-text p {
+    font-size: 0.95rem;
+  }
+
+  .intermediate-tutorial-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .intermediate-lesson1-image,
+  .intermediate-lesson1-extra-image {
+    height: 150px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .intermediate-lesson1-title,
+  .intermediate-lesson1-extra-title {
+    font-size: 1rem;
+    padding: 6px 10px;
+    margin-left: 10px;
+  }
+
+  .intermediate-lesson1-text p,
+  .intermediate-lesson1-extra-text p {
+    font-size: 0.9rem;
+  }
+
+  .intermediate-tutorial-heading {
+    font-size: 1.5rem;
+  }
+
+  .intermediate-lesson-card-text h4 {
     font-size: 1.1rem;
-    line-height: 1.5;
   }
-  
-  /* === Responsive Styling === */
-  
-  /* Tablets / Medium screens */
-  @media (max-width: 1024px) {
-    .intermediate-right-extra {
-      width: 50%;
-      max-width: 200px;
-      margin-left: 20px;
-    }
-  
-    .intermediate-lesson1-extra-image {
-      height: 250px;
-    }
-  
-    .intermediate-lesson1-extra-title {
-      font-size: 1.4rem;
-    }
-  
-    .intermediate-lesson1-extra-text p {
-      font-size: 1rem;
-    }
-  
-    .intermediate-lesson-card-text h4 {
-      font-size: 1.2rem;
-    }
-  
-    .intermediate-lesson-card-text p {
-      font-size: 0.95rem;
-    }
+
+  .intermediate-lesson-card-text p {
+    font-size: 0.9rem;
   }
-  
-  /* Mobile / Small screens */
-  @media (max-width: 767px) {
-    .intermediate-tutorial-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .intermediate-left-section {
-      width: 95%;
-      max-width: 100%;
-    }
-  
-    .intermediate-right-section,
-    .intermediate-right-extra {
-      width: 95%;
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-  
-    .intermediate-lesson-card {
-      flex-direction: column;
-    }
-  
-    .intermediate-lesson-card-image {
-      width: 100%;
-      height: 180px;
-    }
-  
-    .intermediate-lesson1-extra-image {
-      height: 200px;
-      padding: 15px;
-      margin-left: 20px;
-    }
-  
-    .intermediate-lesson1-extra-title {
-      font-size: 1.2rem;
-      padding: 8px 12px;
-      margin-left: 20px;
-    }
-  
-    .intermediate-lesson1-extra-text {
-      margin-left: 20px;
-    }
-  
-    .intermediate-lesson1-extra-text p {
-      font-size: 0.95rem;
-    }
-  
-    .intermediate-tutorial-heading {
-      font-size: 2rem;
-    }
-  }
-  
+}
