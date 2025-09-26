@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./App.css";
 
@@ -6,6 +7,12 @@ import "./App.css";
 
 
 
+=======
+import React, { useState, useEffect } from "react";
+import "./App.css";
+
+
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 //import "./App.css";
 // import LeftDiv from "./component/leftDiv";
@@ -35,9 +42,12 @@ import "./App.css";
 // import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
 //import CreateAccount from "./component/CreateAccount";
 // import CreateAccount from "./component/CreateAccount";
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
 
 //import LeftDiv from "./component/leftDiv";
 //import RightDiv from "./component/RightDiv";
@@ -50,7 +60,10 @@ import "./App.css";
 // import Navbar from "./component/Navbar";
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 // Bootstrap
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -66,6 +79,11 @@ import "./App.css";
 // import Navbar from "./component/Navbar1";
 // import EducationHub from "./component/EducationHub"
 
+<<<<<<< HEAD
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import "bootstrap-icons/font/bootstrap-icons.css";
+=======
 // // Main Components
 // import LeftDiv from "./component/leftDiv";
 // import RightDiv from "./component/RightDiv";
@@ -90,6 +108,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // import "bootstrap-icons/font/bootstrap-icons.css";
 // import React from "react";
 // import "./App.css";
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
 
 // Bootstrap
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -97,9 +116,20 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 // // Main Components
 
+<<<<<<< HEAD
 
 
 
+=======
+// import { Route, Routes } from "react-router-dom";
+// import Webinars from "./component/Webinars";
+// import ForexTutorials from "./component/ForexToutorials";
+// import CommoditiesTutorials from "./component/CommoditiesTutorials";
+// import SharesTutorials from "./component/SharesTutorials";
+// import Research from "./component/Research";
+// import TradingView from "./component/TradingView";
+// import CTrader from "./component/CTrader";
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 // import About2 from "./component/About2";
 // import NewsSection from "./component/NewsSection";
@@ -123,6 +153,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // import CopyTrader from "./component/CopyTrader";
 // import Invest from "./component/invest";
 
+<<<<<<< HEAD
+=======
 
 // import LeftDiv from "./component/leftDiv";
 // import RightDiv from "./component/RightDiv";
@@ -202,9 +234,9 @@ import ContractSpecification from "./component/SubPages/ContractSpecifications";
 // import MetaTrader5 from "./component/MetaTrader5";
 // import CopyTrader from "./component/CopyTrader";
 // import Invest from "./component/invest";
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
 // import LeftDiv from "./component/leftDiv";
 // import RightDiv from "./component/RightDiv";
-// import Navbar from "./component/Navbar";
 // import QuickStart from "./component/QuickStart";
 // import QuickStart2 from "./component/QuickStart2";
 // import QuickStart3 from "./component/QuickStart3";
@@ -212,7 +244,6 @@ import ContractSpecification from "./component/SubPages/ContractSpecifications";
 // import QuickStart5 from "./component/QuickStart5";
 // import QuickStart6 from "./component/QuickStart6";
 // import QuickStart7 from "./component/QuickStart7";
-
 // import Market from "./component/Market";
 // import Market2 from "./component/Market2";
 // import Market3 from "./component/Market3";
@@ -220,6 +251,31 @@ import ContractSpecification from "./component/SubPages/ContractSpecifications";
 // import Market5 from "./component/Market5";
 // import Market6 from "./component/Market6";
 // import Market7 from "./component/Market7";
+// import Market_com_Energies from "./component/SubPages/Market_com_Energies";
+// import Market_com_Metal from "./component/SubPages/Market_com_Metal";
+// import Market_Future_Energy from "./component/SubPages/Market_Future_Energy";
+// import Market_Future_Indices from "./component/SubPages/Market_Future_Indices";
+// import Market_Future_Other from "./component/SubPages/Market_Future_Other";
+// import Education_Forex_Beginner from "./component/SubPages/Education_Forex_Beginner";
+// import Education_Forex_Intermediate from "./component/SubPages/Education_Forex_Intermediate";
+// import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
+// import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
+// import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
+// import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
+// import CreateAccount from "./component/CreateAccount";
+// import Navbar from "./component/Navbar1";
+// import { Route, Routes } from "react-router-dom";
+// import Webinars from "./component/Webinars";
+// import ForexTutorials from "./component/ForexToutorials";
+// import CommoditiesTutorials from "./component/CommoditiesTutorials";
+// import SharesTutorials from "./component/SharesTutorials";
+// import Research from "./component/Research";
+// import TradingView from "./component/TradingView";
+// import CTrader from "./component/CTrader";
+// import MetaTrader4 from "./component/MetaTrader4";
+// import MetaTrader5 from "./component/MetaTrader5";
+// import CopyTrader from "./component/CopyTrader";
+// import Invest from "./component/invest";
 
 // import Market_com_Energies from "./component/SubPages/Market_com_Energies";
 // import Market_com_Metal from "./component/SubPages/Market_com_Metal";
@@ -232,7 +288,12 @@ import ContractSpecification from "./component/SubPages/ContractSpecifications";
 // import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
 
 // import CreateAccount from "./component/CreateAccount";
+<<<<<<< HEAD
 //import Navbar1 from "./component/Navbar1";
+=======
+// import Navbar1 from "./component/Navbar1";
+// import EducationHub from "./component/EducationHub";
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 
 import About2 from "./component/About2";
@@ -257,6 +318,7 @@ import VerifyAccount from "./component/SubPages/VerifyAccount";
 import FundAccount from "./component/SubPages/FundAccount";
 import ConnectTrading from "./component/SubPages/ConnectTrading";
 import FirstTrade from "./component/SubPages/FirstTrade";
+<<<<<<< HEAD
 
 
 // import About2 from "./component/About2";
@@ -279,6 +341,14 @@ import FirstTrade from "./component/SubPages/FirstTrade";
 
 
 
+=======
+import InvestAccount from "./component/SubPages/InvestAccount";
+import Navbar from "./component/Navbar1";
+import NavbarBlue from "./component/NavbarBlue";
+import FundInvest from "./component/SubPages/FundInvest";
+import InstallMarkettrad from "./component/SubPages/InstallMarkettrad";
+import ChangeCurrency from "./component/SubPages/ChangeCurrency";
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 
 // import About2 from "./component/About2";
@@ -292,11 +362,12 @@ import FirstTrade from "./component/SubPages/FirstTrade";
 //import EconomicCalendar from "./component/EconomicCalendar";
 // import ContactSupport from "./ContactSupport";
 
-
 //import About2 from "./component/About2";
 //import NewsSection from "./component/NewsSection";
 //import Compliance from "./component/Compliance";
 
+<<<<<<< HEAD
+=======
 
 // import About2 from "./component/About2";
 // import NewsSection from "./component/NewsSection";
@@ -306,7 +377,11 @@ import FirstTrade from "./component/SubPages/FirstTrade";
 // import AccountSupport from "./component/AccountSupport";
 // import PlatformSupport from "./PlatformSupport";
 // import MarketSupport from "./MarketSupport";
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 // import EconomicCalendar from "./component/EconomicCalendar";
 // import InvestmentResearch from "./component/SubPages/InvestmentResearch";
 // import SecureClientArea from "./component/SubPages/SecureClientArea";
@@ -319,10 +394,13 @@ import FirstTrade from "./component/SubPages/FirstTrade";
 // import TradingHourChange from "./component/SubPages/TradingHourChange";
 
 // import ContactSupport from "./ContactSupport";
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 
 
@@ -330,7 +408,12 @@ const App = () => {
   return (
 
     <div className="app-container">
+<<<<<<< HEAD
       <div className="rohan">
+=======
+
+      {/* <div className="rohan">
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
         <Navbar />
         <Routes>
           <Route path="/" element={<EducationHub />}></Route>
@@ -457,10 +540,21 @@ const App = () => {
 
         </Routes> */}
         {/* <Navbar1/> */}
+<<<<<<< HEAD
         <div className="rohan">
           <Navbar />
           <Routes>
             {/* <Route path="/" element={<EducationHub />}></Route>
+=======
+<<<<<<< HEAD
+        <NavbarBlue/>
+=======
+=======
+      <div className="rohan">
+        <Navbar />
+        <Routes>
+          {/* <Route path="/" element={<EducationHub />}></Route>
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
           <Route path="/Webinars" element={<Webinars></Webinars>}></Route>
           <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>}></Route>
           <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>}></Route>
@@ -576,6 +670,7 @@ const App = () => {
       {/* <div className="app-section">
 >>>>>>> 9a3700c4aeed76061e6aa9cbb99478e3f367395c
 >>>>>>> 436c8472e927dbd684e8b16db124614daf5077ac
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
         <About2/>
         <NewsSection/>
         <Compliance />
@@ -586,6 +681,8 @@ const App = () => {
         <MarketSupport />
         <EconomicCalendar />
         <ContactSupport />
+=======
+<<<<<<< HEAD
 =======
 
           </div>*/}
@@ -657,6 +754,7 @@ const App = () => {
         <Intermediate />
         <AdvShare />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <AdvShare /> */}
 
 
@@ -673,6 +771,18 @@ const App = () => {
         <AdvShare />
         <FirstTrade />
 
+=======
+        <AccountCreate/>
+        <VerifyAccount/>
+        <FundAccount/>
+        <ConnectTrading/>
+        <FirstTrade/>
+        <InvestAccount/>
+        <FundInvest/>
+        <InstallMarkettrad/>
+        <ChangeCurrency/>
+        
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
       </div>
 
       {/* <div className="container1">
@@ -710,3 +820,41 @@ const App = () => {
 };
 
 export default App;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        <AdvShare /> */}
+      </div>
+
+
+
+
+
+// {/*
+//         <div className="rohan">
+//           <Navbar />
+//           <Routes>
+//             <Route path="/EducationHub" element={<EducationHub></EducationHub>} />
+//             <Route path="/Webinars" element={<Webinars></Webinars>} />
+//             <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>} />
+//             <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>} />
+//             <Route path="/SharesTutorials" element={<SharesTutorials></SharesTutorials>} />
+//             <Route path="/EconomicCalendarRC" element={<EconomicCalendarRC></EconomicCalendarRC>} />
+//             <Route path="/Research" element={<Research></Research>} />
+//             <Route path="/TradingView" element={<TradingView></TradingView>} />
+//             <Route path="/CTrader" element={<CTrader></CTrader>} />
+//           </Routes>
+//         </div>
+ 
+  */}
+
+    </div>
+  );
+};
+
+export default App;
+>>>>>>> 9a3700c4aeed76061e6aa9cbb99478e3f367395c
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
