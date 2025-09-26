@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 function Invest() {
     const [activeTab, setActiveTab] = useState('us');
 
@@ -292,6 +293,7 @@ function Invest() {
                     </div>
                 </div>
             </div>
+            <Outlet></Outlet>
         </div>
     )
 }

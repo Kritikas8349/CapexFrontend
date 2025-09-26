@@ -185,6 +185,7 @@ function InvestmentResearch() {
                 </div>
             </div>
             {/* --------Choose Your Plan ------------ */}
+            
             <div className="container-fluid  py-5 " >
                 <div className="container text-center">
                     {/* Heading */}
