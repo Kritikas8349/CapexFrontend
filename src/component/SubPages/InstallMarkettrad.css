@@ -1,0 +1,363 @@
+/* === Main Layout === */
+.install-page {
+    display: flex;
+    font-family: Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    min-height: 100vh;
+    flex-wrap: wrap;
+  }
+  
+  /* === Sidebar === */
+  .install-sidebar {
+    width: 440px;
+    border-right: 1px solid #eee;
+    padding: 120px 0 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    flex-shrink: 0;
+  }
+  
+  .install-sidebar-item {
+    margin-bottom: 10px;
+  }
+  
+  .install-sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+    font-weight: bold;
+  }
+  
+  .install-sidebar-header:hover {
+    background: #f5f5f5;
+  }
+  
+  .install-sidebar-header.active {
+    background: #eef4ff;
+  }
+  
+  .install-sidebar-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  .install-title {
+    flex: 1;
+  }
+  
+  .install-count {
+    background: #493ffd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .install-dropdown {
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .install-dropdown p {
+    margin: 4px 0;
+    cursor: pointer;
+  }
+  
+  .install-dropdown p:hover {
+    text-decoration: underline;
+    color: #493ffd;
+  }
+  
+  /* === Right Content === */
+  .install-content {
+    flex: 1;
+    padding: 140px 80px 40px 80px;
+    max-width: 1250px;
+    margin-left: 60px;
+    box-sizing: border-box;
+  }
+  
+  .install-breadcrumbs {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #666;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  
+  .install-breadcrumbs span {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .install-breadcrumbs span:hover {
+    color: #493ffd;
+  }
+  
+  .install-breadcrumbs .separator {
+    color: #999;
+  }
+  
+  .install-breadcrumbs .current {
+    color: #000;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  h1 {
+    font-size: 46px;
+    margin: 20px 0;
+    font-weight: bold;
+    word-break: break-word;
+  }
+  
+  /* === Video Section === */
+  .install-video-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .install-video-thumbnail {
+    background: #000;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  .install-video-thumbnail iframe {
+    border-radius: 6px;
+    width: 100%;
+    height: 420px;
+  }
+  
+  /* === Steps Section === */
+  .install-steps-container {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .install-steps-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .install-step p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  /* === Article Footer === */
+  .install-article-footer {
+    margin: 60px auto;
+    max-width: 1000px;
+    padding: 20px;
+    font-family: "Segoe UI", sans-serif;
+    color: #000;
+  }
+  
+  /* Share Section */
+  .install-share-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .install-share-label {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .install-share-icons {
+    display: flex;
+    gap: 18px;
+  }
+  
+  .share-icon {
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+    color: #000;
+  }
+  
+  .share-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .facebook { color: #1877f2; }
+  .twitter { color: #000; }
+  .linkedin { color: #0077b5; }
+  .pinterest { color: #e60023; }
+  
+  /* Feedback Section */
+  .install-feedback-box {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .install-feedback-box p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .install-feedback-icons {
+    display: flex;
+    gap: 18px;
+  }
+  
+  .feedback-icon {
+    font-size: 28px;
+    color: #493ffd;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .feedback-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .thank-you {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Navigation */
+  .install-article-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .install-article-nav a {
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .prev-link, .next-link {
+    color: #493ffd;
+  }
+  
+  .next-link {
+    text-align: right;
+  }
+  
+  .install-article-nav a:hover {
+    text-decoration: underline;
+    color: #493ffd;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 1024px) {
+    .install-sidebar {
+      width: 300px;
+      padding: 60px 0 20px 0;
+      height: auto;
+    }
+  
+    .install-content {
+      padding: 30px 40px;
+      margin-left: 0;
+      padding-top: 80px;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    .install-breadcrumbs {
+      font-size: 16px;
+    }
+  
+    .install-video-thumbnail iframe {
+      height: 320px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .install-page {
+      flex-direction: column;
+    }
+  
+    .install-sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #eee;
+      padding: 20px 0;
+    }
+  
+    .install-content {
+      padding: 20px;
+      margin-left: 0;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .install-breadcrumbs {
+      font-size: 14px;
+    }
+  
+    .install-video-thumbnail iframe {
+      height: 240px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+    }
+  
+    .install-breadcrumbs {
+      font-size: 12px;
+      gap: 4px;
+    }
+  
+    .install-sidebar-header {
+      font-size: 14px;
+    }
+  
+    .install-video-thumbnail iframe {
+      height: 200px;
+    }
+  
+    .install-feedback-box {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  

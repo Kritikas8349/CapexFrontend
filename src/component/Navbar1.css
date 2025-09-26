@@ -1,30 +1,29 @@
-/* ===== Top Bar ===== */
+/* ================== TOP BAR ================== */
 .top-bar {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 50px;
   background-color: #2f2ef3;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8px;
-  z-index: 1100;
+  padding: 0 12px;
+  z-index: 9999; /* very high */
   font-size: 13px;
   box-sizing: border-box;
   flex-wrap: wrap;
-  gap: 6px;
-  font-family: sans-serif;
-  /* margin-top: -8px; */
-  /* margin-bottom: 80px; */
 }
 
 .top-left {
   flex: 1;
   font-weight: bold;
+  font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 18px;
 }
 
 .top-center {
@@ -50,21 +49,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  flex-wrap: wrap;
   justify-content: flex-end;
-}
-
-.top-right > * {
-  transition: all 0.3s ease;
-  cursor: pointer;
-  padding: 6px 10px;
-  border-radius: 8px;
-}
-
-.top-right > *:hover {
-  background-color: rgb(246, 249, 255);
-  color: #0a264a;
-  transform: translateY(-2px);
+  flex-wrap: wrap;
 }
 
 .top-link {
@@ -79,59 +65,21 @@
   font-size: 12px;
 }
 
-.refer-link {
-  color: #fff;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-right: 6px;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-.refer-link:hover {
-  color: #e0e0ff;
-  text-decoration: underline;
-}
-
-.login-btn,
-.join-btn2 {
-  padding: 7px 16px;
-  border: none;
-  border-radius: 24px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-.login-btn:hover,
-.join-btn2:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-.login-btn {
-  background: #2f2ef3;
-  color: #fff;
-}
-
-.join-btn2 {
-  background-color: #2f2ef3; 
-  color: #fff;
-}
-
-/* ===== Main Navbar ===== */
+/* ================== NAVBAR ================== */
 .navbar {
-  width: 100%;
+  position: fixed;
+  top: 50px; /* below top bar */
+  left: 0;
+  right: 0;
   height: 70px;
   background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  flex-wrap: wrap;
+  z-index: 9000;
   padding: 0 12px;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 .navbar-logo {
@@ -145,6 +93,7 @@
   list-style: none;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .navbar-center .nav-links li {
@@ -157,26 +106,54 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 14px; 
-  flex-wrap: wrap;
+  gap: 14px;
 }
 
-.language-select {
-  padding: 5px 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 12px;
+.refer-link {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-/* ===== Hamburger Menu ===== */
+.refer-link:hover {
+  color: #2f2ef3;
+  text-decoration: underline;
+}
+
+.login-btn,
+.join-btn2 {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: #444;
+  color: #fff;
+}
+
+.join-btn2 {
+  background: #00c853;
+  color: #fff;
+}
+
+/* ================== HAMBURGER ================== */
 .hamburger-menu {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  margin-left: auto;
-  z-index: 1200;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  z-index: 1600;
 }
 
+/* ================== FULLSCREEN HAMBURGER OVERLAY ================== */
 .hamburger-overlay {
   position: fixed;
   top: 0;
@@ -188,9 +165,7 @@
   display: none;
   flex-direction: column;
   padding: 20px;
-  box-sizing: border-box;
   overflow-y: auto;
-  font-family: sans-serif;
 }
 
 .hamburger-overlay.open {
@@ -207,7 +182,6 @@
 
 .overlay-links {
   list-style: none;
-  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
@@ -226,35 +200,29 @@
 
 .overlay-links .login-btn,
 .overlay-links .join-btn2 {
-  margin-top: 15px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
+/* Bottom row in overlay */
 .overlay-bottom-row {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin-top: 25px;
-  flex-wrap: wrap;
 }
 
 .overlay-bottom-row span {
   font-size: 14px;
-  font-weight: 500;
-  color: #747575;
+  color: #999d9c;
   cursor: pointer;
-  transition: color 0.3s;
 }
 
 .overlay-bottom-row span:hover {
-  color: #fff;
-  padding: 6px 6px;
-  border-radius: 20px;
-  background-color: #2f2ef3;
-  transform: translateY(-2px);
+  color: #2f2ef3;
 }
 
-/* ===== Animation ===== */
+/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -266,74 +234,20 @@
   }
 }
 
-/* ===== Responsive ===== */
-
-/* Tablets */
-@media (max-width: 1024px) {
-  .navbar-center .nav-links {
-    gap: 12px;
-  }
-
-  .navbar-right {
-    gap: 10px;
-  }
-
-  .top-left {
-    font-size: 16px;
-  }
-}
-
-/* Mobile / Small devices */
+/* Media query for mobile */
 @media (max-width: 768px) {
-  /* Hide all top-bar content except message */
-  .top-bar {
-    justify-content: center;
-  }
-
-  .top-bar > .top-left {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .top-bar > .top-center,
-  .top-bar > .top-right {
+  .navbar-center,
+  .navbar-right,
+  .top-center,
+  .top-right {
     display: none;
   }
-
-  /* Hide desktop links in navbar */
-  .navbar-center {
-    display: none;
-  }
-
-  .navbar-right {
-    display: none;
-  }
-
-  /* Show hamburger menu */
   .hamburger-menu {
     display: block;
   }
 }
 
-/* Small Mobiles */
-@media (max-width: 480px) {
-  .top-bar > .top-left {
-    font-size: 14px;
-  }
-
-  .login-btn,
-  .join-btn2 {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-
-  .navbar-logo {
-    height: 28px;
-    max-width: 100px;
-  }
-
-  .overlay-links li {
-    font-size: 14px;
-  }
+/* Push page content below navbar */
+#nav_main {
+  padding-top: 120px; /* 50px top-bar + 70px navbar */
 }
