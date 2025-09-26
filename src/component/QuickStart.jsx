@@ -18,86 +18,7 @@ function QuickStart() {
 
           {/* 1. Navbar Section */}
 
-          <div className="navbar-top">
-            <div className="welcome">Welcome to Market.trad</div>
-            <div className="search-box">
-              <FaSearch className="search-icon" />
-              <input type="email" placeholder="Search..." />
-
-            </div>
-            <div className="top-right">
-              <button className="personal-btn">Personal</button>
-              <span>Partners</span>
-              <span>Research</span>
-              <span>Academy</span>
-              <select className="lang-select">
-                <option>🌐 EN</option>
-                <option>🇮🇳 HI</option>
-              </select>
-            </div>
-          </div>
-
-          {/* BOTTOM NAVBAR */}
-          <div className="navbar-bottom">
-            <div className="logo">
-              <img src="Frame2.png" alt="Market.trad logo" />
-            </div>
-
-            <ul className="nav-menu">
-              <li>Quick Start</li>
-
-              <li className="dropdown">
-                Markets
-                <ul className="dropdown-menu">
-                  <li>Forex</li>
-                  <li>Stocks</li>
-                  <li>Crypto</li>
-                </ul>
-              </li>
-
-              <li className="dropdown">
-                Platform
-                <ul className="dropdown-menu">
-                  <li>MetaTrader 4</li>
-                  <li>MetaTrader 5</li>
-                  <li>WebTrader</li>
-                </ul>
-              </li>
-
-              <li className="dropdown">
-                Education
-                <ul className="dropdown-menu">
-                  <li>Courses</li>
-                  <li>Webinars</li>
-                  <li>Blogs</li>
-                </ul>
-              </li>
-
-              <li className="dropdown">
-                About
-                <ul className="dropdown-menu">
-                  <li>Company</li>
-                  <li>Team</li>
-                  <li>Careers</li>
-                </ul>
-              </li>
-
-              <li className="dropdown">
-                Support
-                <ul className="dropdown-menu">
-                  <li>FAQs</li>
-                  <li>Live Chat</li>
-                  <li>Contact Us</li>
-                </ul>
-              </li>
-            </ul>
-
-            <div className="right-buttons">
-              <a href="#" className="refer-link">Refer a friends</a>
-              <button className="login-btn">Log in</button>
-              <button className="join-btn">Join Now</button>
-            </div>
-          </div>
+          
 
 
           {/* 2. Main Content Section */}
@@ -184,7 +105,7 @@ function QuickStart() {
             <div className="asset-card2">
               <div className="icon-placeholder2"><img src="Frame8417.png" alt="" /></div>
               <h3>Equities</h3>
-              <p>We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
+              <p>We offer stocks across 27 global markets like Apple, Alibaba, BMW.</p>
             </div>
 
             <div className="asset-card2">
