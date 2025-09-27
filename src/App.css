@@ -3,21 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1px;
   /* padding: 32px; */
   flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-
-
-<<<<<<< HEAD
-=======
 
   
 
->>>>>>> 0cf83e60b699a61d9d1831b511a077a3090ee720
->>>>>>> 9a3700c4aeed76061e6aa9cbb99478e3f367395c
->>>>>>> 436c8472e927dbd684e8b16db124614daf5077ac
+
   box-sizing: border-box;
 }
 

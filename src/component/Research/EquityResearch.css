@@ -193,7 +193,8 @@ html {
 /* StockListGridUnique.css */
 .stock-grid-unique-container {
   padding: 2rem 1rem;
-  max-width: 1200px;
+  max-width: 1100px;
+  text-align: start;
   margin: auto;
   font-family: 'Segoe UI', Tahoma, sans-serif;
 }

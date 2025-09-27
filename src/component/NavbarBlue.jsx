@@ -29,7 +29,7 @@ function Navbar() {
   }, [menuOpen]);
 
   const dropdowns = {
-    "Quick Start": ["Why Market.trad Markets?", "What assets can I trade?", "What platform can I trade on?", "What account type do you offer", "How to verify my account?", "How to deposite funds?", "How to withdraw funds?", "How can I start trading?", "Create Account"],
+    "Quick Start": [" Why Market.trad Markets?", "What assets can I trade?", "What platform can I trade on?", "What account type do you offer", "How to verify my account?", "How to deposite funds?", "How to withdraw funds?", "How can I start trading?", "Create Account"],
     Markets: ["Markets Overview", "Forex",
       { title: "Commodities", subItems: ["Energies", "Metals"] },
       { title: "Futures", subItems: ["Energy", "Indices", "Other"] },

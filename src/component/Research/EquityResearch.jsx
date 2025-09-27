@@ -54,120 +54,120 @@ function EquityResearch() {
             price: "USD",
         },
         {
-            logo: "b.webp",
+            logo: "84.webp",
             ticker: "RAK:NZX",
             name: "Rakon",
             price: "NZD",
         },
         {
-            logo: "c.webp",
+            logo: "b.webp",
             ticker: "DGE:LON",
             name: "Diageo",
             price: "GPD",
         },
         {
-            logo: "d.webp",
+            logo: "4.png",
             ticker: "HKSHY:NASDAQ",
             name: "Hong Kong & Shanghai Hotels",
             price: "US",
         },
         {
-            logo: "e.webp",
+            logo: "c.webp",
             ticker: "SCHW:NYSE",
             name: "Charles Schwab",
             price: "US",
         },
         {
-            logo: "https://logo.clearbit.com/oxy.com",
+            logo: "6.webp",
             ticker: "OXY:NYSE",
             name: "Occidental Petroleum",
             price: "US",
         },
         {
-            logo: "https://logo.clearbit.com/manutd.com",
+            logo: "d.webp",
             ticker: "MANU:NYSE",
             name: "Manchester United",
             price: "23.00",
         },
         {
-            logo: "https://logo.clearbit.com/goldmansachs.com",
+            logo: "8.webp",
             ticker: "GS:NYSE",
             name: "Goldman Sachs",
             price: "349.92 USD",
         },
         {
-            logo: "https://logo.clearbit.com/squarespace.com",
+            logo: "e.webp",
             ticker: "SQSP:NYSE",
             name: "Squarespace",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/homedepot.com",
+            logo: "hd.webp",
             ticker: "HD:NYSE",
             name: "Home Depot",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/us.com",
+            logo: "",
             ticker: "USD:nyse",
             name: "US Dollar",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/costco.com",
+            logo: "co.webp",
             ticker: "COST:NYSE",
             name: "Costco",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/estee.com",
+            logo: "f.webp",
             ticker: "EL:NYSE",
             name: "Estée Lauder",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/mastercard.com",
+            logo: "m.webp",
             ticker: "MA:NYSE",
             name: "Mastercard",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/dominos.com",
+            logo: "dp.webp",
             ticker: "DPZ:NYSE",
             name: "Domino's Pizza",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/mcdonalds.com",
+            logo: "mcd.webp",
             ticker: "MCD:NYSE",
             name: "McDonald's",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/starbucks.com",
+            logo: "str.webp",
             ticker: "SBUX:NASDAQ",
             name: "Starbucks",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/meta.com",
+            logo: "meta.webp",
             ticker: "META:NASDAQ",
             name: "Meta",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/wmg.com",
+            logo: "wmg.webp",
             ticker: "WMG:NASDAQ",
             name: "Warner Music Group",
             price: "USD",
         },
         {
-            logo: "https://logo.clearbit.com/brown-forman.com",
+            logo: "bf.webp",
             ticker: "BF.B:NYSE",
             name: "Brown–Forman",
             price: "USD",
         },
-    ]; 
+    ];
 
 
     return (
@@ -265,6 +265,54 @@ function EquityResearch() {
                     <button className="stock-grid-unique-loadmore-btn">Load More</button>
                 </div>
             </div>
+
+
+            <section className="pricing-section">
+                <h1 className="section-title">Choose Your Plan</h1>
+                <p className="section-subtitle">
+                    Access market intelligence tailored for serious investors. Choose a plan that fits your needs—whether you’re looking for timely insights, in-depth analysis, or custom research solutions backed by real expertise.
+                    <span className="link"> view more.</span>
+                </p>
+
+                <div className="pricing-cards">
+                    {/* Monthly Plan */}
+                    <div className="card">
+                        <h2>Monthly</h2>
+                        <p className="billing">Billed Monthly/NZD</p>
+                        <div className="price">$45</div>
+                        <div className="tag">Per Month</div>
+                        <p className="description">
+                            Ideal for active investors who want to stay informed without a long-term commitment.
+                        </p>
+                        <button className="btn">Subscribe Now</button>
+                    </div>
+
+                    {/* Annual Plan */}
+                    <div className="card ">
+                        <div className="badge">$37.5 P/M</div>
+                        <h2>Annually</h2>
+                        <p className="billing">Billed Annually/NZD</p>
+                        <div className="price">$450</div>
+                        <div className="tag">Per Year</div>
+                        <p className="description">
+                            Perfect for serious investors who rely on consistent, high-quality market insights.
+                        </p>
+                        <button className="btn">Subscribe Now</button>
+                    </div>
+
+                    {/* Custom Research */}
+                    <div className="card">
+                        <h2>Custom Research</h2>
+                        <p className="billing">$200 Per Hour/NZD</p>
+                        <div className="price">$5K</div>
+                        <div className="tag light">Starting From</div>
+                        <p className="description">
+                            Our team can deliver tailored insights and deep-dive reports to support your investment.
+                        </p>
+                        <button className="btn secondary">Request a Quote</button>
+                    </div>
+                </div>
+            </section>
 
         </div>
     )
