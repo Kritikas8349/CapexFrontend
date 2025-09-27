@@ -1,7 +1,18 @@
+<<<<<<< HEAD
+import React from "react";
+import "./App.css";
+
+
+
+
+
+
+=======
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
 
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 //import "./App.css";
 // import LeftDiv from "./component/leftDiv";
@@ -29,18 +40,59 @@ import "./App.css";
 // import Education_Forex_Beginner from "./component/SubPages/Education_Forex_Beginner";
 // import Education_Forex_Intermediate from "./component/SubPages/Education_Forex_Intermediate";
 // import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
+//import CreateAccount from "./component/CreateAccount";
 // import CreateAccount from "./component/CreateAccount";
 
 
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
+
+// Bootstrap
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import "bootstrap-icons/font/bootstrap-icons.css";
+
+//  import LeftDiv from "./component/leftDiv";
+//  import RightDiv from "./component/RightDiv";
+// // import QuickStart from"./component/QuickStart";
+// // import "./App.css";
+// // import QuickStart3 from "./component/QuickStart3";
+// // import QuickStart4 from "./component/QuickStart4";
+// // import QuickStart5 from "./component/QuickStart5";
+// import Navbar from "./component/Navbar1";
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 // import EducationHub from "./component/EducationHub"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // import "bootstrap-icons/font/bootstrap-icons.css";
 // // Main Components
+<<<<<<< HEAD
+=======
+// import LeftDiv from "./component/leftDiv";
+// import RightDiv from "./component/RightDiv";
+// import QuickStart from "./component/QuickStart";
+// import "./App.css";
+// import QuickStart3 from "./component/QuickStart3";
+// import QuickStart4 from "./component/QuickStart4";
+// import QuickStart5 from "./component/QuickStart5";
+// import QuickStart6 from "./component/QuickStart6";
+// import QuickStart7 from "./component/QuickStart7";
+// import Market from "./component/Market";
+
+// import Navbar from "./component/Navbar";
+
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap-icons/font/bootstrap-icons.css";
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // import "bootstrap-icons/font/bootstrap-icons.css";
@@ -52,6 +104,11 @@ import "./App.css";
 
 // // Main Components
 
+<<<<<<< HEAD
+
+
+
+=======
 // import { Route, Routes } from "react-router-dom";
 // import Webinars from "./component/Webinars";
 // import ForexTutorials from "./component/ForexToutorials";
@@ -60,6 +117,7 @@ import "./App.css";
 // import Research from "./component/Research";
 // import TradingView from "./component/TradingView";
 // import CTrader from "./component/CTrader";
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
 // import About2 from "./component/About2";
 // import NewsSection from "./component/NewsSection";
@@ -85,40 +143,73 @@ import "./App.css";
 
 
 
-import LeftDiv from "./component/leftDiv";
-import RightDiv from "./component/RightDiv";
-import QuickStart from "./component/QuickStart";
-import QuickStart2 from "./component/QuickStart2";
-import QuickStart3 from "./component/QuickStart3";
-import QuickStart4 from "./component/QuickStart4";
-import QuickStart5 from "./component/QuickStart5";
-import QuickStart6 from "./component/QuickStart6";
-import QuickStart7 from "./component/QuickStart7";
-import Market from "./component/Market";
-import Market2 from "./component/Market2";
-import Market3 from "./component/Market3";
-import Market4 from "./component/Market4";
-import Market5 from "./component/Market5";
-import Market6 from "./component/Market6";
-import Market7 from "./component/Market7";
-import Market_com_Energies from "./component/SubPages/Market_com_Energies";
-import Market_com_Metal from "./component/SubPages/Market_com_Metal";
-import Market_Future_Energy from "./component/SubPages/Market_Future_Energy";
-import Market_Future_Indices from "./component/SubPages/Market_Future_Indices";
-import Market_Future_Other from "./component/SubPages/Market_Future_Other";
-import Education_Forex_Beginner from "./component/SubPages/Education_Forex_Beginner";
-import Education_Forex_Intermediate from "./component/SubPages/Education_Forex_Intermediate";
-import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
-import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
-import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
-import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
+// import LeftDiv from "./component/leftDiv";
+// import RightDiv from "./component/RightDiv";
+// import QuickStart from "./component/QuickStart";
+// import QuickStart2 from "./component/QuickStart2";
+// import QuickStart3 from "./component/QuickStart3";
+// import QuickStart4 from "./component/QuickStart4";
+// import QuickStart5 from "./component/QuickStart5";
+// import QuickStart6 from "./component/QuickStart6";
+// import QuickStart7 from "./component/QuickStart7";
+// import Market from "./component/Market";
+// import Market2 from "./component/Market2";
+// import Market3 from "./component/Market3";
+// import Market4 from "./component/Market4";
+// import Market5 from "./component/Market5";
+// import Market6 from "./component/Market6";
+// import Market7 from "./component/Market7";
+// import Market_com_Energies from "./component/SubPages/Market_com_Energies";
+// import Market_com_Metal from "./component/SubPages/Market_com_Metal";
+// import Market_Future_Energy from "./component/SubPages/Market_Future_Energy";
+// import Market_Future_Indices from "./component/SubPages/Market_Future_Indices";
+// import Market_Future_Other from "./component/SubPages/Market_Future_Other";
+// import Education_Forex_Beginner from "./component/SubPages/Education_Forex_Beginner";
+// import Education_Forex_Intermediate from "./component/SubPages/Education_Forex_Intermediate";
+// import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
+// import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
+// import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
+// import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
+
+
 import CreateAccount from "./component/CreateAccount";
 import Navbar from "./component/Navbar1";
-import popup from "./component/SubPages/popup";
+//import popup from "./component/SubPages/popup";
 import { Route, Routes } from "react-router-dom";
+<<<<<<< HEAD
 import DailyNews from "./component/Research/DailyNews";
 import EquityResearch from "./component/Research/EquityResearch";
 import NavbarBlue from "./component/NavbarBlue";
+=======
+import EducationHub from "./component/EducationHub";
+import Webinars from "./component/Webinars";
+import ForexTutorials from "./component/ForexToutorials";
+import CommoditiesTutorials from "./component/CommoditiesTutorials";
+import SharesTutorials from "./component/SharesTutorials";
+import Research from "./component/Research";
+import TradingView from "./component/TradingView";
+import CTrader from "./component/CTrader";
+import MetaTrader4 from "./component/MetaTrader4";
+import MetaTrader5 from "./component/MetaTrader5";
+import CopyTrader from "./component/CopyTrader";
+import BlackbullInvest from "./component/BlackbullInvest";
+import EconomicCalendar from "./component/EconomicCalendar";
+import InvestmentResearch from "./component/SubPages/InvestmentResearch";
+import SecureClientArea from "./component/SubPages/SecureClientArea";
+import TradingViewFAQs from "./component/SubPages/TradingViewFAQs";
+import CTraderFAQs from "./component/SubPages/CTraderFAQs";
+import MetaTrader4FAQs from "./component/SubPages/MetaTrader4FAQs";
+import MetaTrader5FAQs from "./component/SubPages/MetaTrader5FAQs";
+import BlackBullInvestFAQs from "./component/SubPages/BlackBullInvest";
+import TradingConditions from "./component/SubPages/TradingConditions";
+import TradingHourChange from "./component/SubPages/TradingHourChange";
+import ContractExpiries from "./component/SubPages/ContractExpiries";
+import ContractSpecification from "./component/SubPages/ContractSpecifications";
+
+
+//import DailyNews from "./component/Research/DailyNews";
+//import EquityResearch from "./component/Research/EquityResearch";
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 
 
 
@@ -162,9 +253,14 @@ import NavbarBlue from "./component/NavbarBlue";
 // import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
 
 // import CreateAccount from "./component/CreateAccount";
+<<<<<<< HEAD
+//import Navbar1 from "./component/Navbar1";
+=======
 // import Navbar1 from "./component/Navbar1";
 // import EducationHub from "./component/EducationHub";
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
 
+<<<<<<< HEAD
 //import { Route, Routes } from "react-router-dom";
 // import Webinars from "./component/Webinars";
 // import ForexTutorials from "./component/ForexToutorials";
@@ -174,6 +270,34 @@ import NavbarBlue from "./component/NavbarBlue";
 // import TradingView from "./component/TradingView";
 // import CTrader from "./component/CTrader";
 
+=======
+
+import About2 from "./component/About2";
+import NewsSection from "./component/NewsSection";
+import Compliance from "./component/Compliance";
+import SecurityFunds from "./component/SecurityFunds";
+import GettingStarted from "./component/GettingStarted";
+import AccountSupport from "./component/AccountSupport";
+import PlatformSupport from "./component/PlatformSupport";
+import MarketSupport from "./component/MarketSupport";
+//import EconomicCalendar from "./component/EconomicCalendar";
+import ContactSupport from "./component/ContactSupport";
+import VPStrading from "./component/SubPages/VPStrading";
+import FixAPI from "./component/SubPages/FixAPI";
+import ZuluTrade from "./component/SubPages/Zulutrade";
+import Myfxbook from "./component/SubPages/Myfxbook";
+import BeginnerShare from "./component/SubPages/BeginnerShare";
+import Intermediate from "./component/SubPages/Intermediate";
+import AdvShare from "./component/SubPages/AdvShare";
+import AccountCreate from "./component/SubPages/AccountCreate";
+import VerifyAccount from "./component/SubPages/VerifyAccount";
+import FundAccount from "./component/SubPages/FundAccount";
+import ConnectTrading from "./component/SubPages/ConnectTrading";
+import FirstTrade from "./component/SubPages/FirstTrade";
+<<<<<<< HEAD
+
+
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 // import About2 from "./component/About2";
 // import NewsSection from "./component/NewsSection";
 // import Compliance from "./component/Compliance";
@@ -191,6 +315,7 @@ import NavbarBlue from "./component/NavbarBlue";
 // import BeginnerShare from "./component/SubPages/BeginnerShare";
 // import Intermediate from "./component/SubPages/Intermediate";
 // import AdvShare from "./component/SubPages/AdvShare";
+<<<<<<< HEAD
 // import AccountCreate from "./component/SubPages/AccountCreate";
 // import VerifyAccount from "./component/SubPages/VerifyAccount";
 // import FundAccount from "./component/SubPages/FundAccount";
@@ -202,6 +327,19 @@ import NavbarBlue from "./component/NavbarBlue";
 // import FundInvest from "./component/SubPages/FundInvest";
 // import InstallMarkettrad from "./component/SubPages/InstallMarkettrad";
 // import ChangeCurrency from "./component/SubPages/ChangeCurrency";
+=======
+
+
+
+=======
+import InvestAccount from "./component/SubPages/InvestAccount";
+import Navbar from "./component/Navbar1";
+import NavbarBlue from "./component/NavbarBlue";
+import FundInvest from "./component/SubPages/FundInvest";
+import InstallMarkettrad from "./component/SubPages/InstallMarkettrad";
+import ChangeCurrency from "./component/SubPages/ChangeCurrency";
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 
 
 // import About2 from "./component/About2";
@@ -229,7 +367,15 @@ import NavbarBlue from "./component/NavbarBlue";
 // import AccountSupport from "./component/AccountSupport";
 // import PlatformSupport from "./PlatformSupport";
 // import MarketSupport from "./MarketSupport";
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 // import EconomicCalendar from "./component/EconomicCalendar";
 // import InvestmentResearch from "./component/SubPages/InvestmentResearch";
 // import SecureClientArea from "./component/SubPages/SecureClientArea";
@@ -242,36 +388,124 @@ import NavbarBlue from "./component/NavbarBlue";
 // import TradingHourChange from "./component/SubPages/TradingHourChange";
 
 // import ContactSupport from "./ContactSupport";
+<<<<<<< HEAD
 
-// import MetaTrader4 from "./component/MetaTrader4";
-// import MetaTrader5 from "./component/MetaTrader5";
-// import CopyTrader from "./component/CopyTrader";
-// import Invest from "./component/invest";
+
+
+
+=======
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
+
+
 
 const App = () => {
   return (
 
     <div className="app-container">
+<<<<<<< HEAD
+      <div className="rohan">
+=======
 
       {/* <div className="rohan">
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
         <Navbar />
         <Routes>
-          <Route path="/EducationHub" element={<EducationHub />} />
-          <Route path="/Webinars" element={<Webinars />} />
-          <Route path="/ForexTutorials" element={<ForexTutorials />} />
-          <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials />} />
-          <Route path="/SharesTutorials" element={<SharesTutorials />} />
-          <Route path="/EconomicCalendar" element={<EconomicCalendar />} />
-          <Route path="/CreateAccount" element={<CreateAccount />} />
-          <Route path="/Research" element={<Research />} />
-          <Route path="/TradingView" element={<TradingView />} />
-          <Route path="/CTrader" element={<CTrader />} />
-          <Route path="/MetaTrader4" element={<MetaTrader4 />} />
-          <Route path="/MetaTrader5" element={<MetaTrader5 />} />
-          <Route path="/CopyTrader" element={<CopyTrader />} />
-          <Route path="/Invest" element={<Invest />} />
+          <Route path="/" element={<EducationHub />}></Route>
+          <Route path="/Webinars" element={<Webinars></Webinars>}></Route>
+          <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>}></Route>
+          <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>}></Route>
+          <Route path="/SharesTutorials" element={<SharesTutorials></SharesTutorials>}></Route>
+          <Route path="/EconomicCalendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
+          <Route path="/CreateAccount" element={<CreateAccount></CreateAccount>}></Route>
+          <Route path="/Research" element={<Research></Research>}></Route>
+          <Route path="/TradingView" element={<TradingView></TradingView>}></Route>
+          <Route path="/CTrader" element={<CTrader></CTrader>}></Route>
+          <Route path="/MetaTrader4" element={<MetaTrader4></MetaTrader4>}></Route>
+          <Route path="/MetaTrader5" element={<MetaTrader5></MetaTrader5>}></Route>
+          <Route path="/CopyTrader" element={<CopyTrader></CopyTrader>}></Route>
+          <Route path="/BlackbullInvest" element={<BlackbullInvest></BlackbullInvest>}>
+          </Route>
+          <Route path="Invest/InvestmentResearch" element={<InvestmentResearch></InvestmentResearch>}></Route> {/*Child page of Education hub Research*/}
+          <Route path="/SecureClientArea" element={<SecureClientArea></SecureClientArea>}></Route> {/*Child page of platform support*/}
+          <Route path="/TradingViewFAQs" element={<TradingViewFAQs></TradingViewFAQs>}></Route> {/*Child page of platform support*/}
+          <Route path="/CTraderFAQs" element={<CTraderFAQs></CTraderFAQs>}></Route> {/*Child page of platform support*/}
+          <Route path="/MetaTrader4FAQs" element={<MetaTrader4FAQs></MetaTrader4FAQs>}></Route> {/*Child page of platform support*/}
+          <Route path="/MetaTrader5FAQs" element={<MetaTrader5FAQs></MetaTrader5FAQs>}></Route> {/*Child page of platform support*/}
+          <Route path="/BlackBullInvestFAQs" element={<BlackBullInvestFAQs></BlackBullInvestFAQs>}></Route> {/*Child page of platform support*/}
+          <Route path="/TradingHourChange" element={<TradingHourChange></TradingHourChange>}></Route> {/*Child page of market support*/}
+
+          <Route path="/TradingConditions" element={<TradingConditions></TradingConditions>}></Route> {/*Child page of market support*/}
+          <Route path="/ContractExpiries" element={<ContractExpiries></ContractExpiries>}></Route> {/*Child page of market support*/}
+          <Route path="/ContractSpecification" element={<ContractSpecification></ContractSpecification>}></Route> {/*Child page of market support*/}
+
+
+
         </Routes>
-      </div> */}
+        {/* <div className="main-sections">
+
+        <div className="About2-section">
+          <About2 />
+        </div>
+
+        <div className="NewsSection-section">
+          <NewsSection />
+        </div>
+
+ 
+        <div className="app-section">
+    <div className="app-container">
+
+
+
+
+
+      <div className="container1">
+
+        <Routes>
+          <Route path="/" element={<QuickStart />}></Route>
+          <Route path="/Assets" element={<QuickStart2 />}></Route>
+          <Route path="/platforms" element={<QuickStart3 />}></Route>
+          <Route path="/Account-type" element={<QuickStart4 />}></Route>
+          <Route path="/verify-account" element={<QuickStart5 />}></Route>
+          <Route path="/deposit-funds" element={<QuickStart6 />}></Route>
+          <Route path="/withdraw-funds" element={<QuickStart7 />}></Route>
+          <Route path="/Market-Overview" element={<Market />}></Route>
+          <Route path="/Forex" element={<Market2 />}></Route>
+          <Route path="/Equities" element={<Market3 />}></Route>
+          <Route path="/commodities" element={<Market4 />}></Route>
+          <Route path="/Futures" element={<Market5 />}></Route>
+          <Route path="/Indices" element={<Market6 />}></Route>
+          <Route path="/crypto" element={<Market7/>}></Route>
+          <Route path="/energies" element={<Market_com_Energies />}></Route>
+          <Route path="/metals" element={<Market_com_Metal />}></Route>
+
+        </Routes>
+        {/* <LeftDiv />
+        <RightDiv /> 
+        <CreateAccount />
+        
+  
+       
+       
+        <Market_Future_Energy />
+        <Market_com_Metal />
+        <Market_Future_Indices />
+        <Market_Future_Other />
+        <Education_Forex_Beginner />
+        <Education_Forex_Intermediate />
+        <Education_Forex_Advance />
+        <Education_Com_Beginner/> 
+        <Education_Com_Intermediate/>
+        <Education_Com_Advance/>*/}
+
+
+
+      </div>
+
+
+
+
+
 
       {/* <div className="app-section">
         <Routes>
@@ -298,9 +532,21 @@ const App = () => {
         <Route path="/ConnectTrading" element={<ConnectTrading/>}    />
         <Route path="/FirstTrade" element={<FirstTrade/>}    />
 
+<<<<<<< HEAD
         </Routes> 
          <Navbar1/> 
 
+=======
+        </Routes> */}
+        {/* <Navbar1/> */}
+<<<<<<< HEAD
+        <div className="rohan">
+          <Navbar />
+          <Routes>
+            {/* <Route path="/" element={<EducationHub />}></Route>
+=======
+<<<<<<< HEAD
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
         <NavbarBlue/>
 
         </div> */}
@@ -308,7 +554,12 @@ const App = () => {
       {/* <div className="rohan">
         <Navbar />
         <Routes>
+<<<<<<< HEAD
           <Route path="/" element={<EducationHub />}></Route>
+=======
+          {/* <Route path="/" element={<EducationHub />}></Route>
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
           <Route path="/Webinars" element={<Webinars></Webinars>}></Route>
           <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>}></Route>
           <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>}></Route>
@@ -334,8 +585,8 @@ const App = () => {
 
 
 
-        </Routes>
-        {/* <div className="main-sections">
+          </Routes>
+          {/* <div className="main-sections">
 
         <div className="About2-section">
           <About2 />
@@ -351,6 +602,7 @@ const App = () => {
 
 
 
+<<<<<<< HEAD
 
 
       <div className="container1">
@@ -388,10 +640,48 @@ const App = () => {
 
         </Routes>
         {/* <LeftDiv />
+=======
+          <div className="container1">
+
+            <Routes>
+
+              <Route path="/" element={<QuickStart />}></Route>
+              <Route path="/Assets" element={<QuickStart2 />}></Route>
+              <Route path="/platforms" element={<QuickStart3 />}></Route>
+              <Route path="/Account-type" element={<QuickStart4 />}></Route>
+              <Route path="/verify-account" element={<QuickStart5 />}></Route>
+              <Route path="/deposit-funds" element={<QuickStart6 />}></Route>
+              <Route path="/withdraw-funds" element={<QuickStart7 />}></Route>
+              <Route path="/Market-Overview" element={<Market />}></Route>
+              <Route path="/Forex" element={<Market2 />}></Route>
+              <Route path="/Equities" element={<Market3 />}></Route>
+              <Route path="/commodities" element={<Market4 />}></Route>
+              <Route path="/Futures" element={<Market5 />}></Route>
+              <Route path="/Indices" element={<Market6 />}></Route>
+              <Route path="/crypto" element={<Market7 />}></Route>
+              <Route path="/Energies" element={<Market_com_Energies />}></Route>
+              <Route path="/metals" element={<Market_com_Metal />}></Route>
+              <Route path="/Energy" element={<Market_Future_Energy />}></Route>
+              <Route path="/Metal" element={<Market_com_Metal />}></Route>
+              <Route path="/Indices" element={<Market_Future_Indices />}></Route>
+              <Route path="/Other" element={<Market_Future_Other />}></Route>
+              <Route path="/Beginner" element={<Education_Forex_Beginner />}></Route>
+              <Route path="/Intermediate" element={<Education_Forex_Intermediate />}></Route>
+              <Route path="/Advance" element={<Education_Forex_Advance />}></Route>
+              <Route path="/Beginner" element={<Education_Com_Beginner />}></Route>
+              <Route path="/Intermediate" element={<Education_Com_Intermediate />}></Route>
+              <Route path="/Advance" element={<Education_Com_Advance />}></Route>
+              <Route path="/dailynews" element={<DailyNews />}></Route>
+              <Route path="/EquityResearch" element={<EquityResearch />}></Route>
+
+            </Routes>
+            {/* <LeftDiv />
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
                       <RightDiv /> 
                       <CreateAccount />
                       */}
 
+<<<<<<< HEAD
 
         
         <QuickStart3 />
@@ -420,11 +710,20 @@ const App = () => {
         <popup />
 
       </div>
+=======
+            <popup />
+
+          </div>
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 
 
 
 
+<<<<<<< HEAD
       {/* <div className="rohan">
+=======
+          {/* <div className="rohan">
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
         <Navbar />
         <Routes>
           <Route path="/EducationHub" element={<EducationHub />} />
@@ -444,7 +743,12 @@ const App = () => {
         </Routes>
       </div> */}
 
+<<<<<<< HEAD
 
+=======
+          {/* <div className="app-section">
+=======
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
       {/* <div className="app-section">
 
       {/* <div className="app-section">
@@ -459,12 +763,62 @@ const App = () => {
         <MarketSupport />
         <EconomicCalendar />
         <ContactSupport />
+<<<<<<< HEAD
 
+=======
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
 
-</div> */}
+          </div>*/}
 
+<<<<<<< HEAD
     
       {/*  <div className="rohan">
+=======
+
+
+          {/* <div className="container1">
+        <LeftDiv />
+          <RightDiv />
+          <QuickStart />
+          <QuickStart3 />
+          <QuickStart2 />
+          <QuickStart4 />
+          <QuickStart5 />
+          <QuickStart6 />
+          <QuickStart7 />
+          <Market />
+          <Market2 />
+          <Market3 />
+          <Market4 />
+          <Market5 />
+          <Market6 />
+          <Market7 />
+          <CreateAccount /> 
+          <Market_com_Energies/>
+          <Market_Future_Energy/>
+          <Market_com_Metal/>
+          <Market_Future_Indices/>
+          <Market_Future_Other/>
+          <Education_Forex_Beginner/> 
+          <Education_Forex_Intermediate/>
+         <Education_Forex_Advance/>
+        
+
+      </div> */}
+
+
+
+
+
+          {/*
+      <
+      <VPStrading />
+=======
+        {/*  <div className="rohan">
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
     //   <Navbar />
     //   <Routes>
     //     <Route path="/EducationHub" element={<EducationHub />} />
@@ -477,7 +831,12 @@ const App = () => {
     // </div> */}
 
 
+<<<<<<< HEAD
 
+=======
+          {/* <VPStrading />
+=======
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
       {/* <VPStrading />
 
       {/* <VPStrading />
@@ -489,6 +848,25 @@ const App = () => {
         <BeginnerShare />
         <Intermediate />
         <AdvShare />
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <AdvShare /> */}
+
+
+
+
+
+
+
+        </div >
+        <AccountCreate />
+        <VerifyAccount />
+        <FundAccount />
+        <ConnectTrading />
+        <AdvShare />
+        <FirstTrade />
+
+=======
         <AccountCreate/>
         <VerifyAccount/>
         <FundAccount/>
@@ -499,17 +877,29 @@ const App = () => {
         <InstallMarkettrad/>
         <ChangeCurrency/>
         
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
       </div>
 
   
 
-    </div>
+    
+
+    </div >
   );
 };
 
 export default App;
+<<<<<<< HEAD
 
         <AdvShare /> 
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+        <AdvShare /> */}
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f
       </div>
 
 
@@ -540,4 +930,10 @@ export default App;
 
 
 export default App;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a3700c4aeed76061e6aa9cbb99478e3f367395c
+>>>>>>> cd1b7276807d70771d30449a969fc49e69b8ee55
+>>>>>>> 467984b7b7d416dad51d593e998a0c2bfa85d904
+>>>>>>> 471c537b66e397ceb1b903b73ddbb112afdfe41f

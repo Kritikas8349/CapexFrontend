@@ -4,64 +4,58 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import SidebarAccordion from "./SideBarAccordian";
 
-const TradingHourChange = () => {
+const ContractExpiries = () => {
     const [search, setSearch] = useState("");
 
-    const tradingData = [
-        { symbol: "Cryptos", type: "Cryptos", dateInfo: "Normal Hours" },
-        { symbol: "UKOIL", type: "Energies", dateInfo: "Early Close 20:30" },
-        { symbol: "USOIL", type: "Energies", dateInfo: "Early Close 21:30" },
-        { symbol: "DE40.f", type: "Expiring Futures", dateInfo: "Early Close 23:00" },
-        { symbol: "DJ30.f", type: "Expiring Futures", dateInfo: "Early Close 20:00" },
-        { symbol: "DX.f", type: "Expiring Futures", dateInfo: "Normal Hours" },
-        { symbol: "HK50.f", type: "Expiring Futures", dateInfo: "Normal Hours" },
+    const expiryData = [
+        { symbol: "JPN225.f", closeDate: "05/09/2025 (Fri)", expiryDate: "09/09/2025 (Tue)", time: "10:00 a. m." },
+        { symbol: "DX.f", closeDate: "09/09/2025 (Tue)", expiryDate: "11/09/2025 (Thu)", time: "10:00 a. m." },
+        { symbol: "VIX.f", closeDate: "11/09/2025 (Thu)", expiryDate: "15/09/2025 (Mon)", time: "10:00 a. m." },
+        { symbol: "US2000.f", closeDate: "15/09/2025 (Mon)", expiryDate: "17/09/2025 (Wed)", time: "10:00 a. m." },
+        { symbol: "UK100.f", closeDate: "15/09/2025 (Mon)", expiryDate: "17/09/2025 (Wed)", time: "10:00 a. m." },
+        { symbol: "DE40.f", closeDate: "15/09/2025 (Mon)", expiryDate: "17/09/2025 (Wed)", time: "10:00 a. m." },
+        { symbol: "US500.f", closeDate: "15/09/2025 (Mon)", expiryDate: "17/09/2025 (Wed)", time: "10:00 a. m." },
+        { symbol: "USTEC.f", closeDate: "15/09/2025 (Mon)", expiryDate: "17/09/2025 (Wed)", time: "10:00 a. m." },
+        { symbol: "DJ30.f", closeDate: "15/09/2025 (Mon)", expiryDate: "17/09/2025 (Wed)", time: "10:00 a. m." },
+        { symbol: "USOIL.f", closeDate: "16/09/2025 (Tue)", expiryDate: "18/09/2025 (Thu)", time: "10:00 a. m." },
+        { symbol: "NGAS.f", closeDate: "19/09/2025 (Fri)", expiryDate: "23/09/2025 (Tue)", time: "10:00 a. m." },
+        { symbol: "UKBRENT.f", closeDate: "23/09/2025 (Tue)", expiryDate: "25/09/2025 (Thu)", time: "10:00 a. m." },
+        { symbol: "HK50.f", closeDate: "24/09/2025 (Wed)", expiryDate: "26/09/2025 (Fri)", time: "10:00 a. m." }
     ];
 
-    const filteredData = tradingData.filter(
+
+    const filteredData = expiryData.filter(
         (row) =>
             row.symbol.toLowerCase().includes(search.toLowerCase()) ||
-            row.type.toLowerCase().includes(search.toLowerCase()) ||
-            row.dateInfo.toLowerCase().includes(search.toLowerCase())
+            row.closeDate.toLowerCase().includes(search.toLowerCase()) ||
+            row.expiryDate.toLowerCase().includes(search.toLowerCase()) ||
+            row.time.toLowerCase().includes(search.toLowerCase())
     );
 
-   const Sections = [
-  {
-    title: "Trading Conditions",
-    icon: "bi bi-graph-up-arrow",
-    items: [
-      { label: "Leverage" },
-      { label: "Swap Free Accounts" },
-      { label: "Trading conditions overview" },
-      { label: "Contract Specifications" },
-      { label: "Contract Expiries" },
-      { label: "What are your minimum deposits?" },
-      { label: "Trading Hour Changes", active: true }, // active key added
-      { label: "Why is a triple swap charged?" },
-      { label: "Who are your liquidity providers?" },
-      { label: "Restricted Countries" },
-    ],
-  },
-  {
-    title: "Security of Funds",
-    icon: "bi bi-bank",
-    items: [
-      { label: "Segregated Client Accounts" },
-      { label: "Investor Compensation Fund" },
-      { label: "Negative Balance Protection" },
-      { label: "Tier 1 Banking Partners" }
-    ],
-  }
-];
-
-    
-
-  
+    const menuItems = [
+        "Leverage",
+        "Swap Free Accounts",
+        "Trading conditions overview",
+        "Contract Specifications",
+        "Contract Expiries",
+        "What are your minimum deposits?",
+        "Trading Hour Changes",
+        "Why is a triple swap charged?",
+        "Who are your liquidity providers?",
+        "Restricted Countries",
+    ];
+    const securityItems = [
+        "Segregated Client Accounts",
+        "Investor Compensation Fund",
+        "Negative Balance Protection",
+        "Tier 1 Banking Partners",
+    ];
 
     return (
         <div className="container-fluid">
             <div className="row justify-content-center">
                 {/* Sidebar with Accordion */}
-                <SidebarAccordion Sections={Sections}></SidebarAccordion>
+                <SidebarAccordion></SidebarAccordion>
 
                 {/* Main Content */}
                 <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border">
@@ -81,13 +75,13 @@ const TradingHourChange = () => {
                                 <Link to="#">Trading Conditions</Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">
-                                Trading Hour Changes
+                                Contract Expiry
                             </li>
                         </ol>
                     </nav>
 
                     {/* Title + Date */}
-                    <h2 className="fw-bold mb-1">Trading Hour Changes</h2>
+                    <h2 className="fw-bold mb-1">Contract Expiry</h2>
                     <p className="text-muted mb-3">Updated on September 2, 2025</p>
 
                     {/* Server time */}
@@ -112,8 +106,9 @@ const TradingHourChange = () => {
                             <thead className="table-primary">
                                 <tr>
                                     <th>Symbol</th>
-                                    <th>Type</th>
-                                    <th>Monday, September 1, 2025</th>
+                                    <th>Close Date</th>
+                                    <th>Expiry Date</th>
+                                    <th>Time (GMT +3)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -121,8 +116,9 @@ const TradingHourChange = () => {
                                     filteredData.map((row, i) => (
                                         <tr key={i}>
                                             <td>{row.symbol}</td>
-                                            <td>{row.type}</td>
-                                            <td>{row.dateInfo}</td>
+                                            <td>{row.closeDate}</td>
+                                            <td>{row.expiryDate}</td>
+                                            <td>{row.time}</td>
                                         </tr>
                                     ))
                                 ) : (
@@ -136,7 +132,7 @@ const TradingHourChange = () => {
                         </table>
                     </div>
                     {/* Other links and feedback */}
-                     <div className="my-4">
+                    <div className="my-4">
                         {/* Share Section */}
                         <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2 mb-4">
                             <h6 className="mb-0">Share this to:</h6>
@@ -167,10 +163,11 @@ const TradingHourChange = () => {
                             </p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     );
 };
 
-export default TradingHourChange;
+export default ContractExpiries;
