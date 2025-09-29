@@ -4,17 +4,19 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
-  background-color: #495ffd;
-  color: white;
+  height: 55px;
+  background-color: #fff; /* white top-bar */
+  color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 18px;
   z-index: 9999;
   font-size: 13px;
   box-sizing: border-box;
   flex-wrap: wrap;
+  border-radius: 30px;
+  margin: 10px 20px 20px 20px;
 }
 
 .top-left {
@@ -35,13 +37,30 @@
 .top-search {
   padding: 6px 14px;
   border-radius: 20px;
-  border: none;
+  border: 1px solid gray;
   outline: none;
   width: 220px;
   max-width: 100%;
   height: 34px;
   transition: width 0.3s ease;
 }
+.top-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.top-search-wrapper .search-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+  color: gray;
+}
+
+.top-search-wrapper .top-search {
+  padding-left: 32px; /* space for icon */
+}
+
 
 .top-right {
   display: flex;
@@ -58,8 +77,12 @@
   transition: background 0.3s, color 0.3s;
 }
 
+.navbar-right .refer-link{
+  color: white;
+}
+
 .top-right .top-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #495ffd;
   color: white;
   border-radius: 20px;
 }
@@ -73,17 +96,16 @@
 /* ===== Navbar ===== */
 .navbar-blue {
   position: fixed;
-  top: 50px;
+  top: 60px; /* below top-bar */
   left: 0;
   right: 0;
   height: 70px;
-  background-color: #fff;
+  background: transparent; /* landing page background shows through */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  z-index: 9000;
-  padding: 0 12px;
+  z-index: 9998;
+  padding: 0 18px;
   box-sizing: border-box;
   flex-wrap: wrap;
 }
@@ -94,34 +116,33 @@
   object-fit: contain;
 }
 
-.navbar-center .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 0;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.navbar-center .nav-links li {
+/* ===== Top-level navbar links (Quickstart, Market, etc.) ===== */
+.navbar-center .nav-links > li {
   cursor: pointer;
   font-weight: 600;
-  color: black;
   font-size: 15px;
+  color: white; /* top-level white */
   transition: color 0.3s;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.navbar-center .nav-links li:hover {
+.nav-links li ul,
+.nav-links li ul li ul,
+.overlay-submenu,
+.overlay-submenu li ul {
+  list-style: none; /* remove bullets */
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar-center .nav-links > li:hover {
   color: #495ffd;
 }
 
-/* ===== Dropdown (Desktop) ===== */
-.nav-links li {
-  position: relative;
-}
-
+/* ===== Dropdown Menu ===== */
 .nav-links li ul {
   display: none;
   position: absolute;
@@ -139,18 +160,21 @@
   display: block;
 }
 
+/* Dropdown items color black */
 .nav-links li ul li {
   position: relative;
   padding: 10px 18px;
   font-size: 15px;
   white-space: nowrap;
+  color: black;
 }
 
 .nav-links li ul li:hover {
   background-color: #e6f0ff;
+  color: black;
 }
 
-/* Nested Dropdowns → open to right */
+/* Nested dropdowns (open to right) */
 .nav-links li ul li ul {
   display: none;
   position: absolute;
@@ -160,13 +184,14 @@
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   background: #fff;
+  color: black;
 }
 
 .nav-links li ul li:hover > ul {
   display: block;
 }
 
-/* Support nested submenus open left */
+/* Last-child nested submenus open to left */
 .nav-links li:last-child ul li ul {
   left: auto;
   right: 100%;
@@ -190,7 +215,7 @@
   transform: rotate(180deg);
 }
 
-/* ===== Right Section ===== */
+/* ===== Navbar Right Section ===== */
 .navbar-right {
   display: flex;
   align-items: center;
@@ -208,7 +233,6 @@
   text-decoration: underline;
 }
 
-/* Buttons */
 .login-btn,
 .join-btn {
   padding: 7px 16px;
@@ -219,16 +243,16 @@
   font-weight: 500;
   background-color: #495ffd;
   color: white;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .login-btn:hover,
 .join-btn:hover {
-  opacity: 0.85;
+  background-color: #3745d6;
   transform: scale(1.05);
 }
 
-/* ===== Hamburger ===== */
+/* ===== Hamburger Menu ===== */
 .hamburger-menu {
   display: none;
   font-size: 28px;
@@ -264,7 +288,7 @@
   margin-bottom: 20px;
 }
 
-/* ===== Hamburger Menu Links ===== */
+/* Hamburger Links */
 .overlay-links {
   list-style: none;
   padding: 0;
@@ -287,7 +311,6 @@
   position: relative;
 }
 
-/* Only main items show initially, submenu hidden */
 .overlay-submenu {
   display: none;
   flex-direction: column;
@@ -306,9 +329,10 @@
   font-weight: 400;
   padding: 8px 12px;
   border-bottom: 1px dashed #ddd;
+  color: black;
 }
 
-/* Nested submenus */
+/* Nested submenu in overlay */
 .overlay-submenu li ul {
   display: none;
   flex-direction: column;
@@ -321,7 +345,7 @@
   display: flex;
 }
 
-/* Dropdown arrow for toggle */
+/* Dropdown arrow for overlay */
 .overlay-links .dropdown-icon,
 .overlay-submenu .dropdown-icon {
   font-size: 12px;
@@ -333,20 +357,20 @@ li.open > .dropdown-icon,
   transform: rotate(180deg);
 }
 
-/* Buttons same size */
+/* Buttons full width in overlay */
 .overlay-links .login-btn,
 .overlay-links .join-btn {
   width: 100%;
   margin-top: 10px;
 }
 
-/* Hide hover behavior for mobile */
+/* Disable hover behavior in mobile overlay */
 .overlay-links li:hover > .overlay-submenu,
 .overlay-submenu li:hover > ul {
   display: none;
 }
 
-/* Bottom row */
+/* Bottom row in overlay */
 .overlay-bottom-row {
   display: flex;
   justify-content: center;
@@ -389,7 +413,7 @@ li.open > .dropdown-icon,
   .navbar-center .nav-links {
     gap: 12px;
   }
-  .navbar-center .nav-links li {
+  .navbar-center .nav-links > li {
     font-size: 14px;
   }
   .top-right .top-link {
@@ -430,9 +454,4 @@ li.open > .dropdown-icon,
     font-size: 13px;
     padding: 5px 10px;
   }
-}
-
-/* ===== Navbar padding to not overlap top-bar ===== */
-#nav_main_blue {
-  padding-top: 120px;
 }
