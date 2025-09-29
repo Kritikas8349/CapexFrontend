@@ -285,7 +285,7 @@ function QuickStart4() {
                             <li>High liquidity access</li>
                             <li>Priority support</li>
                         </ul>
-                        <button class="create-btn">Create Account</button>
+                        <button class="create-btn   ">Create Account</button>
                     </div>
                 </div>
             </div>

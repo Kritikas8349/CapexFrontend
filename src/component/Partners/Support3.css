@@ -1,0 +1,250 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.support3-container {
+    width: 100%;
+}
+
+/* ---------------------- */
+/* 🔷 Hero Section */
+/* ---------------------- */
+.hero-section-s3 {
+    width: 100%;
+    height: 65vh;
+    background-image: url('/s33.avif');
+    /* 🔁 Replace with your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2rem;
+}
+
+.hero-overlay-s3 {
+    color: white;
+    margin-left: 130px;
+    padding-bottom: 100px;
+    line-height: 30px;
+
+
+
+}
+
+.breadcrumb-s3 {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+.breadcrumb-s3 span {
+    font-weight: 600;
+
+}
+
+.hero-heading-s3 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+/* ---------------------------- */
+/* 🔷 Blue Overlapping Section */
+/* ---------------------------- */
+.brand-guidelines-section-s3 {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 2rem;
+    position: relative;
+    text-align: start;
+    top: -60px;
+    /* 👈 Makes it overlap hero image */
+    z-index: 5;
+    /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
+    overflow: hidden;
+}
+
+.content-wrapper-s3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.left-heading-s3 {
+    font-size: 2.8rem;
+    font-weight: 800;
+
+    flex: 1 1 300px;
+    line-height: 1.1;
+}
+
+.right-paragraph-s3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    flex: 1 1 400px;
+    color: #e2e2e2;
+    line-height: 1.6;
+}
+
+/* Optional large logo */
+.brand-guidelines-section-s3::before {
+    content: '';
+
+    background-image: url('/your-watermark-icon.png');
+    /* Optional */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* ------------------ */
+/* ✅ Responsive */
+/* ------------------ */
+@media (max-width: 1024px) {
+    .hero-heading-s3 {
+        font-size: 2.5rem;
+    }
+
+    .left-heading-s3 {
+        font-size: 2rem;
+    }
+
+    .right-paragraph-s3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-heading-s3 {
+        font-size: 2rem;
+    }
+
+    .left-heading-s3 {
+        font-size: 1.7rem;
+    }
+
+    .right-paragraph-s3 {
+        font-size: 0.95rem;
+    }
+
+    .content-wrapper-s3 {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .brand-guidelines-section-s3 {
+        height: 50vh;
+    }
+
+    .hero-heading-s3 {
+        font-size: 1.6rem;
+    }
+
+    .left-heading-s3 {
+        font-size: 1.5rem;
+
+
+    }
+
+    .right-paragraph-s3 {
+
+        font-size: 0.9rem;
+        padding-top: 20px;
+    }
+
+    .breadcrumb-s3 {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* PromoteBlackBull.css */
+
+.promo-container {
+    text-align: start;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: -60px;
+    padding: 3rem 1.5rem;
+    color: #0c0c0c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.promo-title {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0f42d9;
+    margin-bottom: 1.5rem;
+}
+
+.promo-box {
+    background-color: #f9f9f9;
+    padding: 2.3rem;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(5, 4, 4, 0.05);
+}
+
+.promo-subtitle {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.promo-box p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.promo-box ul {
+    text-align: start;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.promo-box li {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .promo-title {
+        font-size: 1.5rem;
+    }
+
+    .promo-box {
+        padding: 1.5rem;
+    }
+}
+
+/* FAQAccordion.css -s3 version */
+

@@ -6,7 +6,10 @@
   gap: 1px;
   /* padding: 32px; */
   flex-wrap: wrap;
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc1c601186e11393f5b53b37db90b885e1ac55bd
   box-sizing: border-box;
 }
 
@@ -14,7 +17,7 @@
 .left-container,
 .right-container {
   flex: 1;
-  min-width: 280px; /* ensures they shrink on small screens */
+  min-width: 280px; 
   box-sizing: border-box;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import "./EquityResearch.css";
+import "./Australia.css";
 
-function EquityResearch() {
+function Australia() {
 
     const stockData = [
         {
@@ -175,13 +175,13 @@ function EquityResearch() {
 
             <div className="R-news-section">
                 <div className="R-overlay">
-                    <h1 className="R1-news"> Stocks</h1>
+                    <h1 className="R1-news"> Australia </h1>
 
                 </div>
             </div>
 
 
-            <section className="stock-section">
+            {/* <section className="stock-section">
                 <h2 className="stock-title">
                     List of stock recommendation that BlackBull Research provides to its memberships
                 </h2>
@@ -224,11 +224,17 @@ function EquityResearch() {
                 <p className="footer-note">
                     The full stock list with recommendations is available exclusively to BlackBull Research subscribers.
                 </p>
-            </section>
+            </section> */}
 
 
 
             <div className="stock-grid-unique-container">
+
+                <p className="footer-note2">
+                    Just some of the ASX stocks we cover for our members
+
+                </p>
+
                 <div className="stock-grid-unique-grid">
                     {stockList.map((stock) => (
                         <div className="stock-grid-unique-card" key={stock.id || stock.ticker}>
@@ -318,4 +324,4 @@ function EquityResearch() {
     )
 }
 
-export default EquityResearch;
+export default Australia;
