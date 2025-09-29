@@ -43,7 +43,7 @@ html {
 }
 
 /* StockRecommendations.css */
-.stock-section {
+/* .stock-section {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: auto;
@@ -137,10 +137,10 @@ html {
     font-size: 1.2rem;
     color: #0052ff;
     font-weight: 600;
-}
+} */
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .stock-title {
         font-size: 1.2rem;
         padding: 0 1rem;
@@ -188,7 +188,7 @@ html {
         width: 28px;
         height: 28px;
     }
-}
+} */
 
 /* StockListGridUnique.css */
 .stock-grid-unique-container {
@@ -221,6 +221,14 @@ html {
   gap: 1rem;
 }
 
+.footer-note2 {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0052ff;
+    font-weight: 600;
+}
 .stock-grid-unique-logo {
   width: 40px;
   height: 40px;

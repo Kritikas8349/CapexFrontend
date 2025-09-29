@@ -1,0 +1,184 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Main {
+    width: 100%;
+    min-height: 300px;
+
+
+}
+
+.news-section {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url('trd.jpg');
+    /* 👈 Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    /* background-color: rgba(0, 0, 0, 0.5); dark overlay for readability */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: start;
+    color: white;
+    width: 75%;
+}
+
+.news {
+    font-size: 60px;
+}
+
+.article-list {
+    margin-top: 50px;
+  list-style: none;
+  
+}
+
+.article-item {
+  margin-bottom: 15px;
+}
+
+.article-link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  color: #003399;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  max-width: 100%;
+  line-height: 1.4;
+}
+
+hr {
+  margin-top: 12px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Pagination */
+
+.pagination {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.next-btn{
+
+    width: 120px;
+    border-radius: 20px;
+   
+}
+
+.page-btn,
+.next-btn {
+  background-color: #003399;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 36px;
+  
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.page-btn.active {
+  background-color: #000;
+}
+
+.page-btn:hover:not(.active),
+.next-btn:hover:not(:disabled) {
+  background-color: #002080;
+}
+
+.page-btn:disabled,
+.next-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.dots {
+  font-weight: 700;
+  font-size: 18px;
+  user-select: none;
+  padding: 0 6px;
+  color: #000;
+}
+
+/* Responsive */
+
+/* Tablets */
+@media (max-width: 768px) {
+  #Main {
+    padding: 0 10px;
+  }
+
+  .article-link {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .page-btn,
+  .next-btn {
+    padding: 7px 12px;
+    min-width: 32px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  #Main {
+    margin: 10px 15px;
+    padding: 0 10px;
+  }
+
+  .article-link {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .page-btn,
+  .next-btn {
+    padding: 6px 10px;
+    min-width: 28px;
+    font-size: 13px;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+}
