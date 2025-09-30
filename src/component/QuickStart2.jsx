@@ -284,7 +284,7 @@ function QuickStart2() {
 
 
 
-      <div className="hero-container">
+      {/* <div className="hero-container">
         <div className="hero-overlay">
           <h1>
             Start trading in less than <span>5 minutes</span>
@@ -297,11 +297,11 @@ function QuickStart2() {
             <button className="join-btn">Join Now</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
             <img src="logo2.png" alt="" />
@@ -401,7 +401,7 @@ function QuickStart2() {
           </div>
         </div>
 
-      </div>
+      </div> */}
     </div>
   );
 }
