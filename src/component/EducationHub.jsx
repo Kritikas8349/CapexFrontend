@@ -90,21 +90,21 @@ function EducationHub() {
       id: 1,
       title: "FOMC doves now in the driver’s seat?",
       date: "SEPTEMBER 18, 2025",
-      image: "dollar.webp",
+      image: "trade.avif",
       link: "#",
     },
     {
       id: 2,
       title: "The push for a 50bps Fed cut and its effect on EUR/USD",
       date: "SEPTEMBER 17, 2025",
-      image: "dollar.webp",
+      image: "trade1.avif",
       link: "#",
     },
     {
       id: 3,
       title: "Euro shrugs off France’s credit downgrade | FX Research",
       date: "SEPTEMBER 16, 2025",
-      image: "dollar.webp",
+      image: "trade2.avif",
       link: "#",
     },
   ];
@@ -134,9 +134,9 @@ function EducationHub() {
     },
   ];
   return (
-    <>
+    <div className='bg-home'>
       <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '90vh' }}>
-        <div className="container bg-transparent">
+        <div className="container ">
           <div className="row bg-transparent">
             <div className="col-12 col-lg-6 bg-transparent">
               <div className="content-box p-4 p-md-5 bg-transparent"> {/* Add responsive padding */}
@@ -152,7 +152,7 @@ function EducationHub() {
       </div>
 
       {/* ----------For Learn Trad--------------------- */}
-      <div className='bg-light py-5'>
+      <div className='bg-home  align-content-center border' style={{height:'80vh'}}>
         <div className="container">
           <h1 className='text-heading fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
           <div className='row justify-content-center'>
@@ -175,7 +175,7 @@ function EducationHub() {
 
 
       {/* -------For Trading Platform------------------ */}
-      <section className="bg-white py-5">
+      <section className="bg-home py-5">
         <div className="container">
           <h1 className="text-center fw-bold mb-5 display-4  text-heading">Trading Platforms</h1>
 
@@ -183,7 +183,7 @@ function EducationHub() {
             {platforms.map((platform, index) => (
               <div className="col-md-6 col-lg-4 " key={index}>
                 <div className="border border-2 border-primary bg-opacity-10 rounded p-4 position-relative h-100">
-                  <div className="d-flex align-items-center bg-white mb-3">
+                  <div className="d-flex align-items-center bg-home mb-3">
                     <img
                       src={platform.icon}
                       alt={platform.name}
@@ -216,7 +216,7 @@ function EducationHub() {
 
 
       {/* -----------For TradingVideo----------------- */}
-      <div className="bg-light py-5">
+      <div className="bg-home py-5">
         <div className="container">
           <div className="text-center mb-5">
             <h1 className="fw-bold text-heading mb-3 display-4">Trading Video Tutorials</h1>
@@ -284,7 +284,7 @@ function EducationHub() {
                 />
 
                 {/* Post Content */}
-                <div className="card-body px-0">
+                <div className="card-body px-1">
                   <h5 className="fw-bold">{post.title}</h5>
                   <div className="d-flex justify-content-between align-items-center mt-2">
                     <small className=" text-heading">{post.date}</small>
@@ -307,7 +307,7 @@ function EducationHub() {
 
 
       {/* ---------For Past Webinar------------ */}
-      <div className="bg-light py-5">
+      <div className="bg-home py-5">
         <div className="container">
           <div className="text-center mb-5">
             <h1 className="fw-bold text-heading mb-3 display-4">Past Webinars</h1>
@@ -354,7 +354,7 @@ function EducationHub() {
 
 
       {/* ------For Spotify story/podcast------- */}
-      <section className="container  my-5">
+      <section className="container align-content-center  mt-0" style={{height:'90vh'}}>
         <div className="row g-6 align-items-center">
           {/* Image Column */}
           <div className="col-lg-6 mb-4 mb-lg-0" >
@@ -393,7 +393,7 @@ function EducationHub() {
 
       
 
-    </>
+    </div>
   );
 }
 

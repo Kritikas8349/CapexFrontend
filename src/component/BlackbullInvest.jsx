@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-function Invest() {
+function BlackbullInvest() {
     const [activeTab, setActiveTab] = useState('us');
 
     const tabs = [
@@ -298,4 +298,4 @@ function Invest() {
     )
 }
 
-export default Invest
+export default BlackbullInvest;

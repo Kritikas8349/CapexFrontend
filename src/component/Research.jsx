@@ -78,7 +78,7 @@ function Research() {
         },
     ];
     return (
-        <div>
+        <div className='bg-home'>
             {/* Inject CSS for media query */}
             <style>
                 {`
@@ -95,7 +95,7 @@ function Research() {
   `}
             </style>
 
-            <div className="container-fluid py-5 research-section">
+            <div className="container-fluid py-5 research-section ">
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -138,7 +138,7 @@ function Research() {
             </div>
             {/* ---------For YouTube Videos------------ */}
 
-            <div className="container py-5 bg-light my-5">
+            <div className="container py-5  my-5">
                 <div className="d-flex align-items-center mb-4">
                     <h2 className="fw-bold fs-1 text-heading  me-2">Discover More Episodes</h2>
                     <i className="bi bi-youtube text-danger fs-2"></i>
@@ -210,7 +210,7 @@ function Research() {
 
             {/* ----------For youTube Shorts--------------- */}
 
-            <div className="container py-5 bg-light">
+            <div className="container py-2 bg-home">
                 <div className="d-flex align-items-center mb-4">
                     <h2 className="fw-bold fs-1 text-heading me-2">Discover More Episodes</h2>
                     <i className="bi bi-youtube text-danger fs-2"></i>
@@ -257,7 +257,7 @@ function Research() {
                                             top: 0,
                                             left: 0,
                                             width: '100%',
-                                            height: '100%'
+                                            height: '90%'
                                         }}
                                     ></iframe>
                                 </div>
@@ -267,17 +267,17 @@ function Research() {
                 </div>
             </div>
             {/* ---------For Daily Analysis podcast---------------------- */}
-            <div className="container border p-5  my-2 tr-container align-content-center">
-                <div className="row align-items-center p-5 px-sm-2">
+            <div className="container  p-3 my-2 py-lg-5 align-content-center">
+                <div className="row align-items-center p-3 py-lg-5  px-sm-2">
                     <div className="col-md-8 col-lg-6">
-                        <h2 className="text-primary fs-1 fw-bold mb-4">Daily Analysis Podcast <span className='bi bi-spotify text-success'></span></h2>
-                        <p>Catch up on the key trends, breaking news, and market moves with our daily Trading Analysis Podcast—your quick, essential market recap.</p>
-                        <button className="btn btn-primary d-flex align-items-center justify-content-center">
+                        <h1 className="text-heading fs-1 fw-bold mb-4">Daily Analysis Podcast <span className='bi bi-spotify text-success'></span></h1>
+                        <p className='text-secondary fs-4'>Catch up on the key trends, breaking news, and market moves with our daily Trading Analysis Podcast—your quick, essential market recap.</p>
+                        <button className="btn btn-bg-start text-white fs-4  d-flex align-items-center justify-content-center">
                             <span className=" bi bi-spotify me-2 "></span> Listen Now
                         </button>
                     </div>
                     <div className="col-md-6 col-lg-6 text-center position-relative ">
-                        <div className="card bg-light mt-3  p-4 ">
+                        <div className="card bg-light mt-3  p-5 ">
                             <img src="" alt="" srcset="" className='bg-white' width={"150px"} height={"100px"} />
                             <span className='bi bi-spotify position-absolute top-0 end-0 me-2'></span>
                         </div>
@@ -325,7 +325,7 @@ function Research() {
 
                 {/* View More Button */}
                 <div className="text-center mt-5">
-                    <a href="#" className="btn btn-outline btn-bg-start text-white fw-semibold">
+                    <a href="#" className="btn btn-bg-start text-white fs-4">
                         View More
                     </a>
                 </div>
@@ -335,7 +335,7 @@ function Research() {
 
 
             {/* -------------Investment Research---------- */}
-            <section className=" border py-3 align-content-center py-lg-5 my-5 ir-container">
+            <section className=" border py-2 align-content-center py-lg-2 my-1 ir-container">
                 <div className="row g-4 px-4 align-items-center">
                     {/* Image Column */}
                     <div className="col-12 col-lg-6 text-center">
@@ -348,7 +348,7 @@ function Research() {
 
                     {/* Text & Button Column */}
                     <div className="col-12 col-lg-6 text-start text-lg-start px-3 px-lg-4">
-                        <h2 className="display-6 display-lg-5 fw-bold text-primary mb-3">
+                        <h2 className="display-4 display-lg-5 fw-bold text-heading mb-3">
                             Investment Research
                         </h2>
                         <p className="lead mb-4">
@@ -411,8 +411,8 @@ function Research() {
 
                     {/* Text and Button Column */}
                     <div className="col-lg-6 ">
-                        <h2 className="display-5 fw-bold  mb-4">
-                            Trading Research
+                        <h2 className="display-4 fw-bold  mb-4">
+                            Economic Calender
                         </h2>
                         <p className="lead mb-4">
                             We offer expert research and in-depth market analysis across FX, commodities, CFDs, and cryptocurrencies, providing you with the insights and tools to make confident, informed trading decisions.

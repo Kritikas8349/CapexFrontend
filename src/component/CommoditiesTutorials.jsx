@@ -71,10 +71,10 @@ function CommoditiesTutorials() {
 
 
   return (
-    <div>
+    <div className='bg-home'>
       <div className="container-fluid bg-dark text-white py-5">
         <div className="container bg-dark">
-          <h2 className="fw-bold bg-dark text-white text-center display-3 mb-5">Commodities Tutorial</h2>
+          <h2 className="fw-bold bg-dark text-white text-center display-5 mb-5">Commodities Tutorial</h2>
 
           <div className="row border-top bg-dark border-primary border-3 pt-4">
             <div className="col-lg-6 mb-4 bg-dark">
@@ -131,7 +131,7 @@ function CommoditiesTutorials() {
       </div>
 
       {/* ---------For multiple cards------------  */}
-      <div className="container py-4">
+      <div className="container  py-4">
         <div className="row">
           {lessons1.map((lesson, index) => (
             <div className="col-md-4 col-sm-6 mb-4" key={index}>

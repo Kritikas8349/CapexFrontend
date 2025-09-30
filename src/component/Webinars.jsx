@@ -29,7 +29,7 @@ function Webinars() {
   ];
   return (
     <>
-    <div className="bg-light py-5">
+    <div className="bg-home py-5">
       <div className="container">
         <div className="text-center mb-5">
           <h1 className="fw-bold text-heading mb-3 display-4">Past Webinars</h1>

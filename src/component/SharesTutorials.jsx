@@ -71,10 +71,10 @@ function SharesTutorials() {
 
 
   return (
-    <div>
-      <div className="container-fluid bg-dark text-white py-5">
+    <div className='bg-home'>
+      <div className="container-fluid bg-dark text-white py-4">
         <div className="container bg-dark">
-          <h2 className="fw-bold bg-dark text-white text-center display-3 mb-5">Shares Tutorial</h2>
+          <h2 className="fw-bold bg-dark text-white text-center display-4 mb-5">Shares Tutorials</h2>
 
           <div className="row border-top bg-dark border-primary border-3 pt-4">
             <div className="col-lg-6 mb-4 bg-dark">

@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Footer.css"
 import { FaSearch } from "react-icons/fa";
+import { Search } from "lucide-react";
+
 
 
 function Footer() {
@@ -8,20 +10,26 @@ function Footer() {
         <div id='main-F'>
 
 
-            <div className="hero-container-F">
+            <section className="hero-section-F">
                 <div className="hero-overlay-F">
-                    <h1>
-                        Start trading in less than <span>5 minutes</span>
-                    </h1>
-                    <p>with no minimum deposit</p>
+                    <div className="hero-content-F">
+                        <h1 className="hero-title-F">Start trading in less than 5 minutes</h1>
+                        <p className="hero-subtitle-F">with no minimum deposit</p>
 
-                    <div className="search-box-F">
-                        <FaSearch className="search-icon-F" />
-                        <input type="email" placeholder="" />
-                        <button className="join-btn1-F">Join Now</button>
+                        <div className="hero-form-F">
+                            <div className="hero-input-container-F">
+                                {/* <Search className="hero-icon-F" size={20} /> */}
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email....."
+                                    className="hero-input-F"
+                                />
+                            </div>
+                            <button className="hero-button-F">Join Now</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
 
             <div className="footer-container">
