@@ -2,7 +2,7 @@ import React from 'react'
 
 function TradingView() {
     return (
-        <div>
+        <div className='bg-home'>
             <style>
                 {
                     `.trading-view {
@@ -101,9 +101,9 @@ function TradingView() {
                 </div>
             </div>
 
-            {/* -------------Unlock Trading View------------ */}
+            {/* -------------How to get trading------------ */}
 
-            <div className="container-fluid bg-light align-content-center py-5" style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center py-5" style={{ height: '80vh' }}>
                 <div className="container">
                     <div className="row align-items-center border rounded p-4">
                         {/* Left Section */}
@@ -170,7 +170,7 @@ function TradingView() {
 
                         {/* Plan 2 */}
                         <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-dark text-white rounded shadow align-content-center h-100" >
+                            <div className="p-4 bg-light text-secondary rounded shadow align-content-center h-100" >
                                 <h5 className="fw-bold fs-1 text-primary">TradingView Plus</h5>
                                 <span className="badge bg-light text-dark mt-2">
                                     FREE WITH 5 LOTS TRADED P/M
@@ -221,7 +221,7 @@ function TradingView() {
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
                         <div className="col-12 col-lg-6 text-center text-md-start text-sm-start">
-                            <h1 className="fw-bold">Why Market Trad</h1>
+                            <h1 className="fw-bold text-heading">Why Market Trad</h1>
                             <p className="text-secondary mt-3 fs-5">
                                 BlackBull Markets is a multi-regulated broker headquartered in
                                 Auckland, New Zealand, providing an institutional trading experience

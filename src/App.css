@@ -6,6 +6,10 @@
   gap: 1px;
   /* padding: 32px; */
   flex-wrap: wrap;
+<<<<<<< HEAD
+
+=======
+>>>>>>> cc1c601186e11393f5b53b37db90b885e1ac55bd
   box-sizing: border-box;
 }
 
@@ -41,6 +45,9 @@
 .rank-info {
   font-size: 14px;
   color: #555;
+}
+.bg-home{
+  background-color: #ebefee;
 }
 
 /* ---------- RESPONSIVE ---------- */

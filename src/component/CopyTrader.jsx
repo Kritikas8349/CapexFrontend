@@ -265,8 +265,6 @@ function CopyTrader() {
 
 
             {/* -----How to Start-------     */}
-
-
             <div className="container-fluid py-5">
                 <div className="container text-center">
                     <h1 className="text-primary-emphasis fw-bold">How to get started?</h1>

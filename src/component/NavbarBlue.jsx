@@ -47,16 +47,16 @@ function Navbar() {
   }, [menuOpen]);
 
   const dropdowns = {
-<<<<<<< HEAD
+
     "Quick Start": ["Why Market.trad Markets?", "What assets can I trade?", "What platform can I trade on?", "What account type do you offer?", "How to verify my account?", "How to deposit funds?", "How to withdraw funds?", "How can I start trading?", "Create Account"],
     Markets: ["Markets Overview", "Forex", { title: "Commodities", subItems: ["Energies", "Metals"] }, { title: "Futures", subItems: ["Energy", "Indices", "Other"] }, "Indices", "Crypto"],
-=======
+
     "Quick Start": [" Why Market.trad Markets?", "What assets can I trade?", "What platform can I trade on?", "What account type do you offer", "How to verify my account?", "How to deposite funds?", "How to withdraw funds?", "How can I start trading?", "Create Account"],
     Markets: ["Markets Overview", "Forex",
       { title: "Commodities", subItems: ["Energies", "Metals"] },
       { title: "Futures", subItems: ["Energy", "Indices", "Other"] },
       "Indices", "Crypto"],
->>>>>>> cc1c601186e11393f5b53b37db90b885e1ac55bd
+
     Platform: ["TradingView", "cTrade", "MetaTrade 4 (MT4)", "MetaTarde 5 (MT5)", "Market.trad CopyTrade", "Market.trad Invest"],
     Education: ["Education Hub", "Webinars", { title: "Forex Tutorials", subItems: ["Beginner Forex Tutorial", "Intermediate Forex Tutorial", "Advanced Forex Tutorial"] }, { title: "Shares Tutorials", subItems: ["Beginner Shares Tutorials", "Intermediate Shares Tutorials", "Advanced Shares Tutorials"] }, { title: "Commodities Tutorials", subItems: ["Beginner Commodities Tutorial", "Intermediate Commodities Tutorial", "Advanced Commodities Tutorial"] }, "Economic Calendar", { title: "Research", subItems: [{ title: "Research Hub", subItems: ["Daily Market Analysis Snapshot", "Watch Upcoming Trading Opportunities", "Daily Insight Podcast"] }, "Trading Research", "Investment Research"] }, "Demo Trade"],
     About: ["About Us", "Awarded by Industry", "About Comparison", "Company News", "Compliance", "Security of Funds"],
