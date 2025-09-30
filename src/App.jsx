@@ -125,6 +125,7 @@ import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";
 import Support1 from "./component/Partners/Support1"; 
 import Support2 from "./component/Partners/Support2"; 
 import Support3 from "./component/Partners/Support3"; 
+import Footer from "./component/Footer"; 
 
 
 
@@ -376,10 +377,10 @@ const App = () => {
 
 
       <div className="container1">
-        <NavbarBlue />
+       <NavbarBlue/>
         <Routes>
 
-          <Route path="/" element={<QuickStart />}></Route>
+          {/* <Route path="/" element={<QuickStart />}></Route>
           <Route path="/Assets" element={<QuickStart2 />}></Route>
           <Route path="/platforms" element={<QuickStart3 />}></Route>
           <Route path="/Account-type" element={<QuickStart4 />}></Route>
@@ -402,11 +403,9 @@ const App = () => {
           <Route path="/Beginner" element={<Education_Forex_Beginner />}></Route>
           <Route path="/Intermediate" element={<Education_Forex_Intermediate />}></Route>
           <Route path="/Advance" element={<Education_Forex_Advance />}></Route>
-
           <Route path="/Beginner" element={<Education_Com_Beginner />}></Route>
           <Route path="/Intermediate" element={<Education_Com_Intermediate />}></Route>
           <Route path="/Advance" element={<Education_Com_Advance />}></Route>
-
           <Route path="/dailynews" element={<DailyNews />}></Route>
           <Route path="/EquityResearch" element={<EquityResearch />}></Route>
           <Route path="/Australia" element={<Australia />}></Route>
@@ -415,7 +414,7 @@ const App = () => {
           <Route path="/TechnicalAnalysis" element={<TechnicalAnalysis/>}></Route>
           <Route path="/AffiliateSupport" element={<Support1/>}></Route>
           <Route path="/AffiliateSupport" element={<Support1/>}></Route>
-          <Route path="/AffiliateSupport" element={<Support1/>}></Route>
+          <Route path="/AffiliateSupport" element={<Support1/>}></Route> */}
 
         </Routes>
         {/* <LeftDiv />
@@ -424,7 +423,7 @@ const App = () => {
                       */}
 
 
-        <QuickStart/>
+        {/* <QuickStart/>
         <QuickStart3 />
         <QuickStart4 />
         <QuickStart5 />
@@ -436,9 +435,9 @@ const App = () => {
         <Market4 />
         <Market5 />
         <Market6 />
-        <Market7 />
+        <Market7 /> */}
         {/* <CreateAccount /> */}
-        <Market_com_Energies />
+        {/* <Market_com_Energies />
         <Market_Future_Energy />
         <Market_com_Metal />
         <Market_Future_Indices />
@@ -457,7 +456,8 @@ const App = () => {
         <TechnicalAnalysis/>
         <Support1/> 
         <Support2/>
-        <Support3/> 
+        <Support3/>  */}
+        <Footer/>
 
          {/* <popup /> */}
 
