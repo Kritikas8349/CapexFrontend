@@ -32,35 +32,45 @@ const ContractExpiries = () => {
             row.time.toLowerCase().includes(search.toLowerCase())
     );
 
-    const menuItems = [
-        "Leverage",
-        "Swap Free Accounts",
-        "Trading conditions overview",
-        "Contract Specifications",
-        "Contract Expiries",
-        "What are your minimum deposits?",
-        "Trading Hour Changes",
-        "Why is a triple swap charged?",
-        "Who are your liquidity providers?",
-        "Restricted Countries",
-    ];
-    const securityItems = [
-        "Segregated Client Accounts",
-        "Investor Compensation Fund",
-        "Negative Balance Protection",
-        "Tier 1 Banking Partners",
-    ];
+     const Sections = [
+  {
+    title: "Trading Conditions",
+    icon: "bi bi-graph-up-arrow",
+    items: [
+      { label: "Leverage" },
+      { label: "Swap Free Accounts" },
+      { label: "Trading conditions overview" },
+      { label: "Contract Specifications" },
+      { label: "Contract Expiries" },
+      { label: "What are your minimum deposits?" },
+      { label: "Trading Hour Changes", active: true }, // active key added
+      { label: "Why is a triple swap charged?" },
+      { label: "Who are your liquidity providers?" },
+      { label: "Restricted Countries" },
+    ],
+  },
+  {
+    title: "Security of Funds",
+    icon: "bi bi-bank",
+    items: [
+      { label: "Segregated Client Accounts" },
+      { label: "Investor Compensation Fund" },
+      { label: "Negative Balance Protection" },
+      { label: "Tier 1 Banking Partners" }
+    ],
+  }
+];
 
     return (
         <div className="container-fluid">
             <div className="row justify-content-center">
                 {/* Sidebar with Accordion */}
-                <SidebarAccordion></SidebarAccordion>
+                <SidebarAccordion Sections={Sections}></SidebarAccordion>
 
                 {/* Main Content */}
                 <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border">
                     {/* Breadcrumb */}
-                    <nav aria-label="breadcrumb" className="mb-3">
+                    <nav aria-label="breadcrumb" className="mb-5">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
                                 <Link to="#">Home</Link>
@@ -81,7 +91,7 @@ const ContractExpiries = () => {
                     </nav>
 
                     {/* Title + Date */}
-                    <h2 className="fw-bold mb-1">Contract Expiry</h2>
+                    <h1 className="fw-bold mb-1 text-heading">Contract Expiry</h1>
                     <p className="text-muted mb-3">Updated on September 2, 2025</p>
 
                     {/* Server time */}

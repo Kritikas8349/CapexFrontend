@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi"; // Import icons
 import "./NavbarBlue.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [language, setLanguage] = useState("en");
