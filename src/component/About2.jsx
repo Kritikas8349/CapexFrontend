@@ -54,7 +54,7 @@ import React, { useState } from 'react';
   {/* 🔳 Navbar */}
   {/* <nav className="navbar">
     <div className="navbar-left">
-      <img src="logo.png" alt="Logo" className="navbar-logo" />
+      <img src="/public/logo.png" alt="Logo" className="navbar-logo" />
     </div>
 
    
@@ -124,7 +124,7 @@ import React, { useState } from 'react';
        {/* 🏆 Hero Section */}
 <section
   className="hero"
-  style={{ backgroundImage: "url('/awards.jpg')" }}
+  style={{ backgroundImage: "url('/public/awards.jpg')" }}
 >
   <div className="hero-content">
     <h1>Awards</h1>
@@ -139,7 +139,7 @@ import React, { useState } from 'react';
         <div className="container">
     {/* Award 1 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 1" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 1" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> Fast Execution Broker</h3>
         <p className="award-description">Market.trad recognised for ultra-low latency order speed.</p>
@@ -148,7 +148,7 @@ import React, { useState } from 'react';
 
     {/* Award 2 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 2" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 2" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> Best Forex Platform</h3>
         <p className="award-description">Honoured for trusted and competitive forex services.</p>
@@ -157,7 +157,7 @@ import React, { useState } from 'react';
 
     {/* Award 3 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 3" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 3" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> Investment Excellence</h3>
         <p className="award-description">Acknowledged for wide access to global assets & markets.</p>
@@ -166,7 +166,7 @@ import React, { useState } from 'react';
 
     {/* Award 4 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 4" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 4" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> Crypto Trading Tools</h3>
         <p className="award-description">Praised for advanced crypto tools like VPS & TradingView.</p>
@@ -175,7 +175,7 @@ import React, { useState } from 'react';
 
     {/* Award 5 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 5" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 5" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> Best Crypto Spreads</h3>
         <p className="award-description">Recognised for low-cost trading on BTC, ETH, and more.</p>
@@ -184,7 +184,7 @@ import React, { useState } from 'react';
 
     {/* Award 6 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 6" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 6" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> Best Scalping Broker</h3>
         <p className="award-description">Celebrated for efficiency and execution speed for scalpers.</p>
@@ -193,7 +193,7 @@ import React, { useState } from 'react';
 
     {/* Award 7 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 7" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 7" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> TradingView Integration</h3>
         <p className="award-description">Praised for seamless TradingView connectivity & usability.</p>
@@ -202,7 +202,7 @@ import React, { useState } from 'react';
 
     {/* Award 8 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 8" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 8" /></div>
       <div className="award-content">
         <h3 className="award-title">2025 <br /> NZ Forex Leader</h3>
         <p className="award-description">Top-rated among FMA-regulated brokers in New Zealand.</p>
@@ -211,7 +211,7 @@ import React, { useState } from 'react';
 
     {/* Award 9 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 9" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 9" /></div>
       <div className="award-content">
         <h3 className="award-title">2024 <br /> Best ECN Broker</h3>
         <p className="award-description">Recognised for transparent ECN trading conditions.</p>
@@ -220,7 +220,7 @@ import React, { useState } from 'react';
 
     {/* Award 10 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 10" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 10" /></div>
       <div className="award-content">
         <h3 className="award-title">2024 <br /> Fastest Trade Execution</h3>
         <p className="award-description">Awarded at Dubai Expo for speed and reliability.</p>
@@ -229,7 +229,7 @@ import React, { useState } from 'react';
 
     {/* Award 11 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 11" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 11" /></div>
       <div className="award-content">
         <h3 className="award-title">2024 <br /> Best Copy Trading</h3>
         <p className="award-description">Recognised for innovation in copy trading solutions.</p>
@@ -238,7 +238,7 @@ import React, { useState } from 'react';
 
     {/* Award 12 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 12" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 12" /></div>
       <div className="award-content">
         <h3 className="award-title">2024 <br /> Growth Recognition</h3>
         <p className="award-description">Featured in Deloitte’s Master of Growth Index.</p>
@@ -247,7 +247,7 @@ import React, { useState } from 'react';
 
     {/* Award 13 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 13" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 13" /></div>
       <div className="award-content">
         <h3 className="award-title">2023 <br /> Fast Execution Speeds</h3>
         <p className="award-description">Praised for low latency and reduced slippage trading.</p>
@@ -256,7 +256,7 @@ import React, { useState } from 'react';
 
     {/* Award 14 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 14" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 14" /></div>
       <div className="award-content">
         <h3 className="award-title">2023 <br /> Best NZ Broker</h3>
         <p className="award-description">Rated for trust, platform quality, and service.</p>
@@ -265,7 +265,7 @@ import React, { useState } from 'react';
 
     {/* Award 15 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 15" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 15" /></div>
       <div className="award-content">
         <h3 className="award-title">2023 <br /> Investment Excellence</h3>
         <p className="award-description">Recognised for broad market access worldwide.</p>
@@ -274,7 +274,7 @@ import React, { useState } from 'react';
 
     {/* Award 16 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 16" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 16" /></div>
       <div className="award-content">
         <h3 className="award-title">2022 <br /> Global FX Broker</h3>
         <p className="award-description">Celebrated at Dubai Expo for trading innovation.</p>
@@ -283,7 +283,7 @@ import React, { useState } from 'react';
 
     {/* Award 17 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 17" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 17" /></div>
       <div className="award-content">
         <h3 className="award-title">2022 <br /> Excellence in Trade</h3>
         <p className="award-description">Honoured at Auckland Awards for global trade success.</p>
@@ -292,7 +292,7 @@ import React, { useState } from 'react';
 
     {/* Award 18 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 18" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 18" /></div>
       <div className="award-content">
         <h3 className="award-title">2021 <br /> Deloitte Fast 50</h3>
         <p className="award-description">Listed among NZ’s fastest-growing companies.</p>
@@ -301,7 +301,7 @@ import React, { useState } from 'react';
 
     {/* Award 19 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 19" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 19" /></div>
       <div className="award-content">
         <h3 className="award-title">2020 <br /> Best NZ Forex Broker</h3>
         <p className="award-description">Recognised for service, spreads, and customer support.</p>
@@ -310,7 +310,7 @@ import React, { useState } from 'react';
 
     {/* Award 20 */}
     <div className="award-card">
-      <div className="award-icon"><img src="awardlogo.avif" alt="Award 20" /></div>
+      <div className="award-icon"><img src="/public/awardlogo.avif" alt="Award 20" /></div>
       <div className="award-content">
         <h3 className="award-title">2019 <br /> Deloitte Fast 50</h3>
         <p className="award-description">Celebrated for consistent business growth.</p>
@@ -318,16 +318,16 @@ import React, { useState } from 'react';
     </div>
   </div>
 
-  <div className="paymentgrid">
+  {/* <div className="paymentgrid">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-          <img src="mastercard.png" alt="MasterCard" />
+          <img src="/public/mastercard.png" alt="MasterCard" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo"/>
-          <img src="googlepay.png" alt="Google Pay" className="small-logo"/>
-          <img src="banktransfer.png" alt="Bank Transfer" />
-          <img src="crypto.png" alt="Crypto" />
-          <img src="neteller.png" alt="Neteller" />
-          <img src="skrill.png" alt="Skrill" />
-          <img src="Localbanktransfer.png" alt="Local Bank Transfer" />
+          <img src="/public/googlepay.png" alt="Google Pay" className="small-logo"/>
+          <img src="/public/banktransfer.png" alt="Bank Transfer" />
+          <img src="/public/crypto.png" alt="Crypto" />
+          <img src="/public/neteller.png" alt="Neteller" />
+          <img src="/public/skrill.png" alt="Skrill" />
+          <img src="/public/Localbanktransfer.png" alt="Local Bank Transfer" />
           
         </div>
 
@@ -351,15 +351,15 @@ import React, { useState } from 'react';
       <div className="footercontainer">
           <div className="footertop">
             <div className="footerlogo">
-              <img src="logo2.png" alt="" />
+              <img src="/public/logo2.png" alt="" />
             </div>
             <div className="footersocial">
-              <a href="#"><img src="facebook.png" alt="Facebook" /></a>
-              <a href="#"><img src="ri_linkedin-fill.png" alt="LinkedIn" /></a>
-              <a href="#"><img src="insta.png" alt="Instagram" /></a>
-              <a href="#"><img src="X.png" alt="X" /></a>
-              <a href="#"><img src="whatsapp.png" alt="WhatsApp" /></a>
-              <a href="#"><img src="name.png" alt="Telegram" /></a>
+              <a href="#"><img src="/public/facebook.png" alt="Facebook" /></a>
+              <a href="#"><img src="/public/ri_linkedin-fill.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="/public/insta.png" alt="Instagram" /></a>
+              <a href="#"><img src="/public/X.png" alt="X" /></a>
+              <a href="#"><img src="/public/whatsapp.png" alt="WhatsApp" /></a>
+              <a href="#"><img src="/public/name.png" alt="Telegram" /></a>
             </div>
           </div>
 
@@ -447,7 +447,7 @@ import React, { useState } from 'react';
               <p>Email: support@market.trad.com</p>
             </div>
           </div>
-        </div>
+        </div> */}
               
       </div>
     );

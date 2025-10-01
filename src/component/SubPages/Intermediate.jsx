@@ -35,7 +35,7 @@ function Intermediate() {
                 <div className="intermediate-tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="intermediate-left-section">
-                        <div className="intermediate-lesson1-image" style={{ backgroundImage: 'url(stock-202.webp)' }}>
+                        <div className="intermediate-lesson1-image" style={{ backgroundImage: 'url(/public/stock-202.webp)' }}>
                             <div className="intermediate-lesson1-title"></div>
                         </div>
                         <div className="intermediate-lesson1-text">
@@ -49,7 +49,7 @@ function Intermediate() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="intermediate-right-section">
                         <div className="intermediate-lesson-card">
-                            <div className="intermediate-lesson-card-image" style={{ backgroundImage: 'url(stock-202.1.webp)' }}>
+                            <div className="intermediate-lesson-card-image" style={{ backgroundImage: 'url(/public/stock-202.1.webp)' }}>
                                 <div className="intermediate-lesson-card-overlay"></div>
                             </div>
                             <div className="intermediate-lesson-card-text">
@@ -61,7 +61,7 @@ function Intermediate() {
                         </div>
 
                         <div className="intermediate-lesson-card">
-                            <div className="intermediate-lesson-card-image" style={{ backgroundImage: 'url(stock-202.2.webp)' }}>
+                            <div className="intermediate-lesson-card-image" style={{ backgroundImage: 'url(/public/stock-202.2.webp)' }}>
                                 <div className="intermediate-lesson-card-overlay"></div>
                             </div>
                             <div className="intermediate-lesson-card-text">
@@ -73,7 +73,7 @@ function Intermediate() {
                         </div>
 
                         <div className="intermediate-lesson-card">
-                            <div className="intermediate-lesson-card-image" style={{ backgroundImage: 'url(stock-202.3.webp)' }}>
+                            <div className="intermediate-lesson-card-image" style={{ backgroundImage: 'url(/public/stock-202.3.webp)' }}>
                                 <div className="intermediate-lesson-card-overlay"></div>
                             </div>
                             <div className="intermediate-lesson-card-text">
@@ -88,7 +88,7 @@ function Intermediate() {
             </div>
 
             <div className="intermediate-right-extra">
-                <div className="intermediate-lesson1-extra-image" style={{ backgroundImage: 'url(stocks-102.webp)' }}>
+                <div className="intermediate-lesson1-extra-image" style={{ backgroundImage: 'url(/public/stocks-102.webp)' }}>
                     <div className="intermediate-lesson1-extra-title"></div>
                 </div>
                 <div className="intermediate-lesson1-extra-text">

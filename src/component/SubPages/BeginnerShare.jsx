@@ -35,7 +35,7 @@ function BeginnerShare() {
                 <div className="beginner-tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="beginner-left-section">
-                        <div className="beginner-lesson1-image" style={{ backgroundImage: 'url(stocks-101.1.png)' }}>
+                        <div className="beginner-lesson1-image" style={{ backgroundImage: 'url(/public/stocks-101.1.png)' }}>
                             <div className="beginner-lesson1-title"></div>
                         </div>
                         <div className="beginner-lesson1-text">
@@ -49,7 +49,7 @@ function BeginnerShare() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="beginner-right-section">
                         <div className="beginner-lesson-card">
-                            <div className="beginner-lesson-card-image" style={{ backgroundImage: 'url(stocks-102.webp)' }}>
+                            <div className="beginner-lesson-card-image" style={{ backgroundImage: 'url(/public/stocks-102.webp)' }}>
                                 <div className="beginner-lesson-card-overlay"></div>
                             </div>
                             <div className="beginner-lesson-card-text">
@@ -61,7 +61,7 @@ function BeginnerShare() {
                         </div>
 
                         <div className="beginner-lesson-card">
-                            <div className="beginner-lesson-card-image" style={{ backgroundImage: 'url(stocks-101.3.png)' }}>
+                            <div className="beginner-lesson-card-image" style={{ backgroundImage: 'url(/public/stocks-101.3.png)' }}>
                                 <div className="beginner-lesson-card-overlay"></div>
                             </div>
                             <div className="beginner-lesson-card-text">
@@ -73,7 +73,7 @@ function BeginnerShare() {
                         </div>
 
                         <div className="beginner-lesson-card">
-                            <div className="beginner-lesson-card-image" style={{ backgroundImage: 'url(stocks-101.4.webp)' }}>
+                            <div className="beginner-lesson-card-image" style={{ backgroundImage: 'url(/public/stocks-101.4.webp)' }}>
                                 <div className="beginner-lesson-card-overlay"></div>
                             </div>
                             <div className="beginner-lesson-card-text">
@@ -88,7 +88,7 @@ function BeginnerShare() {
             </div>
 
             <div className="beginnerrightsection">
-                        <div className="beginnerlesson1image" style={{ backgroundImage: 'url(stocks-101.5.webp)' }}>
+                        <div className="beginnerlesson1image" style={{ backgroundImage: 'url(/public/stocks-101.5.webp)' }}>
                             <div className="beginnerlesson1title"></div>
                         </div>
                         <div className="beginnerlesson1text">

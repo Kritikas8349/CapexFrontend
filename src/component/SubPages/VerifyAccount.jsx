@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./VerifyAccount.css";
 
 const sections = [
-  { title: "Getting Started", img: "pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
-  { title: "TradingView", img: "Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
-  { title: "BlackBull Invest", img: "pf4.svg", count: 7 },
-  { title: "cTrader", img: "pf4.svg", count: 22 },
-  { title: "Account Support", img: "pf4.svg", count: 8 },
+  { title: "Getting Started", img: "/public/pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "/public/pf2.webp", count: 8 },
+  { title: "TradingView", img: "/public/Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "/public/pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "/public/pf3.webp", count: 17 },
+  { title: "BlackBull Invest", img: "/public/pf4.svg", count: 7 },
+  { title: "cTrader", img: "/public/pf4.svg", count: 22 },
+  { title: "Account Support", img: "/public/pf4.svg", count: 8 },
 ];
 
 const VerifyAccount = () => {
@@ -68,7 +68,7 @@ const VerifyAccount = () => {
               <iframe
                 width="700"
                 height="420"
-                src="https://www.youtube.com/embed/xHU5MHuUSKI"
+                src="ttps://www.youtube.com/embed/xHU5MHuUSKI"
                 title="Market.trad Account Verification"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -84,20 +84,20 @@ const VerifyAccount = () => {
           <h3>Step 1.</h3>
           <p>Select the proof of ID type that you want to submit from the dropdown menu.
         <br />If you are submitting a driver’s license or a national ID card, we require a scan or photograph of both sides of the id. </p>
-          <img src="acc2.webp" alt="Step 1" className="verify-step-image" />
+          <img src="/public/acc2.webp" alt="Step 1" className="verify-step-image" />
         </div>
 
         <div className="verify-step">
           <h3>Step 2.</h3>
           <p>Select the proof of address type that you want to submit. We accept bank statement, credit card statements, government cards and utility bills. </p>
-          <img src="acc6.webp" alt="Step 2" className="verify-step-image" />
+          <img src="/public/acc6.webp" alt="Step 2" className="verify-step-image" />
         </div>
 
         <div className="verify-step">
           <h3>Step 3.</h3>
           <p>Your application will be reviewed by our support team. Please fund your wallet in anticipation of its approval.
             <span><br />Full Tutorial: How to fund your account?</span></p>
-          <img src="acc7.webp" alt="Step 3" className="verify-step-image" />
+          <img src="/public/acc7.webp" alt="Step 3" className="verify-step-image" />
         </div>
 
       </div>

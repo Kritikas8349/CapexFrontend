@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="aboutus-hero-container">
     
   <img
-    src="Office1.jpg"
+    src="/public/Office1.jpg"
     alt="Platform Support"
     className="aboutus-hero-image"
   />
@@ -60,7 +60,7 @@ const AboutUs = () => {
   {/* Right: Image */}
   <div className="about-market-image-container">
     <img
-      src="markettrad.webp"
+      src="/public/markettrad.webp"
       alt="Market.trad Markets"
       className="about-market-image"
     />
@@ -70,12 +70,12 @@ const AboutUs = () => {
 
 <div className="about-gallery-container">
   <div className="about-gallery-grid">
-    <img src="off1.jpg" alt="Office 1" className="about-gallery-item" />
-    <img src="off2.avif" alt="Office 2" className="about-gallery-item" />
-    <img src="off3.avif" alt="Office 3" className="about-gallery-item" />
-    <img src="off4.avif" alt="Office 4" className="about-gallery-item" />
-    <img src="off5.webp" alt="Office 5" className="about-gallery-item" />
-    <img src="off6.avif" alt="Office 6" className="about-gallery-item" />
+    <img src="/public/off1.jpg" alt="Office 1" className="about-gallery-item" />
+    <img src="/public/off2.avif" alt="Office 2" className="about-gallery-item" />
+    <img src="/public/off3.avif" alt="Office 3" className="about-gallery-item" />
+    <img src="/public/off4.avif" alt="Office 4" className="about-gallery-item" />
+    <img src="/public/off5.webp" alt="Office 5" className="about-gallery-item" />
+    <img src="/public/off6.avif" alt="Office 6" className="about-gallery-item" />
   </div>
 </div>
 
@@ -95,15 +95,15 @@ const AboutUs = () => {
 
     <div class="history-features">
         <div class="feature-item">
-            <img src="traffic_icon.svg" alt="Logo" class="feature-logo"/>
+            <img src="/public/traffic_icon.svg" alt="Logo" class="feature-logo"/>
             <span>Personal Account Managers</span>
         </div>
         <div class="feature-item">
-            <img src="traffic_icon.svg" alt="Logo" class="feature-logo"/>
+            <img src="/public/traffic_icon.svg" alt="Logo" class="feature-logo"/>
             <span>Daily Market Insights</span>
         </div>
         <div class="feature-item">
-            <img src="traffic_icon.svg" alt="Logo" class="feature-logo"/>
+            <img src="/public/traffic_icon.svg" alt="Logo" class="feature-logo"/>
             <span>Comprehensive Trade Analysis</span>
         </div>
     </div>
