@@ -15,7 +15,7 @@ function MetaTrader5() {
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
-                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                        <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 MetaTrader 5 (MT5)
                             </h1>
@@ -90,14 +90,14 @@ function MetaTrader5() {
                     </div>
                 </div>
             </div>
-            {/* ----------- WHy choose CTrader ----------- */}
+            {/* ----------- WHy choose Market Trade5 ----------- */}
 
             <div className="container-fluid bg-home text-black py-5">
                 <div className="container">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
                             <h1 className="fw-bold text-heading">Why choose MT5 with<br />
                                 Market Trad?</h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
@@ -150,11 +150,11 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
                                 How to trade on <span className='text-heading '> MT5 &nbsp;</span><br/>
                                 with BlackBull Markets
@@ -269,11 +269,11 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-heading">
                                 Why Market Trad ?
                             </h1>
@@ -392,7 +392,7 @@ function MetaTrader5() {
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
                             <h1 className="fw-bold">MT5 WebTrader
                             </h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">

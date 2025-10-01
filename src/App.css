@@ -46,6 +46,10 @@
 .bg-home{
   background-color: #ebefee;
 }
+.btn:hover{
+  background-color:#493FFD ;
+  color:white
+}
 
 /* ---------- RESPONSIVE ---------- */
 
@@ -64,6 +68,7 @@
     font-size: 13px;
   }
 }
+
 
 /* Small tablets / large phones */
 @media (max-width: 768px) {

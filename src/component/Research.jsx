@@ -78,7 +78,7 @@ function Research() {
         },
     ];
     return (
-        <div className='bg-home'>
+        <div className='bg-home my-bootstrap-page'>
             {/* Inject CSS for media query */}
             <style>
                 {`
@@ -127,7 +127,7 @@ function Research() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center mt-4 mt-lg-0">
                             <img
-                                src="/mobile.png" // Replace with your image
+                                src="/public/mobile.png" // Replace with your image
                                 alt="Daily Market Analysis"
                                 className="img-fluid"
                                 style={{ maxHeight: '500px', width: '100%', objectFit: 'contain' }}

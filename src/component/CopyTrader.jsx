@@ -100,9 +100,9 @@ function CopyTrader() {
 
 
             {/* ---------How to Copy Trade---------   */}
-            <div className="container-fluid bg-home align-content-center border py-lg-5" >
+            <div className="container-fluid bg-home align-content-center border py-lg-5 my-3" >
                 <div className="container py-lg-5">
-                    <h1 className='text-center display-4 fw-bold'><span className='text-heading'>Key features of</span> BlackBull CopyTrader</h1>
+                    <h1 className='text-start display-4 fw-bold'><span className='text-heading'>Key features of</span> BlackBull CopyTrader</h1>
                     <div className="row align-items-center  py-5 border-primary rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">

@@ -6,7 +6,7 @@ function TradingView() {
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to right, #493FFD, #000000);}
+                         background: linear-gradient(to left, #493FFD, #000000);}
                        .trading-primium,.how-to-connect{
                        background: linear-gradient(to top, #493FFD, #000000);
                        }
@@ -19,7 +19,7 @@ function TradingView() {
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
-                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                        <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 Unlock{" "}
                                 <span className="text-primary">Free TradingView</span>
@@ -32,14 +32,15 @@ function TradingView() {
                             </p>
 
                             {/* Buttons */}
-                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
-                                <button className="btn btn-primary px-4 py-2 fw-bold">
+                            <div className="d-flex flex-column flex-sm-row gap-2 justify-content-start mt-4">
+                                <button className="btn btn-primary btn-sm fs-5 p-2">
                                     Join Now
                                 </button>
-                                <button className="btn btn-success px-4 py-2 fw-bold">
+                                <button className="btn btn-success btn-sm fs-5 p-2 ">
                                     Log In
                                 </button>
                             </div>
+
                         </div>
 
                         {/* Right Section */}
@@ -107,7 +108,7 @@ function TradingView() {
                 <div className="container">
                     <div className="row align-items-center border rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
                                 How to get{" "}<br />
                                 <span className="text-primary">TradingView Premium?</span>
@@ -137,7 +138,7 @@ function TradingView() {
 
             {/* -----------TradingView primium----------------- */}
             <div className="container-fluid bg-primary text-white py-5 trading-primium" >
-                <div className="container text-center">
+                <div className="container text-start">
                     {/* Heading */}
                     <h2 className="fw-bold display-6">Get Free TradingView Premium</h2>
                     <p className="text-light mb-5">
@@ -220,7 +221,7 @@ function TradingView() {
                 <div className="container py-4">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center text-md-start text-sm-start">
+                        <div className="col-12 col-lg-6 text-start text-md-start text-sm-start">
                             <h1 className="fw-bold display-4 text-heading">Why Market Trade</h1>
                             <p className="text-secondary mt-3 fs-5">
                                 BlackBull Markets is a multi-regulated broker headquartered in
@@ -285,7 +286,7 @@ function TradingView() {
                 <div className="container">
                     <div className="row align-items-center  rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-white">
                                 How to connect to{" "}<br />
                                 <span className="text-primary">TradingView View?</span>

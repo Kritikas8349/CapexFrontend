@@ -66,7 +66,7 @@ function RegionalRepresentatives() {
 
             {/* ---------------- */}
             <div className="container-fluid py-5" style={{
-                backgroundImage: `linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.9)),
+                backgroundImage: `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
             url('/compliance.avif')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

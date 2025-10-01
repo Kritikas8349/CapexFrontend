@@ -153,7 +153,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-light align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
@@ -186,7 +186,7 @@ function MetaTrader4() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-5 ">
+            <div className="container-fluid bg-home py-5">
                 <div className="container rounded-4 p-3 ">
                     <h1 className="text-center text-heading mb-5 fw-bold">Tradable Assets</h1>
 
@@ -272,7 +272,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}

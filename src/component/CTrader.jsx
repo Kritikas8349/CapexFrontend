@@ -2,7 +2,7 @@ import React from 'react'
 
 function CTrader() {
     return (
-        <div>
+        <div className='bg-home'>
             <style>
                 {
                     `.trading-view {
@@ -103,7 +103,7 @@ function CTrader() {
 
                             {/* Feature List */}
                             <div className="d-flex align-items-start mb-4 justify-content-start">
-                                <i className="bi bi-bar-chart fs-1 text-primary me-3"></i>
+                                <i className="bi bi-bar-chart fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">1:500 Leverage</p>
                                     <p className="text-secondary mb-0">
@@ -113,7 +113,7 @@ function CTrader() {
                             </div>
 
                             <div className="d-flex align-items-start mb-4 justify-content-start">
-                                <i className="bi bi-currency-exchange fs-1 text-primary me-3"></i>
+                                <i className="bi bi-currency-exchange fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Low Spreads</p>
                                     <p className="text-secondary mb-0">
@@ -123,7 +123,7 @@ function CTrader() {
                             </div>
 
                             <div className="d-flex align-items-start mb-4 justify-content-start">
-                                <i className="bi bi-shield-lock fs-1 text-primary me-3"></i>
+                                <i className="bi bi-shield-lock fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Secure Trading</p>
                                     <p className="text-secondary mb-0">
@@ -274,7 +274,7 @@ function CTrader() {
                     <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
-                            <h1 className="fw-bold text-primary-emphasis">
+                            <h1 className="fw-bold text-heading-emphasis">
                                 Why Market Trad ?
                             </h1>
                             <p className="text-secondary mt-3 fs-6">
@@ -311,7 +311,7 @@ function CTrader() {
                                 <div className="mb-3 ">
                                     <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Forex</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Forex</h3>
                                 <p className="text-secondary">
                                     70+ major, minor, and exotic currency pairs.
                                 </p>
@@ -324,7 +324,7 @@ function CTrader() {
                                 <div className="mb-3">
                                     <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Commodities</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Commodities</h3>
                                 <p className="text-secondary">
                                     Energies like crude oil, and agricultural cash crops.
                                 </p>
@@ -337,7 +337,7 @@ function CTrader() {
                                 <div className="mb-3">
                                     <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Equities</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Equities</h3>
                                 <p className="text-secondary">
                                     We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.
                                 </p>
@@ -350,7 +350,7 @@ function CTrader() {
                                 <div className="mb-3">
                                     <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Indices</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Indices</h3>
                                 <p className="text-secondary">
                                     Major stock indices like US30, S&amp;P500, and NAS100.
                                 </p>
@@ -363,7 +363,7 @@ function CTrader() {
                                 <div className="mb-3">
                                     <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Metals</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Metals</h3>
                                 <p className="text-secondary">
                                     Precious and industry metals like gold, silver, and copper.
                                 </p>
@@ -376,7 +376,7 @@ function CTrader() {
                                 <div className="mb-3">
                                     <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">View all</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">View all</h3>
                                 <p className="text-secondary">
                                     Explore Market.Trad's diverse range of tradable assets.
                                 </p>
@@ -401,7 +401,7 @@ function CTrader() {
 
                             {/* Feature List */}
                             <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
-                                <i className="bi bi-bar-chart fs-1 text-primary me-3"></i>
+                                <i className="bi bi-bar-chart fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Elite Providers</p>
                                     <p className="text-secondary mb-0">
@@ -411,7 +411,7 @@ function CTrader() {
                             </div>
 
                             <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
-                                <i className="bi bi-currency-exchange fs-1 text-primary me-3"></i>
+                                <i className="bi bi-currency-exchange fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Low Latency</p>
                                     <p className="text-secondary mb-0">
@@ -421,7 +421,7 @@ function CTrader() {
                             </div>
 
                             <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
-                                <i className="bi bi-shield-lock fs-1 text-primary me-3"></i>
+                                <i className="bi bi-shield-lock fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Risk Management</p>
                                     <p className="text-secondary mb-0">
