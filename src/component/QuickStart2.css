@@ -421,7 +421,7 @@ body {
     transition: 0.2s ease;
   }
   
-  .dropdown-content button:hover {
+  .dropdown-content hover {
     background: #f5f5ff;
     color: #4a3aff;
   }

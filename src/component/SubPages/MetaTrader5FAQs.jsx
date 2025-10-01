@@ -34,11 +34,11 @@ function MetaTrader5FAQs() {
 
 
   return (
-    <div className='container-fluid py-4 border'>
+    <div className='container-fluid py-4 border bg-home'>
       <div className='container'>
         <div className="d-flex"><span>Home &nbsp;</span>/&nbsp;<span>support&nbsp;</span>/&nbsp;<span>platform-support&nbsp;</span>/&nbsp;<span>secure client area</span></div>
         <div className='mb-4'>
-          <h1 className='fw-bold text-center text-md-start'>Meta Trader 5</h1>
+          <h1 className='fw-bold text-center text-heading text-md-start'>Meta Trader 5</h1>
         </div>
         <div className='links-container'>
           <ul className='list-unstyled '>

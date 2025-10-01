@@ -222,7 +222,7 @@ function QuickStart4() {
                 </div>
             </div>
 
-            <div className="blackbull-section">
+            <div className="blackbull-section-p">
                 <div className="blackbull-content">
                     <h2 className="header">Why BlackBull Markets?</h2>
                     <div className="cards-container">
@@ -237,6 +237,7 @@ function QuickStart4() {
 
             {/* Account cards */}
             {/* <!-- Block 1 --> */}
+            <div className='res-img'>
             <div class="standard-account">
                 <div class="left-image">
                     <img src="pho.avif" alt="Trader 1" />
@@ -289,6 +290,7 @@ function QuickStart4() {
                     </div>
                 </div>
             </div>
+            </div>
 
 
             {/* FAQ Section */}
@@ -332,7 +334,7 @@ function QuickStart4() {
 
 
 
-            <section className="hero4">
+            {/* <section className="hero4">
                 <div className="hero-overlay4">
                     <div className="hero-content4">
                         <h1>
@@ -346,11 +348,11 @@ function QuickStart4() {
                         </div>
                     </div>
 
-                    {/* Placeholder for awards/logos */}
+                    
                     <div className="awards4">
                         <p>AWARDED BY THE BEST</p>
                         <div className="awards-logos4">
-                            {/* yaha apne award logos ke <img /> dal lena */}
+                            
                             <span>🏆 Award 1</span>
                             <span>🏆 Award 2</span>
                             <span>🏆 Award 3</span>
@@ -460,7 +462,7 @@ function QuickStart4() {
                         <p>Email: support@market.trad.com</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 

@@ -6,12 +6,12 @@ function CTrader() {
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to left, #4028E9, #000000);}            
+                         background: linear-gradient(to top, #493FFD, #000000);}            
                     `
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 trading-view">
+            <div className="container-fluid bg-home text-white py-5 trading-view">
                 <div className="container">
                     <div className="row align-items-center">
 
@@ -19,7 +19,7 @@ function CTrader() {
                         <div className="col-lg-6 text-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 cTrader <br />
-                                <span className="text-primary">With Market Trad</span>
+                                <span className="text-heading">With Market Trad</span>
                             </h1>
                             <p className="fs-4 mt-3 text-white fw-semibold">
                                 Access cTrader with no minimum deposit.
@@ -86,7 +86,7 @@ function CTrader() {
 
             {/* ----------- WHy choose CTrader ----------- */}
 
-            <div className="container-fluid bg-light text-black py-5">
+            <div className="container-fluid bg-home text-black py-5">
                 <div className="container">
                     <div className="row align-items-center g-5">
 
@@ -148,13 +148,13 @@ function CTrader() {
             </div>
 
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-light align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center  " style={{ height: '80vh' }}>
                 <div className="container">
-                    <div className="row align-items-center border py-5 border-primary rounded p-4">
+                    <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
-                                How to trade on <span className='text-primary '> cTrader &nbsp;</span>
+                                How to trade on <span className='text-heading '> cTrader &nbsp;</span>
                                 with BlackBull Markets
                             </h1>
                             <p className="text-secondary mt-3 fs-5">
@@ -181,7 +181,7 @@ function CTrader() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-light py-5 ">
+            <div className="container-fluid bg-home py-5 ">
                 <div className="container rounded-4 p-3 ">
                     <h1 className="text-center mb-5 fw-bold">Tradable Assets</h1>
 
@@ -269,9 +269,9 @@ function CTrader() {
             </div>
 
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-light align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
                 <div className="container">
-                    <div className="row align-items-center border py-5 border-primary rounded p-4">
+                    <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-primary-emphasis">
@@ -300,7 +300,7 @@ function CTrader() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-light py-5 bg-primary-subtle ">
+            <div className="container-fluid bg-home py-5 my-1 ">
                 <div className="container rounded-4 p-3 ">
 
 
@@ -446,9 +446,9 @@ function CTrader() {
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid bg-black text-white py-5 trading-view">
-                <div className="container">
-                    <div className="row align-items-center">
+            <div className="container-fluid  text-white py-5 trading-view">
+                <div className="container py-lg-5">
+                    <div className="row align-items-center py-lg-4">
                         {/* Left Section */}
                         <div className="col-12 text-start mb-4">
                             <h1 className="fw-bold display-5">Download cTrader</h1>
@@ -524,8 +524,8 @@ function CTrader() {
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-5 ">
-                <div class="container my-5 bg-black text-white p-4 rounded">
+            <div className="container-fluid bg-black text-white py-lg-5 ">
+                <div class="container bg-black text-white p-4 py-lg-5 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 
                     <div class="accordion accordion-flush" id="faqAccordion">

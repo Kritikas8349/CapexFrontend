@@ -2,12 +2,12 @@ import React from 'react'
 
 function RegionalRepresentatives() {
     return (
-        <div>
+        <div className='bg-home'>
             <div className="d-flex align-items-center justify-content-center text-white" style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('/compliance.avif')`,
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url('/compliance.avif')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                minHeight: '60vh'
+                minHeight: '85vh'
             }}>
                 <div>
                     <h1 className='fw-bolder display-2 p-4 '>Regional Representatives</h1>

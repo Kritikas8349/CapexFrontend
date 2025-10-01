@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section-F {
+  background: url("./Rectangle4389.png") no-repeat center center/cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay-F {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content-F {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+}
+
+.hero-title-F {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle-F {
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+}
+
+.hero-form-F {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.hero-input-container-F {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hero-icon-F {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.hero-input-F {
+  width: 100%;
+  padding: 12px 12px 12px 38px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.hero-button-F {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-button-F:hover {
+  background: #0056b3;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 768px) {
+  .hero-title-F {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle-F {
+    font-size: 1.2rem;
+  }
+
+  .hero-form-F {
+    flex-direction: column;
+  }
+
+  .hero-button-F {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title-F {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle-F {
+    font-size: 1rem;
+  }
+}
+
+
+.footer-container {
+  background: linear-gradient(to bottom right, #000000, #231586);
+  color: #fff;
+  width: 1500px;
+  padding: 40px 20px;
+  /* background-color: red; */
+
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 160px;
+  height: auto;
+  max-width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid grey;
+  padding-top: 50px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: start;
+  margin-top: 30px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-social a {
+    margin: 0 8px;
+  }
+
+  .footer-social img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 30px 15px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section ul li {
+    font-size: 13px;
+  }
+
+  .footer-contact p {
+    font-size: 12px;
+  }
+
+  .footer-social img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px 10px;
+  }
+
+  .footer-bottom {
+    text-align: left;
+  }
+
+  .footer-social a {
+    margin: 0 5px;
+  }
+
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-contact p {
+    font-size: 11px;
+    flex-direction: column;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+}

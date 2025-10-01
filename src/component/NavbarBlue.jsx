@@ -1,7 +1,13 @@
 // NavbarBlue.jsx
 import React, { useState, useEffect } from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom"; // ✅ React Router Link
 import { FiChevronDown, FiChevronRight, FiSearch } from "react-icons/fi";
+=======
+import { FiChevronDown, FiChevronRight, FiSearch } from "react-icons/fi";
+import "./NavbarBlue.css";
+import { Link } from "react-router-dom";
+>>>>>>> 8d65f6af33ebee1fe4d3c3d1fa122d84af977117
 
 import "./NavbarBlue.css";
 import { routesMap } from "../RoutesMap"; // adjust path as needed
@@ -168,6 +174,136 @@ function NavbarBlue() {
     return () => window.removeEventListener("resize", handleResize);
   }, [menuOpen]);
 
+<<<<<<< HEAD
+=======
+  const dropdowns = {
+    "Quick Start": [
+      "Why Market.trad Markets?",
+      "What assets can I trade?",
+      "What platform can I trade on?",
+      "What account type do you offer",
+      "How to verify my account?",
+      "How to deposite funds?",
+      "How to withdraw funds?",
+      "How can I start trading?",
+      "Create Account",
+    ],
+    Markets: [
+      "Markets Overview",
+      "Forex",
+      { title: "Commodities", subItems: ["Energies", "Metals"] },
+      { title: "Futures", subItems: ["Energy", "Indices", "Other"] },
+      "Indices",
+      "Crypto",
+    ],
+    Platform: [
+      "TradingView",
+      "cTrade",
+      "MetaTrade 4 (MT4)",
+      "MetaTarde 5 (MT5)",
+      "Market.trad CopyTrade",
+      "Market.trad Invest",
+    ],
+    Education: [
+      "Education Hub",
+      "Webinars",
+      {
+        title: "Forex Tutorials",
+        subItems: [
+          "Beginner Forex Tutorial",
+          "Intermediate Forex Tutorial",
+          "Advanced Forex Tutorial",
+        ],
+      },
+      {
+        title: "Shares Tutorials",
+        subItems: [
+          "Beginner Shares Tutorials",
+          "Intermediate Shares Tutorials",
+          "Advanced Shares Tutorials",
+        ],
+      },
+      {
+        title: "Commodities Tutorials",
+        subItems: [
+          "Beginner Commodities Tutorial",
+          "Intermediate Commodities Tutorial",
+          "Advanced Commodities Tutorial",
+        ],
+      },
+      "Economic Calendar",
+      {
+        title: "Research",
+        subItems: [
+          {
+            title: "Research Hub",
+            subItems: [
+              "Daily Market Analysis Snapshot",
+              "Watch Upcoming Trading Opportunities",
+              "Daily Insight Podcast",
+            ],
+          },
+          "Trading Research",
+          "Investment Research",
+        ],
+      },
+      "Demo Trade",
+    ],
+    About: [
+      "About Us",
+      "Awarded by Industry",
+      "About Comparison",
+      "Company News",
+      "Compliance",
+      "Security of Funds",
+    ],
+    Support: [
+      {
+        title: "Getting Started",
+        subItems: [
+          "How to create an account?",
+          "How to verify your account?",
+          "How to fund your account?",
+          "How to link your trading platform?",
+          "How to place your first trade?",
+        ],
+      },
+      {
+        title: "Platform Support",
+        subItems: [
+          "Secure Client Area",
+          "TradingView",
+          "cTrade",
+          "MetaTrade 4",
+          "MetaTrade 5",
+          {
+            title: "Market.trad Invest",
+            subItems: [
+              "How to open a share investing account?",
+              "How to fund your share investing account?",
+              "How to install and log into Market.trad Invest?",
+              "How to convert currency in a Cash Account?",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Market Support",
+        subItems: [
+          "Trading Conditions",
+          "Trading Hour Changes",
+          "Contract Specifications",
+          "Contract Expiries",
+        ],
+      },
+      "Account Support",
+      "Education Hub",
+      "Economic Calendar",
+      "Contact Us",
+    ],
+  };
+
+>>>>>>> 8d65f6af33ebee1fe4d3c3d1fa122d84af977117
   const renderDropdown = (items) => (
     <ul>
       {items.map((item, i) => {
@@ -327,7 +463,14 @@ function NavbarBlue() {
             <li key={menu}>
               <div
                 className={`has-submenu ${openMenus[menu] ? "open" : ""}`}
+<<<<<<< HEAD
                 onClick={(e) => { e.stopPropagation(); toggleSubMenu(menu); }}
+=======
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleSubMenu(menu);
+                }}
+>>>>>>> 8d65f6af33ebee1fe4d3c3d1fa122d84af977117
               >
                 {menu} <FiChevronRight className="dropdown-icon" />
               </div>
