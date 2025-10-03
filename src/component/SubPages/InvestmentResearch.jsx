@@ -59,8 +59,8 @@ function InvestmentResearch() {
         },
     ];
     return (
-        <div>
-            <div className="container-fluid bg-light py-5 ">
+        <div className='bg-home'>
+            <div className="container-fluid bg-home py-5 ">
                 <div className="container py-5">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -95,7 +95,7 @@ function InvestmentResearch() {
 
             {/* -----Start Free Trial -----------      */}
             <div className="container-fluid py-5">
-                <div className="container py-4">
+                <div className="container py-5">
                     <div className="row align-items-center text-start text-white p-5 text-lg-start bg-free-trial rounded rounded-4">
 
                         {/* Left Content */}
@@ -122,8 +122,8 @@ function InvestmentResearch() {
 
             {/* --------Daily News ---------- */}
 
-            <div className="container-fluid  py-5 bg-light">
-                <div className="container">
+            <div className="container-fluid  py-5 bg-home">
+                <div className="container ">
                     {/* Section Header */}
                     <div className="text-center mb-4">
                         <h1 className="fw-bold text-heading  display-3">Daily News</h1>
@@ -201,7 +201,7 @@ function InvestmentResearch() {
                         <div className="col-12 col-md-6 col-lg-4 ">
                             <div className="p-4 bg-white text-dark rounded  shadow align-content-center border border-primary custom-card h-100 " style={{ height: "70vh" }}>
                                 <h5 className="fw-bold fs-1 text-heading">TradingView Essential</h5>
-                                <span className="badge bg-light text-heading mt-2">
+                                <span className="badge bg-home text-heading mt-2">
                                     FREE WITH 1 LOT TRADED P/M
                                 </span>
                                 <h2 className="fw-bold my-3">
@@ -214,15 +214,15 @@ function InvestmentResearch() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-primary  mt-3">Subscribe Now</button>
+                                <button className="btn btn-bg-start text-white  mt-3">Subscribe Now</button>
                             </div>
                         </div>
 
                         {/* Plan 2 */}
                         <div className="col-12 col-md-6 col-lg-4 ">
-                            <div className="p-4 bg-dark text-white rounded shadow align-content-center custom-card h-100" >
-                                <h5 className="fw-bold fs-1 text-primary">TradingView Plus</h5>
-                                <span className="badge bg-light text-dark mt-2">
+                            <div className="p-4 bg-white text-dark rounded shadow align-content-center border border-primary custom-card h-100" >
+                                <h5 className="fw-bold fs-1 text-heading ">TradingView Plus</h5>
+                                <span className="badge bg-home text-dark mt-2">
                                     FREE WITH 5 LOTS TRADED P/M
                                 </span>
                                 <h2 className="fw-bold my-3">
@@ -235,7 +235,7 @@ function InvestmentResearch() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <button className="btn btn-primary  mt-3">Subscribe Now</button>
+                                <button className="btn btn-bg-start text-white  mt-3">Subscribe Now</button>
                             </div>
                         </div>
 
@@ -243,7 +243,7 @@ function InvestmentResearch() {
                         <div className="col-12 col-md-6 col-lg-4 ">
                             <div className="p-4 bg-white text-dark border border-primary rounded shadow h-100 align-content-center custom-card">
                                 <h5 className="fw-bold fs-1 text-heading">Custom Research</h5>
-                                <span className="badge bg-light text-heading mt-2">
+                                <span className="badge bg-home text-heading mt-2">
                                     FREE WITH 10 LOTS TRADED P/M
                                 </span>
                                 <h2 className="fw-bold my-3">
@@ -256,7 +256,7 @@ function InvestmentResearch() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-primary  mt-3">Request a Quote</button>
+                                <button className="btn btn-bg-start text-white  mt-3">Request a Quote</button>
                             </div>
                         </div>
                     </div>

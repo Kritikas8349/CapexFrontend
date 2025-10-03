@@ -262,24 +262,19 @@ function Market() {
     return (
 
 
-        <div id='Main'>
+        <div id='Main-m'>
 
             <section className="m-section">
                 <div className="m-content">
-                    <h1 className="m-title">Markets Overview</h1>
+                    <h1 className="m-title">Market-Overview</h1>
                     <p className="m-description">
-                        We provide access to diverse markets on all our accounts, offering superior trade execution,
-                        competitive costs, and a wide range of tradable products. These include 70 currency pairs,
-                        major market indices and stocks, precious metals like gold and silver, cryptocurrency, and
-                        commodities such as gas and oil.
+                       Access forex trading with spreads starting from 0.0 pips, leverage up to 1:500, and industry leading execution speeds averaging less than 20 milliseconds.
                     </p>
                 </div>
                 <div className="m-wrapper">
-                    <img src="mob.webp" alt="Trading chart" className="m-image" />
+                    <img src="mobile.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
-
-
 
             <div className="m1-stats-container">
                 <div className="m1-stat-item">
@@ -304,24 +299,21 @@ function Market() {
                 </div>
             </div>
 
-
-
-
-            <div className="mt-container">
-                <div className="mt-controls">
-                    <div className="mt-filters">
-                        <button className={marketState === "All" ? "active" : ""} onClick={() => setMarketState("All")}>All</button>
-                        <button className={marketState === "Commodities" ? "active" : ""} onClick={() => setMarketState("Commodities")}>Commodities</button>
-                        <button className={marketState === "Crypto" ? "active" : ""} onClick={() => setMarketState("Crypto")}>Crypto</button>
-                        <button className={marketState === "Equities" ? "active" : ""} onClick={() => setMarketState("Equities")}>Equities</button>
-                        <button className={marketState === "Forex" ? "active" : ""} onClick={() => setMarketState("Forex")}>Forex</button>
-                        <button className={marketState === "Indices" ? "active" : ""} onClick={() => setMarketState("Indices")}>Indices</button>
+            <div className="m1-table-container">
+                <div className="m1-controls">
+                    <div className="m1-filters">
+                        <button className={marketState === "All" ? "m1-active" : ""} onClick={() => setMarketState("All")}>All</button>
+                        <button className={marketState === "Commodities" ? "m1-active" : ""} onClick={() => setMarketState("Commodities")}>Commodities</button>
+                        <button className={marketState === "Crypto" ? "m1-active" : ""} onClick={() => setMarketState("Crypto")}>Crypto</button>
+                        <button className={marketState === "Equities" ? "m1-active" : ""} onClick={() => setMarketState("Equities")}>Equities</button>
+                        <button className={marketState === "Forex" ? "m1-active" : ""} onClick={() => setMarketState("Forex")}>Forex</button>
+                        <button className={marketState === "Indices" ? "m1-active" : ""} onClick={() => setMarketState("Indices")}>Indices</button>
                     </div>
 
                     <input
                         type="text"
                         placeholder="Search...."
-                        className="mt-search"
+                        className="m1-search"
                         onChange={(e) => {
                             const text = e.target.value.toLowerCase();
                             setInstruments(prev =>
@@ -334,39 +326,31 @@ function Market() {
                     />
 
                     <select
-                        className="mt-sort-dropdown"
+                        className="m1-sort-dropdown"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                     >
-
-                        <option value="" disabled hidden>
-                            Sort By
-                        </option>
+                        <option value="" disabled hidden>Sort By</option>
                         <option value="name-asc">Name A → Z</option>
                         <option value="name-desc">Name Z → A</option>
                         <option value="buy-asc">Buy Price ↑</option>
                         <option value="buy-desc">Buy Price ↓</option>
-                        {/* Add other sorting options if needed */}
                     </select>
 
-                    <div className="dropdown">
-                        <button className="dropdown-btn" onClick={toggleDropdown}>
-                            Market State ▼
-                        </button>
-
-                        {/* Dropdown Menu */}
+                    <div className="m1-dropdown">
+                        <button className="m1-dropdown-btn" onClick={toggleDropdown}>Market State ▼</button>
                         {isOpen && (
-                            <ul className="dropdown-menu">
-                                <a href="">  <li  >Market Status</li></a>
-                                <a href="">  <li>Open</li> </a>
-                                <a href="">  <li>Closed</li></a>
+                            <ul className="m1-dropdown-menu">
+                                <a href="#"><li>Market Status</li></a>
+                                <a href="#"><li>Open</li></a>
+                                <a href="#"><li>Closed</li></a>
                             </ul>
                         )}
                     </div>
                 </div>
 
-                <div className="mt-table-wrapper">
-                    <table className="mt-table">
+                <div className="m1-table-wrapper">
+                    <table className="m1-table">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -379,17 +363,17 @@ function Market() {
                         <tbody>
                             {filteredInstruments.map((item, index) => (
                                 <tr key={index}>
-                                    <td className="mt-name-cell">
-                                        <img src={item.icon} alt={item.name} className="mt-flag" />
+                                    <td className="m1-name-cell">
+                                        <img src={item.icon} alt={item.name} className="m1-flag" />
                                         <div>
-                                            <div className="mt-symbol">{item.name}</div>
-                                            <div className="mt-desc">{item.desc}</div>
+                                            <div className="m1-symbol">{item.name}</div>
+                                            <div className="m1-desc">{item.desc}</div>
                                         </div>
                                     </td>
-                                    <td className="mt-buy">{item.buy.toFixed(5)}</td>
-                                    <td className="mt-sell">{item.sell.toFixed(5)}</td>
+                                    <td className="m1-buy">{item.buy.toFixed(5)}</td>
+                                    <td className="m1-sell">{item.sell.toFixed(5)}</td>
                                     <td>{item.spread.toFixed(1)}</td>
-                                    <td className={`mt-change ${item.change < 0 ? "red" : "green"}`}>
+                                    <td className={`m1-change ${item.change < 0 ? "m1-red" : "m1-green"}`}>
                                         {item.change < 0
                                             ? item.change.toFixed(3) + "%"
                                             : "+" + item.change.toFixed(3) + "%"}
@@ -400,7 +384,7 @@ function Market() {
                     </table>
                 </div>
 
-                <div className="mt-pagination">
+                <div className="m1-pagination">
                     <span>1</span>
                     <span>2</span>
                     <span>3</span>
@@ -409,82 +393,44 @@ function Market() {
                     <span>6</span>
                     <span>...</span>
                     <span>164</span>
-                    <span className="mt-next">Next</span>
+                    <span className="m1-next">Next</span>
                 </div>
             </div>
 
+            <section className="m1-trade-platforms">
+                <h2 className="m1-title-section">Trading Platforms</h2>
 
-
-
-
-
-
-
-
-            <section className="trade-platforms1">
-                <h2 className="title-section1">Trading Platforms</h2>
-
-                <div className="platforms-wrapper1">
+                <div className="m1-platforms-wrapper">
                     {platforms.map((platform, index) => (
-                        <div className="platform-box1" key={index}>
-                            <div className="platform-top1">
-                                <img src={platform.icon} alt={platform.name} className="platform-image1" />
+                        <div className="m1-platform-box" key={index}>
+                            <div className="m1-platform-top">
+                                <img src={platform.icon} alt={platform.name} className="m1-platform-image" />
                                 <h3>{platform.name}</h3>
-                                {platform.isNew && <span className="badge-new1">New</span>}
+                                {platform.isNew && <span className="m1-badge-new">New</span>}
                             </div>
                             <p>{platform.desc}</p>
-                            <button className="btn-learn1">Learn More</button>
+                            <button className="m1-btn-learn">Learn More</button>
                         </div>
                     ))}
                 </div>
             </section>
 
-
-            <div className="T-container">
-                <h1 className="T-heading">Trading Opportunities</h1>
-                <div className="T-card-container">
-                    <div className="T-card">
-                        <img src="card1.webp" alt="Supreme Court" className="T-card-image" />
-                        <div className="T-card-content">
-                            <h2 className="T-card-title">Supreme Court ruling could lift gold further</h2>
-                            <p className="T-card-description">The Supreme Court has apparently scheduled arguments for December on the issue of whether President Trump can fire Fed governor Lisa Cook...</p>
-                            <span className="T-date">September 23, 2025</span>
-                            <a href="#" className="T-view-post">View Post</a>
+            <div className="m1-t-container">
+                <h1 className="m1-t-heading">Trading Opportunities</h1>
+                <div className="m1-t-card-container">
+                    {[1, 2, 3, 4].map(i => (
+                        <div className="m1-t-card" key={i}>
+                            <img src={`card${i}.webp`} alt={`card${i}`} className="m1-t-card-image" />
+                            <div className="m1-t-card-content">
+                                <h2 className="m1-t-card-title">Title for card {i}</h2>
+                                <p className="m1-t-card-description">Some brief description of the card content for card {i}...</p>
+                                <span className="m1-t-date">September {20 + i}, 2025</span>
+                                <a href="#" className="m1-t-view-post">View Post</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div className="T-card">
-                        <img src="card2.webp" alt="BlackBull Markets" className="T-card-image" />
-                        <div className="T-card-content">
-                            <h2 className="T-card-title">BlackBull Markets Becomes Official Auckland FC Partner</h2>
-                            <p className="T-card-description">BlackBull Markets is excited to announce a new partnership with Auckland FC, joining the club as an official partner ahead of the upcoming A-League Men’s season....</p>
-                            <span className="T-date">September 23, 2025</span>
-                            <a href="#" className="T-view-post">View Post</a>
-                        </div>
-                    </div>
-
-                    <div className="T-card">
-                        <img src="card3.webp" alt="Peso Resilience" className="T-card-image" />
-                        <div className="T-card-content">
-                            <h2 className="T-card-title">Peso resilience tested ahead of Banxico decision</h2>
-                            <p className="T-card-description">This technical setup frames the importance of Banxico’s upcoming decision. All 24 analysts surveyed by Reuters expect a 25-basis-point cut to 7.50%....</p>
-                            <span className="T-date">September 22, 2025</span>
-                            <a href="#" className="T-view-post">View Post</a>
-                        </div>
-                    </div>
-
-                    <div className="T-card">
-                        <img src="card4.webp" alt="Dot Plot Divide" className="T-card-image" />
-                        <div className="T-card-content">
-                            <h2 className="T-card-title">Dot Plot Divide: Dollar Gains, Gold Stalls</h2>
-                            <p className="T-card-description">The USDJPY spiked lower following the Fed’s 25 basis point cut yesterday but quickly reversed trajectory as the dot plot projections from the FOMC came in softer than markets had expected....</p>
-                            <span className="T-date">September 19, 2025</span>
-                            <a href="#" className="T-view-post">View Post</a>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
-
 
             <div className="m1-payment-container">
                 <div className="m1-payment-grid">
@@ -497,16 +443,10 @@ function Market() {
                     <img src="neteller.png" alt="Neteller" />
                     <img src="skrill.png" alt="Skrill" />
                     <img src="banktransfer.png" alt="Local Bank Transfer" />
-                    {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
                 </div>
             </div>
-
-
-
-
-
-
         </div>
+
     )
 }
 

@@ -13,11 +13,11 @@ function SecureClientArea() {
   ];
 
   return (
-    <div className='container-fluid py-4 border'>
-      <div className='container'>
+    <div className='container-fluid bg-home py-5'>
+      <div className='container py-5'>
         <div className="d-flex"><span>Home &nbsp;</span>/&nbsp;<span>support&nbsp;</span>/&nbsp;<span>platform-support&nbsp;</span>/&nbsp;<span>secure client area</span></div>
         <div className='mb-4'>
-          <h1 className='fw-bold text-center text-md-start'>Secure Client Area</h1>
+          <h1 className='fw-bold text-center text-heading text-md-start'>Secure Client Area</h1>
         </div>
         <div className='links-container'>
           <ul className='list-unstyled '>

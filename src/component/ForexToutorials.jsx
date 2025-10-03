@@ -154,14 +154,14 @@ function ForexTutorials() {
   ];
 
   return (
-    <div>
-      <div className="container-fluid bg-dark text-white py-5">
+    <div className='bg-home'>
+      <div className="container-fluid bg-dark text-white " >
         <div className="container bg-dark">
-          <h2 className="fw-bold bg-dark text-white text-center display-3 mb-5"> Forex Tutorial</h2>
+          <h2 className="fw-bold bg-dark text-white text-center display-5 py-4"> Forex Tutorial</h2>
 
           <div className="row border-top bg-dark border-primary border-3 pt-4">
             <div className="col-lg-6 mb-4 bg-dark">
-              <div className="d-flex flex-column bg-dark text-white" style={{ height: '400px' }}>
+              <div className="d-flex flex-column bg-dark text-white">
                 <div className="position-relative flex-fill">
                   <img
                     src={lessons[0].img}
@@ -181,7 +181,7 @@ function ForexTutorials() {
             </div>
 
             <div className="col-lg-6 bg-dark mt-4">
-              {lessons.slice(1).map((lesson, index) => (
+              {lessons.slice(2).map((lesson, index) => (
                 <div
                   key={index}
                   className="d-flex flex-column flex-md-row bg-dark text-white mb-4 border-bottom border-primary  border-2"

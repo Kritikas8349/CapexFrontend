@@ -1,7 +1,10 @@
 .gradient-bg {
-  background: linear-gradient(135deg, #3067ce, #2954a9);
+  background: linear-gradient(135deg, #493FFD, #2954a9);
   color: white;
   padding: 4rem;
+}
+.border-color{
+  border:1px solid #493FFD
 }
 
 /* Small screens (flipped gradient: white on top, blue bottom) */

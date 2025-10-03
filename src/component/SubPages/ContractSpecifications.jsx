@@ -121,35 +121,45 @@ const ContractSpecification = () => {
             row.more.toLowerCase().includes(search.toLowerCase()) 
     );
 
-    const menuItems = [
-        "Leverage",
-        "Swap Free Accounts",
-        "Trading conditions overview",
-        "Contract Specifications",
-        "Contract Expiries",
-        "What are your minimum deposits?",
-        "Trading Hour Changes",
-        "Why is a triple swap charged?",
-        "Who are your liquidity providers?",
-        "Restricted Countries",
-    ];
-    const securityItems = [
-        "Segregated Client Accounts",
-        "Investor Compensation Fund",
-        "Negative Balance Protection",
-        "Tier 1 Banking Partners",
-    ];
+    const Sections = [
+  {
+    title: "Trading Conditions",
+    icon: "bi bi-graph-up-arrow",
+    items: [
+      { label: "Leverage" },
+      { label: "Swap Free Accounts" },
+      { label: "Trading conditions overview" },
+      { label: "Contract Specifications" },
+      { label: "Contract Expiries" },
+      { label: "What are your minimum deposits?" },
+      { label: "Trading Hour Changes", active: true }, // active key added
+      { label: "Why is a triple swap charged?" },
+      { label: "Who are your liquidity providers?" },
+      { label: "Restricted Countries" },
+    ],
+  },
+  {
+    title: "Security of Funds",
+    icon: "bi bi-bank",
+    items: [
+      { label: "Segregated Client Accounts" },
+      { label: "Investor Compensation Fund" },
+      { label: "Negative Balance Protection" },
+      { label: "Tier 1 Banking Partners" }
+    ],
+  }
+];
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid bg-home">
             <div className="row justify-content-center">
                 {/* Sidebar with Accordion */}
-                <SidebarAccordion></SidebarAccordion>
+                <SidebarAccordion Sections={Sections}></SidebarAccordion>
 
                 {/* Main Content */}
                 <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border">
                     {/* Breadcrumb */}
-                    <nav aria-label="breadcrumb" className="mb-3">
+                    <nav aria-label="breadcrumb" className="mb-5">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
                                 <Link to="#">Home</Link>
@@ -170,12 +180,12 @@ const ContractSpecification = () => {
                     </nav>
 
                     {/* Title + Date */}
-                    <h2 className="fw-bold mb-1">Contract Specification</h2>
+                    <h2 className="fw-bold mb-1 text-heading">Contract Specification</h2>
                     <p className="text-muted mb-3">Updated on September 2, 2025</p>
 
                     {/* Server time */}
-                    <div className="  bg-light p-2">
-                        <h5 className="text-primary">Table Of Contents</h5>
+                    <div className="  bg-home p-2">
+                        <h5 className="">Table Of Contents</h5>
                         <ol>
                             <li>Contract Specification
                                 <ol>
@@ -198,12 +208,12 @@ const ContractSpecification = () => {
                             </select>
                             <input
                                 type="text"
-                                className="form-control form-control-sm w-auto"
+                                className="form-control form-control-sm w-auto ms-2"
                                 placeholder="Search..."
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                             />
-                            <button className="bi bi-search btn btn-primary">Apply</button>
+                            <button className="bi bi-search btn btn-bg-start text-white ms-2">  Apply</button>
                         </div>
 
                         <table className="table table-bordered table-hover">

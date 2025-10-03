@@ -2,13 +2,13 @@ import React from 'react'
 
 function TradingView() {
     return (
-        <div>
+        <div className='bg-home'>
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to left, #4028E9, #000000);}
+                         background: linear-gradient(to right, #493FFD, #000000);}
                        .trading-primium,.how-to-connect{
-                       background: linear-gradient(to bottom, #4028E9, #000000);
+                       background: linear-gradient(to top, #493FFD, #000000);
                        }
 
                     `
@@ -101,9 +101,9 @@ function TradingView() {
                 </div>
             </div>
 
-            {/* -------------Unlock Trading View------------ */}
+            {/* -------------How to get trading------------ */}
 
-            <div className="container-fluid bg-light align-content-center py-5" style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center py-5" >
                 <div className="container">
                     <div className="row align-items-center border rounded p-4">
                         {/* Left Section */}
@@ -164,13 +164,13 @@ function TradingView() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-primary  mt-3">Claim Offer</button>
+                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
                             </div>
                         </div>
 
                         {/* Plan 2 */}
                         <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-dark text-white rounded shadow align-content-center h-100" >
+                            <div className="p-4 bg-light text-secondary rounded shadow align-content-center h-100" >
                                 <h5 className="fw-bold fs-1 text-primary">TradingView Plus</h5>
                                 <span className="badge bg-light text-dark mt-2">
                                     FREE WITH 5 LOTS TRADED P/M
@@ -185,7 +185,7 @@ function TradingView() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <button className="btn btn-primary  mt-3">Claim Offer</button>
+                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
                             </div>
                         </div>
 
@@ -206,7 +206,7 @@ function TradingView() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-primary  mt-3">Claim Offer</button>
+                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
                             </div>
                         </div>
                     </div>
@@ -217,11 +217,11 @@ function TradingView() {
             {/* -----------Why MarketTrad----------------- */}
 
             <div className="container-fluid bg-light py-5 min-vh-90">
-                <div className="container">
+                <div className="container py-4">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
                         <div className="col-12 col-lg-6 text-center text-md-start text-sm-start">
-                            <h1 className="fw-bold">Why Market Trad</h1>
+                            <h1 className="fw-bold display-4 text-heading">Why Market Trade</h1>
                             <p className="text-secondary mt-3 fs-5">
                                 BlackBull Markets is a multi-regulated broker headquartered in
                                 Auckland, New Zealand, providing an institutional trading experience
@@ -281,7 +281,7 @@ function TradingView() {
 
             {/* -------------How to Connect------------ */}
 
-            <div className="container-fluid bg-light align-content-center py-5 how-to-connect" style={{ height: '85vh' }}>
+            <div className="container-fluid align-content-center py-5 how-to-connect" >
                 <div className="container">
                     <div className="row align-items-center  rounded p-4">
                         {/* Left Section */}

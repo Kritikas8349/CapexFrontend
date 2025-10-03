@@ -47,12 +47,14 @@ html, body {
   justify-content: space-between;
   width: 100%;
   flex-wrap: wrap;
+  gap: 40px;
+  
 }
 
 .header {
   flex: 1;
   text-align: left;
-  padding-left: 120px;
+  padding-left: 30px;
 }
 
 .header h1 {
@@ -118,7 +120,7 @@ html, body {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  margin-right: 120px;
+  margin-right: 90px;
 }
 
 .phone-image img {
@@ -736,7 +738,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SidebarAccordion = ({Sections}) => {
       return (
-        <div className="col-12 col-md-3 col-lg-4 p-3 bg-light border-end">
+        <div className="col-12 col-md-3 col-lg-4 p-3 bg-home border-end">
           {/* Only ONE accordion wrapper */}
           <div className="accordion" id="sidebarAccordion">
     
@@ -26,7 +26,7 @@ const SidebarAccordion = ({Sections}) => {
                       aria-controls={collapseId}
                     >
                       <i className={`${section.icon} me-2`}></i> {section.title}
-                      <span className="badge bg-primary ms-auto">{section.items.length}</span>
+                      <span className="badge btn-bg-start ms-auto">{section.items.length}</span>
                     </button>
                   </h2>
     

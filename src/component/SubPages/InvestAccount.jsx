@@ -4,14 +4,14 @@ import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaPinterestP } from "react-icons
 import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 
 const sections = [
-  { title: "Getting Started", img: "pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
-  { title: "TradingView", img: "Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
-  { title: "BlackBull Invest", img: "pf4.svg", count: 7 },
-  { title: "cTrader", img: "pf4.svg", count: 22 },
-  { title: "Account Support", img: "pf4.svg", count: 8 },
+  { title: "Getting Started", img: "/public/pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "/public/pf2.webp", count: 8 },
+  { title: "TradingView", img: "/public/Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "/public/pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "/public/pf3.webp", count: 17 },
+  { title: "BlackBull Invest", img: "/public/pf4.svg", count: 7 },
+  { title: "cTrader", img: "/public/pf4.svg", count: 22 },
+  { title: "Account Support", img: "/public/pf4.svg", count: 8 },
 ];
 
 const InvestAccount = () => {
@@ -94,25 +94,25 @@ const InvestAccount = () => {
         <div className="investaccount-step">
           <h3>Step 1.</h3>
           <p>Go to Market.trad and sign up with your email & password.</p>
-          <img src="acc8.webp" alt="Step 1" className="investaccount-step-image" />
+          <img src="/public/acc8.webp" alt="Step 1" className="investaccount-step-image" />
         </div>
 
         <div className="investaccount-step">
           <h3>Step 2.</h3>
           <p>Complete KYC by uploading identity and address proof.</p>
-          <img src="acc2.webp" alt="Step 2" className="investaccount-step-image" />
+          <img src="/public/acc2.webp" alt="Step 2" className="investaccount-step-image" />
         </div>
 
         <div className="investaccount-step">
           <h3>Step 3.</h3>
           <p>Choose Share Investing account type and verify your details.</p>
-          <img src="acc3.webp" alt="Step 3" className="investaccount-step-image" />
+          <img src="/public/acc3.webp" alt="Step 3" className="investaccount-step-image" />
         </div>
 
         <div className="investaccount-step">
           <h3>Step 4.</h3>
           <p>Deposit funds and start trading securely on Market.trad.</p>
-          <img src="acc5.webp" alt="Step 4" className="investaccount-step-image" />
+          <img src="/public/acc5.webp" alt="Step 4" className="investaccount-step-image" />
         </div>
       </div>
 

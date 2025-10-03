@@ -2,7 +2,7 @@ import React from 'react'
 import './CopyTrader.css'
 function CopyTrader() {
     return (
-        <div>
+        <div className='bg-home'>
             <style>
                 {
                     `.copy-trader {
@@ -22,11 +22,11 @@ function CopyTrader() {
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 cTrader{" "}
-                                <span className="text-primary"></span>
+                                <span className="text-heading"></span>
                                 <br />
                                 With Market Trad
                             </h1>
-                            <p className="fs-2 mt-3 text-white fw-bold">
+                            <p className="fs-4 mt-3 text-white ">
                                 Access cTrader with no minimum deposit.
                             </p>
 
@@ -100,9 +100,9 @@ function CopyTrader() {
 
 
             {/* ---------How to Copy Trade---------   */}
-            <div className="container-fluid bg-light align-content-center border py-4" >
-                <div className="container">
-                    <h1 className='text-center'><span className='text-primary'>Key features of</span> BlackBull CopyTrader</h1>
+            <div className="container-fluid bg-home align-content-center border py-lg-5" >
+                <div className="container py-lg-5">
+                    <h1 className='text-center display-4 fw-bold'><span className='text-heading'>Key features of</span> BlackBull CopyTrader</h1>
                     <div className="row align-items-center  py-5 border-primary rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
@@ -128,7 +128,7 @@ function CopyTrader() {
                 </div>
             </div>
             {/* -----Award-winning Platform----------     */}
-            <div className="container-fluid bg-light border py-5">
+            <div className="container-fluid bg-home border py-5">
                 <div className="container">
                     {/* Content Row */}
                     <div className="row align-items-center border-primary rounded p-4">
@@ -141,12 +141,12 @@ function CopyTrader() {
                         {/* Right Section (Text + Icons) */}
                         <div className="col-12 col-lg-8 text-strat text-lg-start">
                             {/* Title */}
-                            <h1 className="fw-bolder text-primary-emphasis mb-4">
+                            <h1 className="fw-bolder text-heading-emphasis mb-4">
                                 Award-winning Platform
                             </h1>
 
                             {/* Paragraph */}
-                            <p className="fs-5 text-primary-emphasis mb-5">
+                            <p className="fs-5 text-heading-emphasis mb-5">
                                 The BlackBull CopyTrader platform has been recognised for the quality of its
                                 elite fund managers and its advanced risk management features, helping
                                 BlackBull Markets secure the title of Best Copy Trading Broker at the 2025
@@ -154,7 +154,7 @@ function CopyTrader() {
                             </p>
 
                             {/* Icons Row */}
-                            <div className="row text-center text-primary-emphasis">
+                            <div className="row text-center text-heading-emphasis">
                                 <div className="col-12 col-md-4 mb-4">
                                     <i className="bi bi-speedometer2 display-4"></i>
                                     <h5 className="mt-2">Transparent</h5>
@@ -177,8 +177,8 @@ function CopyTrader() {
                 <div className="row g-0 align-items-center">
 
                     {/* LEFT: Gradient Background + Text */}
-                    <div className="col-lg-6 col-12 text-start text-white p-3 p-md-4 p-lg-5">
-                        <h1 className="fw-bold display-5 mb-4">Why Join BlackBull CopyTrader?</h1>
+                    <div className="col-lg-6 col-12 text-start text-white  p-4 p-md-4 p-lg-4">
+                        <h1 className="fw-bold display-5 mb-4 ">Why Join BlackBull CopyTrader?</h1>
                         <p className="lead">
                             If you want to copy elite traders with a verified track record of trading, then BlackBull CopyTrader is for you!
                         </p>
@@ -265,11 +265,9 @@ function CopyTrader() {
 
 
             {/* -----How to Start-------     */}
-
-
             <div className="container-fluid py-5">
                 <div className="container text-center">
-                    <h1 className="text-primary-emphasis fw-bold">How to get started?</h1>
+                    <h1 className="text-heading-emphasis fw-bold">How to get started?</h1>
                     <p className='mt-5 fs-5'>Before Joining BlackBull CopyTrader, you will need a BlackBull Markets account. Sign up in less than 5 minutes to get started.</p>
                 </div>
             </div>
@@ -277,7 +275,7 @@ function CopyTrader() {
             {/* ------Step1 --------------- */}
 
 
-            <div className="container-fluid py-5 bg-light">
+            <div className="container-fluid py-5 bg-home">
                 <div className="container">
                     <div className="row align-items-center">
 
@@ -293,10 +291,10 @@ function CopyTrader() {
 
                         {/* Text Content - Right on desktop, bottom on mobile */}
                         <div className="col-lg-6 col-md-12 text-md-start text-start">
-                            <h5 className="text-primary fw-semibold">Step 1</h5>
+                            <h2 className="text-heading fw-bold">Step 1</h2>
                             <h2 className="fw-bold mb-3">Create a BlackBull Markets account</h2>
                             <p className="mb-4">Create an account in less than 5 minutes.</p>
-                            <button className="btn btn-primary">Create Account</button>
+                            <button className="btn btn-bg-start fs-5 text-white">Create Account</button>
                         </div>
 
                     </div>
@@ -306,7 +304,7 @@ function CopyTrader() {
             {/* ----------Step 2--------      */}
 
             <div className="container-fluid py-5 ">
-                <div className="container">
+                <div className="container py-5">
                     <div className="row align-items-center">
 
                         {/* Image - Left on desktop, top on mobile */}
@@ -321,10 +319,10 @@ function CopyTrader() {
 
                         {/* Text Content - Right on desktop, bottom on mobile */}
                         <div className="col-lg-6 col-md-12 text-md-start text-start">
-                            <h5 className="text-primary fw-semibold">Step 2</h5>
+                            <h2 className="text-heading fw-bold">Step 2</h2>
                             <h2 className="fw-bold mb-3">Explore Providers</h2>
                             <p className="mb-4">Explore our range of elite fund managers.</p>
-                            <button className="btn btn-primary">Explore</button>
+                            <button className="btn btn-bg-start fs-5 text-white">Explore</button>
                         </div>
 
                     </div>
@@ -333,8 +331,8 @@ function CopyTrader() {
 
             {/* ----------Step 3-------- */}
 
-            <div className="container-fluid py-5 bg-light">
-                <div className="container">
+            <div className="container-fluid py-5 bg-home">
+                <div className="container py-5">
                     <div className="row align-items-center">
 
                         {/* Image - Left on desktop, top on mobile */}
@@ -349,10 +347,10 @@ function CopyTrader() {
 
                         {/* Text Content - Right on desktop, bottom on mobile */}
                         <div className="col-lg-6 col-md-12 text-md-start text-start">
-                            <h5 className="text-primary fw-semibold">Step 3</h5>
+                            <h2 className="text-heading fw-bold">Step 3</h2>
                             <h2 className="fw-bold mb-3">Activate copy-trading</h2>
                             <p className="mb-4">Select a fund manager and start copy trading</p>
-                            <button className="btn btn-primary">Activate</button>
+                            <button className="btn btn-bg-start fs-5 text-white">Activate</button>
                         </div>
 
                     </div>

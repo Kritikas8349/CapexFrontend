@@ -58,15 +58,15 @@ const TradingHourChange = () => {
   
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid bg-home">
             <div className="row justify-content-center">
                 {/* Sidebar with Accordion */}
                 <SidebarAccordion Sections={Sections}></SidebarAccordion>
 
                 {/* Main Content */}
-                <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border">
+                <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border bg-home">
                     {/* Breadcrumb */}
-                    <nav aria-label="breadcrumb" className="mb-3">
+                    <nav aria-label="breadcrumb" className="mb-5">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
                                 <Link to="#">Home</Link>
@@ -87,7 +87,7 @@ const TradingHourChange = () => {
                     </nav>
 
                     {/* Title + Date */}
-                    <h2 className="fw-bold mb-1">Trading Hour Changes</h2>
+                    <h2 className="fw-bold text-heading mb-1">Trading Hour Changes</h2>
                     <p className="text-muted mb-3">Updated on September 2, 2025</p>
 
                     {/* Server time */}
@@ -98,10 +98,10 @@ const TradingHourChange = () => {
 
                     {/* Search + Table */}
                     <div className="table-responsive mt-4">
-                        <div className="d-flex justify-content-end mb-2">
+                        <div className="d-flex mb-2">
                             <input
                                 type="text"
-                                className="form-control form-control-sm w-auto"
+                                className="form-control w-25"
                                 placeholder="Search..."
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
@@ -159,10 +159,10 @@ const TradingHourChange = () => {
 
                         {/* Navigation Links */}
                         <div className="d-flex flex-row flex-md-row justify-content-between align-items-start align-items-md-center mt-4">
-                            <p className="h6 mb-2 mb-md-0 text-decoration-underline text-primary cursor-pointer">
+                            <p className="h6 mb-2 mb-md-0  text-heading cursor-pointer">
                                 <i className="bi bi-arrow-left me-2"></i>Contract Expiries
                             </p>
-                            <p className="h6 text-decoration-underline text-primary cursor-pointer">
+                            <p className="h6 text-decoration text-heading cursor-pointer">
                                 Trading Hours<i className="bi bi-arrow-right ms-2"></i>
                             </p>
                         </div>

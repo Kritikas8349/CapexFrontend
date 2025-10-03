@@ -6,7 +6,7 @@ const ContactSupport = () => {
     <div className="reachout">
       <div className="reachout-container">
         <img 
-          src="PlatformSupport.jpg" 
+          src="/public/PlatformSupport.jpg" 
           alt="Market Support" 
           className="reachout-img" 
         />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-function Invest() {
+function BlackbullInvest() {
     const [activeTab, setActiveTab] = useState('us');
 
     const tabs = [
@@ -34,7 +34,7 @@ function Invest() {
         ],
     };
     return (
-        <div>
+        <div className='bg-home'>
             <style>
                 {
                     `.bg-market-research {
@@ -45,8 +45,8 @@ function Invest() {
                 }
 
             </style>
-            <div className="container-fluid  py-5 border   ">
-                <div className="container">
+            <div className="container-fluid bg-home  ">
+                <div className="container ">
                     <div className="row align-items-center">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
@@ -59,7 +59,7 @@ function Invest() {
 
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
-                                <button className='btn btn-primary px-4 py-2 '>Register Now</button>
+                                <button className='btn btn-bg-start text-white px-4 py-2 '>Register Now</button>
                                 <button className="btn btn-success px-4 py-2 ">
                                     Join Now
                                 </button>
@@ -69,10 +69,10 @@ function Invest() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center">
                             <img
-                                src="/invest.webp"
+                                src="/mobile.webp"
                                 alt="TradingView Chart"
-                                className="img-fluid mt-3 mt-lg-0"
-                                style={{ maxHeight: "500px", objectFit: "contain" }}
+                                className="img-fluid mt-3 mt-lg-0 "
+                                style={{ maxHeight: "400px", objectFit: "contain" }}
                             />
                         </div>
                     </div>
@@ -83,37 +83,57 @@ function Invest() {
 
             {/* --------Why Invest--------      */}
 
-            <div className="container-fluid bg-dark py-5">
-                <div className="container">
+            <div
+                className="container-fluid py-4 position-relative text-white"
+                style={{
+                    backgroundImage: "url('/whymarkettrade.avif')",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center",
+                }}
+            >
+                {/* Overlay */}
+                <div
+                    className="position-absolute top-0 start-0 w-100 h-100"
+                    style={{
+                        backgroundColor: "rgba(0,0,0,0.6)", // adjust opacity here (0.5–0.7 works well)
+                        zIndex: 1,
+                    }}
+                ></div>
+
+                {/* Content */}
+                <div className="container position-relative" style={{ zIndex: 2 }}>
                     <div className="text-center mb-5">
-                        <h1 className="text-white fw-bold">Why MarketTrad Invest</h1>
+                        <h2 className="fw-bold">Why MarketTrad Invest</h2>
                     </div>
 
-                    <div className="row text-center text-white">
+                    <div className="row text-center">
                         <div className="col-12 col-sm-6 col-md-3 mb-4">
-                            <h2 className="fw-bold">70+</h2>
-                            <h5 className="mt-2">Order Types</h5>
+                            <h3 className="fw-bold">70+</h3>
+                            <h6 className="mt-2">Order Types</h6>
                         </div>
                         <div className="col-12 col-sm-6 col-md-3 mb-4">
-                            <h2 className="fw-bold">Extended</h2>
-                            <h5 className="mt-2">Trading Hours</h5>
+                            <h3 className="fw-bold">Extended</h3>
+                            <h6 className="mt-2">Trading Hours</h6>
                         </div>
                         <div className="col-12 col-sm-6 col-md-3 mb-4">
-                            <h2 className="fw-bold">Advanced</h2>
-                            <h5 className="mt-2">Analysis Tools</h5>
+                            <h3 className="fw-bold">Advanced</h3>
+                            <h6 className="mt-2">Analysis Tools</h6>
                         </div>
                         <div className="col-12 col-sm-6 col-md-3 mb-4">
-                            <h2 className="fw-bold">Data Feeds</h2>
-                            <h5 className="mt-2">From 66+ Third Parties</h5>
+                            <h3 className="fw-bold">Data Feeds</h3>
+                            <h6 className="mt-2">From 66+ Third Parties</h6>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+
             {/* ------What is the diffrence------ */}
 
-            <div className="container-fluid  py-5 border bg-light   ">
-                <div className="container">
+            <div className="container-fluid  py-5 border bg-home   ">
+                <div className="container py-5">
                     <div className="row align-items-center">
                         {/* Left Section */}
                         <div className="col-lg-6 text-center">
@@ -174,7 +194,7 @@ function Invest() {
                             </ul>
 
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
-                                <button className="btn btn-primary px-4 py-2 fw-bold">Register Now</button>
+                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">Register Now</button>
                                 <button className="btn btn-success px-4 py-2 fw-bold">Join Now</button>
                             </div>
                         </div>
@@ -278,7 +298,7 @@ function Invest() {
 
             <div className="container-fluid py-5 text-white bg-market-research ">
                 <div className="container text-start py-5 text-md-start">
-                    <div className="mb-4">
+                    <div className="mb-4 ">
                         <h1 className="fw-bold mb-2">MarketTrad Research</h1>
                         <h3 className="fw-semibold">Daily Expert Stock Research</h3>
                     </div>
@@ -289,7 +309,7 @@ function Invest() {
                         </p>
                     </div>
                     <div>
-                        <button className="btn btn-primary px-4 py-2 fw-bold">Learn More</button>
+                        <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -298,4 +318,4 @@ function Invest() {
     )
 }
 
-export default Invest
+export default BlackbullInvest;

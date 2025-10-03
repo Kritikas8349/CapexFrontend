@@ -55,7 +55,7 @@ function QuickStart3() {
             <input
               type="email"
               className="email-input3"
-              placeholder="Email address"
+              placeholder="Email address...."
               required
             />
             <button type="submit" className="join-btn">  Join Now</button>
@@ -90,7 +90,7 @@ function QuickStart3() {
     
 
 
-      <div className="payment-container">
+      
         <div className="payment-grid">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
           <img src="mastercard.png" alt="MasterCard" />
@@ -103,11 +103,11 @@ function QuickStart3() {
           <img src="banktransfer.png" alt="Local Bank Transfer" />
           {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
         </div>
-      </div>
+      
 
 
 
-      <section className="hero">
+      {/* <section className="hero">
         <div className="hero-overlay">
           <div className="hero-content">
             <h1>
@@ -121,22 +121,22 @@ function QuickStart3() {
             </div>
           </div>
 
-          {/* Placeholder for awards/logos */}
+          
           <div className="awards">
             <p>AWARDED BY THE BEST</p>
             <div className="awards-logos">
-              {/* yaha apne award logos ke <img /> dal lena */}
+              
               <span>🏆 Award 1</span>
               <span>🏆 Award 2</span>
               <span>🏆 Award 3</span>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
             <img src="Frame9.png" alt="" />
@@ -235,7 +235,7 @@ function QuickStart3() {
             <p>Email: support@market.trad.com</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
     </div>
