@@ -1,9 +1,11 @@
+// NavbarBlue.jsx
 import React, { useState, useEffect } from "react";
-import { FiChevronDown, FiChevronRight, FiSearch } from "react-icons/fi";
+import { Link } from "react-router-dom"; // ✅ React Router Link
+import { FiChevronDown, FiChevronRight, FiChevronUp, FiSearch } from "react-icons/fi";
 import "./NavbarBlue.css";
-import { Link } from "react-router-dom";
+import { routesMap } from "../RoutesMap"; // adjust path as needed
 
-function Navbar() {
+function NavbarBlue() {
   const [language, setLanguage] = useState("en");
   const [menuOpen, setMenuOpen] = useState(false);
   const [openMenus, setOpenMenus] = useState({});
@@ -17,35 +19,6 @@ function Navbar() {
     { code: "es", label: "Spanish" },
     { code: "ja", label: "Japanese" },
   ];
-
-  const handleLanguageChange = (e) => {
-    setLanguage(e.target.value);
-    alert(`Language changed to: ${e.target.value}`);
-  };
-
-  const toggleSubMenu = (key) => {
-    setOpenMenus((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) setShowNavbar(false);
-      else setShowNavbar(true);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768 && menuOpen) setMenuOpen(false);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [menuOpen]);
 
   const dropdowns = {
     "Quick Start": [
@@ -174,14 +147,79 @@ function Navbar() {
     ],
   };
 
+  const handleLanguageChange = (e) => setLanguage(e.target.value);
+
+  const toggleSubMenu = (key) => {
+    setOpenMenus((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  useEffect(() => {
+    const handleScroll = () => setShowNavbar(window.scrollY <= 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && menuOpen) setMenuOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [menuOpen]);
+
   const renderDropdown = (items) => (
     <ul>
       {items.map((item, i) => {
-        if (typeof item === "string") return <li key={i}>{item}</li>;
+        if (typeof item === "string") {
+          return (
+            <li key={i}>
+              {routesMap[item] ? (
+                <Link to={routesMap[item]} onClick={(e) => e.stopPropagation()} className="nav-link">
+                  {item}
+                </Link>
+              ) : (
+                <span className="nav-link">{item}</span>
+              )}
+
+              {dropdowns[item] && (
+                <button
+                  className="dropdown-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleSubMenu(item);
+                  }}
+                >
+                  {openMenus[item] ? <FiChevronUp /> : <FiChevronDown />}
+                </button>
+              )}
+
+              {openMenus[item] && renderDropdown(dropdowns[item])}
+            </li>
+          );
+        }
+
+        // Object with subItems
         return (
           <li key={i} className="has-submenu">
-            {item.title} <FiChevronDown className="dropdown-icon" />
-            {item.subItems && renderDropdown(item.subItems)}
+            {routesMap[item.title] ? (
+              <Link to={routesMap[item.title]} onClick={(e) => e.stopPropagation()} className="nav-link">
+                {item.title}
+              </Link>
+            ) : (
+              <span className="nav-link">{item.title}</span>
+            )}
+
+            <button
+              className="dropdown-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleSubMenu(item.title);
+              }}
+            >
+              {openMenus[item.title] ? <FiChevronUp /> : <FiChevronDown />}
+            </button>
+
+            {item.subItems && openMenus[item.title] && renderDropdown(item.subItems)}
           </li>
         );
       })}
@@ -192,7 +230,9 @@ function Navbar() {
     <ul className="overlay-submenu">
       {items.map((item, index) => {
         const key = parentKey ? `${parentKey}-${index}` : `${index}`;
-        if (typeof item === "string") return <li key={key}>{item}</li>;
+        if (typeof item === "string") {
+          return <li key={key}>{routesMap[item] ? <Link to={routesMap[item]}>{item}</Link> : item}</li>;
+        }
         return (
           <li key={key}>
             <div
@@ -212,7 +252,7 @@ function Navbar() {
   );
 
   return (
-    <div id="nav_main_blue">
+    <div id="nav_main_blue ">
       {/* Top bar */}
       <div className="top-bar-blue">
         <div className="top-left">Welcome to Market.trad</div>
@@ -237,10 +277,11 @@ function Navbar() {
         </div>
       </div>
 
+      {/* Navbar */}
       {showNavbar && (
         <nav className="navbar-blue">
           <div className="navbar-left">
-            <img src="Frame 1.png" alt="Logo" className="navbar-logo" />
+            <img src="/public/Frame 1.png" alt="Logo" className="navbar-logo" />
           </div>
           <div className="navbar-center">
             <ul className="nav-links">
@@ -253,16 +294,23 @@ function Navbar() {
             </ul>
           </div>
           <div className="navbar-right">
-            <a href="#" className="refer-link">Refer a friends</a>
+            <a href="#" className="refer-link">
+              Refer a friends
+            </a>
             <button className="login-btn">Log In</button>
             <button className="join-btn">Join Now</button>
           </div>
-          <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>☰</div>
+          <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </div>
         </nav>
       )}
 
+      {/* Hamburger overlay */}
       <div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
-        <div className="close-btn" onClick={() => setMenuOpen(false)}>✖</div>
+        <div className="close-btn" onClick={() => setMenuOpen(false)}>
+          ✖
+        </div>
         <ul className="overlay-links">
           {Object.keys(dropdowns).map((menu) => (
             <li key={menu}>
@@ -278,9 +326,17 @@ function Navbar() {
               {openMenus[menu] && renderOverlayMenu(dropdowns[menu], menu)}
             </li>
           ))}
-          <li><a href="#" className="refer-link">Refer a friends</a></li>
-          <li><button className="login-btn">Log In</button></li>
-          <li><button className="join-btn">Join Now</button></li>
+          <li>
+            <a href="#" className="refer-link">
+              Refer a friends
+            </a>
+          </li>
+          <li>
+            <button className="login-btn">Log In</button>
+          </li>
+          <li>
+            <button className="join-btn">Join Now</button>
+          </li>
         </ul>
         <div className="overlay-bottom-row">
           <span>Personal</span>
@@ -293,4 +349,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarBlue;

@@ -155,36 +155,47 @@ function ForexTutorials() {
 
   return (
     <div className='bg-home'>
-      <div className="container-fluid bg-dark text-white " >
-        <div className="container bg-dark">
-          <h2 className="fw-bold bg-dark text-white text-center display-5 py-4"> Forex Tutorial</h2>
+      <style>
+                {
+                    `.bg-forex
+                     {
+                         background: linear-gradient(to bottom right, #000000, #231586)}
+                       
 
-          <div className="row border-top bg-dark border-primary border-3 pt-4">
-            <div className="col-lg-6 mb-4 bg-dark">
-              <div className="d-flex flex-column bg-dark text-white">
+                    `
+                }
+
+            </style>
+      <div className="container-fluid bg-forex text-white  " >
+        <div className="container bg-transparent">
+          <h2 className="fw-bold bg-transparent text-white text-center display-5 py-4"> Forex Tutorial</h2>
+
+          <div className="row border-top bg-transparent border-primary border-3 pt-4">
+            <div className="col-lg-6 mb-4 bg-transparent">
+              <div className="d-flex flex-column bg-transparent text-white">
                 <div className="position-relative flex-fill">
                   <img
                     src={lessons[0].img}
-                    className="img-fluid w-100 h-100"
+                    className="img-fluid w-100 h-100 opacity-75 "
                     alt="Lesson 1"
                     style={{ objectFit: 'cover' }}
                   />
-                  <div className="position-absolute top-50 start-50 translate-middle text-center bg-transparent px-3">
+                  <div className="position-absolute  top-50 start-50 translate-middle text-center bg-transparent px-3">
                     <h3 className="fw-bold">{lessons[0].title}</h3>
                   </div>
                 </div>
-                <div className="bg-dark text-white p-3" style={{ height: '150px' }}>
+                <div className="bg-transparent text-white p-3" style={{ height: '150px' }}>
                   <h5 className="fw-bold ">{lessons[0].title}</h5>
                   <p className="mb-0 fs-5">{lessons[0].desc}</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-6 bg-dark mt-4">
+            <div className="col-lg-6 bg-transparent mt-4">
               {lessons.slice(2).map((lesson, index) => (
                 <div
                   key={index}
-                  className="d-flex flex-column flex-md-row bg-dark text-white mb-4 border-bottom border-primary  border-2"
+                  className="d-flex flex-column flex-md-row bg-transparent text-white mb-4 border-bottom border-primary  border-2"
                   style={{ minHeight: '180px' }}
                 >
                   <div
@@ -198,11 +209,11 @@ function ForexTutorials() {
                     <img
                       src={lesson.img}
                       alt={lesson.title}
-                      className="w-100 h-100"
+                      className="w-100 h-100 opacity-75"
                       style={{ objectFit: 'cover' }}
                     />
                   </div>
-                  <div className="p-3 d-flex flex-column justify-content-center bg-dark text-white" style={{ flex: 1 }}>
+                  <div className="p-3 d-flex flex-column justify-content-center bg-transparent text-white" style={{ flex: 1 }}>
                     <h6 className="fw-bold h3  mb-2">{lesson.title}</h6>
                     <p className="mb-0 fs-5">{lesson.desc}</p>
                   </div>
@@ -223,7 +234,7 @@ function ForexTutorials() {
                 <img
                   src={lesson.image}
                   alt={lesson.title}
-                  className="w-100 h-100 "
+                  className="w-100 h-100"
                   style={{ objectFit: 'cover' }}
                 />
                 <div

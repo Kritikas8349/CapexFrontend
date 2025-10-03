@@ -5,8 +5,7 @@ const PlatformSupport = () => {
   return (
     <div className="platform-container">
       <div className="platform-image-container">
-        <img 
-          src="PlatformSupport.jpg" 
+        <img src="/public/PlatformSupport.jpg" 
           alt="Platform Support" 
           className="platform-image" 
         />
@@ -24,7 +23,7 @@ const PlatformSupport = () => {
       {/* Card 1 */}
       <div className="support-card">
         <div className="support-header">
-          <img src="crypto.png" alt="TradingView" />
+          <img src="/public/crypto.png" alt="TradingView" />
           <h3>TradingView</h3>
           <span className="badge">29</span>
         </div>
@@ -42,7 +41,7 @@ const PlatformSupport = () => {
       {/* Card 2 */}
       <div className="support-card">
         <div className="support-header">
-          <img src="pf2.webp" alt="Secure Area" />
+          <img src="/public/pf2.webp" alt="Secure Area" />
           <h3>Secure Client Area</h3>
           <span className="badge">8</span>
         </div>
@@ -60,7 +59,7 @@ const PlatformSupport = () => {
       {/* Card 3 */}
       <div className="support-card">
         <div className="support-header">
-          <img src="Pf1.webp" alt="MT4" />
+          <img src="/public/Pf1.webp" alt="MT4" />
           <h3>MetaTrader 4</h3>
           <span className="badge">17</span>
         </div>
@@ -78,7 +77,7 @@ const PlatformSupport = () => {
       {/* Card 4 */}
       <div className="support-card">
         <div className="support-header">
-          <img src="pf3.webp" alt="MT5" />
+          <img src="/public/pf3.webp" alt="MT5" />
           <h3>MetaTrader 5</h3>
           <span className="badge">28</span>
         </div>
@@ -96,7 +95,7 @@ const PlatformSupport = () => {
       {/* Card 5 */}
       <div className="support-card">
         <div className="support-header">
-          <img src="crypto.png" alt="Invest" />
+          <img src="/public/crypto.png" alt="Invest" />
           <h3>Market.trad Invest</h3>
           <span className="badge">7</span>
         </div>
@@ -112,7 +111,7 @@ const PlatformSupport = () => {
       {/* Card 6 */}
       <div className="support-card">
         <div className="support-header">
-          <img src="pf4.svg" alt="cTrader" />
+          <img src="/public/pf4.svg" alt="cTrader" />
           <h3>cTrader</h3>
           <span className="badge">22</span>
         </div>
@@ -130,7 +129,7 @@ const PlatformSupport = () => {
       {/* Card 7 (Bottom Row Left) */}
       <div className="support-card wide-card">
         <div className="support-header">
-          <img src="pf4.svg" alt="Getting Started" />
+          <img src="/public/pf4.svg" alt="Getting Started" />
           <h3>Getting Started</h3>
           <span className="badge">6</span>
         </div>
@@ -147,7 +146,7 @@ const PlatformSupport = () => {
       {/* Card 8 (Bottom Row Right) */}
       <div className="support-card wide-card">
         <div className="support-header">
-          <img src="pf4.svg" alt="Account Support" />
+          <img src="/public/pf4.svg" alt="Account Support" />
           <h3>Account Support</h3>
           <span className="badge">8</span>
         </div>

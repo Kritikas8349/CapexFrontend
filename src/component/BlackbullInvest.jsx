@@ -13,24 +13,24 @@ function BlackbullInvest() {
 
     const data = {
         us: [
-            ['$1,000 in', '/shopify.svg', '$10.00', '$90.00', '$69.50', '$19.50'],
-            ['$5,000 in', '/nike.svg', '$10.00', '$90.00', '$69.50', '$67.50'],
-            ['$10,000 in', '/roket.svg', '$40.00', '$100.00', '$69.50', '$127.50'],
+            ['$1,000 in', '/public/shopify.svg', '$10.00', '$90.00', '$69.50', '$19.50'],
+            ['$5,000 in', '/public/nike.svg', '$10.00', '$90.00', '$69.50', '$67.50'],
+            ['$10,000 in', '/public/roket.svg', '$40.00', '$100.00', '$69.50', '$127.50'],
         ],
         aussie: [
-            ['$1,000 in', '/nike-logo.png', '$12.00', '$85.00', '$70.00', '$20.00'],
-            ['$5,000 in', '/shopify-logo.png', '$12.00', '$85.00', '$70.00', '$65.00'],
-            ['$10,000 in', '/rocketlab-logo.png', '$45.00', '$95.00', '$70.00', '$120.00'],
+            ['$1,000 in', '/public/nike-logo.png', '$12.00', '$85.00', '$70.00', '$20.00'],
+            ['$5,000 in', '/public/shopify-logo.png', '$12.00', '$85.00', '$70.00', '$65.00'],
+            ['$10,000 in', '/public/rocketlab-logo.png', '$45.00', '$95.00', '$70.00', '$120.00'],
         ],
         kiwi: [
-            ['$1,000 in', '/shopify-logo.png', '$11.00', '$88.00', '$72.00', '$21.00'],
-            ['$5,000 in', '/nike-logo.png', '$11.00', '$88.00', '$72.00', '$66.00'],
-            ['$10,000 in', '/rocketlab-logo.png', '$42.00', '$98.00', '$72.00', '$125.00'],
+            ['$1,000 in', '/public/shopify-logo.png', '$11.00', '$88.00', '$72.00', '$21.00'],
+            ['$5,000 in', '/public/nike-logo.png', '$11.00', '$88.00', '$72.00', '$66.00'],
+            ['$10,000 in', '/public/rocketlab-logo.png', '$42.00', '$98.00', '$72.00', '$125.00'],
         ],
         fees: [
-            ['$1,000 in', '/shopify-logo.png', '$10.00', '$90.00', '$69.50', '$19.50'],
-            ['$5,000 in', '/nike-logo.png', '$10.00', '$90.00', '$69.50', '$67.50'],
-            ['$10,000 in', '/rocketlab-logo.png', '$40.00', '$100.00', '$69.50', '$127.50'],
+            ['$1,000 in', '/public/shopify-logo.png', '$10.00', '$90.00', '$69.50', '$19.50'],
+            ['$5,000 in', '/public/nike-logo.png', '$10.00', '$90.00', '$69.50', '$67.50'],
+            ['$10,000 in', '/public/rocketlab-logo.png', '$40.00', '$100.00', '$69.50', '$127.50'],
         ],
     };
     return (
@@ -58,9 +58,9 @@ function BlackbullInvest() {
                             </p>
 
                             {/* Buttons */}
-                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
+                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-md-start justify-content-lg-start mt-4">
                                 <button className='btn btn-bg-start text-white px-4 py-2 '>Register Now</button>
-                                <button className="btn btn-success px-4 py-2 ">
+                                <button className="btn btn-bg-start text-white px-4 py-2 ">
                                     Join Now
                                 </button>
                             </div>
@@ -193,9 +193,9 @@ function BlackbullInvest() {
                                 <li> Set price alerts and manage your portfolio with ease</li>
                             </ul>
 
-                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
+                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-md-start justify-content-lg-start mt-4">
                                 <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">Register Now</button>
-                                <button className="btn btn-success px-4 py-2 fw-bold">Join Now</button>
+                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">Join Now</button>
                             </div>
                         </div>
 

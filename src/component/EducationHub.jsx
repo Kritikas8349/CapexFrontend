@@ -1,5 +1,6 @@
 import React from 'react';
 import "./EducationHub.css";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from 'react-router-dom';
@@ -136,7 +137,7 @@ function EducationHub() {
   ];
   return (
     <div className='bg-home '>
-      <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/public/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '90vh' }}>
+      <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '90vh' }}>
         <div className="container ">
           <div className="row bg-transparent">
             <div className="col-12 col-lg-6 bg-transparent">
@@ -145,7 +146,7 @@ function EducationHub() {
                 <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                   Learn to trade forex, crypto, commodities, and shares, with our trading tutorials. Explore trading videos, podcasts, webinars, and market analysis.
                 </h6>
-                <button className="btn btn-bg-start text-white btn-lg fw-bold"><Link to='/Research'>Demo Trade</Link></button> {/* btn-lg for a larger button */}
+                <button className="btn btn-bg-start text-white btn-lg fw-bold">Demo Trade </button> {/* btn-lg for a larger button */}
                 
               </div>
             </div>
@@ -154,8 +155,8 @@ function EducationHub() {
       </div>
 
       {/* ----------For Learn Trad--------------------- */}
-      <div className='bg-home  align-content-center border' >
-        <div className="container">
+      <div className='bg-home  align-content-center border border-3 py-5 py-md-5 py-lg-5'  >
+        <div className="container py-md-5 py-lg-5">
           <h1 className='text-heading fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
           <div className='row justify-content-center'>
             {cardsData.map((card, index) => (
@@ -276,7 +277,7 @@ function EducationHub() {
         <div className="row g-4">
           {posts.map((post) => (
             <div className="col-md-4" key={post.id}>
-              <div className="card border-0">
+              <div className="card border-0 custom-card">
                 {/* Post Image */}
                 <img
                   src={post.image}
@@ -286,7 +287,7 @@ function EducationHub() {
                 />
 
                 {/* Post Content */}
-                <div className="card-body px-1">
+                <div className="card-body px-3">
                   <h5 className="fw-bold">{post.title}</h5>
                   <div className="d-flex justify-content-between align-items-center mt-2">
                     <small className=" text-heading">{post.date}</small>
@@ -356,8 +357,8 @@ function EducationHub() {
 
 
       {/* ------For Spotify story/podcast------- */}
-      <section className="container align-content-center  mt-0 py-3" >
-        <div className="row g-6 align-items-center">
+      <section className="container align-content-center  mt-0 py-3 py-md-5 py-lg-5" >
+        <div className="row g-6 align-items-center py-md-5 py-lg-5">
           {/* Image Column */}
           <div className="col-lg-6 mb-4 mb-lg-0" >
             <img

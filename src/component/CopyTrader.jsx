@@ -7,7 +7,9 @@ function CopyTrader() {
                 {
                     `.copy-trader {
                          background: linear-gradient(to left, #4028E9, #000000);}
-
+                         .bg-ctrade{
+                          background: linear-gradient(to bottom right, #000000, #231586);
+                         }
                          .why-join {
                          background: linear-gradient(to right, #4028E9 60%, white 40%);
                          color:white}  `
@@ -15,7 +17,7 @@ function CopyTrader() {
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 ">
+            <div className="container-fluid bg-black text-white py-5 bg-ctrade">
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -33,7 +35,7 @@ function CopyTrader() {
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
                                 <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <button className="btn btn-success px-4 py-2 fw-bold">
+                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">
                                     Join Now
                                 </button>
                             </div>

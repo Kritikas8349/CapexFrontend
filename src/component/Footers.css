@@ -1,0 +1,370 @@
+/* Footer Base */
+.footer {
+  background-color: #ebefee;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+/* Payment Section */
+.paymentgrid1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto; /* center container */
+  border-radius: 16px;
+}
+
+.payment-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.payment-title span {
+  color: #493ffd;
+}
+
+/* Payment Logos Grid */
+.payment-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  justify-items: center;
+  width: 100%;
+}
+
+.payment-logos img {
+  max-width: 120px;
+  max-height: 50px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.payment-logos img.small-logo {
+  max-height: 40px;
+}
+
+.payment-logos img:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.herocontainer1 {
+  position: relative;
+  width: 100%;
+  max-width: 1480px;
+  height: 650px;
+  background: url("/public/Rectangle4389.png") no-repeat center center/cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  margin: 20px auto 0 auto; /* centered */
+  border-radius: 16px;
+}
+
+.herooverlay1 {
+  text-align: center;
+  max-width: 800px;
+  width: 90%;
+  padding: 10px;
+}
+
+.herooverlay1 h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.herooverlay1 h1 span {
+  color: #3b82f6;
+}
+
+.herooverlay1 p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Search Box */
+.searchbox1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 8px 12px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  height: 48px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  gap: 10px;
+  border-radius: 30px;
+}
+
+.searchbox1 input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
+  height: 100%;
+  background: transparent;
+}
+
+.searchbox1 .button1 {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.searchbox1 .button1:hover {
+  background: #2563eb;
+}
+
+/* Mobile Button Below Searchbox */
+.mobile-btn {
+  display: none; /* hidden by default */
+}
+
+/* Footer Container */
+.footercontainer1 {
+  background: linear-gradient(to bottom right, #000000, #231586);
+  color: #fff;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1480px;
+  margin: 20px auto 0 auto;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* Footer Top */
+.footertop1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footerlogo1 img {
+  width: 160px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Footer Content */
+.footercontent1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center on small screens */
+  gap: 20px;
+  border-bottom: 2px solid grey;
+  padding-top: 50px;
+}
+
+.footersection1 {
+  flex: 1 1 180px;
+  margin: 10px;
+  min-width: 140px;
+}
+
+.footersection1 h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footersection1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footersection1 ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Footer Bottom */
+.footerbottom1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footercontact1 p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Footer Social */
+.footersocial1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footersocial1 a {
+  margin: 0 8px;
+}
+
+.footersocial1 img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .footercontent1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footersection1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footersocial1 img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footerlogo1 img {
+    width: 140px;
+  }
+}
+
+/* Small Tablets / Large Phones */
+@media (max-width: 768px) {
+  .payment-logos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .paymentgrid1 img {
+    max-width: 100px;
+    max-height: 40px;
+  }
+
+  .herocontainer1 {
+    height: 500px;
+    margin: 20px auto;
+  }
+
+  .herooverlay1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .herooverlay1 p {
+    font-size: 1rem;
+  }
+
+  .searchbox1 {
+    flex-direction: column;
+    height: auto;
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .searchbox1 input {
+    width: 100%;
+  }
+
+  /* Hide button inside searchbox on small screens */
+  .searchbox1 .desktop-btn {
+    display: none;
+  }
+
+  /* Show mobile button */
+  .mobile-btn {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto 0 auto;
+    padding: 12px 0;
+    background: #3b82f6;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+  }
+
+  .mobile-btn:hover {
+    background: #2563eb;
+  }
+
+  .footercontainer1 {
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .payment-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .paymentgrid1 img {
+    max-width: 90px;
+    max-height: 35px;
+  }
+
+  .herooverlay1 h1 {
+    font-size: 1.2rem;
+  }
+
+  .herooverlay1 p {
+    font-size: 0.9rem;
+  }
+
+  .searchbox1 {
+    height: auto;
+    flex-direction: column;
+    padding: 6px 10px;
+    gap: 8px;
+  }
+
+  .searchbox1 input {
+    font-size: 0.9rem;
+  }
+
+  .footersection1 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footersocial1 img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footerlogo1 img {
+    width: 120px;
+  }
+
+  .footerbottom1 {
+    text-align: center;
+  }
+}

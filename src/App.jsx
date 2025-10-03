@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
@@ -7,6 +6,9 @@ import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
+
+import NavbarBlue from "./component/NavbarBlue";
+import Footers from "./component/Footers";
 
 
 import EducationHub from "./component/EducationHub";
@@ -158,11 +160,11 @@ import MarketingMaterials from "./component/Partners/MarketingMaterials"
 // import Support1 from "./component/Partners/Support1"; 
 // import Support2 from "./component/Partners/Support2"; 
 // import Support3 from "./component/Partners/Support3";
-// import Footer from './component/Footer'; 
+ import Footer from './component/Footer'; 
 
 
 
-// import About2 from "./component/About2";
+ import About2 from "./component/About2";
 // import NewsSection from "./component/NewsSection";
 // import Compliance from "./component/Compliance";
 // import SecurityFunds from "./component/SecurityFunds";
@@ -194,40 +196,42 @@ import MarketingMaterials from "./component/Partners/MarketingMaterials"
 
 function App() {
   return (
-    <div className='app-container'>
+    <div className='app-container bg-home'>
 
       <div className='rohan'>
-        
+        <NavbarBlue></NavbarBlue>
         <Routes>
-           <Route path="/educationhub" element={<EducationHub />}></Route>
-           <Route path="/Webinars" element={<Webinars></Webinars>}></Route>
-           <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>}></Route>
-           <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>}></Route>
-           <Route path="/SharesTutorials" element={<SharesTutorials></SharesTutorials>}></Route>
-           <Route path="/EconomicCalendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
-           <Route path="/CreateAccount" element={<CreateAccount></CreateAccount>}></Route>
-           <Route path="/Research" element={<Research></Research>}></Route>
-           <Route path="/TradingView" element={<TradingView></TradingView>}></Route>
-           <Route path="/CTrader" element={<CTrader></CTrader>}></Route>
-           <Route path="/MetaTrader4" element={<MetaTrader4></MetaTrader4>}></Route>
-           <Route path="/MetaTrader5" element={<MetaTrader5></MetaTrader5>}></Route>
-           <Route path="/CopyTrader" element={<CopyTrader></CopyTrader>}></Route>
-           <Route path="/BlackbullInvest" element={<BlackbullInvest></BlackbullInvest>}></Route>
+          <Route path="/" element={<About2/>}    />
+           <Route path="/education" element={<EducationHub />}></Route>
+           <Route path="/education/webinars" element={<Webinars></Webinars>}></Route>
+           <Route path="/education/forex/beginner" element={<ForexTutorials></ForexTutorials>}></Route>
+           <Route path="/education/commodities/beginner" element={<CommoditiesTutorials></CommoditiesTutorials>}></Route>
+           <Route path="/education/shares/beginner" element={<SharesTutorials></SharesTutorials>}></Route>
+           <Route path="/support/economic-calendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
+           <Route path="/education/demo-trade" element={<CreateAccount></CreateAccount>}></Route>
+           <Route path="/education/research/hub" element={<Research></Research>}></Route>
+           <Route path="platforms/tradingview" element={<TradingView></TradingView>}></Route>
+           <Route path="/platforms/ctrade" element={<CTrader></CTrader>}></Route>
+           <Route path="/platforms/mt4" element={<MetaTrader4></MetaTrader4>}></Route>
+           <Route path="/platforms/mt5" element={<MetaTrader5></MetaTrader5>}></Route>
+           <Route path="/platforms/copytrade" element={<CopyTrader></CopyTrader>}></Route>
+           <Route path="/platforms/invest" element={<BlackbullInvest></BlackbullInvest>}></Route>
            <Route path="/InvestmentResearch" element={<InvestmentResearch></InvestmentResearch>}></Route> 
-           <Route path="/SecureClientArea" element={<SecureClientArea></SecureClientArea>}></Route> 
-           <Route path="/TradingViewFAQs" element={<TradingViewFAQs></TradingViewFAQs>}></Route> 
-           <Route path="/CTraderFAQs" element={<CTraderFAQs></CTraderFAQs>}></Route>
-           <Route path="/MetaTrader4FAQs" element={<MetaTrader4FAQs></MetaTrader4FAQs>}></Route> 
-           <Route path="/MetaTrader5FAQs" element={<MetaTrader5FAQs></MetaTrader5FAQs>}></Route> 
-           <Route path="/BlackBullInvestFAQs" element={<BlackBullInvestFAQs></BlackBullInvestFAQs>}></Route> 
-           <Route path="/TradingHourChange" element={<TradingHourChange></TradingHourChange>}></Route>
-           <Route path="/TradingConditions" element={<TradingConditions></TradingConditions>}></Route> 
-           <Route path="/ContractExpiries" element={<ContractExpiries></ContractExpiries>}></Route> 
-           <Route path="/ContractSpecifications" element={<ContractSpecifications></ContractSpecifications>}></Route> 
+           <Route path="/support/platform/secure-client" element={<SecureClientArea></SecureClientArea>}></Route> 
+           <Route path="/support/platform/tradingview" element={<TradingViewFAQs></TradingViewFAQs>}></Route> 
+           <Route path="/support/platform/ctrade" element={<CTraderFAQs></CTraderFAQs>}></Route>
+           <Route path="/support/platform/mt4" element={<MetaTrader4FAQs></MetaTrader4FAQs>}></Route> 
+           <Route path="/support/platform/mt5" element={<MetaTrader5FAQs></MetaTrader5FAQs>}></Route> 
+           <Route path="/support/platform/invest/open-share-account" element={<BlackBullInvestFAQs></BlackBullInvestFAQs>}></Route> 
+           <Route path="/support/market/trading-hours" element={<TradingHourChange></TradingHourChange>}></Route>
+           <Route path="/support/market/trading-conditions" element={<TradingConditions></TradingConditions>}></Route> 
+           <Route path="/support/market/contract-expiries" element={<ContractExpiries></ContractExpiries>}></Route> 
+           <Route path="/support/market/contract-specs" element={<ContractSpecifications></ContractSpecifications>}></Route> 
            <Route path="/IBOverview" element={<IBOverview></IBOverview>}></Route> 
            <Route path="/RegionalRepresentatives" element={<RegionalRepresentatives></RegionalRepresentatives>}></Route> 
            <Route path="/MarketingMaterials" element={<MarketingMaterials></MarketingMaterials>}></Route> 
          </Routes>
+         <Footers></Footers>
         
       </div>
 
