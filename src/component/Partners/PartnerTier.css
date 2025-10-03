@@ -1,0 +1,140 @@
+.partners-section {
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+    /* border: 2px solid green; */
+}
+
+.partners-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  /* border: 2px solid green; */
+}
+
+/* Left Image */
+.partners-image {
+  flex: 1;
+  /* min-width: 250px; */
+gap: 20px;
+    /* border: 2px solid green; */
+}
+
+.partners-image img {
+  width: 80%;
+  max-width: 450px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    /* border: 2px solid green; */
+}
+
+/* Right Content */
+.partners-content {
+  flex: 1.2;
+  min-width: 350px;
+    /* border: 2px solid green; */
+}
+
+.partners-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #003399;
+  margin-bottom: 15px;
+}
+
+.partners-content p {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+/* Info Badge */
+.partners-badge {
+  background: #f0f6ff;
+  border: 1px solid #d1e0ff;
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin: 25px 0;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #003399;
+  
+}
+
+/* Button */
+.partners-btn {
+  background: #4caf50;
+  color: #fff;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.partners-btn:hover {
+  /* background: #3f9444; */
+}
+
+/* Table Section */
+.partners-table {
+  overflow-x: auto;
+    /* border: 2px solid green; */
+}
+
+.partners-table table {
+  width: 120%;
+  border-collapse: collapse;
+  margin-top: 20px;
+    /* border: 2px solid green; */
+}
+
+.partners-table th {
+  background: #003399;
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.partners-table td {
+  border: 1px solid #ddd;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.partners-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .partners-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .partners-content {
+    text-align: center;
+  }
+
+  .partners-badge {
+    justify-content: center;
+  }
+
+  .partners-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

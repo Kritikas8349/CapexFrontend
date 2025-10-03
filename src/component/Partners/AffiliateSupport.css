@@ -1,0 +1,229 @@
+/* ========================== */
+/* Support Page Hero CSS (Left-aligned) */
+/* ========================== */
+
+.support-hero-section {
+  position: relative;
+  width: 254%;
+  height: 90vh;
+  margin-left: -78%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.support-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.support-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: #fff;
+  max-width: 600px;
+  padding: 0 50px;
+}
+
+.support-heading {
+  font-size: 3.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.support-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.support-search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.support-search-input {
+  width: 80%;
+  padding: 14px 50px 14px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.support-search-icon {
+  position: absolute;
+  right: 22%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ========================== */
+/* Breadcrumbs (Left-aligned) */
+/* ========================== */
+.support-breadcrumbs {
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px 0 20px 50px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.support-breadcrumbs span {
+  margin: 0 5px;
+}
+
+.support-breadcrumbs .active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* ========================== */
+/* FAQ Section (Left-aligned) */
+/* ========================== */
+.support-faqs {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px 0 40px 50px;
+  padding: 0;
+  text-align: left;
+}
+
+.support-faqs-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: left;
+}
+
+.support-faqs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.support-faqs-item {
+  margin-bottom: 15px;
+}
+
+.support-faqs-link {
+  font-size: 1.1rem;
+  color: #0d0d0e;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.support-faqs-link:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+
+.bred-div {
+  /* border: 2px solid green; */
+  margin-left: -70%;
+  margin-top: 20px;
+}
+
+/* ========================== */
+/* Responsive Adjustments */
+/* ========================== */
+
+/* Large tablets & smaller desktops */
+@media (max-width: 1024px) {
+  .support-hero-section {
+    width: 150%;
+    margin-left: -25%;
+    height: 80vh;
+  }
+  .support-heading {
+    font-size: 2.8rem;
+  }
+  .support-subheading {
+    font-size: 1.1rem;
+  }
+  .support-search-input {
+    width: 90%;
+  }
+  .support-search-icon {
+    right: 15%;
+  }
+}
+
+/* Tablets & small laptops */
+@media (max-width: 768px) {
+  .support-hero-section {
+    width: 100%;
+    margin-left: 0;
+    height: 70vh;
+    padding: 0 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .support-heading {
+    font-size: 2rem;
+  }
+  .support-subheading {
+    font-size: 1rem;
+  }
+  .support-search-input {
+    width: 95%;
+    padding: 12px 40px 12px 15px;
+  }
+  .support-search-icon {
+    font-size: 1rem;
+    right: 10%;
+  }
+  .support-breadcrumbs,
+  .support-faqs,
+  .bred-div {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  .support-faqs-heading {
+    font-size: 1.4rem;
+  }
+  .support-faqs-link {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .support-hero-section {
+    height: 60vh;
+  }
+  .support-heading {
+    font-size: 1.6rem;
+    margin-top: 30px;
+  }
+  .support-subheading {
+    font-size: 0.95rem;
+  }
+  .support-search-input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 35px 10px 12px;
+  }
+  .support-search-icon {
+    font-size: 0.9rem;
+    right: 8%;
+  }
+  .support-faqs-heading {
+    font-size: 1.2rem;
+  }
+  .support-faqs-link {
+    font-size: 0.95rem;
+  }
+}

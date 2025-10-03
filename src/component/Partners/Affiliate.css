@@ -1,0 +1,796 @@
+/* --- Global Reset & Container --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Font family जोड़ा गया */
+}
+
+/* Full Page Container */
+.partner-app-unique-container {
+  width: 100%;
+  /* Removed height: 100vh and overflow: hidden from here
+     to allow scrolling for the second section */
+  min-height: 100vh; /* कम से कम पूरी ऊंचाई ले */
+  overflow-x: hidden; /* अनावश्यक हॉरिजॉन्टल स्क्रॉलिंग हटाएगा */
+}
+
+/* --- SECTION 1: HERO IMAGE --- */
+
+.partner-hero-unique-section {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Hero section की ऊंचाई */
+  background-size: cover; /* इमेज को फुल बैकग्राउंड में फिट करेगा */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Content को बाईं ओर रखेगा */
+}
+
+.partner-overlay-unique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* डार्क ओवरले */
+  z-index: 1;
+}
+
+.partner-content-unique {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 600px;
+  /* बाईं तरफ़ से पैडिंग */
+  padding: 0 50px; 
+  text-align: left;
+}
+
+.partner-heading-unique {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.partner-subheading-unique {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.partner-buttons-unique-group {
+  display: flex;
+  gap: 20px;
+}
+
+.partner-div-button-unique {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.partner-affiliate-button-unique {
+  background: #493FFD; 
+  color: #fff;
+}
+
+.partner-affiliate-button-unique:hover {
+  background: #3b039d;
+}
+
+.partner-ib-button-unique {
+  background: green;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.partner-ib-button-unique:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* --- SECTION 2: VIDEO/TEXT BLOCK STYLES (YOUTUBE READY) --- */
+
+.partner-details-section-unique {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-details-content-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Left Side: Video Container for Responsive Aspect Ratio (50% width) */
+.partner-video-container-unique {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  /* 16:9 Aspect Ratio: (9 / 16) * 50% = 28.125% */
+  padding-bottom: 28.125%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* YouTube Iframe Styling */
+.partner-youtube-iframe-unique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Right Side: Text Content */
+.partner-text-content-unique {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 20px;
+}
+
+.partner-text-heading-unique {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.partner-text-body-unique {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Tablet and smaller (for the second section layout) */
+@media (max-width: 1024px) {
+    .partner-details-content-wrapper {
+        flex-direction: column; /* Stacks content vertically */
+        width: 90%;
+        gap: 40px;
+    }
+
+    .partner-video-container-unique,
+    .partner-text-content-unique {
+        max-width: 100%; /* Takes full width */
+        padding-left: 0;
+    }
+    
+    .partner-video-container-unique {
+        /* 16:9 Aspect Ratio on full width: 9/16 = 56.25% */
+        padding-bottom: 56.25%; 
+    }
+
+    .partner-text-heading-unique {
+        font-size: 2em;
+    }
+}
+
+/* Mobile (for the hero section content) */
+@media (max-width: 768px) {
+  .partner-content-unique {
+    padding: 20px; /* Reduces side padding */
+    margin: 0 auto; /* Centers content */
+    max-width: 90%;
+  }
+  
+  .partner-hero-unique-section {
+      justify-content: center; /* Mobile पर टेक्स्ट को बीच में ला सकते हैं */
+      text-align: center;
+  }
+  
+  .partner-heading-unique {
+    font-size: 2rem;
+  }
+  
+  .partner-subheading-unique {
+    font-size: 1rem;
+  }
+  
+  .partner-buttons-unique-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* -------------------------------------- */
+/* SECTION 3: CLIENT CHOOSE BLOCK STYLES */
+/* -------------------------------------- */
+
+.client-choose-section-unique {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.client-choose-content-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1400px; 
+}
+
+.client-choose-left-column {
+    flex: 1;
+    background-color: #493FFD; 
+    color: white;
+    padding: 80px 60px;
+    max-width: 50%; 
+    height: 92vh;              /* ✅ content ke hisaab se */
+    min-height: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* ✅ content ko center align */
+    overflow: visible;         /* ✅ content cut nahi hoga */
+}
+
+.client-choose-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.client-choose-paragraph {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.client-choose-paragraph-small {
+    font-size: 0.95em;
+    margin-bottom: 40px;
+}
+
+.client-choose-divider {
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 30px 0;
+    width: 80%;
+}
+
+/* Feature List Styles */
+.client-choose-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.client-choose-feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.client-choose-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff; 
+    background-color: #fff; 
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.client-choose-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #007bff;
+}
+
+.client-choose-feature-item h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.client-choose-feature-item p {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.client-choose-right-column {
+    flex: 1;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------- */
+/* MEDIA QUERY FOR SECTION 3 */
+/* -------------------------------------- */
+
+@media (max-width: 900px) {
+    .client-choose-content-wrapper {
+        flex-direction: column; 
+    }
+
+    .client-choose-left-column {
+        max-width: 100%; 
+        padding: 40px 20px;
+        height: auto;         /* ✅ auto adjust */
+        min-height: auto;
+    }
+
+    .client-choose-right-column {
+        max-width: 100%;
+        min-height: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .client-choose-heading {
+        font-size: 2rem;
+    }
+}
+
+
+/* LmaxSection.css */
+.lmax-section {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 57px 0 57px;
+  box-sizing: border-box;
+}
+
+.lmax-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.lmax-image-wrapper {
+  flex: 1 1 300px; /* flexible width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+}
+
+.lmax-image {
+  width: 100%;
+  max-width: 800px; /* prevents huge images on large screens */
+  height:30vh; /* maintains aspect ratio */
+  border-radius: 8px;
+  border: 2px solid white;
+  object-fit: contain;
+}
+
+.lmax-text-wrapper {
+  flex: 1 1 300px; /* flexible width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.lmax-text-wrapper h2 {
+  font-size: 2rem; /* scalable font */
+  margin-bottom: 16px;
+}
+
+.lmax-text-wrapper p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .lmax-container {
+    gap: 15px;
+  }
+  .lmax-image-wrapper,
+  .lmax-text-wrapper {
+    flex: 1 1 45%;
+  }
+  .lmax-text-wrapper h2 {
+    font-size: 1.8rem;
+  }
+  .lmax-text-wrapper p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lmax-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .lmax-image-wrapper,
+  .lmax-text-wrapper {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .lmax-text-wrapper h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .lmax-text-wrapper p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .lmax-section {
+    margin: 30px 20px 0 20px;
+  }
+}
+
+
+
+/* --- Why Promote Section --- */
+.why-promote-section {
+  background: #f8f9fb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-promote-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.why-promote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-promote-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.why-promote-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-promote-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e6f0ff;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.why-promote-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0061ff;
+  margin-bottom: 8px;
+}
+
+.why-promote-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Marketing Affiliates Section */
+.marketing-affiliates-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.marketing-affiliates-container {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Left Blue Card */
+.marketing-card {
+  flex: 1;
+  background: #0066ff;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.marketing-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.marketing-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.marketing-card hr {
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  margin: 20px 0;
+}
+
+.marketing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.marketing-features li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learn-more-btn {
+  background: #fff;
+  color: #0066ff;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #e6e6e6;
+}
+
+/* Right Dashboard Image */
+.marketing-dashboard {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.marketing-dashboard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================== */
+/* 📱 Responsive Design  */
+/* ===================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .marketing-affiliates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .marketing-card,
+  .marketing-dashboard {
+    max-width: 90%;
+  }
+
+  .marketing-card {
+    padding: 30px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .marketing-card h2 {
+    font-size: 22px;
+  }
+
+  .marketing-card p,
+  .marketing-features li {
+    font-size: 14px;
+  }
+
+  .learn-more-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+/* === BlackBull Marketing Tools Section === */
+.bb-marketing-section {
+  /* background: #fff; */
+  padding: 3rem 1rem;
+}
+
+.bb-marketing-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: #222;
+}
+
+.bb-marketing-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .bb-marketing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bb-marketing-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #fff;
+  text-align: left;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.bb-marketing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.bb-marketing-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0056ff;
+  margin-bottom: 1rem;
+}
+
+.bb-marketing-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.bb-marketing-card a {
+  color: #0056ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.bb-marketing-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* === Ratings + Current Partners Section === */
+.bb-rating-partners-section {
+  background: #fff;
+  padding: 3rem 1rem;
+}
+
+/* Ratings Row */
+.bb-ratings-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .bb-ratings-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.bb-rating-item h3 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.bb-rating-item p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.bb-stars {
+  font-size: 1.5rem;
+  color: #ffb400;
+}
+
+/* Current Partners */
+.bb-partners-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+}
+
+.bb-partners-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .bb-partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bb-partner-card {
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: #fff;
+  text-align: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.bb-partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.bb-partner-logo {
+  max-height: 40px;
+  margin-bottom: 1rem;
+}
+
+.bb-partner-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}

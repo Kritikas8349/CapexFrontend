@@ -36,9 +36,9 @@ import "./App.css";
 
 
 // import EducationHub from "./component/EducationHub"
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// import "bootstrap-icons/font/bootstrap-icons.css";
+ import 'bootstrap/dist/css/bootstrap.min.css';
+ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+ import "bootstrap-icons/font/bootstrap-icons.css";
 // // Main Components
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -81,50 +81,62 @@ import "./App.css";
 // import MetaTrader4 from "./component/MetaTrader4";
 // import MetaTrader5 from "./component/MetaTrader5";
 // import CopyTrader from "./component/CopyTrader";
-// import Invest from "./component/invest";
+//  import Invest from "./component/invest";
 
 
 import { Route, Routes } from "react-router-dom";
-import LeftDiv from "./component/leftDiv";
-import RightDiv from "./component/RightDiv";
-import QuickStart from "./component/QuickStart";
-import QuickStart2 from "./component/QuickStart2";
-import QuickStart3 from "./component/QuickStart3";
-import QuickStart4 from "./component/QuickStart4";
-import QuickStart5 from "./component/QuickStart5";
-import QuickStart6 from "./component/QuickStart6";
-import QuickStart7 from "./component/QuickStart7";
-import Market from "./component/Market";
-import Market2 from "./component/Market2";
-import Market3 from "./component/Market3";
-import Market4 from "./component/Market4";
-import Market5 from "./component/Market5";
-import Market6 from "./component/Market6";
-import Market7 from "./component/Market7";
-import Market_com_Energies from "./component/SubPages/Market_com_Energies";
-import Market_com_Metal from "./component/SubPages/Market_com_Metal";
-import Market_Future_Energy from "./component/SubPages/Market_Future_Energy";
-import Market_Future_Indices from "./component/SubPages/Market_Future_Indices";
-import Market_Future_Other from "./component/SubPages/Market_Future_Other";
-import Education_Forex_Beginner from "./component/SubPages/Education_Forex_Beginner";
-import Education_Forex_Intermediate from "./component/SubPages/Education_Forex_Intermediate";
-import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
-import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
-import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
-import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
-import CreateAccount from "./component/CreateAccount";
-import Navbar from "./component/Navbar1";
-import popup from "./component/SubPages/popup";
-import DailyNews from "./component/Research/DailyNews";
-import EquityResearch from "./component/Research/EquityResearch";
-import NavbarBlue from "./component/NavbarBlue";
-import Australia from "./component/Research/Australia";
-import NewZealand from "./component/Research/NewZealand";
-import USA from "./component/Research/USA";
-import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";
-import Support1 from "./component/Partners/Support1"; 
-import Support2 from "./component/Partners/Support2"; 
-import Support3 from "./component/Partners/Support3"; 
+// import LeftDiv from "./component/leftDiv";
+// import RightDiv from "./component/RightDiv";
+// import QuickStart from "./component/QuickStart";
+// import QuickStart2 from "./component/QuickStart2";
+// import QuickStart3 from "./component/QuickStart3";
+// import QuickStart4 from "./component/QuickStart4";
+// import QuickStart5 from "./component/QuickStart5";
+// import QuickStart6 from "./component/QuickStart6";
+// import QuickStart7 from "./component/QuickStart7";
+// import Affiliate from "./component/Partners/Affiliate";
+// import AffiliateOverview from "./component/Partners/AffiliateOverview";
+// import AffiliateOverview from "./component/Partners/AffiliateOverview";
+// import Subaffiliate from "./component/Partners/subaffiliate";
+import AffiliateSuport from "./component/Partners/AffiliateSupport";
+import ExampleReview from "./component/Partners/ExampleReview";
+import Cpapaymentstructure from "./component/Partners/Cpapaymentstructure";
+import Multistep_payment from "./component/Partners/Multistep_payment";
+import PartnerTier from "./component/Partners/PartnerTier";
+
+// import Market from "./component/Market";
+// import Market2 from "./component/Market2";
+// import Market3 from "./component/Market3";
+// import Market4 from "./component/Market4";
+// import Market5 from "./component/Market5";
+// import Market6 from "./component/Market6";
+// import Market7 from "./component/Market7";
+// import Market_com_Energies from "./component/SubPages/Market_com_Energies";
+// import Market_com_Metal from "./component/SubPages/Market_com_Metal";
+// import Market_Future_Energy from "./component/SubPages/Market_Future_Energy";
+// import Market_Future_Indices from "./component/SubPages/Market_Future_Indices";
+// import Market_Future_Other from "./component/SubPages/Market_Future_Other";
+// import Education_Forex_Beginner from "./component/SubPages/Education_Forex_Beginner";
+// import Education_Forex_Intermediate from "./component/SubPages/Education_Forex_Intermediate";
+// import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advance";
+// import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
+// import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
+// import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
+// import CreateAccount from "./component/CreateAccount";
+// import Navbar from "./component/Navbar1";
+// import popup from "./component/SubPages/popup";
+// import DailyNews from "./component/Research/DailyNews";
+// import EquityResearch from "./component/Research/EquityResearch";
+// import NavbarBlue from "./component/NavbarBlue";
+// import Australia from "./component/Research/Australia";
+// import NewZealand from "./component/Research/NewZealand";
+// import USA from "./component/Research/USA";
+// import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";
+// import Support1 from "./component/Partners/Support1"; 
+// import Support2 from "./component/Partners/Support2"; 
+// import Support3 from "./component/Partners/Support3"; 
+// import Affiliate from "./component/Partners/Affiliate";
+
 
 
 
@@ -169,7 +181,7 @@ import Support3 from "./component/Partners/Support3";
 // import CreateAccount from "./component/CreateAccount";
 // import Navbar1 from "./component/Navbar1";
 
-// import EducationHub from "./component/EducationHub";
+ import EducationHub from "./component/EducationHub";
 
 
 
@@ -376,10 +388,10 @@ const App = () => {
 
 
       <div className="container1">
-        <NavbarBlue />
+        {/* <NavbarBlue /> */}
         <Routes>
 
-          <Route path="/" element={<QuickStart />}></Route>
+          {/* <Route path="/" element={<QuickStart />}></Route>
           <Route path="/Assets" element={<QuickStart2 />}></Route>
           <Route path="/platforms" element={<QuickStart3 />}></Route>
           <Route path="/Account-type" element={<QuickStart4 />}></Route>
@@ -416,6 +428,8 @@ const App = () => {
           <Route path="/AffiliateSupport" element={<Support1/>}></Route>
           <Route path="/AffiliateSupport" element={<Support1/>}></Route>
           <Route path="/AffiliateSupport" element={<Support1/>}></Route>
+          <Route path="/EducationHub" element={<EducationHub></EducationHub>} /> */}
+
 
         </Routes>
         {/* <LeftDiv />
@@ -424,27 +438,29 @@ const App = () => {
                       */}
 
 
-        <QuickStart/>
+        {/* <QuickStart/>
         <QuickStart3 />
         <QuickStart4 />
-        <QuickStart5 />
-        <QuickStart6 />
-        <QuickStart7 />
-        <Market />
+        <QuickStart5 /> */}
+        {/* <QuickStart6 /> */}
+        {/* <QuickStart7 /> */}
+     
+  /
+        {/* <Market />
         <Market2 />
         <Market3 />
         <Market4 />
         <Market5 />
         <Market6 />
-        <Market7 />
+        <Market7 /> */}
         {/* <CreateAccount /> */}
-        <Market_com_Energies />
+        {/* <Market_com_Energies />
         <Market_Future_Energy />
         <Market_com_Metal />
         <Market_Future_Indices />
         <Market_Future_Other />
-        <Education_Forex_Beginner />
-        <Education_Forex_Intermediate />
+        <Education_Forex_Beginner /> */}
+        {/* <Education_Forex_Intermediate />
         <Education_Forex_Advance />
         <Education_Com_Beginner />
         <Education_Com_Intermediate />
@@ -457,7 +473,7 @@ const App = () => {
         <TechnicalAnalysis/>
         <Support1/> 
         <Support2/>
-        <Support3/> 
+        <Support3/>  */}
 
          {/* <popup /> */}
 
@@ -482,7 +498,6 @@ const App = () => {
           <Route path="/MetaTrader4" element={<MetaTrader4 />} />
           <Route path="/MetaTrader5" element={<MetaTrader5 />} />
           <Route path="/CopyTrader" element={<CopyTrader />} />
-          <Route path="/Invest" element={<Invest />} />
         </Routes>
       </div> */}
 
@@ -562,7 +577,6 @@ export default App;
 //         <div className="rohan">
 //           <Navbar />
 //           <Routes>
-//             <Route path="/EducationHub" element={<EducationHub></EducationHub>} />
 //             <Route path="/Webinars" element={<Webinars></Webinars>} />
 //             <Route path="/ForexTutorials" element={<ForexTutorials></ForexTutorials>} />
 //             <Route path="/CommoditiesTutorials" element={<CommoditiesTutorials></CommoditiesTutorials>} />
@@ -571,6 +585,8 @@ export default App;
 //             <Route path="/Research" element={<Research></Research>} />
 //             <Route path="/TradingView" element={<TradingView></TradingView>} />
 //             <Route path="/CTrader" element={<CTrader></CTrader>} />
+          <Route path="/Invest" element={<Invest />} />
+
 //           </Routes>
 //         </div>
  
