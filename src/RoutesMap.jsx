@@ -23,7 +23,7 @@ export const routesMap = {
     Indices: "/markets/indices",
     Other: "/markets/futures/other",
     Crypto: "/markets/crypto",
-    Indices: "/markets/futures/indices",
+    Indices1: "/markets/futures/indices",
   
     /* ===== Platform ===== */
     TradingView: "/platforms/tradingview",

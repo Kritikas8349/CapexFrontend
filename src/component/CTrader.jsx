@@ -2,11 +2,11 @@ import React from 'react'
 
 function CTrader() {
     return (
-        <div>
+        <div className='bg-home'>
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to top, #493FFD, #000000);}            
+                         background: linear-gradient(to bottom right, #000000, #231586);}            
                     `
                 }
 
@@ -26,7 +26,8 @@ function CTrader() {
                             </p>
 
                             {/* Email Input & Button */}
-                            <div className="row g-3 mt-4">
+                            <div className="row g-3 justify-content-center">
+                                {/* Email Input */}
                                 <div className="col-12 col-md-8">
                                     <input
                                         type="email"
@@ -34,8 +35,10 @@ function CTrader() {
                                         placeholder="Email address"
                                     />
                                 </div>
-                                <div className="col-12 col-md-4">
-                                    <button className="btn btn-success w-100 fw-bold py-2 py-md-3">
+
+                                {/* Button */}
+                                <div className="col-12 col-md-4 d-grid">
+                                    <button className="btn btn-bg-start text-white ">
                                         Join Now
                                     </button>
                                 </div>
@@ -86,13 +89,13 @@ function CTrader() {
 
             {/* ----------- WHy choose CTrader ----------- */}
 
-            <div className="container-fluid bg-home text-black py-5">
-                <div className="container">
+            <div className="container-fluid bg-home text-black py-5 py-lg-5 py-md-5">
+                <div className="container py-5 py-lg-5 py-md-5">
                     <div className="row align-items-center g-5">
 
                         {/* LEFT SECTION */}
                         <div className="col-12 col-lg-6 text-start">
-                            <h1 className="fw-bold">Why Market Trad</h1>
+                            <h1 className="fw-bold text-heading">Why Market Trad</h1>
                             <p className="text-secondary mt-3 fs-6 fs-md-5 pb-3 border-bottom">
                                 BlackBull Markets is a multi-regulated broker headquartered in
                                 Auckland, New Zealand, providing an institutional trading experience
@@ -103,7 +106,7 @@ function CTrader() {
 
                             {/* Feature List */}
                             <div className="d-flex align-items-start mb-4 justify-content-start">
-                                <i className="bi bi-bar-chart fs-1 text-primary me-3"></i>
+                                <i className="bi bi-bar-chart fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">1:500 Leverage</p>
                                     <p className="text-secondary mb-0">
@@ -113,7 +116,7 @@ function CTrader() {
                             </div>
 
                             <div className="d-flex align-items-start mb-4 justify-content-start">
-                                <i className="bi bi-currency-exchange fs-1 text-primary me-3"></i>
+                                <i className="bi bi-currency-exchange fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Low Spreads</p>
                                     <p className="text-secondary mb-0">
@@ -123,7 +126,7 @@ function CTrader() {
                             </div>
 
                             <div className="d-flex align-items-start mb-4 justify-content-start">
-                                <i className="bi bi-shield-lock fs-1 text-primary me-3"></i>
+                                <i className="bi bi-shield-lock fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Secure Trading</p>
                                     <p className="text-secondary mb-0">
@@ -148,8 +151,8 @@ function CTrader() {
             </div>
 
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center  " style={{ height: '80vh' }}>
-                <div className="container">
+            <div className="container-fluid bg-home align-content-center py-5 py-lg-5 py-md-5 " >
+                <div className="container py-5 py-lg-5 py-md-5">
                     <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
@@ -181,16 +184,16 @@ function CTrader() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-5 ">
-                <div className="container rounded-4 p-3 ">
-                    <h1 className="text-center mb-5 fw-bold">Tradable Assets</h1>
+            <div className="container-fluid bg-home py-5 py-5 py-lg-5 py-md-5">
+                <div className="container rounded-4 p-3 py-5 py-lg-5 py-md-5 ">
+                    <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center align-items-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100 ">
                                 <div className="mb-3">
-                                    <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -204,7 +207,7 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100  ">
                                 <div className="mb-3">
-                                    <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -217,7 +220,7 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -230,7 +233,7 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -243,7 +246,7 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -256,7 +259,7 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">View all</h3>
                                 <p className="text-secondary">
@@ -269,12 +272,12 @@ function CTrader() {
             </div>
 
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
-                <div className="container">
+            <div className="container-fluid bg-home align-content-center border py-5 py-lg-5 py-md-5 " >
+                <div className="container py-5 py-lg-5 py-md-5">
                     <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
-                            <h1 className="fw-bold text-primary-emphasis">
+                            <h1 className="fw-bold text-heading">
                                 Why Market Trad ?
                             </h1>
                             <p className="text-secondary mt-3 fs-6">
@@ -300,8 +303,8 @@ function CTrader() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-5 my-1 ">
-                <div className="container rounded-4 p-3 ">
+            <div className="container-fluid bg-home py-5 my-1 py-5 py-lg-5 py-md-5 ">
+                <div className="container rounded-4 p-3 py-5 py-lg-5 py-md-5 ">
 
 
                     <div className="row g-4 justify-content-center">
@@ -309,9 +312,9 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Forex</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Forex</h3>
                                 <p className="text-secondary">
                                     70+ major, minor, and exotic currency pairs.
                                 </p>
@@ -322,9 +325,9 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Commodities</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Commodities</h3>
                                 <p className="text-secondary">
                                     Energies like crude oil, and agricultural cash crops.
                                 </p>
@@ -335,9 +338,9 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Equities</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Equities</h3>
                                 <p className="text-secondary">
                                     We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.
                                 </p>
@@ -348,9 +351,9 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Indices</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Indices</h3>
                                 <p className="text-secondary">
                                     Major stock indices like US30, S&amp;P500, and NAS100.
                                 </p>
@@ -361,9 +364,9 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">Metals</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">Metals</h3>
                                 <p className="text-secondary">
                                     Precious and industry metals like gold, silver, and copper.
                                 </p>
@@ -374,9 +377,9 @@ function CTrader() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-primary-emphasis fw-bold">View all</h3>
+                                <h3 className="fs-4 text-heading-emphasis fw-bold">View all</h3>
                                 <p className="text-secondary">
                                     Explore Market.Trad's diverse range of tradable assets.
                                 </p>
@@ -387,44 +390,44 @@ function CTrader() {
             </div>
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-5">
-                <div className="container">
+            <div className="container-fluid bg-dark text-white py-5 py-5 py-lg-5 py-md-5">
+                <div className="container py-5 py-lg-5 py-md-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
                         <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
-                            <h1 className="fw-bold">How to copy trade on
+                            <h1 className="fw-bold text-heading">How to copy trade on
                                 cTrader?</h1>
-                            <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
+                            <p className="text-white mt-3 fs-5 pb-3 border-1 border-bottom">
                                 cTrader Copy is a fully integrated application that lets users copy other traders’ strategies or share their own strategies for others to copy. Access copy trade on cTrader here.
                             </p>
 
                             {/* Feature List */}
-                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
-                                <i className="bi bi-bar-chart fs-1 text-primary me-3"></i>
+                            <div className="d-flex align-items-start mb-4 justify-content-start ">
+                                <i className="bi bi-bar-chart fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Elite Providers</p>
-                                    <p className="text-secondary mb-0">
+                                    <p className="text-white mb-0">
                                         Review performance metrics before committing
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
-                                <i className="bi bi-currency-exchange fs-1 text-primary me-3"></i>
+                            <div className="d-flex align-items-start mb-4 justify-content-start ">
+                                <i className="bi bi-currency-exchange fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Low Latency</p>
-                                    <p className="text-secondary mb-0">
+                                    <p className="text-white mb-0">
                                         Enjoy competitive spreads starting from 0.0 pips.
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-start mb-4 justify-content-center justify-content-md-start">
-                                <i className="bi bi-shield-lock fs-1 text-primary me-3"></i>
+                            <div className="d-flex align-items-start mb-4 justify-content-start">
+                                <i className="bi bi-shield-lock fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Risk Management</p>
-                                    <p className="text-secondary mb-0">
+                                    <p className="text-white mb-0">
                                         Trade confidently with our regulated and secure platform.
                                     </p>
                                 </div>

@@ -64,7 +64,7 @@ function CreateAccount() {
                 <div className="signup-right">
                     <h1>Welcome back!<br />Please sign in to your <span>Market.Trad Account</span></h1>
                     <p>Ranked #1 forex broker in execution speed by CompareForexBrokers.com</p>
-                    <img src="./lapi.webp" alt="Laptop trading screen" className="laptop-img" />
+                    <img src="/public/lapi.webp" alt="Laptop trading screen" className="laptop-img" />
                 </div>
             </div>
 

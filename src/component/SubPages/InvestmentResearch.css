@@ -13,6 +13,11 @@
 .btn-bg-start{
     background-color: #493FFD;
 }
+.btn-bg-start:hover {
+  background-color: #423cb7 !important;
+  color: white !important;
+}
+
 .text-heading{
     color: #493FFD;
 }

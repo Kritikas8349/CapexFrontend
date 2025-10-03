@@ -6,7 +6,7 @@ function MetaTrader5() {
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to left, #493FFD, #000000);}            
+                         background: linear-gradient(to bottom right, #000000, #231586);}            
                     `
                 }
 
@@ -15,7 +15,7 @@ function MetaTrader5() {
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
-                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                        <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 MetaTrader 5 (MT5)
                             </h1>
@@ -26,7 +26,7 @@ function MetaTrader5() {
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
                                 <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <button className="btn btn-success px-4 py-2 fw-bold">
+                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">
                                     Join Now
                                 </button>
                             </div>
@@ -35,7 +35,7 @@ function MetaTrader5() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center">
                             <img
-                                src="/leptop1.webp"
+                                src="/public/mac1.png"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-3 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}
@@ -90,14 +90,14 @@ function MetaTrader5() {
                     </div>
                 </div>
             </div>
-            {/* ----------- WHy choose CTrader ----------- */}
+            {/* ----------- WHy choose Market Trade5 ----------- */}
 
-            <div className="container-fluid bg-home text-black py-5">
-                <div className="container">
+            <div className="container-fluid bg-home text-black py-3 py-md-5 py-lg-5">
+                <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
                             <h1 className="fw-bold text-heading">Why choose MT5 with<br />
                                 Market Trad?</h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
@@ -139,7 +139,7 @@ function MetaTrader5() {
                         {/* Right Section */}
                         <div className="col-12 col-lg-6  text-center ">
                             <img
-                                src="/leptop1.webp"
+                                src="/public/mac1.png"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-4 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}
@@ -150,11 +150,11 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
-                <div className="container">
+            <div className="container-fluid bg-home align-content-center border py-md-5 py-lg-5 " >
+                <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
                                 How to trade on <span className='text-heading '> MT5 &nbsp;</span><br/>
                                 with BlackBull Markets
@@ -183,8 +183,8 @@ function MetaTrader5() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-5 ">
-                <div className="container rounded-4 p-3 ">
+            <div className="container-fluid bg-home py-3 py-md-5 py-lg-5 ">
+                <div className="container rounded-4 p-3 py-md-5 py-lg-5 ">
                     <h1 className="text-center display-3 mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
@@ -192,7 +192,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -205,7 +205,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -218,7 +218,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -231,7 +231,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -244,7 +244,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -257,7 +257,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">View all</h3>
                                 <p className="text-secondary">
@@ -269,15 +269,15 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
-                <div className="container">
+            <div className="container-fluid bg-home align-content-center border py-md-5 py-lg-5 " >
+                <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-heading">
                                 Why Market Trad ?
                             </h1>
-                            <p className="text-secondary mt-3 fs-6">
+                            <p className="text-secondary mt-3 fs-5">
                                 BlackBull Markets is a multi-regulated broker headquartered in Auckland, New Zealand, providing an institutional trading experience globally.<br />Our mission is to provide traders with a superior trading experience through innovative technology like cTrader, and exceptional customer service.
                             </p>
                         </div>
@@ -300,8 +300,8 @@ function MetaTrader5() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-5 ">
-                <div className="container rounded-4 p-3 ">
+            <div className="container-fluid bg-home py-3 py-md-5 py-lg-5 ">
+                <div className="container rounded-4 p-3 py-md-5 py-lg-5">
 
 
                     <div className="row g-4 justify-content-center">
@@ -309,7 +309,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -322,7 +322,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -335,7 +335,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -348,7 +348,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -361,7 +361,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -374,7 +374,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">View all</h3>
                                 <p className="text-secondary">
@@ -387,15 +387,15 @@ function MetaTrader5() {
             </div>
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-5">
-                <div className="container">
+            <div className="container-fluid bg-dark text-white py-3 py-md-5 py-lg-5">
+                <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center  text-md-start me-lg-0">
+                        <div className="col-12 col-lg-6 text-start  text-md-start me-lg-0">
                             <h1 className="fw-bold">MT5 WebTrader
                             </h1>
-                            <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
+                            <p className="text-white mt-3 fs-5 pb-3 border-1 border-bottom">
                                 Access MetaTrader 5 directly from your browser-<br/>
 no downloads required. Access MT5 WebTrader here.
                             </p>
@@ -405,7 +405,7 @@ no downloads required. Access MT5 WebTrader here.
                                 <i className="bi bi-bar-chart fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Elite Providers</p>
-                                    <p className="text-secondary mb-0">
+                                    <p className="text-white mb-0">
                                         Review performance metrics before committing
                                     </p>
                                 </div>
@@ -415,7 +415,7 @@ no downloads required. Access MT5 WebTrader here.
                                 <i className="bi bi-currency-exchange fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Low Latency</p>
-                                    <p className="text-secondary mb-0">
+                                    <p className="text-white mb-0">
                                         Enjoy competitive spreads starting from 0.0 pips.
                                     </p>
                                 </div>
@@ -425,7 +425,7 @@ no downloads required. Access MT5 WebTrader here.
                                 <i className="bi bi-shield-lock fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5 mb-1">Risk Management</p>
-                                    <p className="text-secondary mb-0">
+                                    <p className="text-white mb-0">
                                         Trade confidently with our regulated and secure platform.
                                     </p>
                                 </div>
@@ -435,7 +435,7 @@ no downloads required. Access MT5 WebTrader here.
                         {/* Right Section */}
                         <div className="col-12 col-lg-6  text-center ">
                             <img
-                                src="/leptop1.webp"
+                                src="/public/mac1.png"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-4 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}

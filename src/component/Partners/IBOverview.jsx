@@ -49,6 +49,13 @@ function IBOverview() {
     };
     return (
         <div className='bg-home'>
+            <style>
+                {
+                    `.custom-placeholder::placeholder {
+                    color: white;
+                opacity: 1; /* Ensures it’s not faded */}`
+                }
+            </style>
             <div className="d-flex align-items-center text-white" style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url('/compliance.avif')`,
                 backgroundSize: 'cover',
@@ -59,15 +66,15 @@ function IBOverview() {
                 <div className="container bg-transparent">
                     <div className="row bg-transparent">
                         <div className="col-12 col-lg-6 bg-transparent">
-                            <div className="content-box p-4 p-md-5 bg-transparent"> {/* Add responsive padding */}
-                                <h1 className="fw-bold text-white display-4 text-start mb-3" style={{ fontFamily: 'Arial, sans-serif' }}>Introducing Brokers (IB)<br />
+                            <div className="content-box justify-content-lg-start justify-content-md-start p-4 p-md-5 bg-transparent"> {/* Add responsive padding */}
+                                <h1 className="fw-bold text-heading display-4 text-start mb-3" style={{ fontFamily: 'Arial, sans-serif' }}>Introducing Brokers (IB)<br />
                                     Overview</h1> {/* mb-3 for spacing */}
                                 <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                                     Access commissions with no limits
                                 </h6>
-                                <div className='d-flex gap-1'>
-                                    <input type="email" name="" className='form-control' placeholder='Email address' id="" />
-                                    <button className="btn btn-bg-start text-white btn-lg ">Partner Now</button> {/* btn-lg for a larger button */}
+                                <div className='d-flex gap-3'>
+                                    <input type="email" name="" className='form-control bg-transparent text-white custom-placeholder' placeholder='Email address' id="" />
+                                    <button className="btn btn-bg-start text-white  ">Partner Now</button> {/* btn-lg for a larger button */}
 
                                 </div>
                             </div>
@@ -78,18 +85,18 @@ function IBOverview() {
 
 
             {/* ---------------- */}
-            <div className="container-fluid py-5 bg-free-trial ">
-                <div className="row align-items-center justify-content-between px-3 px-md-5">
+            <section className="container-fluid py-5 bg-free-trial ">
+                <div className="row align-items-center justify-content-around px-3 px-md-5">
 
                     {/* Left Column */}
-                    <div className="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                    <div className="col-12 col-md-6 mb-4 mb-md-0 text-start text-md-start border-end">
                         <h2 className="fw-bold text-white mb-3" style={{ fontSize: "2.5rem", lineHeight: "1.3" }}>
                             Why Partner <br /> with BlackBull Markets?
                         </h2>
                     </div>
 
                     {/* Right Column */}
-                    <div className="col-12 col-md-6 text-center text-md-start">
+                    <div className="col-12 col-md-6 text-start text-md-start">
                         <h5
                             className="text-light fw-normal lh-lg"
                             style={{ fontSize: "1.1rem", maxWidth: "500px", margin: "0 auto" }}
@@ -102,7 +109,7 @@ function IBOverview() {
                     </div>
 
                 </div>
-            </div>
+            </section>
 
             {/* ------------------- */}
             <section className="container align-content-center bg-home  my-5" style={{ height: '85vh' }}>
@@ -226,7 +233,7 @@ function IBOverview() {
                     {/* Image Column */}
                     <div className="col-lg-6 text-center ">
                         <img
-                            src="/leptop1.webp"
+                            src="/public/mac1.png"
                             alt="IB Program Benefits"
                             className="img-fluid rounded "
                         />

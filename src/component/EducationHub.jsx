@@ -1,8 +1,10 @@
 import React from 'react';
 import "./EducationHub.css";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+import { Link } from 'react-router-dom';
+import Research from './Research';
 
 
 
@@ -20,42 +22,42 @@ function EducationHub() {
       id: 1,
       title: "TradingView",
       desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-      icon: "Frame84151.png",
+      icon: "/public/Frame84151.png",
       isNew: true,
     },
     {
       id: 2,
       title: "MetaTrader 4",
       desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-      icon: "Frame84152.png",
+      icon: "/public/Frame84152.png",
       isNew: false,
     },
     {
       id: 3,
       title: "MetaTrader 5",
       desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-      icon: "Frame84153.png",
+      icon: "/public/Frame84153.png",
       isNew: false,
     },
     {
       id: 4,
       title: "cTrader",
       desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-      icon: "Frame84155.png",
+      icon: "/public/Frame84155.png",
       isNew: true,
     },
     {
       id: 5,
       title: "BlackBull CopyTrader",
       desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-      icon: "Frame84156.png",
+      icon: "/public/Frame84156.png",
       isNew: true,
     },
     {
       id: 6,
       title: "BlackBull Invest",
       desc: "Access 26,000+ Shares, Options, ETFs, Bonds, and other underlying assets.",
-      icon: "Frame84151.png",
+      icon: "/public/Frame84151.png",
       isNew: false,
     },
   ];
@@ -90,21 +92,21 @@ function EducationHub() {
       id: 1,
       title: "FOMC doves now in the driver’s seat?",
       date: "SEPTEMBER 18, 2025",
-      image: "trade.avif",
+      image: "/public/trade.avif",
       link: "#",
     },
     {
       id: 2,
       title: "The push for a 50bps Fed cut and its effect on EUR/USD",
       date: "SEPTEMBER 17, 2025",
-      image: "trade1.avif",
+      image: "/public/trade1.avif",
       link: "#",
     },
     {
       id: 3,
       title: "Euro shrugs off France’s credit downgrade | FX Research",
       date: "SEPTEMBER 16, 2025",
-      image: "trade2.avif",
+      image: "/public/trade2.avif",
       link: "#",
     },
   ];
@@ -134,8 +136,8 @@ function EducationHub() {
     },
   ];
   return (
-    <div className='bg-home'>
-      <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: "url('/EducationHub.png')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '90vh' }}>
+    <div className='bg-home '>
+      <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '90vh' }}>
         <div className="container ">
           <div className="row bg-transparent">
             <div className="col-12 col-lg-6 bg-transparent">
@@ -144,7 +146,8 @@ function EducationHub() {
                 <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                   Learn to trade forex, crypto, commodities, and shares, with our trading tutorials. Explore trading videos, podcasts, webinars, and market analysis.
                 </h6>
-                <button className="btn btn-bg-start text-white btn-lg fw-bold">Demo Trade</button> {/* btn-lg for a larger button */}
+                <button className="btn btn-bg-start text-white btn-lg fw-bold">Demo Trade </button> {/* btn-lg for a larger button */}
+                
               </div>
             </div>
           </div>
@@ -152,8 +155,8 @@ function EducationHub() {
       </div>
 
       {/* ----------For Learn Trad--------------------- */}
-      <div className='bg-home  align-content-center border' style={{height:'80vh'}}>
-        <div className="container">
+      <div className='bg-home  align-content-center border border-3 py-5 py-md-5 py-lg-5'  >
+        <div className="container py-md-5 py-lg-5">
           <h1 className='text-heading fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
           <div className='row justify-content-center'>
             {cardsData.map((card, index) => (
@@ -175,7 +178,7 @@ function EducationHub() {
 
 
       {/* -------For Trading Platform------------------ */}
-      <section className="bg-home py-5">
+      <section className="bg-home py-5 mt-md-4">
         <div className="container">
           <h1 className="text-center fw-bold mb-5 display-4  text-heading">Trading Platforms</h1>
 
@@ -274,7 +277,7 @@ function EducationHub() {
         <div className="row g-4">
           {posts.map((post) => (
             <div className="col-md-4" key={post.id}>
-              <div className="card border-0">
+              <div className="card border-0 custom-card">
                 {/* Post Image */}
                 <img
                   src={post.image}
@@ -284,7 +287,7 @@ function EducationHub() {
                 />
 
                 {/* Post Content */}
-                <div className="card-body px-1">
+                <div className="card-body px-3">
                   <h5 className="fw-bold">{post.title}</h5>
                   <div className="d-flex justify-content-between align-items-center mt-2">
                     <small className=" text-heading">{post.date}</small>
@@ -354,8 +357,8 @@ function EducationHub() {
 
 
       {/* ------For Spotify story/podcast------- */}
-      <section className="container align-content-center  mt-0" style={{height:'90vh'}}>
-        <div className="row g-6 align-items-center">
+      <section className="container align-content-center  mt-0 py-3 py-md-5 py-lg-5" >
+        <div className="row g-6 align-items-center py-md-5 py-lg-5">
           {/* Image Column */}
           <div className="col-lg-6 mb-4 mb-lg-0" >
             <img

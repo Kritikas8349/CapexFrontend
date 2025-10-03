@@ -14,14 +14,14 @@ function RegionalRepresentatives() {
                 </div>
             </div>
 
-            <div className="container-fluid  bg-free-trial text-white py-5">
-                <div className="container py-5">
+            <div className="container-fluid  bg-free-trial text-white py-3 py-lg-5 py-md-5">
+                <div className="container py-3 py-lg-5 py-md-5">
                     <div className="row">
-                        <div className="col-lg-6 ps-lg-5">
+                        <div className="col-lg-6 ps-lg-5 border-end">
                             <h1> BlackBull Partners<br /> Regional <br />Representatives</h1>
                         </div>
-                        <div className="col-lg-6">
-                            <p className="fs-5">
+                        <div className="col-lg-6  mt-4">
+                            <p className="fs-5 text-light ">
                                 BlackBull Markets has always been globally focused and retail traders around the world seek the trading experience we provide.
 
                                 BlackBull Markets is always looking to expand into new markets, and our clients are helping us by joining in our business model and becoming Company affiliates.
@@ -66,7 +66,7 @@ function RegionalRepresentatives() {
 
             {/* ---------------- */}
             <div className="container-fluid py-5" style={{
-                backgroundImage: `linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.9)),
+                backgroundImage: `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
             url('/compliance.avif')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
