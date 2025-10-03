@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-=======
-import React from "react";
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -88,19 +84,9 @@ import MarketingMaterials from "./component/Partners/MarketingMaterials"
 
 
 
-<<<<<<< HEAD
 
-import NavbarBlue from "./component/NavbarBlue";
-import Footers from "./component/Footers";
-=======
-//import "./App.css";
-//import { Route, Routes } from "react-router-dom";
-//import React, { useState, useEffect } from "react";
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-// import "bootstrap-icons/font/bootstrap-icons.css";
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
+// import NavbarBlue from "./component/NavbarBlue";
+// import Footers from "./component/Footers";
 
 
 
@@ -131,11 +117,8 @@ import Footers from "./component/Footers";
 // import IBOverview from "./component/Partners/IBOverview"
 // import RegionalRepresentatives from "./component/Partners/RegionalRepresentatives"
 // import MarketingMaterials from "./component/Partners/MarketingMaterials"
-<<<<<<< HEAD
 
 
-=======
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
 
 
 
@@ -175,7 +158,6 @@ import Footers from "./component/Footers";
 // import Support1 from "./component/Partners/Support1"; 
 // import Support2 from "./component/Partners/Support2"; 
 // import Support3 from "./component/Partners/Support3";
-<<<<<<< HEAD
 
 
 import About2 from "./component/About2";
@@ -186,7 +168,7 @@ import GettingStarted from "./component/GettingStarted";
 import AccountSupport from "./component/AccountSupport";
 import PlatformSupport from "./component/PlatformSupport";
 import MarketSupport from "./component/MarketSupport";
-import EconomicCalendar from "./component/EconomicCalendar";
+// import EconomicCalendar from "./component/EconomicCalendar";
 import ContactSupport from "./component/ContactSupport";
 import VPStrading from "./component/SubPages/VPStrading";
 import FixAPI from "./component/SubPages/FixAPI";
@@ -346,7 +328,7 @@ import ChangeCurrency from "./component/SubPages/ChangeCurrency";
 // import CreateAccount from "./component/CreateAccount";
 // import Navbar1 from "./component/Navbar1";
 
- import EducationHub from "./component/EducationHub";
+//  import EducationHub from "./component/EducationHub";
 
 
 
@@ -361,7 +343,7 @@ import ChangeCurrency from "./component/SubPages/ChangeCurrency";
 
 
 
-import NavbarBlue from "./component/NavbarBlue";
+// import NavbarBlue from "./component/NavbarBlue";
 import QuickStart from "./component/QuickStart";
 import QuickStart2 from "./component/QuickStart2";
 import QuickStart3 from "./component/QuickStart3";
@@ -387,7 +369,7 @@ import Education_Forex_Advance from "./component/SubPages/Education_Forex_Advanc
 import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
 import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
 import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
-import CreateAccount from "./component/CreateAccount";
+// import CreateAccount from "./component/CreateAccount";
 import DailyNews from "./component/Research/DailyNews";
 import EquityResearch from "./component/Research/EquityResearch";
 import Australia from "./component/Research/Australia";
@@ -398,18 +380,11 @@ import Support1 from "./component/Partners/Support1";
 import Support2 from "./component/Partners/Support2"; 
 import Support3 from "./component/Partners/Support3";
 import Footer from './component/Footer'; 
-
+import PartnerNavbar from "./component/Partners/PrtnerNavbar";
 
 
 
 // import About2 from "./component/About2";
-=======
- import Footer from './component/Footer'; 
-
-
-
- import About2 from "./component/About2";
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
 // import NewsSection from "./component/NewsSection";
 // import Compliance from "./component/Compliance";
 // import SecurityFunds from "./component/SecurityFunds";
@@ -435,10 +410,6 @@ import Footer from './component/Footer';
 // import FundInvest from "./component/SubPages/FundInvest";
 // import InstallMarkettrad from "./component/SubPages/InstallMarkettrad";
 // import ChangeCurrency from "./component/SubPages/ChangeCurrency";
-<<<<<<< HEAD
-
-=======
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
 
 
 
@@ -447,7 +418,6 @@ function App() {
   return (
     <div className='app-container bg-home'>
 
-<<<<<<< HEAD
 {/* //       <div className='rohan'>
 //         <NavbarBlue />
 //         <Routes>
@@ -517,8 +487,6 @@ function App() {
           {/* <Route path="/dailynews" element={<DailyNews />}></Route> */}
           {/* <Route path="/EquityResearch" element={<EquityResearch />}></Route>
 
-=======
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
       <div className='rohan'>
         <NavbarBlue></NavbarBlue>
         <Routes>
@@ -588,10 +556,6 @@ function App() {
           <Route path="/Advance" element={<Education_Com_Advance />}></Route>
           <Route path="/dailynews" element={<DailyNews />}></Route>
           <Route path="/EquityResearch" element={<EquityResearch />}></Route>
-<<<<<<< HEAD
-
-=======
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
           <Route path="/Australia" element={<Australia />}></Route>
           <Route path="/NewZealand" element={<NewZealand/>}></Route>
           <Route path="/USA" element={<USA/>}></Route>
@@ -599,7 +563,6 @@ function App() {
           <Route path="/AffiliateSupport" element={<Support1/>}></Route>
           <Route path="/AffiliateSupport" element={<Support2/>}></Route>
           <Route path="/AffiliateSupport" element={<Support3/>}></Route> 
-<<<<<<< HEAD
 
           <CreateAccount /> */}
            
@@ -611,8 +574,8 @@ function App() {
       <div className="app-section">
 
      
-      <>
-  <NavbarBlue />
+     
+  {/* <NavbarBlue /> */}
 
   <Routes>
     {/* About */}
@@ -654,14 +617,14 @@ function App() {
     
     
 
-=======
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
-          <CreateAccount />
-           <Footer/>
+       
           
 
         </Routes>
-      </div> 
+        <PartnerNavbar/>
+           <CreateAccount />
+           <Footer/>
+      {/* </div>  */}
 
       {/* <div className="app-section">
         <Routes>
@@ -892,13 +855,8 @@ function App() {
 
 
       </div> */}
-<<<<<<< HEAD
-
-=======
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
 
 
-<<<<<<< HEAD
 
 
 // {/*
@@ -957,25 +915,15 @@ function App() {
         {/* <ComplianceP/> */}
 
 
-=======
-
-
-        
-
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
       </div>
 
 
 
 
-<<<<<<< HEAD
     </div>
 
 
 
-=======
-    
->>>>>>> f55bda6cdf1cecc260ff936e049459f54391d234
   )
 }
 
