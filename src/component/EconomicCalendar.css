@@ -31,13 +31,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh; /* ✅ Desktop ke liye */
+  height: 95vh; /* ✅ Desktop ke liye */
   background: linear-gradient(to bottom right, #000000, #493ffd);
   color: white;
   padding: 20px;
   width: 100%;
-  max-width: 1450px;
-  margin: 0 auto 20px auto;
+  max-width: 1480px;
+  margin: 10px auto 20px auto;
   border-radius: 12px;
 }
 
@@ -216,7 +216,7 @@ html, body {
 
 @media (max-width: 480px) {
   .calendar-container {
-    padding: 20px 10px;
+    padding: 90px 10px 0 10px;
     height: auto; /* ✅ Extra small screens auto height */
     text-align: center;
   }

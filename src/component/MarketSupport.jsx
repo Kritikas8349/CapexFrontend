@@ -3,9 +3,12 @@ import "./MarketSupport.css"; // new CSS file
 
 const MarketSupport = () => {
   return (
+
+<div className="marketcontainer">
+
     <div className="market-container">
       <div className="market-image-container">
-        <img src="/public/PlatformSupport.jpg" 
+        <img src="/public/Office1.jpg" 
           alt="Market Support" 
           className="market-image" 
         />
@@ -17,6 +20,7 @@ const MarketSupport = () => {
             Search our knowledge base for answers to common questions
           </p>
         </div>
+      </div>
       </div>
 
       <div className="market-grid">

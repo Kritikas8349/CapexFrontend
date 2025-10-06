@@ -1,24 +1,57 @@
 /* === Main Layout === */
+.fundinvestpage{
+  background-color: #ebefee;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
 .fundinvest-page {
-    display: flex;
-    font-family: Arial, sans-serif;
-    color: #000;
-    background: #fff;
-    min-height: 100vh;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(to top left, #000000, #493ffd);
+  width: 100%;
+  max-width: 1480px;
+  min-height: 90vh;
+  margin: 0 auto 20px auto;   /* ✅ equal left/right gap */
+  border-radius: 16px;
+  overflow: hidden;
+  padding-top: 0px;          /* ✅ prevent navbar overlap */
+  box-sizing: border-box;
   }
   
   /* === Sidebar === */
   .fundinvest-sidebar {
-    width: 440px;
-    border-right: 1px solid #eee;
-    padding: 120px 0 20px 0;
-    height: 100vh;
-    overflow-y: auto;
-    background: #fff;
     flex-shrink: 0;
-  }
-  
+    width: 440px;
+    min-width: 240px;
+    border-right: 1px solid transparent;
+    padding: 160px 0 20px 0;
+    height: auto;
+    overflow-y: auto;
+}
+
+.fundinvest-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.fundinvest-sidebar::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.fundinvest-sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 2px;
+}
+
+.fundinvest-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
   .fundinvest-sidebar-item {
     margin-bottom: 10px;
   }
@@ -35,7 +68,7 @@
   }
   
   .fundinvest-sidebar-header:hover {
-    background: #f5f5f5;
+   color: #000;
   }
   
   .fundinvest-sidebar-header.active {
@@ -68,7 +101,7 @@
   .fundinvest-dropdown {
     padding: 5px 20px;
     font-size: 14px;
-    color: #444;
+    color: #fff;
   }
   
   .fundinvest-dropdown p {
@@ -95,7 +128,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: #666;
+    color: #fff;
     gap: 6px;
     flex-wrap: wrap;
   }
@@ -372,6 +405,10 @@
   }
   
   @media (max-width: 480px) {
+    .fundinvest-page{
+     padding-top: 100px;
+    }
+
     h1 {
       font-size: 22px;
     }

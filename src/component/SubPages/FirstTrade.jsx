@@ -21,6 +21,7 @@ const FirstTrade = () => {
 
   return (
     <div>
+      <div className="firsttradepage">
       {/* Main First Trade Page */}
       <div className="firsttrade-page">
         {/* Sidebar */}
@@ -85,6 +86,7 @@ const FirstTrade = () => {
           </div>
         </div>
       </div>
+      
 
       {/* Steps Section */}
       <div className="firsttrade-steps-container">
@@ -160,6 +162,7 @@ const FirstTrade = () => {
           <img src="/public/acc6.webp" alt="Step 3" className="firsttrade-step-image" />
         </div>
       </div>
+    </div>
     </div>
   );
 };

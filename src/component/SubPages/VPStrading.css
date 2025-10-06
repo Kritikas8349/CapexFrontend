@@ -1,22 +1,29 @@
 .vps-trading-container {
-    max-width: 14500px;
-    width: 95%;
-    margin: 0 auto 60px auto;
-    padding: 40px 20px;
+    /* max-width: 14500px; */
+    width: 100%;
+    margin: -50px auto auto auto;
+    padding: 0px 20px 40px 20px;
     box-sizing: border-box;
+    background-color: #ebefee;
   }
 
-    .vps-trading-wrapper {
-        width: 100%;
-        padding: 60px 20px;
-        border-radius: 12px ;
-        background: linear-gradient(to bottom right, #000000, #493ffd);
-    }
+  .vps-trading-wrapper {
+    width: 100%;
+    max-width: 1680px;   /* ✅ thoda aur wide */
+    margin: 0 auto;      /* ✅ center aligned rahe */
+    height: auto;
+    padding: 180px 20px 60px 20px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #000000, #493ffd);
+    box-sizing: border-box;
+}
+
     
     .vps-trading-heading {
         font-size: clamp(3rem, 5vw, 4rem);
         font-weight: 700;
-        margin-bottom: 20px;
+
+        /* margin-bottom: 20px; */
         text-align: left;
         margin-left: 10px;
         color: #493ffd;
@@ -53,8 +60,8 @@
     /* Each Grey Box */
     .vps-trading-box {
         width: 100%;
-        max-width: 1400px;
-        background: #ebefee;
+        max-width: 1480px;
+        background: #fff;
         padding: 30px;
         border-radius: 10px;
         transition: transform 0.3s ease;
@@ -129,6 +136,9 @@
     
     /* Mobile (max-width: 767px) */
     @media (max-width: 767px) {
+      .vps-trading-container{
+        margin-top: 10px;
+      }
         .vps-trading-heading {
         font-size: 2rem;
         text-align: center;
@@ -156,7 +166,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 30px 15px;
-    background-color: #ebefee;
+    background-color: #000000;
     margin-top: 30px;
     border-radius: 12px;
   }

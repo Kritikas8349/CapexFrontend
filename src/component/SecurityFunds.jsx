@@ -3,6 +3,9 @@ import "./SecurityFunds.css";
 
 const SecurityFunds = () => {
   return (
+
+    <div className="securitycontainer">
+
     <div className="security-container">
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb">
@@ -38,6 +41,7 @@ const SecurityFunds = () => {
           </a>
         </li>
       </ul>
+    </div>
     </div>
   );
 };

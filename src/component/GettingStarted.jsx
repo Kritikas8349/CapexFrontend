@@ -3,12 +3,14 @@ import "./GettingStarted.css";
 
 const GettingStarted = () => {
   return (
+    <div className="gettingcontainer">
+
     <div className="getting-container">
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb">
         <a href="/">Home</a> <span>›</span>
-        <a href="/support">Support</a> <span>›</span>
-        <a href="/support">Platform Support</a> <span>›</span>
+        <a href="/support/platform-support">Support</a> <span>›</span>
+        <a href="/support/platform-support">Platform Support</a> <span>›</span>
         <span className="current">Getting Started</span>
       </nav>
 
@@ -48,6 +50,7 @@ const GettingStarted = () => {
           </a>
         </li>
       </ul>
+    </div>
     </div>
   );
 };

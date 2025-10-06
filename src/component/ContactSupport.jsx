@@ -4,9 +4,11 @@ import './ContactSupport.css'; // Make sure to create this CSS file
 const ContactSupport = () => {
   return (
     <div className="reachout">
+    <div className="reachoutcontainer">
+
       <div className="reachout-container">
         <img 
-          src="/public/PlatformSupport.jpg" 
+          src="/public/Office1.jpg" 
           alt="Market Support" 
           className="reachout-img" 
         />
@@ -18,6 +20,7 @@ const ContactSupport = () => {
             Our team are here to support 24/7 via Live Chat, Phone, Email, or WhatsApp.
           </p>
         </div>
+      </div>
       </div>
 
       {/* Contact Unique Section */}

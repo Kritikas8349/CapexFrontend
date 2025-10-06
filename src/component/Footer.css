@@ -1,8 +1,92 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   box-sizing: border-box;
 }
+
+
+.paymentgrid1 {
+  width: 97%;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Title */
+.payment-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.payment-title span {
+  color: #0057ff;
+}
+
+/* Logos container */
+.payment-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Logos */
+.payment-logos img {
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.payment-logos img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Smaller logos (like Apple Pay, Google Pay) */
+.payment-logos .small-logo {
+  height: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .payment-title {
+    font-size: 22px;
+  }
+  .payment-logos {
+    gap: 18px;
+  }
+  .payment-logos img {
+    height: 40px;
+  }
+  .payment-logos .small-logo {
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-title {
+    font-size: 20px;
+  }
+  .payment-logos {
+    gap: 15px;
+  }
+  .payment-logos img {
+    height: 35px;
+  }
+  .payment-logos .small-logo {
+    height: 28px;
+  }
+}
+
+
+
+
 
 .hero-section-F {
   background: url("./Rectangle4389.png") no-repeat center center/cover;

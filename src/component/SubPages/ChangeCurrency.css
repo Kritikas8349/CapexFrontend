@@ -1,23 +1,56 @@
 /* === Main Layout === */
+.changepage{
+  background-color: #ebefee;
+  padding-bottom: 20px;
+  padding-top: 10px;
+
+}
+
 .change-page {
-    display: flex;
-    font-family: Arial, sans-serif;
-    color: #000;
-    background: #fff;
-    min-height: 100vh;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(to top left, #000000, #493ffd);
+  width: 100%;
+  max-width: 1480px;
+  min-height: 90vh;
+  margin: 0 auto 20px auto;   /* ✅ equal left/right gap */
+  border-radius: 16px;
+  overflow: hidden;
+  padding-top: 0px;          /* ✅ prevent navbar overlap */
+  box-sizing: border-box;
   }
   
   /* === Sidebar === */
   .change-sidebar {
-    width: 440px;
-    border-right: 1px solid #eee;
-    padding: 120px 0 20px 0;
-    height: 100vh;
-    overflow-y: auto;
-    background: #fff;
     flex-shrink: 0;
-  }
+    width: 440px;
+    min-width: 240px;
+    border-right: 1px solid transparent;
+    padding: 160px 0 20px 0;
+    height: auto;
+    overflow-y: auto;
+}
+
+.change-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.change-sidebar::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.change-sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 2px;
+}
+
+.change-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
   
   .change-sidebar-item {
     margin-bottom: 10px;
@@ -35,7 +68,7 @@
   }
   
   .change-sidebar-header:hover {
-    background: #f5f5f5;
+    color: #000;
   }
   
   .change-sidebar-header.active {
@@ -68,7 +101,7 @@
   .change-dropdown {
     padding: 5px 20px;
     font-size: 14px;
-    color: #444;
+    color: #fff;
   }
   
   .change-dropdown p {
@@ -95,7 +128,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: #666;
+    color: #fff;
     gap: 6px;
     flex-wrap: wrap;
   }
@@ -132,7 +165,7 @@
     max-width: 700px;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #fff;
   }
   
   .change-paragraph-section ol {
@@ -314,6 +347,9 @@
   }
   
   @media (max-width: 480px) {
+    .change-page{
+      padding-top: 100px;
+    }
     h1 {
       font-size: 22px;
     }

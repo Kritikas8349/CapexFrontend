@@ -3,6 +3,8 @@ import "./AccountSupport.css";
 
 const AccountSupport = () => {
   return (
+
+    <div className="accountcontainer">
     <div className="account-container">
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb">
@@ -58,6 +60,7 @@ const AccountSupport = () => {
           </a>
         </li>
       </ul>
+    </div>
     </div>
   );
 };

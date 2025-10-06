@@ -1,20 +1,53 @@
+.firsttradepage{
+    background-color: #ebefee;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+
 .firsttrade-page {
     display: flex;
-    font-family: Arial, sans-serif;
-    color: #000;
-    background: #fff;
-    min-height: 100vh;
+    flex-direction: row;
     flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(to top left, #000000, #493ffd);
+    width: 100%;
+    max-width: 1480px;
+    min-height: 90vh;
+    margin: 0 auto 20px auto;   /* ✅ equal left/right gap */
+    border-radius: 16px;
+    overflow: hidden;
+    padding-top: 0px;          /* ✅ prevent navbar overlap */
+    box-sizing: border-box;
 }
 
 .firsttrade-sidebar {
-    width: 440px;
-    border-right: 1px solid #eee;
-    padding: 120px 0 20px 0;
-    height: 100vh;
-    overflow-y: auto;
-    background: #fff;
     flex-shrink: 0;
+    width: 440px;
+    min-width: 240px;
+    border-right: 1px solid transparent;
+    padding: 160px 0 20px 0;
+    height: auto;
+    overflow-y: auto;
+}
+
+.firsttrade-sidebar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.firsttrade-sidebar::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.firsttrade-sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 2px;
+}
+
+.firsttrade-sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
 
 .firsttrade-sidebar-item {
@@ -33,7 +66,7 @@
 }
 
 .firsttrade-sidebar-header:hover {
-    background: #f5f5f5;
+   color: #000;
 }
 
 .firsttrade-sidebar-header.active {
@@ -95,7 +128,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: #666;
+    color: #fff;
     gap: 6px;
     font-family: "Segoe UI", sans-serif;
     flex-wrap: wrap;
@@ -270,6 +303,9 @@ h1 {
 }
 
 @media (max-width: 480px) {
+    .firsttrade-page{
+        padding-top: 100px;
+    }
     h1 {
         font-size: 22px;
         margin-top: 8px;

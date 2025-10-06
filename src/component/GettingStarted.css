@@ -1,88 +1,168 @@
+.gettingcontainer {
+  background-color: #ebefee;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10px;
+}
+
 .getting-container {
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #000000, #493ffd);
-    border-radius: 12px;
-    color: #ffffff;
+  max-width: 1480px;
+  height: 95vh;
+  margin: 0 auto;
+  padding: 180px 0 0 40px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #000000, #493ffd);
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #cccccc;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: #66aaff;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+}
+
+.breadcrumb .current {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Page Heading */
+.page-heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+
+/* Links List */
+.getting-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.getting-links li {
+  margin-bottom: 16px;
+}
+
+.getting-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+.getting-links a:hover {
+  color: #66aaff;
+}
+
+.doc-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* ✅ Responsive Adjustments */
+
+/* Large Tablets / ~1008px Fix */
+@media (max-width: 1100px) and (min-width: 901px) {
+  .getting-container {
+    padding: 160px 25px 30px 25px; /* extra top padding */
   }
-  
-  /* Breadcrumb */
+  .page-heading {
+    font-size: 34px;
+  }
   .breadcrumb {
     font-size: 14px;
-    margin-bottom: 20px;
-    color: #cccccc;
   }
-  
-  .breadcrumb a {
-    color: #cccccc;
-    text-decoration: none;
-  }
-  
-  .breadcrumb a:hover {
-    text-decoration: underline;
-    color: #66aaff;
-  }
-  
-  .breadcrumb span {
-    margin: 0 6px;
-  }
-  
-  .breadcrumb .current {
-    color: #ffffff;
-    font-weight: 500;
-  }
-  
-  /* Page Heading */
-  .page-heading {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 25px;
-    color: #ffffff;
-  }
-  
-  /* Links List */
-  .getting-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .getting-links li {
-    margin-bottom: 16px;
-  }
-  
   .getting-links a {
-    text-decoration: none;
     font-size: 16px;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
   }
-  
-  .getting-links a:hover {
-    color: #66aaff;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .getting-container {
+    padding: 120px 20px 20px 20px; /* min 120px top to avoid overlap */
   }
-  
+  .page-heading {
+    font-size: 32px;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .getting-container {
+    padding: 120px 15px 20px 15px; /* min 120px top */
+  }
+  .page-heading {
+    font-size: 26px;
+    text-align: center;
+  }
+  .breadcrumb {
+    font-size: 13px;
+    text-align: center;
+  }
+  .getting-links a {
+    font-size: 15px;
+  }
+}
+
+/* Mobile Portrait / Small devices */
+@media (max-width: 480px) {
+  .getting-container {
+    padding: 120px 12px 20px 12px; /* min 120px top */
+  }
+  .page-heading {
+    font-size: 22px;
+    line-height: 1.3;
+    text-align: center;
+  }
+  .breadcrumb {
+    font-size: 12px;
+    text-align: center;
+  }
+  .getting-links li {
+    margin-bottom: 12px;
+  }
+  .getting-links a {
+    font-size: 14px;
+    flex-direction: row;
+  }
   .doc-icon {
-    margin-right: 10px;
+    font-size: 18px;
+  }
+}
+
+/* Very Small Screens (<=360px) */
+@media (max-width: 360px) {
+  .getting-container {
+    padding: 120px 10px 20px 10px; /* min 120px top */
+  }
+  .page-heading {
     font-size: 20px;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .getting-container {
-      padding: 15px;
-    }
-  
-    .page-heading {
-      font-size: 28px;
-    }
-  
-    .getting-links a {
-      font-size: 16px;
-    }
+  .getting-links a {
+    font-size: 13px;
   }
-  
+}

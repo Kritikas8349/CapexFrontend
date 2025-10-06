@@ -23,7 +23,7 @@ const InstallMarkettrad = () => {
   };
 
   return (
-    <div>
+    <div className="installpage">
       {/* Main Page */}
       <div className="install-page">
         {/* Sidebar */}

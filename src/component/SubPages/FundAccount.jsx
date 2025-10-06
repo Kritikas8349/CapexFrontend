@@ -20,7 +20,10 @@ const FundAccount = () => {
   };
 
   return (
-    <div>
+    <div className="fundacc">
+    <div className="fundacc1">
+
+    <div className="fundaccount">
       {/* Main Fund Account Page */}
       <div className="fund-page">
         {/* Sidebar */}
@@ -60,7 +63,7 @@ const FundAccount = () => {
             <span className="current">How to fund your Market.trad account?</span>
           </div>
 
-          <h1>How to fund your Market.trad account?</h1>
+          <h1 className="head3">How to fund your Market.trad account?</h1>
 
           <div className="fund-video-section">
             <div className="fund-video-thumbnail">
@@ -76,6 +79,8 @@ const FundAccount = () => {
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
 
       {/* Steps Section */}

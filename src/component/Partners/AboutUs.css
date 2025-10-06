@@ -1,31 +1,42 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: auto;
+  background-color: #ebefee;
+ margin-top: -30px;
 }
 
-/* ================= ABOUT US HERO SECTION ================= */
+
 .aboutus-hero-container {
-    position: relative;
-    width: 100%;
-    max-width: 1500px;
-    margin: 40px auto;
-    padding: 0 10px; /* Adds spacing left/right */
-    border-radius: 12px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1480px;
+  height: 97vh;
+  margin: 40px auto 40px auto;
+  padding: 160px 20px 0 20px; /* Adds spacing left/right */
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #000000, #493ffd);
 }
 
 .aboutus-hero-image {
-    width: 95%;
-    height: 70vh;
-    object-fit: cover;
-    margin: 0 auto;
-    border-radius: 20px;
-    display: block;
+  width: 100%;
+  max-width: 1480px;
+  height: 75vh;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 20px;
+  display: block;
+}
+
+.aboutus-hero-text{
+  padding-top: 80px;
 }
 
 .aboutus-breadcrumbs {
@@ -101,8 +112,15 @@ body {
 }
 
 @media (max-width: 480px) {
+  .aboutus-hero-container{
+    height: 55vh;
+  }
     .aboutus-hero-image {
-        height: 50vh;
+        height: 35vh;
+    }
+
+    .aboutus-hero-text{
+      padding: 100px 0 0 20px;
     }
 
     .aboutus-hero-heading {
@@ -116,7 +134,7 @@ body {
 
 
 .aboutus-info-container {
-    width: 1400px;
+    width: 1480px;
     height: 250px;
     display: flex;
     justify-content: space-between;
@@ -175,8 +193,8 @@ body {
     background-color: #000000;
     display: flex;
     flex-wrap: wrap;
-    width: 90%; 
-    max-width: 1400px;
+    width: 100%; 
+    max-width: 1480px;
     margin: 40px auto;
     align-items: flex-start;
     box-sizing: border-box;
@@ -280,8 +298,8 @@ body {
 
   
   .about-gallery-container {
-    width: 90%;
-    max-width: 1400px;
+    width: 100%;
+    max-width: 1480px;
     margin: 60px auto;
     padding: 0 10px;
     box-sizing: border-box;
@@ -349,13 +367,13 @@ body {
     background-color: #000;
     color: #fff;
     padding: 60px 20px;
-    max-width: 1400px;
+    max-width: 1480px;
     border-radius: 12px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     line-height: 1.7;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .history-container h2 {

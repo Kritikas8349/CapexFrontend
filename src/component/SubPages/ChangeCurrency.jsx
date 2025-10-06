@@ -23,7 +23,7 @@ const ChangeCurrency = () => {
   };
 
   return (
-    <div>
+    <div className="changepage">
       {/* Main Page */}
       <div className="change-page">
         {/* Sidebar */}

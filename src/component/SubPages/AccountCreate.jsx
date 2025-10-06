@@ -20,7 +20,7 @@ const AccountCreate = () => {
   };
 
   return (
-    <div>
+    <div className="accountsunique">
       {/* Main Account Page */}
       <div className="account-page">
         {/* Sidebar */}
@@ -60,9 +60,10 @@ const AccountCreate = () => {
             <span className="current">How to create your Market.trad account?</span>
           </div>
 
-          <h1>How to create your Market.trad account?</h1>
+          <h1 className="head">How to create your Market.trad account?</h1>
 
           <div className="video-section">
+          
             <div className="video-thumbnail">
               <p>Getting Started: How to create your Market.trad account?</p>
               <iframe

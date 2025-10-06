@@ -20,7 +20,9 @@ const ConnectTrading = () => {
   };
 
   return (
-    <div>
+    <div className="connect1">
+      <div className="connectpage">
+
       {/* Main Connect Trading Page */}
       <div className="connect-page">
         {/* Sidebar */}
@@ -76,6 +78,7 @@ const ConnectTrading = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       {/* Steps Section */}

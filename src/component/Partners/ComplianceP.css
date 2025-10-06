@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #ebefee;
+   margin-top: 0px;
+}
+
+.compliancenew-hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 1480px;
+    height: 97vh;
+    margin: 40px auto 40px auto;
+    padding: 160px 20px 0 20px; /* Adds spacing left/right */
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #000000, #493ffd);
+}
+
+.compliancenew-hero-image {
+    width: 100%;
+    max-width: 1480px;
+    height: 75vh;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: block;
+}
+
+.compliancenew-hero-text{
+    padding-top: 80px;
+}
+
+.compliancenew-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+  
+.compliancenew-breadcrumb-item {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+  
+.compliancenew-breadcrumb-item-current {
+    font-weight: bold;
+    color: #ffffff;
+}
+  
+.compliancenew-breadcrumb-separator {
+    margin: 0 3px;
+    color: #ffffff;
+}
+  
+.compliancenew-hero-text {
+    position: absolute;
+    top: 20%;
+    left: 80px;
+    color: #ffffff;
+    max-width: 800px;
+    font-family: sans-serif;
+}
+
+.compliancenew-hero-heading {
+    font-size: clamp(32px, 5vw, 56px); /* Responsive font size */
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.compliancenew-hero-subtext {
+    font-size: clamp(16px, 2.2vw, 22px);
+    font-weight: 400;
+    line-height: 1.3;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+    .compliancenew-hero-image {
+        height: 60vh;
+    }
+
+    .compliancenew-hero-text {
+        top: 15%;
+        left: 20px;
+        right: 20px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .compliancenew-hero-heading {
+        font-size: 36px;
+    }
+
+    .compliancenew-hero-subtext {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .compliancenew-hero-container{
+        height: 55vh;
+    }
+    .compliancenew-hero-image {
+        height: 35vh;
+    }
+
+    .compliancenew-hero-text{
+        padding: 100px 0 0 20px;
+    }
+
+    .compliancenew-hero-heading {
+        font-size: 28px;
+    }
+
+    .compliancenew-hero-subtext {
+        font-size: 16px;
+    }
+}
+
+.compliancenew-info-container {
+    width: 1480px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* light background */
+    border-radius: 12px;
+  }
+  
+  .compliancenew-info-left {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+  }
+  
+  .compliancenew-info-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .compliancenew-info-right {
+    flex: 1 1 55%;
+  }
+  
+  .compliancenew-info-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333333;
+    font-weight: 700;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .compliancenew-info-container {
+      width: 95%;
+      flex-direction: column;
+      height: auto;
+      padding: 15px;
+    }
+    .compliancenew-info-left,
+    .compliancenew-info-right {
+      flex: 1 1 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+    .compliancenew-info-heading {
+      margin-bottom: 15px;
+    }
+  }
+  
+
+  /* ========== CONTAINER ========== */
+.guidelines-container {
+    background-color: #000000;
+    max-width: 1480px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+/* ========== LEFT CONTENT (POINTS) ========== */
+.guidelines-content {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guidelines-heading {
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.guidelines-intro {
+    font-size: clamp(1rem, 1.6vw, 1.3rem);
+    line-height: 1.4;
+    color: #fff;
+}
+
+/* ========== GUIDELINE POINTS ========== */
+.guidelines-points {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.guideline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #fff;
+    font-size: clamp(0.95rem, 1.5vw, 1.2rem);
+    line-height: 1.4;
+}
+
+.guideline-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 4px; /* aligns icon with first line of text */
+}
+/* ========== RIGHT IMAGE ========== */
+.guidelines-image-wrapper {
+    flex: 1 1 35%; /* width stays the same */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: #ebefee; */
+    height: 75vh;
+}
+
+.guidelines-image {
+    width: 100%;
+    height: 75vh; /* fallback */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets / Medium screens */
+@media (max-width: 1200px) {
+    .guidelines-heading {
+        font-size: clamp(1.7rem, 2.2vw, 2.2rem);
+    }
+    .guidelines-intro {
+        font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+    }
+    .guideline-item {
+        font-size: clamp(0.9rem, 1.3vw, 1.1rem);
+    }
+}
+
+/* Tablets / small desktops */
+@media (max-width: 992px) {
+    .guidelines-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .guidelines-content,
+    .guidelines-image-wrapper {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .guidelines-heading {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        text-align: center;
+    }
+    .guidelines-intro {
+        text-align: center;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+    }
+    .guideline-item {
+        font-size: clamp(0.85rem, 2vw, 1.05rem);
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .guidelines-heading {
+        font-size: clamp(1.2rem, 5vw, 1.6rem);
+    }
+    .guidelines-intro {
+        font-size: clamp(0.85rem, 3vw, 1rem);
+    }
+    .guideline-item {
+        font-size: clamp(0.8rem, 3vw, 0.95rem);
+        gap: 8px;
+    }
+
+    .guidelines-image{
+        height: 40vh;
+    }
+    .guidelines-container {
+        padding: 10px;
+        gap: 10px;
+    }
+    .guideline-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* ========== COMPLIANCE TOPICS GRID ========== */
+.compliance-topics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1480px;
+    margin: 40px auto;
+    justify-content: center; /* center cards */
+    background-color: #fff;
+    padding: 40px 20px; /* padding inside blue container */
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+/* ========== CARD STYLES ========== */
+.compliance-card {
+    flex: 0 1 calc(50% - 20px); /* 2 cards per row */
+    max-width: 500px; /* optional to prevent stretching */
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.compliance-card-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.compliance-card-title {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.compliance-card-text {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    line-height: 1.4;
+    color: #ccc;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablets / Medium screens */
+@media (max-width: 992px) {
+    .compliance-card {
+        flex: 0 1 calc(50% - 15px); /* still 2 cards per row */
+        padding: 18px;
+    }
+}
+
+/* Mobile / Small screens */
+@media (max-width: 768px) {
+    .compliance-card {
+        flex: 0 1 100%; /* stacked vertically */
+    }
+    .compliance-topics-container {
+        padding: 30px 15px; /* reduce padding on mobile */
+    }
+}

@@ -1,7 +1,18 @@
+
+.accountcontainer {
+  background-color: #ebefee;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+
+
 .account-container {
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 1480px;
+    height: 95vh;
+    margin: 0 auto;
+    padding: 180px 0 0 40px;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #000000, #493ffd);
     border-radius: 12px;
@@ -73,8 +84,14 @@
   
   /* Responsive */
   @media (max-width: 768px) {
+    
+    .accountcontainer {
+      height: 75vh;
+    }
+    
     .account-container {
-      padding: 15px;
+      padding: 180px 15px 0 15px;
+      height: 70vh;
     }
   
     .page-heading {

@@ -9,9 +9,9 @@ import "./NewsSection.css";
 const articles = [
   {
     image: "/public/trade1.avif",
-    title: "Enhanced Prime Account Offering with Zero Spreads on Forex Majors",
+    title: "Enhanced Prime Account Offering with Zero Spreads on Forex",
     description:
-      "Prime clients will now see zero spreads through most of the trading day, representing a 48% to 71% reduction.",
+      "Prime clients will now see zero spreads through trading day, representing a 48% to 71% reduction.",
     date: "September 18, 2025",
     link: "#",
   },

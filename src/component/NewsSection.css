@@ -1,6 +1,8 @@
 /* General Styles */
 .news{
-  background: linear-gradient(360deg,#000000, #130486, #000000);
+  background-color: #ebefee;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .news-container {
@@ -9,6 +11,10 @@
   padding-right: 40px;
   padding-bottom: 20px;
   font-family: Arial, sans-serif;
+  background: linear-gradient(360deg,#000000, #130486, #000000);
+  width: 97%;
+  margin-left: 20px;
+  border-radius: 16px;
 }
 
 /* Heading */

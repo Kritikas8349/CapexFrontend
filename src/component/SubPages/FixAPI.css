@@ -1,150 +1,165 @@
-    .fixapi-trading-container {
-        max-width: 1400px;
-        width: 95%;
-        margin: -40px auto 60px auto;
-        padding: 40px 20px;
-        box-sizing: border-box;
-    }
+.fixapi-trading-container {
+    width: 100%;
+    height: auto;
+    margin: 10px auto auto auto;
+    padding: 0px 20px 40px 20px;
+    box-sizing: border-box;
+    background-color: #ebefee;
+}
 
+/* Linear gradient background */
+.fixapi-wrapper {
+    width: 100%;
+    max-width: 1480px;
+    min-height: 750px;  /* ✅ height increase ki */
+    padding: 120px 20px 80px 20px; /* ✅ content ko upar se aur neeche se space di */
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #000000, #493ffd);
+    box-sizing: border-box;
+}
+
+/* Heading */
+.fixapi-heading {
+    font-size: clamp(3rem, 5vw, 4rem);
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px;
+    color: #493ffd;
+    padding-top: 30px;  /* ✅ heading ko bhi thoda push kiya */
+}
+
+/* Description text */
+.fixapi-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    padding-top: 20px; /* ✅ extra gap from top for text */
+}
+
+.fixapi-description h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ebefee;
+}
+
+.fixapi-description p {
+    margin-bottom: 16px;
+    color: #ebefee;
+}
+
+/* ================= Benefits Box Wrapper ================= */
+.fixapi-benefits-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Each Benefits Box */
+.fixapi-benefits-box {
+    width: 100%;
+    max-width: 1480px;
+    background: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.fixapi-benefits-box:hover {
+    transform: translateY(-5px);
+}
+
+.fixapi-benefits-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: white;
+}
+
+.fixapi-benefits-box p,
+.fixapi-benefits-box ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+.fixapi-benefits-box ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.fixapi-benefits-box ul li {
+    margin-bottom: 10px;
+}
+
+/* ================= Responsive Media Queries ================= */
+
+/* Large Desktops */
+@media (min-width: 1200px) {
     .fixapi-wrapper {
-        width: 100%;
-        padding: 60px 20px;
-        border-radius: 12px;
-        background: linear-gradient(to bottom right, #000000, #493ffd);
+        padding: 140px 40px 100px 40px; /* ✅ bada screen me aur space */
     }
-    
+}
+
+/* Laptops & Normal Screens (1024px - 1199px) */
+@media (max-width: 1199px) and (min-width: 1024px) {
     .fixapi-heading {
-        font-size: clamp(3rem, 5vw, 4rem);
-        font-weight: 700;
-        margin-bottom: 20px;
-        text-align: left;
-        margin-left: 10px;
-        color: #493ffd;
+        font-size: 2.5rem;
     }
-    
-    .fixapi-description {
-        font-size: 1.1rem;
-        line-height: 1.6;
-        margin-bottom: 40px;
-        margin-left: 10px;
-    }
-    
-    .fixapi-description h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #ebefee;
-    }
-    
-    .fixapi-description p {
-        margin-bottom: 16px;
-        color: #ebefee;
-    }
-    
-    /* ================= Benefits Box Wrapper ================= */
-    .fixapi-benefits-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 100%;
-        align-items: center;
-        margin-top: 40px;
-    }
-    
-    /* Each Benefits Box */
     .fixapi-benefits-box {
-        width: 100%;
-        max-width: 1400px;
-        background: #ebefee;
-        padding: 30px;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-        box-sizing: border-box;
+        max-width: 1000px;
     }
-    
-    .fixapi-benefits-box:hover {
-        transform: translateY(-5px);
-    }
-    
     .fixapi-benefits-box h2 {
-        font-size: 1.6rem;
-        margin-bottom: 15px;
-        font-weight: 800;
-        color: black;
+        font-size: 1.4rem;
     }
-    
     .fixapi-benefits-box p,
     .fixapi-benefits-box ul {
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-    
-    .fixapi-benefits-box ul {
-        padding-left: 20px;
-        list-style-type: disc;
-    }
-    
-    .fixapi-benefits-box ul li {
-        margin-bottom: 10px;
-    }
-    
-    /* ================= Responsive Media Queries ================= */
-    
-    /* Large Desktops */
-    @media (min-width: 1200px) {
-        .fixapi-wrapper {
-        padding: 60px 40px;
-        }
-    }
-    
-    /* Laptops & Normal Screens (1024px - 1199px) */
-    @media (max-width: 1199px) and (min-width: 1024px) {
-        .fixapi-heading {
-        font-size: 2.5rem;
-        }
-        .fixapi-benefits-box {
-        max-width: 1000px;
-        }
-        .fixapi-benefits-box h2 {
-        font-size: 1.4rem;
-        }
-        .fixapi-benefits-box p,
-        .fixapi-benefits-box ul {
         font-size: 0.98rem;
-        }
     }
-    
-    /* Tablets (768px - 1023px) */
-    @media (max-width: 1023px) and (min-width: 768px) {
-        .fixapi-heading {
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .fixapi-heading {
         font-size: 2.2rem;
         text-align: center;
-        }
-        .fixapi-description {
-        text-align: center;
-        }
-        .fixapi-benefits-box {
-        padding: 25px;
-        }
+        padding-top: 20px;
     }
-    
-    /* Mobile (max-width: 767px) */
-    @media (max-width: 767px) {
-        .fixapi-heading {
+    .fixapi-description {
+        text-align: center;
+        padding-top: 15px;
+    }
+    .fixapi-benefits-box {
+        padding: 25px;
+    }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+    .fixapi-trading-container {
+        margin-top: 10px;
+    }
+    .fixapi-heading {
         font-size: 2rem;
         text-align: center;
-        }
-        .fixapi-description {
+        padding-top: 15px;
+    }
+    .fixapi-description {
         font-size: 0.95rem;
         text-align: center;
-        }
-        .fixapi-benefits-box {
-        padding: 20px;
-        }
-        .fixapi-benefits-box h2 {
-        font-size: 1.2rem;
-        }
-        .fixapi-benefits-box ul {
-        font-size: 0.9rem;
-        }
+        padding-top: 10px;
     }
-    
+    .fixapi-benefits-box {
+        padding: 20px;
+    }
+    .fixapi-benefits-box h2 {
+        font-size: 1.2rem;
+    }
+    .fixapi-benefits-box ul {
+        font-size: 0.9rem;
+    }
+}

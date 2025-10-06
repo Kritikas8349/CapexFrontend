@@ -41,6 +41,9 @@ export const routesMap = {
     /* ===== Education ===== */
     "Education Hub": "/education",
     Webinars: "/education/webinars",
+    "Forex Tutorials": "/forex",
+    "Commodities Tutorials": "/commodities",
+    "Shares Tutorials": "/shares",
     "Beginner Forex Tutorial": "/education/forex/beginner",
     "Intermediate Forex Tutorial": "/education/forex/intermediate",
     "Advanced Forex Tutorial": "/education/forex/advanced",

@@ -23,7 +23,8 @@ const InvestAccount = () => {
   };
 
   return (
-    <div>
+    <div className="investaccountpage">
+      
       {/* Main Page */}
       <div className="investaccount-page">
         {/* Sidebar */}

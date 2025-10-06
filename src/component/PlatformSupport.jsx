@@ -3,9 +3,11 @@ import "./PlatformSupport.css";
 
 const PlatformSupport = () => {
   return (
-    <div className="platform-container">
+    <div className="platform">
+
+    <div className="platformcontainer">
       <div className="platform-image-container">
-        <img src="/public/PlatformSupport.jpg" 
+        <img src="/public/Office1.jpg" 
           alt="Platform Support" 
           className="platform-image" 
         />
@@ -17,6 +19,7 @@ const PlatformSupport = () => {
             Search our knowledge base for answers to common questions
           </p>
         </div>
+      </div>
       </div>
 
       <div className="support-grid">
@@ -162,6 +165,7 @@ const PlatformSupport = () => {
       </div>
     </div>
 
+    
     </div>
   );
 };

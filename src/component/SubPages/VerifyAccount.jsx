@@ -20,7 +20,7 @@ const VerifyAccount = () => {
   };
 
   return (
-    <div>
+    <div className="verifyunique">
       {/* Main Verify Account Page */}
       <div className="verify-page">
         {/* Sidebar */}
@@ -60,7 +60,7 @@ const VerifyAccount = () => {
             <span className="current">How to verify your Market.trad account?</span>
           </div>
 
-          <h1>How to verify your Market.trad account?</h1>
+          <h1 className="head1">How to verify your Market.trad account?</h1>
 
           <div className="verify-video-section">
             <div className="verify-video-thumbnail">

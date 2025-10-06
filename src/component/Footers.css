@@ -139,7 +139,6 @@
 .mobile-btn {
   display: none; /* hidden by default */
 }
-
 /* Footer Container */
 .footercontainer1 {
   background: linear-gradient(to bottom right, #000000, #231586);
@@ -156,7 +155,7 @@
 .footertop1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; /* 👈 logo thoda upar align hoga */
   flex-wrap: wrap;
 }
 
@@ -164,6 +163,32 @@
   width: 160px;
   height: auto;
   max-width: 100%;
+  margin-bottom: 15px; /* thoda gap neeche */
+}
+
+/* Footer Social */
+.footersocial1 {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;
+  gap: 12px; /* logos ke beech gap */
+  flex-wrap: wrap;
+}
+
+.footersocial1 a {
+  display: inline-block;
+}
+
+.footersocial1 img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  max-width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.footersocial1 img:hover {
+  transform: scale(1.1); /* hover effect */
 }
 
 /* Footer Content */
@@ -209,22 +234,24 @@
   margin: 5px 0;
 }
 
-/* Footer Social */
-.footersocial1 {
-  margin-top: 10px;
-  text-align: center;
+/* Responsive */
+@media (max-width: 768px) {
+  .footertop1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerlogo1 img {
+    margin-bottom: 20px;
+  }
+
+  .footersocial1 {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 
-.footersocial1 a {
-  margin: 0 8px;
-}
-
-.footersocial1 img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  max-width: 100%;
-}
 
 /* Responsive Styles */
 
