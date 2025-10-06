@@ -6,9 +6,9 @@ function TradingView() {
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to right, #493FFD, #000000);}
+                         background: linear-gradient(to bottom right, #000000, #231586)}
                        .trading-primium,.how-to-connect{
-                       background: linear-gradient(to top, #493FFD, #000000);
+                       background: linear-gradient(to bottom right, #000000, #231586);
                        }
 
                     `
@@ -19,27 +19,28 @@ function TradingView() {
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
-                        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                        <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
                                 Unlock{" "}
-                                <span className="text-primary">Free TradingView</span>
+                                <span className="text-heading">Free TradingView</span>
                                 <br />
                                 Essential, Plus or Premium
                             </h1>
-                            <p className="fs-5 mt-3 text-secondary">
+                            <p className="fs-5 mt-3 text-white">
                                 Elevate your trading experience with best-in-class charting
                                 tools from TradingView.
                             </p>
 
                             {/* Buttons */}
-                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
-                                <button className="btn btn-primary px-4 py-2 fw-bold">
+                            <div className="d-flex flex-column flex-sm-row gap-2 justify-content-start mt-4">
+                                <button className="btn btn-bg-start text-white  mt-3">
                                     Join Now
                                 </button>
-                                <button className="btn btn-success px-4 py-2 fw-bold">
+                                <button className="btn btn-bg-start text-white  mt-3 ">
                                     Log In
                                 </button>
                             </div>
+
                         </div>
 
                         {/* Right Section */}
@@ -107,10 +108,10 @@ function TradingView() {
                 <div className="container">
                     <div className="row align-items-center border rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
                                 How to get{" "}<br />
-                                <span className="text-primary">TradingView Premium?</span>
+                                <span className="text-heading">TradingView Premium?</span>
                             </h1>
                             <p className="text-secondary mt-3 fs-5">
                                 TradingView Premium can take your trading to the next
@@ -137,7 +138,7 @@ function TradingView() {
 
             {/* -----------TradingView primium----------------- */}
             <div className="container-fluid bg-primary text-white py-5 trading-primium" >
-                <div className="container text-center">
+                <div className="container text-start">
                     {/* Heading */}
                     <h2 className="fw-bold display-6">Get Free TradingView Premium</h2>
                     <p className="text-light mb-5">
@@ -148,10 +149,10 @@ function TradingView() {
                     {/* Responsive Grid */}
                     <div className="row g-4">
                         {/* Plan 1 */}
-                        <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-white text-dark rounded  shadow align-content-center h-100 " style={{ height: "70vh" }}>
-                                <h5 className="fw-bold fs-1 text-primary">TradingView Essential</h5>
-                                <span className="badge bg-light text-primary mt-2">
+                        <div className="col-12 col-md-6 col-lg-4 ">
+                            <div className="p-4 bg-white text-dark rounded  shadow align-content-center h-100 custom-card " style={{ height: "70vh" }}>
+                                <h5 className="fw-bold fs-1 text-heading">TradingView Essential</h5>
+                                <span className="badge bg-light text-heading mt-2">
                                     FREE WITH 1 LOT TRADED P/M
                                 </span>
                                 <h2 className="fw-bold my-3">
@@ -170,8 +171,8 @@ function TradingView() {
 
                         {/* Plan 2 */}
                         <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-light text-secondary rounded shadow align-content-center h-100" >
-                                <h5 className="fw-bold fs-1 text-primary">TradingView Plus</h5>
+                            <div className="p-4 bg-light text-secondary rounded shadow align-content-center h-100 custom-card" >
+                                <h5 className="fw-bold fs-1 text-heading">TradingView Plus</h5>
                                 <span className="badge bg-light text-dark mt-2">
                                     FREE WITH 5 LOTS TRADED P/M
                                 </span>
@@ -191,9 +192,9 @@ function TradingView() {
 
                         {/* Plan 3 */}
                         <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-white text-dark rounded shadow h-100 align-content-center">
-                                <h5 className="fw-bold fs-1 text-primary">TradingView Premium</h5>
-                                <span className="badge bg-light text-primary mt-2">
+                            <div className="p-4 bg-white text-dark rounded shadow h-100 align-content-center custom-card ">
+                                <h5 className="fw-bold fs-1 text-heading">TradingView Premium</h5>
+                                <span className="badge bg-light text-heading mt-2">
                                     FREE WITH 10 LOTS TRADED P/M
                                 </span>
                                 <h2 className="fw-bold my-3">
@@ -220,7 +221,7 @@ function TradingView() {
                 <div className="container py-4">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
-                        <div className="col-12 col-lg-6 text-center text-md-start text-sm-start">
+                        <div className="col-12 col-lg-6 text-start text-md-start text-sm-start">
                             <h1 className="fw-bold display-4 text-heading">Why Market Trade</h1>
                             <p className="text-secondary mt-3 fs-5">
                                 BlackBull Markets is a multi-regulated broker headquartered in
@@ -231,8 +232,8 @@ function TradingView() {
                             </p>
 
                             {/* Feature List */}
-                            <div className="d-flex align-items-start mb-3 justify-content-center justify-content-md-start">
-                                <i className="bi bi-bar-chart fs-1 text-primary  me-3"></i>
+                            <div className="d-flex align-items-start mb-3 justify-content-start ">
+                                <i className="bi bi-bar-chart fs-1 text-heading  me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5  text-start mb-1">1:500 Leverage</p>
                                     <p className="text-secondary mb-0">
@@ -241,8 +242,8 @@ function TradingView() {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-start mb-3 justify-content-center justify-content-md-start">
-                                <i className="bi bi-currency-exchange fs-1 text-primary me-3"></i>
+                            <div className="d-flex align-items-start mb-3 justify-content-start">
+                                <i className="bi bi-currency-exchange fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5  text-start mb-1">Low Spreads</p>
                                     <p className="text-secondary mb-0">
@@ -251,8 +252,8 @@ function TradingView() {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-start mb-3 justify-content-center justify-content-md-start">
-                                <i className="bi bi-shield-lock fs-1 text-primary me-3"></i>
+                            <div className="d-flex align-items-start mb-3 justify-content-start">
+                                <i className="bi bi-shield-lock fs-1 text-heading me-3"></i>
                                 <div>
                                     <p className="fw-bold fs-5  text-start mb-1">Secure Trading</p>
                                     <p className="text-secondary mb-0">
@@ -285,10 +286,10 @@ function TradingView() {
                 <div className="container">
                     <div className="row align-items-center  rounded p-4">
                         {/* Left Section */}
-                        <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                        <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-white">
                                 How to connect to{" "}<br />
-                                <span className="text-primary">TradingView View?</span>
+                                <span className="text-heading">TradingView View?</span>
                             </h1>
                             <p className="text-secondary mt-3 fs-5">
                                 Log into the TradingView website or mobile app, open a chart for an asset you want to trade, and select BlackBull Markets as your broker in the Trading panel. Learn more.
@@ -311,7 +312,7 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-flex align-items-center px-3">
+                        <a href="#" className="btn btn-outline-dark text-white d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"

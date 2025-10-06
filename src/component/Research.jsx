@@ -59,37 +59,37 @@ function Research() {
             id: 1,
             title: "FOMC doves now in the driver’s seat?",
             date: "SEPTEMBER 18, 2025",
-            image: "trade.avif",
+            image: "/public/trade.avif",
             link: "#",
         },
         {
             id: 2,
             title: "The push for a 50bps Fed cut and its effect on EUR/USD",
             date: "SEPTEMBER 17, 2025",
-            image: "trade1.avif",
+            image: "/public/trade1.avif",
             link: "#",
         },
         {
             id: 3,
             title: "Euro shrugs off France’s credit downgrade | FX Research",
             date: "SEPTEMBER 16, 2025",
-            image: "trade2.avif",
+            image: "/public/trade2.avif",
             link: "#",
         },
     ];
     return (
-        <div className='bg-home'>
+        <div className='bg-home my-bootstrap-page'>
             {/* Inject CSS for media query */}
             <style>
                 {`
     .research-section {
-      background: linear-gradient(to right, white 61%, #0033a0 35%);
+      background: linear-gradient(to right, white 61%, #493FFD 35%);
     }
 
     /* Mobile + Tablet (up to 991.98px = Bootstrap md breakpoint) */
     @media (max-width: 991.98px) {
       .research-section {
-        background: linear-gradient(to bottom, white 80%, #0033a0 20%);
+        background: linear-gradient(to bottom, white 80%, #493FFD 20%);
       }
     }
   `}
@@ -127,7 +127,7 @@ function Research() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center mt-4 mt-lg-0">
                             <img
-                                src="/mobile.png" // Replace with your image
+                                src="/public/mobile.png" // Replace with your image
                                 alt="Daily Market Analysis"
                                 className="img-fluid"
                                 style={{ maxHeight: '500px', width: '100%', objectFit: 'contain' }}
@@ -277,8 +277,8 @@ function Research() {
                         </button>
                     </div>
                     <div className="col-md-6 col-lg-6 text-center position-relative ">
-                        <div className="card bg-light mt-3  p-5 ">
-                            <img src="" alt="" srcset="" className='bg-white' width={"150px"} height={"100px"} />
+                        <div className="card bg-light mt-3  p-3 ">
+                            <img src="/public/pho.avif" alt="" srcset="" className='bg-white' width={"130px"} height={"140px"} />
                             <span className='bi bi-spotify position-absolute top-0 end-0 me-2'></span>
                         </div>
                     </div>
@@ -297,7 +297,7 @@ function Research() {
                 <div className="row g-4">
                     {articles.map((article) => (
                         <div className="col-12 col-sm-6 col-md-4" key={article.id}>
-                            <div className="card h-100 border-0 shadow-sm">
+                            <div className="card h-100 border-0 shadow-sm custom-card">
                                 {/* Image */}
                                 <img
                                     src={article.image}
@@ -312,7 +312,7 @@ function Research() {
                                         <small className="text-heading">{article.date}</small>
                                         <a
                                             href={article.link}
-                                            className="text-primary fw-semibold text-decoration-none"
+                                            className="text-heading fw-semibold text-decoration-none"
                                         >
                                             VIEW POST
                                         </a>
@@ -357,7 +357,7 @@ function Research() {
                         </p>
                         <a
                             href="https://spotify.com"
-                            className="btn btn-learn text-white btn-lg"
+                            className="btn btn-bg-start text-white btn-lg"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -384,7 +384,7 @@ function Research() {
                         </p>
                         <a
                             href="https://spotify.com"
-                            className="btn text-white btn-lg d-inline-flex align-items-center btn-learn"
+                            className="btn text-white btn-lg d-inline-flex align-items-center btn-bg-start"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -419,7 +419,7 @@ function Research() {
                         </p>
                         <a
                             href="https://spotify.com"
-                            className="btn btn-learn text-white btn-lg d-inline-flex align-items-center"
+                            className="btn btn-bg-start text-white btn-lg d-inline-flex align-items-center"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

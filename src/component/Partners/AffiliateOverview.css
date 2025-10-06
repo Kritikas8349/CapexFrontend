@@ -1,0 +1,1152 @@
+.affiliate-hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* full screen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.affiliate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.affiliate-hero-content {
+  position: relative;
+  max-width: 600px;
+  margin-left: 5%;
+  z-index: 2;
+}
+
+.affiliate-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.affiliate-subheading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.affiliate-form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 👈 adds gap between input and button */
+  max-width: 500px;
+}
+
+.affiliate-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.affiliate-button {
+  background: #00c853;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.affiliate-button:hover {
+  background: #00a944;
+}
+
+/* ✅ Responsive styles */
+@media (max-width: 768px) {
+  .affiliate-heading {
+    font-size: 2.2rem;
+  }
+
+  .affiliate-subheading {
+    font-size: 1.2rem;
+  }
+
+  .affiliate-form {
+    flex-direction: column; /* stack input + button */
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .affiliate-input,
+  .affiliate-button {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+
+
+/* Container for the entire section (the white box area) */
+.affiliate-section-container {
+    padding: 60px 0; 
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7; /* Light background for contrast */
+}
+
+/* Inner wrapper for the content and white background */
+.affiliate-content-wrapper {
+    max-width: 1200px; 
+    width: 90%; 
+    background-color: white;
+    padding: 40px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    display: flex; 
+    gap: 40px; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+/* Video Block Styling */
+.video-block {
+    flex: 1;
+    min-width: 350px; 
+}
+
+/* Responsive iframe container (16:9 aspect ratio) */
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* Text Block Styling */
+.text-block {
+    flex: 1; 
+    min-width: 350px; 
+    max-width: 500px;
+}
+
+.text-block h1 {
+    font-size: 2.5rem; 
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 300; 
+    color: #333; 
+}
+
+.text-block h1 strong {
+    font-weight: 800; 
+    color: #000; 
+}
+
+.text-block p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    color: #555; 
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 900px) {
+    .affiliate-content-wrapper {
+        flex-direction: column; 
+    }
+
+    .video-block,
+    .text-block {
+        min-width: unset; 
+        width: 100%;
+    }
+}
+
+/* --- SECTION 2: VIDEO/TEXT BLOCK STYLES (YOUTUBE READY) --- */
+
+.partner-details-section-unique {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.partner-details-content-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Left Side: Video Container for Responsive Aspect Ratio (50% width) */
+.partner-video-container-unique {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  /* 16:9 Aspect Ratio: (9 / 16) * 50% = 28.125% */
+  padding-bottom: 28.125%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* YouTube Iframe Styling */
+.partner-youtube-iframe-unique {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Right Side: Text Content */
+.partner-text-content-unique {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 20px;
+}
+
+.partner-text-heading-unique {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.partner-text-body-unique {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Tablet and smaller (for the second section layout) */
+@media (max-width: 1024px) {
+    .partner-details-content-wrapper {
+        flex-direction: column; /* Stacks content vertically */
+        width: 90%;
+        gap: 40px;
+    }
+
+    .partner-video-container-unique,
+    .partner-text-content-unique {
+        max-width: 100%; /* Takes full width */
+        padding-left: 0;
+    }
+    
+    .partner-video-container-unique {
+        /* 16:9 Aspect Ratio on full width: 9/16 = 56.25% */
+        padding-bottom: 56.25%; 
+    }
+
+    .partner-text-heading-unique {
+        font-size: 2em;
+    }
+}
+
+/* Mobile (for the hero section content) */
+@media (max-width: 768px) {
+  .partner-content-unique {
+    padding: 20px; /* Reduces side padding */
+    margin: 0 auto; /* Centers content */
+    max-width: 90%;
+  }
+  
+  .partner-hero-unique-section {
+      justify-content: center; /* Mobile पर टेक्स्ट को बीच में ला सकते हैं */
+      text-align: center;
+  }
+  
+  .partner-heading-unique {
+    font-size: 2rem;
+  }
+  
+  .partner-subheading-unique {
+    font-size: 1rem;
+  }
+  
+  .partner-buttons-unique-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* --- 3. NEW SECTION: Affiliates Program Benefits Styles --- */
+
+.benefits-section {
+    padding: 4rem 1rem;
+    background-color: #0c0a3e; /* Dark Blue */
+    color: #ffffff;
+}
+
+.benefits-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.benefits-header-content {
+    padding-right: 2.5rem; 
+}
+
+.benefits-heading {
+    font-size: 2.25rem; 
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.benefits-highlight {
+    color: #a78bfa; /* Indigo highlight */
+}
+
+.benefits-subtext {
+    font-size: 1.125rem;
+    color: #93c5fd; /* Light blue text */
+    line-height: 1.625;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; 
+}
+
+.benefit-card {
+    background-color: #1f2937; /* Dark card background */
+    padding: 1.5rem; 
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #374151; 
+    transition: border-color 300ms;
+}
+
+.benefit-card:hover {
+    border-color: #6366f1; /* Indigo border on hover */
+}
+
+.icon-circle {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent white circle */
+    border-radius: 9999px; 
+    width: 3.5rem; 
+    height: 3.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.benefit-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #c4b5fd; /* Light indigo title */
+}
+
+.benefit-description {
+    font-size: 0.875rem;
+    color: #9ca3af; /* Gray text for description */
+}
+
+/* Media Queries for Benefits Section */
+@media (min-width: 640px) { /* Small screens (sm) */
+    .benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) { /* Large screens (lg) */
+    .benefits-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .benefits-heading {
+        font-size: 3rem;
+    }
+}
+
+
+/* Base and Colors */
+.affiliate-benefits-section {
+  background-color: #061A40; /* Dark blue background */
+  color: #FFFFFF;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Card Container */
+.aff_card,
+.aff_cards {
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap; /* helps on medium screens */
+  justify-content: center;
+}
+
+/* Benefit Heading */
+.benefit_heading {
+  margin-top: 30px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* Paragraph */
+.benefit_para {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* Benefit Main Div */
+.benefit_maindiv {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  height: auto;
+  margin-left: 45px;
+  flex-wrap: wrap;
+}
+
+/* Benefit Card */
+.benefit-card,
+.benefit-card1 {
+  background-color: white;
+  color: #306ad4;
+  height: auto;
+  min-height: 220px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 250px; /* responsive sizing */
+  text-align: center;
+}
+
+/* Benefit Icon */
+.benefit-icon {
+  font-size: 35px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 20px auto;
+  background-color: rgb(175, 207, 248);
+}
+
+/* ---------------- Responsive Design ---------------- */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .aff_card,
+  .aff_cards,
+  .benefit_maindiv {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 30px;
+  }
+
+  .benefit_heading,
+  .benefit_para {
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .affiliate-benefits-section {
+    padding: 40px 15px;
+  }
+
+  .benefit_heading {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .benefit_para {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .benefit-card,
+  .benefit-card1 {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .benefit-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+}
+
+.who-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.who-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+}
+
+/* Left Side */
+.who-left {
+  flex: 1 1 45%;
+}
+
+.who-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0d1b3d;
+}
+
+.who-subtext {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.who-image {
+  margin-top: 1.5rem;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  height: auto;
+  max-height: 40vh;
+}
+
+/* Right Side */
+.who-right {
+  flex: 1 1 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.who-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 21vh;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.who-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.who-icon {
+  font-size: 2rem;
+  color: #0066ff;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.who-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0066ff;
+}
+
+/* Responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .who-container {
+    flex-direction: column;
+  }
+
+  .who-left,
+  .who-right {
+    flex: 1 1 100%;
+  }
+
+  .who-right {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+  }
+
+  .who-heading {
+    font-size: 2.2rem;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .who-right {
+    grid-template-columns: 1fr;
+  }
+
+  .who-card {
+    min-height: auto;
+  }
+
+  .who-heading {
+    font-size: 2rem;
+  }
+
+  .who-subtext {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .who-section {
+    padding: 3rem 1rem;
+  }
+
+  .who-heading {
+    font-size: 1.8rem;
+  }
+
+  .who-subtext {
+    font-size: 0.9rem;
+  }
+
+  .who-card {
+    padding: 2rem;
+    margin-left: 50px;
+  }
+
+  .who-icon {
+    font-size: 1.8rem;
+  }
+}
+.cpa-section {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.cpa-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #002366;
+  margin-bottom: 1rem;
+}
+
+.cpa-subtext {
+  max-width: 750px;
+  margin: 0 auto 2rem auto;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cpa-subtext a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cpa-subtext a:hover {
+  text-decoration: underline;
+}
+
+/* Table wrapper for responsiveness */
+.cpa-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cpa-table {
+  min-width: 900px; /* force scroll on smaller screens */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.cpa-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #eee;
+}
+
+.cpa-row:last-child {
+  border-bottom: none;
+}
+
+.cpa-cell {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  border-right: 1px solid #eee;
+}
+
+.cpa-cell:last-child {
+  border-right: none;
+}
+
+.cpa-header {
+  font-weight: 700;
+  color: #fff;
+}
+
+.cpa-header .cpa-cell {
+  background: #000;
+  font-size: 1.1rem;
+}
+
+.group-a {
+  background: #007bff;
+}
+
+.group-b {
+  background: #0040a0;
+}
+
+.group-c {
+  background: #002366;
+}
+
+.group-other {
+  background: #000;
+}
+
+.bonus {
+  color: #0066ff;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+/* Table wrapper for responsiveness */
+.cpa-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom horizontal scrollbar for table only */
+.cpa-table-wrapper::-webkit-scrollbar {
+  height: 8px; /* horizontal scrollbar ki height */
+}
+
+.cpa-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 4px;
+}
+
+.cpa-table-wrapper::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px;
+}
+
+.cpa-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Firefox support */
+.cpa-table-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* ====================== CPA TABLE RESPONSIVE FIX ====================== */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .cpa-row {
+    grid-template-columns: repeat(5, minmax(100px, 1fr)); /* flexible columns */
+  }
+
+  .cpa-cell {
+    padding: 1rem; /* reduce padding slightly */
+    font-size: 0.95rem;
+  }
+
+  .cpa-header .cpa-cell {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .cpa-table {
+    display: block;
+    min-width: 100%;
+  }
+
+  .cpa-row {
+    display: block; /* stack rows vertically */
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+
+  .cpa-header {
+    display: none; /* hide header on mobile */
+  }
+
+  .cpa-cell {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+  }
+
+  .cpa-cell:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .cpa-cell {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .cpa-section {
+    padding: 2rem 1rem;
+  }
+
+  .cpa-heading {
+    font-size: 2rem;
+  }
+
+  .cpa-subtext {
+    font-size: 0.9rem;
+  }
+}
+.paragraphsec {
+  max-width: 1000px;
+  margin: 0 auto;
+   margin-left: -20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.paragraphsec p {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333; /* Dark text */
+  font-size: 1rem;
+  width: 75vw;
+ 
+}
+
+.paragraphsec .group-label {
+  font-weight: 700; /* Bold group label */
+  color: #111; /* Darker color for Group label */
+  margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .paragraphsec p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .paragraphsec p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .paragraphsec {
+    padding: 15px;
+  }
+
+  .paragraphsec p {
+    font-size: 0.85rem;
+  }
+}
+
+/* blue */
+ 
+
+.image_layout_main{
+  /* border: 2px solid blue; */
+  height: 45vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.blue_div{
+/* border: 2px solid rgb(13, 235, 142); */
+color: white;
+background-color: #0066ff;
+width: 50vw;
+height: 45vh;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+
+}
+.blue_heading{
+  margin-top: 10%;
+  margin-left: 35px;
+}
+.blue_para{
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-right: 30px;
+}
+.blue_image{
+  height: 45vh;
+  width: 33vw;
+  object-fit: cover;
+    position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.learn_more_link{
+  color: white;
+}
+
+.blue_image1{
+  height: 45vh;
+  width: 43vw;
+  object-fit: cover;
+    position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.blue_div1{
+/* border: 2px solid rgb(13, 235, 142); */
+color: white;
+background-color: #03265b;
+width: 50vw;
+height: 45vh;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+}
+.image_layout_main1{
+  /* border: 2px solid blue; */
+  height: 45vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.blue_image2{
+  height: 45vh;
+  width: 43vw;
+  object-fit: cover;
+    position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.blue_div2{
+/* border: 2px solid rgb(13, 235, 142); */
+color: white;
+background-color: #184891;
+width: 60vw;
+height: 45vh;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+
+}
+.image_layout_main2{
+  /* border: 2px solid blue; */
+  height: 45vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* === Responsive CSS Additions === */
+
+@media (max-width: 992px) {
+  .image_layout_main,
+  .image_layout_main1,
+  .image_layout_main2 {
+    flex-direction: column !important;
+    width: 95vw;
+    height: auto;
+    align-items: center;
+  }
+
+  .blue_div,
+  .blue_div1,
+  .blue_div2 {
+    width: 100% !important;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .blue_image,
+  .blue_image1,
+  .blue_image2 {
+    width: 100% !important;
+    height: 250px !important;
+    margin-top: 15px;
+  }
+
+  .blue_heading {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+
+  .blue_para {
+    margin: 10px 15px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blue_heading {
+    font-size: 1.3rem;
+  }
+
+  .blue_para {
+    font-size: 0.9rem;
+  }
+}
+
+
+.final_cta_div{
+  border: 2px solid blue;
+  height: 50vh;
+  width: 80vw;
+  margin-top: 10%;
+  display: flex;
+  gap:35px;
+flex-direction: column;}
+
+.final_cta_heading{
+  color: #0066ff;
+  /* margin-left: 30px; */
+  /* margin-top: 30px; */
+}
+
+.final_div_cta{
+  /* border: 2px solid green; */
+  height:32vh;
+  display: flex;
+  flex-direction: row;
+  gap:35px;
+}
+
+.final_div_cta1{
+  /* border: 2px solid black; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 32vh;
+  width:25vw;
+}
+.h2_head{
+  color: #0066ff;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 30px;
+  
+}
+
+.para_div_cta{
+    color: #0066ff;
+  /* font-weight: 600; */
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .final_cta_heading {
+    font-size: 1.6rem;
+  }
+
+  .final_div_cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .final_div_cta1 {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .final_cta_heading {
+    font-size: 1.4rem;
+  }
+
+  .h2_head {
+    font-size: 1.2rem;
+  }
+
+  .para_div_cta {
+    font-size: 0.9rem;
+  }
+}

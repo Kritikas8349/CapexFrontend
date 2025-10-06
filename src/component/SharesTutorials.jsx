@@ -101,7 +101,7 @@ function SharesTutorials() {
               {lessons.slice(1).map((lesson, index) => (
                 <div
                   key={index}
-                  className="d-flex flex-column flex-md-row bg-dark text-white mb-4 border-bottom border-primary border-2"
+                  className="d-flex flex-column flex-md-row bg-dark text-white mb-4 border-bottom border-primary border-2 opacity-75"
                   style={{ minHeight: '180px' }}
                 >
                   <div

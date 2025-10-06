@@ -6,7 +6,7 @@ function MetaTrader4() {
             <style>
                 {
                     `.trading-view {
-                         background: linear-gradient(to bottom, #493FFD, #000000);}            
+                         background: linear-gradient(to bottom right, #000000, #231586);}            
                     `
                 }
 
@@ -29,7 +29,7 @@ function MetaTrader4() {
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
                                 <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <button className="btn btn-success px-4 py-2 fw-bold">
+                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">
                                     Join Now
                                 </button>
                             </div>
@@ -153,7 +153,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-light align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
@@ -186,7 +186,7 @@ function MetaTrader4() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-5 ">
+            <div className="container-fluid bg-home py-5">
                 <div className="container rounded-4 p-3 ">
                     <h1 className="text-center text-heading mb-5 fw-bold">Tradable Assets</h1>
 
@@ -195,7 +195,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -208,7 +208,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -221,7 +221,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -234,7 +234,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -247,7 +247,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -260,7 +260,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">View all</h3>
                                 <p className="text-secondary">
@@ -272,7 +272,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border " style={{ height: '80vh' }}>
+            <div className="container-fluid bg-home align-content-center border " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
@@ -280,7 +280,7 @@ function MetaTrader4() {
                             <h1 className="fw-bold text-heading">
                                 Why Market Trad ?
                             </h1>
-                            <p className="text-secondary mt-3 fs-6">
+                            <p className="text-secondary mt-3 fs-5">
                                 BlackBull Markets is a multi-regulated broker headquartered in Auckland, New Zealand, providing an institutional trading experience globally.<br />Our mission is to provide traders with a superior trading experience through innovative technology like cTrader, and exceptional customer service.
                             </p>
                         </div>
@@ -312,7 +312,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -325,7 +325,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -338,7 +338,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -351,7 +351,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -364,7 +364,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -377,7 +377,7 @@ function MetaTrader4() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">View all</h3>
                                 <p className="text-secondary">

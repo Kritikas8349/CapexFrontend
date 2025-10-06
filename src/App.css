@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 /* 🌍 Main Flex Container */
 .container1 {
   display: flex;
@@ -47,6 +49,7 @@
   background-color: #ebefee;
 }
 
+
 /* ---------- RESPONSIVE ---------- */
 
 /* Tablets / medium screens */
@@ -64,6 +67,7 @@
     font-size: 13px;
   }
 }
+
 
 /* Small tablets / large phones */
 @media (max-width: 768px) {
@@ -120,3 +124,4 @@
     font-size: 11px;
   }
 }
+>>>>>>> 2bdbc2d9d019e8dff2a12fc7d76221ea56cec134

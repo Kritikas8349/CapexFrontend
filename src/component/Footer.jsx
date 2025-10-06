@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.css"
 import { FaSearch } from "react-icons/fa";
-import { Search } from "lucide-react";
+// import { Search } from "lucide-react";
 
 
 

@@ -252,7 +252,7 @@ function NavbarBlue() {
   );
 
   return (
-    <div id="nav_main_blue">
+    <div id="nav_main_blue ">
       {/* Top bar */}
       <div className="top-bar-blue">
         <div className="top-left">Welcome to Market.trad</div>
@@ -306,45 +306,47 @@ function NavbarBlue() {
         </nav>
       )}
 
-      {/* Hamburger overlay */}
-      <div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
-        <div className="close-btn" onClick={() => setMenuOpen(false)}>
-          ✖
+    {/* Hamburger overlay */}
+<div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
+  <div className="close-btn" onClick={() => setMenuOpen(false)}>
+    ✖
+  </div>
+  <ul className="overlay-links">
+    {Object.keys(dropdowns).map((menu) => (
+      <li key={menu}>
+        <div
+          className={`has-submenu ${openMenus[menu] ? "open" : ""}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleSubMenu(menu);
+          }}
+        >
+          {menu} <FiChevronRight className="dropdown-icon" />
         </div>
-        <ul className="overlay-links">
-          {Object.keys(dropdowns).map((menu) => (
-            <li key={menu}>
-              <div
-                className={`has-submenu ${openMenus[menu] ? "open" : ""}`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleSubMenu(menu);
-                }}
-              >
-                {menu} <FiChevronRight className="dropdown-icon" />
-              </div>
-              {openMenus[menu] && renderOverlayMenu(dropdowns[menu], menu)}
-            </li>
-          ))}
-          <li>
-            <a href="#" className="refer-link">
-              Refer a friends
-            </a>
-          </li>
-          <li>
-            <button className="login-btn">Log In</button>
-          </li>
-          <li>
-            <button className="join-bttn">Join Now</button>
-          </li>
-        </ul>
-        <div className="overlay-bottom-row">
-          <span>Personal</span>
-          <span>Partners</span>
-          <span>Research</span>
-          <span>Academy</span>
-        </div>
-      </div>
+        {openMenus[menu] && renderOverlayMenu(dropdowns[menu], menu)}
+      </li>
+    ))}
+
+    <li>
+      <a href="#" className="refer-link">
+        Refer a friends
+      </a>
+    </li>
+    <li>
+      <button className="login-btn">Log In</button>
+    </li>
+    <li>
+      <button className="join-bttn">Join Now</button>
+    </li>
+  </ul>
+  <div className="overlay-bottom-row">
+    <span>Personal</span>
+    <span>Partners</span>
+    <span>Research</span>
+    <span>Academy</span>
+  </div>
+</div>
+
     </div>
   );
 }

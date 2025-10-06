@@ -1,0 +1,325 @@
+.example-review-wrapper {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Hero Section */
+.example-hero-section {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  position: relative;
+  margin-top: -24px;
+}
+
+.example-breadcrumb {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  color: aliceblue;
+}
+
+.example-hero-title {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+/* Info Section */
+.example-info-section {
+  background-color: #356ef4; /* Blue background */
+  padding: 50px 20px;
+}
+
+.example-info-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.example-info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+.example-shortdesc-wrapper {
+  padding: 50px 20px;
+  background: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+
+  /* Center content with proper width */
+  max-width: 1100px; /* aap apne design ke hisaab se 1000-1200px rakh sakte ho */
+  margin: 0 auto; /* center align */
+}
+
+.example-shortdesc-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1552e1;
+  margin-bottom: 20px;
+}
+
+.example-shortdesc-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.example-shortdesc-highlight {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.example-shortdesc-table {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.example-row {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.example-row:last-child {
+  border-bottom: none;
+}
+
+.example-col-label {
+  width: 30%;
+  background: #f2f5ff;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.example-col-value {
+  width: 70%;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.example-col-value ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.example-col-value a {
+  color: #1552e1;
+  text-decoration: none;
+}
+
+.example-col-value a:hover {
+  text-decoration: underline;
+}
+
+.account-types {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* ===================== Responsive ===================== */
+@media (max-width: 992px) {
+  .example-row {
+    flex-direction: column;
+  }
+
+  .example-col-label,
+  .example-col-value {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .example-shortdesc-wrapper {
+    max-width: 95%; /* mobile pe left/right thoda hi space lega */
+    padding: 30px 15px;
+  }
+
+  .example-shortdesc-title {
+    font-size: 22px;
+  }
+
+  .example-shortdesc-text,
+  .example-shortdesc-highlight,
+  .example-col-label,
+  .example-col-value {
+    font-size: 14px;
+  }
+}
+
+
+.promotions {
+  padding: 40px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0047ab;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.promotions-grid {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 280px;
+}
+
+.column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column li {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: #0047ab;
+  margin-right: 8px;
+}
+
+
+.promotions {
+  padding: 40px 20px;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.promotions .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0047ab;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.promotions .description {
+  font-size: 16px;
+  color: #333;
+  margin: 0 auto 30px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.promotions-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.promotions .column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.promotions .column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.promotions .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promotions .column li {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.promotions .icon {
+  color: #0047ab;
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 992px) {
+  .promotions .title {
+    font-size: 24px;
+  }
+  .promotions-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotions .title {
+    font-size: 22px;
+  }
+  .promotions .description {
+    font-size: 15px;
+  }
+  .promotions-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .promotions .column {
+    max-width: 100%;
+    text-align: center;
+  }
+  .promotions .column li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .promotions .title {
+    font-size: 20px;
+  }
+  .promotions .description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .promotions .column h3 {
+    font-size: 16px;
+  }
+  .promotions .column li {
+    font-size: 14px;
+  }
+}

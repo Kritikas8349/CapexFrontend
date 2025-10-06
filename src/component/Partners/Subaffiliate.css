@@ -1,0 +1,596 @@
+/* Reset body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HERO SECTION ================= */
+.sub-hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* ================= HOW IT WORKS SECTION ================= */
+.sub-how-it-works {
+  background-color: #0c63e4;
+  color: white;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.sub-how-container {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  gap: 5%;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+}
+
+.how-left {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.how-left h2 {
+  font-size: 3rem;
+  margin: 0;
+  margin-left: -20px;
+}
+
+.how-right {
+  flex: 1 1 55%;
+  display: flex;
+  align-items: center;
+}
+
+.how-right p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #c9c7c7;
+  margin: 0;
+}
+
+/* ================= IMAGE SECTION ================= */
+.image_section_div_1 {
+  /* border: 2px solid yellow; */
+  height: 90vh;
+  width: 99vw;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 6%;
+}
+
+.image_section_div_1_left {
+  /* border: 2px solid rgb(255, 0, 47); */
+  height: 80vh;
+  width: 40vw;
+  margin-left: 6%;
+}
+
+.image_section_div_1_right {
+  /* border: 2px solid rgb(255, 0, 47); */
+  height: 80vh;
+  width: 41vw;
+}
+
+.image_section_h1 {
+  color: #0c63e4;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+               'Lucida Grande', 'Lucida Sans Unicode', 
+               Geneva, Verdana, sans-serif;
+}
+
+.image_sectionh3 {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.image_sectionp {
+  font-size: 20px;
+  color: #646262;
+  margin-top: 40px;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  .how-left h2 {
+    font-size: 2.3rem;
+   align-items: center;
+  }
+  .how-right p {
+    font-size: 1.05rem;
+  }
+
+  /* Image Section */
+  .image_section_div_1 {
+    gap: 30px;
+  }
+  .image_section_h1 {
+    font-size: 1.8rem;
+  }
+  .image_sectionh3 {
+    font-size: 1.3rem;
+  }
+  .image_sectionp {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .sub-hero-section {
+    height: 50vh;
+    justify-content: center;
+  }
+  .hero-content {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+  .sub-how-container {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+  }
+  .how-left,
+  .how-right {
+    flex: 1 1 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .how-left h2 {
+    font-size: 2rem;
+    align-items: center;
+  }
+  .how-right p {
+    font-size: 1rem;
+  }
+
+  /* Image Section */
+  .image_section_div_1 {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .image_section_div_1_left,
+  .image_section_div_1_right {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+  }
+  .image_section_h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .image_sectionh3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .image_sectionp {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .how-left h2 {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+  .how-right p {
+    font-size: 0.9rem;
+  }
+
+  /* Image Section */
+  .image_section_h1 {
+    font-size: 1.3rem;
+  }
+  .image_sectionh3 {
+    font-size: 1rem;
+  }
+  .image_sectionp {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .right-image-side {
+    width: 100%;
+    max-height: 300px; /* optional: mobile par height control karne ke liye */
+    object-fit: contain; /* pura image dikhe without crop */
+  }
+}
+@media (max-width: 768px) {
+  .how-left {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: center;     /* vertically center */
+    text-align: center;
+  }
+
+  .how-left h2 {
+    font-size: 2rem;
+    margin: 0;  /* extra margin hata diya */
+  }
+}
+
+
+.sub-affiliates-steps {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.steps-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.steps-container h2 {
+  font-size: 2.5rem;
+  color: #0c63e4;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.steps-description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Carousel wrapper */
+.steps-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Steps list as horizontal flex */
+.steps-list {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin-bottom: 40px; /* space for arrows below */
+}
+
+/* Each step box */
+.step {
+  background-color: #fff;
+  flex: 0 0 33.33%; /* Show 3 steps on desktop */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-right: 20px;
+  box-sizing: border-box;
+  border: 2px solid #0c63e4; /* blue border for all steps */
+}
+
+/* Last step should not have margin */
+.step:last-child {
+  margin-right: 0;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0c63e4;
+  color: #0c63e4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Slide buttons: below the steps, centered */
+.steps-wrapper .slider-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.slide-prev, .slide-next {
+  background: #0c63e4;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+ /* border: 2px solid yellow; */
+ gap: 40px;
+ margin-left: 20px;
+}
+
+.slide-prev:hover, .slide-next:hover {
+  background-color: #0841a3;
+  transform: scale(1.1);
+}
+
+/* Tablet: 2 steps per view */
+@media (max-width: 1024px) {
+  .step {
+    flex: 0 0 48%;
+  }
+  .steps-container h2 {
+    font-size: 2rem;
+  }
+  .steps-description {
+    font-size: 0.95rem;
+  }
+  .step h3 {
+    font-size: 1rem;
+  }
+  .step p {
+    font-size: 0.9rem;
+  }
+  .steps-wrapper .slider-buttons {
+    gap: 20px;
+  }
+}
+
+/* Mobile: 1 step per view */
+@media (max-width: 768px) {
+  .step {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+  .steps-container h2 {
+    font-size: 1.8rem;
+  }
+  .steps-description {
+    font-size: 0.9rem;
+  }
+  .step h3 {
+    font-size: 0.95rem;
+  }
+  .step p {
+    font-size: 0.85rem;
+  }
+  .steps-wrapper .slider-buttons {
+    gap: 15px;
+  }
+}
+/* Tablet: 2 steps per view */
+@media (max-width: 1024px) {
+  .step {
+    flex: 0 0 48%;
+    margin-right: 20px; /* added margin between steps */
+  }
+  .step:last-child {
+    margin-right: 0; /* last step no margin */
+  }
+  .steps-container h2 {
+    font-size: 2rem;
+  }
+  .steps-description {
+    font-size: 0.95rem;
+  }
+  .step h3 {
+    font-size: 1rem;
+  }
+  .step p {
+    font-size: 0.9rem;
+  }
+  .steps-wrapper .slider-buttons {
+    gap: 20px;
+  }
+}
+
+/* Mobile: 1 step per view */
+@media (max-width: 768px) {
+  .step {
+    flex: 0 0 100%;
+    margin-right: 0; /* optional: can set small margin if needed */
+    margin-bottom: 20px; /* add vertical spacing between slides */
+  }
+  .steps-container h2 {
+    font-size: 1.8rem;
+  }
+  .steps-description {
+    font-size: 0.9rem;
+  }
+  .step h3 {
+    font-size: 0.95rem;
+  }
+  .step p {
+    font-size: 0.85rem;
+  }
+  .steps-wrapper .slider-buttons {
+    gap: 15px;
+  }
+}
+
+/* Extra small screens: adjust padding and text */
+@media (max-width: 480px) {
+  .sub-affiliates-steps {
+    padding: 40px 10px;
+  }
+  .step {
+    padding: 15px;
+    margin-bottom: 15px; /* spacing between steps */
+  }
+  .slide-prev, .slide-next {
+    padding: 10px 16px;
+    font-size: 1.1rem;
+  }
+}
+
+.green_section-div {
+  /* border: 2px solid green;  */
+  margin-top: 40px;
+  width: 65vw; /* desktop width */
+  /* max-width: 800px;  */
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+.sub-affiliate-info {
+  text-align: left; /* ensures all children are left-aligned */
+}
+
+.sub-affiliate-info p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0; /* remove default margin */
+}
+
+.sub-affiliate-info .highlight-blue {
+  color: #0c63e4;
+  font-weight: bold;
+}
+
+/* Green button */
+.sub-affiliate-info .green-button {
+  display: inline-block; /* keeps padding intact */
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center; /* text inside button centered */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.sub-affiliate-info .green-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Responsive for tablet */
+@media (max-width: 1024px) {
+  .green_section-div {
+    width: 80%; /* slightly wider for tablets */
+    padding: 18px;
+  }
+
+  .sub-affiliate-info p {
+    font-size: 1.2rem;
+  }
+
+  .sub-affiliate-info .green-button {
+    padding: 11px 22px;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .green_section-div {
+    width: 95%; /* almost full width on mobile */
+    padding: 15px;
+  }
+
+  .sub-affiliate-info p {
+    font-size: 1.1rem;
+  }
+
+  .sub-affiliate-info .green-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .green_section-div {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .sub-affiliate-info p {
+    font-size: 1rem;
+  }
+
+  .sub-affiliate-info .green-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}

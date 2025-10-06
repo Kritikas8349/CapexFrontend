@@ -57,21 +57,21 @@ function MarketingMaterials() {
                 </div>
             </div>
 
-            <div className="container-fluid py-5 bg-free-trial ">
-                <div className="row align-items-center justify-content-between px-3 px-md-5">
+            <div className="container-fluid py-5 bg-free-trial py-lg-5 py-md-5 ">
+                <div className="row align-items-center justify-content-between px-3 px-md-5 py-lg-5 py-md-5">
 
                     {/* Left Column */}
-                    <div className="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                    <div className="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start border-end">
                         <h2 className="fw-bold text-white mb-3 text-start" style={{ fontSize: "2.5rem", lineHeight: "1.3" }}>
                             Why Partner <br /> with BlackBull Markets?
                         </h2>
                     </div>
 
                     {/* Right Column */}
-                    <div className="col-12 col-md-6 text-start text-md-start">
+                    <div className="col-12 col-md-6 text-start text-md-start ">
                         <h5
-                            className="text-light fw-normal lh-lg"
-                            style={{ fontSize: "1.1rem", maxWidth: "500px", margin: "0 auto" }}
+                            className="text-light fw-normal lh-lg ms-3"
+                            style={{ fontSize: "1.1rem", margin: "0 auto" }}
                         >
                             Partnering with BlackBull Markets offers unlimited earning potential,
                             competitive rebates, and custom structures to suit your needs. You’ll
@@ -85,7 +85,7 @@ function MarketingMaterials() {
 
             {/* --------Marketing Cards-------- */}
             <div className="container-fluid">
-                <div className="container py-5 mx-lg-5 px-4">
+                <div className="container py-5 mx-lg-5 px-3">
                     <h6 className='lh-base px-lg-3 mx-lg-2'>We take pride in having proven high-converting marketing material and make sure that we’re always following cutting-edge marketing trends. All our creative is available in multiple languages and getting started is easy – our affiliate portal has everything you need right in one place.<br />
 
                         Our team is available to assist you in finding or promoting the right resources for your needs, so you can focus on growth and start building your business using the same resources we used to build the BlackBull Markets brand.</h6>

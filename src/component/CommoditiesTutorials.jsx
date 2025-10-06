@@ -115,7 +115,7 @@ function CommoditiesTutorials() {
                     <img
                       src={lesson.img}
                       alt={lesson.title}
-                      className="w-100 h-100"
+                      className="w-100 h-100 opacity-75"
                       style={{ objectFit: 'cover' }}
                     />
                   </div>
