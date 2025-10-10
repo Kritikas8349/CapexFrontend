@@ -1,24 +1,25 @@
 /* Footer Base */
-.footer-fo {
+.footer {
   background-color: #ebefee;
   padding-bottom: 20px;
   width: 100%;
 }
 
 /* Payment Section */
-.paymentgrid1-fo {
+.paymentgrid1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: #fff;
   width: 100%;
-  margin-left: 20px;
   max-width: 1480px;
+  /* margin: 0 auto; */
   border-radius: 16px;
+  
 }
 
-.payment-title-fo {
+.payment-title {
   font-size: 36px;
   font-weight: bold;
   color: #000;
@@ -26,12 +27,12 @@
   text-align: center;
 }
 
-.payment-title-fo span {
+.payment-title span {
   color: #493ffd;
 }
 
 /* Payment Logos Grid */
-.payment-logos-fo {
+.payment-logos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
@@ -39,23 +40,23 @@
   width: 100%;
 }
 
-.payment-logos-fo img {
+.payment-logos img {
   max-width: 120px;
   max-height: 50px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
 
-.payment-logos-fo img.small-logo-fo {
+.payment-logos img.small-logo {
   max-height: 40px;
 }
 
-.payment-logos-fo img:hover {
+.payment-logos img:hover {
   transform: scale(1.05);
 }
 
 /* Hero Section */
-.herocontainer1-fo {
+.herocontainer1 {
   position: relative;
   width: 100%;
   max-width: 1480px;
@@ -65,35 +66,35 @@
   align-items: flex-start;
   justify-content: center;
   color: #fff;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0 auto; 
   border-radius: 16px;
 }
 
-.herooverlay1-fo {
+.herooverlay1 {
   text-align: center;
   max-width: 800px;
   width: 90%;
   padding: 10px;
 }
 
-.herooverlay1-fo h1 {
+.herooverlay1 h1 {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.herooverlay1-fo h1 span {
+.herooverlay1 h1 span {
   color: #3b82f6;
 }
 
-.herooverlay1-fo p {
+.herooverlay1 p {
   font-size: 1.1rem;
   margin-bottom: 25px;
   color: #ddd;
 }
 
 /* Search Box */
-.searchbox1-fo {
+.searchbox1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +109,7 @@
   border-radius: 30px;
 }
 
-.searchbox1-fo input {
+.searchbox1 input {
   flex: 1;
   border: none;
   outline: none;
@@ -118,7 +119,7 @@
   background: transparent;
 }
 
-.searchbox1-fo .button1-fo {
+.searchbox1 .button1 {
   background: #3b82f6;
   color: white;
   border: none;
@@ -131,17 +132,16 @@
   transition: background 0.3s ease;
 }
 
-.searchbox1-fo .button1-fo:hover {
+.searchbox1 .button1:hover {
   background: #2563eb;
 }
 
 /* Mobile Button Below Searchbox */
-.mobile-btn-fo {
-  display: none;
+.mobile-btn {
+  display: none; /* hidden by default */
 }
-
 /* Footer Container */
-.footercontainer1-fo {
+.footercontainer1 {
   background: linear-gradient(to bottom right, #000000, #231586);
   color: #fff;
   padding: 40px 20px;
@@ -153,34 +153,34 @@
 }
 
 /* Footer Top */
-.footertop1-fo {
+.footertop1 {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* 👈 logo thoda upar align hoga */
   flex-wrap: wrap;
 }
 
-.footerlogo1-fo img {
+.footerlogo1 img {
   width: 160px;
   height: auto;
   max-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* thoda gap neeche */
 }
 
 /* Footer Social */
-.footersocial1-fo {
+.footersocial1 {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* horizontal center */
   align-items: center;
-  gap: 12px;
+  gap: 12px; /* logos ke beech gap */
   flex-wrap: wrap;
 }
 
-.footersocial1-fo a {
+.footersocial1 a {
   display: inline-block;
 }
 
-.footersocial1-fo img {
+.footersocial1 img {
   width: 36px;
   height: 36px;
   object-fit: contain;
@@ -188,138 +188,141 @@
   transition: transform 0.2s ease;
 }
 
-.footersocial1-fo img:hover {
-  transform: scale(1.1);
+.footersocial1 img:hover {
+  transform: scale(1.1); /* hover effect */
 }
 
 /* Footer Content */
-.footercontent1-fo {
+.footercontent1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* center on small screens */
   gap: 20px;
   border-bottom: 2px solid grey;
   padding-top: 50px;
   text-align: start;
 }
 
-.footersection1-fo {
+.footersection1 {
   flex: 1 1 180px;
   margin: 10px;
   min-width: 140px;
 }
 
-.footersection1-fo h3 {
+.footersection1 h3 {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.footersection1-fo ul {
+.footersection1 ul {
   list-style: none;
   padding: 0;
 }
 
-.footersection1-fo ul li {
+.footersection1 ul li {
   font-size: 14px;
   margin-bottom: 8px;
 }
 
 /* Footer Bottom */
-.footerbottom1-fo {
+.footerbottom1 {
   justify-items: center;
   margin-top: 30px;
   text-align: start;
 }
 
-.footercontact1-fo p {
+.footercontact1 p {
   font-size: 14px;
   margin: 5px 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .footertop1-fo {
+  .footertop1 {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .footerlogo1-fo img {
+  .footerlogo1 img {
     margin-bottom: 20px;
   }
 
-  .footersocial1-fo {
+  .footersocial1 {
     justify-content: center;
     margin-bottom: 20px;
   }
 }
 
+
 /* Responsive Styles */
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .footercontent1-fo {
+  .footercontent1 {
     flex-direction: column;
     align-items: center;
   }
 
-  .footersection1-fo {
+  .footersection1 {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .footersocial1-fo img {
+  .footersocial1 img {
     width: 32px;
     height: 32px;
   }
 
-  .footerlogo1-fo img {
+  .footerlogo1 img {
     width: 140px;
   }
 }
 
 /* Small Tablets / Large Phones */
 @media (max-width: 768px) {
-  .payment-logos-fo {
+  .payment-logos {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .paymentgrid1-fo img {
+  .paymentgrid1 img {
     max-width: 100px;
     max-height: 40px;
   }
 
-  .herocontainer1-fo {
+  .herocontainer1 {
     height: 500px;
     margin: 20px auto;
   }
 
-  .herooverlay1-fo h1 {
+  .herooverlay1 h1 {
     font-size: 1.5rem;
   }
 
-  .herooverlay1-fo p {
+  .herooverlay1 p {
     font-size: 1rem;
   }
 
-  .searchbox1-fo {
+  .searchbox1 {
     flex-direction: column;
     height: auto;
     padding: 8px;
     gap: 10px;
   }
 
-  .searchbox1-fo input {
+  .searchbox1 input {
     width: 100%;
   }
 
-  .searchbox1-fo .desktop-btn-fo {
+  /* Hide button inside searchbox on small screens */
+  .searchbox1 .desktop-btn {
     display: none;
   }
 
-  .mobile-btn-fo {
+  /* Show mobile button */
+  .mobile-btn {
     display: block;
     width: 100%;
     max-width: 500px;
@@ -336,62 +339,62 @@
     text-align: center;
   }
 
-  .mobile-btn-fo:hover {
+  .mobile-btn:hover {
     background: #2563eb;
   }
 
-  .footercontainer1-fo {
+  .footercontainer1 {
     padding: 30px 15px;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-  .payment-logos-fo {
+  .payment-logos {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
-  .paymentgrid1-fo img {
+  .paymentgrid1 img {
     max-width: 90px;
     max-height: 35px;
   }
 
-  .herooverlay1-fo h1 {
+  .herooverlay1 h1 {
     font-size: 1.2rem;
   }
 
-  .herooverlay1-fo p {
+  .herooverlay1 p {
     font-size: 0.9rem;
   }
 
-  .searchbox1-fo {
+  .searchbox1 {
     height: auto;
     flex-direction: column;
     padding: 6px 10px;
     gap: 8px;
   }
 
-  .searchbox1-fo input {
+  .searchbox1 input {
     font-size: 0.9rem;
   }
 
-  .footersection1-fo {
+  .footersection1 {
     flex: 1 1 100%;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .footersocial1-fo img {
+  .footersocial1 img {
     width: 28px;
     height: 28px;
   }
 
-  .footerlogo1-fo img {
+  .footerlogo1 img {
     width: 120px;
   }
 
-  .footerbottom1-fo {
+  .footerbottom1 {
     text-align: center;
   }
 }

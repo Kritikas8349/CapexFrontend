@@ -26,9 +26,10 @@ body {
     padding-top: 50px;
     overflow: hidden;
     color: white;
-    width: 98.5%;
+    width: 98%;
     height: 80vh;
     border-radius: 20px;
+    margin: 10px 0px 0px 10px;
 }
 
 .q2-hero {
