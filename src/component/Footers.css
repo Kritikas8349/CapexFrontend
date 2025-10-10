@@ -150,6 +150,7 @@
   margin: 20px auto 0 auto;
   border-radius: 16px;
   box-sizing: border-box;
+ 
 }
 
 /* Footer Top */
@@ -201,7 +202,19 @@
   border-bottom: 2px solid grey;
   padding-top: 50px;
   text-align: start;
+   text-decoration: none;
 }
+
+.footersection1 ul li a {
+  color: white;          /* White text */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.footersection1 ul li a:hover {
+  color: #cccccc; /* Optional: light grey on hover */
+}
+
 
 .footersection1 {
   flex: 1 1 180px;

@@ -114,6 +114,7 @@
       right: 20px;
       max-width: 100%;
       text-align: center;
+
     }
   
     .partner-home-heading {
@@ -151,7 +152,7 @@
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-  background: #ebefee;
+  background: #fff;
   border: 1px solid #f1f1f1;
   border-radius: 12px;
   margin: 2rem auto;
@@ -1130,7 +1131,7 @@
     flex-wrap: wrap; 
     padding: 60px 10px; 
     box-sizing: border-box;
-    background-color: #ebefee; 
+    background-color: #fff; 
     margin-top: 40px;
     min-height: 250px; 
     border-radius: 12px;

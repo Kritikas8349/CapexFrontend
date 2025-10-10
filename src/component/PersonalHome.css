@@ -657,71 +657,86 @@
   
   
   
-  
-  .market-section {
-    width: 100%;
-    max-width: 1500px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: #000;
-  }
-  
-  .image-container {
-    position: relative;
-    width: 100%;
-    padding: 20px 20px 0 20px;
-  }
-  
-  .team-img {
-    width: 100%;
-    /* display: block; */
-  }
-  
-  .overlay-text {
-    padding: 30px;
-    background: #000;
-    color: #fff;
-  }
-  
+ /* ================= MARKET SECTION ================= */
+.market-section {
+  width: 100%;
+  max-width: 1500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  margin: 20px auto; /* Center horizontally */
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure no overflow from padding */
+}
+
+.team-img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+.overlay-text {
+  padding: 30px;
+  background: #000;
+  color: #fff;
+}
+
+.overlay-text .heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.heading span {
+  color: #2d4bff;
+}
+
+.overlay-text .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: start;
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Tablets */
+@media (max-width: 768px) {
   .overlay-text .heading {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: #fff;
+    font-size: 2rem;
   }
-  
-  .heading span {
-    color: #2d4bff;
-  }
-  
+
   .overlay-text .description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #fff;
-    text-align: start;
+    font-size: 1rem;
   }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .heading {
-      font-size: 2rem;
-    }
-  
-    .description {
-      font-size: 1rem;
-    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .image-container {
+    padding: 10px;
   }
-  
-  @media (max-width: 480px) {
-    .heading {
-      font-size: 1.7rem;
-    }
-    
-    .image-container{
-      padding: 10px 10px 10px 9px;
-    }
+
+  .overlay-text {
+    padding: 20px;
   }
+
+  .overlay-text .heading {
+    font-size: 1.7rem;
+  }
+
+  .overlay-text .description {
+    font-size: 0.95rem;
+  }
+}
+
   
   
   .features-container {

@@ -112,7 +112,7 @@
 /* ===== Navbar ===== */
 .navbar-blue {
   position: fixed;
-  top: 75px; /* ⬅️ was 60px, increased for gap */
+  top: 75px; /* ⬅ was 60px, increased for gap */
   left: 0;
   right: 0;
   height: 70px;
@@ -333,23 +333,64 @@
   color: #fff;
 }
 
+/* Overlay hamburger menu base */
 .hamburger-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
-  z-index: 2000;
+  background-color: white;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 1rem;
   display: none;
   flex-direction: column;
-  padding: 70px 20px;
-  overflow-y: auto;
 }
 
 .hamburger-overlay.open {
   display: flex;
 }
+
+/* Top-level links inside overlay */
+.overlay-links > li {
+  margin-bottom: 10px;
+}
+
+/* Submenus under main menu items */
+.overlay-submenu {
+  padding-left: 1rem;
+  margin-top: 5px;
+}
+
+.overlay-submenu li {
+  list-style: none;
+  margin: 6px 0;
+}
+
+/* Submenu appearance */
+.has-submenu {
+  cursor: pointer;
+}
+
+.submenu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Indentation for nested submenus */
+.overlay-submenu .overlay-submenu {
+  padding-left: 1rem;
+  margin-top: 4px;
+}
+
+/* Optional: icons rotate when open */
+.has-submenu.open > .submenu-header .dropdown-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
 
 .close-btn {
   align-self: flex-end;
@@ -552,6 +593,3 @@ li.open > .dropdown-icon,
   }
 
 }
-
-
-

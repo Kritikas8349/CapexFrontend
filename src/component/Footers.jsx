@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./Footers.css"; // ✅ link your styles here
 
 function Footers() {
@@ -82,80 +83,81 @@ function Footers() {
 
         {/* Content */}
         <div className="footercontent1">
-          <div className="footersection1">
-            <h3>Markets</h3>
-            <ul>
-              <li>Markets Overview</li>
-              <li>Forex</li>
-              <li>Shares</li>
-              <li>Commodities</li>
-              <li>Futures</li>
-              <li>Indices</li>
-            </ul>
-          </div>
+  <div className="footersection1">
+    <h3>Markets</h3>
+    <ul>
+      <li><a href="/markets">Markets Overview</a></li>
+      <li><a href="/markets/forex">Forex</a></li>
+      <li><a href="/market/equities">Shares</a></li>
+      <li><a href="/markets/commodities">Commodities</a></li>
+      <li><a href="/markets/futures">Futures</a></li>
+      <li><a href="/markets/indices">Indices</a></li>
+    </ul>
+  </div>
 
-          <div className="footersection1">
-            <h3>Platforms</h3>
-            <ul>
-              <li>TradingView</li>
-              <li>cTrader</li>
-              <li>MetaTrader 4</li>
-              <li>MetaTrader 5</li>
-              <li>MetaTrader Web Trader</li>
-              <li>Markets.Trad Copy Trader</li>
-              <li>Markets.Trad Invest</li>
-              <li>Trading Tools</li>
-            </ul>
-          </div>
+  <div className="footersection1">
+    <h3>Platforms</h3>
+    <ul>
+      <li><a href="/platforms/tradingview">TradingView</a></li>
+      <li><a href="/platforms/ctrade">cTrader</a></li>
+      <li><a href="/platforms/mt4">MetaTrader 4</a></li>
+      <li><a href="/platforms/mt5">MetaTrader 5</a></li>
+      <li><a href="/webtrader">MetaTrader Web Trader</a></li>
+      <li><a href="/platforms/copytrade">Markets.Trad Copy Trader</a></li>
+      <li><a href="/trad-invest">Markets.Trad Invest</a></li>
+      <li><a href="/platforms/tradingtools">Trading Tools</a></li>
+    </ul>
+  </div>
 
-          <div className="footersection1">
-            <h3>Education</h3>
-            <ul>
-              <li>Education Hub</li>
-              <li>Forex Tutorials</li>
-              <li>Shares Tutorials</li>
-              <li>Commodities Tutorials</li>
-              <li>Trading Opportunities</li>
-              <li>Economic Calendar</li>
-              <li>Demo Trade</li>
-            </ul>
-          </div>
+  <div className="footersection1">
+    <h3>Education</h3>
+    <ul>
+      <li><a href="/education/education-hub">Education Hub</a></li>
+      <li><a href="/education/forex">Forex Tutorials</a></li>
+      <li><a href="/education/shares">Shares Tutorials</a></li>
+      <li><a href="/education/commodities">Commodities Tutorials</a></li>
+      <li><a href="/education/research/opportunities">Trading Opportunities</a></li>
+      <li><a href="/support/economic-calendar">Economic Calendar</a></li>
+      <li><a href="/demo-trade">Demo Trade</a></li>
+    </ul>
+  </div>
 
-          <div className="footersection1">
-            <h3>About</h3>
-            <ul>
-              <li>About us</li>
-              <li>Account Comparison</li>
-              <li>Company News</li>
-              <li>Compliance</li>
-              <li>Careers</li>
-            </ul>
-          </div>
+  <div className="footersection1">
+    <h3>About</h3>
+    <ul>
+      <li><a href="/about/about-us">About us</a></li>
+      <li><a href="/about/comparison">Account Comparison</a></li>
+      <li><a href="/about/news">Company News</a></li>
+      <li><a href="/about/compliance">Compliance</a></li>
+      <li><a href="/careers">Careers</a></li>
+    </ul>
+  </div>
 
-          <div className="footersection1">
-            <h3>Support</h3>
-            <ul>
-              <li>Platform Support</li>
-              <li>Market Support</li>
-              <li>Account Support</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
+  <div className="footersection1">
+    <h3>Support</h3>
+    <ul>
+      <li><a href="/support/platform-support">Platform Support</a></li>
+      <li><a href="/support/market-support">Market Support</a></li>
+      <li><a href="/support/account-support">Account Support</a></li>
+      <li><a href="/support/contact-support">Contact Us</a></li>
+    </ul>
+  </div>
 
-          <div className="footersection1">
-            <h3>Legal</h3>
-            <ul>
-              <li>Legal Hub</li>
-              <li>Risk Warning</li>
-              <li>Privacy Policy</li>
-              <li>Client Service Agreement</li>
-              <li>Complaints Handling Procedure</li>
-              <li>Confidentiality Policy</li>
-              <li>Conflicts of Interests Policy</li>
-              <li>Cookie Policy EU</li>
-            </ul>
-          </div>
-        </div>
+  <div className="footersection1">
+    <h3>Legal</h3>
+    <ul>
+      <li><a href="/legal-hub">Legal Hub</a></li>
+      <li><a href="/risk-warning">Risk Warning</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/client-service-agreement">Client Service Agreement</a></li>
+      <li><a href="/complaints-handling">Complaints Handling Procedure</a></li>
+      <li><a href="/confidentiality-policy">Confidentiality Policy</a></li>
+      <li><a href="/conflicts-policy">Conflicts of Interests Policy</a></li>
+      <li><a href="/cookie-policy-eu">Cookie Policy EU</a></li>
+    </ul>
+  </div>
+</div>
+
 
         {/* Bottom */}
         <div className="footerbottom1">
