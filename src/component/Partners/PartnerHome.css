@@ -27,7 +27,7 @@
     padding: 10px 10px 20px 10px; /* Adds spacing left/right */
     border-radius: 12px;
     overflow: hidden;
-    /* margin: auto 20px 20px 20px; */
+    margin: auto 20px 20px 20px;
     text-align: left;
   }
   
@@ -127,6 +127,9 @@
   
   @media (max-width: 480px) {
 
+    .partner-home-container{
+      margin: 0;
+    }
     .partner-home-image-container {
       height: 73vh;
     }
