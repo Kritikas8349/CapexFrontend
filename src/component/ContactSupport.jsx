@@ -1,5 +1,6 @@
 import React from "react";
 import './ContactSupport.css'; // Make sure to create this CSS file
+import { Link } from "react-router-dom";
 
 const ContactSupport = () => {
   return (
@@ -106,20 +107,25 @@ const ContactSupport = () => {
           <h2 className="support-title">Support</h2>
           <p className="support-text">Helpful resources, FAQs & trader tools.</p>
           <ul className="support-list">
-            <li>
+          <li>
+              <Link to="/support/getting-started">
                 How to get started? <span className="support-arrow"></span>
+              </Link>
             </li>
             <li>
+              <Link to="/support/account-support">
                 Account Support <span className="support-arrow"></span>
+              </Link>
             </li>
             <li>
+              <Link to="/support/platform-support">
                 Platform Support <span className="support-arrow"></span>
+              </Link>
             </li>
             <li>
+              <Link to="/support/market-support">
                 Market Support <span className="support-arrow"></span>
-            </li>
-            <li>
-                Calculators <span className="support-arrow"></span>
+              </Link>
             </li>
             </ul>
 

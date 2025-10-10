@@ -7,37 +7,37 @@ function Market() {
         {
             name: "TradingView",
             desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-            icon: "Frame84151.png", // apna icon path
+            icon: "/public/Frame84151.png", // apna icon path
             isNew: true,
         },
         {
             name: "MetaTrader 4",
             desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-            icon: "Frame84153.png",
+            icon: "/public/Frame84153.png",
             isNew: false,
         },
         {
             name: "MetaTrader 5",
             desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-            icon: "Frame84153.png",
+            icon: "/public/Frame84153.png",
             isNew: false,
         },
         {
             name: "cTrader",
             desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-            icon: "Frame84152.png",
+            icon: "/public/Frame84152.png",
             isNew: true,
         },
         {
             name: "BlackBull CopyTrader",
             desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-            icon: "Frame84155.png",
+            icon: "/public/Frame84155.png",
             isNew: true,
         },
         {
             name: "BlackBull Invest",
             desc: "Access 26,000+ Shares, Options, ETFs, Bonds, and other underlying assets.",
-            icon: "Frame84155.png",
+            icon: "/public/Frame84155.png",
             isNew: false,
         },
     ];
@@ -299,121 +299,178 @@ function Market() {
                 </div>
             </div>
 
-            <div className="m1-table-container">
-                <div className="m1-controls">
-                    <div className="m1-filters">
-                        <button className={marketState === "All" ? "m1-active" : ""} onClick={() => setMarketState("All")}>All</button>
-                        <button className={marketState === "Commodities" ? "m1-active" : ""} onClick={() => setMarketState("Commodities")}>Commodities</button>
-                        <button className={marketState === "Crypto" ? "m1-active" : ""} onClick={() => setMarketState("Crypto")}>Crypto</button>
-                        <button className={marketState === "Equities" ? "m1-active" : ""} onClick={() => setMarketState("Equities")}>Equities</button>
-                        <button className={marketState === "Forex" ? "m1-active" : ""} onClick={() => setMarketState("Forex")}>Forex</button>
-                        <button className={marketState === "Indices" ? "m1-active" : ""} onClick={() => setMarketState("Indices")}>Indices</button>
-                    </div>
+            <div className="m1-table-container1-12">
+                    <div className="m1-controls-12">
+                        <div className="m1-filters-12">
+                        <button className={marketState === "All" ? "m1-active-12" : ""} onClick={() => setMarketState("All")}>All</button>
+                        <button className={marketState === "Commodities" ? "m1-active-12" : ""} onClick={() => setMarketState("Commodities")}>Commodities</button>
+                        <button className={marketState === "Crypto" ? "m1-active-12" : ""} onClick={() => setMarketState("Crypto")}>Crypto</button>
+                        <button className={marketState === "Equities" ? "m1-active-12" : ""} onClick={() => setMarketState("Equities")}>Equities</button>
+                        <button className={marketState === "Forex" ? "m1-active-12" : ""} onClick={() => setMarketState("Forex")}>Forex</button>
+                        <button className={marketState === "Indices" ? "m1-active-12" : ""} onClick={() => setMarketState("Indices")}>Indices</button>
+                        </div>
 
-                    <input
+                        <input
                         type="text"
                         placeholder="Search...."
-                        className="m1-search"
+                        className="m1-search-12"
                         onChange={(e) => {
                             const text = e.target.value.toLowerCase();
                             setInstruments(prev =>
-                                initialInstruments.filter(i =>
-                                    i.name.toLowerCase().includes(text) ||
-                                    i.desc.toLowerCase().includes(text)
-                                )
+                            initialInstruments.filter(i =>
+                                i.name.toLowerCase().includes(text) ||
+                                i.desc.toLowerCase().includes(text)
+                            )
                             );
                         }}
-                    />
+                        />
 
-                    <select
-                        className="m1-sort-dropdown"
+                        <select
+                        className="m1-sort-dropdown-12"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
-                    >
+                        >
                         <option value="" disabled hidden>Sort By</option>
                         <option value="name-asc">Name A → Z</option>
                         <option value="name-desc">Name Z → A</option>
                         <option value="buy-asc">Buy Price ↑</option>
                         <option value="buy-desc">Buy Price ↓</option>
-                    </select>
+                        </select>
 
-                    <div className="m1-dropdown">
-                        <button className="m1-dropdown-btn" onClick={toggleDropdown}>Market State ▼</button>
+                        <div className="m1-dropdown-12">
+                        <button className="m1-dropdown-btn-12" onClick={toggleDropdown}>Market State ▼</button>
                         {isOpen && (
-                            <ul className="m1-dropdown-menu">
-                                <a href="#"><li>Market Status</li></a>
-                                <a href="#"><li>Open</li></a>
-                                <a href="#"><li>Closed</li></a>
+                            <ul className="m1-dropdown-menu-12">
+                            <a href="#"><li>Market Status</li></a>
+                            <a href="#"><li>Open</li></a>
+                            <a href="#"><li>Closed</li></a>
                             </ul>
                         )}
+                        </div>
                     </div>
-                </div>
 
-                <div className="m1-table-wrapper">
-                    <table className="m1-table">
+                    <div className="m1-table-wrapper-12">
+                        <table className="m1-table-12">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Buy</th>
-                                <th>Sell</th>
-                                <th>Live Spread (Pips)</th>
-                                <th>1D Chg</th>
+                            <th>Name</th>
+                            <th>Buy</th>
+                            <th>Sell</th>
+                            <th>Live Spread (Pips)</th>
+                            <th>1D Chg</th>
                             </tr>
                         </thead>
                         <tbody>
                             {filteredInstruments.map((item, index) => (
-                                <tr key={index}>
-                                    <td className="m1-name-cell">
-                                        <img src={item.icon} alt={item.name} className="m1-flag" />
-                                        <div>
-                                            <div className="m1-symbol">{item.name}</div>
-                                            <div className="m1-desc">{item.desc}</div>
-                                        </div>
-                                    </td>
-                                    <td className="m1-buy">{item.buy.toFixed(5)}</td>
-                                    <td className="m1-sell">{item.sell.toFixed(5)}</td>
-                                    <td>{item.spread.toFixed(1)}</td>
-                                    <td className={`m1-change ${item.change < 0 ? "m1-red" : "m1-green"}`}>
-                                        {item.change < 0
-                                            ? item.change.toFixed(3) + "%"
-                                            : "+" + item.change.toFixed(3) + "%"}
-                                    </td>
-                                </tr>
+                            <tr key={index}>
+                                <td className="m1-name-cell-12">
+                                <img src={item.icon} alt={item.name} className="m1-flag-12" />
+                                <div>
+                                    <div className="m1-symbol-12">{item.name}</div>
+                                    <div className="m1-desc-12">{item.desc}</div>
+                                </div>
+                                </td>
+                                <td className="m1-buy-12">{item.buy.toFixed(5)}</td>
+                                <td className="m1-sell-12">{item.sell.toFixed(5)}</td>
+                                <td>{item.spread.toFixed(1)}</td>
+                                <td className={`m1-change-12 ${item.change < 0 ? "m1-red-12" : "m1-green-12"}`}>
+                                {item.change < 0
+                                    ? item.change.toFixed(3) + "%"
+                                    : "+" + item.change.toFixed(3) + "%"}
+                                </td>
+                            </tr>
                             ))}
                         </tbody>
-                    </table>
+                        </table>
                 </div>
 
-                <div className="m1-pagination">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                    <span>6</span>
-                    <span>...</span>
-                    <span>164</span>
-                    <span className="m1-next">Next</span>
-                </div>
-            </div>
+                    <div className="m1-pagination-12">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>...</span>
+                        <span>164</span>
+                        <span className="m1-next-12">Next</span>
+                    </div>
+                    </div>
 
-            <section className="m1-trade-platforms">
-                <h2 className="m1-title-section">Trading Platforms</h2>
 
-                <div className="m1-platforms-wrapper">
-                    {platforms.map((platform, index) => (
-                        <div className="m1-platform-box" key={index}>
-                            <div className="m1-platform-top">
-                                <img src={platform.icon} alt={platform.name} className="m1-platform-image" />
-                                <h3>{platform.name}</h3>
-                                {platform.isNew && <span className="m1-badge-new">New</span>}
-                            </div>
-                            <p>{platform.desc}</p>
-                            <button className="m1-btn-learn">Learn More</button>
-                        </div>
-                    ))}
-                </div>
-            </section>
+                    <div className="home-platforms-section-m1">
+  <h2 className="home-platforms-heading-m1">Trading Platform</h2>
+  <div className="home-platforms-grid-m1">
+
+    <div className="home-platform-card-m1">
+      <img src="f1.png" alt="TradingView" className="home-platform-logo-m1" />
+      <div className="home-platform-content-m1">
+        <div className="home-platform-header-m1">
+          <h3 className="home-platform-title-m1">TradingView</h3>
+          <a href="/platforms/tradingview" className="home-learn-more-btn-m1">Learn More</a>
+        </div>
+        <p className="home-platform-desc-m1">Trade directly in TradingView, the world’s leading charting and social platform.</p>
+      </div>
+    </div>
+
+    <div className="home-platform-card-m1">
+      <img src="f1.png" alt="cTrader" className="home-platform-logo-m1" />
+      <div className="home-platform-content-m1">
+        <div className="home-platform-header-m1">
+          <h3 className="home-platform-title-m1">cTrader</h3>
+          <a href="/platforms/ctrade" className="home-learn-more-btn-m1">Learn More</a>
+        </div>
+        <p className="home-platform-desc-m1">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
+      </div>
+    </div>
+
+    <div className="home-platform-card-m1">
+      <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-m1" />
+      <div className="home-platform-content-m1">
+        <div className="home-platform-header-m1">
+          <h3 className="home-platform-title-m1">MetaTrader 4</h3>
+          <a href="/platforms/mt4" className="home-learn-more-btn-m1">Learn More</a>
+        </div>
+        <p className="home-platform-desc-m1">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
+      </div>
+    </div>
+
+    <div className="home-platform-card-m1">
+      <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-m1" />
+      <div className="home-platform-content-m1">
+        <div className="home-platform-header-m1">
+          <h3 className="home-platform-title-m1">MetaTrader 5</h3>
+          <a href="/platforms/mt5" className="home-learn-more-btn-m1">Learn More</a>
+        </div>
+        <p className="home-platform-desc-m1">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
+      </div>
+    </div>
+
+    <div className="home-platform-card-m1">
+      <img src="f3.png" alt="CopyTrader" className="home-platform-logo-m1" />
+      <div className="home-platform-content-m1">
+        <div className="home-platform-header-m1">
+          <h3 className="home-platform-title-m1">CopyTrader</h3>
+          <a href="/platforms/copytrade" className="home-learn-more-btn-m1">Learn More</a>
+        </div>
+        <p className="home-platform-desc-m1">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
+      </div>
+    </div>
+
+    <div className="home-platform-card-m1">
+      <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-m1" />
+      <div className="home-platform-content-m1">
+        <div className="home-platform-header-m1">
+          <h3 className="home-platform-title-m1">Market.Trad Invest</h3>
+          <a href="/platforms/tradingtools" className="home-learn-more-btn-m1">Learn More</a>
+        </div>
+        <p className="home-platform-desc-m1">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
             <div className="m1-t-container">
                 <h1 className="m1-t-heading">Trading Opportunities</h1>
@@ -432,19 +489,7 @@ function Market() {
                 </div>
             </div>
 
-            <div className="m1-payment-container">
-                <div className="m1-payment-grid">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-                    <img src="mastercard.png" alt="MasterCard" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="m1-small-logo" />
-                    <img src="googlepay.png" alt="Google Pay" className="m1-small-logo" />
-                    <img src="banktransfer.png" alt="Bank Transfer" />
-                    <img src="crypto.png" alt="Crypto" />
-                    <img src="neteller.png" alt="Neteller" />
-                    <img src="skrill.png" alt="Skrill" />
-                    <img src="banktransfer.png" alt="Local Bank Transfer" />
-                </div>
-            </div>
+            
         </div>
 
     )

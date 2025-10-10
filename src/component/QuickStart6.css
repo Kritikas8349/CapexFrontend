@@ -14,7 +14,8 @@ html {
 
 .deposit-section {
     display: flex;
-    height: 600px;
+    height: 88vh;
+    margin: 10px 20px 0px 20px ;
     align-items: center;
     justify-content: space-between;
     padding: 80px 5%;
@@ -23,6 +24,7 @@ html {
     position: relative;
     overflow: hidden;
     flex-wrap: nowrap;
+    border-radius: 20px;
 }
 
 /* ==== LEFT SIDE ==== */
@@ -272,6 +274,9 @@ html {
     color: white;
     text-align: center;
     padding: 60px 20px;
+    max-width: 1480px;
+    margin-left: 18px;
+    border-radius: 13px;
 }
 
 .deposit-header6 h1 {
@@ -375,6 +380,9 @@ html {
     color: white;
     flex-wrap: wrap;
     gap: 40px;
+    max-width: 1480px;
+    margin-left: 18px;
+    border-radius: 13px;
 }
 
 /* Left Side Text */
@@ -470,8 +478,10 @@ html {
 }
 
 .faq-container6 {
-    max-width: 1500px;
+    max-width: 1480px;
     margin-top: 20px;
+    border-radius: 13px;
+    margin-left: 18px;
     height: 400px;
     /* margin: 0 auto; */
     padding: 40px 20px;

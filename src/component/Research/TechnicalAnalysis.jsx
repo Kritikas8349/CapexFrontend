@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./TechnicalAnalysis.css";
+import trd from '/public/trd.jpg';
 
 const articles = [
     {
@@ -115,7 +116,7 @@ export default function TechnicalAnalysis() {
     return (
         <div id="Main">
 
-            <div className="news-section">
+            <div className="news-section" style={{ backgroundImage: `url(${trd})` }}>
                 <div className="overlay">
                     <h1 className="news">Technical Analysis </h1>
                     <p className="news-des">

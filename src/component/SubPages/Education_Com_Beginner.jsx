@@ -31,12 +31,12 @@ function Education_Com_Beginner() {
         <div id='Main'>
 
             <div className="forex-tutorial">
-                <h1 className="tutorial-heading">Beginner Commodities Tutorial</h1>
+                {/* <h1 className="tutorial-heading">Beginner Commodities Tutorial</h1> */}
 
                 <div className="tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="left-section">
-                        <div className="lesson1-image" style={{ backgroundImage: 'url(b11.webp)' }}>
+                        <div className="lesson1-image" style={{ backgroundImage: 'url(/public/b11.webp)' }}>
                             <div className="lesson1-title"></div>
                         </div>
                         <div className="lesson1-text">
@@ -51,40 +51,40 @@ function Education_Com_Beginner() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="right-section">
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(b12.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/b12.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
                                 <h4>Commodities 101: Lesson 2 of 7</h4>
                                 <p>
                                     In this lesson, we explore: Understanding charts, technical indicators,
-                                    and using technical analysis to make trading decisions...
+                                    and using technical analysis to make trading...
                                 </p>
                             </div>
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(b13.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/b13.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
                                 <h4>Commodities 101: Lesson 3 of 7</h4>
                                 <p>
                                     In this lesson, we explore: Understanding economic reports and their impact
-                                    on currency prices, Analyzing news and events to predict...
+                                    on currency prices, Analyzing news and events...
                                 </p>
                             </div>
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(b14.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/b14.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
                                 <h4>Commodities 101: Lesson 4 of 7</h4>
                                 <p>
                                     In this lesson, we explore: Understanding the risks involved in forex trading,
-                                    Implementing risk management strategies, and Using stop-loss and...
+                                    Implementing risk management strategies...
                                 </p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ function Education_Com_Beginner() {
             <div className="card-bottom-grid">
                 {/* Lesson 5 */}
                 <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('b15.webp')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url('/public/b15.webp')" }}>
 
                     </div>
                     <div className="card-bottom-title">Commodities 101: Lesson 5 of 7</div>
@@ -105,7 +105,7 @@ function Education_Com_Beginner() {
 
                 {/* Lesson 6 */}
                 <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('b16.webp')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url('/public/b16.webp')" }}>
 
                     </div>
                     <div className="card-bottom-title">Commodities 101: Lesson 6 of 7</div>
@@ -113,7 +113,7 @@ function Education_Com_Beginner() {
 
                 {/* Lesson 7 */}
                 {/* <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('c3.webp')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url('/public/c3.webp')" }}>
 
                     </div>
                     <div className="card-bottom-title">Forex 101: Lesson 7 of 7</div>
@@ -121,20 +121,8 @@ function Education_Com_Beginner() {
             </div>
 
 
-            <div className="m1-payment-container">
-                <div className="m1-payment-grid">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-                    <img src="mastercard.png" alt="MasterCard" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="m1-small-logo" />
-                    <img src="googlepay.png" alt="Google Pay" className="m1-small-logo" />
-                    <img src="banktransfer.png" alt="Bank Transfer" />
-                    <img src="crypto.png" alt="Crypto" />
-                    <img src="neteller.png" alt="Neteller" />
-                    <img src="skrill.png" alt="Skrill" />
-                    <img src="banktransfer.png" alt="Local Bank Transfer" />
-                    {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
-                </div>
-            </div>
+           
+            
 
 
 

@@ -15,9 +15,9 @@ function TradingView() {
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 trading-view">
+            <div className="container-fluid bg-black text-white py-5 trading-view ">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center mt-5">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">

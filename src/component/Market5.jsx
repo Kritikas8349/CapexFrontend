@@ -7,31 +7,31 @@ function Market5() {
         {
             name: "TradingView",
             desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-            icon: "Frame84151.png", // apna icon path
+            icon: "/public/Frame84151.png", // apna icon path
             isNew: true,
         },
         {
             name: "MetaTrader 4",
             desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-            icon: "Frame84153.png",
+            icon: "/public/Frame84153.png",
             isNew: false,
         },
         {
             name: "MetaTrader 5",
             desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-            icon: "Frame84153.png",
+            icon: "/public/Frame84153.png",
             isNew: false,
         },
         {
             name: "cTrader",
             desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-            icon: "Frame84152.png",
+            icon: "/public/Frame84152.png",
             isNew: true,
         },
         {
             name: "BlackBull CopyTrader",
             desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-            icon: "Frame84155.png",
+            icon: "/public/Frame84155.png",
             isNew: true,
         },
 
@@ -39,7 +39,7 @@ function Market5() {
 
     const initialInstruments = [
         {
-            icon: "i1.webp",
+            icon: "/public/i1.webp",
             name: "XAUUSD",
             desc: "Gold vs US-Dollar",
             buy: 3752.41000,
@@ -248,8 +248,8 @@ function Market5() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    // Toggle dropdown visibility
-    const toggleDropdown = () => {
+    // Toggle drop visibility
+    const toggleDrop = () => {
         setIsOpen(!isOpen);
     };
 
@@ -269,7 +269,7 @@ function Market5() {
                     </p>
                 </div>
                 <div className="m-wrapper">
-                    <img src="mob5.webp" alt="Trading chart" className="m-image" />
+                    <img src="/public/mob5.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
 
@@ -328,7 +328,7 @@ function Market5() {
                     />
 
                     <select
-                        className="mt-sort-dropdown"
+                        className="mt-sort-drop"
                         value={sortBy}
                         onChange={(e) => setSortBy(e.target.value)}
                     >
@@ -343,14 +343,14 @@ function Market5() {
                         {/* Add other sorting options if needed */}
                     </select>
 
-                    <div className="dropdown">
-                        <button className="dropdown-btn" onClick={toggleDropdown}>
+                    <div className="drop">
+                        <button className="drop-btn" onClick={toggleDrop}>
                             Market State ▼
                         </button>
 
-                        {/* Dropdown Menu */}
+                        {/* Drop Menu */}
                         {isOpen && (
-                            <ul className="dropdown-menu">
+                            <ul className="drop-menu">
                                 <a href="">  <li  >Market Status</li></a>
                                 <a href="">  <li>Open</li> </a>
                                 <a href="">  <li>Closed</li></a>
@@ -415,23 +415,78 @@ function Market5() {
 
 
 
-            <section className="trade-platforms1">
-                <h2 className="title-section1">Trading Platforms</h2>
+            <div className="home-platforms-section-m1">
+            <h2 className="home-platforms-heading-m1">Trading Platform</h2>
+            <div className="home-platforms-grid-m1">
 
-                <div className="platforms-wrapper1">
-                    {platforms.map((platform, index) => (
-                        <div className="platform-box1" key={index}>
-                            <div className="platform-top1">
-                                <img src={platform.icon} alt={platform.name} className="platform-image1" />
-                                <h3>{platform.name}</h3>
-                                {platform.isNew && <span className="badge-new1">New</span>}
-                            </div>
-                            <p>{platform.desc}</p>
-                            <button className="btn-learn1">Learn More</button>
-                        </div>
-                    ))}
+                <div className="home-platform-card-m1">
+                <img src="/public/f1.png" alt="TradingView" className="home-platform-logo-m1" />
+                <div className="home-platform-content-m1">
+                    <div className="home-platform-header-m1">
+                    <h3 className="home-platform-title-m1">TradingView</h3>
+                    <a href="/platforms/tradingview" className="home-learn-more-btn-m1">Learn More</a>
+                    </div>
+                    <p className="home-platform-desc-m1">Trade directly in TradingView, the world’s leading charting and social platform.</p>
                 </div>
-            </section>
+                </div>
+
+                <div className="home-platform-card-m1">
+                <img src="/public/f1.png" alt="cTrader" className="home-platform-logo-m1" />
+                <div className="home-platform-content-m1">
+                    <div className="home-platform-header-m1">
+                    <h3 className="home-platform-title-m1">cTrader</h3>
+                    <a href="/platforms/ctrade" className="home-learn-more-btn-m1">Learn More</a>
+                    </div>
+                    <p className="home-platform-desc-m1">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
+                </div>
+                </div>
+
+                <div className="home-platform-card-m1">
+                <img src="/public/f2.png" alt="MetaTrader 4" className="home-platform-logo-m1" />
+                <div className="home-platform-content-m1">
+                    <div className="home-platform-header-m1">
+                    <h3 className="home-platform-title-m1">MetaTrader 4</h3>
+                    <a href="/platforms/mt4" className="home-learn-more-btn-m1">Learn More</a>
+                    </div>
+                    <p className="home-platform-desc-m1">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
+                </div>
+                </div>
+
+                <div className="home-platform-card-m1">
+                <img src="/public/f4.png" alt="MetaTrader 5" className="home-platform-logo-m1" />
+                <div className="home-platform-content-m1">
+                    <div className="home-platform-header-m1">
+                    <h3 className="home-platform-title-m1">MetaTrader 5</h3>
+                    <a href="/platforms/mt5" className="home-learn-more-btn-m1">Learn More</a>
+                    </div>
+                    <p className="home-platform-desc-m1">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
+                </div>
+                </div>
+
+                <div className="home-platform-card-m1">
+                <img src="/public/f3.png" alt="CopyTrader" className="home-platform-logo-m1" />
+                <div className="home-platform-content-m1">
+                    <div className="home-platform-header-m1">
+                    <h3 className="home-platform-title-m1">CopyTrader</h3>
+                    <a href="/platforms/copytrade" className="home-learn-more-btn-m1">Learn More</a>
+                    </div>
+                    <p className="home-platform-desc-m1">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
+                </div>
+                </div>
+
+                <div className="home-platform-card-m1">
+                <img src="/public/f3.png" alt="Market.Trad Invest" className="home-platform-logo-m1" />
+                <div className="home-platform-content-m1">
+                    <div className="home-platform-header-m1">
+                    <h3 className="home-platform-title-m1">Market.Trad Invest</h3>
+                    <a href="/platforms/tradingtools" className="home-learn-more-btn-m1">Learn More</a>
+                    </div>
+                    <p className="home-platform-desc-m1">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
+                </div>
+                </div>
+
+            </div>
+</div>
 
 
             <div className="T-container">

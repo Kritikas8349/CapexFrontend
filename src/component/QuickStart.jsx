@@ -33,7 +33,7 @@ function QuickStart() {
             </div>
 
             <div className="image-wrapper">
-              <img src="/Rectangle4393.png" alt="About Us" />
+              <img src="/public/Rectangle4393.png" alt="About Us" />
             </div>
           </div>
 
@@ -58,7 +58,7 @@ function QuickStart() {
           </div>
 
           <div className="institutional-image">
-            <img src="Rectangle4394.png" alt="Office workspace" />
+            <img src="/public/Rectangle4394.png" alt="Office workspace" />
           </div>
         </div>
 
@@ -66,7 +66,7 @@ function QuickStart() {
         <div className="history-section">
 
           <div className="history-image">
-            <img src="Rectangle4395.png" alt="Office workspace" />
+            <img src="/public/Rectangle4395.png" alt="Office workspace" />
           </div>
           <div className="history-content">
             <h1>
@@ -86,245 +86,227 @@ function QuickStart() {
 
 
 
-        <div className="tradable-assets-section2">
-          <h2 className="section-title2">Tradable Assets</h2>
+        <div className="tradeable-assets-section">
+  <h2 className="assets-heading">Tradable Assets</h2>
 
-          <div className="assets-grid2">
-            <div className="asset-card2">
-              <div className="icon-placeholder2"><img src="Frame8415.png" alt="" /></div>
-              <h3>Forex</h3>
-              <p>70+ major, minor, and exotic currency pairs.</p>
-            </div>
+  <div className="assets-grid">
+    <div className="asset-box">
+      <img src="/public/t1.png" alt="Equities" className="asset-logo" />
+      <h3 className="asset-title">Equities</h3>
+      <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
+    </div>
 
-            <div className="asset-card2">
-              <div className="icon-placeholder2"><img src="Frame8416.png" alt="" /></div>
-              <h3>Commodities</h3>
-              <p>Energies like crude oil, and agricultural cash crops.</p>
-            </div>
+    <div className="asset-box">
+      <img src="/public/t2.png" alt="Forex" className="asset-logo" />
+      <h3 className="asset-title">Forex</h3>
+      <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
+    </div>
 
-            <div className="asset-card2">
-              <div className="icon-placeholder2"><img src="Frame8417.png" alt="" /></div>
-              <h3>Equities</h3>
-              <p>We offer stocks across 27 global markets like Apple, Alibaba, BMW.</p>
-            </div>
+    <div className="asset-box">
+      <img src="/public/t3.png" alt="Commodities" className="asset-logo" />
+      <h3 className="asset-title">Commodities</h3>
+      <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>
+    </div>
 
-            <div className="asset-card2">
-              <div className="icon-placeholder2"><img src="Frame8418.png" alt="" /></div>
-              <h3>Indices</h3>
-              <p>Major stock indices like US30, S&P500, and NAS100.</p>
-            </div>
+    <div className="asset-box">
+      <img src="/public/t4.png" alt="Indices" className="asset-logo" />
+      <h3 className="asset-title">Indices</h3>
+      <p className="asset-desc">Major stock indices like US30, S&P500, and NAS100.</p>
+    </div>
 
-            <div className="asset-card2">
-              <div className="icon-placeholder2"><img src="Frame8419.png" alt="" /></div>
-              <h3>Metals</h3>
-              <p>Precious and industry metals like gold, silver, and copper.</p>
-            </div>
+    <div className="asset-box">
+      <img src="/public/t5.png" alt="Metals" className="asset-logo" />
+      <h3 className="asset-title">Metals</h3>
+      <p className="asset-desc">Precious and industry metals like gold, silver, and copper.</p>
+    </div>
 
-            <div className="asset-card2">
-              <div className="icon-placeholder2"><img src="Frame8411.png" alt="" /></div>
-              <h3>View all</h3>
-              <p>Explore Market.Trad's diverse range of tradable assets.</p>
-            </div>
-          </div>
-        </div>
-
-
+    <div className="asset-box">
+      <img src="/public/t6.png" alt="View All" className="asset-logo" />
+      <h3 className="asset-title">View all</h3>
+      <p className="asset-desc">Explore Market. Trade a diverse range of tradable assets.</p>
+    </div>
+  </div>
+</div>
 
 
-        <div className="trading-platform-section1">
-          <h2 className="section-title1">Trading Platform</h2>
 
-          <div className="platform-cards-grid1">
-            {[
-              {
-                img: "Frame84151.png",
-                title: "Trading View",
-                desc: "Trade directly in TradingView, the world’s leading charting and social platform."
-              },
-              {
-                img: "Frame84152.png",
-                title: "cTrader",
-                desc: "Experience Market.Trad’ institutional trading conditions combined with cTrader."
-              },
-              {
-                img: "Frame84153.png",
-                title: "Meta Trader 4",
-                desc: "Trade via MetaTrader 4 (MT4), the most popular trading platform in the world."
-              },
-              {
-                img: "Frame84153.png",
-                title: "Meta Trader 5",
-                desc: "Trade via MetaTrader 5 (MT5), the most powerful premier trading platform."
-              },
-              {
-                img: "Frame84155.png",
-                title: "Market.Trad copy trader",
-                desc: "Copy trades or lead followers with the Market.Trad CopyTrader platform."
-              },
-              {
-                img: "Frame84155.png",
-                title: "Market.Trad Invest",
-                desc: "Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets."
-              }
-            ].map(({ img, title, desc }, index) => (
-              <div className="platform-card1" key={index}>
-                <div className="icon-placeholder1">
-                  <img src={img} alt={`${title} Icon`} />
+
+<div className="home-platforms-section-Q">
+            <h2 className="home-platforms-heading-Q">Trading Platform</h2>
+            <div className="home-platforms-grid-Q">
+
+              <div className="home-platform-card-Q">
+                <img src="/public/f1.png" alt="TradingView" className="home-platform-logo-Q" />
+                <div className="home-platform-content-Q">
+                  <div className="home-platform-header-Q">
+                    <h3 className="home-platform-title-Q">TradingView</h3>
+                    <a href="/platforms/tradingview" className="home-learn-more-btn-Q">Learn More</a>
+                  </div>
+                  <p className="home-platform-desc-Q">Trade directly in TradingView, the world’s leading charting and social platform.</p>
                 </div>
-                <div className="card-content1">
-                  <h3>{title}</h3>
-                  <p>{desc}</p>
-                </div>
-                <a href="#" className="learn-more-btn1">
-                  Learn More <span>&rarr;</span>
-                </a>
               </div>
-            ))}
+
+              <div className="home-platform-card-Q">
+                <img src="/public/f1.png" alt="cTrader" className="home-platform-logo-Q" />
+                <div className="home-platform-content-Q">
+                  <div className="home-platform-header-Q">
+                    <h3 className="home-platform-title-Q">cTrader</h3>
+                    <a href="/platforms/ctrade" className="home-learn-more-btn-Q">Learn More</a>
+                  </div>
+                  <p className="home-platform-desc-Q">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
+                </div>
+              </div>
+
+              <div className="home-platform-card-Q">
+                <img src="/public/f2.png" alt="MetaTrader 4" className="home-platform-logo-Q" />
+                <div className="home-platform-content-Q">
+                  <div className="home-platform-header-Q">
+                    <h3 className="home-platform-title-Q">MetaTrader 4</h3>
+                    <a href="/platforms/mt4" className="home-learn-more-btn-Q">Learn More</a>
+                  </div>
+                  <p className="home-platform-desc-Q">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
+                </div>
+              </div>
+
+              <div className="home-platform-card-Q">
+                <img src="/public/f4.png" alt="MetaTrader 5" className="home-platform-logo-Q" />
+                <div className="home-platform-content-Q">
+                  <div className="home-platform-header-Q">
+                    <h3 className="home-platform-title-Q">MetaTrader 5</h3>
+                    <a href="/platforms/mt5" className="home-learn-more-btn-Q">Learn More</a>
+                  </div>
+                  <p className="home-platform-desc-Q">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
+                </div>
+              </div>
+
+              <div className="home-platform-card-Q">
+                <img src="/public/f3.png" alt="CopyTrader" className="home-platform-logo-Q" />
+                <div className="home-platform-content-Q">
+                  <div className="home-platform-header-Q">
+                    <h3 className="home-platform-title-Q">CopyTrader</h3>
+                    <a href="/platforms/copytrade" className="home-learn-more-btn-Q">Learn More</a>
+                  </div>
+                  <p className="home-platform-desc-Q">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
+                </div>
+              </div>
+
+              <div className="home-platform-card-Q">
+                <img src="/public/f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q" />
+                <div className="home-platform-content-Q">
+                  <div className="home-platform-header-Q">
+                    <h3 className="home-platform-title-Q">Market.Trad Invest</h3>
+                    <a href="/platforms/tradingtools" className="home-learn-more-btn-Q">Learn More</a>
+                  </div>
+                  <p className="home-platform-desc-Q">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
+                </div>
+              </div>
+
+            </div>
+</div>
+
+
+
+
+
+        
+          <div className="home-compare-accounts-container">
+            <table className="home-compare-table">
+              <thead>
+                <tr>
+                  <th className="home-feature-column">Compare Accounts</th>
+                  <th className="home-account-column">
+                    <div className="home-account-header">
+                      <img src="/public/f11.png" alt="Standard Logo" className="home-account-logo" />
+                      <div>
+                        <div className="home-account-title">Standard</div>
+                        <div className="home-account-subtitle">Perfect for traders who are just beginning</div>
+                      </div>
+                    </div>
+                  </th>
+                  <th className="home-account-column">
+                    <div className="home-account-header">
+                      <img src="/public/f11.png" alt="Raw Logo" className="home-account-logo" />
+                      <div>
+                        <div className="home-account-title">Raw</div>
+                        <div className="home-account-subtitle">Perfect for traders with experience</div>
+                      </div>
+                    </div>
+                  </th>
+                  <th className="home-account-column">
+                    <div className="home-account-header">
+                      <img src="/public/f11.png" alt="Pro Logo" className="home-account-logo" />
+                      <div>
+                        <div className="home-account-title">Pro</div>
+                        <div className="home-account-subtitle">Perfect for high-volume traders</div>
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="home-feature">Spreads (pips)</td>
+                  <td className="home-value">From 1.5</td>
+                  <td className="home-value">From 0.0</td>
+                  <td className="home-value">From 0.6</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Commission</td>
+                  <td className="home-value">No commission</td>
+                  <td className="home-value">US$6.00 per lot</td>
+                  <td className="home-value">No commission</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Minimum Deposit</td>
+                  <td className="home-value">US$50</td>
+                  <td className="home-value">US$100</td>
+                  <td className="home-value">US$500</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Minimum Trade Size</td>
+                  <td className="home-value">0.01 lots</td>
+                  <td className="home-value">0.01 lots</td>
+                  <td className="home-value">0.01 lots</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Leverage</td>
+                  <td className="home-value">Up to 1:500</td>
+                  <td className="home-value">Up to 1:500</td>
+                  <td className="home-value">Up to 1:500</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Margin Call Level</td>
+                  <td className="home-value">50%</td>
+                  <td className="home-value">50%</td>
+                  <td className="home-value">50%</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Stop Out Level</td>
+                  <td className="home-value">20%</td>
+                  <td className="home-value">20%</td>
+                  <td className="home-value">20%</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Swap Free</td>
+                  <td className="home-value">Yes</td>
+                  <td className="home-value">Yes</td>
+                  <td className="home-value">Yes</td>
+                </tr>
+                <tr>
+                  <td className="home-feature">Local INR Payments</td>
+                  <td className="home-value">Yes</td>
+                  <td className="home-value">Yes</td>
+                  <td className="home-value">Yes</td>
+                </tr>
+                <tr className="home-open-row">
+                  <td></td>
+                  <td><button className="home-open-btn">Open Standard</button></td>
+                  <td><button className="home-open-btn">Open Raw</button></td>
+                  <td><button className="home-open-btn">Open Pro</button></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-
-
-
-
-        <section className="why-market-trad">
-          <h2 className="section-title">
-            Why <span className="highlight">Market.Trad</span>?
-          </h2>
-
-          <div className="stats-grid">
-            <div className="stat-item">
-              <h3>26k+</h3>
-              <p>Tradable Assets</p>
-            </div>
-            <div className="stat-item">
-              <h3>1:500</h3>
-              <p>Leverage up to</p>
-            </div>
-            <div className="stat-item">
-              <h3>Regulated</h3>
-              <p>Multi-Regulated</p>
-            </div>
-            <div className="stat-item">
-              <h3>24/7</h3>
-              <p>Client Support</p>
-            </div>
-            <div className="stat-item">
-              <h3>$0</h3>
-              <p>No Minimum Deposit</p>
-            </div>
-          </div>
-        </section>
-
-
-        <section className="compare-accounts-section">
-
-          <table className="compare-table">
-            <thead>
-              <tr className="compare-header-row">
-                <th className="compare-header-left">Compare Accounts</th>
-
-
-                {/* STANDARD */}
-                <th className="compare-header-item">
-                  <div className="account-header">
-                    <div className="icon-circle">
-                      <img src="Frame84156.png" alt="Standard" />
-                    </div>
-                    <strong>Standard</strong>
-                    <p>Perfect for traders<br />who are just beginning</p>
-                  </div>
-                </th>
-
-                {/* RAW */}
-                <th className="compare-header-item">
-                  <div className="account-header">
-                    <div className="icon-circle">
-                      <img src="Frame84156.png" alt="Raw" />
-                    </div>
-                    <strong>Raw</strong>
-                    <p>Perfect for traders<br />with experience</p>
-                  </div>
-                </th>
-
-                {/* PRO */}
-                <th className="compare-header-item">
-                  <div className="account-header">
-                    <div className="icon-circle">
-                      <img src="Frame84156.png" alt="Pro" />
-                    </div>
-                    <strong>Pro</strong>
-                    <p>Perfect for<br />high-volume traders</p>
-                  </div>
-                </th>
-
-
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td><strong>Spreads (pips)</strong></td>
-                <td>From 1.5</td>
-                <td>From 0.0</td>
-                <td>From 0.6</td>
-              </tr>
-              <tr>
-                <td><strong>Commission</strong></td>
-                <td>No commission</td>
-                <td>US$6.00 per lot</td>
-                <td>No commission</td>
-              </tr>
-              <tr>
-                <td><strong>Minimum Deposit</strong></td>
-                <td>US$50</td>
-                <td>US$100</td>
-                <td>US$500</td>
-              </tr>
-              <tr>
-                <td><strong>Minimum Trade Size</strong></td>
-                <td>0.01 lots</td>
-                <td>0.01 lots</td>
-                <td>0.01 lots</td>
-              </tr>
-              <tr>
-                <td><strong>Leverage</strong></td>
-                <td>Up to 1:500</td>
-                <td>Up to 1:500</td>
-                <td>Up to 1:500</td>
-              </tr>
-              <tr>
-                <td><strong>Margin Call Level</strong></td>
-                <td>50%</td>
-                <td>50%</td>
-                <td>50%</td>
-              </tr>
-              <tr>
-                <td><strong>Stop Out Level</strong></td>
-                <td>20%</td>
-                <td>20%</td>
-                <td>20%</td>
-              </tr>
-              <tr>
-                <td><strong>Swap Free</strong></td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes</td>
-              </tr>
-              <tr>
-                <td><strong>Local INR Payments</strong></td>
-                <td>Yes</td>
-                <td>Yes</td>
-                <td>Yes</td>
-              </tr>
-              <tr className="open-buttons-row">
-                <td></td>
-                <td><button className="open-btn">Open Standard</button></td>
-                <td><button className="open-btn">Open Raw</button></td>
-                <td><button className="open-btn">Open Pro</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
 
 
 
@@ -407,147 +389,7 @@ function QuickStart() {
 
 
 
-        <div className="payment-container1">
-          <h2 className="title">
-            Market.Trad <span>Payment Accept</span>
-          </h2>
-
-          <div className="payment-grid1">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-            <img src="mastercard.png" alt="MasterCard" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo" />
-            <img src="googlepay.png" alt="Google Pay" className="small-logo" />
-            <img src="banktransfer.png" alt="Bank Transfer" />
-            <img src="crypto.png" alt="Crypto" />
-            <img src="neteller.png" alt="Neteller" />
-            <img src="skrill.png" alt="Skrill" />
-            <img src="banktransfer.png" alt="Local Bank Transfer" />
-            <img src="banktransfer.png" alt="Local Bank Transfer" />
-          </div>
-        </div>
-
-
-        <div className="hero-container">
-          <div className="hero-overlay">
-            <h1>
-              Start trading in less than <span>5 minutes</span>
-            </h1>
-            <p>with no minimum deposit</p>
-
-            <div className="search-box">
-              <FaSearch className="search-icon" />
-              <input type="email" placeholder="Email Address" />
-              <button className="join-btn1">Join Now</button>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div className="footer-container">
-          <div className="footer-top">
-            <div className="footer-logo">
-              <img src="Frame9.png" alt="" />
-            </div>
-            <div className="footer-social">
-              <a href="#"><img src="Framefb.png" alt="Facebook" /></a>
-              <a href="#"><img src="Framein.png" alt="LinkedIn" /></a>
-              <a href="#"><img src="Frameinsta.png" alt="Instagram" /></a>
-              <a href="#"><img src="Framex.png" alt="X" /></a>
-              <a href="#"><img src="Framew.png" alt="WhatsApp" /></a>
-              <a href="#"><img src="Frameu.png" alt="Telegram" /></a>
-            </div>
-          </div>
-
-          <div className="footer-content">
-            <div className="footer-section">
-              <h3>Markets</h3>
-              <ul>
-                <li>Markets Overview</li>
-                <li>Forex</li>
-                <li>Shares</li>
-                <li>Commodities</li>
-                <li>Futures</li>
-                <li>Indices</li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h3>Platforms</h3>
-              <ul>
-                <li>TradingView</li>
-                <li>cTrader</li>
-                <li>MetaTrader 4</li>
-                <li>MetaTrader 5</li>
-                <li>MetaTrader Web Trader</li>
-                <li>Markets.Trad Copy Trader</li>
-                <li>Markets.Trad Invest</li>
-                <li>Trading Tools</li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h3>Education</h3>
-              <ul>
-                <li>Education Hub</li>
-                <li>Forex Tutorials</li>
-                <li>Shares Tutorials</li>
-                <li>Commodities Tutorials</li>
-                <li>Trading Opportunities</li>
-                <li>Economic Calendar</li>
-                <li>Demo Trade</li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h3>About</h3>
-              <ul>
-                <li>About us</li>
-                <li>Account Comparison</li>
-                <li>Company News</li>
-                <li>Compliance</li>
-                <li>Careers</li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h3>Support</h3>
-              <ul>
-                <li>Platform Support</li>
-                <li>Market Support</li>
-                <li>Account Support</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-
-            <div className="footer-section">
-              <h3>Legal</h3>
-              <ul>
-                <li>Legal Hub</li>
-                <li>Risk Warning</li>
-                <li>Privacy Policy</li>
-                <li>Client Service Agreement</li>
-                <li>Complaints Handling Procedure</li>
-                <li>Confidentiality Policy</li>
-                <li>Conflicts of Interests Policy</li>
-                <li>Cookie Policy EU</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="footer-bottom">
-            <div className="footer-contact">
-              <p>Customer Support Contacts</p>
-              <p>Whatsapp Support: +41 xxx xxx xxxx</p>
-              <p>Support: +41 xxx xxx xxxx</p>
-              <p>Email: support@market.trad.com</p>
-            </div>
-          </div>
-        </div>
-
-
-
+     
 
       </div>
     </>

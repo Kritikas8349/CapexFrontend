@@ -1,10 +1,12 @@
 #nav_main_blue{
   margin-top: 0px;
 
+
 }
 
 
 .top-bar-blue {
+
   position: fixed;
   top: 0;
   left: 0;
@@ -22,6 +24,7 @@
   flex-wrap: wrap;
   border-radius: 30px;
   margin: 20px 50px 20px 50px;
+  
 }
 
 .top-left {
@@ -80,12 +83,14 @@
 }
 
 .top-right .top-link {
-  cursor: pointer;
-  padding: 6px 12px;
-  font-size: 14px;
-  border-radius: 12px;
-  transition: background 0.3s, color 0.3s;
+  color: black ;
+  text-decoration: none !important;
 }
+.top-right .top-link:hover {
+  background-color: #493ffd; /* optional hover color */
+  color: white;
+}
+
 
 .navbar-right .refer-link{
   color: white;
@@ -215,6 +220,9 @@
   font-size: 15px;
   white-space: nowrap;
   color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-links li ul li:hover {
@@ -291,6 +299,7 @@
   background-color: #493ffd;
   color: white;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .join-btn {
@@ -303,6 +312,7 @@
   background-color: transparent;
   color: white;
   transition: all 0.2s ease;
+  text-decoration: none;
 }
 
 .login-btn:hover,

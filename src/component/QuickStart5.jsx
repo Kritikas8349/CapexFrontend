@@ -9,10 +9,17 @@
         <div className="m-hero-container5">
 
         
-          <video autoPlay muted loop playsInline className="m-bg-video5">
-            <video src="./bgc.mp4"></video>
-            Your browser does not support the video tag.
-          </video>
+        <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="m-bg-video5"
+              src="/bgc.mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
+
 
 
           <div className="m-nav-placeholder5"></div>
@@ -46,7 +53,7 @@
           <div className="identity-section">
             {/* Left side image + upload text */}
             <div className="identity-left">
-              <img src="aadhar.jpg" alt="Aadhaar Card" className="identity-img" />
+              <img src="/public/aadhar.jpg" alt="Aadhaar Card" className="identity-img" />
               <div className="upload-section">
                 <p>
                   Verify your account by uploading your Proof of Identity and Proof

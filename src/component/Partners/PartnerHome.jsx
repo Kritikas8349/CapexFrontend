@@ -56,6 +56,7 @@ return (
 <div className="partner-home-container">
 
 {/* Hero Section */}
+<div className="partnerhomecontainer">
 <div className="partner-home-image-container">
 <img
     src="/public/Office1.jpg"
@@ -76,7 +77,7 @@ return (
     </div>
 </div>
 </div>
-
+</div>
 
 {/* Account Types Section */}
 <section className="partner-home-account-section">

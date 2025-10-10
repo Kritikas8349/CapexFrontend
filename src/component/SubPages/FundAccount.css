@@ -69,10 +69,7 @@
 .fund-sidebar-header:hover {
     color: #000;
 }
-.fund-sidebar-header.active {
-    background: #eef4ff;
-    font-weight: bold;
-}
+
 .fund-sidebar-icon {
     width: 40px;
     height: 40px;
@@ -97,7 +94,7 @@
 .fund-dropdown {
     padding: 5px 20px;
     font-size: 14px;
-    color: #444;
+    color: #fff;
 }
 .fund-dropdown p {
     margin: 4px 0;
@@ -105,7 +102,7 @@
 }
 .fund-dropdown p:hover {
     text-decoration: underline;
-    color: #493ffd;
+   
 }
 
 /* Content */

@@ -71,13 +71,13 @@ function QuickStart2() {
   };
 
   return (
-    <div className="market-wrapper">
+    <div className="q2-market-wrapper">
      
-      <div className="market-page">
+      <div className="q2-market-page">
         
         {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-left">
+        <section className="q2-hero">
+          <div className="q2-hero-left">
             <h1>Markets Overview</h1>
             <p>
               We provide access to diverse markets on all our accounts, offering superior trade execution,
@@ -86,74 +86,74 @@ function QuickStart2() {
               commodities such as gas and oil.
             </p>
           </div>
-          <div className="hero-right">
-            <img src="phone.png" alt="Trading chart" className="mobile-image" />
+          <div className="q2-hero-right">
+            <img src="/public/phone.png" alt="Trading chart" className="q2-mobile-image" />
           </div>
         </section>
       </div>
 
-      <div className="stats-container">
-        <div className="stat-item">
+      <div className="q2-stats-container">
+        <div className="q2-stat-item">
           <h2>26k+</h2>
           <p>Tradable Assets</p>
         </div>
-        <div className="stat-item">
+        <div className="q2-stat-item">
           <h2>1:500</h2>
           <p>Leverage up to</p>
         </div>
-        <div className="stat-item">
+        <div className="q2-stat-item">
           <h2>Regulated</h2>
           <p>Multi-Regulated</p>
         </div>
-        <div className="stat-item">
+        <div className="q2-stat-item">
           <h2>24/7</h2>
           <p>Client Support</p>
         </div>
-        <div className="stat-item">
+        <div className="q2-stat-item">
           <h2>$0</h2>
           <p>No Minimum Deposit</p>
         </div>
       </div>
 
-      <div className="page-container">
-        <div className="header">
+      <div className="q2-page-container">
+        <div className="q2-header">
           {/* Tabs */}
-          <div className="tabs">
-            <button className="tab active">All</button>
-            <button className="tab">Commodities</button>
-            <button className="tab">Crypto</button>
-            <button className="tab">Equities</button>
-            <button className="tab">Forex</button>
-            <button className="tab">Indices</button>
+          <div className="q2-tabs">
+            <button className="q2-tab active">All</button>
+            <button className="q2-tab">Commodities</button>
+            <button className="q2-tab">Crypto</button>
+            <button className="q2-tab">Equities</button>
+            <button className="q2-tab">Forex</button>
+            <button className="q2-tab">Indices</button>
           </div>
 
           {/* Search */}
-          <div className="search-box">
-            <FiSearch className="search-icon" />
+          <div className="q2-search-box">
+            <FiSearch className="q2-search-icon" />
             <input
               type="text"
-              className="search-input"
+              className="q2-search-input"
               placeholder="         Search instruments..."
             />
           </div>
 
           {/* Dropdowns */}
-          <div className="dropdowns">
-            <div className="market-status">
-              <button className="dropdown-btn">
-                Market Status <span className="arrow"></span>
+          <div className="q2-dropdowns">
+            <div className="q2-market-status">
+              <button className="q2-dropdown-btn">
+                Market Status <span className="q2-arrow"></span>
               </button>
-              <div className="dropdown-content">
+              <div className="q2-dropdown-content">
                 <button>Open</button>
                 <button>Close</button>
               </div>
             </div>
 
-            <div className="sort-options">
-              <button className="dropdown-btn">
-                Sort By <span className="arrow"></span>
+            <div className="q2-sort-options">
+              <button className="q2-dropdown-btn">
+                Sort By <span className="q2-arrow"></span>
               </button>
-              <div className="dropdown-content">
+              <div className="q2-dropdown-content">
                 <button onClick={() => sortTable("titleAsc")}>By title A → Z</button>
                 <button onClick={() => sortTable("titleDesc")}>By title Z → A</button>
                 <button onClick={() => sortTable("sellAsc")}>Sell Asc</button>
@@ -170,7 +170,7 @@ function QuickStart2() {
         </div>
 
         {/* Table Section */}
-        <div className="market-table">
+        <div className="q2-market-table">
           <table>
             <thead>
               <tr>
@@ -186,13 +186,13 @@ function QuickStart2() {
               {marketData.map((item, index) => (
                 <tr key={index}>
                   <td>
-                    <img src="logo.png" alt="Logo" className="logo" />
+                    <img src="logo.png" alt="Logo" className="q2-logo" />
                   </td>
                   <td>{item.name}</td>
-                  <td className="buy">{item.buy}</td>
-                  <td className="sell">{item.sell}</td>
-                  <td className="live-spread">{item.spread}</td>
-                  <td className="change">{item.change}%</td>
+                  <td className="q2-buy">{item.buy}</td>
+                  <td className="q2-sell">{item.sell}</td>
+                  <td className="q2-live-spread">{item.spread}</td>
+                  <td className="q2-change">{item.change}%</td>
                 </tr>
               ))}
             </tbody>
@@ -201,112 +201,116 @@ function QuickStart2() {
       </div>
 
       {/* Tradable Assets Section */}
-      <div className="tradable-assets-section2">
-        <h2 className="section-title2">Tradable Platform</h2>
-        <div className="assets-grid2">
-          {[
-            { icon: "Frame8415.png", title: "Forex", desc: "70+ major, minor, and exotic currency pairs." },
-            { icon: "Frame8416.png", title: "Commodities", desc: "Energies like crude oil, and agricultural cash crops." },
-            { icon: "Frame8417.png", title: "Equities", desc: "We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix." },
-            { icon: "Frame8418.png", title: "Indices", desc: "Major stock indices like US30, S&P500, and NAS100." },
-            { icon: "Frame8419.png", title: "Metals", desc: "Precious and industry metals like gold, silver, and copper." },
-            { icon: "Frame8419.png", title: "View all", desc: "Explore Market.Trad's diverse range of tradable assets." }
-          ].map((item, index) => (
-            <div className="platform-card2" key={index}>
-              <div className="icon-placeholder2">
-                <img src="" alt={item.title} />
-              </div>
-              <div className="card-content2">
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-              </div>
-              <a href="#" className="learn-more-btn2">Learn More →</a>
-            </div>
-          ))}
+     
+            <div className="tradeable-assets-section">
+        <h2 className="assets-heading">Tradable Assets</h2>
+
+        <div className="assets-grid">
+          <div className="asset-box">
+            <img src="/public/t1.png" alt="Equities" className="asset-logo" />
+            <h3 className="asset-title">Equities</h3>
+            <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
+          </div>
+
+          <div className="asset-box">
+            <img src="/public/t2.png" alt="Forex" className="asset-logo" />
+            <h3 className="asset-title">Forex</h3>
+            <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
+          </div>
+
+          <div className="asset-box">
+            <img src="/public/t3.png" alt="Commodities" className="asset-logo" />
+            <h3 className="asset-title">Commodities</h3>
+            <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>
+          </div>
+
+          <div className="asset-box">
+            <img src="/public/t4.png" alt="Indices" className="asset-logo" />
+            <h3 className="asset-title">Indices</h3>
+            <p className="asset-desc">Major stock indices like US30, S&P500, and NAS100.</p>
+          </div>
+
+          <div className="asset-box">
+            <img src="/public/t5.png" alt="Metals" className="asset-logo" />
+            <h3 className="asset-title">Metals</h3>
+            <p className="asset-desc">Precious and industry metals like gold, silver, and copper.</p>
+          </div>
+
+          <div className="asset-box">
+            <img src="/public/t6.png" alt="View All" className="asset-logo" />
+            <h3 className="asset-title">View all</h3>
+            <p className="asset-desc">Explore Market. Trade a diverse range of tradable assets.</p>
+          </div>
         </div>
       </div>
 
-      <div className="trading-opportunities-section2">
-        <h2 className="section-title2">Trading Opportunities</h2>
-        <div className="opportunity-grid2">
+            <div className="q2-trading-opportunities-section">
+        <h2 className="q2-section-title">Trading Opportunities</h2>
+        <div className="q2-opportunity-grid">
+          
           {/* Card 1 */}
-          <div className="opportunity-card2">
-            <img src="rectangle.png" alt="Oracle's surge" />
-            <div className="card-content2">
+          <div className="q2-opportunity-card">
+            <img src="/public/rectangle.png" alt="Oracle's surge" />
+            <div className="q2-card-content">
               <h3>Oracle's surge mints new richest man & Traders eye 50bps cut</h3>
               <p>Oracle's shares jumped 35% after reporting a surge in cloud bookings driven by AI demand...</p>
-              <span className="date">September 11, 2025</span>
-              <a href="#" className="view-post2"><br />View post</a>
+              <span className="q2-date">September 11, 2025</span>
+              <a href="#" className="q2-view-post"><br />View post</a>
             </div>
           </div>
 
           {/* Card 2 */}
-          <div className="opportunity-card">
-            <img src="rectangle.png" alt="Tech stocks rise" />
-            <div className="card-content">
+          <div className="q2-opportunity-card">
+            <img src="/public/rectangle.png" alt="Tech stocks rise" />
+            <div className="q2-card-content">
               <h3>Tech stocks soar amidst AI <br /> boom</h3>
               <p>Tech stocks surged after the announcement of significant breakthroughs in AI and machine learning...</p>
-              <span className="date">September 15, 2025</span>
-              <a href="#" className="view-post"><br />View post</a>
+              <span className="q2-date">September 15, 2025</span>
+              <a href="#" className="q2-view-post"><br />View post</a>
             </div>
           </div>
 
           {/* Card 3 */}
-          <div className="opportunity-card">
-            <img src="rectangle.png" alt="Crypto market rebound" />
-            <div className="card-content">
+          <div className="q2-opportunity-card">
+            <img src="/public/rectangle.png" alt="Crypto market rebound" />
+            <div className="q2-card-content">
               <h3>Crypto market rebounds with new regulations</h3>
               <p>The cryptocurrency market is seeing a rebound as new regulations bring stability and confidence...</p>
-              <span className="date">September 17, 2025</span>
-              <a href="#" className="view-post"><br />View post</a>
+              <span className="q2-date">September 17, 2025</span>
+              <a href="#" className="q2-view-post"><br />View post</a>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="payment-container12">
-        <h2 className="title12">
-          Market.Trad <span>Payment Accept</span>
-        </h2>
-
-        <div className="payment-grid12">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-          <img src="mastercard.png" alt="MasterCard" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo12" />
-          <img src="googlepay.png" alt="Google Pay" className="small-logo12" />
-          <img src="banktransfer.png" alt="Bank Transfer" />
-          <img src="crypto.png" alt="Crypto" />
-          <img src="neteller.png" alt="Neteller" />
-          <img src="skrill.png" alt="Skrill" />
-          <img src="Localbanktransfer.png" alt="Local Bank Transfer" />
         </div>
       </div>
 
 
+    
 
-      {/* <div className="hero-container">
-        <div className="hero-overlay">
+
+      {/* <div className="q2-hero-container">
+        <div className="q2-hero-overlay">
           <h1>
             Start trading in less than <span>5 minutes</span>
           </h1>
           <p>with no minimum deposit</p>
 
-          <div className="search-box">
-            <FaSearch className="search-icon" />
+          <div className="q2-search-box">
+            <FaSearch className="q2-search-icon" />
             <input type="email" placeholder="    Email Address" />
-            <button className="join-btn">Join Now</button>
+            <button className="q2-join-btn">Join Now</button>
           </div>
         </div>
       </div> */}
 
 
 
-      {/* <div className="footer-container">
-        <div className="footer-top">
-          <div className="footer-logo">
+      {/* <div className="q2-footer-container">
+        <div className="q2-footer-top">
+          <div className="q2-footer-logo">
             <img src="logo2.png" alt="" />
           </div>
-          <div className="footer-social">
+          <div className="q2-footer-social">
             <a href="#"><img src="facebook.png" alt="Facebook" /></a>
             <a href="#"><img src="ri_linkedin-fill.png" alt="LinkedIn" /></a>
             <a href="#"><img src="insta.png" alt="Instagram" /></a>
@@ -316,8 +320,8 @@ function QuickStart2() {
           </div>
         </div>
 
-        <div className="footer-content">
-          <div className="footer-section">
+        <div className="q2-footer-content">
+          <div className="q2-footer-section">
             <h3>Markets</h3>
             <ul>
               <li>Markets Overview</li>
@@ -329,7 +333,7 @@ function QuickStart2() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className="q2-footer-section">
             <h3>Platforms</h3>
             <ul>
               <li>TradingView</li>
@@ -343,7 +347,7 @@ function QuickStart2() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className="q2-footer-section">
             <h3>Education</h3>
             <ul>
               <li>Education Hub</li>
@@ -356,7 +360,7 @@ function QuickStart2() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className="q2-footer-section">
             <h3>About</h3>
             <ul>
               <li>About us</li>
@@ -367,7 +371,7 @@ function QuickStart2() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className="q2-footer-section">
             <h3>Support</h3>
             <ul>
               <li>Platform Support</li>
@@ -377,7 +381,7 @@ function QuickStart2() {
             </ul>
           </div>
 
-          <div className="footer-section">
+          <div className="q2-footer-section">
             <h3>Legal</h3>
             <ul>
               <li>Legal Hub</li>
@@ -392,8 +396,8 @@ function QuickStart2() {
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <div className="footer-contact">
+        <div className="q2-footer-bottom">
+          <div className="q2-footer-contact">
             <p>Customer Support Contacts</p>
             <p>Whatsapp Support: +41 xxx xxx xxxx</p>
             <p>Support: +41 xxx xxx xxxx</p>

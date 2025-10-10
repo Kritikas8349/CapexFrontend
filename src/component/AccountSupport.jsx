@@ -10,7 +10,7 @@ const AccountSupport = () => {
       <nav className="breadcrumb">
         <a href="/">Home</a> <span>›</span>
         <a href="/support">Support</a> <span>›</span>
-        <a href="/support">Platform Support</a> <span>›</span>
+        <a href="/support/platformsupport">Platform Support</a> <span>›</span>
         <span className="current">Account Support</span>
       </nav>
 

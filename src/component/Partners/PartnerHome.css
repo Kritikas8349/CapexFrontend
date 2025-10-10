@@ -9,20 +9,32 @@
   }
   
   /* ================= PARTNER HOME HERO SECTION ================= */
+  .partnerhomecontainer{
+    width: 100%;
+    height: 98vh;
+    background: linear-gradient(to top right, #493ffd, #000000);
+    padding: 160px 20px 20px 20px;
+    border-radius: 16px;
+    
+  }
+
+
   .partner-home-container {
     position: relative;
     width: 100%;
-    max-width: 1500px;
-    margin: 40px auto;
-    padding: 0 10px; /* Adds spacing left/right */
+    max-width: 1480px;
+    /* margin: 40px auto; */
+    padding: 10px 10px 20px 10px; /* Adds spacing left/right */
     border-radius: 12px;
     overflow: hidden;
+    margin: auto 20px 20px 20px;
+    text-align: left;
   }
   
   .partner-home-image-container {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -32,7 +44,7 @@
   
   /* Make image inset a bit from the edges */
   .partner-home-image {
-    width: 95%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     margin: 0 auto;
@@ -48,6 +60,7 @@
     color: #ffffff;
     max-width: 800px;
     font-family: sans-serif;
+    text-align: left;
   }
   
   .partner-home-heading {
@@ -138,7 +151,7 @@
   border: 1px solid #f1f1f1;
   border-radius: 12px;
   margin: 2rem auto;
-  max-width: 1400px;
+  max-width: 1480px;
 }
 
 .partner-home-account-content {
@@ -230,7 +243,7 @@
   .ph-container-reverse {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 40px auto;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -390,7 +403,7 @@
 .ph-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 40px auto;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -492,7 +505,7 @@
     text-align: center;
     border-radius: 12px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 0 auto; /* center wrapper properly */
     box-sizing: border-box;
   }
@@ -634,7 +647,7 @@
 .affiliate-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 40px auto;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -704,7 +717,7 @@
     background: #007aff;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -766,7 +779,7 @@
 .affiliate-container1 {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 40px auto;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -835,7 +848,7 @@
     background: #007aff;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -897,7 +910,7 @@
 .copytrade-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 40px auto;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -966,7 +979,7 @@
     background: #007aff;
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -1029,7 +1042,7 @@
     padding: 30px 20px; 
     min-height: 400px;  
     box-sizing: border-box;
-    max-width: 1400px; 
+    max-width: 1480px; 
     margin: 0 auto;     
     border-radius: 12px; 
 }
@@ -1105,7 +1118,7 @@
   }
   
   .ratings-section {
-    max-width: 1400px; 
+    max-width: 1480px; 
     margin: 0 auto;    
     display: flex;
     justify-content: space-around; 
@@ -1172,7 +1185,7 @@
     padding: 30px 20px; 
     min-height: 400px;  
     box-sizing: border-box;
-    max-width: 1400px; 
+    max-width: 1480px; 
     margin: 0 auto;     
     border-radius: 12px; 
     margin-top: 40px;

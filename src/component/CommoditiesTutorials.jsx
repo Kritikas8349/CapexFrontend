@@ -72,13 +72,25 @@ function CommoditiesTutorials() {
 
   return (
     <div className='bg-home'>
-      <div className="container-fluid bg-dark text-white py-5">
-        <div className="container bg-dark">
-          <h2 className="fw-bold bg-dark text-white text-center display-5 mb-5">Commodities Tutorial</h2>
+       <style>
+                {
+                    `.bg-commodities
+                     {
+                         background: linear-gradient(to bottom right, #000000, #231586)}
+                         
+                       
 
-          <div className="row border-top bg-dark border-primary border-3 pt-4">
-            <div className="col-lg-6 mb-4 bg-dark">
-              <div className="d-flex flex-column bg-dark text-white" style={{ height: '400px' }}>
+                    `
+                }
+
+            </style>
+      <div className="container-fluid bg-commodities  text-white py-5 ">
+        <div className="container bg-tranpraent pt-5" >
+          {/* <h2 className="fw-bold bg-tranpraent text-white text-center display-5 mb-5">Commodities Tutorial</h2> */}
+
+          <div className="row pt-2 bg-tranpraent border-primary border-3 pt-4">
+            <div className="col-lg-6 mb-4 bg-tranpraent ">
+              <div className="d-flex flex-column bg-tranpraent text-white" style={{ height: '400px' }}>
                 <div className="position-relative flex-fill">
                   <img
                     src={lessons[0].img}
@@ -90,18 +102,18 @@ function CommoditiesTutorials() {
                     <h3 className="fw-bold">{lessons[0].title}</h3>
                   </div>
                 </div>
-                <div className="bg-dark text-white p-3" style={{ height: '150px' }}>
+                <div className="bg-tranpraent text-white p-3" style={{ height: '150px' }}>
                   <h5 className="fw-bold">{lessons[0].title}</h5>
                   <p className="mb-0 fs-5">{lessons[0].desc}</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-6 bg-dark mt-4">
+            <div className="col-lg-6 bg-tranpraent">
               {lessons.slice(1).map((lesson, index) => (
                 <div
                   key={index}
-                  className="d-flex flex-column flex-md-row bg-dark text-white mb-4 border-bottom border-primary border-2"
+                  className="d-flex flex-column flex-md-row bg-tranpraent text-white mb-4 border-bottom border-primary border-2"
                   style={{ minHeight: '180px' }}
                 >
                   <div
@@ -119,7 +131,7 @@ function CommoditiesTutorials() {
                       style={{ objectFit: 'cover' }}
                     />
                   </div>
-                  <div className="p-3 d-flex flex-column justify-content-center bg-dark text-white" style={{ flex: 1 }}>
+                  <div className="p-3 d-flex flex-column justify-content-center bg-tranpraent text-white" style={{ flex: 1 }}>
                     <h6 className="fw-bold h3 mb-2">{lesson.title}</h6>
                     <p className="mb-0 fs-5">{lesson.desc}</p>
                   </div>

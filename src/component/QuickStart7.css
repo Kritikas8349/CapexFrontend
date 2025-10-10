@@ -14,7 +14,8 @@ html {
 
 .withdraw-section7 {
     display: flex;
-    height: 600px;
+    height: 88vh;
+    margin: 10px 20px 0px 20px ;
     align-items: center;
     justify-content: space-between;
     padding: 80px 5%;
@@ -23,6 +24,7 @@ html {
     position: relative;
     overflow: hidden;
     flex-wrap: nowrap;
+    border-radius: 20px;
 }
 
 /* ==== LEFT SIDE ==== */
@@ -125,15 +127,12 @@ html {
     margin-bottom: 30px;
 }
 
-.filter-buttons7 button {
-    background-color: white;
-    border: 1px solid #007bff;
-    color: #007bff;
-    padding: 10px 20px;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s ease;
+.payment-section7 h1{
+    color: white;
+    background-color: #007bff;
+    width: 30%;
+    height: 8vh;
+    border-radius: 13px;
 }
 
 .filter-buttons7 .active7,
@@ -145,6 +144,7 @@ html {
 .payment-grid7 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* border-radius: 30px; */
     gap: 30px;
 }
 
@@ -279,6 +279,9 @@ html {
     color: white;
     text-align: center;
     padding: 60px 20px;
+    max-width: 1480px;
+    margin-left: 18px;
+    border-radius: 13px;
 }
 
 .withdraw-header7 h1 {
@@ -387,6 +390,9 @@ html {
     color: white;
     flex-wrap: wrap;
     gap: 40px;
+    max-width: 1480px;
+    margin-left: 18px;
+    border-radius: 13px;
 }
 
 /* Left Side Text */
@@ -482,8 +488,10 @@ html {
 }
 
 .faq-container7 {
-    max-width: 1500px;
+    max-width: 1480px;
     margin-top: 20px;
+    margin-left: 18px;
+    border-radius: 13px;
     height: 400px;
     /* margin: 0 auto; */
     padding: 40px 20px;

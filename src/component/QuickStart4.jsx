@@ -80,7 +80,7 @@ function QuickStart4() {
                                 <td>From 0.0</td>
                                 <td>From 0.6</td>
                             </tr>
-                            <tr>
+                            <tr id='white'>
                                 <td>Commission (Per side)</td>
                                 <td>No commission</td>
                                 <td>US$3.00</td>
@@ -92,7 +92,7 @@ function QuickStart4() {
                                 <td>US$100</td>
                                 <td>US$500</td>
                             </tr>
-                            <tr>
+                            <tr id='white'>
                                 <td>Minimum Trade Size</td>
                                 <td>0.01 lots</td>
                                 <td>0.01 lots</td>
@@ -104,7 +104,7 @@ function QuickStart4() {
                                 <td>Up to 1:500</td>
                                 <td>Up to 1:500</td>
                             </tr>
-                            <tr>
+                            <tr id='white'>
                                 <td>Margin Call Level</td>
                                 <td>50%</td>
                                 <td>50%</td>
@@ -116,7 +116,7 @@ function QuickStart4() {
                                 <td>20%</td>
                                 <td>20%</td>
                             </tr>
-                            <tr>
+                            <tr id='white'>
                                 <td>Swap Free</td>
                                 <td>Yes</td>
                                 <td>Yes</td>
@@ -128,7 +128,7 @@ function QuickStart4() {
                                 <td>Yes</td>
                                 <td>Yes</td>
                             </tr>
-                            <tr>
+                            <tr id='white'>
                                 <td></td>
                                 <td><button className="btn blue">Open Standard</button></td>
                                 <td><button className="btn green">Open Raw</button></td>
@@ -237,60 +237,7 @@ function QuickStart4() {
 
             {/* Account cards */}
             {/* <!-- Block 1 --> */}
-            <div className='res-img'>
-            <div class="standard-account">
-                <div class="left-image">
-                    <img src="pho.avif" alt="Trader 1" />
-                    <div class="right-content">
-                        <h2 class="heading">Standard</h2>
-                        <h3 class="subheading">Create an account<br />in less than 5 minutes</h3>
-                        <ul class="features">
-                            <li>US$0 Minimum Deposit</li>
-                            <li>Leverage up to 1:500</li>
-                            <li>No Commissions</li>
-                            <li>Swap free available</li>
-                        </ul>
-                        <button class="create-btn">Create Account</button>
-                    </div>
-                </div>
-            </div>
-
-            {/* <!-- Block 2 --> */}
-            <div class="standard-account">
-                <div class="left-image">
-                    <img src="pho2.avif" alt="Trader 2" />
-                    <div class="right-content">
-                        <h2 class="heading">Standard </h2>
-                        <h3 class="subheading">Instant access<br />to global markets</h3>
-                        <ul class="features">
-                            <li>Low spreads starting at 0.5 pips</li>
-                            <li>Fast execution</li>
-                            <li>Advanced trading tools</li>
-                            <li>24/5 support</li>
-                        </ul>
-                        <button class="create-btn">Create Account</button>
-                    </div>
-                </div>
-            </div>
-
-            {/* <!-- Block 3 --> */}
-            <div class="standard-account">
-                <div class="left-image">
-                    <img src="pho3.avif" alt="Trader 3" />
-                    <div class="right-content">
-                        <h2 class="heading">Pro Trader</h2>
-                        <h3 class="subheading">Designed for<br />experienced traders</h3>
-                        <ul class="features">
-                            <li>Raw spreads from 0.0 pips</li>
-                            <li>Commission-based pricing</li>
-                            <li>High liquidity access</li>
-                            <li>Priority support</li>
-                        </ul>
-                        <button class="create-btn   ">Create Account</button>
-                    </div>
-                </div>
-            </div>
-            </div>
+           
 
 
             {/* FAQ Section */}
@@ -317,20 +264,7 @@ function QuickStart4() {
 
 
 
-            <div className="payment-container4">
-                <div className="payment-grid4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-                    <img src="mastercard.png" alt="MasterCard" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo" />
-                    <img src="googlepay.png" alt="Google Pay" className="small-logo" />
-                    <img src="banktransfer.png" alt="Bank Transfer" />
-                    <img src="crypto.png" alt="Crypto" />
-                    <img src="neteller.png" alt="Neteller" />
-                    <img src="skrill.png" alt="Skrill" />
-                    <img src="banktransfer.png" alt="Local Bank Transfer" />
-                    {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
-                </div>
-            </div>
+          
 
 
 

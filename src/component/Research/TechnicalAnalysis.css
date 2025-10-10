@@ -22,6 +22,7 @@ html {
     background-position: center;
     display: flex;
     align-items: center;
+    text-align: start;
     justify-content: center;
 }
 
@@ -41,6 +42,7 @@ html {
 .article-list {
     margin-top: 50px;
   list-style: none;
+  text-align: start;
   
 }
 

@@ -14,11 +14,12 @@ html {
 
 .landing-section3 {
     display: flex;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    height: 88vh;
+    padding-top: 40px;
     padding: 40px 20px;
     /* background-image: url('https://via.placeholder.com/1200x800');  */
     background: linear-gradient(to bottom right, #000000, #493ffd);
@@ -65,7 +66,7 @@ html {
 
 }
 
-.join-btn {
+.join-btn3 {
     height: 50px;
     margin-top: 20px;
     padding: 10px 20px;
@@ -155,162 +156,111 @@ html {
     .phone-image3 {
         max-width: 300px;
     }
-}
-
-.trading-platforms {
+}.home-platforms-section-Q1-1 {
+    /* margin: 10px 20px 0px 20px; */
+    background-color: #000;
     padding: 60px 20px;
+    border-radius: 16px;
+    margin: 20px 13px 10px 13px;
+  }
+  
+  .home-platforms-heading-Q-1 {
+    color: #ffffff;
+    font-size: 2.5rem;
     text-align: center;
-}
-
-.section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #0051ff;
     margin-bottom: 40px;
-}
-
-.platforms-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.platform-card {
-    border: 2px solid #0051ff;
-    border-radius: 0px;
-    padding: 20px;
-    background: #fff;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.platform-card:hover {
-    transform: translateY(-5px);
-}
-
-.platform-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position: relative;
-}
-
-.platform-header h3 {
-    font-size: 1.4rem;
     font-weight: 700;
-    color: #0051ff;
-}
-
-.platform-icon {
+  }
+  
+  .home-platforms-grid-Q-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-platform-card-Q-1 {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: start;
+  }
+  
+  .home-platform-logo-Q-1 {
     width: 50px;
     height: 50px;
     object-fit: contain;
-}
-
-.new-badge {
-    position: absolute;
-    right: -5px;
-    top: -10px;
-    background: #00d26a;
-    color: #fff;
-    font-size: 0.75rem;
-    padding: 2px 8px;
-    border-radius: 20px;
-}
-
-.platform-card p {
-    margin: 15px 0;
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.4;
-}
-
-.learn-btn {
-    background: #e7f0ff;
-    color: #0051ff;
-    border: none;
-    padding: 10px 18px;
-    font-size: 0.95rem;
+    margin-top: 4px;
+  }
+  
+  .home-platform-content-Q-1 {
+    flex: 1;
+  }
+  
+  .home-platform-header-Q-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .home-platform-title-Q-1 {
+    font-size: 1.5rem;
+    color: #000;
     font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.learn-btn:hover {
-    background: #c8dbff;
-}
-
-/* ✅ Tablet */
-@media (max-width: 1024px) {
-    .platforms-grid {
-        grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+  
+  .home-learn-more-btn-Q-1 {
+    background-color: #493ffd;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+  
+  .home-learn-more-btn-Q-1:hover {
+    background-color: #3c34d1;
+  }
+  
+  .home-platform-desc-Q-1 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.9;
+  }
+  
+  /* Responsive: stack on mobile */
+  @media (max-width: 768px) {
+    .home-platforms-grid-Q-1 {
+      grid-template-columns: 1fr;
     }
-
-    .section-title {
-        font-size: 2.2rem;
+  
+    .home-platform-card-Q-1 {
+      flex-direction: column;
+      align-items: flex-start;
     }
-}
-
-/* ✅ Mobile */
-@media (max-width: 768px) {
-    .platforms-grid {
-        grid-template-columns: 1fr;
+  
+    .home-platform-header-Q-1 {
+      flex-direction: column;
+      align-items: flex-start;
     }
-
-    .platform-card {
-        text-align: center;
+  
+    .home-learn-more-btn-Q-1 {
+      margin-top: 8px;
     }
-
-    .platform-header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .platform-header h3 {
-        text-align: center;
-    }
-
-    .platform-card p {
-        text-align: center;
-    }
-}
-
-/* ✅ Extra Small Phones (300px–400px) */
-@media (max-width: 400px) {
-    .section-title {
-        font-size: 1.6rem;
-        margin-bottom: 25px;
-    }
-
-    .platform-card {
-        padding: 15px;
-    }
-
-    .platform-header h3 {
-        font-size: 1.1rem;
-    }
-
-    .platform-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .learn-btn {
-        width: 100%;
-        padding: 10px;
-        font-size: 0.85rem;
-    }
-
-    .platform-card p {
-        font-size: 0.9rem;
-    }
-}
-
-
+  }
+  
 
 .payment-container {
     max-width: 1450px;
@@ -332,239 +282,4 @@ html {
 .title span {
     color: #3b82f6;
     /* blue */
-}
-
-.payment-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 50px;
-    align-items: center;
-    justify-items: center;
-    margin-top: 0;
-    padding-left: 80px;
-
-
-}
-
-.payment-grid img {
-    max-width: 100px;
-    max-height: 50px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-}
-
-.payment-grid img:hover {
-    transform: scale(1.05);
-}
-
-.small-logo {
-    max-height: 35px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .title {
-        font-size: 1.3rem;
-    }
-
-    .payment-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* mobile me 2-2 icon ek line me */
-        gap: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .payment-grid img {
-        max-width: 90px;
-        max-height: 40px;
-
-    }
-}
-
-/* ✅ Tablet - 1024px and below */
-@media (max-width: 1024px) {
-    .landing-section3 {
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .left-section3,
-    .right-section3 {
-        width: 100%;
-    }
-
-    .title3 {
-        font-size: 2.5rem;
-    }
-
-    .description3 {
-        font-size: 1rem;
-    }
-
-    .email-form3 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .email-input3,
-    .join-btn {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .platforms-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .section-title {
-        font-size: 2.2rem;
-    }
-    .payment-grid img{
-        margin-right: 70px;
-         grid-template-columns: repeat(3, 3fr);
-    }
-}
-
-/* ✅ Mobile - 768px and below */
-@media (max-width: 768px) {
-    .title3 {
-        font-size: 2rem;
-    }
-
-    .description3 {
-        font-size: 0.95rem;
-    }
-
-    .email-input3 {
-        font-size: 0.95rem;
-    }
-
-    .join-btn {
-        font-size: 0.95rem;
-    }
-
-    .phone-image3 {
-        max-width: 280px;
-    }
-
-    .platforms-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .platform-card {
-        text-align: center;
-    }
-
-    .platform-header {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .platform-header h3,
-    .platform-card p {
-        text-align: center;
-    }
-
-    .payment-grid {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .title {
-        font-size: 1.5rem;
-    }
-}
-
-/* ✅ Small Devices - 480px and below */
-@media (max-width: 480px) {
-    .landing-section3 {
-        padding: 30px 10px;
-    }
-
-    .title3 {
-        font-size: 1.6rem;
-    }
-
-    .description3 {
-        font-size: 0.9rem;
-    }
-
-    .email-form3 {
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-    }
-
-    .email-input3 {
-        max-width: 100%;
-        font-size: 0.9rem;
-    }
-
-    .join-btn {
-        font-size: 0.9rem;
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    .right-section3 img {
-        max-width: 230px;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-    }
-
-    .payment-grid img {
-        max-width: 80px;
-        max-height: 35px;
-    }
-}
-
-/* ✅ Extra Small Devices - 335px and below */
-@media (max-width: 335px) {
-    .title3 {
-        font-size: 1.4rem;
-    }
-
-    .email-form3 {
-        flex-direction: column;
-        max-width: 100%;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .email-input3 {
-        max-width: 210px;
-    }
-
-    .join-btn {
-        min-width: 150px;
-        font-size: 0.85rem;
-    }
-
-    .phone-image3 {
-        max-width: 200px;
-    }
-
-    .platform-icon {
-        width: 35px;
-        height: 35px;
-    }
-
-    .platform-header h3 {
-        font-size: 1.1rem;
-    }
-
-    .learn-btn {
-        font-size: 0.85rem;
-        padding: 8px;
-    }
 }

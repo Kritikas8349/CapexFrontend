@@ -1,0 +1,6 @@
+.bgc-col{
+    background: linear-gradient(to left, #000000, #0033a0);
+    margin: 10px 20px 0px 20px;
+    height: 80vh;
+    border-radius: 20px;
+}

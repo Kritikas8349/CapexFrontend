@@ -62,10 +62,7 @@
 .verify-sidebar-header:hover {
     color: black;
 }
-.verify-sidebar-header.active {
-    background: #eef4ff;
-    font-weight: bold;
-}
+
 .verify-sidebar-icon {
     width: 40px;
     height: 40px;
@@ -90,7 +87,7 @@
 .verify-dropdown {
     padding: 5px 20px;
     font-size: 14px;
-    color: #444;
+    color: #fff;
 }
 .verify-dropdown p {
     margin: 4px 0;
@@ -98,7 +95,6 @@
 }
 .verify-dropdown p:hover {
     text-decoration: underline;
-    color: #493ffd;
 }
 
 /* Content */

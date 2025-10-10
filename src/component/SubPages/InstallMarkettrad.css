@@ -72,9 +72,7 @@
     color: #000;
   }
   
-  .install-sidebar-header.active {
-    background: #eef4ff;
-  }
+  
   
   .install-sidebar-icon {
     width: 40px;
@@ -112,7 +110,6 @@
   
   .install-dropdown p:hover {
     text-decoration: underline;
-    color: #493ffd;
   }
   
   /* === Right Content === */

@@ -1,97 +1,96 @@
 import React, { useState } from "react";
 import "./LoginForm1.css";
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
-export default function LoginForm() {
-  const [passwordVisible, setPasswordVisible] = useState(false);
+const LoginForm1 = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Email:", email);
+    console.log("Password:", password);
+  };
 
   return (
-    <div className="container">
-      <div className="logofix">
-        <img src="logo.png" alt="Market Trad Logo" className="logo" />
+    <div className="login-wrapper">
+    {/* Left Side - Login Form */}
+    <div className="login-left">
+      <div className="logo">
+        <h1>
+          Market.<span className="logo-blue">trad</span>
+        </h1>
       </div>
-
-
-
-      <div className="login-form-wrapper">
-        <form className="login-form">
-          <h2>Sign in to your account</h2>
-          <p className="subtext">Welcome back! Please Enter your Details</p>
-
-          <label htmlFor="email" className="label">
-            Email address
-          </label>
+      <div className="login-box">
+        <h2>Sign in to your account</h2>
+        <p>Welcome back! Please Enter your Details</p>
+        <form onSubmit={handleSubmit}>
+          <label>Email address</label>
           <input
             type="email"
-            id="email"
             placeholder="demo@minimals.cc"
-            className="input"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
-
-          <label htmlFor="password" className="label">
-            Password
-          </label>
+  
+          <label>Password</label>
           <div className="password-wrapper">
             <input
-              type={passwordVisible ? "text" : "password"}
-              id="password"
+              type={showPassword ? "text" : "password"}
               placeholder="6+ characters"
-              className="input"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <button
-              type="button"
+            <span
               className="toggle-password"
-              onClick={() => setPasswordVisible(!passwordVisible)}
-              aria-label="Toggle password visibility"
-              tabIndex={-1}
+              onClick={() => setShowPassword(!showPassword)}
             >
-              {passwordVisible ? (
-                <AiFillEyeInvisible className="eye-icon" />
-              ) : (
-                <AiFillEye className="eye-icon" />
-              )}
-            </button>
+              {showPassword ? "Hide" : "Show"}
+            </span>
           </div>
-
-          <div className="options-row">
-            <label className="remember-me">
+  
+          <div className="form-footer">
+            <label>
               <input type="checkbox" />
               Remember me
             </label>
-
-            <a href="#forgot" className="forgot-password">
-              Forgot password?
-            </a>
+            <a href="#">Forgot password?</a>
           </div>
-
+  
           <button type="submit" className="sign-in-btn">
             Sign in
           </button>
-
-          <div className="or-divider">
-            <span>OR</span>
-          </div>
-
-          <div className="social-buttons">
-            <button type="button" className="social-btn google-btn">
-              <FcGoogle className="social-icon" />
-              Sign up with google
-            </button>
-            <button type="button" className="social-btn apple-btn">
-              <FaApple className="social-icon" />
-              Sign up with apple
-            </button>
-          </div>
-
-          <p className="signup-text">
-            Don't have an account? <a href="#signup">Sign up</a>
-          </p>
         </form>
+  
+        <div className="or-divider">OR</div>
+  
+        <div className="social-buttons">
+          <button className="google-btn">Sign up with Google</button>
+          <button className="apple-btn">Sign up with Apple</button>
+        </div>
+  
+        <p className="signup-text">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
       </div>
     </div>
+  
+    {/* Right Side - Info & Image */}
+    <div className="login-right">
+      <h2>Welcome back!</h2>
+      <p>
+        Please sign in to your <strong>Market.Trad</strong> Account
+      </p>
+      <p className="subtext">
+        Ranked #1 forex broker in execution speed by Compare ForexBrokers.com
+      </p>
+      <img src="laptop2.png" alt="Dashboard screenshot" />
+    </div>
+  </div>
+  
   );
-}
+};
+
+export default LoginForm1;

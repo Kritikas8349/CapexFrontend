@@ -6,7 +6,7 @@ function QuickStart7() {
 
     const methods = [
         {
-            logo: "googlepay.png",
+            logo: "/public/googlepay.png",
             name: "Google Pay",
             type: "Instant",
             processing: "Instant on approval",
@@ -16,7 +16,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "applelog.webp",
+            logo: "/public/applelog.webp",
             name: "Apple Pay",
             type: "Instant",
             processing: "Instant on approval",
@@ -26,7 +26,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "visalogo.webp",
+            logo: "/public/visalogo.webp",
             name: "Visa",
             type: "Instant",
             processing: "Instant on approval",
@@ -36,7 +36,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "skrill.png",
+            logo: "/public/skrill.png",
             name: "Skrill",
             type: "Instant",
             processing: "Instant on approval",
@@ -46,7 +46,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "neteller.png",
+            logo: "/public/neteller.png",
             name: "Neteller",
             type: "Instant",
             processing: "Instant on approval",
@@ -56,7 +56,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "banktransfer.png",
+            logo: "/public/banktransfer.png",
             name: "Local Bank Transfer",
             type: "Popular",
             processing: "30 to 90 mins",
@@ -66,7 +66,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "paypal.webp",
+            logo: "/public/paypal.webp",
             name: "PayPal",
             type: "Instant",
             processing: "Instant on approval",
@@ -76,7 +76,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "stripe.webp",
+            logo: "/public/stripe.webp",
             name: "Stripe",
             type: "Popular",
             processing: "Instant on approval",
@@ -86,7 +86,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -96,7 +96,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -106,7 +106,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -116,7 +116,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -126,7 +126,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -136,7 +136,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -146,7 +146,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -156,7 +156,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "upi-logo.webp",
+            logo: "/public/upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -166,7 +166,7 @@ function QuickStart7() {
             fee: "$0",
         },
         {
-            logo: "amexlogo.webp",
+            logo: "/public/amexlogo.webp",
             name: "AMEX",
             type: "Instant",
             processing: "Instant on approval",
@@ -217,16 +217,15 @@ function QuickStart7() {
                 </div>
 
                 <div className="withdraw-right7">
-                    <img src="1.png" alt="Phone showing deposit options" />
+                    <img src="/public/1.png" alt="Phone showing deposit options" />
                 </div>
             </div>
 
 
             <div className="payment-section7">
                 <div className="filter-buttons7">
-                    <button className="active7">All</button>
-                    <button>Instant</button>
-                    <button>Popular</button>
+                    <h1>Payment Mode</h1>
+                   
                 </div>
 
                 <div className="payment-grid7">
@@ -273,7 +272,7 @@ function QuickStart7() {
                 <div className="withdraw-steps7">
                     {/* Step 1 */}
                     <div className="step-card7">
-                        <img src="start.webp" alt="Select Wallet" />
+                        <img src="/public/start.webp" alt="Select Wallet" />
                         <h2>Select Method</h2>
                         <p>
                             Select the account you want to withdraw funds and click ‘WITHDRAW FUNDS’
@@ -284,7 +283,7 @@ function QuickStart7() {
 
                     {/* Step 2 */}
                     <div className="step-card7">
-                        <img src="mid.webp" alt="Select Method" />
+                        <img src="/public/mid.webp" alt="Select Method" />
                         <h2>Select Wallet</h2>
                         <p>
                             Select the payment method by which you want to make the withdrawal.
@@ -295,7 +294,7 @@ function QuickStart7() {
 
                     {/* Step 3 */}
                     <div className="step-card7">
-                        <img src="end.webp" alt="Specify Amount" />
+                        <img src="/public/end.webp" alt="Specify Amount" />
                         <h2>Specify Amount</h2>
                         <p>
                             Specify the amount you want to deposit and click ‘NEXT’.
@@ -323,7 +322,7 @@ function QuickStart7() {
                     <iframe
                         width="100%"
                         height="100%"
-                        src="https://youtu.be/_5OYF926ZSM"
+                        src="/public/https://youtu.be/_5OYF926ZSM"
                         title="How to Fund Your Trading Account"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

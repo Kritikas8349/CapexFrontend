@@ -160,17 +160,18 @@ function ForexTutorials() {
                     `.bg-forex
                      {
                          background: linear-gradient(to bottom right, #000000, #231586)}
+                         
                        
 
                     `
                 }
 
             </style>
-      <div className="container-fluid bg-forex text-white  " >
-        <div className="container bg-transparent">
+      <div className="container-fluid bg-forex text-white pt-4 " >
+        <div className="container bg-transparent pt-4">
           <h2 className="fw-bold bg-transparent text-white text-center display-5 py-4"> Forex Tutorial</h2>
 
-          <div className="row border-top bg-transparent border-primary border-3 pt-4">
+          <div className="row bg-transparent  pt-2">
             <div className="col-lg-6 mb-4 bg-transparent">
               <div className="d-flex flex-column bg-transparent text-white">
                 <div className="position-relative flex-fill">

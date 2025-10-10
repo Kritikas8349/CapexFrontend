@@ -24,7 +24,10 @@ body {
 
 /* Outer Container */
 .outer {
-    padding: 20px;
+    padding: 90px;
+    margin: 10px 20px 0px 20px;
+    background: linear-gradient(to bottom right, #000000, #493ffd);
+    border-radius: 20px;
 }
 
 /* Top Section */
@@ -37,6 +40,7 @@ body {
     font-size: 3rem;
     font-weight: 800;
     margin-bottom: 50px;
+    color: #fff;
 }
 
 /* Table */
@@ -58,14 +62,18 @@ body {
 #background {
     background-color: #e2eaf7;
 }
+#white{
+    background-color: #fff;
+}
 
 .table-section th,
 .table-section td {
     /* border: 1px solid #ddd; */
-    border: 2px solid #fff;
+    border: 4px solid #fff;
     padding: 15px;
     text-align: center;
 }
+
 
 .table-section th {
 
@@ -165,18 +173,19 @@ body {
     padding: 2rem;
     background: #fff;
     border: 1px solid #f1f1f1;
-    border-radius: 6px;
+    border-radius: 13px;
     margin: 2rem auto;
-    max-width: 1300px;
+    max-width: 1480px;
 }
 
 .account-content {
     flex: 1;
     justify-items: start;
+    text-align: start;
 }
 
 .account-content h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #000;
     margin-bottom: 1rem;
@@ -256,11 +265,12 @@ body {
 
 .quiz-container {
     width: 100%;
-    max-width: 1330px;
+    max-width: 1480px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 .quiz-header {
@@ -440,31 +450,35 @@ body {
 /* Container for the entire section */
 /* Main container for the section */
 .blackbull-section-p {
-    background-image: url('Rectangle4389.png');
+    /* background-image: url('/public/Rectangle4389.png'); */
     /* background-size: cover;  */
     object-fit: cover;
     background-position: center;
     /* color: rgb(251, 250, 250); */
     display: flex;
-    background-color: red;
+    background-color: #000000;
     height: 54%;
     padding: 0;
-    max-width: 1400px;
+    max-width: 1480px;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 18px;
+    border-radius: 20px;
+
+
 
 }
 
 /* Container that holds the content box */
 .blackbull-content {
-    background-color: rgba(64, 63, 63, 0.6);
+   /* background-color: #fff; */
     /* Semi-transparent background for text */
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); */
     text-align: center;
     max-width: 1500px;
     width: 100%;
+    
 
 }
 
@@ -488,7 +502,7 @@ body {
 
 /* Styling for each card */
 .card {
-    background-color: transparent;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -496,7 +510,7 @@ body {
 }
 
 .card h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
 }
 
@@ -759,12 +773,15 @@ body {
 
 
 .faq-container {
-    max-width: 1500px;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-left:18px ;
+    max-width: 1480px;
+    /* margin:  auto; */
     padding: 40px 20px;
     background-color: #000;
     /* black background */
     color: #fff;
+    border-radius: 20px;
     font-family: 'Poppins', sans-serif;
 }
 

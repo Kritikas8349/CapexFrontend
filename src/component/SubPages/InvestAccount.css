@@ -69,9 +69,7 @@
     color: #000;
   }
   
-  .investaccount-sidebar-header.active {
-    background: #eef4ff;
-  }
+  
   
   .investaccount-sidebar-icon {
     width: 40px;
@@ -99,7 +97,7 @@
   .investaccount-dropdown {
     padding: 5px 20px;
     font-size: 14px;
-    color: #444;
+    color: #fff;
   }
   
   .investaccount-dropdown p {
@@ -109,7 +107,6 @@
   
   .investaccount-dropdown p:hover {
     text-decoration: underline;
-    color: #493ffd;
   }
   
   /* === Right Content === */

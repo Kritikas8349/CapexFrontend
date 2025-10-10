@@ -10,7 +10,7 @@ const SecurityFunds = () => {
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb">
         <a href="/">Home</a> <span>›</span>
-        <a href="/support">Support</a> <span>›</span>
+        <a href="/support/">Support</a> <span>›</span>
         <a href="/support/market">Market Support</a> <span>›</span>
         <span className="current">Security of Funds</span>
       </nav>

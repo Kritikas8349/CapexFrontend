@@ -1,10 +1,19 @@
 /* Global Styling */
 /* Global Styling */
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+#Main{
+  width: 100%;
+  height: 100%;
+}
 .forex-tutorial {
-   background: linear-gradient(to left, #241ad5, #090552,#000000);
+  background: linear-gradient(to left, #241ad5, #090552,#000000);
   color: #fff;
-  
-  height: 750px;
+  max-height:100vh ;
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -20,6 +29,7 @@
 
 /* Grid Layout */
 .tutorial-grid {
+  padding-top: 125px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;

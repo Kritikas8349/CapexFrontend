@@ -1,5 +1,8 @@
 // routesMap.jsx
 export const routesMap = {
+
+    Personal: "/",
+
     /* ===== Quick Start ===== */
     "Why Market.trad Markets?": "/quickstart/why-markets",
     "What assets can I trade?": "/quickstart/assets",
@@ -26,12 +29,12 @@ export const routesMap = {
     Indices1: "/markets/futures/indices",
   
     /* ===== Platform ===== */
-    TradingView: "/platforms/tradingview",
-    cTrade: "/platforms/ctrade",
+    "Trading View": "/platforms/tradingview",
+    "cTrade": "/platforms/ctrade",
     "MetaTrade 4 (MT4)": "/platforms/mt4",
     "MetaTarde 5 (MT5)": "/platforms/mt5",
     "Market.trad CopyTrade": "/platforms/copytrade",
-    "Market.trad Invest": "/platforms/invest",
+    "Market.trad Invest": "/support/platform/invest/open-share-account",
     "Trading Tools": "/platforms/tradingtools",
     "VPS Trading": "/platforms/tradingtools/vpstrading",
     "Fix API Trading": "/platforms/tradingtools/fixAPItrading",
@@ -39,11 +42,11 @@ export const routesMap = {
     "Myfxbook": "/platforms/tradingtools/myfxbook",
   
     /* ===== Education ===== */
-    "Education Hub": "/education",
-    Webinars: "/education/webinars",
-    "Forex Tutorials": "/forex",
-    "Commodities Tutorials": "/commodities",
-    "Shares Tutorials": "/shares",
+    "Education Hub": "/education/education-hub",
+    "Webinars": "/education/webinars",
+    "Forex Tutorials": "/education/forex",
+    "Commodities Tutorials": "/education/commodities",
+    "Shares Tutorials": "/education/shares",
     "Beginner Forex Tutorial": "/education/forex/beginner",
     "Intermediate Forex Tutorial": "/education/forex/intermediate",
     "Advanced Forex Tutorial": "/education/forex/advanced",
@@ -54,16 +57,17 @@ export const routesMap = {
     "Intermediate Commodities Tutorial": "/education/commodities/intermediate",
     "Advanced Commodities Tutorial": "/education/commodities/advanced",
     "Economic Calendar": "/education/economic-calendar",
+    "Research ": "/education/research/hub",
     "Research Hub": "/education/research/hub",
     "Daily Market Analysis Snapshot": "/education/research/daily-analysis",
     "Watch Upcoming Trading Opportunities": "/education/research/opportunities",
     "Daily Insight Podcast": "/education/research/podcast",
-    "Trading Research": "/education/research/trading",
-    "Investment Research": "/education/research/investment",
+    "Trading Research": "/education/research/opportunities",
+    "Investment Research": "/education/research/investmenresearch",
     "Demo Trade": "/education/demo-trade",
   
     /* ===== About ===== */
-    "About Us": "/about",
+    "About Us": "/about/about-us",
     "Awarded by Industry": "/about/awards",
     "About Comparison": "/about/comparison",
     "Company News": "/about/news",
@@ -83,11 +87,11 @@ export const routesMap = {
     "How to link your trading platform?": "/support/getting-started/link-platform",
     "How to place your first trade?": "/support/getting-started/first-trade",
     "Secure Client Area": "/support/platform/secure-client",
-    "Platform TradingView": "/support/platform/tradingview",
-    "Platform cTrade": "/support/platform/ctrade",
-    "Platform MetaTrade 4": "/support/platform/mt4",
-    "Platform MetaTrade 5": "/support/platform/mt5",
-    "How to open a share investing account?": "/support/platform/invest/open-share-account",
+    "TradingView": "/support/platform/tradingview",
+    "c-Trade": "/support/platform/ctrade",
+    "MetaTrade 4": "/support/platform/mt4",
+    "MetaTrade 5": "/support/platform/mt5",
+    "How to open a share investing account?": "/support/platform/open-share-account",
     "How to fund your share investing account?": "/support/platform/invest/fund-share-account",
     "How to install and log into Market.trad Invest?": "/support/platform/invest/install-login",
     "How to convert currency in a Cash Account?": "/support/platform/invest/currency-conversion",
@@ -99,6 +103,65 @@ export const routesMap = {
     "Education Hub Support": "/support/education-hub",
     "Support Economic Calendar": "/support/economic-calendar",
     "Contact Us": "/support/contact",
-  };
+
+   
+
+
+    //PARTNER
+
+/* ===== Affiliates ===== */
+"Affiliates Overview": "/affiliates/overview",
+"CPA Payment structure": "/affiliates/cpa/payment-structure",
+"Multi-step payment structure": "/affiliates/cpa/multi-step",
+"Partner Tiers": "/affiliates/cpa/partner-tiers",
+"Sub-Affiliates": "/affiliates/sub-affiliates",
+"Example Review": "/affiliates/example-review",
+"Affiliates Support": "/affiliates/affiliate-support",
+
+/* ===== IB Program ===== */
+"IB Overview": "/ib-program/overview",
+"Regional Representatives": "/ib-program/broker-models/regional-reps",
+"Marketing Materials": "/ib-program/marketing-materials",
+"IBs Support": "/ib-program/support",
+
+/* ===== About ===== */
+"AboutUs": "/partner-about/us",
+"Compliances": "/partner-about/compliance",
+"Partner Blog": "/partner-about/blog",
+"Partner Terms": "/partner-about/legal/partner-terms",
+"Legal Compliance": "/partner-about/legal/compliance",
+"Verifications & Payments": "/partner-about/legal/verifications-payments",
+
+/* ===== Support ===== */
+"Affiliates Supports": "/partner/support/affiliates",
+"IBs Supports": "/partner/support/ibs",
+"Brand Guidelines": "/partner/support/brand-guidelines",
+"Contact Us": "/partner/support/contact",
+
+
+
+
+
+//------------------------------------------- Research -------------------------------------------------//
+
+// Top-level menu items
+"Daily News": "/research/daily-news",
+"Equity Research": "/research/equity-research",
+"Technical Analysis": "/research/technical-analysis",
+
+// Sub-items under Equity Research
+"Australia": "/research/equity-research/australia",
+"New Zealand": "/research/equity-research/new-zealand",
+"USA": "/research/equity-research/usa",
+
+
+};
   
+
+
+
+
+
+
+
   export default routesMap;

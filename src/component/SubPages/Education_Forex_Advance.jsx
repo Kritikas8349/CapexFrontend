@@ -31,12 +31,12 @@ function Education_Forex_Advance() {
         <div id='Main'>
 
             <div className="forex-tutorial">
-                <h1 className="tutorial-heading">Advanced Forex Tutorial</h1>
+                {/* <h1 className="tutorial-heading">Advanced Forex Tutorial</h1> */}
 
                 <div className="tutorial-grid">
                     {/* Left Section: Lesson 1 */}  
                     <div className="left-section">
-                        <div className="lesson1-image" style={{ backgroundImage: 'url(a1.png)' }}>
+                        <div className="lesson1-image" style={{ backgroundImage: 'url(/public/a1.png)' }}>
                             <div className="lesson1-title"></div>
                         </div>
                         <div className="lesson1-text">
@@ -51,40 +51,40 @@ function Education_Forex_Advance() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="right-section">
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(a2.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/a2.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
                                 <h4>Forex 303: Lesson 2 of 5</h4>
                                 <p>
                                     In this lesson, we explore: Understanding charts, technical indicators,
-                                    and using technical analysis to make trading decisions...
+                                    and using technical analysis to make trading...
                                 </p>
                             </div>
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(a3.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/a3.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
                                 <h4>Forex 303: Lesson 3 of 5</h4>
                                 <p>
                                     In this lesson, we explore: Understanding economic reports and their impact
-                                    on currency prices, Analyzing news and events to predict...
+                                    on currency prices, Analyzing news and events...
                                 </p>
                             </div>
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(a4.png)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/a4.png)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
                                 <h4>Forex 303: Lesson 4 of 5</h4>
                                 <p>
                                     In this lesson, we explore: Understanding the risks involved in forex trading,
-                                    Implementing risk management strategies, and Using stop-loss and...
+                                    Implementing risk management strategies...
                                 </p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ function Education_Forex_Advance() {
             <div className="card-bottom-grid">
                 {/* Lesson 5 */}
                 <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('a5.webp')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url('/public/a5.webp')" }}>
 
                     </div>
                     <div className="card-bottom-title">Forex 303: Lesson 5 of 5</div>
@@ -107,21 +107,7 @@ function Education_Forex_Advance() {
             </div>
 
 
-            <div className="m1-payment-container">
-                <div className="m1-payment-grid">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-                    <img src="mastercard.png" alt="MasterCard" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="m1-small-logo" />
-                    <img src="googlepay.png" alt="Google Pay" className="m1-small-logo" />
-                    <img src="banktransfer.png" alt="Bank Transfer" />
-                    <img src="crypto.png" alt="Crypto" />
-                    <img src="neteller.png" alt="Neteller" />
-                    <img src="skrill.png" alt="Skrill" />
-                    <img src="banktransfer.png" alt="Local Bank Transfer" />
-                    {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
-                </div>
-            </div>
-
+          
 
 
 

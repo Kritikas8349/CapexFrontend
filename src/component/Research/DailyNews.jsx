@@ -1,5 +1,6 @@
 import React from 'react'
 import "./DailyNews.css";
+import trd from '/public/trd.jpg';
 
 function DailyNews() {
 
@@ -47,8 +48,7 @@ function DailyNews() {
 
     return (
         <div id='Main'>
-
-            <div className="news-section">
+             <div className="news-section" style={{ backgroundImage: `url(${trd})` }}>
                 <div className="overlay">
                     <h1 className="news">News</h1>
                     <p className="news-des">

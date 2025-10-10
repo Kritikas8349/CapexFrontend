@@ -13,7 +13,7 @@ function CTrader() {
             </style>
             <div className="container-fluid bg-home text-white py-5 trading-view">
                 <div className="container">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center mt-5">
 
                         {/* LEFT SECTION */}
                         <div className="col-lg-6 text-start mb-4 mb-lg-0">

@@ -23,7 +23,7 @@ function Support1() {
                         <h1>Affiliates - <span>Support</span></h1>
                         <p>Search our knowledge base for answers to common questions</p>
 
-                        <input type="text" placeholder="🔍 Search..." />
+                        <input type="text" className="input" placeholder="🔍 Search..." />
                         
                     </div>
                 </div>

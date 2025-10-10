@@ -18,7 +18,7 @@ body {
   width: 100%;
   max-width: 1480px;
   height: 97vh;
-  margin: 40px auto 40px auto;
+  margin: 10px auto 40px auto;
   padding: 160px 20px 0 20px; /* Adds spacing left/right */
   border-radius: 12px;
   overflow: hidden;
