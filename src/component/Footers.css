@@ -1,25 +1,24 @@
 /* Footer Base */
-.footer {
+.footer-fo {
   background-color: #ebefee;
   padding-bottom: 20px;
   width: 100%;
 }
 
 /* Payment Section */
-.paymentgrid1 {
+.paymentgrid1-fo {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: #fff;
   width: 100%;
+  margin-left: 20px;
   max-width: 1480px;
-  margin: 0 auto; /* center container */
   border-radius: 16px;
-  
 }
 
-.payment-title {
+.payment-title-fo {
   font-size: 36px;
   font-weight: bold;
   color: #000;
@@ -27,12 +26,12 @@
   text-align: center;
 }
 
-.payment-title span {
+.payment-title-fo span {
   color: #493ffd;
 }
 
 /* Payment Logos Grid */
-.payment-logos {
+.payment-logos-fo {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
@@ -40,23 +39,23 @@
   width: 100%;
 }
 
-.payment-logos img {
+.payment-logos-fo img {
   max-width: 120px;
   max-height: 50px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
 
-.payment-logos img.small-logo {
+.payment-logos-fo img.small-logo-fo {
   max-height: 40px;
 }
 
-.payment-logos img:hover {
+.payment-logos-fo img:hover {
   transform: scale(1.05);
 }
 
 /* Hero Section */
-.herocontainer1 {
+.herocontainer1-fo {
   position: relative;
   width: 100%;
   max-width: 1480px;
@@ -66,35 +65,35 @@
   align-items: flex-start;
   justify-content: center;
   color: #fff;
-  margin: 20px auto 0 auto; 
+  margin: 20px auto 0 auto;
   border-radius: 16px;
 }
 
-.herooverlay1 {
+.herooverlay1-fo {
   text-align: center;
   max-width: 800px;
   width: 90%;
   padding: 10px;
 }
 
-.herooverlay1 h1 {
+.herooverlay1-fo h1 {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.herooverlay1 h1 span {
+.herooverlay1-fo h1 span {
   color: #3b82f6;
 }
 
-.herooverlay1 p {
+.herooverlay1-fo p {
   font-size: 1.1rem;
   margin-bottom: 25px;
   color: #ddd;
 }
 
 /* Search Box */
-.searchbox1 {
+.searchbox1-fo {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,7 +108,7 @@
   border-radius: 30px;
 }
 
-.searchbox1 input {
+.searchbox1-fo input {
   flex: 1;
   border: none;
   outline: none;
@@ -119,7 +118,7 @@
   background: transparent;
 }
 
-.searchbox1 .button1 {
+.searchbox1-fo .button1-fo {
   background: #3b82f6;
   color: white;
   border: none;
@@ -132,16 +131,17 @@
   transition: background 0.3s ease;
 }
 
-.searchbox1 .button1:hover {
+.searchbox1-fo .button1-fo:hover {
   background: #2563eb;
 }
 
 /* Mobile Button Below Searchbox */
-.mobile-btn {
-  display: none; /* hidden by default */
+.mobile-btn-fo {
+  display: none;
 }
+
 /* Footer Container */
-.footercontainer1 {
+.footercontainer1-fo {
   background: linear-gradient(to bottom right, #000000, #231586);
   color: #fff;
   padding: 40px 20px;
@@ -153,34 +153,34 @@
 }
 
 /* Footer Top */
-.footertop1 {
+.footertop1-fo {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* 👈 logo thoda upar align hoga */
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.footerlogo1 img {
+.footerlogo1-fo img {
   width: 160px;
   height: auto;
   max-width: 100%;
-  margin-bottom: 15px; /* thoda gap neeche */
+  margin-bottom: 15px;
 }
 
 /* Footer Social */
-.footersocial1 {
+.footersocial1-fo {
   display: flex;
-  justify-content: center; /* horizontal center */
+  justify-content: center;
   align-items: center;
-  gap: 12px; /* logos ke beech gap */
+  gap: 12px;
   flex-wrap: wrap;
 }
 
-.footersocial1 a {
+.footersocial1-fo a {
   display: inline-block;
 }
 
-.footersocial1 img {
+.footersocial1-fo img {
   width: 36px;
   height: 36px;
   object-fit: contain;
@@ -188,141 +188,138 @@
   transition: transform 0.2s ease;
 }
 
-.footersocial1 img:hover {
-  transform: scale(1.1); /* hover effect */
+.footersocial1-fo img:hover {
+  transform: scale(1.1);
 }
 
 /* Footer Content */
-.footercontent1 {
+.footercontent1-fo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* center on small screens */
+  justify-content: center;
   gap: 20px;
   border-bottom: 2px solid grey;
   padding-top: 50px;
   text-align: start;
 }
 
-.footersection1 {
+.footersection1-fo {
   flex: 1 1 180px;
   margin: 10px;
   min-width: 140px;
 }
 
-.footersection1 h3 {
+.footersection1-fo h3 {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.footersection1 ul {
+.footersection1-fo ul {
   list-style: none;
   padding: 0;
 }
 
-.footersection1 ul li {
+.footersection1-fo ul li {
   font-size: 14px;
   margin-bottom: 8px;
 }
 
 /* Footer Bottom */
-.footerbottom1 {
+.footerbottom1-fo {
   justify-items: center;
   margin-top: 30px;
   text-align: start;
 }
 
-.footercontact1 p {
+.footercontact1-fo p {
   font-size: 14px;
   margin: 5px 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .footertop1 {
+  .footertop1-fo {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .footerlogo1 img {
+  .footerlogo1-fo img {
     margin-bottom: 20px;
   }
 
-  .footersocial1 {
+  .footersocial1-fo {
     justify-content: center;
     margin-bottom: 20px;
   }
 }
 
-
 /* Responsive Styles */
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .footercontent1 {
+  .footercontent1-fo {
     flex-direction: column;
     align-items: center;
   }
 
-  .footersection1 {
+  .footersection1-fo {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .footersocial1 img {
+  .footersocial1-fo img {
     width: 32px;
     height: 32px;
   }
 
-  .footerlogo1 img {
+  .footerlogo1-fo img {
     width: 140px;
   }
 }
 
 /* Small Tablets / Large Phones */
 @media (max-width: 768px) {
-  .payment-logos {
+  .payment-logos-fo {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .paymentgrid1 img {
+  .paymentgrid1-fo img {
     max-width: 100px;
     max-height: 40px;
   }
 
-  .herocontainer1 {
+  .herocontainer1-fo {
     height: 500px;
     margin: 20px auto;
   }
 
-  .herooverlay1 h1 {
+  .herooverlay1-fo h1 {
     font-size: 1.5rem;
   }
 
-  .herooverlay1 p {
+  .herooverlay1-fo p {
     font-size: 1rem;
   }
 
-  .searchbox1 {
+  .searchbox1-fo {
     flex-direction: column;
     height: auto;
     padding: 8px;
     gap: 10px;
   }
 
-  .searchbox1 input {
+  .searchbox1-fo input {
     width: 100%;
   }
 
-  /* Hide button inside searchbox on small screens */
-  .searchbox1 .desktop-btn {
+  .searchbox1-fo .desktop-btn-fo {
     display: none;
   }
 
-  /* Show mobile button */
-  .mobile-btn {
+  .mobile-btn-fo {
     display: block;
     width: 100%;
     max-width: 500px;
@@ -339,62 +336,62 @@
     text-align: center;
   }
 
-  .mobile-btn:hover {
+  .mobile-btn-fo:hover {
     background: #2563eb;
   }
 
-  .footercontainer1 {
+  .footercontainer1-fo {
     padding: 30px 15px;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
-  .payment-logos {
+  .payment-logos-fo {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 
-  .paymentgrid1 img {
+  .paymentgrid1-fo img {
     max-width: 90px;
     max-height: 35px;
   }
 
-  .herooverlay1 h1 {
+  .herooverlay1-fo h1 {
     font-size: 1.2rem;
   }
 
-  .herooverlay1 p {
+  .herooverlay1-fo p {
     font-size: 0.9rem;
   }
 
-  .searchbox1 {
+  .searchbox1-fo {
     height: auto;
     flex-direction: column;
     padding: 6px 10px;
     gap: 8px;
   }
 
-  .searchbox1 input {
+  .searchbox1-fo input {
     font-size: 0.9rem;
   }
 
-  .footersection1 {
+  .footersection1-fo {
     flex: 1 1 100%;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .footersocial1 img {
+  .footersocial1-fo img {
     width: 28px;
     height: 28px;
   }
 
-  .footerlogo1 img {
+  .footerlogo1-fo img {
     width: 120px;
   }
 
-  .footerbottom1 {
+  .footerbottom1-fo {
     text-align: center;
   }
 }

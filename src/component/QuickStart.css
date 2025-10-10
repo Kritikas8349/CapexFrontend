@@ -46,8 +46,10 @@ html, body {
 }
 
 .main-content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 45px;
+  /* background-color: red; */
+  margin-bottom: 25px;
+  margin-left: 20px;
   padding-bottom: 20px;
   justify-content: center;
 }
@@ -135,24 +137,23 @@ html, body {
 
 .institutional-image {
     flex: 1;
-    padding: 30px;
+    padding: 20px;
     min-width: 300px;
     text-align: center;
 }
 
 .institutional-image img {
   width: 100%;
-  
   max-width: 600px;
   border-radius: 18px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-@media (min-width:300px) {
+@media (max-width:400px) {
   
   .institutional-image img{
     display: flex;
-    height: 400px;
+    height: 300px;
     width: 95%;
     /* margin-top: -30px; */
     /* height: 200px; */
@@ -230,7 +231,7 @@ html, body {
   
   .history-image img{
     display: flex;
-    width: 85%;
+    width: 98%;
     
     /* height: 200px; */
     justify-content: center;
@@ -242,28 +243,21 @@ html, body {
 
 /* Phones (<=480px) */
 @media (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px 20px;
-    gap: 12px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
+  
 
   .main-content {
     padding: 40px 20px;
+ 
   }
 
   .main-content h1 {
-    font-size: 24px;
+    font-size: 14px;
+    
   }
 
   .main-content p {
     font-size: 14px;
+    max-width: 200px;
   }
 
   .image-wrapper img {
@@ -895,8 +889,8 @@ html, body {
 }
 
 .education-container {
-  max-width: 1400px;
-  margin: 30px auto;
+  max-width: 1480px;
+  margin: 18px 2px 0px 2px ;
   padding: 20px;
   border-radius: 12px;
   background: #fff;
@@ -915,12 +909,14 @@ html, body {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
+  color: black;
 }
 
 .header p {
   font-size: 0.95rem;
   color: #444;
   margin-top: 4px;
+  /* gap: 10px; */
 }
 
 .yt-text {
@@ -935,6 +931,9 @@ html, body {
   padding: 8px 18px;
   border-radius: 20px;
   font-size: 0.9rem;
+  margin-left:30px;
+  margin-bottom:38px; 
+  /* background-color: red; */
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -979,7 +978,7 @@ html, body {
     gap: 10px;
   }
   .video-grid{
-    justify-content: center;
+    /* justify-content: center; */
 
   }
 }
