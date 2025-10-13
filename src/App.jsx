@@ -135,7 +135,7 @@ import EconomicCalendar from "./component/EconomicCalendar";
 import ContactSupport from "./component/ContactSupport";
 import VPStrading from "./component/SubPages/VPStrading";
 import FixAPI from "./component/SubPages/FixAPI";
-import ZuluTrade from "./component/SubPages/Zulutrade";
+import ZuluTrade from "./component/SubPages/ZuluTrade";
 import Myfxbook from "./component/SubPages/Myfxbook";
 import BeginnerShare from "./component/SubPages/BeginnerShare";
 import Intermediate from "./component/SubPages/Intermediate";
