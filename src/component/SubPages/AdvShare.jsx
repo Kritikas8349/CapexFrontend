@@ -35,7 +35,7 @@ function AdvShare() {
                 <div className="adv-tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="adv-left-section">
-                        <div className="adv-lesson1-image" style={{ backgroundImage: 'url(/public/stocks-303.webp)' }}>
+                        <div className="adv-lesson1-image" style={{ backgroundImage: 'url(stocks-303.webp)' }}>
                             <div className="adv-lesson1-title"></div>
                         </div>
                         <div className="adv-lesson1-text">
@@ -49,7 +49,7 @@ function AdvShare() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="adv-right-section">
                         <div className="adv-lesson-card">
-                            <div className="adv-lesson-card-image" style={{ backgroundImage: 'url(/public/stocks-303.1.webp)' }}>
+                            <div className="adv-lesson-card-image" style={{ backgroundImage: 'url(stocks-303.1.webp)' }}>
                                 <div className="adv-lesson-card-overlay"></div>
                             </div>
                             <div className="adv-lesson-card-text">
@@ -61,7 +61,7 @@ function AdvShare() {
                         </div>
 
                         <div className="adv-lesson-card">
-                            <div className="adv-lesson-card-image" style={{ backgroundImage: 'url(/public/stocks-303.2.webp)' }}>
+                            <div className="adv-lesson-card-image" style={{ backgroundImage: 'url(stocks-303.2.webp)' }}>
                                 <div className="adv-lesson-card-overlay"></div>
                             </div>
                             <div className="adv-lesson-card-text">
@@ -73,7 +73,7 @@ function AdvShare() {
                         </div>
 
                         <div className="adv-lesson-card">
-                            <div className="adv-lesson-card-image" style={{ backgroundImage: 'url(/public/stocks-303.3.png)' }}>
+                            <div className="adv-lesson-card-image" style={{ backgroundImage: 'url(stocks-303.3.png)' }}>
                                 <div className="adv-lesson-card-overlay"></div>
                             </div>
                             <div className="adv-lesson-card-text">
@@ -88,7 +88,7 @@ function AdvShare() {
             </div>
 
             <div className="adv-right-extra">
-                <div className="adv-lesson1-extra-image" style={{ backgroundImage: 'url(/public/stocks-303.4.webp)' }}>
+                <div className="adv-lesson1-extra-image" style={{ backgroundImage: 'url(stocks-303.4.webp)' }}>
                     <div className="adv-lesson1-extra-title"></div>
                 </div>
                 <div className="adv-lesson1-extra-text">

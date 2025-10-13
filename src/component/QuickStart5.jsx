@@ -53,7 +53,7 @@
           <div className="identity-section">
             {/* Left side image + upload text */}
             <div className="identity-left">
-              <img src="/public/aadhar.jpg" alt="Aadhaar Card" className="identity-img" />
+              <img src="aadhar.jpg" alt="Aadhaar Card" className="identity-img" />
               <div className="upload-section">
                 <p>
                   Verify your account by uploading your Proof of Identity and Proof

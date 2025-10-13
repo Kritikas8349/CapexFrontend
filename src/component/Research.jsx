@@ -59,21 +59,21 @@ function Research() {
             id: 1,
             title: "FOMC doves now in the driver’s seat?",
             date: "SEPTEMBER 18, 2025",
-            image: "/public/trade.avif",
+            image: "trade.avif",
             link: "#",
         },
         {
             id: 2,
             title: "The push for a 50bps Fed cut and its effect on EUR/USD",
             date: "SEPTEMBER 17, 2025",
-            image: "/public/trade1.avif",
+            image: "trade1.avif",
             link: "#",
         },
         {
             id: 3,
             title: "Euro shrugs off France’s credit downgrade | FX Research",
             date: "SEPTEMBER 16, 2025",
-            image: "/public/trade2.avif",
+            image: "trade2.avif",
             link: "#",
         },
     ];
@@ -127,7 +127,7 @@ function Research() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center mt-4 mt-lg-0">
                             <img
-                                src="/public/mobile.png" // Replace with your image
+                                src="mobile.png" // Replace with your image
                                 alt="Daily Market Analysis"
                                 className="img-fluid"
                                 style={{ maxHeight: '500px', width: '100%', objectFit: 'contain' }}
@@ -278,7 +278,7 @@ function Research() {
                     </div>
                     <div className="col-md-6 col-lg-6 text-center position-relative ">
                         <div className="card bg-light mt-3  p-3 ">
-                            <img src="/public/pho.avif" alt="" srcset="" className='bg-white' width={"130px"} height={"140px"} />
+                            <img src="pho.avif" alt="" srcset="" className='bg-white' width={"130px"} height={"140px"} />
                             <span className='bi bi-spotify position-absolute top-0 end-0 me-2'></span>
                         </div>
                     </div>

@@ -36,7 +36,7 @@ function Education_Com_Advance() {
                 <div className="tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="left-section">
-                        <div className="lesson1-image" style={{ backgroundImage: 'url(/public/A11.webp)' }}>
+                        <div className="lesson1-image" style={{ backgroundImage: 'url(A11.webp)' }}>
                             <div className="lesson1-title"></div>
                         </div>
                         <div className="lesson1-text">
@@ -51,7 +51,7 @@ function Education_Com_Advance() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="right-section">
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/A12.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(A12.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -64,7 +64,7 @@ function Education_Com_Advance() {
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/A13.png)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(A13.png)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -77,7 +77,7 @@ function Education_Com_Advance() {
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/A14.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(A14.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -97,7 +97,7 @@ function Education_Com_Advance() {
             <div className="card-bottom-grid">
                 {/* Lesson 5 */}
                 <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('/public/A151.png ')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url('A151.png ')" }}>
 
                     </div>
                     <div className="card-bottom-title">Advanced 101: Lesson 5 of 7</div>

@@ -7,7 +7,7 @@ function QuickStart6() {
 
     const methods = [
         {
-            logo: "/public/googlepay.png",
+            logo: "googlepay.png",
             name: "Google Pay",
             type: "Instant",
             processing: "Instant on approval",
@@ -17,7 +17,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/applelog.webp",
+            logo: "applelog.webp",
             name: "Apple Pay",
             type: "Instant",
             processing: "Instant on approval",
@@ -27,7 +27,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/visalogo.webp",
+            logo: "visalogo.webp",
             name: "Visa",
             type: "Instant",
             processing: "Instant on approval",
@@ -37,7 +37,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/skrill.png",
+            logo: "skrill.png",
             name: "Skrill",
             type: "Instant",
             processing: "Instant on approval",
@@ -47,7 +47,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/neteller.png",
+            logo: "neteller.png",
             name: "Neteller",
             type: "Instant",
             processing: "Instant on approval",
@@ -57,7 +57,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/banktransfer.png",
+            logo: "banktransfer.png",
             name: "Local Bank Transfer",
             type: "Popular",
             processing: "30 to 90 mins",
@@ -67,7 +67,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/paypal.webp",
+            logo: "paypal.webp",
             name: "PayPal",
             type: "Instant",
             processing: "Instant on approval",
@@ -77,7 +77,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/stripe.webp",
+            logo: "stripe.webp",
             name: "Stripe",
             type: "Popular",
             processing: "Instant on approval",
@@ -87,7 +87,7 @@ function QuickStart6() {
             fee: "$0",
         },
         {
-            logo: "/public/upi-logo.webp",
+            logo: "upi-logo.webp",
             name: "UPI",
             type: "Instant",
             processing: "Instant on approval",
@@ -133,7 +133,7 @@ function QuickStart6() {
                 </div>
 
                 <div className="deposit-right">
-                    <img src="/public/1.png" alt="Phone showing deposit options" />
+                    <img src="1.png" alt="Phone showing deposit options" />
                 </div>
             </div>
 
@@ -187,7 +187,7 @@ function QuickStart6() {
                 <div className="deposit-steps6">
                     {/* Step 1 */}
                     <div className="step-card6">
-                        <img src="/public/start.webp" alt="Select Wallet" />
+                        <img src="start.webp" alt="Select Wallet" />
                         <h2>Select Wallet</h2>
                         <p>
                             Select the account you want to deposit funds and click ‘ADD FUNDS’.
@@ -196,7 +196,7 @@ function QuickStart6() {
 
                     {/* Step 2 */}
                     <div className="step-card6">
-                        <img src="/public/mid.webp" alt="Select Method" />
+                        <img src="mid.webp" alt="Select Method" />
                         <h2>Select Method</h2>
                         <p>
                             Select the payment method by which you want to make the deposit.
@@ -205,7 +205,7 @@ function QuickStart6() {
 
                     {/* Step 3 */}
                     <div className="step-card6">
-                        <img src="/public/end.webp" alt="Specify Amount" />
+                        <img src="end.webp" alt="Specify Amount" />
                         <h2>Specify Amount</h2>
                         <p>
                             Specify the amount you want to deposit and click ‘NEXT’.
@@ -232,7 +232,7 @@ function QuickStart6() {
                     <iframe
                         width="100%"
                         height="100%"
-                        src="/public/https://youtu.be/_5OYF926ZSM"
+                        src="https://youtu.be/_5OYF926ZSM"
                         title="How to Fund Your Trading Account"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

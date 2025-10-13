@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./AccountCreate.css";
 
 const sections = [
-  { title: "Getting Started", img: "/public/pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "/public/pf2.webp", count: 8 },
-  { title: "TradingView", img: "/public/Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "/public/pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "/public/pf3.webp", count: 17 },
-  { title: "BlackBull Invest", img: "/public/pf4.svg", count: 7 },
-  { title: "cTrader", img: "/public/pf4.svg", count: 22 },
-  { title: "Account Support", img: "/public/pf4.svg", count: 8 },
+  { title: "Getting Started", img: "pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
+  { title: "TradingView", img: "Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
+  { title: "BlackBull Invest", img: "pf4.svg", count: 7 },
+  { title: "cTrader", img: "pf4.svg", count: 22 },
+  { title: "Account Support", img: "pf4.svg", count: 8 },
 ];
 
 const AccountCreate = () => {
@@ -92,7 +92,7 @@ const AccountCreate = () => {
             From the Market.trad.com homepage, enter your email address and
             click “Join Now.”
           </p>
-          <img src="/public/create.png" alt="Step 1" className="f-step-image" />
+          <img src="create.png" alt="Step 1" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -101,13 +101,13 @@ const AccountCreate = () => {
             Enter your personal details and set a password for your BlackBull
             Markets Account.
           </p>
-          <img src="/public/acc2.webp" alt="Step 2" className="f-step-image" />
+          <img src="acc2.webp" alt="Step 2" className="f-step-image" />
         </div>
 
         <div className="f-step">
           <h3>Step 3.</h3>
           <p>State your account type and input your residential address.</p>
-          <img src="/public/acc3.webp" alt="Step 3" className="f-step-image" />
+          <img src="acc3.webp" alt="Step 3" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -116,13 +116,13 @@ const AccountCreate = () => {
             Select the conditions for your first trading account, including
             whether you want a Standard or Prime account.
           </p>
-          <img src="/public/acc4.jpg" alt="Step 4" className="f-step-image" />
+          <img src="acc4.jpg" alt="Step 4" className="f-step-image" />
         </div>
 
         <div className="f-step">
           <h3>Step 5.</h3>
           <p>State your employment information and source of funds.</p>
-          <img src="/public/acc5.webp" alt="Step 5" className="f-step-image" />
+          <img src="acc5.webp" alt="Step 5" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -133,7 +133,7 @@ const AccountCreate = () => {
             <br />
             <span>Full Tutorial: What is the suitability quiz?</span>
           </p>
-          <img src="/public/acc6.webp" alt="Step 6" className="f-step-image" />
+          <img src="acc6.webp" alt="Step 6" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -145,7 +145,7 @@ const AccountCreate = () => {
             <br />
             <span>Full Tutorial: How to verify your account?</span>
           </p>
-          <img src="/public/acc7.webp" alt="Step 7" className="f-step-image" />
+          <img src="acc7.webp" alt="Step 7" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -156,7 +156,7 @@ const AccountCreate = () => {
             <br />
             <span>Full Tutorial: How to fund your account?</span>
           </p>
-          <img src="/public/acc8.webp" alt="Step 8" className="f-step-image" />
+          <img src="acc8.webp" alt="Step 8" className="f-step-image" />
         </div>
       </div>
     </div>

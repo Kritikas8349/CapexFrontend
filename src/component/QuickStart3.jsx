@@ -5,37 +5,37 @@ const platforms = [
   {
     name: "TradingView",
     desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-    icon: "/public/Frame84151.png", // apna icon path
+    icon: "Frame84151.png", // apna icon path
     isNew: true,
   },
   {
     name: "MetaTrader 4",
     desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-    icon: "/public/Frame84153.png",
+    icon: "Frame84153.png",
     isNew: false,
   },
   {
     name: "MetaTrader 5",
     desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-    icon: "/public/Frame84153.png",
+    icon: "Frame84153.png",
     isNew: false,
   },
   {
     name: "cTrader",
     desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-    icon: "/public/Frame84152.png",
+    icon: "Frame84152.png",
     isNew: true,
   },
   {
     name: "BlackBull CopyTrader",
     desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-    icon: "/public/Frame84155.png",
+    icon: "Frame84155.png",
     isNew: true,
   },
   {
     name: "BlackBull Invest",
     desc: "Access 26,000+ Shares, Options, ETFs, Bonds, and other underlying assets.",
-    icon: "/public/Frame84155.png",
+    icon: "Frame84155.png",
     isNew: false,
   },
 ];
@@ -62,7 +62,7 @@ function QuickStart3() {
           </form>
         </div>
         <div className="right-section3">
-          <img src="/public/1.png" alt="Phone" className="phone-image3" />
+          <img src="1.png" alt="Phone" className="phone-image3" />
         </div>
       </section>
 
@@ -75,7 +75,7 @@ function QuickStart3() {
   <div className="home-platforms-grid-Q-1">
 
     <div className="home-platform-card-Q-1">
-      <img src="/public/f1.png" alt="TradingView" className="home-platform-logo-Q-1" />
+      <img src="f1.png" alt="TradingView" className="home-platform-logo-Q-1" />
       <div className="home-platform-content-Q-1">
         <div className="home-platform-header-Q-1">
           <h3 className="home-platform-title-Q-1">TradingView</h3>
@@ -86,7 +86,7 @@ function QuickStart3() {
     </div>
 
     <div className="home-platform-card-Q-1">
-      <img src="/public/f1.png" alt="cTrader" className="home-platform-logo-Q-1" />
+      <img src="f1.png" alt="cTrader" className="home-platform-logo-Q-1" />
       <div className="home-platform-content-Q-1">
         <div className="home-platform-header-Q-1">
           <h3 className="home-platform-title-Q-1">cTrader</h3>
@@ -97,7 +97,7 @@ function QuickStart3() {
     </div>
 
     <div className="home-platform-card-Q-1">
-      <img src="/public/f2.png" alt="MetaTrader 4" className="home-platform-logo-Q-1" />
+      <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-Q-1" />
       <div className="home-platform-content-Q-1">
         <div className="home-platform-header-Q-1">
           <h3 className="home-platform-title-Q-1">MetaTrader 4</h3>
@@ -108,7 +108,7 @@ function QuickStart3() {
     </div>
 
     <div className="home-platform-card-Q-1">
-      <img src="/public/f4.png" alt="MetaTrader 5" className="home-platform-logo-Q-1" />
+      <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-Q-1" />
       <div className="home-platform-content-Q-1">
         <div className="home-platform-header-Q-1">
           <h3 className="home-platform-title-Q-1">MetaTrader 5</h3>
@@ -119,7 +119,7 @@ function QuickStart3() {
     </div>
 
     <div className="home-platform-card-Q-1">
-      <img src="/public/f3.png" alt="CopyTrader" className="home-platform-logo-Q-1" />
+      <img src="f3.png" alt="CopyTrader" className="home-platform-logo-Q-1" />
       <div className="home-platform-content-Q-1">
         <div className="home-platform-header-Q-1">
           <h3 className="home-platform-title-Q-1">CopyTrader</h3>
@@ -130,7 +130,7 @@ function QuickStart3() {
     </div>
 
     <div className="home-platform-card-Q-1">
-      <img src="/public/f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q-1" />
+      <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q-1" />
       <div className="home-platform-content-Q-1">
         <div className="home-platform-header-Q-1">
           <h3 className="home-platform-title-Q-1">Market.Trad Invest</h3>
@@ -150,15 +150,15 @@ function QuickStart3() {
       
         {/* <div className="payment-grid">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
-          <img src="/public/mastercard.png" alt="MasterCard" />
+          <img src="mastercard.png" alt="MasterCard" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo" />
-          <img src="/public/googlepay.png" alt="Google Pay" className="small-logo" />
-          <img src="/public/banktransfer.png" alt="Bank Transfer" />
-          <img src="/public/crypto.png" alt="Crypto" />
-          <img src="/public/neteller.png" alt="Neteller" />
-          <img src="/public/skrill.png" alt="Skrill" />
-          <img src="/public/banktransfer.png" alt="Local Bank Transfer" />
-          {/* <img src="/public/banktransfer.png" alt="Local Bank Transfer" /> */}
+          <img src="googlepay.png" alt="Google Pay" className="small-logo" />
+          <img src="banktransfer.png" alt="Bank Transfer" />
+          <img src="crypto.png" alt="Crypto" />
+          <img src="neteller.png" alt="Neteller" />
+          <img src="skrill.png" alt="Skrill" />
+          <img src="banktransfer.png" alt="Local Bank Transfer" />
+          {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
         {/* </div>  */}
       
 

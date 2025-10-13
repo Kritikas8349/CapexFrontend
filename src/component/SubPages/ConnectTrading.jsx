@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import "./ConnectTrading.css";
 
 const sections = [
-  { title: "Getting Started", img: "/public/pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "/public/pf2.webp", count: 8 },
-  { title: "TradingView", img: "/public/Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "/public/pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "/public/pf3.webp", count: 17 },
-  { title: "BlackBull Invest", img: "/public/pf4.svg", count: 7 },
-  { title: "cTrader", img: "/public/pf4.svg", count: 22 },
-  { title: "Account Support", img: "/public/pf4.svg", count: 8 },
+  { title: "Getting Started", img: "pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
+  { title: "TradingView", img: "Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
+  { title: "BlackBull Invest", img: "pf4.svg", count: 7 },
+  { title: "cTrader", img: "pf4.svg", count: 22 },
+  { title: "Account Support", img: "pf4.svg", count: 8 },
 ];
 
 const ConnectTrading = () => {
@@ -87,26 +87,26 @@ const ConnectTrading = () => {
           <h1>How to connect to MetaTrader 4 (MT4)?</h1>
           <h3>Step 1.</h3>
           <p>Log in to your Market.trad account and navigate to the “Trading Platforms” section.</p>
-          <img src="/public/acc5.webp" alt="Step 1" className="connect-step-image" />
+          <img src="acc5.webp" alt="Step 1" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 2.</h3>
           <p>Select MetaTrader 4 as your trading platform.</p>
-          <img src="/public/acc2.webp" alt="Step 2" className="connect-step-image" />
+          <img src="acc2.webp" alt="Step 2" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 3.</h3>
           <p>Enter your MT4 account credentials provided by Market.trad and follow the on-screen instructions.
             <br /><span>Full Tutorial: How to verify connection?</span></p>
-          <img src="/public/acc3.webp" alt="Step 3" className="connect-step-image" />
+          <img src="acc3.webp" alt="Step 3" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 4.</h3>
           <p>Verify the connection and ensure your MT4 account is active and synced correctly.</p>
-          <img src="/public/acc8.webp" alt="Step 4" className="connect-step-image" />
+          <img src="acc8.webp" alt="Step 4" className="connect-step-image" />
         </div>
 
         <h1>How to connect to MetaTrader 5 (MT5)?</h1>
@@ -114,26 +114,26 @@ const ConnectTrading = () => {
         <div className="connect-step">
           <h3>Step 1.</h3>
           <p>Log in to your Market.trad account and navigate to the “Trading Platforms” section.</p>
-          <img src="/public/acc7.webp" alt="Step 1" className="connect-step-image" />
+          <img src="acc7.webp" alt="Step 1" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 2.</h3>
           <p>Select MetaTrader 5 as your trading platform.</p>
-          <img src="/public/acc2.webp" alt="Step 2" className="connect-step-image" />
+          <img src="acc2.webp" alt="Step 2" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 3.</h3>
           <p>Enter your MT5 account credentials provided by Market.trad and follow the on-screen instructions.
             <br /><span>Full Tutorial: How to verify connection?</span></p>
-          <img src="/public/acc5.webp" alt="Step 3" className="connect-step-image" />
+          <img src="acc5.webp" alt="Step 3" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 4.</h3>
           <p>Verify the connection and ensure your MT5 account is active and synced correctly.</p>
-          <img src="/public/acc6.webp" alt="Step 4" className="connect-step-image" />
+          <img src="acc6.webp" alt="Step 4" className="connect-step-image" />
         </div>
 
         <h1>How to connect to TradingView?</h1>
@@ -141,26 +141,26 @@ const ConnectTrading = () => {
         <div className="connect-step">
           <h3>Step 1.</h3>
           <p>Log in to your Market.trad account and navigate to the “Trading Platforms” section.</p>
-          <img src="/public/acc3.webp" alt="Step 1" className="connect-step-image" />
+          <img src="acc3.webp" alt="Step 1" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 2.</h3>
           <p>Select TradingView as your trading platform.</p>
-          <img src="/public/acc2.webp" alt="Step 2" className="connect-step-image" />
+          <img src="acc2.webp" alt="Step 2" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 3.</h3>
           <p>Enter your TradingView account credentials provided by Market.trad and follow the on-screen instructions.
             <br /><span>Full Tutorial: How to verify connection?</span></p>
-          <img src="/public/acc3.webp" alt="Step 3" className="connect-step-image" />
+          <img src="acc3.webp" alt="Step 3" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 4.</h3>
           <p>Verify the connection and ensure your TradingView account is active and synced correctly.</p>
-          <img src="/public/acc7.webp" alt="Step 4" className="connect-step-image" />
+          <img src="acc7.webp" alt="Step 4" className="connect-step-image" />
         </div>
 
         <h1>How to connect to cTrader?</h1>
@@ -168,26 +168,26 @@ const ConnectTrading = () => {
         <div className="connect-step">
           <h3>Step 1.</h3>
           <p>Log in to your Market.trad account and navigate to the “Trading Platforms” section.</p>
-          <img src="/public/acc5.webp" alt="Step 1" className="connect-step-image" />
+          <img src="acc5.webp" alt="Step 1" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 2.</h3>
           <p>Select cTrader as your trading platform.</p>
-          <img src="/public/acc3.webp" alt="Step 2" className="connect-step-image" />
+          <img src="acc3.webp" alt="Step 2" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 3.</h3>
           <p>Enter your cTrader account credentials provided by Market.trad and follow the on-screen instructions.
             <br /><span>Full Tutorial: How to verify connection?</span></p>
-          <img src="/public/acc6.webp" alt="Step 3" className="connect-step-image" />
+          <img src="acc6.webp" alt="Step 3" className="connect-step-image" />
         </div>
 
         <div className="connect-step">
           <h3>Step 4.</h3>
           <p>Verify the connection and ensure your cTrader account is active and synced correctly.</p>
-          <img src="/public/acc3.webp" alt="Step 4" className="connect-step-image" />
+          <img src="acc3.webp" alt="Step 4" className="connect-step-image" />
         </div>
       </div>
     </div>

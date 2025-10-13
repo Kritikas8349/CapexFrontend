@@ -36,7 +36,7 @@ function Education_Com_Intermediate() {
                 <div className="tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="left-section">
-                        <div className="lesson1-image" style={{ backgroundImage: 'url(/public/i12.webp)' }}>
+                        <div className="lesson1-image" style={{ backgroundImage: 'url(i12.webp)' }}>
                             <div className="lesson1-title"></div>
                         </div>
                         <div className="lesson1-text">
@@ -51,7 +51,7 @@ function Education_Com_Intermediate() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="right-section">
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/i13.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(i13.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -64,7 +64,7 @@ function Education_Com_Intermediate() {
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/i14.png)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(i14.png)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -77,7 +77,7 @@ function Education_Com_Intermediate() {
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/public/i16.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(i16.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -97,7 +97,7 @@ function Education_Com_Intermediate() {
             <div className="card-bottom-grid">
                 {/* Lesson 5 */}
                 <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('/public/i17.webp')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url('i17.webp')" }}>
 
                     </div>
                     <div className="card-bottom-title">Intermediate 101: Lesson 5 of 7</div>

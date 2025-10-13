@@ -8,7 +8,7 @@ function TradingOpportunity() {
                 <div className="m1-t-card-container">
                     {[1, 2, 3, 4].map(i => (
                         <div className="m1-t-card" key={i}>
-                            <img src={`/public/card${i}.webp`} alt={`card${i}`} className="m1-t-card-image" />
+                            <img src={`card${i}.webp`} alt={`card${i}`} className="m1-t-card-image" />
                             <div className="m1-t-card-content">
                                 <h2 className="m1-t-card-title">Title for card {i}</h2>
                                 <p className="m1-t-card-description">Some brief description of the card content for card {i}...</p>

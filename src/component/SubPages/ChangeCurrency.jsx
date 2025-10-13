@@ -4,14 +4,14 @@ import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaPinterestP } from "react-icons
 import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 
 const sections = [
-  { title: "Getting Started", img: "/public/pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "/public/pf2.webp", count: 8 },
-  { title: "TradingView", img: "/public/Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "/public/pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "/public/pf3.webp", count: 17 },
-  { title: "Market.trad Invest", img: "/public/pf4.svg", count: 7 },
-  { title: "cTrader", img: "/public/pf4.svg", count: 22 },
-  { title: "Account Support", img: "/public/pf4.svg", count: 8 },
+  { title: "Getting Started", img: "pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
+  { title: "TradingView", img: "Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
+  { title: "Market.trad Invest", img: "pf4.svg", count: 7 },
+  { title: "cTrader", img: "pf4.svg", count: 22 },
+  { title: "Account Support", img: "pf4.svg", count: 8 },
 ];
 
 const ChangeCurrency = () => {
