@@ -1,7 +1,7 @@
 import React from "react";
-import "./CpaPaymentStructure.css";
+import "./Cpapaymentstructure.css";
 import { FaHeadset } from "react-icons/fa";
-const CPAPaymentStructure = () => {
+const Cpapaymentstructure = () => {
   return (
     <div className="cpa-page">
       {/* Hero Section */}
@@ -123,4 +123,4 @@ const CPAPaymentStructure = () => {
   );
 };
 
-export default CPAPaymentStructure;
+export default Cpapaymentstructure;
