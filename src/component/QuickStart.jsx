@@ -33,7 +33,7 @@ function QuickStart() {
             </div>
 
             <div className="image-wrapper">
-              <img src="Rectangle4393.png" alt="About Us" />
+              <img src="/Rectangle4393.png" alt="About Us" />
             </div>
           </div>
 
@@ -58,7 +58,7 @@ function QuickStart() {
           </div>
 
           <div className="institutional-image">
-            <img src="Rectangle4394.png" alt="Office workspace" />
+            <img src="/Rectangle4394.png" alt="Office workspace" />
           </div>
         </div>
 
@@ -66,7 +66,7 @@ function QuickStart() {
         <div className="history-section">
 
           <div className="history-image">
-            <img src="Rectangle4395.png" alt="Office workspace" />
+            <img src="/Rectangle4395.png" alt="Office workspace" />
           </div>
           <div className="history-content">
             <h1>
@@ -91,37 +91,37 @@ function QuickStart() {
 
           <div className="assets-grid">
             <div className="asset-box">
-              <img src="t1.png" alt="Equities" className="asset-logo" />
+              <img src="/t1.png" alt="Equities" className="asset-logo" />
               <h3 className="asset-title">Equities</h3>
               <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
             </div>
 
             <div className="asset-box">
-              <img src="t2.png" alt="Forex" className="asset-logo" />
+              <img src="/t2.png" alt="Forex" className="asset-logo" />
               <h3 className="asset-title">Forex</h3>
               <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
             </div>
 
             <div className="asset-box">
-              <img src="t3.png" alt="Commodities" className="asset-logo" />
+              <img src="/t3.png" alt="Commodities" className="asset-logo" />
               <h3 className="asset-title">Commodities</h3>
               <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>
             </div>
 
             <div className="asset-box">
-              <img src="t4.png" alt="Indices" className="asset-logo" />
+              <img src="/t4.png" alt="Indices" className="asset-logo" />
               <h3 className="asset-title">Indices</h3>
               <p className="asset-desc">Major stock indices like US30, S&P500, and NAS100.</p>
             </div>
 
             <div className="asset-box">
-              <img src="t5.png" alt="Metals" className="asset-logo" />
+              <img src="/t5.png" alt="Metals" className="asset-logo" />
               <h3 className="asset-title">Metals</h3>
               <p className="asset-desc">Precious and industry metals like gold, silver, and copper.</p>
             </div>
 
             <div className="asset-box">
-              <img src="t6.png" alt="View All" className="asset-logo" />
+              <img src="/t6.png" alt="View All" className="asset-logo" />
               <h3 className="asset-title">View all</h3>
               <p className="asset-desc">Explore Market. Trade a diverse range of tradable assets.</p>
             </div>
@@ -136,7 +136,7 @@ function QuickStart() {
           <div className="home-platforms-grid-Q">
 
             <div className="home-platform-card-Q">
-              <img src="f1.png" alt="TradingView" className="home-platform-logo-Q" />
+              <img src="/f1.png" alt="TradingView" className="home-platform-logo-Q" />
               <div className="home-platform-content-Q">
                 <div className="home-platform-header-Q">
                   <h3 className="home-platform-title-Q">TradingView</h3>
@@ -147,7 +147,7 @@ function QuickStart() {
             </div>
 
             <div className="home-platform-card-Q">
-              <img src="f1.png" alt="cTrader" className="home-platform-logo-Q" />
+              <img src="/f1.png" alt="cTrader" className="home-platform-logo-Q" />
               <div className="home-platform-content-Q">
                 <div className="home-platform-header-Q">
                   <h3 className="home-platform-title-Q">cTrader</h3>
@@ -158,7 +158,7 @@ function QuickStart() {
             </div>
 
             <div className="home-platform-card-Q">
-              <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-Q" />
+              <img src="/f2.png" alt="MetaTrader 4" className="home-platform-logo-Q" />
               <div className="home-platform-content-Q">
                 <div className="home-platform-header-Q">
                   <h3 className="home-platform-title-Q">MetaTrader 4</h3>
@@ -169,7 +169,7 @@ function QuickStart() {
             </div>
 
             <div className="home-platform-card-Q">
-              <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-Q" />
+              <img src="/f4.png" alt="MetaTrader 5" className="home-platform-logo-Q" />
               <div className="home-platform-content-Q">
                 <div className="home-platform-header-Q">
                   <h3 className="home-platform-title-Q">MetaTrader 5</h3>
@@ -180,7 +180,7 @@ function QuickStart() {
             </div>
 
             <div className="home-platform-card-Q">
-              <img src="f3.png" alt="CopyTrader" className="home-platform-logo-Q" />
+              <img src="/f3.png" alt="CopyTrader" className="home-platform-logo-Q" />
               <div className="home-platform-content-Q">
                 <div className="home-platform-header-Q">
                   <h3 className="home-platform-title-Q">CopyTrader</h3>
@@ -191,7 +191,7 @@ function QuickStart() {
             </div>
 
             <div className="home-platform-card-Q">
-              <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q" />
+              <img src="/f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q" />
               <div className="home-platform-content-Q">
                 <div className="home-platform-header-Q">
                   <h3 className="home-platform-title-Q">Market.Trad Invest</h3>
@@ -216,7 +216,7 @@ function QuickStart() {
                 <th className="home-feature-column">Compare Accounts</th>
                 <th className="home-account-column">
                   <div className="home-account-header">
-                    <img src="f11.png" alt="Standard Logo" className="home-account-logo" />
+                    <img src="/f11.png" alt="Standard Logo" className="home-account-logo" />
                     <div>
                       <div className="home-account-title">Standard</div>
                       <div className="home-account-subtitle">Perfect for traders who are just beginning</div>
@@ -225,7 +225,7 @@ function QuickStart() {
                 </th>
                 <th className="home-account-column">
                   <div className="home-account-header">
-                    <img src="f11.png" alt="Raw Logo" className="home-account-logo" />
+                    <img src="/f11.png" alt="Raw Logo" className="home-account-logo" />
                     <div>
                       <div className="home-account-title">Raw</div>
                       <div className="home-account-subtitle">Perfect for traders with experience</div>
@@ -234,7 +234,7 @@ function QuickStart() {
                 </th>
                 <th className="home-account-column">
                   <div className="home-account-header">
-                    <img src="f11.png" alt="Pro Logo" className="home-account-logo" />
+                    <img src="/f11.png" alt="Pro Logo" className="home-account-logo" />
                     <div>
                       <div className="home-account-title">Pro</div>
                       <div className="home-account-subtitle">Perfect for high-volume traders</div>
