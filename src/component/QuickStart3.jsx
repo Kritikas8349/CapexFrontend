@@ -54,11 +54,11 @@ function QuickStart3() {
           <form className="email-form3">
             <input
               type="email"
-              className="email-input3"
+              className="email-input31"
               placeholder="Email address...."
               required
             />
-            <button type="submit" className="join-btn">  Join Now</button>
+            <button type="submit" className="join-btn3">  Join Now</button>
           </form>
         </div>
         <div className="right-section3">
@@ -69,86 +69,86 @@ function QuickStart3() {
 
 
 
-      
-<div className="home-platforms-section-Q1-1">
-  <h2 className="home-platforms-heading-Q-1">Trading Platform</h2>
-  <div className="home-platforms-grid-Q-1">
 
-    <div className="home-platform-card-Q-1">
-      <img src="f1.png" alt="TradingView" className="home-platform-logo-Q-1" />
-      <div className="home-platform-content-Q-1">
-        <div className="home-platform-header-Q-1">
-          <h3 className="home-platform-title-Q-1">TradingView</h3>
-          <a href="/platforms/tradingview" className="home-learn-more-btn-Q-1">Learn More</a>
+      <div className="home-platforms-section-Q1-1">
+        <h2 className="home-platforms-heading-Q-1">Trading Platform</h2>
+        <div className="home-platforms-grid-Q-1">
+
+          <div className="home-platform-card-Q-1">
+            <img src="f1.png" alt="TradingView" className="home-platform-logo-Q-1" />
+            <div className="home-platform-content-Q-1">
+              <div className="home-platform-header-Q-1">
+                <h3 className="home-platform-title-Q-1">TradingView</h3>
+                <a href="/platforms/tradingview" className="home-learn-more-btn-Q-1">Learn More</a>
+              </div>
+              <p className="home-platform-desc-Q-1">Trade directly in TradingView, the world’s leading charting and social platform.</p>
+            </div>
+          </div>
+
+          <div className="home-platform-card-Q-1">
+            <img src="f1.png" alt="cTrader" className="home-platform-logo-Q-1" />
+            <div className="home-platform-content-Q-1">
+              <div className="home-platform-header-Q-1">
+                <h3 className="home-platform-title-Q-1">cTrader</h3>
+                <a href="/platforms/ctrade" className="home-learn-more-btn-Q-1">Learn More</a>
+              </div>
+              <p className="home-platform-desc-Q-1">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
+            </div>
+          </div>
+
+          <div className="home-platform-card-Q-1">
+            <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-Q-1" />
+            <div className="home-platform-content-Q-1">
+              <div className="home-platform-header-Q-1">
+                <h3 className="home-platform-title-Q-1">MetaTrader 4</h3>
+                <a href="/platforms/mt4" className="home-learn-more-btn-Q-1">Learn More</a>
+              </div>
+              <p className="home-platform-desc-Q-1">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
+            </div>
+          </div>
+
+          <div className="home-platform-card-Q-1">
+            <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-Q-1" />
+            <div className="home-platform-content-Q-1">
+              <div className="home-platform-header-Q-1">
+                <h3 className="home-platform-title-Q-1">MetaTrader 5</h3>
+                <a href="/platforms/mt5" className="home-learn-more-btn-Q-1">Learn More</a>
+              </div>
+              <p className="home-platform-desc-Q-1">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
+            </div>
+          </div>
+
+          <div className="home-platform-card-Q-1">
+            <img src="f3.png" alt="CopyTrader" className="home-platform-logo-Q-1" />
+            <div className="home-platform-content-Q-1">
+              <div className="home-platform-header-Q-1">
+                <h3 className="home-platform-title-Q-1">CopyTrader</h3>
+                <a href="/platforms/copytrade" className="home-learn-more-btn-Q-1">Learn More</a>
+              </div>
+              <p className="home-platform-desc-Q-1">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
+            </div>
+          </div>
+
+          <div className="home-platform-card-Q-1">
+            <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q-1" />
+            <div className="home-platform-content-Q-1">
+              <div className="home-platform-header-Q-1">
+                <h3 className="home-platform-title-Q-1">Market.Trad Invest</h3>
+                <a href="/platforms/tradingtools" className="home-learn-more-btn-Q-1">Learn More</a>
+              </div>
+              <p className="home-platform-desc-Q-1">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
+            </div>
+          </div>
+
         </div>
-        <p className="home-platform-desc-Q-1">Trade directly in TradingView, the world’s leading charting and social platform.</p>
       </div>
-    </div>
-
-    <div className="home-platform-card-Q-1">
-      <img src="f1.png" alt="cTrader" className="home-platform-logo-Q-1" />
-      <div className="home-platform-content-Q-1">
-        <div className="home-platform-header-Q-1">
-          <h3 className="home-platform-title-Q-1">cTrader</h3>
-          <a href="/platforms/ctrade" className="home-learn-more-btn-Q-1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-Q-1">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-Q-1">
-      <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-Q-1" />
-      <div className="home-platform-content-Q-1">
-        <div className="home-platform-header-Q-1">
-          <h3 className="home-platform-title-Q-1">MetaTrader 4</h3>
-          <a href="/platforms/mt4" className="home-learn-more-btn-Q-1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-Q-1">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-Q-1">
-      <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-Q-1" />
-      <div className="home-platform-content-Q-1">
-        <div className="home-platform-header-Q-1">
-          <h3 className="home-platform-title-Q-1">MetaTrader 5</h3>
-          <a href="/platforms/mt5" className="home-learn-more-btn-Q-1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-Q-1">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-Q-1">
-      <img src="f3.png" alt="CopyTrader" className="home-platform-logo-Q-1" />
-      <div className="home-platform-content-Q-1">
-        <div className="home-platform-header-Q-1">
-          <h3 className="home-platform-title-Q-1">CopyTrader</h3>
-          <a href="/platforms/copytrade" className="home-learn-more-btn-Q-1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-Q-1">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-Q-1">
-      <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-Q-1" />
-      <div className="home-platform-content-Q-1">
-        <div className="home-platform-header-Q-1">
-          <h3 className="home-platform-title-Q-1">Market.Trad Invest</h3>
-          <a href="/platforms/tradingtools" className="home-learn-more-btn-Q-1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-Q-1">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
-    
 
 
-      
-        {/* <div className="payment-grid">
+
+
+      {/* <div className="payment-grid">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
           <img src="mastercard.png" alt="MasterCard" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo" />
@@ -159,8 +159,8 @@ function QuickStart3() {
           <img src="skrill.png" alt="Skrill" />
           <img src="banktransfer.png" alt="Local Bank Transfer" />
           {/* <img src="banktransfer.png" alt="Local Bank Transfer" /> */}
-        {/* </div>  */}
-      
+      {/* </div>  */}
+
 
 
 

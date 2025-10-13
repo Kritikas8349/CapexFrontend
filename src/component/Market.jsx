@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FiSearch } from "react-icons/fi";
 import './Market.css';
 
 function Market() {
@@ -42,221 +43,78 @@ function Market() {
         },
     ];
 
-    const initialInstruments = [
-        {
-            icon: "i1.webp",
-            name: "XAUUSD",
-            desc: "Gold vs US-Dollar",
-            buy: 3752.41000,
-            sell: 3752.53000,
-            spread: 1.2,
-            change: -0.003
-        },
-        {
-            icon: "icons/eurusd.png",
-            name: "EURUSD",
-            desc: "Euro vs US-Dollar",
-            buy: 1.17976,
-            sell: 1.17977,
-            spread: 0.1,
-            change: 0.111
-        },
-        {
-            icon: "icons/gbpusd.png",
-            name: "GBPUSD",
-            desc: "Great Britain Pound vs US-Dollar",
-            buy: 1.35057,
-            sell: 1.35058,
-            spread: 0.1,
-            change: 0.103
-        },
-        {
-            icon: "icons/nas100.png",
-            name: "NAS100",
-            desc: "NAS100 Index",
-            buy: 24754.50000,
-            sell: 24756.30000,
-            spread: 1.8,
-            change: -0.017
-        },
-        {
-            icon: "icons/audusd.png",
-            name: "AUDUSD",
-            desc: "Australian Dollar vs US-Dollar",
-            buy: 0.65868,
-            sell: 0.65869,
-            spread: 0.1,
-            change: 0.058
-        },
-        {
-            icon: "icons/usdjpy.png",
-            name: "USDJPY",
-            desc: "US-Dollar vs Japanese Yen",
-            buy: 147.81200,
-            sell: 147.81300,
-            spread: 0.1,
-            change: -0.015
-        },
-        {
-            icon: "icons/us30.png",
-            name: "US30",
-            desc: "Dow Jones 30",
-            buy: 46398.00000,
-            sell: 46400.00000,
-            spread: 0.2,
-            change: -0.019
-        },
-        {
-            icon: "icons/gbpjpy.png",
-            name: "GBPJPY",
-            desc: "Great Britain Pound vs Japanese Yen",
-            buy: 199.62900,
-            sell: 199.63800,
-            spread: 0.9,
-            change: 0.044
-        },
-        {
-            icon: "icons/usdcad.png",
-            name: "USDCAD",
-            desc: "US-Dollar vs Canadian Dollar",
-            buy: 1.38271,
-            sell: 1.38273,
-            spread: 0.2,
-            change: 0.008
-        },
-        {
-            icon: "icons/eurjpy.png",
-            name: "EURJPY",
-            desc: "Euro vs Japanese Yen",
-            buy: 174.38000,
-            sell: 174.38700,
-            spread: 0.7,
-            change: 0.083
-        },
-        {
-            icon: "icons/audnzd.png",
-            name: "AUDNZD",
-            desc: "Australian Dollar vs New Zealand Dollar",
-            buy: 1.12566,
-            sell: 1.12580,
-            spread: 1.4,
-            change: 0.016
+    
+
+   
+     const [menuOpen, setMenuOpen] = useState(false);
+    
+      // Dropdown toggles for Market Status and Sort By
+      const [marketStatusOpen, setMarketStatusOpen] = useState(false);
+      const [sortOptionsOpen, setSortOptionsOpen] = useState(false);
+    
+      const [sortOption, setSortOption] = useState(null);
+      const [marketData, setMarketData] = useState([
+        { name: 'XAUUSD', buy: 3643.41, sell: 3643.53, spread: 1.2, change: -0.056 },
+        { name: 'EURUSD', buy: 1.234, sell: 1.235, spread: 0.1, change: 0.042 },
+        { name: 'BTCUSD', buy: 42000, sell: 42010, spread: 10, change: 1.2 },
+        { name: 'GBPUSD', buy: 1.557, sell: 1.558, spread: 0.5, change: -0.123 },
+        { name: 'USDJPY', buy: 109.68, sell: 109.69, spread: 0.01, change: 0.025 },
+        { name: 'AUDUSD', buy: 0.746, sell: 0.747, spread: 0.1, change: -0.015 },
+        { name: 'USDCAD', buy: 1.240, sell: 1.241, spread: 0.1, change: 0.35 },
+        { name: 'NZDUSD', buy: 0.695, sell: 0.696, spread: 0.1, change: 0.12 },
+        { name: 'USDMXN', buy: 20.31, sell: 20.32, spread: 0.01, change: -0.05 },
+        { name: 'XAGUSD', buy: 25.32, sell: 25.33, spread: 0.01, change: 0.76 },
+      ]);
+    
+      const toggleMenu = () => setMenuOpen(!menuOpen);
+    
+      const sortTable = (option) => {
+        setSortOption(option);
+        let sortedData;
+        switch (option) {
+          case 'titleAsc':
+            sortedData = [...marketData].sort((a, b) => a.name.localeCompare(b.name));
+            break;
+          case 'titleDesc':
+            sortedData = [...marketData].sort((a, b) => b.name.localeCompare(a.name));
+            break;
+          case 'sellAsc':
+            sortedData = [...marketData].sort((a, b) => a.sell - b.sell);
+            break;
+          case 'sellDesc':
+            sortedData = [...marketData].sort((a, b) => b.sell - a.sell);
+            break;
+          case 'buyAsc':
+            sortedData = [...marketData].sort((a, b) => a.buy - b.buy);
+            break;
+          case 'buyDesc':
+            sortedData = [...marketData].sort((a, b) => b.buy - a.buy);
+            break;
+          case 'spreadAsc':
+            sortedData = [...marketData].sort((a, b) => a.spread - b.spread);
+            break;
+          case 'spreadDesc':
+            sortedData = [...marketData].sort((a, b) => b.spread - a.spread);
+            break;
+          case 'changeAsc':
+            sortedData = [...marketData].sort((a, b) => a.change - b.change);
+            break;
+          case 'changeDesc':
+            sortedData = [...marketData].sort((a, b) => b.change - a.change);
+            break;
+          default:
+            sortedData = marketData;
+            break;
         }
-    ];
+        setMarketData(sortedData);
+    
+        // Close sort dropdown after selection
+        setSortOptionsOpen(false);
+      };
 
-    const commodities = [
-        {
-            name: 'Gold vs US-Dollar',
-            symbol: 'XAUUSD',
-            buy: 3753.24000,
-            sell: 3753.36000,
-            spread: 1.2,
-            change: -0.003,
-        },
-        {
-            name: 'Silver vs US-Dollar',
-            symbol: 'XAGUSD',
-            buy: 43.78400,
-            sell: 43.79400,
-            spread: 1,
-            change: 0.070,
-        },
-        {
-            name: 'West Texas Intermediate Crude Oil cash',
-            symbol: 'WTI',
-            buy: 61.83000,
-            sell: 61.87000,
-            spread: 4,
-            change: -0.241,
-        },
-        {
-            name: 'Crude Oil Brent Cash',
-            symbol: 'BRENT',
-            buy: 65.61800,
-            sell: 65.64200,
-            spread: 2.4,
-            change: -0.151,
-        },
-        {
-            name: 'Barrick Gold Corporation',
-            symbol: 'GOLD',
-            buy: 35.38000,
-            sell: 35.41000,
-            spread: 0.3,
-            change: -2.541,
-        },
-        {
-            name: 'Copper (Spot)',
-            symbol: 'COPPER',
-            buy: 9973.95000,
-            sell: 9976.95000,
-            spread: 30,
-            change: -0.061,
-        },
-        {
-            name: 'Aluminium (Spot)',
-            symbol: 'ALUMINIUM',
-            buy: 2640.85000,
-            sell: 2643.40000,
-            spread: 25.5,
-            change: -0.002,
-        },
-        {
-            name: 'Lead (Spot)',
-            symbol: 'LEAD',
-            buy: 1991.75000,
-            sell: 1994.75000,
-            spread: 30,
-            change: 0.053,
-        },
-        {
-            name: 'Zinc (Spot)',
-            symbol: 'ZINC',
-            buy: 2872.45000,
-            sell: 2874.95000,
-            spread: 25,
-            change: -0.122,
-        },
-    ];
+   
 
-
-    const [instruments, setInstruments] = useState(initialInstruments);
-    const [sortBy, setSortBy] = useState("");
-    const [marketState, setMarketState] = useState("All");
-
-    useEffect(() => {
-        sortInstruments(sortBy);
-    }, [sortBy]);
-
-    const sortInstruments = (sortOption) => {
-        let sorted = [...instruments];
-        if (sortOption === "name-asc") {
-            sorted.sort((a, b) => a.name.localeCompare(b.name));
-        } else if (sortOption === "name-desc") {
-            sorted.sort((a, b) => b.name.localeCompare(a.name));
-        } else if (sortOption === "buy-asc") {
-            sorted.sort((a, b) => a.buy - b.buy);
-        } else if (sortOption === "buy-desc") {
-            sorted.sort((a, b) => b.buy - a.buy);
-        }
-        // you can add more sort options
-        setInstruments(sorted);
-    };
-
-    // Optional: filter based on marketState
-    const filteredInstruments = instruments.filter(item => {
-        if (marketState === "All") return true;
-        return item.desc.toLowerCase().includes(marketState.toLowerCase());
-    });
-
-
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    // Toggle dropdown visibility
-    const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-    };
+    
 
 
     return (
@@ -268,7 +126,7 @@ function Market() {
                 <div className="m-content">
                     <h1 className="m-title">Market-Overview</h1>
                     <p className="m-description">
-                       Access forex trading with spreads starting from 0.0 pips, leverage up to 1:500, and industry leading execution speeds averaging less than 20 milliseconds.
+                        Access forex trading with spreads starting from 0.0 pips, leverage up to 1:500, and industry leading execution speeds averaging less than 20 milliseconds.
                     </p>
                 </div>
                 <div className="m-wrapper">
@@ -299,177 +157,165 @@ function Market() {
                 </div>
             </div>
 
-            <div className="m1-table-container1-12">
-                    <div className="m1-controls-12">
-                        <div className="m1-filters-12">
-                        <button className={marketState === "All" ? "m1-active-12" : ""} onClick={() => setMarketState("All")}>All</button>
-                        <button className={marketState === "Commodities" ? "m1-active-12" : ""} onClick={() => setMarketState("Commodities")}>Commodities</button>
-                        <button className={marketState === "Crypto" ? "m1-active-12" : ""} onClick={() => setMarketState("Crypto")}>Crypto</button>
-                        <button className={marketState === "Equities" ? "m1-active-12" : ""} onClick={() => setMarketState("Equities")}>Equities</button>
-                        <button className={marketState === "Forex" ? "m1-active-12" : ""} onClick={() => setMarketState("Forex")}>Forex</button>
-                        <button className={marketState === "Indices" ? "m1-active-12" : ""} onClick={() => setMarketState("Indices")}>Indices</button>
-                        </div>
-
+            
+             <div className="q2-page-container">
+                    <div className="q2-header">
+                      {/* Tabs */}
+                      <div className="q2-tabs">
+                        <button className="q2-tab active">All</button>
+                        <button className="q2-tab">Commodities</button>
+                        <button className="q2-tab">Crypto</button>
+                        <button className="q2-tab">Equities</button>
+                        <button className="q2-tab">Forex</button>
+                        <button className="q2-tab">Indices</button>
+                      </div>
+            
+                      {/* Search */}
+                      <div className="q2-search-box">
+                        <FiSearch className="q2-search-icon" />
                         <input
-                        type="text"
-                        placeholder="Search...."
-                        className="m1-search-12"
-                        onChange={(e) => {
-                            const text = e.target.value.toLowerCase();
-                            setInstruments(prev =>
-                            initialInstruments.filter(i =>
-                                i.name.toLowerCase().includes(text) ||
-                                i.desc.toLowerCase().includes(text)
-                            )
-                            );
-                        }}
+                          type="text"
+                          className="q2-search-input"
+                          placeholder="         Search instruments..."
                         />
-
-                        <select
-                        className="m1-sort-dropdown-12"
-                        value={sortBy}
-                        onChange={(e) => setSortBy(e.target.value)}
-                        >
-                        <option value="" disabled hidden>Sort By</option>
-                        <option value="name-asc">Name A → Z</option>
-                        <option value="name-desc">Name Z → A</option>
-                        <option value="buy-asc">Buy Price ↑</option>
-                        <option value="buy-desc">Buy Price ↓</option>
-                        </select>
-
-                        <div className="m1-dropdown-12">
-                        <button className="m1-dropdown-btn-12" onClick={toggleDropdown}>Market State ▼</button>
-                        {isOpen && (
-                            <ul className="m1-dropdown-menu-12">
-                            <a href="#"><li>Market Status</li></a>
-                            <a href="#"><li>Open</li></a>
-                            <a href="#"><li>Closed</li></a>
-                            </ul>
-                        )}
+                      </div>
+            
+                      {/* Dropdowns */}
+                      <div className="q2-dropdowns">
+                        <div className="q2-market-status">
+                          <button className="q2-dropdown-btn">
+                            Market Status <span className="q2-arrow"></span>
+                          </button>
+                          <div className="q2-dropdown-content">
+                            <button>Open</button>
+                            <button>Close</button>
+                          </div>
                         </div>
+            
+                        <div className="q2-sort-options">
+                          <button className="q2-dropdown-btn">
+                            Sort By <span className="q2-arrow"></span>
+                          </button>
+                          <div className="q2-dropdown-content">
+                            <button onClick={() => sortTable("titleAsc")}>By title A → Z</button>
+                            <button onClick={() => sortTable("titleDesc")}>By title Z → A</button>
+                            <button onClick={() => sortTable("sellAsc")}>Sell Asc</button>
+                            <button onClick={() => sortTable("sellDesc")}>Sell Desc</button>
+                            <button onClick={() => sortTable("buyAsc")}>Buy Asc</button>
+                            <button onClick={() => sortTable("buyDesc")}>Buy Desc</button>
+                            <button onClick={() => sortTable("spreadAsc")}>Spread Asc</button>
+                            <button onClick={() => sortTable("spreadDesc")}>Spread Desc</button>
+                            <button onClick={() => sortTable("changeAsc")}>1D Chg Asc</button>
+                            <button onClick={() => sortTable("changeDesc")}>1D Chg Desc</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className="m1-table-wrapper-12">
-                        <table className="m1-table-12">
+            
+                    {/* Table Section */}
+                    <div className="q2-market-table">
+                      <table>
                         <thead>
-                            <tr>
-                            <th>Name</th>
+                          <tr>
+                            <th id='name'></th>
+                            <th id='name'>Name</th>
                             <th>Buy</th>
                             <th>Sell</th>
                             <th>Live Spread (Pips)</th>
                             <th>1D Chg</th>
-                            </tr>
+                          </tr>
                         </thead>
                         <tbody>
-                            {filteredInstruments.map((item, index) => (
+                          {marketData.map((item, index) => (
                             <tr key={index}>
-                                <td className="m1-name-cell-12">
-                                <img src={item.icon} alt={item.name} className="m1-flag-12" />
-                                <div>
-                                    <div className="m1-symbol-12">{item.name}</div>
-                                    <div className="m1-desc-12">{item.desc}</div>
-                                </div>
-                                </td>
-                                <td className="m1-buy-12">{item.buy.toFixed(5)}</td>
-                                <td className="m1-sell-12">{item.sell.toFixed(5)}</td>
-                                <td>{item.spread.toFixed(1)}</td>
-                                <td className={`m1-change-12 ${item.change < 0 ? "m1-red-12" : "m1-green-12"}`}>
-                                {item.change < 0
-                                    ? item.change.toFixed(3) + "%"
-                                    : "+" + item.change.toFixed(3) + "%"}
-                                </td>
+                              <td>
+                                <img src="/public/logo.png" alt="Logo" className="q2-logo" />
+                              </td>
+                              <td>{item.name}</td>
+                              <td className="q2-buy">{item.buy}</td>
+                              <td className="q2-sell">{item.sell}</td>
+                              <td className="q2-live-spread">{item.spread}</td>
+                              <td className="q2-change">{item.change}%</td>
                             </tr>
-                            ))}
+                          ))}
                         </tbody>
-                        </table>
+                      </table>
+                    </div>
+                  </div>
+
+
+            <div className="home-platforms-section-m1">
+                <h2 className="home-platforms-heading-m1">Trading Platform</h2>
+                <div className="home-platforms-grid-m1">
+
+                    <div className="home-platform-card-m1">
+                        <img src="f1.png" alt="TradingView" className="home-platform-logo-m1" />
+                        <div className="home-platform-content-m1">
+                            <div className="home-platform-header-m1">
+                                <h3 className="home-platform-title-m1">TradingView</h3>
+                                <a href="/platforms/tradingview" className="home-learn-more-btn-m1">Learn More</a>
+                            </div>
+                            <p className="home-platform-desc-m1">Trade directly in TradingView, the world’s leading charting and social platform.</p>
+                        </div>
+                    </div>
+
+                    <div className="home-platform-card-m1">
+                        <img src="f1.png" alt="cTrader" className="home-platform-logo-m1" />
+                        <div className="home-platform-content-m1">
+                            <div className="home-platform-header-m1">
+                                <h3 className="home-platform-title-m1">cTrader</h3>
+                                <a href="/platforms/ctrade" className="home-learn-more-btn-m1">Learn More</a>
+                            </div>
+                            <p className="home-platform-desc-m1">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
+                        </div>
+                    </div>
+
+                    <div className="home-platform-card-m1">
+                        <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-m1" />
+                        <div className="home-platform-content-m1">
+                            <div className="home-platform-header-m1">
+                                <h3 className="home-platform-title-m1">MetaTrader 4</h3>
+                                <a href="/platforms/mt4" className="home-learn-more-btn-m1">Learn More</a>
+                            </div>
+                            <p className="home-platform-desc-m1">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
+                        </div>
+                    </div>
+
+                    <div className="home-platform-card-m1">
+                        <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-m1" />
+                        <div className="home-platform-content-m1">
+                            <div className="home-platform-header-m1">
+                                <h3 className="home-platform-title-m1">MetaTrader 5</h3>
+                                <a href="/platforms/mt5" className="home-learn-more-btn-m1">Learn More</a>
+                            </div>
+                            <p className="home-platform-desc-m1">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
+                        </div>
+                    </div>
+
+                    <div className="home-platform-card-m1">
+                        <img src="f3.png" alt="CopyTrader" className="home-platform-logo-m1" />
+                        <div className="home-platform-content-m1">
+                            <div className="home-platform-header-m1">
+                                <h3 className="home-platform-title-m1">CopyTrader</h3>
+                                <a href="/platforms/copytrade" className="home-learn-more-btn-m1">Learn More</a>
+                            </div>
+                            <p className="home-platform-desc-m1">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
+                        </div>
+                    </div>
+
+                    <div className="home-platform-card-m1">
+                        <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-m1" />
+                        <div className="home-platform-content-m1">
+                            <div className="home-platform-header-m1">
+                                <h3 className="home-platform-title-m1">Market.Trad Invest</h3>
+                                <a href="/platforms/tradingtools" className="home-learn-more-btn-m1">Learn More</a>
+                            </div>
+                            <p className="home-platform-desc-m1">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
+                        </div>
+                    </div>
+
                 </div>
-
-                    <div className="m1-pagination-12">
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
-                        <span>4</span>
-                        <span>5</span>
-                        <span>6</span>
-                        <span>...</span>
-                        <span>164</span>
-                        <span className="m1-next-12">Next</span>
-                    </div>
-                    </div>
-
-
-                    <div className="home-platforms-section-m1">
-  <h2 className="home-platforms-heading-m1">Trading Platform</h2>
-  <div className="home-platforms-grid-m1">
-
-    <div className="home-platform-card-m1">
-      <img src="f1.png" alt="TradingView" className="home-platform-logo-m1" />
-      <div className="home-platform-content-m1">
-        <div className="home-platform-header-m1">
-          <h3 className="home-platform-title-m1">TradingView</h3>
-          <a href="/platforms/tradingview" className="home-learn-more-btn-m1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-m1">Trade directly in TradingView, the world’s leading charting and social platform.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-m1">
-      <img src="f1.png" alt="cTrader" className="home-platform-logo-m1" />
-      <div className="home-platform-content-m1">
-        <div className="home-platform-header-m1">
-          <h3 className="home-platform-title-m1">cTrader</h3>
-          <a href="/platforms/ctrade" className="home-learn-more-btn-m1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-m1">Experience Market.Trad’s institutional trading conditions combined with cTrader.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-m1">
-      <img src="f2.png" alt="MetaTrader 4" className="home-platform-logo-m1" />
-      <div className="home-platform-content-m1">
-        <div className="home-platform-header-m1">
-          <h3 className="home-platform-title-m1">MetaTrader 4</h3>
-          <a href="/platforms/mt4" className="home-learn-more-btn-m1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-m1">Trade via MetaTrader 4 (MT4), the most popular trading platform in the world.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-m1">
-      <img src="f4.png" alt="MetaTrader 5" className="home-platform-logo-m1" />
-      <div className="home-platform-content-m1">
-        <div className="home-platform-header-m1">
-          <h3 className="home-platform-title-m1">MetaTrader 5</h3>
-          <a href="/platforms/mt5" className="home-learn-more-btn-m1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-m1">Trade via MetaTrader 5 (MT5), the most powerful premier trading platform.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-m1">
-      <img src="f3.png" alt="CopyTrader" className="home-platform-logo-m1" />
-      <div className="home-platform-content-m1">
-        <div className="home-platform-header-m1">
-          <h3 className="home-platform-title-m1">CopyTrader</h3>
-          <a href="/platforms/copytrade" className="home-learn-more-btn-m1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-m1">Copy trades or lead followers with the Market.Trad CopyTrader platform.</p>
-      </div>
-    </div>
-
-    <div className="home-platform-card-m1">
-      <img src="f3.png" alt="Market.Trad Invest" className="home-platform-logo-m1" />
-      <div className="home-platform-content-m1">
-        <div className="home-platform-header-m1">
-          <h3 className="home-platform-title-m1">Market.Trad Invest</h3>
-          <a href="/platforms/tradingtools" className="home-learn-more-btn-m1">Learn More</a>
-        </div>
-        <p className="home-platform-desc-m1">Access 26,000+ Shares, Options, ETFs, Bonds and other underlying assets.</p>
-      </div>
-    </div>
-
-  </div>
-</div>
+            </div>
 
 
             <div className="m1-t-container">
@@ -489,7 +335,7 @@ function Market() {
                 </div>
             </div>
 
-            
+
         </div>
 
     )

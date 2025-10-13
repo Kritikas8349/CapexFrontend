@@ -110,7 +110,7 @@ body {
 } */
 
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .m1-stats-container {
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -119,258 +119,238 @@ body {
   .m1-stat-item {
     flex: 1 1 180px;
   }
+} */
+
+
+
+.q2-page-container {
+  /* margin: 30px; */
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  margin-top: 60px;
+  border-radius: 20px;
+  max-width: 1480px;
+  margin:60px 20px 0px 20px;
 }
 
-
-
-
-/* Container */
-.mt-container {
-  margin-left: 60px;
-  max-width: 90%;
-  padding: 20px;
-  background: #fff;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Filter & Controls */
-.mt-controls {
+.q2-header {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
-}
-
-.mt-filters {
-  display: flex;
+  gap: 25px;
   flex-wrap: wrap;
-  gap: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.mt-filters button {
-  padding: 8px 15px;
-  border: none;
-  background: #f1f5f9;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  color: #1e293b;
-  transition: 0.2s;
+/* ---------------- Tabs ---------------- */
+.q2-tabs {
+  display: flex;
+  gap: 16px;
 }
 
-.mt-filters button.active,
-.mt-filters button:hover {
-  background: #2563eb;
-  color: #fff;
-}
-
-.mt-search {
-  padding: 8px 14px;
-  border: 2px solid #2563eb;
-  border-radius: 6px;
-  outline: none;
-  flex: 1;
-  max-width: 200px;
-}
-
-.mt-btn {
-  padding: 8px 14px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* Table */
-.mt-table-wrapper {
-  overflow-x: auto;
-}
-
-.mt-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-  min-width: 800px;
-}
-
-.mt-table th,
-.mt-table td {
-  padding: 12px 10px;
-  text-align: left;
+.q2-tab {
+  background: transparent;
   font-size: 14px;
-  white-space: nowrap;
+  color: #111;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: 0.q2-2s ease;
+  border: 1px solid #666;
 }
 
-.mt-table thead {
-  background: #f8fafc;
-  color: #1e293b;
-  border-bottom: 1px solid #e2e8f0;
-}
-.mt-sort-drop {
-  color: white;
-border-collapse: collapse;
-max-width: 100px;
-border-radius: 40px;
-background-color: #2563eb;
-
+.q2-tab.q2-active {
+  background: transparent;
+  color: #111;
+  font-weight: 500;
+  border-radius: 20px;
 }
 
-.mt-name-cell {
+.q2-tab:hover {
+  background: #ebefee;
+}
+
+/* ---------------- Search ---------------- */
+.q2-search-box {
   display: flex;
   align-items: center;
-  gap: 10px;
-}
-
-.mt-flag {
-  width: 26px;
-  height: 26px;
-  object-fit: contain;
-}
-
-.mt-symbol {
-  font-weight: 600;
-}
-
-.mt-desc {
-  font-size: 12px;
-  color: #6b7280;
-}
-
-.mt-buy {
-  color: #2563eb;
-  font-weight: 500;
-}
-
-.mt-sell {
-  color: #ef4444;
-  font-weight: 500;
-}
-.mt-sort-drop{
-  margin-left: 30px;
-  border: 1ps solid blue;
-  width: 20%;
-}
-
-.mt-change.red {
-  color: #ef4444;
-  font-weight: 500;
-}
-
-.mt-change.green {
-  color: #22c55e;
-  font-weight: 500;
-}
-
-/* Pagination */
-.mt-pagination {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  font-size: 14px;
-  justify-content: center;
-}
-
-.mt-pagination span {
-  padding: 6px 10px;
-  background: #f1f5f9;
-  border-radius: 4px;
-  cursor: pointer;
-  border: 1px solid blue;
-}
-
-.mt-pagination .mt-next {
-  color: #2563eb;
-  font-weight: 600;
-}
-
-/* Responsive scroll */
-@media (max-width: 768px) {
-  .mt-table-wrapper {
-    overflow-x: scroll;
-  }
-
-  .mt-sort-drop{
-
-    margin-left: 0px;
-    width: 150px;
-  }
-  .mt-table {
-    min-width: 700px;
-  }
-
-  .mt-controls {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .mt-search {
-    width: 100%;
-  }
-}
-
-/* Style for the Drop Button */
-.drop-btn {
-  padding: 10px 20px;
-  background-color: #1d4ed8;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  display: inline-block;
-  min-width: 120px;
-}
-
-.drop-btn:hover {
-  background-color: #0f45ba;
-}
-
-/* Drop Menu Styles */
-.drop {
   position: relative;
-  display: inline-block;
 }
 
-.drop-menu {
+.q2-search-input {
+  padding: 8px 12px 8px 34px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  width: 220px;
+  font-size: 14px;
+  outline: none;
+}
+
+.q2-search-input:focus {
+  border-color: #4a3aff;
+}
+
+.q2-search-icon {
   position: absolute;
-  top: 100%; /* position it below the button */
-  left: 0;
-  background-color:#1d4ed8;
-  min-width: 160px;
-  border: 1px solid #eed8d8;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.drop-menu a{
-
-  font-size: 30px;
+  left: 10px;
+  font-size: 16px;
+  color: #666;
 }
 
-.drop-menu li {
-  padding: 10px 20px;
+/* ---------------- Dropdowns ---------------- */
+.q2-dropdowns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.q2-dropdown-btn {
+  background: #4a3aff;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.q2-2s ease;
 }
 
-.drop-menu li:hover {
-  background-color:transparent;
+.q2-dropdown-btn:hover {
+  background: #372dd1;
 }
 
-/* Hide drop when not open */
-.drop-menu {
+.q2-dropdown-btn .q2-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+.q2-dropdown-content {
   display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.q2-1);
+  padding: 10px 0;
+  z-index: 99;
+  min-width: 180px;
 }
 
-/* Show drop when button is clicked */
-.drop.open .drop-menu {
+.q2-dropdown-content button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.q2-2s ease;
+}
+
+.q2-dropdown-content hover {
+  background: #f5f5ff;
+  color: #4a3aff;
+}
+
+.q2-market-status:hover .q2-dropdown-content,
+.q2-sort-options:hover .q2-dropdown-content {
   display: block;
 }
 
+/* ---------------- Table ---------------- */
+.q2-market-table {
+  margin-top: 20px;
+}
+
+.q2-market-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#name {
+  background-color: #003366;
+
+}
+
+.q2-logo {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+}
+
+.q2-market-table th,
+.q2-market-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.q2-market-table th {
+  background-color: #003366;
+  color: white;
+  font-size: 16px;
+}
+
+.q2-market-table td {
+  font-size: 14px;
+}
+
+.q2-market-table tr:nth-child(even) {
+  /* background-color: #003366; */
+}
+
+.q2-market-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.q2-live-spread,
+.q2-change {
+  text-align: center;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1024px) {
+  .q2-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .q2-search-input {
+    width: 80%;
+  }
+
+  .q2-dropdown-content {
+    width: 100%;
+  }
+
+  .q2-market-table th,
+  .q2-market-table td {
+    padding: 8px;
+  }
+
+  .q2-market-table th {
+    font-size: 14px;
+  }
+
+}
 
 
 

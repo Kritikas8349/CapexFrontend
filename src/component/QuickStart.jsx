@@ -33,7 +33,7 @@ function QuickStart() {
             </div>
 
             <div className="image-wrapper">
-              <img src="Rectangle4393.png" alt="About Us" />
+              <img src="/public/Rectangle4393.png" alt="About Us" />
             </div>
           </div>
 
