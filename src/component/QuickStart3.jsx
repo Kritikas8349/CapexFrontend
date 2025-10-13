@@ -62,7 +62,7 @@ function QuickStart3() {
           </form>
         </div>
         <div className="right-section3">
-          <img src="1.png" alt="Phone" className="phone-image3" />
+          <img src="/1.png" alt="Phone" className="phone-image3" />
         </div>
       </section>
 
@@ -196,15 +196,15 @@ function QuickStart3() {
       {/* <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <img src="Frame9.png" alt="" />
+            <img src="/Frame9.png" alt="" />
           </div>
           <div className="footer-social">
-            <a href="#"><img src="Framefb.png" alt="Facebook" /></a>
-            <a href="#"><img src="Framein.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="Frameinsta.png" alt="Instagram" /></a>
-            <a href="#"><img src="Framex.png" alt="X" /></a>
-            <a href="#"><img src="Framew.png" alt="WhatsApp" /></a>
-            <a href="#"><img src="Frameu.png" alt="Telegram" /></a>
+            <a href="#"><img src="/Framefb.png" alt="Facebook" /></a>
+            <a href="#"><img src="/Framein.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="/Frameinsta.png" alt="Instagram" /></a>
+            <a href="#"><img src="/Framex.png" alt="X" /></a>
+            <a href="#"><img src="/Framew.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="/Frameu.png" alt="Telegram" /></a>
           </div>
         </div>
 

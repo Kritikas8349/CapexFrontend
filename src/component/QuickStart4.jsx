@@ -300,15 +300,15 @@ function QuickStart4() {
             <div className="footer-container4">
                 <div className="footer-top4">
                     <div className="footer-logo4">
-                        <img src="Frame9.png" alt="" />
+                        <img src="/Frame9.png" alt="" />
                     </div>
                     <div className="footer-social4">
-                        <a href="#"><img src="Framefb.png" alt="Facebook" /></a>
-                        <a href="#"><img src="Framein.png" alt="LinkedIn" /></a>
-                        <a href="#"><img src="Frameinsta.png" alt="Instagram" /></a>
-                        <a href="#"><img src="Framex.png" alt="X" /></a>
-                        <a href="#"><img src="Framew.png" alt="WhatsApp" /></a>
-                        <a href="#"><img src="Frameu.png" alt="Telegram" /></a>
+                        <a href="#"><img src="/Framefb.png" alt="Facebook" /></a>
+                        <a href="#"><img src="/Framein.png" alt="LinkedIn" /></a>
+                        <a href="#"><img src="/Frameinsta.png" alt="Instagram" /></a>
+                        <a href="#"><img src="/Framex.png" alt="X" /></a>
+                        <a href="#"><img src="/Framew.png" alt="WhatsApp" /></a>
+                        <a href="#"><img src="/Frameu.png" alt="Telegram" /></a>
                     </div>
                 </div>
 

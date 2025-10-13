@@ -186,7 +186,7 @@ function QuickStart2() {
               {marketData.map((item, index) => (
                 <tr key={index}>
                   <td>
-                    <img src="/public/logo.png" alt="Logo" className="q2-logo" />
+                    <img src="/logo.png" alt="Logo" className="q2-logo" />
                   </td>
                   <td>{item.name}</td>
                   <td className="q2-buy">{item.buy}</td>
@@ -208,18 +208,21 @@ function QuickStart2() {
         <div className="assets-grid">
           <div className="asset-box">
             <img src="/public/t1.png" alt="Equities" className="asset-logo" />
+            <img src="/t1.png" alt="Equities" className="asset-logo" />
             <h3 className="asset-title">Equities</h3>
             <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
           </div>
 
           <div className="asset-box">
             <img src="/public/t2.png" alt="Forex" className="asset-logo" />
+            <img src="/t2.png" alt="Forex" className="asset-logo" />
             <h3 className="asset-title">Forex</h3>
             <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
           </div>
 
           <div className="asset-box">
             <img src="/public/t3.png" alt="Commodities" className="asset-logo" />
+            <img src="/t3.png" alt="Commodities" className="asset-logo" />
             <h3 className="asset-title">Commodities</h3>
             <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>
           </div>
@@ -308,6 +311,7 @@ function QuickStart2() {
       {/* <div className="q2-footer-container">
         <div className="q2-footer-top">
           <div className="q2-footer-logo">
+<<<<<<< HEAD
             <img src="/public/logo2.png" alt="" />
           </div>
           <div className="q2-footer-social">
@@ -317,6 +321,17 @@ function QuickStart2() {
             <a href="#"><img src="/public/X.png" alt="X" /></a>
             <a href="#"><img src="/public/whatsapp.png" alt="WhatsApp" /></a>
             <a href="#"><img src="/public/name.png" alt="Telegram" /></a>
+=======
+            <img src="/logo2.png" alt="" />
+          </div>
+          <div className="q2-footer-social">
+            <a href="#"><img src="/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="/ri_linkedin-fill.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="/insta.png" alt="Instagram" /></a>
+            <a href="#"><img src="/X.png" alt="X" /></a>
+            <a href="#"><img src="/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="/name.png" alt="Telegram" /></a>
+>>>>>>> 03e306811308b75bf1f200f26adf963b76e3427c
           </div>
         </div>
 
