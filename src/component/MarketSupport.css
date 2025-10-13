@@ -236,7 +236,7 @@
 
     /* ✅ Gradient div height fix */
     .market-container {
-        height: auto;
-        padding: 60px 10px 15px 10px;
+        height: 58vh;
+        padding: 140px 10px 15px 10px;
     }
 }

@@ -1,16 +1,14 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #ebefee; */
 }
 
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #ebefee; */
 }
 
+/* ================= PLATFORM HERO ================= */
 .platform {
   width: 100%;
   background-color: #ebefee;
@@ -21,10 +19,10 @@ body {
 .platformcontainer {
   width: 100%;
   max-width: 1480px;
-  min-height: 100vh; 
+  min-height: 100vh; /* full viewport height for large screens */
   background: linear-gradient(to bottom right, #000000, #4028E9);
   padding: 140px 20px 20px 20px;
-  margin: 0px 20px 20px 20px;
+  margin: 0 auto 20px auto;
   border-radius: 16px;
 }
 
@@ -59,6 +57,7 @@ body {
   position: absolute;
   top: 20%;
   left: 40px;
+  right: 40px; /* prevents overflow on small screens */
   color: #ffffff;
   max-width: 700px;
   font-family: sans-serif;
@@ -80,128 +79,83 @@ body {
 
 /* ================= RESPONSIVE HERO ================= */
 @media (max-width: 1200px) {
-  .platform-heading {
-    font-size: 42px;
-  }
-  .platform-subtext {
-    font-size: 20px;
-  }
-  .platform-text {
-    max-width: 500px;
-  }
+  .platform-heading { font-size: 42px; }
+  .platform-subtext { font-size: 20px; }
+  .platform-text { max-width: 500px; }
 }
 
 @media (max-width: 992px) {
-  .platform-heading {
-    font-size: 32px;
-  }
-  .platform-subtext {
-    font-size: 18px;
-  }
-  .platform-image-container {
-    height: 55vh;
-  }
-  .platform-text {
-    top: 15%;
-    left: 25px;
-    max-width: 400px;
-  }
-
-  /* Linear gradient height adjust for smaller screens */
-  .platformcontainer {
-    min-height: auto;
-    padding: 100px 10px 20px 10px;
-  }
+  .platform-heading { font-size: 32px; }
+  .platform-subtext { font-size: 18px; }
+  .platform-image-container { height: 55vh; margin-top: 20px; }
+  .platform-text { top: 15%; left: 25px; max-width: 400px; }
+  .platformcontainer { max-width: 90%; min-height: 80vh; padding: 100px 15px 20px 15px; }
+  .support-grid { max-width: 90%; padding: 15px; }
 }
 
 @media (max-width: 768px) {
-  .platform-heading {
-    font-size: 28px;
-  }
-  .platform-subtext {
-    font-size: 17px;
-  }
-  .platform-image-container {
-    height: 45vh;
-  }
-  .platform-text {
-    top: 12%;
-    left: 20px;
-    max-width: 350px;
-  }
-
-  .platformcontainer {
-    min-height: auto;
-    padding: 80px 10px 20px 10px;
-  }
+  .platform-heading { font-size: 28px; }
+  .platform-subtext { font-size: 17px; }
+  .platform-image-container { height: 45vh; margin-top: 30px; }
+  .platform-text { top: 12%; left: 20px; max-width: 350px; }
+  .platformcontainer { max-width: 95%; min-height: 70vh; padding: 80px 15px 20px 15px; }
+  .support-grid { max-width: 95%; padding: 15px; grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
-  .platform-heading {
-    font-size: 24px;
-  }
-  .platform-subtext {
-    font-size: 15px;
-  }
-  .platform-image-container {
-    height: 40vh;
-  }
-  .platform-text {
-    top: 10%;
-    left: 15px;
-    max-width: 280px;
-  }
-
-  .platformcontainer {
-    min-height: auto;
-    padding: 60px 10px 20px 10px;
-  }
+  .platform-heading { font-size: 24px; }
+  .platform-subtext { font-size: 15px; }
+  .platform-image-container { height: 40vh; margin-top: 40px; }
+  .platform-text { top: 10%; left: 15px; max-width: 280px; }
+  .platformcontainer { max-width: 95%; min-height: 60vh; padding: 60px 15px 20px 15px; }
 }
 
-@media (max-width: 400px) {
-  .platform-heading {
-    font-size: 20px;
-  }
-  .platform-subtext {
-    font-size: 14px;
-  }
-  .platform-text {
-    left: 10px;
-    max-width: 240px;
-  }
+@media (max-width: 480px) {
+  .platform-heading { font-size: 20px; }
+  .platform-subtext { font-size: 14px; }
+  .platform-text { left: 10px; max-width: 240px; }
+  .platform-image-container { margin-top: 80px; }
+  .platformcontainer { max-width: 95%; min-height: 55vh; padding: 50px 10px 15px 10px; }
+  .support-grid { max-width: 95%; padding: 10px; }
+}
 
-  .platformcontainer {
-    min-height: auto;
-    padding: 40px 10px 15px 10px;
-  }
+@media (max-width: 360px) {
+  .platform-heading { font-size: 18px; }
+  .platform-subtext { font-size: 13px; }
+  .platform-text { max-width: 200px; }
+  .platform-image-container { margin-top: 60px; }
+  .platformcontainer { min-height: 50vh; padding: 40px 10px 15px 10px; }
 }
 
 /* ================= SUPPORT GRID SECTION ================= */
 .support-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(400px, 1fr)); /* cards wider but responsive */
   gap: 20px;
-
-  width: 97%; /* same as .platformcontainer */
-  margin: 0px 0px 0px 20px;
-  padding: 15px;  /* reduced padding */
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 15px;
   background-color: #000000;
   border-radius: 16px;
-
-  min-height: 250px; /* reduced height */
-  align-items: stretch; /* makes child cards fit vertically */
+  align-items: stretch;
 }
 
+/* ================= SUPPORT CARDS ================= */
 .support-card {
   background: #fff;
   border-radius: 16px;
-  padding: 20px; /* slightly reduced */
+  padding: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 250px; /* reduced height */
+  justify-content: flex-start;
+  height: auto;
+  width: 100%; /* will now respect minmax() */
+  max-width: 500px; /* max width per card for large screens */
+  margin: 0 auto;
+  text-align: left;
 }
 
 .support-card:hover {
@@ -209,11 +163,18 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
+/* ================= SUPPORT HEADER FIX ================= */
 .support-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 18px;
+  justify-content: space-between; /* push badge to right */
+  margin-bottom: 12px;
+}
+
+.support-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between image and text */
 }
 
 .support-header img {
@@ -222,32 +183,31 @@ body {
 }
 
 .support-header h3 {
-  flex: 1;
-  font-size: 24px;
-  font-weight: 600;
-  margin: 0 10px;
+  font-size: 22px;
   color: #002f6c;
+  margin: 0;
 }
 
-/* Badge */
 .badge {
   background: #002f6c;
   color: #fff;
   font-size: 13px;
   padding: 4px 8px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
+/* ================= SUPPORT CARD LIST ================= */
 .support-card-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 18px 0;
+  margin: 0 0 12px 0;
 }
 
 .support-card-list li {
-  font-size: 15px;
+  font-size: 14px;
   color: #333;
-  margin: 10px 0;
+  margin: 6px 0;
   display: flex;
   align-items: center;
 }
@@ -258,17 +218,18 @@ body {
   font-size: 15px;
 }
 
-/* Explore button */
+/* ================= EXPLORE BUTTON ================= */
 .explore-btn {
   border: 1px solid #0057ff;
   background-color: #0057ff;
   color: white;
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-radius: 22px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   align-self: flex-start;
   transition: all 0.3s ease;
+  margin-top: auto;
 }
 
 .explore-btn:hover {
@@ -278,61 +239,38 @@ body {
 }
 
 /* ================= RESPONSIVE GRID ================= */
-@media (max-width: 1200px) {
-  .support-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-  }
+@media (max-width: 1200px) { 
+  .support-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 18px; 
+    max-width: 95%;
+  } 
 }
 
-@media (max-width: 768px) {
-  .support-grid {
-    grid-template-columns: 1fr;
-    padding: 15px;
-    margin: 20px 0;
-  }
-  .support-card {
-    min-height: auto;
-    padding: 20px;
-  }
+@media (max-width: 768px) { 
+  .support-grid { 
+    grid-template-columns: 1fr; 
+    padding: 15px; 
+    margin: 20px auto; 
+    max-width: 90%;
+  } 
 }
 
 @media (max-width: 480px) {
-  .support-grid {
-    padding: 10px;
-    gap: 15px;
+  .support-grid { 
+    padding: 10px; 
+    gap: 15px; 
+    max-width: 95%;
   }
-  .support-card {
-    padding: 16px;
-  }
-  .support-header h3 {
-    font-size: 18px;
-  }
-  .support-card-list li {
-    font-size: 14px;
-  }
-  .explore-btn {
-    font-size: 14px;
-    padding: 8px 14px;
-  }
+  .support-header h3 { font-size: 18px; }
+  .support-card-list li { font-size: 14px; }
+  .explore-btn { font-size: 14px; padding: 8px 14px; }
 }
 
 @media (max-width: 360px) {
-  .support-card {
-    padding: 12px;
-  }
-  .support-header img {
-    width: 45px;
-    height: 30px;
-  }
-  .support-header h3 {
-    font-size: 16px;
-  }
-  .support-card-list li {
-    font-size: 13px;
-  }
-  .explore-btn {
-    font-size: 13px;
-    padding: 6px 12px;
-  }
+  .support-grid { max-width: 90%; }
+  .support-header img { width: 45px; height: 30px; }
+  .support-header h3 { font-size: 16px; }
+  .support-card-list li { font-size: 13px; }
+  .explore-btn { font-size: 13px; padding: 6px 12px; }
 }

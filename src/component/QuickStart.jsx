@@ -372,7 +372,7 @@ function QuickStart() {
           </div>
 
           {/* Small videos */}
-          <div className="video-grid">
+          <div className="video-grids">
             {videos.slice(1).map((video, index) => (
               <div key={index} className="video-card">
                 <iframe

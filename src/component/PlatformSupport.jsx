@@ -32,11 +32,11 @@ const PlatformSupport = () => {
         </div>
         <ul className="support-card-list">
           <li>How to create a TradingView Live account?</li>
-          <li>How to create a TradingView Demo account?</li>
-          <li>How to transfer funds to your TradingView account?</li>
-          <li>How to set a TradingView account password?</li>
+          <li>How to create a TradingView account?</li>
+          <li>How to transfer funds to your account?</li>
+          <li>How to set a TradingView password?</li>
           <li>How to connect Market.trad to TradingView?</li>
-          <li>Can I use TradingView on my mobile device?</li>
+          <li>Can I use TradingView on my mobile?</li>
         </ul>
         <button className="explore-btn">Explore More</button>
       </div>
@@ -51,7 +51,7 @@ const PlatformSupport = () => {
         <ul className="support-card-list">
           <li>What is My Wallet?</li>
           <li>How do I deposit funds?</li>
-          <li>How do I transfer funds between wallet and trading account?</li>
+          
           <li>How do I download a trading platform?</li>
           <li>How do I withdraw funds?</li>
           <li>How do I view my funding history?</li>
