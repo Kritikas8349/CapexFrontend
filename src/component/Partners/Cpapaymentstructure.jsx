@@ -1,5 +1,5 @@
 import React from "react";
-import "./CPAPaymentStructure.css";
+import "./CpaPaymentStructure.css";
 import { FaHeadset } from "react-icons/fa";
 const CPAPaymentStructure = () => {
   return (
