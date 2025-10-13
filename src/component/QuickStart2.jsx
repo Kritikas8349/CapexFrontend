@@ -87,7 +87,7 @@ function QuickStart2() {
             </p>
           </div>
           <div className="q2-hero-right">
-            <img src="/public/phone.png" alt="Trading chart" className="q2-mobile-image" />
+            <img src="/phone.png" alt="Trading chart" className="q2-mobile-image" />
           </div>
         </section>
       </div>
@@ -207,40 +207,40 @@ function QuickStart2() {
 
         <div className="assets-grid">
           <div className="asset-box">
-            <img src="/public/t1.png" alt="Equities" className="asset-logo" />
+            <img src="/t1.png" alt="Equities" className="asset-logo" />
             <img src="/t1.png" alt="Equities" className="asset-logo" />
             <h3 className="asset-title">Equities</h3>
             <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/public/t2.png" alt="Forex" className="asset-logo" />
+            <img src="/t2.png" alt="Forex" className="asset-logo" />
             <img src="/t2.png" alt="Forex" className="asset-logo" />
             <h3 className="asset-title">Forex</h3>
             <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/public/t3.png" alt="Commodities" className="asset-logo" />
+            <img src="/t3.png" alt="Commodities" className="asset-logo" />
             <img src="/t3.png" alt="Commodities" className="asset-logo" />
             <h3 className="asset-title">Commodities</h3>
             <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/public/t4.png" alt="Indices" className="asset-logo" />
+            <img src="/t4.png" alt="Indices" className="asset-logo" />
             <h3 className="asset-title">Indices</h3>
             <p className="asset-desc">Major stock indices like US30, S&P500, and NAS100.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/public/t5.png" alt="Metals" className="asset-logo" />
+            <img src="/t5.png" alt="Metals" className="asset-logo" />
             <h3 className="asset-title">Metals</h3>
             <p className="asset-desc">Precious and industry metals like gold, silver, and copper.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/public/t6.png" alt="View All" className="asset-logo" />
+            <img src="/t6.png" alt="View All" className="asset-logo" />
             <h3 className="asset-title">View all</h3>
             <p className="asset-desc">Explore Market. Trade a diverse range of tradable assets.</p>
           </div>
@@ -253,7 +253,7 @@ function QuickStart2() {
           
           {/* Card 1 */}
           <div className="q2-opportunity-card">
-            <img src="/public/rectangle.png" alt="Oracle's surge" />
+            <img src="/rectangle.png" alt="Oracle's surge" />
             <div className="q2-card-content">
               <h3>Oracle's surge mints new richest man & Traders eye 50bps cut</h3>
               <p>Oracle's shares jumped 35% after reporting a surge in cloud bookings driven by AI demand...</p>
@@ -264,7 +264,7 @@ function QuickStart2() {
 
           {/* Card 2 */}
           <div className="q2-opportunity-card">
-            <img src="/public/rectangle.png" alt="Tech stocks rise" />
+            <img src="/rectangle.png" alt="Tech stocks rise" />
             <div className="q2-card-content">
               <h3>Tech stocks soar amidst AI <br /> boom</h3>
               <p>Tech stocks surged after the announcement of significant breakthroughs in AI and machine learning...</p>
@@ -275,7 +275,7 @@ function QuickStart2() {
 
           {/* Card 3 */}
           <div className="q2-opportunity-card">
-            <img src="/public/rectangle.png" alt="Crypto market rebound" />
+            <img src="/rectangle.png" alt="Crypto market rebound" />
             <div className="q2-card-content">
               <h3>Crypto market rebounds with new regulations</h3>
               <p>The cryptocurrency market is seeing a rebound as new regulations bring stability and confidence...</p>
@@ -312,15 +312,15 @@ function QuickStart2() {
         <div className="q2-footer-top">
           <div className="q2-footer-logo">
 <<<<<<< HEAD
-            <img src="/public/logo2.png" alt="" />
+            <img src="/logo2.png" alt="" />
           </div>
           <div className="q2-footer-social">
-            <a href="#"><img src="/public/facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="/public/ri_linkedin-fill.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="/public/insta.png" alt="Instagram" /></a>
-            <a href="#"><img src="/public/X.png" alt="X" /></a>
-            <a href="#"><img src="/public/whatsapp.png" alt="WhatsApp" /></a>
-            <a href="#"><img src="/public/name.png" alt="Telegram" /></a>
+            <a href="#"><img src="/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="/ri_linkedin-fill.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="/insta.png" alt="Instagram" /></a>
+            <a href="#"><img src="/X.png" alt="X" /></a>
+            <a href="#"><img src="/whatsapp.png" alt="WhatsApp" /></a>
+            <a href="#"><img src="/name.png" alt="Telegram" /></a>
 =======
             <img src="/logo2.png" alt="" />
           </div>

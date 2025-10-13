@@ -193,7 +193,7 @@ function Market7() {
                             {marketData.map((item, index) => (
                                 <tr key={index}>
                                     <td>
-                                        <img src="/public/logo.png" alt="Logo" className="q2-logo" />
+                                        <img src="/logo.png" alt="Logo" className="q2-logo" />
                                     </td>
                                     <td>{item.name}</td>
                                     <td className="q2-buy">{item.buy}</td>
