@@ -35,7 +35,7 @@ const PersonalHome = () => {
 
       {/* Trading Screenshot */}
       <div className="laptop-section">
-        <img src="/public/laptop.png" alt="Trading Interface" className="laptop-image" />
+        <img src="laptop.png" alt="Trading Interface" className="laptop-image" />
       </div>
     </div>
 
