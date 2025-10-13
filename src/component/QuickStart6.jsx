@@ -133,7 +133,7 @@ function QuickStart6() {
                 </div>
 
                 <div className="deposit-right">
-                    <img src="1.png" alt="Phone showing deposit options" />
+                    <img src="/1.png" alt="Phone showing deposit options" />
                 </div>
             </div>
 
@@ -187,7 +187,7 @@ function QuickStart6() {
                 <div className="deposit-steps6">
                     {/* Step 1 */}
                     <div className="step-card6">
-                        <img src="start.webp" alt="Select Wallet" />
+                        <img src="/start.webp" alt="Select Wallet" />
                         <h2>Select Wallet</h2>
                         <p>
                             Select the account you want to deposit funds and click ‘ADD FUNDS’.
@@ -196,7 +196,7 @@ function QuickStart6() {
 
                     {/* Step 2 */}
                     <div className="step-card6">
-                        <img src="mid.webp" alt="Select Method" />
+                        <img src="/mid.webp" alt="Select Method" />
                         <h2>Select Method</h2>
                         <p>
                             Select the payment method by which you want to make the deposit.
@@ -205,7 +205,7 @@ function QuickStart6() {
 
                     {/* Step 3 */}
                     <div className="step-card6">
-                        <img src="end.webp" alt="Specify Amount" />
+                        <img src="/end.webp" alt="Specify Amount" />
                         <h2>Specify Amount</h2>
                         <p>
                             Specify the amount you want to deposit and click ‘NEXT’.
