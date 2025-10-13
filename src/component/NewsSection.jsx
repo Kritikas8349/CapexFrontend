@@ -8,7 +8,7 @@ import "./NewsSection.css";
 
 const articles = [
   {
-    image: "/public/trade1.avif",
+    image: "/trade1.avif",
     title: "Enhanced Prime Account Offering with Zero Spreads on Forex",
     description:
       "Prime clients will now see zero spreads through trading day, representing a 48% to 71% reduction.",
@@ -16,7 +16,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/trade2.avif",
+    image: "/trade2.avif",
     title: "Market.trad to Attend Forex Expo Dubai 2025",
     description:
       "Market.trad will be participating in Forex Expo Dubai 2025, on 6 Oct 2025 at the Dubai World Trade Centre.",
@@ -24,7 +24,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/trade3.avif",
+    image: "/trade3.avif",
     title: "Market.trad launches 24/5 trading on U.S. stocks",
     description:
       "Market.trad is pleased to announce the launch of 24/5 trading on a wide range of U.S. stock CFDs.",
@@ -32,7 +32,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/awards.jpg",
+    image: "/awards.jpg",
     title: "Global Trading Awards – Best Execution Broker 2025",
     description:
       "We’re honored to be awarded Best Execution Broker 2025 at the Global Trading Awards.",
@@ -40,7 +40,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/tarde4.avif",
+    image: "/tarde4.avif",
     title: "BlackBull expands cryptocurrency CFD offerings",
     description:
       "New crypto pairs have been added to the Market.trad platform for more diversified trading.",
@@ -48,7 +48,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/trade5.avif",
+    image: "/trade5.avif",
     title: "New Office Opens in Singapore to Serve Asian Clients",
     description:
       "Market.trad is proud to open its new regional office in Singapore to enhance service in the Asian region.",
@@ -56,7 +56,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/trade6.avif",
+    image: "/trade6.avif",
     title: "New Office Opens in Singapore to Serve Asian Clients",
     description:
       "Market.trad is proud to open its new regional office in Singapore to enhance service in the Asian region.",
@@ -64,7 +64,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/trade1.avif",
+    image: "/trade1.avif",
     title: "New Office Opens in Singapore to Serve Asian Clients",
     description:
       "Market.trad is proud to open its new regional office in Singapore to enhance service in the Asian region.",
@@ -72,7 +72,7 @@ const articles = [
     link: "#",
   },
   {
-    image: "/public/trade2.avif",
+    image: "/trade2.avif",
     title: "New Office Opens in Singapore to Serve Asian Clients",
     description:
       "Market.trad is proud to open its new regional office in Singapore to enhance service in the Asian region.",

@@ -1,12 +1,12 @@
 import React from 'react'
 import "./USA.css";
-import trd from '/public/trd.jpg';
+import trd from '/trd.jpg';
 
 function USA() {
 
     const stockData = [
         {
-            logo: "/public/apple-big.svg",
+            logo: "/apple-big.svg",
             ticker: "AAPL:NASDAQ",
             name: "Apple Inc",
             price: "USD",
@@ -14,7 +14,7 @@ function USA() {
             recommendation: "Hold",
         },
         {
-            logo: "/public/EA.svg",
+            logo: "/EA.svg",
             ticker: "EA:NASDAQ",
             name: "Electronic Arts Inc",
             price: "USD",
@@ -22,7 +22,7 @@ function USA() {
             recommendation: "Hold",
         },
         {
-            logo: "/public/netflix.svg",
+            logo: "/netflix.svg",
             ticker: "NFLX:NASDAQ",
             name: "Netflix Inc",
             price: "USD",
@@ -30,7 +30,7 @@ function USA() {
             recommendation: "Neutral",
         },
         {
-            logo: "/public/nike-big.svg",
+            logo: "/nike-big.svg",
             ticker: "NKE:NYSE",
             name: "Nike Inc",
             price: "USD",
@@ -38,7 +38,7 @@ function USA() {
             recommendation: "↑ Buy",
         },
         {
-            logo: "/public/amazon.svg",
+            logo: "/amazon.svg",
             ticker: "AMZN:NASDAQ",
             name: "Amazon.com",
             price: "USD",
@@ -49,121 +49,121 @@ function USA() {
 
     const stockList = [
         {
-            logo: "/public/a.webp",
+            logo: "/a.webp",
             ticker: "DG:NYSE",
             name: "Dollar General",
             price: "USD",
         },
         {
-            logo: "/public/84.webp",
+            logo: "/84.webp",
             ticker: "RAK:NZX",
             name: "Rakon",
             price: "NZD",
         },
         {
-            logo: "/public/b.webp",
+            logo: "/b.webp",
             ticker: "DGE:LON",
             name: "Diageo",
             price: "GPD",
         },
         {
-            logo: "/public/4.png",
+            logo: "/4.png",
             ticker: "HKSHY:NASDAQ",
             name: "Hong Kong & Shanghai Hotels",
             price: "US",
         },
         {
-            logo: "/public/c.webp",
+            logo: "/c.webp",
             ticker: "SCHW:NYSE",
             name: "Charles Schwab",
             price: "US",
         },
         {
-            logo: "/public/6.webp",
+            logo: "/6.webp",
             ticker: "OXY:NYSE",
             name: "Occidental Petroleum",
             price: "US",
         },
         {
-            logo: "/public/d.webp",
+            logo: "/d.webp",
             ticker: "MANU:NYSE",
             name: "Manchester United",
             price: "23.00",
         },
         {
-            logo: "/public/8.webp",
+            logo: "/8.webp",
             ticker: "GS:NYSE",
             name: "Goldman Sachs",
             price: "349.92 USD",
         },
         {
-            logo: "/public/e.webp",
+            logo: "/e.webp",
             ticker: "SQSP:NYSE",
             name: "Squarespace",
             price: "USD",
         },
         {
-            logo: "/public/hd.webp",
+            logo: "/hd.webp",
             ticker: "HD:NYSE",
             name: "Home Depot",
             price: "USD",
         },
         {
-            logo: "/public/",
+            logo: "/",
             ticker: "USD:nyse",
             name: "US Dollar",
             price: "USD",
         },
         {
-            logo: "/public/co.webp",
+            logo: "/co.webp",
             ticker: "COST:NYSE",
             name: "Costco",
             price: "USD",
         },
         {
-            logo: "/public/f.webp",
+            logo: "/f.webp",
             ticker: "EL:NYSE",
             name: "Estée Lauder",
             price: "USD",
         },
         {
-            logo: "/public/m.webp",
+            logo: "/m.webp",
             ticker: "MA:NYSE",
             name: "Mastercard",
             price: "USD",
         },
         {
-            logo: "/public/dp.webp",
+            logo: "/dp.webp",
             ticker: "DPZ:NYSE",
             name: "Domino's Pizza",
             price: "USD",
         },
         {
-            logo: "/public/mcd.webp",
+            logo: "/mcd.webp",
             ticker: "MCD:NYSE",
             name: "McDonald's",
             price: "USD",
         },
         {
-            logo: "/public/str.webp",
+            logo: "/str.webp",
             ticker: "SBUX:NASDAQ",
             name: "Starbucks",
             price: "USD",
         },
         {
-            logo: "/public/meta.webp",
+            logo: "/meta.webp",
             ticker: "META:NASDAQ",
             name: "Meta",
             price: "USD",
         },
         {
-            logo: "/public/wmg.webp",
+            logo: "/wmg.webp",
             ticker: "WMG:NASDAQ",
             name: "Warner Music Group",
             price: "USD",
         },
         {
-            logo: "/public/bf.webp",
+            logo: "/bf.webp",
             ticker: "BF.B:NYSE",
             name: "Brown–Forman",
             price: "USD",

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TechnicalAnalysis.css";
-import trd from '/public/trd.jpg';
+import trd from '/trd.jpg';
 
 const articles = [
     {

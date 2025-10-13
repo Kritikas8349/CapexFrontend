@@ -86,14 +86,14 @@ const EconomicCalendar = () => {
             </p>
             <p className="add-to-calendar">Add to calendar</p>
             <div className="download-buttons">
-              <button className="calendar-btn apple-btn"><img src="/public/applelogo.png" alt="Apple" /></button>
-              <button className="calendar-btn google-btn"><img src="/public/googlelogo.webp" alt="Google" /></button>
-              <button className="calendar-btn outlook-btn"><img src="/public/BBM3.webp" alt="Outlook" /></button>
-              <button className="calendar-btn ics-btn"><img src="/public/BBM5.webp" alt="ICS" /></button>
+              <button className="calendar-btn apple-btn"><img src="/applelogo.png" alt="Apple" /></button>
+              <button className="calendar-btn google-btn"><img src="/googlelogo.webp" alt="Google" /></button>
+              <button className="calendar-btn outlook-btn"><img src="/BBM3.webp" alt="Outlook" /></button>
+              <button className="calendar-btn ics-btn"><img src="/BBM5.webp" alt="ICS" /></button>
             </div>
           </div>
           <div className="phone-image">
-            <img src="/public/Calendar.webp" alt="Phone with calendar" />
+            <img src="/Calendar.webp" alt="Phone with calendar" />
           </div>
         </div>
       </div>
@@ -210,7 +210,7 @@ const EconomicCalendar = () => {
           <div class="trading-banner">
             <div class="banner-wrapper">
               <div class="banner-left">
-                <img src="/public/logo2.png" alt="Market.trad Logo" class="banner-logo" />
+                <img src="/logo2.png" alt="Market.trad Logo" class="banner-logo" />
                 <h1 class="banner-title">Transform Market.trad Insights into Smarter Trading</h1>
                 <p class="banner-subtitle">Leverage Market.trad’s advanced tools to expand your portfolio, access competitive spreads, and execute trades with unmatched speed—built for serious traders like you</p>
                 <div class="banner-buttons">

@@ -15,18 +15,18 @@ function Footers() {
       src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
       alt="Visa"
     />
-    <img src="/public/mastercard.png" alt="MasterCard" />
+    <img src="/mastercard.png" alt="MasterCard" />
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
       alt="Apple Pay"
       className="small-logo"
     />
-    <img src="/public/googlepay.png" alt="Google Pay" className="small-logo" />
-    <img src="/public/banktransfer.png" alt="Bank Transfer" />
-    <img src="/public/crypto.png" alt="Crypto" />
-    <img src="/public/neteller.png" alt="Neteller" />
-    <img src="/public/skrill.png" alt="Skrill" />
-    <img src="/public/Localbanktransfer.png" alt="Local Bank Transfer" />
+    <img src="/googlepay.png" alt="Google Pay" className="small-logo" />
+    <img src="/banktransfer.png" alt="Bank Transfer" />
+    <img src="/crypto.png" alt="Crypto" />
+    <img src="/neteller.png" alt="Neteller" />
+    <img src="/skrill.png" alt="Skrill" />
+    <img src="/Localbanktransfer.png" alt="Local Bank Transfer" />
   </div>
 </div>
 
@@ -57,26 +57,26 @@ function Footers() {
         {/* Top */}
         <div className="footertop1">
           <div className="footerlogo1">
-            <img src="/public/logo2.png" alt="Market Trad Logo" />
+            <img src="/logo2.png" alt="Market Trad Logo" />
           </div>
           <div className="footersocial1">
             <a href="#">
-              <img src="/public/facebook.png" alt="Facebook" />
+              <img src="/facebook.png" alt="Facebook" />
             </a>
             <a href="#">
-              <img src="/public/ri_linkedin-fill.png" alt="LinkedIn" />
+              <img src="/ri_linkedin-fill.png" alt="LinkedIn" />
             </a>
             <a href="#">
-              <img src="/public/insta.png" alt="Instagram" />
+              <img src="/insta.png" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="/public/X.png" alt="X" />
+              <img src="/X.png" alt="X" />
             </a>
             <a href="#">
-              <img src="/public/whatsapp.png" alt="WhatsApp" />
+              <img src="/whatsapp.png" alt="WhatsApp" />
             </a>
             <a href="#">
-              <img src="/public/name.png" alt="Telegram" />
+              <img src="/name.png" alt="Telegram" />
             </a>
           </div>
         </div>

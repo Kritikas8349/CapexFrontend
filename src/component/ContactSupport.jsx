@@ -9,7 +9,7 @@ const ContactSupport = () => {
 
       <div className="reachout-container">
         <img 
-          src="/public/Office1.jpg" 
+          src="/Office1.jpg" 
           alt="Market Support" 
           className="reachout-img" 
         />

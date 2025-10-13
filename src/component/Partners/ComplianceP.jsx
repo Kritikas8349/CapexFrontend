@@ -6,7 +6,7 @@ function ComplianceP() {
     <div className="compliancenew-main-container1">
     <div className="compliancenew-hero-container">
       <img
-        src="/public/Office1.jpg"
+        src="/Office1.jpg"
         alt="Platform Support"
         className="compliancenew-hero-image"
       />
@@ -49,7 +49,7 @@ function ComplianceP() {
   {/* Image at the top */}
   <div className="guidelines-image-wrapper">
     <img
-      src="/public/markettrad.webp"
+      src="/markettrad.webp"
       alt="Market.trad Guidelines"
       className="guidelines-image"
     />
@@ -67,49 +67,49 @@ function ComplianceP() {
 
     <div className="guidelines-points">
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Make sure the information is clear and accurate for the relevant jurisdiction.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Do not make false promises.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Do not make misleading statements.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Use relevant disclaimers where necessary.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Use our marketing materials and if you have to create your own, please submit them to your account manager for approval.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Do not use Market.trad in your domain name.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Do not promote Market.trad in restricted territories.</span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>
           For PPC/media buying: Link your ad to your domain, not directly to Market.trad. Do not use the Market.trad brand name or any variation of it in your keywords or in the ad itself (including the display URL).
         </span>
       </div>
 
       <div className="guideline-item">
-        <img src="/public/traffic_icon.svg" alt="check" className="guideline-icon" />
+        <img src="/traffic_icon.svg" alt="check" className="guideline-icon" />
         <span>Be prepared to update your campaign when we request it. We perform regular checks and may require further changes following regulatory updates.</span>
       </div>
     </div>
@@ -118,7 +118,7 @@ function ComplianceP() {
 
 <div className="compliance-topics-container">
   <div className="compliance-card">
-    <img src="/public/ad.svg" alt="Advertising" className="compliance-card-image" />
+    <img src="/ad.svg" alt="Advertising" className="compliance-card-image" />
     <h3 className="compliance-card-title">Advertising</h3>
     <p className="compliance-card-text">
       Avoid using the Market.trad brand in any SEM or PPC campaigns. Do not include the brand name or variations of it in keywords, ad copy, or display URLs.
@@ -126,7 +126,7 @@ function ComplianceP() {
   </div>
 
   <div className="compliance-card">
-    <img src="/public/mail.svg" alt="Email Marketing" className="compliance-card-image" />
+    <img src="/mail.svg" alt="Email Marketing" className="compliance-card-image" />
     <h3 className="compliance-card-title">Email</h3>
     <p className="compliance-card-text">
       Partners running email campaigns must comply with applicable spam and privacy laws. All emails should follow proper consent and disclosure practices.
@@ -134,7 +134,7 @@ function ComplianceP() {
   </div>
 
   <div className="compliance-card">
-    <img src="/public/Domain.svg" alt="Domain Ownership" className="compliance-card-image" />
+    <img src="/Domain.svg" alt="Domain Ownership" className="compliance-card-image" />
     <h3 className="compliance-card-title">Domain Ownership</h3>
     <p className="compliance-card-text">
       If your website uses private Whois data, you may need to verify ownership. Provide a domain ownership certificate to your account manager if requested.
@@ -142,7 +142,7 @@ function ComplianceP() {
   </div>
 
   <div className="compliance-card">
-    <img src="/public/RestrictedIndustries.svg" alt="Restricted Industries" className="compliance-card-image" />
+    <img src="/RestrictedIndustries.svg" alt="Restricted Industries" className="compliance-card-image" />
     <h3 className="compliance-card-title">Restricted Industries</h3>
     <p className="compliance-card-text">
       Certain industries are unsuitable for promoting our brand. Ensure your marketing efforts target only appropriate sectors to maintain Market.trad’s brand integrity.

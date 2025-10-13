@@ -45,10 +45,10 @@ const PartnerHome = () => {
   ];
 
   const ratingsData = [
-    { starsImg: "/public/stars.webp", logoImg: "/public/Google.webp", text: "4.8 Stars | 1,202 reviews" },
-    { starsImg: "/public/stars.webp", logoImg: "/public/Trustpilot.webp", text: "4.8 Stars | 1,372 reviews" },
-    { starsImg: "/public/stars.webp", logoImg: "/public/TradingView.webp", text: "4.7 Stars | 3,500 reviews" },
-    { starsImg: "/public/stars.webp", logoImg: "/public/ForexBrokers.webp", text: "78 Trust Score | Reviews" },
+    { starsImg: "/stars.webp", logoImg: "/Google.webp", text: "4.8 Stars | 1,202 reviews" },
+    { starsImg: "/stars.webp", logoImg: "/Trustpilot.webp", text: "4.8 Stars | 1,372 reviews" },
+    { starsImg: "/stars.webp", logoImg: "/TradingView.webp", text: "4.7 Stars | 3,500 reviews" },
+    { starsImg: "/stars.webp", logoImg: "/ForexBrokers.webp", text: "78 Trust Score | Reviews" },
   ];
 
 
@@ -59,7 +59,7 @@ const PartnerHome = () => {
       <div className="partnerhomecontainer">
         <div className="partner-home-image-container">
           <img
-            src="/public/Office1.jpg"
+            src="/Office1.jpg"
             alt="Platform Support"
             className="partner-home-image"
           />
@@ -92,7 +92,7 @@ const PartnerHome = () => {
 
         <div className="partner-home-account-video">
           <video controls>
-            <source src="/public/" type="video/mp4" />
+            <source src="/" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -102,7 +102,7 @@ const PartnerHome = () => {
       <div className="ph-container-reverse">
         <div className="ph-image-container-reverse">
           <img
-            src="/public/office3.avif"
+            src="/office3.avif"
             alt="Person working at multiple monitors"
             className="ph-image-reverse"
           />
@@ -158,7 +158,7 @@ const PartnerHome = () => {
 
         <div className="ph-image-container">
           <img
-            src="/public/planet.avif"
+            src="/planet.avif"
             alt="Market institutional trading"
             className="ph-image"
           />
@@ -187,7 +187,7 @@ const PartnerHome = () => {
         {/* Left Image Section */}
         <div className="affiliate-image-container">
           <img
-            src="/public/Dashboard1.webp"
+            src="/Dashboard1.webp"
             alt="Affiliate Marketing"
             className="affiliate-image"
           />
@@ -214,7 +214,7 @@ const PartnerHome = () => {
         {/* Left Image Section */}
         <div className="affiliate-image-container1">
           <img
-            src="/public/Dashboard2.webp"
+            src="/Dashboard2.webp"
             alt="Introducing Brokers"
             className="affiliate-image1"
           />
@@ -241,7 +241,7 @@ const PartnerHome = () => {
         {/* Left Image Section */}
         <div className="copytrade-image-container">
           <img
-            src="/public/Dashboard3.webp"
+            src="/Dashboard3.webp"
             alt="CopyTrade Manager"
             className="copytrade-image"
           />
@@ -320,7 +320,7 @@ const PartnerHome = () => {
           <div className="partner-resources-grid-new">
             {/* Box 1 */}
             <div className="partner-box-new">
-              <img src="/public/tradenut.webp" alt="Partner Logo 1" className="partner-box-logo" />
+              <img src="/tradenut.webp" alt="Partner Logo 1" className="partner-box-logo" />
               <p className="partner-box-text-new">
                 “Trading Nut has been collaborating with Market.trad for over two years. Their top-tier support and market-leading services have helped both my business and clients thrive.”{" "}
               </p>
@@ -328,7 +328,7 @@ const PartnerHome = () => {
 
             {/* Box 2 */}
             <div className="partner-box-new">
-              <img src="/public/thetrade.webp" alt="Partner Logo 2" className="partner-box-logo" />
+              <img src="/thetrade.webp" alt="Partner Logo 2" className="partner-box-logo" />
               <p className="partner-box-text-new">
                 “I choose Market.trad Markets because it’s one of the simplest brokers to use. With smooth MT5 and TradingView integration, I can trade efficiently without any hassle.”{" "}
               </p>
@@ -336,7 +336,7 @@ const PartnerHome = () => {
 
             {/* Box 3 */}
             <div className="partner-box-new">
-              <img src="/public/tradeen.webp" alt="Partner Logo 3" className="partner-box-logo" />
+              <img src="/tradeen.webp" alt="Partner Logo 3" className="partner-box-logo" />
               <p className="partner-box-text-new">
                 “Partnering with Market.trad has consistently been a positive experience. Our BullPower template fits perfectly with their strong infrastructure, and we truly value the professionalism and collaboration.”{" "}
               </p>

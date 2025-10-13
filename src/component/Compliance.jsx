@@ -8,7 +8,7 @@ const ComplianceSection = () => {
       {/* ================= Image Container with Heading ================= */}
       <div className="compliance-image-container">
         <img 
-          src="/public/Office1.jpg" 
+          src="/Office1.jpg" 
           alt="Compliance" 
           className="compliance-image" 
         />

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./DailyNews.css";
-import trd from '/public/trd.jpg';
+import trd from '/trd.jpg';
 
 function DailyNews() {
 

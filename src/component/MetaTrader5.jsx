@@ -35,7 +35,7 @@ function MetaTrader5() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center">
                             <img
-                                src="/public/mac1.png"
+                                src="/mac1.png"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-3 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}
@@ -139,7 +139,7 @@ function MetaTrader5() {
                         {/* Right Section */}
                         <div className="col-12 col-lg-6  text-center ">
                             <img
-                                src="/public/mac1.png"
+                                src="/mac1.png"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-4 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}
@@ -192,7 +192,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -205,7 +205,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -218,7 +218,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -231,7 +231,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -244,7 +244,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -257,7 +257,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">View all</h3>
                                 <p className="text-secondary">
@@ -309,7 +309,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3 ">
-                                    <img src="/public/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
+                                    <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Forex</h3>
                                 <p className="text-secondary">
@@ -322,7 +322,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
+                                    <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Commodities</h3>
                                 <p className="text-secondary">
@@ -335,7 +335,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
+                                    <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Equities</h3>
                                 <p className="text-secondary">
@@ -348,7 +348,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
+                                    <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Indices</h3>
                                 <p className="text-secondary">
@@ -361,7 +361,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
+                                    <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">Metals</h3>
                                 <p className="text-secondary">
@@ -374,7 +374,7 @@ function MetaTrader5() {
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                             <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
                                 <div className="mb-3">
-                                    <img src="/public/Frame8411.png" alt="View All" style={{ width: "50px" }} />
+                                    <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 text-heading fw-bold">View all</h3>
                                 <p className="text-secondary">
@@ -435,7 +435,7 @@ no downloads required. Access MT5 WebTrader here.
                         {/* Right Section */}
                         <div className="col-12 col-lg-6  text-center ">
                             <img
-                                src="/public/mac1.png"
+                                src="/mac1.png"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-4 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}

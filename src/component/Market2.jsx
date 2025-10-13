@@ -7,31 +7,31 @@ function Market2() {
         {
             name: "TradingView",
             desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-            icon: "/public/Frame84151.png", // apna icon path
+            icon: "/Frame84151.png", // apna icon path
             isNew: true,
         },
         {
             name: "MetaTrader 4",
             desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-            icon: "/public/Frame84153.png",
+            icon: "/Frame84153.png",
             isNew: false,
         },
         {
             name: "MetaTrader 5",
             desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-            icon: "/public/Frame84153.png",
+            icon: "/Frame84153.png",
             isNew: false,
         },
         {
             name: "cTrader",
             desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-            icon: "/public/Frame84152.png",
+            icon: "/Frame84152.png",
             isNew: true,
         },
         {
             name: "BlackBull CopyTrader",
             desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-            icon: "/public/Frame84155.png",
+            icon: "/Frame84155.png",
             isNew: true,
         },
         
@@ -270,7 +270,7 @@ function Market2() {
                     </p>
                 </div>
                 <div className="m-wrapper">
-                    <img src="/public/mobile.webp" alt="Trading chart" className="m-image" />
+                    <img src="/mobile.webp" alt="Trading chart" className="m-image" />
                 </div>
             </section>
 
@@ -421,7 +421,7 @@ function Market2() {
             <div className="home-platforms-grid-m1">
 
                 <div className="home-platform-card-m1">
-                <img src="/public/f1.png" alt="TradingView" className="home-platform-logo-m1" />
+                <img src="/f1.png" alt="TradingView" className="home-platform-logo-m1" />
                 <div className="home-platform-content-m1">
                     <div className="home-platform-header-m1">
                     <h3 className="home-platform-title-m1">TradingView</h3>
@@ -432,7 +432,7 @@ function Market2() {
                 </div>
 
                 <div className="home-platform-card-m1">
-                <img src="/public/f1.png" alt="cTrader" className="home-platform-logo-m1" />
+                <img src="/f1.png" alt="cTrader" className="home-platform-logo-m1" />
                 <div className="home-platform-content-m1">
                     <div className="home-platform-header-m1">
                     <h3 className="home-platform-title-m1">cTrader</h3>
@@ -443,7 +443,7 @@ function Market2() {
                 </div>
 
                 <div className="home-platform-card-m1">
-                <img src="/public/f2.png" alt="MetaTrader 4" className="home-platform-logo-m1" />
+                <img src="/f2.png" alt="MetaTrader 4" className="home-platform-logo-m1" />
                 <div className="home-platform-content-m1">
                     <div className="home-platform-header-m1">
                     <h3 className="home-platform-title-m1">MetaTrader 4</h3>
@@ -454,7 +454,7 @@ function Market2() {
                 </div>
 
                 <div className="home-platform-card-m1">
-                <img src="/public/f4.png" alt="MetaTrader 5" className="home-platform-logo-m1" />
+                <img src="/f4.png" alt="MetaTrader 5" className="home-platform-logo-m1" />
                 <div className="home-platform-content-m1">
                     <div className="home-platform-header-m1">
                     <h3 className="home-platform-title-m1">MetaTrader 5</h3>
@@ -465,7 +465,7 @@ function Market2() {
                 </div>
 
                 <div className="home-platform-card-m1">
-                <img src="/public/f3.png" alt="CopyTrader" className="home-platform-logo-m1" />
+                <img src="/f3.png" alt="CopyTrader" className="home-platform-logo-m1" />
                 <div className="home-platform-content-m1">
                     <div className="home-platform-header-m1">
                     <h3 className="home-platform-title-m1">CopyTrader</h3>
@@ -476,7 +476,7 @@ function Market2() {
                 </div>
 
                 <div className="home-platform-card-m1">
-                <img src="/public/f3.png" alt="Market.Trad Invest" className="home-platform-logo-m1" />
+                <img src="/f3.png" alt="Market.Trad Invest" className="home-platform-logo-m1" />
                 <div className="home-platform-content-m1">
                     <div className="home-platform-header-m1">
                     <h3 className="home-platform-title-m1">Market.Trad Invest</h3>
@@ -494,7 +494,7 @@ function Market2() {
                 <h1 className="T-heading">Trading Opportunities</h1>
                 <div className="T-card-container">
                     <div className="T-card">
-                        <img src="/public/card1.webp" alt="Supreme Court" className="T-card-image" />
+                        <img src="/card1.webp" alt="Supreme Court" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">Supreme Court ruling could lift gold further</h2>
                             <p className="T-card-description">The Supreme Court has apparently scheduled arguments for December on the issue of whether President Trump can fire Fed governor Lisa Cook...</p>
@@ -504,7 +504,7 @@ function Market2() {
                     </div>
 
                     <div className="T-card">
-                        <img src="/public/card2.webp" alt="BlackBull Markets" className="T-card-image" />
+                        <img src="/card2.webp" alt="BlackBull Markets" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">BlackBull Markets Becomes Official Auckland FC Partner</h2>
                             <p className="T-card-description">BlackBull Markets is excited to announce a new partnership with Auckland FC, joining the club as an official partner ahead of the upcoming A-League Men’s season....</p>
@@ -514,7 +514,7 @@ function Market2() {
                     </div>
 
                     <div className="T-card">
-                        <img src="/public/card3.webp" alt="Peso Resilience" className="T-card-image" />
+                        <img src="/card3.webp" alt="Peso Resilience" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">Peso resilience tested ahead of Banxico decision</h2>
                             <p className="T-card-description">This technical setup frames the importance of Banxico’s upcoming decision. All 24 analysts surveyed by Reuters expect a 25-basis-point cut to 7.50%....</p>
@@ -524,7 +524,7 @@ function Market2() {
                     </div>
 
                     <div className="T-card">
-                        <img src="/public/card4.webp" alt="Dot Plot Divide" className="T-card-image" />
+                        <img src="/card4.webp" alt="Dot Plot Divide" className="T-card-image" />
                         <div className="T-card-content">
                             <h2 className="T-card-title">Dot Plot Divide: Dollar Gains, Gold Stalls</h2>
                             <p className="T-card-description">The USDJPY spiked lower following the Fed’s 25 basis point cut yesterday but quickly reversed trajectory as the dot plot projections from the FOMC came in softer than markets had expected....</p>

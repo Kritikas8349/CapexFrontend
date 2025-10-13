@@ -286,7 +286,7 @@ function NavbarBlue() {
       {showNavbar && (
         <nav className="navbar-blue">
           <div className="navbar-left">
-            <img src="/public/Frame 1.png" alt="Logo" className="navbar-logo" />
+            <img src="/Frame 1.png" alt="Logo" className="navbar-logo" />
           </div>
           <div className="navbar-center">
             <ul className="nav-links">

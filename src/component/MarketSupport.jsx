@@ -8,7 +8,7 @@ const MarketSupport = () => {
 
     <div className="market-container">
       <div className="market-image-container">
-        <img src="/public/Office1.jpg" 
+        <img src="/Office1.jpg" 
           alt="Market Support" 
           className="market-image" 
         />
@@ -27,7 +27,7 @@ const MarketSupport = () => {
         {/* Card 1 */}
 <div className="market-card">
   <div className="market-header">
-    <img src="/public/tradingh.webp" alt="Trading Conditions" />
+    <img src="/tradingh.webp" alt="Trading Conditions" />
     <h3>Trading Conditions</h3>
     <span className="market-badge">10</span>
   </div>
@@ -45,7 +45,7 @@ const MarketSupport = () => {
 {/* Card 2 */}
 <div className="market-card">
   <div className="market-header">
-    <img src="/public/securef.webp" alt="Security of Funds" />
+    <img src="/securef.webp" alt="Security of Funds" />
     <h3>Security of Funds</h3>
     <span className="market-badge">4</span>
   </div>

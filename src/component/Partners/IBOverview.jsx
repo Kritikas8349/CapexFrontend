@@ -233,7 +233,7 @@ function IBOverview() {
                     {/* Image Column */}
                     <div className="col-lg-6 text-center ">
                         <img
-                            src="/public/mac1.png"
+                            src="/mac1.png"
                             alt="IB Program Benefits"
                             className="img-fluid rounded "
                         />

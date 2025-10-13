@@ -161,7 +161,7 @@ hr {
 /* Mobile */
 @media (max-width: 480px) {
   #Main {
-    margin: 10px 15px;
+    /* margin: 10px 15px; */
     padding: 0 10px;
   }
 

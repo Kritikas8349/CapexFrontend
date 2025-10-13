@@ -7,37 +7,37 @@ function Market() {
         {
             name: "TradingView",
             desc: "Trade directly in TradingView, the world’s leading charting and social platform.",
-            icon: "/public/Frame84151.png", // apna icon path
+            icon: "/Frame84151.png", // apna icon path
             isNew: true,
         },
         {
             name: "MetaTrader 4",
             desc: "Trade via MetaTrader 4, the most popular trading platform in the world.",
-            icon: "/public/Frame84153.png",
+            icon: "/Frame84153.png",
             isNew: false,
         },
         {
             name: "MetaTrader 5",
             desc: "Trade via MetaTrader 5, the most powerful premier trading platform.",
-            icon: "/public/Frame84153.png",
+            icon: "/Frame84153.png",
             isNew: false,
         },
         {
             name: "cTrader",
             desc: "Experience BlackBull Markets’ institutional trading conditions combined with cTrader.",
-            icon: "/public/Frame84152.png",
+            icon: "/Frame84152.png",
             isNew: true,
         },
         {
             name: "BlackBull CopyTrader",
             desc: "Copy trades or lead followers with the BlackBull CopyTrader platform.",
-            icon: "/public/Frame84155.png",
+            icon: "/Frame84155.png",
             isNew: true,
         },
         {
             name: "BlackBull Invest",
             desc: "Access 26,000+ Shares, Options, ETFs, Bonds, and other underlying assets.",
-            icon: "/public/Frame84155.png",
+            icon: "/Frame84155.png",
             isNew: false,
         },
     ];

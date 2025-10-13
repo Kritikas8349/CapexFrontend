@@ -5,17 +5,18 @@ html {
     box-sizing: border-box;
 }
 
-#Main5 {
+#Main {
     width: 100%;
     min-height: 300px;
-    padding: 20px;
+    /* padding: 10px; */
+    padding-right: 15px;
 
 }
 
 .deposit-section {
     display: flex;
     height: 88vh;
-    margin: 10px 20px 0px 20px ;
+    margin: 10px 10px 0px 20px ;
     align-items: center;
     justify-content: space-between;
     padding: 80px 5%;
@@ -88,10 +89,11 @@ html {
         flex-direction: column;
         text-align: center;
         padding: 60px 20px;
+        height: 60vh;
     }
 
     .deposit-left {
-        margin-bottom: 40px;
+        margin-top: 90px;
     }
 
     .deposit-left h1 {
@@ -356,6 +358,11 @@ html {
 }
 
 @media (max-width: 480px) {
+
+    .deposit-section6{
+         margin-left: 10px;
+         margin-right: 10px;
+    }
     .deposit-header6 h1 {
         font-size: 1.6rem;
     }
@@ -366,6 +373,16 @@ html {
 
     .step-card6 img {
         max-width: 220px;
+    }
+    .step-card6 p{
+
+        width: 85%;
+
+    }
+    .step-card6 h2{
+
+        width: 85%;
+
     }
 }
 
@@ -451,6 +468,8 @@ html {
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
+
+        margin:10px 10px 0px 10px ;
     }
 
     .deposit-text6 {
@@ -461,25 +480,40 @@ html {
         font-size: 1.8rem;
     }
 
-    .deposit-btn6 {
-        width: 100%;
+    /* .deposit-btn6 {
+        width: 50%;
         padding: 14px;
     }
+    .deposit-video6{
+        width: 70%;
+    } */
 }
 
 @media (max-width: 480px) {
-    .deposit-text66 h1 {
+    .deposit-text6 h1 {
         font-size: 1.5rem;
+        width: 80%;
+        
     }
 
     .deposit-text6 p {
         font-size: 0.9rem;
+        width: 80%;
+    }
+    .deposit-btn6 button{
+        width: 50%;
+        /* margin-right: 10px; */
+        padding: 14px;
+    }
+    .deposit-video6 iframe{
+        width: 76%;
     }
 }
 
 .faq-container6 {
     max-width: 1480px;
     margin-top: 20px;
+    text-align: start;
     border-radius: 13px;
     margin-left: 18px;
     height: 400px;
@@ -551,6 +585,7 @@ html {
 @media (max-width: 480px) {
     .faq-container6 {
         padding: 20px 10px;
+        margin: 10px 10px 0px 10px ;
     }
 
     .faq-title6 {

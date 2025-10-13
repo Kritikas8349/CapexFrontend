@@ -70,7 +70,12 @@ html {
 
 /* Tablets */
 @media (max-width: 1024px) {
+
+    .withdraw-section7 {
+       
+    }
     .withdraw-left7 h1 {
+        /* line-height: 10px; */
         font-size: 2.8rem;
     }
 
@@ -80,7 +85,8 @@ html {
 
     .withdraw-right7 img {
         transform: translateX(50px);
-        max-width: 80%;
+        max-width: 90%;
+        margin-top: -90px;
     }
 }
 
@@ -89,7 +95,8 @@ html {
     .withdraw-section7 {
         flex-direction: column;
         text-align: center;
-        padding: 60px 20px;
+        padding-top: 120px;
+        height: 67vh;
     }
 
     .withdraw-left7 {
@@ -340,6 +347,10 @@ html {
 
 /* Responsive */
 @media (max-width: 1024px) {
+
+    .withdraw7{
+         margin: 10px 10px 0px 10px ;
+    }
     .withdraw-header7 h1 {
         font-size: 2rem;
     }
@@ -354,6 +365,8 @@ html {
         flex-direction: column;
         align-items: center;
         gap: 30px;
+         margin: 10px 10px 0px 10px ;
+        
     }
 
     .step-card7 h2 {
@@ -366,6 +379,11 @@ html {
 }
 
 @media (max-width: 480px) {
+
+    .withdraw7{
+        margin-left: 10px;
+         margin-right: 10px;
+    }
     .withdraw-header7 h1 {
         font-size: 1.6rem;
     }
@@ -376,6 +394,17 @@ html {
 
     .step-card7 img {
         max-width: 220px;  /* Smaller images on mobile */
+    }
+
+     .step-card7 p{
+
+        width: 85%;
+
+    }
+    .step-card7 h2{
+
+        width: 85%;
+
     }
 }
 
@@ -447,6 +476,11 @@ html {
 
 /* Responsiveness */
 @media (max-width: 1024px) {
+
+    .withdraw-container7{
+     margin: 10px 10px 0px 10px ;
+
+    }
     .withdraw-text7 h1 {
         font-size: 2.2rem;
     }
@@ -461,6 +495,7 @@ html {
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
+        margin:10px 10px 0px 10px ;
     }
 
     .withdraw-text7 {
@@ -471,10 +506,10 @@ html {
         font-size: 1.8rem;
     }
 
-    .withdraw-btn7 {
+    /* .withdraw-btn7 {
         width: 100%;
         padding: 14px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -484,6 +519,14 @@ html {
 
     .withdraw-text7 p {
         font-size: 0.9rem;
+    }
+     .withdraw-btn7 button{
+        width: 50%;
+        /* margin-right: 10px; */
+        padding: 14px;
+    }
+    .withdraw-video7 iframe{
+        width: 76%;
     }
 }
 
@@ -540,9 +583,20 @@ html {
 }
 
 /* Responsive Design */
+
+@media (max-width: 1024px) {
+
+    .faq-container7 {
+       margin: 10px 10px 0px 10px ;
+
+    }
+
+}
+
 @media (max-width: 768px) {
     .faq-container7 {
         padding: 30px 15px;
+         margin: 10px 10px 0px 10px ;
     }
 
     .faq-title7 {
@@ -561,6 +615,7 @@ html {
 @media (max-width: 480px) {
     .faq-container7 {
         padding: 20px 10px;
+         margin: 10px 10px 0px 10px ;
     }
 
     .faq-title7 {
