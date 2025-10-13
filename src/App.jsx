@@ -27,7 +27,7 @@ import SharesTutorials from "./component/SharesTutorials";
   // import Intermediate from "./component/SubPages/Intermediate";
   // import AdvShare from "./component/SubPages/AdvShare";
 import CommoditiesTutorials from "./component/CommoditiesTutorials";  
-    import Education_Com_Beginner from "./component/SubPages/Education_com_Beginner";
+    import Education_Com_Beginner from "./component/SubPages/Education_Com_Beginner";
     import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
     import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
 //  import EconomicCalendar from "./component/EconomicCalendar"; 
