@@ -29,12 +29,15 @@ body {
   text-align: start;
 }
 
-.m-title {
-  font-size: 3.5rem;
-   font-weight: 900;
+.m-content h1{
+  font-size: 2.2rem;
+   font-weight: 800;
+   /* background-color: red; */
   margin-bottom: 10px;
   color: #fff;
 }
+
+
 
 .m-description {
   font-size: 1.1rem;
