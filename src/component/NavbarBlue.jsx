@@ -154,12 +154,13 @@
     const toggleSubMenu = (key) => {
       setOpenMenus((prev) => ({ ...prev, [key]: !prev[key] }));
     };
+  
     useEffect(() => {
       const handleScroll = () => setShowNavbar(window.scrollY <= 50);
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
+  
     useEffect(() => {
       const handleResize = () => {
         if (window.innerWidth > 768 && menuOpen) setMenuOpen(false);
@@ -167,7 +168,7 @@
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
     }, [menuOpen]);
-
+  
     const renderDropdown = (items) => (
       <ul>
         {items.map((item, i) => {
@@ -196,7 +197,7 @@
               </li>
             );
           }
-
+  
           return (
             <li key={i} className="has-submenu">
               {routesMap[item.title] ? (
@@ -221,19 +222,16 @@
         })}
       </ul>
     );
-
-    
-
+  
     const toggleMobileSubMenu = (key) => {
       setMobileOpenMenus((prev) => ({
         ...prev,
         [key]: !prev[key],
       }));
     };
-    
-    // Helper to generate unique key path
+  
     const getMenuKey = (parentKey, title) => (parentKey ? `${parentKey}-${title}` : title);
-    
+  
     const renderOverlayMenuRecursive = (items, parentKey = "") => (
       <ul className="overlay-submenu">
         {items.map((item) => {
@@ -262,15 +260,7 @@
         })}
       </ul>
     );
-    
-    
-
-
-
-
-      
-    
-
+  
     return (
       <div id="nav_main_blue">
         {/* Top bar */}
@@ -293,12 +283,12 @@
             </select>
           </div>
         </div>
-
+  
         {/* Navbar */}
         {showNavbar && (
           <nav className="navbar-blue">
             <div className="navbar-left">
-              <img src="/Frame 1.png" alt="Logo" className="navbar-logo" />
+              {window.innerWidth > 768 && <img src="/Frame 1.png" alt="Logo" className="navbar-logo" />}
             </div>
             <div className="navbar-center">
               <ul className="nav-links">
@@ -316,81 +306,49 @@
               <Link to="/create-account" className="join-btn">Join Now</Link>
             </div>
             <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>☰</div>
-
           </nav>
         )}
 
-        {/* Hamburger overlay */}
-       {/* Hamburger overlay */}
-        <div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
-          <div className="close-btn" onClick={() => setMenuOpen(false)}>✖</div>
-          <ul className="overlay-links">
-            {Object.keys(dropdowns).map((menu) => (
-              <li key={menu} className={`has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
-                <div className="submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
-                  {menu} <FiChevronRight className="dropdown-icon" />
-                </div>
 
-                {dropdowns[menu] && mobileOpenMenus[menu] && (
-                  <ul className="overlay-submenu">
-                    {dropdowns[menu].map((item, i) =>
-                      typeof item === "string" ? (
-                        <li key={i}>
-                          {routesMap[item] ? (
-                            <Link to={routesMap[item]} onClick={() => setMenuOpen(false)}>
-                              {item}
-                            </Link>
-                          ) : (
-                            <span>{item}</span>
-                          )}
-                        </li>
-                      ) : (
-                        <li key={i} className="has-submenu">
-                          {item.title}
-                          {item.subItems && (
-                            <ul className="overlay-submenu">
-                              {item.subItems.map((sub, j) => (
-                                <li key={j}>
-                                  {routesMap[sub] ? (
-                                    <Link to={routesMap[sub]} onClick={() => setMenuOpen(false)}>
-                                      {sub}
-                                    </Link>
-                                  ) : (
-                                    <span>{sub}</span>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                )}
-              </li>
-            ))}
 
-            <li>
-              <a href="#" className="refer-link">Refer a friend</a>
-            </li>
-            <li>
-              <button className="login-btn">Log In</button>
-            </li>
-            <li>
-              <button className="join-bttn">Join Now</button>
-            </li>
-          </ul>
+        
+ <div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
+  <div className="close-btn" onClick={() => setMenuOpen(false)}>✖</div>
 
-          <div className="overlay-bottom-row">
-            <Link to="/" onClick={() => setMenuOpen(false)}>Personal</Link>
-            <Link to="/partners" onClick={() => setMenuOpen(false)}>Partners</Link>
-            <Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link>
-          </div>
+  <ul className="overlay-links">
+    {Object.keys(dropdowns).map((menu) => (
+      <li key={menu} className={`has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
+        <div className="submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
+          {menu} <FiChevronRight className="dropdown-icon" />
         </div>
+        {dropdowns[menu] && mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
+      </li>
+    ))}
+
+    {/* 🔹 Login & Join buttons first */}
+    <li>
+      <Link to="/loginform" className="login-btn" onClick={() => setMenuOpen(false)}>
+        Log In
+      </Link>
+    </li>
+    <li>
+      <Link to="/create-account" className="join-bttn" onClick={() => setMenuOpen(false)}>
+        Join Now
+      </Link>
+    </li>
+
+    {/* 🔹 Personal, Partner, Research below buttons */}
+    <li className="overlay-bottom-row">
+      <Link to="/" onClick={() => setMenuOpen(false)}>Personal</Link>
+      <Link to="/partners" onClick={() => setMenuOpen(false)}>Partner</Link>
+      <Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link>
+    </li>
+  </ul>
+</div>
+
 
 
       </div>
     );
   }
-
   export default NavbarBlue;

@@ -8,9 +8,10 @@ import routesMap from "../RoutesMap"; // make sure the path is correct
 
 function PartnerNavbar() {
   const [language, setLanguage] = useState("en");
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [openMenus, setOpenMenus] = useState({});
-  const [showNavbar, setShowNavbar] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [openMenus, setOpenMenus] = useState({});
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [mobileOpenMenus, setMobileOpenMenus] = useState({});
 
   const languages = [
     { code: "en", label: "English" },
@@ -82,7 +83,6 @@ function PartnerNavbar() {
               ) : (
                 <span className="nav-link">{item}</span>
               )}
-
               {dropdowns[item] && (
                 <button
                   className="dropdown-btn"
@@ -94,13 +94,11 @@ function PartnerNavbar() {
                   {openMenus[item] ? <FiChevronUp /> : <FiChevronDown />}
                 </button>
               )}
-
               {openMenus[item] && renderDropdown(dropdowns[item])}
             </li>
           );
         }
 
-        // Object with subItems
         return (
           <li key={i} className="has-submenu">
             {routesMap[item.title] ? (
@@ -110,7 +108,6 @@ function PartnerNavbar() {
             ) : (
               <span className="nav-link">{item.title}</span>
             )}
-
             <button
               className="dropdown-btn"
               onClick={(e) => {
@@ -120,7 +117,6 @@ function PartnerNavbar() {
             >
               {openMenus[item.title] ? <FiChevronUp /> : <FiChevronDown />}
             </button>
-
             {item.subItems && openMenus[item.title] && renderDropdown(item.subItems)}
           </li>
         );
@@ -128,25 +124,38 @@ function PartnerNavbar() {
     </ul>
   );
 
-  const renderOverlayMenu = (items, parentKey = "") => (
+  const toggleMobileSubMenu = (key) => {
+    setMobileOpenMenus((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
+  const getMenuKey = (parentKey, title) => (parentKey ? `${parentKey}-${title}` : title);
+
+  const renderOverlayMenuRecursive = (items, parentKey = "") => (
     <ul className="overlay-submenu">
-      {items.map((item, index) => {
-        const key = parentKey ? `${parentKey}-${index}` : `${index}`;
+      {items.map((item) => {
+        const key = typeof item === "string" ? getMenuKey(parentKey, item) : getMenuKey(parentKey, item.title);
         if (typeof item === "string") {
-          return <li key={key}>{routesMap[item] ? <Link to={routesMap[item]}>{item}</Link> : item}</li>;
+          return (
+            <li key={key}>
+              {routesMap[item] ? (
+                <Link to={routesMap[item]} onClick={() => setMenuOpen(false)}>
+                  {item}
+                </Link>
+              ) : (
+                <span>{item}</span>
+              )}
+            </li>
+          );
         }
         return (
-          <li key={key}>
-            <div
-              className={`has-submenu ${openMenus[key] ? "open" : ""}`}
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleSubMenu(key);
-              }}
-            >
+          <li key={key} className={`has-submenu ${mobileOpenMenus[key] ? "open" : ""}`}>
+            <div className="submenu-header" onClick={() => toggleMobileSubMenu(key)}>
               {item.title} <FiChevronRight className="dropdown-icon" />
             </div>
-            {item.subItems && openMenus[key] && renderOverlayMenu(item.subItems, key)}
+            {item.subItems && mobileOpenMenus[key] && renderOverlayMenuRecursive(item.subItems, key)}
           </li>
         );
       })}
@@ -210,44 +219,42 @@ function PartnerNavbar() {
       )}
 
     {/* Hamburger overlay */}
-<div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
-  <div className="close-btn" onClick={() => setMenuOpen(false)}>
+{/* Hamburger overlay */}
+     {/* Hamburger overlay */}
+<div className={`part-hamburger-overlay ${menuOpen ? "open" : ""}`}>
+  <div className="part-close-btn" onClick={() => setMenuOpen(false)}>
     ✖
   </div>
-  <ul className="overlay-links">
+
+  <ul className="part-overlay-links">
     {Object.keys(dropdowns).map((menu) => (
-      <li key={menu}>
-        <div
-          className={`has-submenu ${openMenus[menu] ? "open" : ""}`}
-          onClick={(e) => {
-            e.stopPropagation();
-            toggleSubMenu(menu);
-          }}
-        >
-          {menu} <FiChevronRight className="dropdown-icon" />
+      <li key={menu} className={`part-has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
+        <div className="part-submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
+          {menu} <FiChevronRight className="part-dropdown-icon" />
         </div>
-        {openMenus[menu] && renderOverlayMenu(dropdowns[menu], menu)}
+        {mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
       </li>
     ))}
 
     <li>
-      <a href="#" className="refer-link">
-        Refer a friends
-      </a>
+      <a href="#" className="part-refer-link">Refer a friends</a>
     </li>
     <li>
-      <button className="login-btn">Log In</button>
+      <button className="part-login-btn">Log In</button>
     </li>
     <li>
-      <button className="join-bttn">Join Now</button>
+      <button className="part-join-bttnn">Join Now</button>
     </li>
   </ul>
-  <div className="overlay-bottom-row">
-    <span>Personal</span>
-    <span>Partners</span>
-    <span>Research</span>
+
+  <div className="part-overlay-bottom-row">
+    <Link to="/" onClick={() => setMenuOpen(false)}>Personal</Link>
+    <Link to="/partners" onClick={() => setMenuOpen(false)}>Partners</Link>
+    <Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link>
   </div>
 </div>
+
+
 
     </div>
   );
