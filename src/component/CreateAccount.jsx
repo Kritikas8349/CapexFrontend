@@ -1,49 +1,160 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import './CreateAccount.css';
 
 function CreateAccount() {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        dob: '',
+        applicationType: '',
+        country: '',
+        phone: '',
+        password: ''
+    });
+
+    const [loading, setLoading] = useState(false);
+
+    // Backend URL from Vite env
+    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            const res = await axios.post(`${BACKEND_URL}/api/auth/register`, formData);
+            alert(res.data.message);
+            // Optionally, reset form
+            setFormData({
+                firstName: '',
+                lastName: '',
+                email: '',
+                dob: '',
+                applicationType: '',
+                country: '',
+                phone: '',
+                password: ''
+            });
+        } catch (err) {
+            console.error("Axios error:", err.response || err);
+            alert(err.response?.data?.message || err.message);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <div id='Main'>
-
             <div className="signup-container">
-                {/* Left Section */}
                 <div className="signup-left">
-                    {/* Logo */}
                     <div className="logo">
                         <img src="/logo.png" alt="Market.trad Logo" />
-                       
                     </div>
 
                     <h2>Get started absolutely free</h2>
                     <p>Welcome to Market.Trad – Let’s Create Account</p>
 
-                    <form className="signup-form">
-                        <div className="input-row">
-                            <input type="text" placeholder="First Name" />
-                            <input type="text" placeholder="Last Name" />
-                        </div>
-                        <input type="email" placeholder="Email Address" />
-                        <div className="input-row">
-                            <input type="date" placeholder="Date of Birth" />
-                            <select>
-                                <option>Application Types</option>
-                                <option>Individual</option>
-                                <option>Business</option>
-                            </select>
-                        </div>
-                        <div className="input-row">
-                            <select>
-                                <option>India</option>
-                                <option>USA</option>
-                                <option>UK</option>
-                            </select>
-                            <input type="tel" placeholder="+91 Mobile Phone" />
-                        </div>
-                        <input type="password" placeholder="Password (6+ characters)" />
+                    <form className="signup-form" onSubmit={handleSubmit} autoComplete="off">
+                        {/* Hidden dummy password for Chrome autofill */}
+                        <input type="password" style={{ display: 'none' }} />
 
-                        <button className="create-btn">Create account</button>
+                        <div className="input-row">
+                            <input
+                                type="text"
+                                name="firstName"
+                                placeholder="First Name"
+                                onChange={handleChange}
+                                value={formData.firstName}
+                                autoComplete="given-name"
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="lastName"
+                                placeholder="Last Name"
+                                onChange={handleChange}
+                                value={formData.lastName}
+                                autoComplete="family-name"
+                                required
+                            />
+                        </div>
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                            onChange={handleChange}
+                            value={formData.email}
+                            autoComplete="email"
+                            required
+                        />
+
+                        <div className="input-row">
+                            <input
+                                type="date"
+                                name="dob"
+                                onChange={handleChange}
+                                value={formData.dob}
+                                autoComplete="bday"
+                                required
+                            />
+                            <select
+                                name="applicationType"
+                                onChange={handleChange}
+                                value={formData.applicationType}
+                                autoComplete="off"
+                                required
+                            >
+                                <option value="">Application Types</option>
+                                <option value="Individual">Individual</option>
+                                <option value="Business">Business</option>
+                            </select>
+                        </div>
+
+                        <div className="input-row">
+                            <select
+                                name="country"
+                                onChange={handleChange}
+                                value={formData.country}
+                                autoComplete="country-name"
+                                required
+                            >
+                                <option value="">Select Country</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="UK">UK</option>
+                            </select>
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="+91 Mobile Phone"
+                                onChange={handleChange}
+                                value={formData.phone}
+                                autoComplete="tel"
+                                required
+                            />
+                        </div>
+
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password (6+ characters)"
+                            onChange={handleChange}
+                            value={formData.password}
+                            autoComplete="new-password"
+                            required
+                        />
+
+                        <button className="create-btn" type="submit" disabled={loading}>
+                            {loading ? "Creating..." : "Create account"}
+                        </button>
                     </form>
 
                     <p className="terms">
@@ -60,16 +171,17 @@ function CreateAccount() {
                     </p>
                 </div>
 
-                {/* Right Section */}
                 <div className="signup-right">
-                    <h1>Welcome back!<br />Please sign in to your <span>Market.Trad Account</span></h1>
+                    <h1>
+                        Welcome back!<br />
+                        Please sign in to your <span>Market.Trad Account</span>
+                    </h1>
                     <p>Ranked #1 forex broker in execution speed by CompareForexBrokers.com</p>
                     <img src="/lapi.webp" alt="Laptop trading screen" className="laptop-img" />
                 </div>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default CreateAccount
+export default CreateAccount;
