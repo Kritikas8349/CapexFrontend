@@ -1,32 +1,44 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= SECURITY SECTION ================= */
 .securitycontainer {
   background-color: #ebefee;
   width: 100%;
-  height: 100vh;
   padding-top: 10px;
 }
 
 .security-container {
   max-width: 1480px;
-    height: 95vh;
-    margin: 0 auto;
-    padding: 180px 0 0 40px;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom right, #000000, #493ffd);
-    border-radius: 12px;
-    color: #ffffff;
+  margin: 0 auto;
+  padding: 180px 40px 40px 40px; /* top padding for navbar overlap */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #000000, #493ffd);
+  border-radius: 12px;
+  color: #ffffff;
+  min-height: 70vh; /* ensures it covers most of the viewport but grows with content */
+  box-sizing: border-box;
 }
 
-/* Breadcrumb */
+/* ================= BREADCRUMB ================= */
 .breadcrumb {
   font-size: 14px;
   margin-bottom: 20px;
   color: #cccccc;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .breadcrumb a {
   color: #cccccc;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .breadcrumb a:hover {
@@ -43,7 +55,7 @@
   font-weight: 500;
 }
 
-/* Page Heading */
+/* ================= PAGE HEADING ================= */
 .page-heading {
   font-size: 36px;
   font-weight: 700;
@@ -53,7 +65,7 @@
   text-align: left;
 }
 
-/* Links List */
+/* ================= SECURITY LINKS ================= */
 .security-links {
   list-style: none;
   padding: 0;
@@ -83,12 +95,12 @@
   font-size: 20px;
 }
 
-/* ✅ Responsive Adjustments */
+/* ================= RESPONSIVE ADJUSTMENTS ================= */
 
 /* Large Tablets / ~1008px Fix */
 @media (max-width: 1100px) and (min-width: 901px) {
   .security-container {
-    padding: 160px 25px 30px 25px; /* more top padding so navbar/breadcrumbs never overlap */
+    padding: 160px 25px 30px 25px;
   }
   .page-heading {
     font-size: 34px;
@@ -104,7 +116,7 @@
 /* Tablets */
 @media (max-width: 1024px) {
   .security-container {
-    padding: 120px 20px 20px 20px; /* keep min 120px top */
+    padding: 120px 20px 20px 20px;
   }
   .page-heading {
     font-size: 32px;
@@ -114,7 +126,7 @@
 /* Mobile Landscape */
 @media (max-width: 768px) {
   .security-container {
-    padding: 120px 15px 20px 15px; /* keep min 120px top */
+    padding: 120px 15px 20px 15px;
   }
   .page-heading {
     font-size: 26px;
@@ -132,7 +144,8 @@
 /* Mobile Portrait / Small devices */
 @media (max-width: 480px) {
   .security-container {
-    padding: 120px 12px 20px 12px; /* keep min 120px top */
+    min-height: 50vh; /* replace fixed height */
+    padding: 120px 12px 20px 12px;
   }
   .page-heading {
     font-size: 22px;
@@ -158,12 +171,12 @@
 /* Very Small Screens (<=360px) */
 @media (max-width: 360px) {
   .security-container {
-    padding: 120px 10px 20px 10px; /* keep min 120px top */
+    padding: 120px 10px 20px 10px;
   }
   .page-heading {
     font-size: 20px;
   }
   .security-links a {
-    font-size: 13px;
+    font-size: 12px;
   }
 }

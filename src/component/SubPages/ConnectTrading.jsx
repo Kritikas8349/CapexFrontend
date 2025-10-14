@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ConnectTrading.css";
+import { Link } from "react-router-dom";
 
 const sections = [
   { title: "Getting Started", img: "pf4.svg", count: 6 },
@@ -50,17 +51,17 @@ const ConnectTrading = () => {
 
         {/* Content */}
         <div className="connect-content">
-          <div className="connect-breadcrumbs">
-            <span>Home</span>
-            <span className="separator">›</span>
-            <span>Support</span>
-            <span className="separator">›</span>
-            <span>Platform Support</span>
-            <span className="separator">›</span>
-            <span>Getting Started</span>
-            <span className="separator">›</span>
-            <span className="current">How to connect your trading account?</span>
-          </div>
+        <div className="connect-breadcrumbs">
+  <Link to="/" className="breadcrumb-link">Home</Link>
+  <span className="separator">›</span>
+  <Link to="/support" className="breadcrumb-link">Support</Link>
+  <span className="separator">›</span>
+  <Link to="/support/platform-support" className="breadcrumb-link">Platform Support</Link>
+  <span className="separator">›</span>
+  <Link to="/support/getting-started" className="breadcrumb-link">Getting Started</Link>
+  <span className="separator">›</span>
+  <span className="current">How to connect your trading account?</span>
+</div>
 
           <h1>How to connect your trading account?</h1>
 

@@ -141,6 +141,36 @@
     flex-wrap: wrap;
 }
 
+.connect-breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .connect-breadcrumbs .separator {
+    margin: 0 6px;
+    color: fff;
+  }
+  
+  .connect-breadcrumbs .breadcrumb-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease;
+  }
+  
+  .connect-breadcrumbs .breadcrumb-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .connect-breadcrumbs .current {
+    font-weight: 600;
+    color: #000;
+  }
+  
+
 .connect-breadcrumbs span {
     cursor: pointer;
     transition: color 0.3s;
@@ -337,6 +367,7 @@ body, h1, h2, h3, h4, p, span, a {
     padding: 0 20px;
     max-width: 800px;
     box-sizing: border-box;
+    
 }
 
 .connect-step h3 {

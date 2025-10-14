@@ -5,24 +5,24 @@ import { Link } from "react-router-dom";
 const ContactSupport = () => {
   return (
     <div className="reachout">
-    <div className="reachoutcontainer">
+  <div className="reachoutcontainer">
+    <div className="reachout-image-container">
+      <img 
+        src="/Office1.jpg" 
+        alt="Reach Out Support" 
+        className="reachout-image" 
+      />
 
-      <div className="reachout-container">
-        <img 
-          src="/Office1.jpg" 
-          alt="Market Support" 
-          className="reachout-img" 
-        />
+      {/* Text Content */}
+      <div className="reachout-text">
+        <h1 className="reachout-heading">Contact Us</h1>
+        <p className="reachout-subtext">
+        Our team are here to support 24/7 via Live Chat, Phone, Email, or WhatsApp.
+        </p>
+      </div>
+    </div>
+  </div>
 
-        {/* Text Content */}
-        <div className="reachout-textbox">
-          <h1 className="reachout-title">Contact Us</h1>
-          <p className="reachout-description">
-            Our team are here to support 24/7 via Live Chat, Phone, Email, or WhatsApp.
-          </p>
-        </div>
-      </div>
-      </div>
 
       {/* Contact Unique Section */}
       <div className="contact-section-unique">

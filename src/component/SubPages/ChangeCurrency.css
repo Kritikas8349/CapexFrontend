@@ -15,7 +15,7 @@
   background: linear-gradient(to top left, #000000, #493ffd);
   width: 100%;
   max-width: 1480px;
-  min-height: 90vh;
+  min-height: 98vh;
   margin: 0 auto 20px auto;   /* ✅ equal left/right gap */
   border-radius: 16px;
   overflow: hidden;
@@ -162,6 +162,7 @@
     font-size: 16px;
     line-height: 1.6;
     color: #fff;
+    text-align: start;
   }
   
   .change-paragraph-section ol {

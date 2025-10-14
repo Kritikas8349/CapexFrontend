@@ -127,6 +127,36 @@
     gap: 6px;
     flex-wrap: wrap;
   }
+
+  .investaccount-breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .investaccount-breadcrumbs .separator {
+    margin: 0 6px;
+    color: #fff;
+  }
+  
+  .investaccount-breadcrumbs .breadcrumb-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease;
+  }
+  
+  .investaccount-breadcrumbs .breadcrumb-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .investaccount-breadcrumbs .current {
+    font-weight: 600;
+    color: #000;
+  }
+  
   
   .investaccount-breadcrumbs span {
     cursor: pointer;

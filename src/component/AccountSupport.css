@@ -85,13 +85,9 @@
   /* Responsive */
   @media (max-width: 768px) {
     
-    .accountcontainer {
-      height: 75vh;
-    }
-    
     .account-container {
       padding: 180px 15px 0 15px;
-      height: 70vh;
+      
     }
   
     .page-heading {
