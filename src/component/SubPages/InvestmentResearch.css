@@ -11,7 +11,7 @@
     background:linear-gradient(to right,#493FFD,#000000) ;
 }
 .btn-bg-start{
-    background-color: #493FFD;
+    background-color: #493FFD !important;
 }
 .btn-bg-start:hover {
   background-color: #423cb7 !important;

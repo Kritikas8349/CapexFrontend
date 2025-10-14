@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function TradingView() {
     return (
@@ -33,12 +34,12 @@ function TradingView() {
 
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-2 justify-content-start mt-4">
-                                <button className="btn btn-bg-start text-white  mt-3">
+                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white  mt-3">
                                     Join Now
-                                </button>
-                                <button className="btn btn-bg-start text-white  mt-3 ">
+                                </Link>
+                                <Link to="/loginform" className="btn btn-bg-start text-white  mt-3 ">
                                     Log In
-                                </button>
+                                </Link>
                             </div>
 
                         </div>
@@ -57,14 +58,14 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
                         <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
@@ -165,7 +166,7 @@ function TradingView() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
+                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
@@ -186,7 +187,7 @@ function TradingView() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
@@ -207,7 +208,7 @@ function TradingView() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
                     </div>
@@ -312,47 +313,47 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-outline-dark text-white d-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-outline-dark text-white d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/microsoft.svg"
                                 alt="Microsoft Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="Mac App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Google-Play (1).svg"
                                 alt="Google Play"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

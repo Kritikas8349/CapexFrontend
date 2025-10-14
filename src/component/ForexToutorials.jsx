@@ -168,8 +168,8 @@ function ForexTutorials() {
 
             </style>
       <div className="container-fluid bg-forex text-white pt-4 " >
-        <div className="container bg-transparent pt-4">
-          <h2 className="fw-bold bg-transparent text-white text-center display-5 py-4"> Forex Tutorial</h2>
+        <div className="container bg-transparent mt-4 mt-lg-5 pt-4">
+          <h2 className="fw-bold bg-transparent text-white text-center display-5 mt-5 mt-lg-4 py-4"> Forex Tutorial</h2>
 
           <div className="row bg-transparent  pt-2">
             <div className="col-lg-6 mb-4 bg-transparent">
@@ -185,14 +185,14 @@ function ForexTutorials() {
                     <h3 className="fw-bold">{lessons[0].title}</h3>
                   </div>
                 </div>
-                <div className="bg-transparent text-white p-3" style={{ height: '150px' }}>
+                <div className="bg-transparent text-start text-white p-3" style={{ height: '150px' }}>
                   <h5 className="fw-bold ">{lessons[0].title}</h5>
                   <p className="mb-0 fs-5">{lessons[0].desc}</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-6 bg-transparent mt-4">
+            <div className="col-lg-6 bg-transparent mt-4 ">
               {lessons.slice(2).map((lesson, index) => (
                 <div
                   key={index}
@@ -214,7 +214,7 @@ function ForexTutorials() {
                       style={{ objectFit: 'cover' }}
                     />
                   </div>
-                  <div className="p-3 d-flex flex-column justify-content-center bg-transparent text-white" style={{ flex: 1 }}>
+                  <div className="p-3 d-flex flex-column justify-content-center text-start bg-transparent text-white" style={{ flex: 1 }}>
                     <h6 className="fw-bold h3  mb-2">{lesson.title}</h6>
                     <p className="mb-0 fs-5">{lesson.desc}</p>
                   </div>

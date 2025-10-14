@@ -62,15 +62,15 @@ const ContractExpiries = () => {
 ];
 
     return (
-        <div className="container-fluid">
-            <div className="row justify-content-center">
+        <div className="container-fluid bg-faq py-lg-5 py-md-5 pt-5">
+            <div className="row justify-content-center my-lg-6 my-md-6 mt-5  bg-transparent">
                 {/* Sidebar with Accordion */}
                 <SidebarAccordion Sections={Sections}></SidebarAccordion>
 
                 {/* Main Content */}
-                <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border">
+                <div className="col-12 bg-transparent  col-md-9 col-lg-6 p-4 my-4 text-start bg-home">
                     {/* Breadcrumb */}
-                    <nav aria-label="breadcrumb" className="mb-5">
+                    {/* <nav aria-label="breadcrumb" className="mb-5">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
                                 <Link to="#">Home</Link>
@@ -88,11 +88,11 @@ const ContractExpiries = () => {
                                 Contract Expiry
                             </li>
                         </ol>
-                    </nav>
+                    </nav> */}
 
                     {/* Title + Date */}
                     <h1 className="fw-bold mb-1 text-heading">Contract Expiry</h1>
-                    <p className="text-muted mb-3">Updated on September 2, 2025</p>
+                    <p className="text-white mb-3">Updated on September 2, 2025</p>
 
                     {/* Server time */}
                     <p className="small">
@@ -112,7 +112,7 @@ const ContractExpiries = () => {
                             />
                         </div>
 
-                        <table className="table table-bordered table-hover">
+                        <table className="table table-bordered rounded rounded-3 table-hover">
                             <thead className="table-primary">
                                 <tr>
                                     <th>Symbol</th>
@@ -155,7 +155,7 @@ const ContractExpiries = () => {
 
                         {/* Feedback Section */}
                         <div className="p-4 border rounded d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 bg-light-subtle">
-                            <h5 className="mb-0">Did this answer your question?</h5>
+                            <h5 className="mb-0 text-dark">Did this answer your question?</h5>
                             <div className="d-flex gap-4 fs-4 text-warning">
                                 <i className="bi bi-emoji-smile-fill"></i>
                                 <i className="bi bi-emoji-angry-fill"></i>

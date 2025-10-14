@@ -16,7 +16,7 @@ function RegionalRepresentatives() {
 
             <div className="container-fluid  bg-free-trial text-white py-3 py-lg-5 py-md-5">
                 <div className="container py-3 py-lg-5 py-md-5">
-                    <div className="row">
+                    <div className="row text-start">
                         <div className="col-lg-6 ps-lg-5 border-end">
                             <h1> BlackBull Partners<br /> Regional <br />Representatives</h1>
                         </div>
@@ -31,37 +31,44 @@ function RegionalRepresentatives() {
                 </div>
             </div>
             {/* -----Key Fetures -------- */}
-            <div className="container-fluid bg-light py-5">
-                <div className="container py-5">
-                    {/* Section Heading */}
-                    <h1 className="text-center text-heading mb-5">
-                        Key Features Of Our Becoming A Regional Representative
-                    </h1>
+            <div className="container-fluid bg-home py-5">
+  <div className="container py-5">
+    <h1 className="text-center text-heading mb-5">
+      Key Features Of Our Becoming A Regional Representative
+    </h1>
 
-                    <div className="row g-4 text-start text-lg-start px-5">
-                        {/* Left Column */}
+    <ul className="list-unstyled ms-0 ps-0 text-start" style={{ maxWidth: '700px', margin: '0 auto' }}>
+      <li className="d-flex align-items-start gap-3 mb-3">
+        <i className="bi bi-star border rounded-5 p-2 border-primary text-heading fs-5 mt-1"></i>
+        <span className="fw-semibold">
+          You Are Your Own Boss
+        </span>
+      </li>
 
-                        <div className="d-flex flex-column align-items-start gap-2 w-100 mb-2 lh-lg">
-                            <div className="d-flex align-items-center gap-3">
-                                <i className="bi bi-star border rounded-5 p-2 border-primary text-heading"></i>
-                                <span className="fw-semibold">You Are Your Own Boss</span>
-                            </div>
-                            <div className="d-flex align-items-center gap-3">
-                                <i className="bi bi-star border rounded-5 p-2 border-primary text-primary"></i>
-                                <span className="fw-semibold">Gain Access To Our State-Of-The-Art Proprietary Aggregation Software</span>
-                            </div>
-                            <div className="d-flex align-items-center gap-3">
-                                <i className="bi bi-star border rounded-5 p-2 border-primary text-primary"></i>
-                                <span className="fw-semibold">Become A Company Partner</span>
-                            </div>
-                            <div className="d-flex align-items-center gap-3">
-                                <i className="bi bi-star border rounded-5 p-2 border-primary text-primary"></i>
-                                <span className="fw-semibold">Large Growth Potential</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <li className="d-flex align-items-start gap-3 mb-3">
+        <i className="bi bi-star border rounded-5 p-2 border-primary text-primary fs-5 mt-1"></i>
+        <span className="fw-semibold">
+          Gain Access To Our State-Of-The-Art Proprietary Aggregation Software
+        </span>
+      </li>
+
+      <li className="d-flex align-items-start gap-3 mb-3">
+        <i className="bi bi-star border rounded-5 p-2 border-primary text-primary fs-5 mt-1"></i>
+        <span className="fw-semibold">
+          Become A Company Partner
+        </span>
+      </li>
+
+      <li className="d-flex align-items-start gap-3 mb-3">
+        <i className="bi bi-star border rounded-5 p-2 border-primary text-primary fs-5 mt-1"></i>
+        <span className="fw-semibold">
+          Large Growth Potential
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 
             {/* ---------------- */}

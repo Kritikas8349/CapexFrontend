@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 function IBOverview() {
     const cardData = [
         {
@@ -56,27 +56,18 @@ function IBOverview() {
                 opacity: 1; /* Ensures it’s not faded */}`
                 }
             </style>
-            <div className="d-flex align-items-center text-white" style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url('/compliance.avif')`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                minHeight: '85vh'
-            }}>
-
-                <div className="container bg-transparent">
+            <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+                <div className="container align-items-start ">
                     <div className="row bg-transparent">
-                        <div className="col-12 col-lg-6 bg-transparent">
-                            <div className="content-box justify-content-lg-start justify-content-md-start p-4 p-md-5 bg-transparent"> {/* Add responsive padding */}
-                                <h1 className="fw-bold text-heading display-4 text-start mb-3" style={{ fontFamily: 'Arial, sans-serif' }}>Introducing Brokers (IB)<br />
-                                    Overview</h1> {/* mb-3 for spacing */}
-                                <h6 className="mb-4  fs-5 text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
+                        <div className="col-12 col-lg-12 bg-transparent">
+                            <div className="content-box p-4 p-md-5 text-start bg-transparent"> {/* Add responsive padding */}
+                                <h1 className="fw-bold text-white display-4 text-start mb-3" style={{ fontFamily: 'Arial, sans-serif' }}>Introducing Brokers (IB)
+                                    <br /> Overview</h1> {/* mb-3 for spacing */}
+                                <h6 className="mb-4  fs-5 text-start text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                                     Access commissions with no limits
                                 </h6>
-                                <div className='d-flex gap-3'>
-                                    <input type="email" name="" className='form-control bg-transparent text-white custom-placeholder' placeholder='Email address' id="" />
-                                    <button className="btn btn-bg-start text-white  ">Partner Now</button> {/* btn-lg for a larger button */}
+                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white btn-lg fw-bold">Partner Now </Link> {/* btn-lg for a larger button */}
 
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -112,38 +103,46 @@ function IBOverview() {
             </section>
 
             {/* ------------------- */}
-            <section className="container align-content-center bg-home  my-5" style={{ height: '85vh' }}>
-                <div className="row g-6 align-items-center">
-                    {/* Text and Button Column */}
-                    <div className="col-lg-6">
-                        <h2 className="display-4 fw-bold text-heading mb-4">
-                            Unlimited earning potential
-                        </h2>
-                        <p className="lead mb-4 ">
-                            Partnering with BlackBull Markets offers unlimited earning potential, competitive rebates, and custom structures to suit your needs. You’ll also benefit from advanced tracking tools, marketing resources, and support from a personal Account Manager.
-                        </p>
+            <section
+                className="container-fluid bg-home  my-5 d-flex align-items-center"
+                style={{ minHeight: "85vh" }}
+            >
+                <div className="container">
+                    <div className="row align-items-center " style={{ minHeight: "85vh" }}>
+                        {/* Text Column */}
+                        <div className="col-12 col-lg-6 text-start mb-4 mb-lg-0 d-flex flex-column justify-content-center">
+                            <h2 className="display-4 fw-bold text-heading mb-4">
+                                Unlimited earning potential
+                            </h2>
+                            <p className="lead mb-4">
+                                Partnering with BlackBull Markets offers unlimited earning potential,
+                                competitive rebates, and custom structures to suit your needs. You’ll
+                                also benefit from advanced tracking tools, marketing resources, and
+                                support from a personal Account Manager.
+                            </p>
+                        </div>
 
+                        {/* Image Column */}
+                        <div className="col-12 col-lg-6 d-flex justify-content-center">
+                            <img
+                                src="/spotify.avif"
+                                alt="Man in a recording studio"
+                                className="img-fluid rounded shadow"
+                                style={{ maxHeight: "80%", objectFit: "cover" }}
+                            />
+                        </div>
                     </div>
-                    {/* Image Column */}
-                    <div className="col-lg-6 mb-4 mb-lg-0" >
-                        <img
-                            src="/spotify.avif"
-                            alt="Man in a recording studio"
-                            className="img-fluid rounded shadow"
-                            height={'100%'}
-                        />
-                    </div>
-
-
                 </div>
             </section>
+
+
 
             {/* ----Introducing Broker------ */}
 
             <section className="container-fluid bg-home border border-bottom border-primary py-5">
                 <div className="row align-items-center g-3 px-lg-5">
                     {/* Text Column */}
-                    <div className="col-lg-6 p-4">
+                    <div className="col-lg-6 text-start p-4">
                         <h2 className="display-5 fw-bold mb-4 ">
                             Introducing Broker (IB) program benefits
                         </h2>
@@ -216,10 +215,10 @@ function IBOverview() {
             </section>
 
             {/* ------Convert More Client ------- */}
-            <section className="container-fluid border-color  bg-home  py-5">
+            <section className="container-fluid border-color  bg-home   py-5">
                 <div className="row align-items-center g-3 px-lg-5 py-4">
                     {/* Text Column */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 text-start">
                         <h3 className='btn btn-outline-primary fw-bold border-2'>REFERRAL PROMOTIONS</h3>
                         <h2 className="display-5 fw-bold mb-4 text-start text-lg-start text-heading">
                             Convert more clients with Free TradingView Premium
@@ -322,7 +321,7 @@ function IBOverview() {
                             <tr>
                                 {tableData.headers.map((header, i) => (
                                     <th
-                                        key={i}
+                                        key={header.account}
                                         className={`fw-bold ${i === 1
                                             ? "bg-primary text-white"
                                             : i === 2

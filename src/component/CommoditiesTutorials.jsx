@@ -102,7 +102,7 @@ function CommoditiesTutorials() {
                     <h3 className="fw-bold">{lessons[0].title}</h3>
                   </div>
                 </div>
-                <div className="bg-tranpraent text-white p-3" style={{ height: '150px' }}>
+                <div className="bg-tranpraent text-start text-white p-3" style={{ height: '150px' }}>
                   <h5 className="fw-bold">{lessons[0].title}</h5>
                   <p className="mb-0 fs-5">{lessons[0].desc}</p>
                 </div>
@@ -131,7 +131,7 @@ function CommoditiesTutorials() {
                       style={{ objectFit: 'cover' }}
                     />
                   </div>
-                  <div className="p-3 d-flex flex-column justify-content-center bg-tranpraent text-white" style={{ flex: 1 }}>
+                  <div className="p-3 d-flex flex-column text-start justify-content-center bg-tranpraent text-white" style={{ flex: 1 }}>
                     <h6 className="fw-bold h3 mb-2">{lesson.title}</h6>
                     <p className="mb-0 fs-5">{lesson.desc}</p>
                   </div>

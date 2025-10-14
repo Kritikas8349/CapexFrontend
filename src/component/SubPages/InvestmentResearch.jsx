@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import './InvestmentResearch.css'
+import { Link } from 'react-router-dom';
 
 function InvestmentResearch() {
     //   ------- Daily News Data--------
@@ -60,18 +61,18 @@ function InvestmentResearch() {
     ];
     return (
         <div className='bg-home'>
-            <div className="container-fluid bg-home py-5 ">
+            <div className="container-fluid bgc-col me-3 py-5 ">
                 <div className="container py-5">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center py-5">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
-                            <h1 className="fw-bold display-5 text-heading">
+                            <h1 className="fw-bold display-5 text-white">
                                 Daily Expert{" "}
-                                <span className="text-primary"></span>
+                                <span className="text-white"></span>    
                                 <br />
                                 Stock Research
                             </h1>
-                            <p className="fs-2 mt-3  ">
+                            <p className="fs-2 mt-3 text-white ">
                                 Timely and jargon-free recommendations to<br /> benefit the everyday investor
                             </p>
 
@@ -214,7 +215,7 @@ function InvestmentResearch() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Subscribe Now</button>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
@@ -235,7 +236,7 @@ function InvestmentResearch() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Subscribe Now</button>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
@@ -256,7 +257,7 @@ function InvestmentResearch() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Request a Quote</button>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Request a Quote</Link>
                             </div>
                         </div>
                     </div>

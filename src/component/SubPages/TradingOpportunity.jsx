@@ -2,13 +2,13 @@ import React from 'react'
 import './TradingOpportunity.css'
 function TradingOpportunity() {
     return (
-        <div>
-            <div className="m1-t-container">
-                <h1 className="m1-t-heading">Trading Opportunities</h1>
-                <div className="m1-t-card-container">
+        <div className='bg-faq  pt-5'>
+            <div className="m1-t-container mt-5 pt-5 ">
+                <h1 className="m1-t-heading mb-5 pb-4 ">Trading Opportunities</h1>
+                <div className="m1-t-card-container text-start">
                     {[1, 2, 3, 4].map(i => (
                         <div className="m1-t-card" key={i}>
-                            <img src={`card${i}.webp`} alt={`card${i}`} className="m1-t-card-image" />
+                            <img src={`/public/card${i}.webp`} alt={`card${i}`} className="m1-t-card-image" />
                             <div className="m1-t-card-content">
                                 <h2 className="m1-t-card-title">Title for card {i}</h2>
                                 <p className="m1-t-card-description">Some brief description of the card content for card {i}...</p>

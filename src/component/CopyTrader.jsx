@@ -1,5 +1,7 @@
 import React from 'react'
 import './CopyTrader.css'
+import { Link } from 'react-router-dom'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function CopyTrader() {
     return (
         <div className='bg-home'>
@@ -35,9 +37,9 @@ function CopyTrader() {
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
                                 <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white px-4 py-2 fw-bold">
                                     Join Now
-                                </button>
+                                </Link>
                             </div>
                         </div>
 
@@ -55,47 +57,47 @@ function CopyTrader() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/microsoft.svg"
                                 alt="Microsoft Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="Mac App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Google-Play (1).svg"
                                 alt="Google Play"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -296,7 +298,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 1</h2>
                             <h2 className="fw-bold mb-3">Create a BlackBull Markets account</h2>
                             <p className="mb-4">Create an account in less than 5 minutes.</p>
-                            <button className="btn btn-bg-start fs-5 text-white">Create Account</button>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start fs-5 text-white">Create Account</Link>
                         </div>
 
                     </div>
@@ -324,7 +326,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 2</h2>
                             <h2 className="fw-bold mb-3">Explore Providers</h2>
                             <p className="mb-4">Explore our range of elite fund managers.</p>
-                            <button className="btn btn-bg-start fs-5 text-white">Explore</button>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start fs-5 text-white">Explore</Link>
                         </div>
 
                     </div>
@@ -352,7 +354,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 3</h2>
                             <h2 className="fw-bold mb-3">Activate copy-trading</h2>
                             <p className="mb-4">Select a fund manager and start copy trading</p>
-                            <button className="btn btn-bg-start fs-5 text-white">Activate</button>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start fs-5 text-white">Activate</Link>
                         </div>
 
                     </div>

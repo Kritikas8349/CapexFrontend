@@ -362,7 +362,7 @@ function App() {
 
   {/* Rohan */}
 
-          
+          <Route path="/education/demo-trade" element={<CreateAccount></CreateAccount>}></Route>
           <Route path="/education/education-hub" element={<EducationHub />}></Route>
           <Route path="/education/webinars" element={<Webinars></Webinars>}></Route>
           <Route path="/education/forex" element={<ForexTutorials></ForexTutorials>}></Route>
@@ -469,7 +469,7 @@ function App() {
 <Route path="/ib-program/overview" element={<IBOverview />} />
 <Route path="/ib-program/broker-models/regional-reps" element={<RegionalRepresentatives />} />
 <Route path="/ib-program/marketing-materials" element={<MarketingMaterials />} />
-{/* <Route path="/ib-program/marketing-materials" element={<MarketingMaterials />} /> */}
+<Route path="/ib-program/support" element={<Support2 />} />
 
 {/*------------------ About-------------------- */}
 

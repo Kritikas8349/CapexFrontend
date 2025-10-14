@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function MetaTrader4() {
     return (
         <div className='bg-home'>
@@ -29,9 +30,9 @@ function MetaTrader4() {
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
                                 <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white px-4 py-2 fw-bold">
                                     Join Now
-                                </button>
+                                </Link>
                             </div>
                         </div>
 
@@ -49,47 +50,47 @@ function MetaTrader4() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/microsoft.svg"
                                 alt="Microsoft Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="Mac App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Google-Play (1).svg"
                                 alt="Google Play"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -159,7 +160,7 @@ function MetaTrader4() {
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
-                                How to trade on <span className='text-heading '> MT4 &nbsp;</span><br/>
+                                How to trade on <span className='text-heading '> MT4 &nbsp;</span><br />
                                 with BlackBull Markets
                             </h1>
                             <p className="text-secondary mt-3 fs-5">
@@ -187,18 +188,18 @@ function MetaTrader4() {
             {/* ---------Tradable Assets----------   */}
 
             <div className="container-fluid bg-home py-5">
-                <div className="container rounded-4 p-3 ">
-                    <h1 className="text-center text-heading mb-5 fw-bold">Tradable Assets</h1>
+                <div className="container rounded-4 p-3 py-5">
+                    <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
-                                <div className="mb-3 ">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                                <div className="mb-3">
                                     <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     70+ major, minor, and exotic currency pairs.
                                 </p>
                             </div>
@@ -206,12 +207,12 @@ function MetaTrader4() {
 
                         {/* Commodities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Commodities</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Energies like crude oil, and agricultural cash crops.
                                 </p>
                             </div>
@@ -219,12 +220,12 @@ function MetaTrader4() {
 
                         {/* Equities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Equities</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.
                                 </p>
                             </div>
@@ -232,12 +233,12 @@ function MetaTrader4() {
 
                         {/* Indices */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Indices</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Major stock indices like US30, S&amp;P500, and NAS100.
                                 </p>
                             </div>
@@ -245,12 +246,12 @@ function MetaTrader4() {
 
                         {/* Metals */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Metals</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Precious and industry metals like gold, silver, and copper.
                                 </p>
                             </div>
@@ -258,12 +259,12 @@ function MetaTrader4() {
 
                         {/* View All */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">View all</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Explore Market.Trad's diverse range of tradable assets.
                                 </p>
                             </div>
@@ -303,19 +304,17 @@ function MetaTrader4() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-5 ">
-                <div className="container rounded-4 p-3 ">
-
-
+            <div className="container-fluid bg-home py-5 my-1">
+                <div className="container rounded-4 p-3 py-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
-                                <div className="mb-3 ">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                                <div className="mb-3">
                                     <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Forex</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Forex</h3>
+                                <p className="text-secondary mb-0">
                                     70+ major, minor, and exotic currency pairs.
                                 </p>
                             </div>
@@ -323,12 +322,12 @@ function MetaTrader4() {
 
                         {/* Commodities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Commodities</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Commodities</h3>
+                                <p className="text-secondary mb-0">
                                     Energies like crude oil, and agricultural cash crops.
                                 </p>
                             </div>
@@ -336,12 +335,12 @@ function MetaTrader4() {
 
                         {/* Equities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Equities</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Equities</h3>
+                                <p className="text-secondary mb-0">
                                     We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.
                                 </p>
                             </div>
@@ -349,25 +348,25 @@ function MetaTrader4() {
 
                         {/* Indices */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Indices</h3>
-                                <p className="text-secondary">
-                                    Major stock indices like US30, S&amp;P500, and NAS100.
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Indices</h3>
+                                <p className="text-secondary mb-0">
+                                    Major stock indices like US30, S&P500, and NAS100.
                                 </p>
                             </div>
                         </div>
 
                         {/* Metals */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Metals</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Metals</h3>
+                                <p className="text-secondary mb-0">
                                     Precious and industry metals like gold, silver, and copper.
                                 </p>
                             </div>
@@ -375,12 +374,12 @@ function MetaTrader4() {
 
                         {/* View All */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">View all</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">View all</h3>
+                                <p className="text-secondary mb-0">
                                     Explore Market.Trad's diverse range of tradable assets.
                                 </p>
                             </div>
@@ -388,6 +387,7 @@ function MetaTrader4() {
                     </div>
                 </div>
             </div>
+
 
             {/* -------How to Copy Trad------------     */}
             <div className="container-fluid bg-dark text-white py-5">
@@ -458,7 +458,7 @@ function MetaTrader4() {
                             <p className="fs-5 mt-3 text-white">
                                 Click on the appropriate link for your device to download MetaTrader 4 (MT4).
 
-Windows, Android, and iOS users can download and run the installer as normal. Mac users can find a guide for installing the platform here.
+                                Windows, Android, and iOS users can download and run the installer as normal. Mac users can find a guide for installing the platform here.
                             </p>
                         </div>
                     </div>
@@ -466,8 +466,8 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-start gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a
-                            href="#"
+                        <Link
+                            to="https://www.tradingview.com/chart/"
                             className="btn btn-dark d-flex align-items-center px-3"
                         >
                             <img
@@ -476,11 +476,11 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="d-flex align-items-center px-3 py-2 rounded bg-transparent"
                         >
                             <img
@@ -488,10 +488,10 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                                 alt="Microsoft Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="d-flex align-items-center px-3 py-2 rounded bg-transparent"
                         >
                             <img
@@ -499,10 +499,10 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                                 alt="Mac App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="d-flex align-items-center px-3 py-2 rounded bg-transparent"
                         >
                             <img
@@ -510,10 +510,10 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                                 alt="Google Play"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a
-                            href="#"
+                        <Link
+                            to="#"
                             className="d-flex align-items-center px-3 py-2 rounded bg-transparent"
                         >
                             <img
@@ -521,7 +521,7 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                                 alt="App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
