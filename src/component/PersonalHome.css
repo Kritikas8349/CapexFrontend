@@ -85,14 +85,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    text-decoration: none;
     line-height: 1; /* helps compactness */
   }
   
   .p-join-btn:hover {
     background-color: #573de3;
+    text-decoration: none;
     
   }
+
+  
   
   
   

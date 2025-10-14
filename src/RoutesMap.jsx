@@ -128,15 +128,15 @@ export const routesMap = {
 "AboutUs": "/partner-about/us",
 "Compliances": "/partner-about/compliance",
 "Partner Blog": "/partner-about/blog",
-"Partner Terms": "/partner-about/legal/partner-terms",
-"Legal Compliance": "/partner-about/legal/compliance",
+"Partner Terms": "/partner-about/legal-hub/partner-terms",
 "Verifications & Payments": "/partner-about/legal/verifications-payments",
+"Legal Compliance": "/partner-about/legal/compliance",
 
 /* ===== Support ===== */
 "Affiliates Supports": "/partner/support/affiliates",
 "IBs Supports": "/partner/support/ibs",
 "Brand Guidelines": "/partner/support/brand-guidelines",
-"Contact Us": "/partner/support/contact",
+"Contact us": "/partner/support/contact",
 
 
 

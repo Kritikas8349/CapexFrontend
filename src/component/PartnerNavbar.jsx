@@ -45,7 +45,7 @@ function PartnerNavbar() {
       "Affiliates Supports",
       "IBs Supports",
       "Brand Guidelines",
-      "Contact Us",
+      "Contact us",
     ],
   };
 
@@ -200,8 +200,8 @@ function PartnerNavbar() {
             <a href="#" className="refer-link">
               Refer a friends
             </a>
-            <button className="login-btn">Log In</button>
-            <button className="join-btn">Join Now</button>
+            <Link to="/loginform" className="login-btn">Log In</Link>
+            <Link to="/create-account" className="join-btn">Join Now</Link>
           </div>
           <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
             ☰

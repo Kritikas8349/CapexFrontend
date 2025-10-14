@@ -1,0 +1,157 @@
+.cpa-herop {
+  width: 100vw;
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.cpa-overlayp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+  margin-top: 8%;
+  margin-left: 10%;
+}
+
+.cpa-titlep {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-left: -35%;
+  color: #fff;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.cpa-infop {
+  background-color: #493FFD;
+  height: 30vh;
+  border: 2px solid #493FFD;
+}
+
+.cpa-info-leftp {
+  color: white;
+  font-size: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: -48%;
+}
+
+.cpa-info-leftpp {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: -48%;
+  margin-top: 50px;
+}
+
+.pdf-viewer-container {
+  height: 80vh; /* viewport ke 80% height me PDF dikhayega */
+  margin: 30px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-download-section {
+  margin: 40px auto;
+  text-align: center;
+  background: #f5f8ff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  /* height: 30vh; */
+}
+
+.pdf-download-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #003399;
+  margin-bottom: 10px;
+}
+
+.pdf-download-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.download-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #3f9444;
+}
+
+/* =================== Responsive Media Queries =================== */
+
+/* For tablets and small screens */
+@media (max-width: 1024px) {
+  .cpa-titlep {
+    font-size: 3rem;
+    margin-left: -30%;
+    margin-top: 15%;
+  }
+
+  .cpa-info-leftp {
+    font-size: 3rem;
+    margin-left: -30%;
+  }
+
+  .cpa-info-leftpp {
+    font-size: 2.5rem;
+    margin-left: -30%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .cpa-titlep {
+    font-size: 2.2rem;
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .cpa-info-leftp {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .cpa-info-leftpp {
+    font-size: 1.8rem;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .cpa-overlayp {
+    font-size: 0.9rem;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  .pdf-download-section {
+    padding: 20px 10px;
+    margin: 20px 10px;
+  }
+
+  .download-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

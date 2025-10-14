@@ -1,0 +1,413 @@
+.verification-page {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+.hero-section {
+  background: url("/12.jpg") center center/cover no-repeat;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero text perfectly left-aligned */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px; /* adds neat spacing from the screen edge */
+  gap: 10px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #eaeaea;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  text-align: left;
+  margin-left: -40%;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
+  text-align: left;
+  margin-left: -40%;
+}
+/* Content Section */
+.content-section {
+  background-color: #0052cc;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-left {
+  flex: 1;
+  min-width: 280px;
+}
+
+.content-left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-left: -40%;
+}
+
+.content-right {
+  flex: 1;
+  min-width: 280px;
+  margin-top: 20px;
+}
+
+.content-right p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #e5e5e5;
+}
+
+/* Extra responsive adjustments */
+@media (max-width: 1200px) {
+  .breadcrumb {
+    margin-left: 0;
+  }
+
+  .hero-text h1,
+  .content-left h2 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-left: 20px;
+  }
+
+  .hero-text h1 {
+    text-align: center;
+  }
+
+  .content-left h2 {
+    text-align: center;
+  }
+}
+
+
+.divn{
+    /* border: 2px solid green; */
+    height: 80vh;
+    background-color: #fffcfc;
+    display: flex;
+    flex-direction: row;
+      flex-wrap: wrap; /* Small screens me wrap ho jaaye */
+}
+
+.divnn{
+    /* border: 2px solid yellow; */
+    /* background-color: #e5e5e5; */
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-top:10%;
+    margin-left: 10%;
+}
+.verificationhead{
+    color: #0052cc;
+}
+.verificationpara{
+    color: #989a9e;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.divn1{
+    /* border: 2px solid pink; */
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-top:10%;
+    margin-left:3%;
+    
+}
+.divn1-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image div ke andar perfectly fit ho */
+  display: block;     /* Extra gap remove karne ke liye */
+}
+
+/* --------------------------- Responsive --------------------------- */
+
+/* Laptops/Tablets */
+@media (max-width: 1024px) {
+    .divn {
+        flex-direction: column; /* Stack divs vertically */
+        height: auto; /* Auto height for smaller screens */
+        align-items: center;
+    }
+
+    .divnn, .divn1 {
+        width: 80vw;
+        height: 40vh;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .divnn, .divn1 {
+        width: 90vw;
+        height: 35vh;
+        margin-top: 5%;
+    }
+
+    .verificationpara {
+        font-size: 1.2rem; /* Text smaller on mobile */
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+    .divnn, .divn1 {
+        width: 95vw;
+        height: 30vh;
+        margin-top: 5%;
+    }
+
+    .verificationpara {
+        font-size: 1rem; /* Font even smaller */
+    }
+
+    .verificationhead {
+        font-size: 1.2rem;
+    }
+}
+
+
+.payments-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fdfbfb; 
+  color: #fff;
+}
+
+.payments-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap; /* Responsive ke liye wrap enable */
+}
+
+.payments-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;     
+  gap: 20px;
+}
+
+.payments-head {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0052cc;
+}
+
+.payments-para {
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.payments-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap; /* Cards wrap on smaller screens */
+  justify-content: center; 
+}
+
+.payment-card {
+  background-color: #faf6f6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+}
+
+.payments-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Spacing for smaller screens */
+}
+
+.payments-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------- Responsive --------------------------- */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .payments-container {
+    flex-direction: column; /* Stack left and right */
+    align-items: center;
+  }
+
+  .payments-left, .payments-right {
+    flex: unset;
+    width: 90%; /* Almost full width */
+    margin-top: 20px;
+  }
+
+  .payments-cards {
+    gap: 20px;
+  }
+
+  .payments-head {
+    font-size: 32px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .payments-left, .payments-right {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .payments-head {
+    font-size: 28px;
+  }
+
+  .payments-para {
+    font-size: 14px;
+  }
+
+  .payments-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .payments-head {
+    font-size: 24px;
+  }
+
+  .payments-para {
+    font-size: 13px;
+  }
+
+  .payment-card {
+    padding: 15px;
+  }
+}
+
+/* Base style for the list */
+.payments-para ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;       /* Remove default padding */
+  margin: 15px 0 0 0;    /* Top margin */
+}
+
+.payments-para ul li {
+  position: relative;
+  padding-left: 30px;       /* Space for custom bullet */
+  margin-bottom: 12px;      /* Space between items */
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.payments-para ul li::before {
+  content: "✔";             /* Custom bullet (you can use •, →, or any icon) */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff;           /* Bullet color */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .payments-para ul li {
+    padding-left: 28px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .payments-para ul li::before {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .payments-para ul li {
+    padding-left: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .payments-para ul li::before {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .payments-para ul li {
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .payments-para ul li::before {
+    font-size: 14px;
+  }
+}

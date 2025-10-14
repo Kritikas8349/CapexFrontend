@@ -6,6 +6,7 @@ import {
   FiTarget,
   FiMousePointer,
 } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 import { FaTrophy } from 'react-icons/fa';
 import "./PartnerHome.css"
@@ -72,8 +73,13 @@ const PartnerHome = () => {
               through our Affiliate or Introducing Broker programs.
             </p>
             <div className="partner-home-buttons">
-              <button className="partner-home-btn">Affiliate Program</button>
-              <button className="partner-home-btn">IB Program</button>
+            <Link to="/affiliates/overview" className="partner-home-btn">
+              Affiliate Program
+            </Link>
+
+            <Link to="/ib-program/overview" className="partner-home-btn">
+              IB Program
+            </Link>
             </div>
           </div>
         </div>

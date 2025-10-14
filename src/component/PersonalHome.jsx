@@ -24,7 +24,7 @@ const PersonalHome = () => {
 
         <div className="p-email-form">
           <input className="p-emailadd" type="email" placeholder="Email Address..." />
-          <Link to="/loginform">
+          <Link to="/create-account">
             <button className="p-join-btn">Join Now</button>
           </Link> 
           <a href="#" className="p-demo-link">
@@ -361,7 +361,7 @@ const PersonalHome = () => {
         Research by CompareForexBrokers.com revealed that Markets.Trad achieved average execution speeds of less than 75 milliseconds. With speeds under 100 milliseconds, traders have a better chance of avoiding slippage and getting the price they desire for their order.
       </p>
       <h3 className="brand-name">Market.Trad</h3>
-      <Link to="/loginform"> <button className="join-btn">Join Now</button> </Link>
+      <Link to="/create-account"> <button className="join-btn">Join Now</button> </Link>
     </div>
   </div>
 </section>

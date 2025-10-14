@@ -22,12 +22,12 @@
   .partner-home-container {
     position: relative;
     width: 100%;
-    max-width: 1480px;
+    max-width: 1500px;
     /* margin: 40px auto; */
     padding: 10px 10px 20px 10px; /* Adds spacing left/right */
     border-radius: 12px;
     overflow: hidden;
-    margin: auto 20px 20px 20px;
+    margin: auto 20px 20px 10px;
     text-align: left;
   }
   
@@ -63,6 +63,10 @@
     text-align: left;
   }
   
+  .partner-home-btn{
+    text-decoration: none;
+  }
+  
   .partner-home-heading {
     font-size: clamp(32px, 5vw, 56px); /* Responsive font size */
     font-weight: bold;
@@ -91,7 +95,7 @@
     color: #ffffff;
     background-color: #007BFF;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
