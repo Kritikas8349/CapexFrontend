@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./VerifyAccount.css";
+import { Link } from "react-router-dom";
 
 const sections = [
   { title: "Getting Started", img: "pf4.svg", count: 6 },
@@ -48,17 +49,21 @@ const VerifyAccount = () => {
 
         {/* Content */}
         <div className="verify-content">
-          <div className="verify-breadcrumbs">
-            <span>Home</span>
-            <span className="separator">›</span>
-            <span>Support</span>
-            <span className="separator">›</span>
-            <span>Platform Support</span>
-            <span className="separator">›</span>
-            <span>Getting Started</span>
-            <span className="separator">›</span>
-            <span className="current">How to verify your Market.trad account?</span>
-          </div>
+        <div className="verify-breadcrumbs">
+      <Link to="/" className="breadcrumb-link">Home</Link>
+      <span className="separator">›</span>
+
+      <Link to="/support" className="breadcrumb-link">Support</Link>
+      <span className="separator">›</span>
+
+      <Link to="/support/platform-support" className="breadcrumb-link">Platform Support</Link>
+      <span className="separator">›</span>
+
+      <Link to="/support/getting-started" className="breadcrumb-link">Getting Started</Link>
+      <span className="separator">›</span>
+
+      <span className="current">How to verify your Market.trad account?</span>
+    </div>
 
           <h1 className="head1">How to verify your Market.trad account?</h1>
 

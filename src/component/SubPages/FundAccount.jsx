@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./FundAccount.css";
+import { Link } from "react-router-dom";
 
 const sections = [
   { title: "Getting Started", img: "pf4.svg", count: 6 },
@@ -51,17 +52,21 @@ const FundAccount = () => {
 
         {/* Content */}
         <div className="fund-content">
-          <div className="fund-breadcrumbs">
-            <span>Home</span>
-            <span className="separator">›</span>
-            <span>Support</span>
-            <span className="separator">›</span>
-            <span>Platform Support</span>
-            <span className="separator">›</span>
-            <span>Getting Started</span>
-            <span className="separator">›</span>
-            <span className="current">How to fund your Market.trad account?</span>
-          </div>
+        <div className="fund-breadcrumbs">
+      <Link to="/" className="breadcrumb-link">Home</Link>
+      <span className="separator">›</span>
+
+      <Link to="/support" className="breadcrumb-link">Support</Link>
+      <span className="separator">›</span>
+
+      <Link to="/support/platform-support" className="breadcrumb-link">Platform Support</Link>
+      <span className="separator">›</span>
+
+      <Link to="/support/getting-started" className="breadcrumb-link">Getting Started</Link>
+      <span className="separator">›</span>
+
+      <span className="current">How to fund your Market.trad account?</span>
+    </div>
 
           <h1 className="head3">How to fund your Market.trad account?</h1>
 

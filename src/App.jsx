@@ -410,7 +410,7 @@ function App() {
 
     <Route path="/support/account-support" element={<AccountSupport />} />
     <Route path="/support/platform-support" element={<PlatformSupport />} />
-    {/* <Route path="/support/" element={<PlatformSupport />} /> */}
+    <Route path="/support/" element={<PlatformSupport />} />
     <Route path="/support/platformsupport" element={<PlatformSupport />} />
           <Route path="/support/platform/secure-client" element={<SecureClientArea></SecureClientArea>}></Route>
           <Route path="/support/platform/tradingview" element={<TradingViewFAQs></TradingViewFAQs>}></Route>

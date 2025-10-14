@@ -335,29 +335,31 @@
 
 /* Overlay hamburger menu base */
 .hamburger-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  overflow-y: auto;
-  z-index: 1000;
-  padding: 1rem;
-  display: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: column;   
+  align-items: flex-start; 
 }
 
 .hamburger-overlay.open {
   display: flex;
 }
 
+.overlay-links {
+  display: flex;
+  flex-direction: column;   
+  width: 100%;              
+  padding: 0;
+  margin: 0;
+}
 /* Top-level links inside overlay */
 .overlay-links > li {
-  margin-bottom: 10px;
+   display: block;          
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #eee;
 }
 
-/* Submenus under main menu items */
+
 .overlay-submenu {
   padding-left: 1rem;
   margin-top: 5px;
@@ -368,7 +370,7 @@
   margin: 6px 0;
 }
 
-/* Submenu appearance */
+
 .has-submenu {
   cursor: pointer;
 }
@@ -379,7 +381,7 @@
   justify-content: space-between;
 }
 
-/* Indentation for nested submenus */
+
 .overlay-submenu .overlay-submenu {
   padding-left: 1rem;
   margin-top: 4px;
@@ -389,6 +391,10 @@
 .has-submenu.open > .submenu-header .dropdown-icon {
   transform: rotate(90deg);
   transition: transform 0.3s ease;
+}
+
+.has-submenu.open > .overlay-submenu {
+  display: flex;
 }
 
 
@@ -414,7 +420,7 @@
 }
 
 
-/* Hamburger Links */
+
 .overlay-links {
   list-style: none;
   padding: 0;
@@ -438,13 +444,13 @@
 }
 
 .overlay-submenu {
-  display: none;
   flex-direction: column;
   padding-left: 16px;
   gap: 10px;
   margin-top: 6px;
   border-left: 2px solid #eee;
 }
+
 
 .overlay-links li.open > .overlay-submenu {
   display: flex;

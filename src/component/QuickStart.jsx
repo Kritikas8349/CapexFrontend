@@ -40,7 +40,6 @@ function QuickStart() {
         </div>
 
 
-
         <div className="institutional-section">
           <div className="institutional-content">
             <h2>

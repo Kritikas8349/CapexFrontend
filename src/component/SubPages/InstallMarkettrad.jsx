@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./InstallMarkettrad.css"; // create a new CSS file if needed
 import { FaFacebookF, FaXTwitter, FaLinkedinIn, FaPinterestP } from "react-icons/fa6";
 import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const sections = [
   { title: "Getting Started", img: "pf4.svg", count: 6 },
@@ -51,17 +52,15 @@ const InstallMarkettrad = () => {
 
         {/* Right Content */}
         <div className="install-content">
-          <div className="install-breadcrumbs">
-            <span>Home</span>
-            <span className="separator">›</span>
-            <span>Support</span>
-            <span className="separator">›</span>
-            <span>Platform Support</span>
-            <span className="separator">›</span>
-            <span>Market.trad Invest</span>
-            <span className="separator">›</span>
-            <span className="current">How to install and log into Market.trad Invest?</span>
-          </div>
+        <div className="install-breadcrumbs">
+  <Link to="/" className="breadcrumb-link">Home</Link>
+  <span className="separator">›</span>
+  <Link to="/support" className="breadcrumb-link">Support</Link>
+  <span className="separator">›</span>
+  <Link to="/support/platform-support" className="breadcrumb-link">Platform Support</Link>
+  <span className="separator">›</span>
+  <span className="current">How to install and log into Market.trad Invest?</span>
+</div>
 
           <h1>How to Install and Log into Market.trad Invest?</h1>
 

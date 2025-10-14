@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./AccountCreate.css";
+import { Link } from "react-router-dom";
 
 const sections = [
   { title: "Getting Started", img: "pf4.svg", count: 6 },
@@ -50,19 +51,23 @@ const AccountCreate = () => {
 
         {/* Content */}
         <div className="f-content">
-          <div className="f-breadcrumbs">
-            <span>Home</span>
-            <span className="f-separator">›</span>
-            <span>Support</span>
-            <span className="f-separator">›</span>
-            <span>Platform Support</span>
-            <span className="f-separator">›</span>
-            <span>Getting Started</span>
-            <span className="f-separator">›</span>
-            <span className="f-current">
-              How to create your Market.trad account?
-            </span>
-          </div>
+        <div className="f-breadcrumbs">
+      <Link to="/" className="f-link">Home</Link>
+      <span className="f-separator">›</span>
+
+      <Link to="/support" className="f-link">Support</Link>
+      <span className="f-separator">›</span>
+
+      <Link to="/support/platform-support" className="f-link">Platform Support</Link>
+      <span className="f-separator">›</span>
+
+      <Link to="/support/getting-started" className="f-link">Getting Started</Link>
+      <span className="f-separator">›</span>
+
+      <span className="f-current">
+        How to create your Market.trad account?
+      </span>
+    </div>
 
           <h1 className="f-head">
             How to create your Market.trad account?
@@ -92,7 +97,7 @@ const AccountCreate = () => {
             From the Market.trad.com homepage, enter your email address and
             click “Join Now.”
           </p>
-          <img src="create.png" alt="Step 1" className="f-step-image" />
+          <img src="/create.png" alt="Step 1" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -101,13 +106,13 @@ const AccountCreate = () => {
             Enter your personal details and set a password for your BlackBull
             Markets Account.
           </p>
-          <img src="acc2.webp" alt="Step 2" className="f-step-image" />
+          <img src="/acc2.webp" alt="Step 2" className="f-step-image" />
         </div>
 
         <div className="f-step">
           <h3>Step 3.</h3>
           <p>State your account type and input your residential address.</p>
-          <img src="acc3.webp" alt="Step 3" className="f-step-image" />
+          <img src="/acc3.webp" alt="Step 3" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -116,13 +121,13 @@ const AccountCreate = () => {
             Select the conditions for your first trading account, including
             whether you want a Standard or Prime account.
           </p>
-          <img src="acc4.jpg" alt="Step 4" className="f-step-image" />
+          <img src="/acc4.jpg" alt="Step 4" className="f-step-image" />
         </div>
 
         <div className="f-step">
           <h3>Step 5.</h3>
           <p>State your employment information and source of funds.</p>
-          <img src="acc5.webp" alt="Step 5" className="f-step-image" />
+          <img src="/acc5.webp" alt="Step 5" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -133,7 +138,7 @@ const AccountCreate = () => {
             <br />
             <span>Full Tutorial: What is the suitability quiz?</span>
           </p>
-          <img src="acc6.webp" alt="Step 6" className="f-step-image" />
+          <img src="/acc6.webp" alt="Step 6" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -145,7 +150,7 @@ const AccountCreate = () => {
             <br />
             <span>Full Tutorial: How to verify your account?</span>
           </p>
-          <img src="acc7.webp" alt="Step 7" className="f-step-image" />
+          <img src="/acc7.webp" alt="Step 7" className="f-step-image" />
         </div>
 
         <div className="f-step">
@@ -156,7 +161,7 @@ const AccountCreate = () => {
             <br />
             <span>Full Tutorial: How to fund your account?</span>
           </p>
-          <img src="acc8.webp" alt="Step 8" className="f-step-image" />
+          <img src="/acc8.webp" alt="Step 8" className="f-step-image" />
         </div>
       </div>
     </div>

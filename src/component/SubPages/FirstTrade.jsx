@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./FirstTrade.css";
+import { Link } from "react-router-dom";
 
 const sections = [
   { title: "Getting Started", img: "pf4.svg", count: 6 },
@@ -55,19 +56,17 @@ const FirstTrade = () => {
 
         {/* Content */}
         <div className="firsttrade-content">
-          <div className="firsttrade-breadcrumbs">
-            <span>Home</span>
-            <span className="separator">›</span>
-            <span>Support</span>
-            <span className="separator">›</span>
-            <span>Platform Support</span>
-            <span className="separator">›</span>
-            <span>Getting Started</span>
-            <span className="separator">›</span>
-            <span>Trading Help</span>
-            <span className="separator">›</span>
-            <span className="current">How to place your first trade?</span>
-          </div>
+        <div className="firsttrade-breadcrumbs">
+  <Link to="/" className="breadcrumb-link">Home</Link>
+  <span className="separator">›</span>
+  <Link to="/support" className="breadcrumb-link">Support</Link>
+  <span className="separator">›</span>
+  <Link to="/support/platform-support" className="breadcrumb-link">Platform Support</Link>
+  <span className="separator">›</span>
+  <Link to="/support/getting-started" className="breadcrumb-link">Getting Started</Link>
+  <span className="separator">›</span>
+  <span className="current">How to place your first trade?</span>
+</div>
 
           <h1>How to place your first trade?</h1>
 

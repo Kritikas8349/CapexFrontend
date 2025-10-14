@@ -127,6 +127,36 @@
     font-family: "Segoe UI", sans-serif;
     flex-wrap: wrap;
 }
+
+.fund-breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    flex-wrap: wrap;
+  }
+  
+  .separator {
+    margin: 0 6px;
+    color: #fff;
+  }
+  
+  .breadcrumb-link {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease;
+  }
+  
+  .breadcrumb-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .current {
+    font-weight: 600;
+    color: #000;
+  }
+  
 .fund-breadcrumbs span {
     cursor: pointer;
     transition: color 0.3s;
