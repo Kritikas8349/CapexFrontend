@@ -18,8 +18,9 @@ function CreateAccount() {
 
     const [loading, setLoading] = useState(false);
 
-    // Backend URL from Vite env
+    // ✅ Get backend URL from Vite env
     const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+    console.log("Backend URL:", BACKEND_URL); // Debug: check if it's correct
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,9 +30,12 @@ function CreateAccount() {
         e.preventDefault();
         setLoading(true);
         try {
+            if (!BACKEND_URL) throw new Error("Backend URL is not defined");
+
             const res = await axios.post(`${BACKEND_URL}/api/auth/register`, formData);
             alert(res.data.message);
-            // Optionally, reset form
+
+            // Reset form after success
             setFormData({
                 firstName: '',
                 lastName: '',
@@ -62,7 +66,6 @@ function CreateAccount() {
                     <p>Welcome to Market.Trad – Let’s Create Account</p>
 
                     <form className="signup-form" onSubmit={handleSubmit} autoComplete="off">
-                        {/* Hidden dummy password for Chrome autofill */}
                         <input type="password" style={{ display: 'none' }} />
 
                         <div className="input-row">
@@ -109,7 +112,6 @@ function CreateAccount() {
                                 name="applicationType"
                                 onChange={handleChange}
                                 value={formData.applicationType}
-                                autoComplete="off"
                                 required
                             >
                                 <option value="">Application Types</option>
@@ -123,7 +125,6 @@ function CreateAccount() {
                                 name="country"
                                 onChange={handleChange}
                                 value={formData.country}
-                                autoComplete="country-name"
                                 required
                             >
                                 <option value="">Select Country</option>
@@ -137,7 +138,6 @@ function CreateAccount() {
                                 placeholder="+91 Mobile Phone"
                                 onChange={handleChange}
                                 value={formData.phone}
-                                autoComplete="tel"
                                 required
                             />
                         </div>
