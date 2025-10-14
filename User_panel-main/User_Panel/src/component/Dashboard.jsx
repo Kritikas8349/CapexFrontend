@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   FiClock,
   FiCheckCircle,
@@ -11,6 +12,20 @@ import {
 import "./Dashboard.css";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  // ✅ Authenticated user from localStorage
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  // Redirect to login if not authenticated
+  useEffect(() => {
+    if (!user) {
+      navigate("/"); // Redirect to login
+    }
+  }, [user, navigate]);
+
+  if (!user) return null; // Prevent flash
+
   // Deposit state
   const [showDepositPreview, setShowDepositPreview] = useState(false);
   const [depositData, setDepositData] = useState({
@@ -60,11 +75,20 @@ const Dashboard = () => {
     setShowWithdrawPreview(true);
   };
 
+  // Logout
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    navigate("/"); // Redirect to login
+  };
+
   return (
     <div className="dash-main-container">
-      {/* Dashboard Heading */}
+      {/* Dashboard Header */}
       <div className="dash-header">
-        <h2>My Dashboard</h2>
+        <h2>Welcome, {user.firstName || user.email}</h2>
+        <button className="logout-btn" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
 
       {/* Stats Section */}
@@ -87,7 +111,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Main Content Section */}
+      {/* Main Content */}
       <div className="dash-content">
         {/* Left Side */}
         <div className="dash-left">
@@ -112,18 +136,14 @@ const Dashboard = () => {
           {/* Wallet Overview */}
           <div className="dash-wallet-overview">
             <h4>Wallet Overview</h4>
-            <p className="wallet-desc">
-              Available wallet balance including the converted total balance
-            </p>
+            <p className="wallet-desc">Available wallet balance including the converted total balance</p>
             <p className="dash-balance">$0.0000 USD</p>
             <p className="dash-subtitle">Estimated Total Balance</p>
 
             <div className="dash-wallet-list scrollable">
               {wallets.map((wallet, index) => (
                 <div className="dash-wallet-item" key={index}>
-                  <div className="wallet-icon">
-                    <img src={wallet.img} alt={wallet.name} />
-                  </div>
+                  <div className="wallet-icon"><img src={wallet.img} alt={wallet.name} /></div>
                   <div className="wallet-name">
                     <span>{wallet.name}</span>
                     <span className="wallet-symbol">{wallet.symbol}</span>
@@ -134,7 +154,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          {/* Deposit Section */}
+          {/* Deposit */}
           <div className="dash-money-card">
             <div className="dash-money-header">
               <FiArrowDownCircle className="money-icon deposit" size={22} />
@@ -147,16 +167,12 @@ const Dashboard = () => {
                 placeholder="Amount"
                 className="money-input"
                 value={depositData.amount}
-                onChange={(e) =>
-                  setDepositData({ ...depositData, amount: e.target.value })
-                }
+                onChange={(e) => setDepositData({ ...depositData, amount: e.target.value })}
               />
               <select
                 className="money-select"
                 value={depositData.currency}
-                onChange={(e) =>
-                  setDepositData({ ...depositData, currency: e.target.value })
-                }
+                onChange={(e) => setDepositData({ ...depositData, currency: e.target.value })}
               >
                 <option value="">Select Currency</option>
                 <option value="BTC">BTC</option>
@@ -170,7 +186,7 @@ const Dashboard = () => {
             </button>
           </div>
 
-          {/* Withdraw Section */}
+          {/* Withdraw */}
           <div className="dash-money-card">
             <div className="dash-money-header">
               <FiArrowUpCircle className="money-icon withdraw" size={22} />
@@ -183,16 +199,12 @@ const Dashboard = () => {
                 placeholder="Amount"
                 className="money-input"
                 value={withdrawData.amount}
-                onChange={(e) =>
-                  setWithdrawData({ ...withdrawData, amount: e.target.value })
-                }
+                onChange={(e) => setWithdrawData({ ...withdrawData, amount: e.target.value })}
               />
               <select
                 className="money-select"
                 value={withdrawData.currency}
-                onChange={(e) =>
-                  setWithdrawData({ ...withdrawData, currency: e.target.value })
-                }
+                onChange={(e) => setWithdrawData({ ...withdrawData, currency: e.target.value })}
               >
                 <option value="">Select Currency</option>
                 <option value="BTC">BTC</option>
@@ -208,7 +220,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Deposit Preview Panel */}
+      {/* Deposit Preview */}
       {showDepositPreview && (
         <div className="deposit-preview">
           <div className="preview-header">
@@ -221,9 +233,7 @@ const Dashboard = () => {
               <input
                 type="text"
                 value={depositData.amount}
-                onChange={(e) =>
-                  setDepositData({ ...depositData, amount: e.target.value })
-                }
+                onChange={(e) => setDepositData({ ...depositData, amount: e.target.value })}
                 placeholder="Enter amount"
               />
             </div>
@@ -231,9 +241,7 @@ const Dashboard = () => {
               <label>Payment Gateway</label>
               <select
                 value={depositData.gateway || ""}
-                onChange={(e) =>
-                  setDepositData({ ...depositData, gateway: e.target.value })
-                }
+                onChange={(e) => setDepositData({ ...depositData, gateway: e.target.value })}
               >
                 <option value="">Select Gateway</option>
                 <option value="BTC">BTC</option>
@@ -246,9 +254,7 @@ const Dashboard = () => {
               <label>Wallet Type</label>
               <select
                 value={depositData.wallet || ""}
-                onChange={(e) =>
-                  setDepositData({ ...depositData, wallet: e.target.value })
-                }
+                onChange={(e) => setDepositData({ ...depositData, wallet: e.target.value })}
               >
                 <option value="">Select Wallet</option>
                 <option value="Main Wallet">Main Wallet</option>
@@ -260,7 +266,7 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Withdraw Preview Panel */}
+      {/* Withdraw Preview */}
       {showWithdrawPreview && (
         <div className="deposit-preview">
           <div className="preview-header">
@@ -273,9 +279,7 @@ const Dashboard = () => {
               <input
                 type="text"
                 value={withdrawData.amount}
-                onChange={(e) =>
-                  setWithdrawData({ ...withdrawData, amount: e.target.value })
-                }
+                onChange={(e) => setWithdrawData({ ...withdrawData, amount: e.target.value })}
                 placeholder="Enter amount"
               />
             </div>
@@ -283,9 +287,7 @@ const Dashboard = () => {
               <label>Payment Gateway</label>
               <select
                 value={withdrawData.gateway || ""}
-                onChange={(e) =>
-                  setWithdrawData({ ...withdrawData, gateway: e.target.value })
-                }
+                onChange={(e) => setWithdrawData({ ...withdrawData, gateway: e.target.value })}
               >
                 <option value="">Select Gateway</option>
                 <option value="BTC">BTC</option>
@@ -298,9 +300,7 @@ const Dashboard = () => {
               <label>Wallet Type</label>
               <select
                 value={withdrawData.wallet || ""}
-                onChange={(e) =>
-                  setWithdrawData({ ...withdrawData, wallet: e.target.value })
-                }
+                onChange={(e) => setWithdrawData({ ...withdrawData, wallet: e.target.value })}
               >
                 <option value="">Select Wallet</option>
                 <option value="Main Wallet">Main Wallet</option>
@@ -317,9 +317,7 @@ const Dashboard = () => {
         <div className="custom-popup">
           <div className="popup-content">
             <p>{popupMsg}</p>
-            <button className="popup-btn" onClick={() => setShowPopup(false)}>
-              Close
-            </button>
+            <button className="popup-btn" onClick={() => setShowPopup(false)}>Close</button>
           </div>
         </div>
       )}
