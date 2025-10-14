@@ -1,0 +1,20 @@
+.btn-nav{
+    background: linear-gradient(135deg, #130486, #000000);
+    color: white;
+}
+.table-data{
+     background-color: #949292;
+  color: black;
+  
+}
+.dashboard-container{
+    background-color:#DDDDDD ;
+    color: #000000;
+}
+input.custom-placeholder::placeholder {
+
+ color: #000000;
+}
+.btn-nav:hover{
+color: white;
+}
