@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 // import "bootstrap-icons/font/bootstrap-icons.css";
 
 import NavbarBlue from "./component/NavbarBlue";
+
 import Footers from "./component/Footers";
 
  import CreateAccount from "./component/CreateAccount";
@@ -173,6 +174,8 @@ import BlogPartner from "./component/Partners/BlogPartner";
 import Support1 from "./component/Partners/Support1";
 import Support2 from "./component/Partners/Support2";
 import Support3 from "./component/Partners/Support3";
+import Partnerterms from "./component/Partners/Partnerterms";
+import VerificationPayments from "./component/Partners/VerificationPayments";
 
 
 //--------------------------------------- Research------------------------------------------ //
@@ -323,6 +326,7 @@ function App() {
   <Routes>
 
   <Route path="/loginform" element={<LoginForm1 />} />
+  <Route path="/create-account" element={<CreateAccount />} />
 
 
     <Route path="/quickstart/create-account" element={<CreateAccount />}></Route> 
@@ -472,9 +476,13 @@ function App() {
 <Route path="/partner-about/us" element={<AboutUs />} />
 <Route path="/partner-about/compliance" element={<ComplianceP />} />
 <Route path="/partner-about/blog" element={<BlogPartner />} />
-{/* <Route path="/partner-about/blog" element={<BlogPartner />} />
-<Route path="/partner-about/blog" element={<BlogPartner />} />
-<Route path="/partner-about/blog" element={<BlogPartner />} /> */}
+
+<Route path="/partner-about/legal-hub/partner-terms" element={<Partnerterms />} />
+<Route path="/partner-about/legal/verifications-payments" element={<VerificationPayments />} />
+<Route path="/partner-about/legal/compliance" element={<ComplianceP />} />
+
+
+
 
 {/* /* ----------===== Support =====------------ */ }
 
