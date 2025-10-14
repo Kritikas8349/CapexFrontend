@@ -170,7 +170,7 @@ function EducationHub() {
                 <div className='bg-white p-4 m-2 w-100 shadow-sm'>
                   <h2 className='mb-3 fw-bold text-dark'>{card.title}</h2>
                   <p className='text-secondary mb-4'>{card.desc}</p>
-                  <div className='d-flex flex-wrap input-group mt-auto'>
+                  <div className='d-flex flex-wrap input-group mt-auto justify-content-center'>
                     <Link to={card.begpath} className='badge  text-white p-2 m-1 s1 text-decoration-none'>BEGINNER</Link>
                     <Link to={card.intpath} className='badge text-white p-2 m-1 s2 text-decoration-none'>MIDIUM</Link>
                     <Link to={card.advpath} className='badge  text-white p-2 m-1 s3 text-decoration-none'>PRO</Link>
@@ -239,7 +239,7 @@ function EducationHub() {
 
           <div className="row g-4 justify-content-center">
             {videos.map((video) => (
-              <div className="col-12 col-md-6 col-lg-4 d-flex" key={video.id}>
+              <div className="col-12 mb-3 col-md-6 col-lg-4 d-flex" key={video.id}>
                 <div className="border-0 shadow-sm h-100 bg-white rounded overflow-hidden">
                   <div className="position-relative" style={{ paddingTop: '56.25%' }}>
                     <iframe
@@ -266,7 +266,7 @@ function EducationHub() {
               </div>
             ))}
 
-            <div className="col-12 text-center mt-4">
+            <div className="col-12 text-center mt-5">
               <Link
                 to="https://www.youtube.com/"
                 className="btn btn-bg-start text-white px-4 py-2 fw-semibold btn-lg"
@@ -291,7 +291,7 @@ function EducationHub() {
   <div className="row g-4">
     {posts.map((post) => (
       <div className="col-12 col-sm-6 col-lg-4" key={post.id}>
-        <div className="card border-0 custom-card h-100 shadow-sm rounded-3 overflow-hidden">
+        <div className="card border-0 custom-card h-100 shadow-sm rounded-3 overflow-hidden p-0">
           {/* Image Section */}
           <div className="ratio ratio-16x9">
             <img
@@ -304,7 +304,7 @@ function EducationHub() {
           {/* Content Section */}
           <div className="card-body p-3 d-flex flex-column justify-content-between">
             <div>
-              <h5 className="fw-bold text-dark mb-2">{post.title}</h5>
+              <h5 className="fw-bold text-start text-dark mb-2">{post.title}</h5>
             </div>
 
             <div className="d-flex justify-content-between align-items-center mt-2 flex-wrap">

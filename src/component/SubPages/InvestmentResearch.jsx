@@ -18,50 +18,50 @@ function InvestmentResearch() {
     const cardsData = [
         {
             id: 1,
-            img: "/Tesla.webp", // replace with your image
+            img: "/public/awardlogo.avif", // replace with your image
             title: "Why is a shiny block of metal so popular?",
             desc: "I know everyone is obsessed with gold right now, because number go up...",
             date: "8 May 2025",
         },
         {
             id: 2,
-            img: "/shiny.webp",
+            img: "/public/awards.avif",
             title: "Auto loans are bad; but earnings are good",
             desc: "Top of mind — yes, Microsoft had a good quarter and so did Meta...",
             date: "1 May 2025",
         },
         {
             id: 3,
-            img: "/tariff.webp",
+            img: "/public/awards.jpg",
             title: "Have you heard the one about the oil prosp...",
             desc: "I’ve been re-reading speeches Buffett gave to his inner circle...",
             date: "21 April 2025",
         },
         {
             id: 4,
-            img: "/challenge.webp",
+            img: "/public/supportBg.jpg",
             title: "Tech stocks are making waves",
             desc: "Technology is booming with AI and Cloud expansion...",
             date: "15 April 2025",
         },
-        {
-            id: 5,
-            img: "/loan.webp",
-            title: "Market volatility explained",
-            desc: "Economic conditions lead to swings, but smart investors adapt...",
-            date: "12 April 2025",
-        },
-        {
-            id: 6,
-            img: "/challenge.webp",
-            title: "Why commodities are back in trend",
-            desc: "From oil to gold, commodities are gaining traction again...",
-            date: "10 April 2025",
-        },
+        // {
+        //     id: 5,
+        //     img: "/loan.webp",
+        //     title: "Market volatility explained",
+        //     desc: "Economic conditions lead to swings, but smart investors adapt...",
+        //     date: "12 April 2025",
+        // },
+        // {
+        //     id: 6,
+        //     img: "/challenge.webp",
+        //     title: "Why commodities are back in trend",
+        //     desc: "From oil to gold, commodities are gaining traction again...",
+        //     date: "10 April 2025",
+        // },
     ];
     return (
         <div className='bg-home'>
-            <div className="container-fluid bgc-col me-3 py-5 ">
+            <div className=" bg-faq rounded rounded-3 m-4 py-5 ">
                 <div className="container py-5">
                     <div className="row align-items-center py-5">
                         {/* Left Section */}
@@ -155,33 +155,17 @@ function InvestmentResearch() {
                                         style={{ height: "200px", objectFit: "cover" }}
                                     />
                                     <div className="p-3">
-                                        <h5 className="card-title fw-bold text-heading">
+                                        <h5 className="card-title fw-bold text-start text-heading">
                                             {card.title}
                                         </h5>
-                                        <p className="card-text text-muted">{card.desc}</p>
-                                        <p className=" text-heading small mb-0">{card.date}</p>
+                                        <p className="card-text text-start text-muted">{card.desc}</p>
+                                        <p className=" text-heading small text-start mb-0">{card.date}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        {/* Left Arrow */}
-                        <button
-                            className="btn btn-dark text-white rounded rounded-5 border position-absolute  top-50 start-0 bi bi-arrow-left fs-4 translate-middle-y"
-                            style={{ zIndex: 1 }}
-                            onClick={() => scroll("left")}
-                        >
-
-                        </button>
-
-                        {/* Right Arrow */}
-                        <button
-                            className="btn btn-dark text-white rounded rounded-5 border position-absolute top-50 end-0 bi bi-arrow-right fs-4 translate-middle-y"
-                            style={{ zIndex: 1 }}
-                            onClick={() => scroll("right")}
-                        >
-
-                        </button>
+                      
                     </div>
                 </div>
             </div>

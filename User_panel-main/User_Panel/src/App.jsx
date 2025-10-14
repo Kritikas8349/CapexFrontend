@@ -26,7 +26,7 @@ import ReplyTicket from "./component/ReplyTicket";
 
 function App() {
   const location = useLocation();  
-  const hideSidebarAndNavbarRoutes = ["/trade"]; // Routes jahan dono hide karna hai
+  const hideSidebarAndNavbarRoutes = ["/trade"]; 
   const shouldHideSidebarAndNavbar = hideSidebarAndNavbarRoutes.includes(location.pathname);
 
   return (
