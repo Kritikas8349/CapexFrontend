@@ -74,7 +74,7 @@ function Research() {
             id: 3,
             title: "Euro shrugs off France’s credit downgrade | FX Research",
             date: "SEPTEMBER 16, 2025",
-            image: "/public/trade2.avif",
+            image: "/public/trade.avif",
             link: "#",
         },
     ];
@@ -145,7 +145,7 @@ function Research() {
                     <i className="bi bi-youtube text-danger fs-2"></i>
                 </div>
 
-                <div className="row g-4">
+                <div className="row g-4 text-start">
                     {videos.map((video) => (
                         <div className="col-md-4" key={video.id}>
                             <div
@@ -270,10 +270,10 @@ function Research() {
             {/* ---------For Daily Analysis podcast---------------------- */}
             <div className="container  p-3 my-2 py-lg-5 align-content-center">
                 <div className="row align-items-center p-3 py-lg-5  px-sm-2">
-                    <div className="col-md-8 col-lg-6">
+                    <div className="col-md-8 col-lg-6 text-start">
                         <h1 className="text-heading fs-1 fw-bold mb-4">Daily Analysis Podcast <span className='bi bi-spotify text-success'></span></h1>
                         <p className='text-secondary fs-4'>Catch up on the key trends, breaking news, and market moves with our daily Trading Analysis Podcast—your quick, essential market recap.</p>
-                        <Link to="htttp:/spotify.com" className="btn btn-bg-start text-white fs-4  d-flex align-items-center justify-content-center">
+                        <Link to="htttp:/spotify.com" className="btn btn-bg-start text-white fs-4  justify-content-center">
                             <span className=" bi bi-spotify me-2 "></span> Listen Now
                         </Link>
                     </div>
@@ -298,7 +298,7 @@ function Research() {
                 <div className="row g-4">
                     {articles.map((article) => (
                         <div className="col-12 col-sm-6 col-md-4" key={article.id}>
-                            <div className="card h-100 border-0 shadow-sm custom-card">
+                            <div className="card h-100 border-0 shadow-sm p-0 custom-card">
                                 {/* Image */}
                                 <img
                                     src={article.image}
@@ -307,7 +307,7 @@ function Research() {
                                 />
 
                                 {/* Content */}
-                                <div className="card-body px-3">
+                                <div className="card-body text-start px-3">
                                     <h5 className="fw-bold">{article.title}</h5>
                                     <div className="d-flex justify-content-between align-items-center mt-2">
                                         <small className="text-heading">{article.date}</small>
@@ -376,7 +376,7 @@ function Research() {
                 <div className="row my-5 my-lg-5 g-6 align-items-center">
 
                     {/* Text and Button Column */}
-                    <div className="col-lg-6 ">
+                    <div className="col-lg-6 text-start ">
                         <h2 className="display-5 fw-bold  mb-4">
                             Trading Research
                         </h2>
@@ -411,7 +411,7 @@ function Research() {
                 <div className="row my-5 my-lg-5 g-6 align-items-center">
 
                     {/* Text and Button Column */}
-                    <div className="col-lg-6 ">
+                    <div className="col-lg-6 text-start">
                         <h2 className="display-4 fw-bold  mb-4">
                             Economic Calender
                         </h2>

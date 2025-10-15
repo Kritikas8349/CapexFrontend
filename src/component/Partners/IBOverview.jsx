@@ -198,10 +198,10 @@ function IBOverview() {
                     </div>
                     {/* Text Column */}
                     <div className="col-lg-6 ">
-                        <h2 className="display-5 fw-bold mb-4 text-center text-lg-start text-heading">
+                        <h2 className="display-5 fw-bold mb-4 text-start text-lg-start text-heading">
                             Introducing Broker (IB) program benefits
                         </h2>
-                        <p className="lead mb-4 text-center text-lg-start">
+                        <p className="lead mb-4 text-start text-lg-start">
                             Partnering with BlackBull Markets offers unlimited earning potential,
                             competitive rebates, and custom structures to suit your needs. You’ll
                             also benefit from advanced tracking tools, marketing resources, and
@@ -226,7 +226,7 @@ function IBOverview() {
                         <p className="lead mb-4 text-start text-lg-start">
                             Give your referrals access to free TradingView Essential, Plus, or Premium to support their trading and strengthen your client relationships.
                         </p>
-                        <button className='btn btn-bg-start fs-5 text-white'>Partner Now</button>
+                        <Link to="/education/demo-trade" className='btn btn-bg-start fs-5 text-white'>Partner Now</Link>
                     </div>
 
                     {/* Image Column */}
@@ -248,11 +248,11 @@ function IBOverview() {
                     <div className="row align-items-center py-3">
 
                         {/* Image - Left on desktop, top on mobile */}
-                        <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 text-center bg-home p-4">
+                        <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 text-center   bg-home p-4">
                             <img
                                 src="/mobile2.webp"
                                 alt="Create Account"
-                                className="img-fluid"
+                                className="img-fluid "
                                 style={{ maxHeight: '400px', objectFit: 'contain' }}
                             />
                         </div>
@@ -306,17 +306,17 @@ function IBOverview() {
                             <h1 className="text-heading fw-bold">Step 3</h1>
                             <h2 className="fw-bold mb-3">Earn commissions</h2>
                             <p className="mb-4">Benefit from highly competitive, volume-based rebate structures with no limits. Enjoy fast and frequent payouts.</p>
-                            <button className='btn btn-bg-start text-white'>Sign Up Now</button>
+                            <Link to='/education/demo-trade' className='btn btn-bg-start text-white'>Sign Up Now</Link>
                         </div>
 
                     </div>
                 </div>
             </div>
             {/* ---------Partners Commission Plan Table----------   */}
-            <section className="container my-5">
-                <h1 className="text-center fw-bold text-heading mb-4">Partner Commission Plan</h1>
-                <div className="table-responsive">
-                    <table className="table table-bordered text-center align-middle">
+            <section className=" my-5">
+                <h1 className=" fw-bold text-heading mb-4">Partner Commission Plan</h1>
+                <div className="table-responsive mt-4" >
+                    <table className="table table-bordered  align-middle">
                         <thead>
                             <tr>
                                 {tableData.headers.map((header, i) => (

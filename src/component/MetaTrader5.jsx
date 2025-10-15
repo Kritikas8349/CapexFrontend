@@ -95,7 +95,7 @@ function MetaTrader5() {
             {/* ----------- WHy choose Market Trade5 ----------- */}
 
             <div className="container-fluid bg-home text-black py-3 py-md-5 py-lg-5">
-                <div className="container py-md-5 py-lg-5">
+                <div className="container py-3 py-lg-5 py-md-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
@@ -152,7 +152,7 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center border py-md-5 py-lg-5 " >
+            <div className="container-fluid bg-home align-content-center border py-2 py-lg-5 py-md-5" >
                 <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
@@ -185,8 +185,8 @@ function MetaTrader5() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-5">
-                <div className="container rounded-4 p-3 py-5">
+            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5">
+                <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
                     <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
@@ -302,8 +302,8 @@ function MetaTrader5() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-5 my-1">
-                <div className="container rounded-4 p-3 py-5">
+            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5 my-1">
+                <div className="container rounded-4 p-3 py-1 py-lg-5 py-md-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
@@ -388,7 +388,7 @@ function MetaTrader5() {
 
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-3 py-md-5 py-lg-5">
+            <div className="container-fluid bg-dark text-white py-2 py-md-5 py-lg-5">
                 <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center  g-5">
 
@@ -448,8 +448,8 @@ function MetaTrader5() {
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid bg-black text-white py-5 trading-view">
-                <div className="container py-5">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5trading-view">
+                <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center py-4">
                         {/* Left Section */}
                         <div className="col-12 text-start mb-4">
@@ -525,7 +525,7 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-5 ">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
                 <div class="container my-5 bg-black text-white p-4 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 

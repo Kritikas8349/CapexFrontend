@@ -105,9 +105,9 @@ function TradingView() {
 
             {/* -------------How to get trading------------ */}
 
-            <div className="container-fluid bg-home align-content-center py-5" >
+            <div className="container-fluid bg-home align-content-center py-3 py-lg-5 py-md-5" >
                 <div className="container">
-                    <div className="row align-items-center border rounded p-4">
+                    <div className="row align-items-center border rounded p-2 p-lg-4 p-md-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
@@ -138,7 +138,7 @@ function TradingView() {
             </div>
 
             {/* -----------TradingView primium----------------- */}
-            <div className="container-fluid bg-primary text-white py-5 trading-primium" >
+            <div className="container-fluid bg-primary text-white py-2 py-lg-5 py-md-5 trading-primium" >
                 <div className="container text-start">
                     {/* Heading */}
                     <h2 className="fw-bold display-6">Get Free TradingView Premium</h2>
@@ -218,8 +218,8 @@ function TradingView() {
 
             {/* -----------Why MarketTrad----------------- */}
 
-            <div className="container-fluid bg-light py-5 min-vh-90">
-                <div className="container py-4">
+            <div className="container-fluid bg-light py-3 py-lg-5 py-md-5 min-vh-90">
+                <div className="container py-3 py-lg-4 py-md-4">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
                         <div className="col-12 col-lg-6 text-start text-md-start text-sm-start">
@@ -283,9 +283,9 @@ function TradingView() {
 
             {/* -------------How to Connect------------ */}
 
-            <div className="container-fluid align-content-center py-5 how-to-connect" >
+            <div className="container-fluid align-content-center py-3 py-lg-5 py-md-5 how-to-connect" >
                 <div className="container">
-                    <div className="row align-items-center  rounded p-4">
+                    <div className="row align-items-center  rounded p-0 p-lg-4 p-md-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-white">

@@ -161,9 +161,9 @@ function EducationHub() {
       </div>
 
       {/* ----------For Learn Trad--------------------- */}
-      <div className='bg-home  align-content-center border border-3 py-5 py-md-5 py-lg-5'  >
+      <div className='bg-home  align-content-center border border-3 py-3 py-md-5 py-lg-5'  >
         <div className="container py-md-5 py-lg-5">
-          <h1 className='text-heading fw-bold text-center mb-5 display-4'>Learn to Trade Courses</h1>
+          <h1 className='text-heading fw-bold text-center mb-4 display-4'>Learn to Trade Courses</h1>
           <div className='row justify-content-center'>
             {cardsData.map((card, index) => (
               <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
@@ -184,7 +184,7 @@ function EducationHub() {
 
 
       {/* -------For Trading Platform------------------ */}
-      <section className="bg-home py-5 mt-md-4">
+      <section className="bg-home py-2 py-lg-5 py-md-5 mt-md-4">
         <div className="container">
           <h1 className="text-center fw-bold mb-5 display-4  text-heading">Trading Platforms</h1>
 
@@ -214,7 +214,7 @@ function EducationHub() {
                   <p className="text-dark text-start">{platform.desc}</p>
 
                   <div className="text-start">
-                    <Link to={platform.path} className="btn btn-bg-start   bg-opacity-10 text-white fw-semibold">
+                    <Link to={platform.path} className="btn btn-bg-start    bg-opacity-10 text-white fw-semibold">
                       Learn More
                     </Link>
                   </div>
@@ -227,13 +227,13 @@ function EducationHub() {
 
 
       {/* -----------For TradingVideo----------------- */}
-      <div className="bg-home py-5">
+      <div className="bg-home py-2 py-lg-5 py-md-5">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-start mb-2 mb-lg-4 mb-md-4">
             <h1 className="fw-bold text-heading mb-3 text-sm-start display-4">Trading Video Tutorials</h1>
             <p className="lead text-dark text-sm-start d-flex flex-wrap align-items-center justify-content-center">
               Watch and learn with 3000+ videos on YouTube
-              <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
+              <i className="bi bi-youtube d-none d-lg-flex d-md-flex fs-3 text-danger ms-2"></i>
             </p>
           </div>
 
@@ -281,7 +281,7 @@ function EducationHub() {
 
 
       {/* ----------For Trading Opportu..------------ */}
-      <div className="container py-5">
+      <div className="container py-2 py-lg-5 py-md-5">
   {/* Heading */}
   <h2 className="fw-bold text-heading display-5 mb-4 text-center text-md-start">
     Trading Opportunities
@@ -337,13 +337,13 @@ function EducationHub() {
 
 
       {/* ---------For Past Webinar------------ */}
-      <div className="bg-home py-5">
+      <div className="bg-home py-2 py-lg-5 py-md-5">
         <div className="container">
-          <div className="text-center mb-5">
+          <div className="text-start mb-2 mb-lg-4 mb-md-4">
             <h1 className="fw-bold text-heading mb-3 display-4">Past Webinars</h1>
             <p className="lead text-dark d-flex align-items-center justify-content-center">
               Watch all of our past webinars on YouTube
-              <i className="bi bi-youtube fs-3 text-danger ms-2"></i>
+              <i className="bi bi-youtube d-none d-lg-flex d-md-flex fs-3 text-danger ms-2"></i>
             </p>
           </div>
 
