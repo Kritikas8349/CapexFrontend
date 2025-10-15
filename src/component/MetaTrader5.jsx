@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function MetaTrader5() {
-  return (
-    <div className='bg-home'>
+    return (
+        <div className='bg-home'>
             <style>
                 {
                     `.trading-view {
@@ -20,15 +22,15 @@ function MetaTrader5() {
                                 MetaTrader 5 (MT5)
                             </h1>
                             <p className="fs-3 mt-3 text-white ">
-                               Access MetaTrader 5<br />with no minimum deposit.
+                                Access MetaTrader 5<br />with no minimum deposit.
                             </p>
 
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
                                 <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <button className="btn btn-bg-start text-white px-4 py-2 fw-bold">
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white px-4 py-2 fw-bold">
                                     Join Now
-                                </button>
+                                </Link>
                             </div>
                         </div>
 
@@ -93,7 +95,7 @@ function MetaTrader5() {
             {/* ----------- WHy choose Market Trade5 ----------- */}
 
             <div className="container-fluid bg-home text-black py-3 py-md-5 py-lg-5">
-                <div className="container py-md-5 py-lg-5">
+                <div className="container py-3 py-lg-5 py-md-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
@@ -101,7 +103,7 @@ function MetaTrader5() {
                             <h1 className="fw-bold text-heading">Why choose MT5 with<br />
                                 Market Trad?</h1>
                             <p className="text-secondary mt-3 fs-5 pb-3 border-1 border-bottom">
-                               Access MetaTrader 5 on desktop, web, or mobile app, and harness its powerful suite of technical analysis tools, fundamental data feeds, and Expert Advisor (EA) integrations.
+                                Access MetaTrader 5 on desktop, web, or mobile app, and harness its powerful suite of technical analysis tools, fundamental data feeds, and Expert Advisor (EA) integrations.
                             </p>
 
                             {/* Feature List */}
@@ -150,13 +152,13 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center border py-md-5 py-lg-5 " >
+            <div className="container-fluid bg-home align-content-center border py-2 py-lg-5 py-md-5" >
                 <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
-                                How to trade on <span className='text-heading '> MT5 &nbsp;</span><br/>
+                                How to trade on <span className='text-heading '> MT5 &nbsp;</span><br />
                                 with BlackBull Markets
                             </h1>
                             <p className="text-secondary mt-3 fs-5">
@@ -183,19 +185,19 @@ function MetaTrader5() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-3 py-md-5 py-lg-5 ">
-                <div className="container rounded-4 p-3 py-md-5 py-lg-5 ">
-                    <h1 className="text-center display-3 mb-5 fw-bold text-heading">Tradable Assets</h1>
+            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5">
+                <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
+                    <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
-                                <div className="mb-3 ">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                                <div className="mb-3">
                                     <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Forex</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     70+ major, minor, and exotic currency pairs.
                                 </p>
                             </div>
@@ -203,12 +205,12 @@ function MetaTrader5() {
 
                         {/* Commodities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Commodities</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Energies like crude oil, and agricultural cash crops.
                                 </p>
                             </div>
@@ -216,12 +218,12 @@ function MetaTrader5() {
 
                         {/* Equities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Equities</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.
                                 </p>
                             </div>
@@ -229,12 +231,12 @@ function MetaTrader5() {
 
                         {/* Indices */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Indices</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Major stock indices like US30, S&amp;P500, and NAS100.
                                 </p>
                             </div>
@@ -242,12 +244,12 @@ function MetaTrader5() {
 
                         {/* Metals */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">Metals</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Precious and industry metals like gold, silver, and copper.
                                 </p>
                             </div>
@@ -255,12 +257,12 @@ function MetaTrader5() {
 
                         {/* View All */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
                                 <h3 className="fs-4 fw-bold">View all</h3>
-                                <p className="text-secondary">
+                                <p className="text-secondary mb-0">
                                     Explore Market.Trad's diverse range of tradable assets.
                                 </p>
                             </div>
@@ -300,19 +302,17 @@ function MetaTrader5() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-3 py-md-5 py-lg-5 ">
-                <div className="container rounded-4 p-3 py-md-5 py-lg-5">
-
-
+            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5 my-1">
+                <div className="container rounded-4 p-3 py-1 py-lg-5 py-md-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
-                                <div className="mb-3 ">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                                <div className="mb-3">
                                     <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Forex</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Forex</h3>
+                                <p className="text-secondary mb-0">
                                     70+ major, minor, and exotic currency pairs.
                                 </p>
                             </div>
@@ -320,12 +320,12 @@ function MetaTrader5() {
 
                         {/* Commodities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Commodities</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Commodities</h3>
+                                <p className="text-secondary mb-0">
                                     Energies like crude oil, and agricultural cash crops.
                                 </p>
                             </div>
@@ -333,12 +333,12 @@ function MetaTrader5() {
 
                         {/* Equities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Equities</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Equities</h3>
+                                <p className="text-secondary mb-0">
                                     We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.
                                 </p>
                             </div>
@@ -346,25 +346,25 @@ function MetaTrader5() {
 
                         {/* Indices */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Indices</h3>
-                                <p className="text-secondary">
-                                    Major stock indices like US30, S&amp;P500, and NAS100.
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Indices</h3>
+                                <p className="text-secondary mb-0">
+                                    Major stock indices like US30, S&P500, and NAS100.
                                 </p>
                             </div>
                         </div>
 
                         {/* Metals */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">Metals</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">Metals</h3>
+                                <p className="text-secondary mb-0">
                                     Precious and industry metals like gold, silver, and copper.
                                 </p>
                             </div>
@@ -372,12 +372,12 @@ function MetaTrader5() {
 
                         {/* View All */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100">
+                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
-                                <h3 className="fs-4 text-heading fw-bold">View all</h3>
-                                <p className="text-secondary">
+                                <h3 className="fs-4 text-heading-emphasis fw-bold mb-2">View all</h3>
+                                <p className="text-secondary mb-0">
                                     Explore Market.Trad's diverse range of tradable assets.
                                 </p>
                             </div>
@@ -386,8 +386,9 @@ function MetaTrader5() {
                 </div>
             </div>
 
+
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-3 py-md-5 py-lg-5">
+            <div className="container-fluid bg-dark text-white py-2 py-md-5 py-lg-5">
                 <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center  g-5">
 
@@ -396,8 +397,8 @@ function MetaTrader5() {
                             <h1 className="fw-bold">MT5 WebTrader
                             </h1>
                             <p className="text-white mt-3 fs-5 pb-3 border-1 border-bottom">
-                                Access MetaTrader 5 directly from your browser-<br/>
-no downloads required. Access MT5 WebTrader here.
+                                Access MetaTrader 5 directly from your browser-<br />
+                                no downloads required. Access MT5 WebTrader here.
                             </p>
 
                             {/* Feature List */}
@@ -447,8 +448,8 @@ no downloads required. Access MT5 WebTrader here.
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid bg-black text-white py-5 trading-view">
-                <div className="container py-5">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5trading-view">
+                <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center py-4">
                         {/* Left Section */}
                         <div className="col-12 text-start mb-4">
@@ -456,7 +457,7 @@ no downloads required. Access MT5 WebTrader here.
                             <p className="fs-5 mt-3 text-white">
                                 Click on the appropriate link for your device to download MetaTrader 5 (MT5). (MT4).
 
-Windows, Android, and iOS users can download and run the installer as normal. Mac users can find a guide for installing the platform here.
+                                Windows, Android, and iOS users can download and run the installer as normal. Mac users can find a guide for installing the platform here.
                             </p>
                         </div>
                     </div>
@@ -524,7 +525,7 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-5 ">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
                 <div class="container my-5 bg-black text-white p-4 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 
@@ -607,7 +608,7 @@ Windows, Android, and iOS users can download and run the installer as normal. Ma
             </div>
 
         </div>
-  )
+    )
 }
 
 export default MetaTrader5

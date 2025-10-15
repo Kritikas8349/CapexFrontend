@@ -135,9 +135,9 @@
   }
   
   .btc { top: 10%; left: 5%; }
-  .eth { top: 15%; right: 5%; }
-  .ltc { bottom: 45%; left: 15%; }
-  .ada { bottom: 45%; right: 15%; }
+  .eth { top: 10%; right: 5%; }
+  .ltc { bottom: 55%; left: 10%; }
+  .ada { bottom: 55%; right: 10%; }
   
   @keyframes float {
     0%, 100% { transform: translateY(0px); }

@@ -71,6 +71,9 @@
     .m1-t-card {
       width: 48%;
     }
+    .m1-t-heading {
+      font-size: 0.3em;
+    }
   }
   
   @media (max-width: 480px) {
@@ -79,7 +82,7 @@
     }
   
     .m1-t-heading {
-      font-size: 1.5em;
+      font-size: 0.3em;
     }
   
     .m1-t-card-container {

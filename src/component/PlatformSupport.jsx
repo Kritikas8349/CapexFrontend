@@ -28,7 +28,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/crypto.png" alt="TradingView" />
           <h3>TradingView</h3>
-          <span className="badge">29</span>
+          <span className="badgekr">29</span>
         </div>
         <ul className="support-card-list">
           <li>How to create a TradingView Live account?</li>
@@ -46,7 +46,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/pf2.webp" alt="Secure Area" />
           <h3>Secure Client Area</h3>
-          <span className="badge">8</span>
+          <span className="badgekr">8</span>
         </div>
         <ul className="support-card-list">
           <li>What is My Wallet?</li>
@@ -64,7 +64,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/Pf1.webp" alt="MT4" />
           <h3>MetaTrader 4</h3>
-          <span className="badge">17</span>
+          <span className="badgekr">17</span>
         </div>
         <ul className="support-card-list">
           <li>How to create an MT4 Live account?</li>
@@ -82,7 +82,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/pf3.webp" alt="MT5" />
           <h3>MetaTrader 5</h3>
-          <span className="badge">28</span>
+          <span className="badgekr">28</span>
         </div>
         <ul className="support-card-list">
           <li>How to create an MT5 Live account?</li>
@@ -100,7 +100,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/crypto.png" alt="Invest" />
           <h3>Market.trad Invest</h3>
-          <span className="badge">7</span>
+          <span className="badgekr">7</span>
         </div>
         <ul className="support-card-list">
           <li>Transition to Market.trad from Rockfort</li>
@@ -116,7 +116,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/pf4.svg" alt="cTrader" />
           <h3>cTrader</h3>
-          <span className="badge">22</span>
+          <span className="badgekr">22</span>
         </div>
         <ul className="support-card-list">
           <li>How to create a cTrader Live account?</li>
@@ -134,7 +134,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/pf4.svg" alt="Getting Started" />
           <h3>Getting Started</h3>
-          <span className="badge">6</span>
+          <span className="badgekr">6</span>
         </div>
         <ul className="support-card-list">
           <li>How to create your Market.trad account?</li>
@@ -151,7 +151,7 @@ const PlatformSupport = () => {
         <div className="support-header">
           <img src="/pf4.svg" alt="Account Support" />
           <h3>Account Support</h3>
-          <span className="badge">8</span>
+          <span className="badgekr">8</span>
         </div>
         <ul className="support-card-list">
           <li>Documents required to open a Company or Trust Account (FSA)</li>

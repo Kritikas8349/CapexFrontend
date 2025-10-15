@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function TradingView() {
     return (
@@ -33,12 +34,12 @@ function TradingView() {
 
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-2 justify-content-start mt-4">
-                                <button className="btn btn-bg-start text-white  mt-3">
+                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white  mt-3">
                                     Join Now
-                                </button>
-                                <button className="btn btn-bg-start text-white  mt-3 ">
+                                </Link>
+                                <Link to="/loginform" className="btn btn-bg-start text-white  mt-3 ">
                                     Log In
-                                </button>
+                                </Link>
                             </div>
 
                         </div>
@@ -57,14 +58,14 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
                         <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
@@ -104,9 +105,9 @@ function TradingView() {
 
             {/* -------------How to get trading------------ */}
 
-            <div className="container-fluid bg-home align-content-center py-5" >
+            <div className="container-fluid bg-home align-content-center py-3 py-lg-5 py-md-5" >
                 <div className="container">
-                    <div className="row align-items-center border rounded p-4">
+                    <div className="row align-items-center border rounded p-2 p-lg-4 p-md-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
@@ -137,7 +138,7 @@ function TradingView() {
             </div>
 
             {/* -----------TradingView primium----------------- */}
-            <div className="container-fluid bg-primary text-white py-5 trading-primium" >
+            <div className="container-fluid bg-primary text-white py-2 py-lg-5 py-md-5 trading-primium" >
                 <div className="container text-start">
                     {/* Heading */}
                     <h2 className="fw-bold display-6">Get Free TradingView Premium</h2>
@@ -165,7 +166,7 @@ function TradingView() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
+                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
@@ -186,7 +187,7 @@ function TradingView() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
@@ -207,7 +208,7 @@ function TradingView() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Claim Offer</button>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
                     </div>
@@ -217,8 +218,8 @@ function TradingView() {
 
             {/* -----------Why MarketTrad----------------- */}
 
-            <div className="container-fluid bg-light py-5 min-vh-90">
-                <div className="container py-4">
+            <div className="container-fluid bg-light py-3 py-lg-5 py-md-5 min-vh-90">
+                <div className="container py-3 py-lg-4 py-md-4">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
                         <div className="col-12 col-lg-6 text-start text-md-start text-sm-start">
@@ -282,9 +283,9 @@ function TradingView() {
 
             {/* -------------How to Connect------------ */}
 
-            <div className="container-fluid align-content-center py-5 how-to-connect" >
+            <div className="container-fluid align-content-center py-3 py-lg-5 py-md-5 how-to-connect" >
                 <div className="container">
-                    <div className="row align-items-center  rounded p-4">
+                    <div className="row align-items-center  rounded p-0 p-lg-4 p-md-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-white">
@@ -312,47 +313,47 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-outline-dark text-white d-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-outline-dark text-white d-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/microsoft.svg"
                                 alt="Microsoft Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="Mac App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Google-Play (1).svg"
                                 alt="Google Play"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
