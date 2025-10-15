@@ -189,7 +189,10 @@ import NewZealand from "./component/Research/NewZealand";
 import USA from "./component/Research/USA";
 import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";
 
+// import Dashboard from "./Component/Dashboard";
+// import Dashboard from "../../User_Panel/src/Component/Dashboard";
 
+// import Dashboard from "../User_panel-main/User_Panel/src/Component/Dashboard";
 
 
 function Layout({ children }) {
@@ -502,6 +505,7 @@ function App() {
           <Route path="/research/equity-research/new-zealand" element={<NewZealand/>}></Route>
           <Route path="/research/equity-research/usa" element={<USA/>}></Route>
           <Route path="/research/technical-analysis" element={<TechnicalAnalysis/>}></Route>
+{/* <Route path="/userdashboard" element={<Dashboard />} /> */}
 
 
 

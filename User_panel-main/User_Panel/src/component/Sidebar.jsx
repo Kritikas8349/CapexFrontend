@@ -29,7 +29,7 @@ const Sidebar = () => {
         <ul className="sidebar-menu">
           <li>
             <FaTachometerAlt className="icon" />
-            <Link to="/dashboard" className="text-decoration-none">Dashboard</Link>
+            <Link to="/userdashboard" className="text-decoration-none">Dashboard</Link>
           </li>
           <li>
             <MdOutlineManageAccounts className="icon" />
