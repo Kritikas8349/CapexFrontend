@@ -23,7 +23,7 @@ import TransactionHistory from "./Component/TransactionHistory";
 import GetSupport from "./Component/GetSupport";
 import OpenTicket from "./Component/OpenTicket";
 import ReplyTicket from "./Component/ReplyTicket";
-import TradeNavbar from "./component/TradeNavbar";
+// import TradeNavbar from "./component/TradeNavbar";
 
 function App() {
   const location = useLocation();  
@@ -55,7 +55,7 @@ function App() {
           <Route path="/manage-wallet" element={<ManageWallet />} />
           <Route path="/wallet/:symbol" element={<WalletDetails />} />
           <Route path="/security" element={<TwoFactor />} />
-          <Route path="/trade-navbar" element={<TradeNavbar/>} />
+          {/* <Route path="/trade-navbar" element={<TradeNavbar/>} /> */}
           <Route path="/security" element={<TwoFactor/>} />
         </Routes>
       </div>
