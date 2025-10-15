@@ -207,21 +207,21 @@ function QuickStart2() {
 
         <div className="assets-grid">
           <div className="asset-box">
-            <img src="/t1.png" alt="Equities" className="asset-logo" />
+            
             <img src="/t1.png" alt="Equities" className="asset-logo" />
             <h3 className="asset-title">Equities</h3>
             <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/t2.png" alt="Forex" className="asset-logo" />
+            
             <img src="/t2.png" alt="Forex" className="asset-logo" />
             <h3 className="asset-title">Forex</h3>
             <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
           </div>
 
           <div className="asset-box">
-            <img src="/t3.png" alt="Commodities" className="asset-logo" />
+           
             <img src="/t3.png" alt="Commodities" className="asset-logo" />
             <h3 className="asset-title">Commodities</h3>
             <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>

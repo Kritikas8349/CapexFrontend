@@ -1,77 +1,69 @@
 import React, { useRef } from 'react'
 import './InvestmentResearch.css'
+import { Link } from 'react-router-dom';
 
 function InvestmentResearch() {
     //   ------- Daily News Data--------
-    const scrollRef = useRef(null);
 
-    const scroll = (direction) => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({
-                left: direction === "left" ? -300 : 300,
-                behavior: "smooth",
-            });
-        }
-    };
 
     const cardsData = [
         {
             id: 1,
-            img: "/Tesla.webp", // replace with your image
+            img: "/public/awardlogo.avif", // replace with your image
             title: "Why is a shiny block of metal so popular?",
             desc: "I know everyone is obsessed with gold right now, because number go up...",
             date: "8 May 2025",
         },
         {
             id: 2,
-            img: "/shiny.webp",
+            img: "/public/awards.avif",
             title: "Auto loans are bad; but earnings are good",
             desc: "Top of mind — yes, Microsoft had a good quarter and so did Meta...",
             date: "1 May 2025",
         },
         {
             id: 3,
-            img: "/tariff.webp",
+            img: "/public/awards.jpg",
             title: "Have you heard the one about the oil prosp...",
             desc: "I’ve been re-reading speeches Buffett gave to his inner circle...",
             date: "21 April 2025",
         },
         {
             id: 4,
-            img: "/challenge.webp",
+            img: "/public/supportBg.jpg",
             title: "Tech stocks are making waves",
             desc: "Technology is booming with AI and Cloud expansion...",
             date: "15 April 2025",
         },
-        {
-            id: 5,
-            img: "/loan.webp",
-            title: "Market volatility explained",
-            desc: "Economic conditions lead to swings, but smart investors adapt...",
-            date: "12 April 2025",
-        },
-        {
-            id: 6,
-            img: "/challenge.webp",
-            title: "Why commodities are back in trend",
-            desc: "From oil to gold, commodities are gaining traction again...",
-            date: "10 April 2025",
-        },
+        // {
+        //     id: 5,
+        //     img: "/loan.webp",
+        //     title: "Market volatility explained",
+        //     desc: "Economic conditions lead to swings, but smart investors adapt...",
+        //     date: "12 April 2025",
+        // },
+        // {
+        //     id: 6,
+        //     img: "/challenge.webp",
+        //     title: "Why commodities are back in trend",
+        //     desc: "From oil to gold, commodities are gaining traction again...",
+        //     date: "10 April 2025",
+        // },
     ];
     return (
         <div className='bg-home'>
-            <div className="container-fluid bg-home py-5 ">
+            <div className=" bg-faq rounded rounded-3 m-4 py-5 ">
                 <div className="container py-5">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center py-5">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
-                            <h1 className="fw-bold display-5 text-heading">
+                            <h1 className="fw-bold display-5 text-white">
                                 Daily Expert{" "}
-                                <span className="text-primary"></span>
+                                <span className="text-white"></span>
                                 <br />
                                 Stock Research
                             </h1>
-                            <p className="fs-2 mt-3  ">
+                            <p className="fs-2 mt-3 text-white ">
                                 Timely and jargon-free recommendations to<br /> benefit the everyday investor
                             </p>
 
@@ -94,8 +86,8 @@ function InvestmentResearch() {
             </div>
 
             {/* -----Start Free Trial -----------      */}
-            <div className="container-fluid py-5">
-                <div className="container py-5">
+            <div className="container-fluid py-2 py-lg-5 py-md-5">
+                <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center text-start text-white p-5 text-lg-start bg-free-trial rounded rounded-4">
 
                         {/* Left Content */}
@@ -122,75 +114,60 @@ function InvestmentResearch() {
 
             {/* --------Daily News ---------- */}
 
-            <div className="container-fluid  py-5 bg-home">
+            <div className="container-fluid  py-2 py-lg-5 py-md-5 bg-home">
                 <div className="container ">
                     {/* Section Header */}
-                    <div className="text-center mb-4">
+                    <div className="text-start text-lg-center text-md-center mb-4">
                         <h1 className="fw-bold text-heading  display-3">Daily News</h1>
                         <p className="text-muted">
                             Never miss an opportunity with high-impact economic event coverage,
-                            expert commentary,<br/> videos, and more from our global market analysts,{" "}
+                            expert commentary,<br /> videos, and more from our global market analysts,{" "}
                             <a href="#">view more</a>.
                         </p>
                     </div>
 
                     {/* Cards Wrapper */}
-                    <div className="position-relative">
-                        <div
-                            className="d-flex overflow-auto px-2"
-                            style={{ scrollBehavior: "smooth" }}
-                            ref={scrollRef}
-                        >
+                    <div className="container-fluid py-4">
+                        <div className="row justify-content-center g-3">
                             {cardsData.map((card) => (
                                 <div
                                     key={card.id}
-                                    className=" shadow-sm mb-4 mx-2 custom-card"
-                                    style={{ minWidth: "300px", maxWidth: "300px" }}
+                                    className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
                                 >
-                                    <img
-                                        src={card.img}
-                                        className="card-img-top"
-                                        alt={card.title}
-                                        style={{ height: "200px", objectFit: "cover" }}
-                                    />
-                                    <div className="p-3">
-                                        <h5 className="card-title fw-bold text-heading">
-                                            {card.title}
-                                        </h5>
-                                        <p className="card-text text-muted">{card.desc}</p>
-                                        <p className=" text-heading small mb-0">{card.date}</p>
+                                    <div className="card shadow-sm p-1 bg-transparent h-100" style={{ borderRadius: "12px" }}>
+                                        <img
+                                            src={card.img}
+                                            className="card-img-top"
+                                            alt={card.title}
+                                            style={{
+                                                height: "200px",
+                                                objectFit: "cover",
+                                                borderTopLeftRadius: "12px",
+                                                borderTopRightRadius: "12px",
+                                            }}
+                                        />
+                                        <div className="card-body">
+                                            <h5 className="card-title fw-bold text-start text-heading">
+                                                {card.title}
+                                            </h5>
+                                            <p className="card-text text-start text-muted mb-2">{card.desc}</p>
+                                            <p className="text-heading small text-start mb-0">{card.date}</p>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
-
-                        {/* Left Arrow */}
-                        <button
-                            className="btn btn-dark text-white rounded rounded-5 border position-absolute  top-50 start-0 bi bi-arrow-left fs-4 translate-middle-y"
-                            style={{ zIndex: 1 }}
-                            onClick={() => scroll("left")}
-                        >
-
-                        </button>
-
-                        {/* Right Arrow */}
-                        <button
-                            className="btn btn-dark text-white rounded rounded-5 border position-absolute top-50 end-0 bi bi-arrow-right fs-4 translate-middle-y"
-                            style={{ zIndex: 1 }}
-                            onClick={() => scroll("right")}
-                        >
-
-                        </button>
                     </div>
+
                 </div>
             </div>
             {/* --------Choose Your Plan ------------ */}
-            
-            <div className="container-fluid  py-5 " >
+
+            <div className="container-fluid  py-2 py-lg-5 py-md-5 " >
                 <div className="container text-center">
                     {/* Heading */}
-                    <h2 className="fw-bold text-heading display-6">Choose Your Plan</h2>
-                    <p className=" text-muted mb-5">
+                    <h2 className="fw-bold text-heading text-start display-6">Choose Your Plan</h2>
+                    <p className=" text-muted text-start mb-5">
                         <i className="bi bi-lock-fill  me-2"></i>
                         Access market intelligence tailored for serious investors. Choose a plan that fits your needs—whether you’re looking for timely insights, in-depth analysis, or custom research solutions backed by real expertise, view more.
                     </p>
@@ -214,7 +191,7 @@ function InvestmentResearch() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Subscribe Now</button>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
@@ -235,7 +212,7 @@ function InvestmentResearch() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Subscribe Now</button>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
@@ -256,7 +233,7 @@ function InvestmentResearch() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <button className="btn btn-bg-start text-white  mt-3">Request a Quote</button>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Request a Quote</Link>
                             </div>
                         </div>
                     </div>

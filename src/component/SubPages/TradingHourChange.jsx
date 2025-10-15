@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import SidebarAccordion from "./SideBarAccordian";
 
@@ -58,15 +59,15 @@ const TradingHourChange = () => {
   
 
     return (
-        <div className="container-fluid bg-home">
-            <div className="row justify-content-center">
+        <div className="container-fluid bg-faq py-lg-5 py-md-5 pt-5 ">
+            <div className="row justify-content-center my-lg-6 my-md-6 mt-5  bg-transparent">
                 {/* Sidebar with Accordion */}
-                <SidebarAccordion Sections={Sections}></SidebarAccordion>
+                <SidebarAccordion className="bg-transparent" Sections={Sections}></SidebarAccordion>
 
                 {/* Main Content */}
-                <div className="col-12 col-md-9 col-lg-6 p-4 my-4 border bg-home">
+                <div className="col-12 bg-transparent  col-md-9 col-lg-6 p-4 my-4 text-start bg-home">
                     {/* Breadcrumb */}
-                    <nav aria-label="breadcrumb" className="mb-5">
+                    {/* <nav aria-label="breadcrumb" className="mb-5">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
                                 <Link to="#">Home</Link>
@@ -84,11 +85,11 @@ const TradingHourChange = () => {
                                 Trading Hour Changes
                             </li>
                         </ol>
-                    </nav>
+                    </nav> */}
 
                     {/* Title + Date */}
                     <h2 className="fw-bold text-heading mb-1">Trading Hour Changes</h2>
-                    <p className="text-muted mb-3">Updated on September 2, 2025</p>
+                    <p className="text-white mb-3">Updated on September 2, 2025</p>
 
                     {/* Server time */}
                     <p className="small">
@@ -149,7 +150,7 @@ const TradingHourChange = () => {
 
                         {/* Feedback Section */}
                         <div className="p-4 border rounded d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 bg-light-subtle">
-                            <h5 className="mb-0">Did this answer your question?</h5>
+                            <h5 className="mb-0 text-dark">Did this answer your question?</h5>
                             <div className="d-flex gap-4 fs-4 text-warning">
                                 <i className="bi bi-emoji-smile-fill"></i>
                                 <i className="bi bi-emoji-angry-fill"></i>

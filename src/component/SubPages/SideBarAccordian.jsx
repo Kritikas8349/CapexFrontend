@@ -1,10 +1,11 @@
 import React from "react";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './SideBarAccordian.css'
 import { Link } from "react-router-dom";
 
 const SidebarAccordion = ({Sections}) => {
       return (
-        <div className="col-12 col-md-3 col-lg-4 p-3 bg-home border-end">
+        <div className="col-12 col-md-3 col-lg-4 p-3 py-lg-5 py-md-5 pt-5  bg-transparent ">
           {/* Only ONE accordion wrapper */}
           <div className="accordion" id="sidebarAccordion">
     
@@ -43,7 +44,7 @@ const SidebarAccordion = ({Sections}) => {
                           <li className="nav-item" key={i}>
                             <Link
                               to="#"
-                              className={`nav-link d-flex align-items-center px-3 py-2 ${
+                              className={`nav-link d-flex align-items-center text-start px-3 py-2 ${
                                 item.active ? "text-primary fw-semibold" : "text-dark"
                               }`}
                             >

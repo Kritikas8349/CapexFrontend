@@ -13,6 +13,7 @@ body {
   margin-bottom: 20px;
   border-radius: 12px;
   background: linear-gradient(to bottom right, #000000, #493ffd);
+  overflow: hidden;
 }
 
 
@@ -298,9 +299,7 @@ body {
   font-size: 14px;
 }
 
-.q2-market-table tr:nth-child(even) {
-  /* background-color: #003366; */
-}
+
 
 .q2-market-table tr:hover {
   background-color: #f1f1f1;

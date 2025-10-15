@@ -8,9 +8,10 @@ import routesMap from "../RoutesMap"; // make sure the path is correct
 
 function ResearchNavbar() {
   const [language, setLanguage] = useState("en");
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [openMenus, setOpenMenus] = useState({});
-  const [showNavbar, setShowNavbar] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [openMenus, setOpenMenus] = useState({});
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [mobileOpenMenus, setMobileOpenMenus] = useState({});
 
   const languages = [
     { code: "en", label: "English" },
@@ -64,7 +65,6 @@ function ResearchNavbar() {
               ) : (
                 <span className="nav-link">{item}</span>
               )}
-
               {dropdowns[item] && (
                 <button
                   className="dropdown-btn"
@@ -76,13 +76,11 @@ function ResearchNavbar() {
                   {openMenus[item] ? <FiChevronUp /> : <FiChevronDown />}
                 </button>
               )}
-
               {openMenus[item] && renderDropdown(dropdowns[item])}
             </li>
           );
         }
 
-        // Object with subItems
         return (
           <li key={i} className="has-submenu">
             {routesMap[item.title] ? (
@@ -92,7 +90,6 @@ function ResearchNavbar() {
             ) : (
               <span className="nav-link">{item.title}</span>
             )}
-
             <button
               className="dropdown-btn"
               onClick={(e) => {
@@ -102,7 +99,6 @@ function ResearchNavbar() {
             >
               {openMenus[item.title] ? <FiChevronUp /> : <FiChevronDown />}
             </button>
-
             {item.subItems && openMenus[item.title] && renderDropdown(item.subItems)}
           </li>
         );
@@ -110,25 +106,38 @@ function ResearchNavbar() {
     </ul>
   );
 
-  const renderOverlayMenu = (items, parentKey = "") => (
+  const toggleMobileSubMenu = (key) => {
+    setMobileOpenMenus((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
+  const getMenuKey = (parentKey, title) => (parentKey ? `${parentKey}-${title}` : title);
+
+  const renderOverlayMenuRecursive = (items, parentKey = "") => (
     <ul className="overlay-submenu">
-      {items.map((item, index) => {
-        const key = parentKey ? `${parentKey}-${index}` : `${index}`;
+      {items.map((item) => {
+        const key = typeof item === "string" ? getMenuKey(parentKey, item) : getMenuKey(parentKey, item.title);
         if (typeof item === "string") {
-          return <li key={key}>{routesMap[item] ? <Link to={routesMap[item]}>{item}</Link> : item}</li>;
+          return (
+            <li key={key}>
+              {routesMap[item] ? (
+                <Link to={routesMap[item]} onClick={() => setMenuOpen(false)}>
+                  {item}
+                </Link>
+              ) : (
+                <span>{item}</span>
+              )}
+            </li>
+          );
         }
         return (
-          <li key={key}>
-            <div
-              className={`has-submenu ${openMenus[key] ? "open" : ""}`}
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleSubMenu(key);
-              }}
-            >
+          <li key={key} className={`has-submenu ${mobileOpenMenus[key] ? "open" : ""}`}>
+            <div className="submenu-header" onClick={() => toggleMobileSubMenu(key)}>
               {item.title} <FiChevronRight className="dropdown-icon" />
             </div>
-            {item.subItems && openMenus[key] && renderOverlayMenu(item.subItems, key)}
+            {item.subItems && mobileOpenMenus[key] && renderOverlayMenuRecursive(item.subItems, key)}
           </li>
         );
       })}
@@ -166,30 +175,29 @@ function ResearchNavbar() {
       {showNavbar && (
         <nav className="navbar-blue">
           <div className="navbar-left">
-            <img src="Frame 1.png" alt="Logo" className="navbar-logo" />
+            <img src="/Frame 1.png" alt="Logo" className="navbar-logo" />
           </div>
           <div className="navbar-center">
-
-            
-            <ul className="nav-links">
-            {Object.keys(dropdowns).map((menu) => (
-                <li key={menu} className="dropdown">
-                    {(menu === "Daily News" || menu === "Technical Analysis") ? (
-                    <Link to={routesMap[menu]} className="nav-link">
-                        {menu}
-                    </Link>
-                    ) : (
-                    <>
-                        <span className="nav-link">
-                        {menu} <FiChevronDown className="dropdown-icon" />
-                        </span>
-                        {renderDropdown(dropdowns[menu])}
-                    </>
-                    )}
-                </li>
-                ))}
-
-            </ul>
+          <ul className="nav-links">
+  {Object.keys(dropdowns).map((menu) => (
+    <li key={menu} className="dropdown">
+    {routesMap[menu] ? (
+      <Link to={routesMap[menu]} className="nav-link">
+        {menu}
+      </Link>
+    ) : (
+      <span className="nav-link">{menu}</span>
+    )}
+  
+    {/* Show dropdown arrow if there are sub-items */}
+    {dropdowns[menu].length > 0 && <FiChevronDown className="dropdown-icon" />}
+  
+    {/* Render dropdown items */}
+    {dropdowns[menu].length > 0 && renderDropdown(dropdowns[menu])}
+  </li>
+  
+  ))}
+</ul>
 
 
           </div>
@@ -198,7 +206,7 @@ function ResearchNavbar() {
               Refer a friends
             </a>
             <Link to="/loginform" className="login-btn">Log In</Link>
-              <Link to="/create-account" className="join-btn">Join Now</Link>
+            <Link to="/create-account" className="join-btn">Join Now</Link>
           </div>
           <div className="hamburger-menu" onClick={() => setMenuOpen(!menuOpen)}>
             ☰
@@ -206,46 +214,55 @@ function ResearchNavbar() {
         </nav>
       )}
 
-    {/* Hamburger overlay */}
-<div className={`hamburger-overlay ${menuOpen ? "open" : ""}`}>
-  <div className="close-btn" onClick={() => setMenuOpen(false)}>
+    
+     {/* Hamburger overlay */}
+     <div className={`res-hamburger-overlay ${menuOpen ? "open" : ""}`}>
+  <div className="res-close-btn" onClick={() => setMenuOpen(false)}>
     ✖
   </div>
-  <ul className="overlay-links">
-    {Object.keys(dropdowns).map((menu) => (
-      <li key={menu}>
-        <div
-          className={`has-submenu ${openMenus[menu] ? "open" : ""}`}
-          onClick={(e) => {
-            e.stopPropagation();
-            toggleSubMenu(menu);
-          }}
-        >
-          {menu} <FiChevronRight className="dropdown-icon" />
-        </div>
-        {openMenus[menu] && renderOverlayMenu(dropdowns[menu], menu)}
-      </li>
-    ))}
+
+  <ul className="res-overlay-links">
+  {Object.keys(dropdowns).map((menu) => (
+  <li key={menu} className={`res-has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
+    {dropdowns[menu].length > 0 ? (
+      <div className="res-submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
+        {menu} <FiChevronRight className="res-dropdown-icon" />
+      </div>
+    ) : (
+      <Link
+        to={routesMap[menu] || "#"}
+        onClick={() => setMenuOpen(false)}
+        className="res-submenu-header"
+      >
+        {menu}
+      </Link>
+    )}
+
+    {dropdowns[menu].length > 0 && mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
+  </li>
+))}
+
 
     <li>
-      <a href="#" className="refer-link">
-        Refer a friends
-      </a>
+      <a href="#" className="res-refer-link">Refer a friends</a>
     </li>
     <li>
-      <button className="login-btn">Log In</button>
+      <button className="res-login-btn">Log In</button>
     </li>
     <li>
-      <button className="join-bttn">Join Now</button>
+      <button className="res-join-bttnn">Join Now</button>
     </li>
   </ul>
-  <div className="overlay-bottom-row">
-    <span>Personal</span>
-    <span>Partners</span>
-    <span>Research</span>
-    <span>Academy</span>
+
+  <div className="res-overlay-bottom-row">
+    <Link to="/" onClick={() => setMenuOpen(false)}>Personal</Link>
+    <Link to="/partners" onClick={() => setMenuOpen(false)}>Partners</Link>
+    <Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link>
   </div>
 </div>
+
+
+
 
     </div>
   );

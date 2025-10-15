@@ -1,121 +1,173 @@
-/* ================= NAVBAR ================= */
-.pnav {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  position: sticky;
+/* Hamburger overlay */
+.part-hamburger-overlay {
+  position: fixed;
   top: 0;
-  z-index: 1000;
-}
-
-.pnav-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pnav-logo img {
-  height: 40px;
-}
-
-/* Menu */
-.pnav-menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 25px;
-}
-
-.pnav-item {
-  position: relative;
-}
-
-.pnav-link {
-  background: none;
-  border: none;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: #333;
-}
-
-.pnav-link:hover {
-  color: #007bff;
-}
-
-/* Dropdown */
-.pdropdown {
-  position: absolute;
-  top: 100%;
   left: 0;
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  list-style: none;
-  min-width: 200px;
-}
-
-.pdropdown li {
-  padding: 8px 16px;
-}
-
-.pdropdown li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 14px;
-  display: block;
-}
-
-.pdropdown li a:hover {
-  background: #f5f5f5;
-  color: #007bff;
-  border-radius: 4px;
-}
-
-/* Mobile */
-.pnav-toggle {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 2000;
   display: none;
-  cursor: pointer;
-  color: #333;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
 }
 
-@media (max-width: 992px) {
-  .pnav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 260px;
-    height: 100vh;
-    background: #fff;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 60px 20px;
-    gap: 20px;
-    transition: 0.3s ease;
-  }
+.part-hamburger-overlay.open {
+  display: flex;
+}
 
-  .pnav-menu.active {
-    right: 0;
-  }
+.part-close-btn {
+  align-self: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
 
-  .pnav-toggle {
+/* Overlay Links */
+.part-overlay-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.part-overlay-links li {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Submenu Header */
+.part-submenu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.part-submenu-header:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* Overlay Submenu */
+.part-overlay-submenu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 15px; /* nested items padding */
+}
+
+.part-has-submenu.open > .part-overlay-submenu {
+  display: flex;
+}
+
+/* Submenu Arrow rotation */
+.part-has-submenu.open > .part-submenu-header .part-dropdown-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+/* Text alignment */
+.part-overlay-links li a,
+.part-overlay-links li span,
+.part-overlay-links li button {
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #000;
+  text-decoration: none;
+}
+
+.part-overlay-links li a:hover,
+.part-overlay-links li span:hover,
+.part-overlay-links li button:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Bottom row links (Personal, Partner, Research) */
+.part-overlay-bottom-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.part-overlay-bottom-row a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.part-overlay-bottom-row a:hover {
+  background-color: #493ffd;
+  color: white;
+}
+
+/* Buttons in overlay */
+.part-overlay-links .part-login-btn,
+.part-overlay-links .part-join-bttnn {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 5px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #493ffd;
+  color: #fff;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.part-overlay-links .part-login-btn:hover,
+.part-overlay-links .part-join-bttnn:hover {
+  background-color: #3227d6;
+}
+
+/* Refer link */
+.part-refer-link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.part-refer-link:hover {
+  color: #493ffd;
+}
+
+/* Hamburger icon */
+.part-hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white; /* hamburger icon color */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .part-hamburger-menu {
     display: block;
   }
-
-  .pdropdown {
-    position: static;
-    box-shadow: none;
-    padding: 0;
-    margin-top: 8px;
-  }
-
-  .pdropdown li {
-    padding: 6px 0;
+  .navbar-logo {
+    max-width: 100px; /* small logo */
   }
 }

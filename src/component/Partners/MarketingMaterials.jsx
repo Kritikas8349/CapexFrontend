@@ -43,6 +43,11 @@ function MarketingMaterials() {
             content: "If you’re not sure what to write or how to get started with your content marketing strategy, we can help...",
             icon: "bi-pencil"
         },
+          {
+            title: "Logos",
+            content: "We have a selection of high-quality brand logos available to use in a range of different sizes...",
+            icon: "bi-image"
+        },
     ];
     return (
         <div className='bg-home'>
@@ -86,32 +91,40 @@ function MarketingMaterials() {
             {/* --------Marketing Cards-------- */}
             <div className="container-fluid">
                 <div className="container py-5 mx-lg-5 px-3">
-                    <h6 className='lh-base px-lg-3 mx-lg-2'>We take pride in having proven high-converting marketing material and make sure that we’re always following cutting-edge marketing trends. All our creative is available in multiple languages and getting started is easy – our affiliate portal has everything you need right in one place.<br />
+                    {/* Section Description */}
+                    <h6 className="lh-base px-lg-3 mx-lg-2 text-start">
+                        We take pride in having proven high-converting marketing material and make sure that we’re always following cutting-edge marketing trends. All our creative is available in multiple languages and getting started is easy – our affiliate portal has everything you need right in one place.
+                        <br />
+                        Our team is available to assist you in finding or promoting the right resources for your needs, so you can focus on growth and start building your business using the same resources we used to build the BlackBull Markets brand.
+                    </h6>
 
-                        Our team is available to assist you in finding or promoting the right resources for your needs, so you can focus on growth and start building your business using the same resources we used to build the BlackBull Markets brand.</h6>
-                    <div className="row g-4 my-2 mx-lg-5 px-lg-5">
+                    <div className="row g-4 my-2 justify-content-center">
                         {resources.map((item, index) => (
-                            <div key={index} className="col-12 col-md-6 col-lg-6">
-                                <div className="card  shadow-sm p-4 lh-lg">
+                            <div key={index} className="col-12 col-md-6 col-lg-4 d-flex">
+                                <div className="card shadow-sm p-4 lh-lg w-100 d-flex flex-column">
                                     {/* Top Icons */}
                                     <div className="d-flex justify-content-between gap-2 mb-3 text-heading">
-
-                                        <i key={item.icon} className={`bi ${item.icon} fs-2`}></i>
-                                        <i className='bi bi-arrow-up-right-circle fs-2'></i>
-
+                                        <i className={`bi ${item.icon} fs-2`}></i>
+                                        <i className="bi bi-arrow-up-right-circle fs-2"></i>
                                     </div>
 
                                     {/* Title */}
-                                    <h5 className="card-title text-heading-emphasis fw-bold mb-2">{item.title}</h5>
+                                    <h5 className="card-title text-heading-emphasis fw-bold mb-2 text-start">
+                                        {item.title}
+                                    </h5>
 
                                     {/* Content */}
-                                    <p className="card-text">{item.content}</p>
+                                    <p className="card-text text-start flex-grow-1">
+                                        {item.content}
+                                    </p>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
+
+
         </div>
     )
 }

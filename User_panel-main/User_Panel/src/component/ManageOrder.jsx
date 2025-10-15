@@ -15,7 +15,7 @@ function ManageOrder() {
             </h2>
 
             {/* Navigation + Filters */}
-            <div className="row align-items-center g-2 mb-4 py-md-5 py-lg-5">
+            <div className="row align-items-center g-2 mb-4 py-md-3 py-lg-3">
                 {/* Tabs Section */}
                 <div className="col-12 col-md-6 ">
                     <div className="d-flex flex-wrap justify-content-start justify-content-md-start gap-2 gap-sm-3">
