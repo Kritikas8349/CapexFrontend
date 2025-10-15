@@ -25,7 +25,7 @@ function WithdrawHistory() {
                         <div class="input-group w-50 ">
                             <input type="text" class="form-control bg-transparent border-dark text-dark custom-placeholder" placeholder="Search by transactions" aria-label="Recipient’s username with two button addons" />
 
-                            <button class="btn btn-outline-dark bi bi-search" type="button"></button>
+                            <button class="btn btn-outline-dark bi bi-search p-0 px-1" type="button"></button>
                         </div>
 
 

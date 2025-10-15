@@ -29,7 +29,7 @@ const Sidebar = () => {
         <ul className="sidebar-menu">
           <li>
             <FaTachometerAlt className="icon" />
-            <Link to="/dashboard" className="text-decoration-none">Dashboard</Link>
+            <Link to="/userdashboard" className="text-decoration-none">Dashboard</Link>
           </li>
           <li>
             <MdOutlineManageAccounts className="icon" />
@@ -58,6 +58,10 @@ const Sidebar = () => {
           <li>
             <BiTransfer className="icon" />
             <Link to="/get-support" className="text-decoration-none">Get Support</Link>
+          </li>
+          <li>
+            <BiTransfer className="icon" />
+            <Link to="/security" className="text-decoration-none">Security</Link>
           </li>
         </ul>
       </div>

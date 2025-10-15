@@ -160,7 +160,10 @@ import NewZealand from "./component/Research/NewZealand";
 import USA from "./component/Research/USA";
 import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";
 
+// import Dashboard from "./Component/Dashboard";
+// import Dashboard from "../../User_Panel/src/Component/Dashboard";
 
+// import Dashboard from "../User_panel-main/User_Panel/src/Component/Dashboard";
 
 
 function Layout({ children }) {
@@ -285,113 +288,14 @@ function App() {
 
 
 
-            {/* kritika */}
-
-            <Route path="/about/about-us" element={<QuickStart />} />
-            <Route path="/about/awards" element={<About2 />} />
-            <Route path="/about/news" element={<NewsSection />} />
-            <Route path="/about/comparison" element={<QuickStart4 />} />
-            <Route path="/about/compliance" element={<Compliance />} />
-            <Route path="/about/security-funds" element={<SecurityFunds />} />
-
-
-            <Route path="/support/getting-started" element={<GettingStarted />} />
-            <Route path="/support/getting-started/create-account" element={<AccountCreate />} />
-            <Route path="/support/getting-started/verify-account" element={<VerifyAccount />} />
-            <Route path="/support/getting-started/fund-account" element={<FundAccount />} />
-            <Route path="/support/getting-started/link-platform" element={<ConnectTrading />} />
-            <Route path="/support/getting-started/first-trade" element={<FirstTrade />} />
-
-            <Route path="/support/account-support" element={<AccountSupport />} />
-            <Route path="/support/platform-support" element={<PlatformSupport />} />
-            <Route path="/support/" element={<PlatformSupport />} />
-            <Route path="/support/platformsupport" element={<PlatformSupport />} />
-            <Route path="/support/platform/secure-client" element={<SecureClientArea></SecureClientArea>}></Route>
-            <Route path="/support/platform/tradingview" element={<TradingViewFAQs></TradingViewFAQs>}></Route>
-            <Route path="/support/platform/ctrade" element={<CTraderFAQs></CTraderFAQs>}></Route>
-            <Route path="/support/platform/mt4" element={<MetaTrader4FAQs></MetaTrader4FAQs>}></Route>
-            <Route path="/support/platform/mt5" element={<MetaTrader5FAQs></MetaTrader5FAQs>}></Route>
-            <Route path="/support/platform/invest/open-share-account" element={<BlackBullInvestFAQs></BlackBullInvestFAQs>}></Route>
-            <Route path="/support/market-support" element={<MarketSupport />} />
-            <Route path="/support/market" element={<MarketSupport />} />
-            <Route path="/support/market/trading-hours" element={<TradingHourChange></TradingHourChange>}></Route>
-            <Route path="/support/market/trading-conditions" element={<TradingConditions></TradingConditions>}></Route>
-            <Route path="/support/market/contract-expiries" element={<ContractExpiries></ContractExpiries>}></Route>
-            <Route path="/support/market/contract-specs" element={<ContractSpecifications></ContractSpecifications>}></Route>
-            <Route path="/support/economic-calendar" element={<EconomicCalendar />} />
-            <Route path="/support/contact-support" element={<ContactSupport />} />
-
-
-            <Route path="/platforms/tradingtools/vpstrading" element={<VPStrading />} />
-            <Route path="/platforms/tradingtools/fixAPItrading" element={<FixAPI />} />
-            <Route path="/platforms/tradingtools/zulutrade" element={<ZuluTrade />} />
-            <Route path="/platforms/tradingtools/myfxbook" element={<Myfxbook />} />
-
-
-            <Route path="/education/shares/beginner" element={<BeginnerShare />} />
-            <Route path="/education/shares/intermediate" element={<Intermediate />} />
-            <Route path="/education/shares/advanced" element={<AdvShare />} />
-
-
-            <Route path="/support/platform/open-share-account" element={<InvestAccount />} />
-            <Route path="/support/platform/invest/fund-share-account" element={<FundInvest />} />
-            <Route path="/support/platform/invest/install-login" element={<InstallMarkettrad />} />
-            <Route path="/support/platform/invest/currency-conversion" element={<ChangeCurrency />} />
-            <Route path="/" element={<PersonalHome />} />
-
-
-            {/*------------------------------------------------- //PARTNER//------------------------------------ */}
-
-            {/*----------- //Affiliate------- */}
-
-            <Route path="/partners" element={<PartnerHome />} />
-            <Route path="/affiliates/overview" element={<AffiliateOverview />} />
-            <Route path="/affiliates/support" element={<AffiliateSupport />} />
-            <Route path="/affiliates/cpa/payment-structure" element={<Cpapaymentstructure />} />
-            <Route path="/affiliates/cpa/multi-step" element={<Multistep_payment />} />
-            <Route path="/affiliates/cpa/partner-tiers" element={<PartnerTier />} />
-            <Route path="/affiliates/sub-affiliates" element={<Subaffiliate />} />
-            <Route path="/affiliates/example-review" element={<ExampleReview />} />
-            <Route path="/affiliates/affiliate-support" element={<AffiliateSupport />} />
-
-            {/* ------------IB programm ----------------*/}
-
-            <Route path="/ib-program/overview" element={<IBOverview />} />
-            <Route path="/ib-program/broker-models/regional-reps" element={<RegionalRepresentatives />} />
-            <Route path="/ib-program/marketing-materials" element={<MarketingMaterials />} />
-            {/* <Route path="/ib-program/marketing-materials" element={<MarketingMaterials />} /> */}
-
-            {/*------------------ About-------------------- */}
-
-            <Route path="/partner-about/us" element={<AboutUs />} />
-            <Route path="/partner-about/compliance" element={<ComplianceP />} />
-            <Route path="/partner-about/blog" element={<BlogPartner />} />
-
-            <Route path="/partner-about/legal-hub/partner-terms" element={<Partnerterms />} />
-            <Route path="/partner-about/legal/verifications-payments" element={<VerificationPayments />} />
-            <Route path="/partner-about/legal/compliance" element={<ComplianceP />} />
-
-
-
-
-            {/* /* ----------===== Support =====------------ */}
-
-            <Route path="/partner/support/affiliates" element={<Support1 />} />
-            <Route path="/partner/support/ibs" element={<Support2 />} />
-            <Route path="/partner/support/brand-guidelines" element={<Support3 />} />
-            {/* <Route path="/support/brand-guidelines" element={<Support3 />} /> */}
-
-
-
-            {/*---------------------------------------------------- Research--------------------------------------------- */}
-
-            <Route path="/Research" element={<ResearchHome />} />
-            <Route path="/research/daily-news" element={<DailyNews />}></Route>
-            {/* <Route path="/research/equity-research" element={<EquityResearch />}></Route> */}
-            <Route path="/research/equity-research/australia" element={<Australia />}></Route>
-            <Route path="/research/equity-research/new-zealand" element={<NewZealand />}></Route>
-            <Route path="/research/equity-research/usa" element={<USA />}></Route>
-            <Route path="/research/technical-analysis" element={<TechnicalAnalysis />}></Route>
+         <Route path="/Research" element={<ResearchHome />} />
+         <Route path="/research/daily-news" element={<DailyNews />}></Route>
+          {/* <Route path="/research/equity-research" element={<EquityResearch />}></Route> */}
+          <Route path="/research/equity-research/australia" element={<Australia />}></Route>
+          <Route path="/research/equity-research/new-zealand" element={<NewZealand/>}></Route>
+          <Route path="/research/equity-research/usa" element={<USA/>}></Route>
+          <Route path="/research/technical-analysis" element={<TechnicalAnalysis/>}></Route>
+{/* <Route path="/userdashboard" element={<Dashboard />} /> */}
 
 
 

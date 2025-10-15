@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function OpenTicket() {
     const [showfile, setShowFile]= useState(false)
@@ -63,7 +63,7 @@ function OpenTicket() {
                     <button className='btn btn-nav ' onClick={() => setShowFile(true)}> + Attachment</button>
                 </div> 
                 <div className="">
-                    <button className='btn btn-nav' > Submit</button>
+                    <Link to="/reply-ticket" className='btn btn-nav' > Submit</Link>
 
                 </div> 
                 </div> 
