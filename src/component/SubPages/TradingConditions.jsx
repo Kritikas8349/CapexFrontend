@@ -19,7 +19,7 @@ function TradingConditions() {
 
 
   return (
-    <div className='container-fluid py-4 py-lg-5 py-md-5 pt-5  bg-faq'>
+    <div className='container-fluid py-4 py-lg-5 py-md-5 pt-5 min-vh-100  bg-faq'>
       <div className='container align-items-start'>
         {/* <div className="d-flex"><span>Home &nbsp;</span>/&nbsp;<span>support&nbsp;</span>/&nbsp;<span>platform-support&nbsp;</span>/&nbsp;<span>secure client area</span></div> */}
         <div className=''>

@@ -104,8 +104,8 @@ function CopyTrader() {
 
 
             {/* ---------How to Copy Trade---------   */}
-            <div className="container-fluid bg-home align-content-center border py-lg-5 my-3" >
-                <div className="container py-lg-5">
+            <div className="container-fluid bg-home align-content-center border py-0 py-lg-5 py-md-5 my-3" >
+                <div className="container py-0 py-lg-5 py-md-5">
                     <h1 className='text-start display-4 fw-bold'><span className='text-heading'>Key features of</span> BlackBull CopyTrader</h1>
                     <div className="row align-items-center  py-5 border-primary rounded p-4">
                         {/* Left Section */}
@@ -132,7 +132,7 @@ function CopyTrader() {
                 </div>
             </div>
             {/* -----Award-winning Platform----------     */}
-            <div className="container-fluid bg-home border py-5">
+            <div className="container-fluid bg-home border py-2 py-lg-5 py-md-5">
                 <div className="container">
                     {/* Content Row */}
                     <div className="row align-items-center border-primary rounded p-4">
@@ -143,7 +143,7 @@ function CopyTrader() {
                         </div>
 
                         {/* Right Section (Text + Icons) */}
-                        <div className="col-12 col-lg-8 text-strat text-lg-start">
+                        <div className="col-12 col-lg-8 text-start text-lg-start">
                             {/* Title */}
                             <h1 className="fw-bolder text-heading-emphasis mb-4">
                                 Award-winning Platform
@@ -177,7 +177,7 @@ function CopyTrader() {
                 </div>
             </div>
             {/* -----------Why Join Market Trad------------ */}
-            <div className="container-fluid gradient-bg px-5 mt-2">
+            <div className="container-fluid gradient-bg px-2 px-lg-5 px-md-5 mt-2">
                 <div className="row g-0 align-items-center">
 
                     {/* LEFT: Gradient Background + Text */}
@@ -208,7 +208,7 @@ function CopyTrader() {
 
 
             {/* -------Copy only the best--------- */}
-            <div className="container-fluid px-0 gradient-bg px-5 mt-2">
+            <div className="container-fluid px-0 gradient-bg px-2 px-lg-5 px-md-5 mt-2">
                 <div className="row g-0 align-items-center">
                     {/* LEFT: Gradient Background + Text */}
                     <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center p-4">
@@ -242,7 +242,7 @@ function CopyTrader() {
                 <div className="row g-0 align-items-center">
 
                     {/* LEFT: Gradient Background + Text */}
-                    <div className="col-lg-6 col-md-12 text-white p-5 text-start">
+                    <div className="col-lg-6 col-md-12 text-white px-3 p-lg-5 p-md-5 text-start">
                         <h1 className="fw-bold display-5 mb-4">Why Join BlackBull CopyTrader?</h1>
                         <p className="lead">
                             If you want to copy elite traders with a verified track record of trading, then BlackBull CopyTrader is for you!
@@ -269,17 +269,17 @@ function CopyTrader() {
 
 
             {/* -----How to Start-------     */}
-            <div className="container-fluid py-5">
-                <div className="container text-center">
+            <div className="container-fluid py-2 py-lg-3 py-md-5">
+                <div className="container text-start">
                     <h1 className="text-heading-emphasis fw-bold">How to get started?</h1>
-                    <p className='mt-5 fs-5'>Before Joining BlackBull CopyTrader, you will need a BlackBull Markets account. Sign up in less than 5 minutes to get started.</p>
+                    <p className='mt-2 fs-5'>Before Joining BlackBull CopyTrader, you will need a BlackBull Markets account. Sign up in less than 5 minutes to get started.</p>
                 </div>
             </div>
 
             {/* ------Step1 --------------- */}
 
 
-            <div className="container-fluid py-5 bg-home">
+            <div className="container-fluid py-2 py-lg-3 py-md-5 bg-home">
                 <div className="container">
                     <div className="row align-items-center">
 
@@ -307,8 +307,8 @@ function CopyTrader() {
 
             {/* ----------Step 2--------      */}
 
-            <div className="container-fluid py-5 ">
-                <div className="container py-5">
+            <div className="container-fluid py-2 py-lg-5 py-md-5 ">
+                <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center">
 
                         {/* Image - Left on desktop, top on mobile */}
@@ -364,8 +364,8 @@ function CopyTrader() {
             {/* ----FAQ'S--------------- */}
 
 
-            <div className="container-fluid bg-black text-white py-5 ">
-                <div class="container my-5 bg-black text-white p-4 rounded">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
+                <div class="container my-5 bg-black text-white p-2 p-lg-5 p-md-5 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 
                     <div class="accordion accordion-flush" id="faqAccordion">

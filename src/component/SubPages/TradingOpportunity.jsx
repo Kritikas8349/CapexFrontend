@@ -4,7 +4,7 @@ function TradingOpportunity() {
     return (
         <div className='bg-faq  pt-5'>
             <div className="m1-t-container mt-5 pt-5 ">
-                <h1 className="m1-t-heading mb-5 pb-4 ">Trading Opportunities</h1>
+                <h1 className="m1-t-heading  text-start mb-5 pb-4 ">Trading Opportunities</h1>
                 <div className="m1-t-card-container text-start">
                     {[1, 2, 3, 4].map(i => (
                         <div className="m1-t-card" key={i}>

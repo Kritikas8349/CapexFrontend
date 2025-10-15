@@ -96,8 +96,8 @@ function MetaTrader4() {
             </div>
             {/* ----------- WHy choose CTrader ----------- */}
 
-            <div className="container-fluid bg-home text-black py-5">
-                <div className="container py-5">
+            <div className="container-fluid bg-home text-black py-2 py-lg-5 py-md-5">
+                <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center  g-5">
 
                         {/* Left Section */}
@@ -187,8 +187,8 @@ function MetaTrader4() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-5">
-                <div className="container rounded-4 p-3 py-5">
+            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5">
+                <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
                     <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
@@ -304,8 +304,8 @@ function MetaTrader4() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-5 my-1">
-                <div className="container rounded-4 p-3 py-5">
+            <div className="container-fluid bg-home py-3 py-lg-5 py-md-5 my-1">
+                <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
@@ -390,7 +390,7 @@ function MetaTrader4() {
 
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-5">
+            <div className="container-fluid bg-dark text-white py-2 py-lg-5 py-md-5">
                 <div className="container">
                     <div className="row align-items-center  g-5">
 
@@ -449,7 +449,7 @@ function MetaTrader4() {
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid bg-black text-white py-5 trading-view">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 trading-view">
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -526,7 +526,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-5 ">
+            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
                 <div class="container my-5 bg-black text-white p-4 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 

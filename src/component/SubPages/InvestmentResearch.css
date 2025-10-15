@@ -8,11 +8,15 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
+
+
+
 .bg-free-trial{
     background:linear-gradient(to right,#493FFD,#000000) ;
 }
 .btn-bg-start{
     background-color: #493FFD !important;
+    /* border-radius: 100% !important; */
 }
 .btn-bg-start:hover {
   background-color: #423cb7 !important;

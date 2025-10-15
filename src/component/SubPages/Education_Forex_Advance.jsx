@@ -36,7 +36,7 @@ function Education_Forex_Advance() {
                 <div className="tutorial-grid">
                     {/* Left Section: Lesson 1 */}  
                     <div className="left-section">
-                        <div className="lesson1-image" style={{ backgroundImage: 'url(a1.png)' }}>
+                        <div className="lesson1-image" style={{ backgroundImage: 'url(/a1.png)' }}>
                             <div className="lesson1-title"></div>
                         </div>
                         <div className="lesson1-text">
@@ -51,7 +51,7 @@ function Education_Forex_Advance() {
                     {/* Right Section: Lesson 2-4 */}
                     <div className="right-section">
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(a2.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/a2.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -64,7 +64,7 @@ function Education_Forex_Advance() {
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(a3.webp)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/a3.webp)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -77,7 +77,7 @@ function Education_Forex_Advance() {
                         </div>
 
                         <div className="lesson-card">
-                            <div className="lesson-card-image" style={{ backgroundImage: 'url(a4.png)' }}>
+                            <div className="lesson-card-image" style={{ backgroundImage: 'url(/a4.png)' }}>
                                 <div className="lesson-card-overlay"></div>
                             </div>
                             <div className="lesson-card-text">
@@ -97,7 +97,7 @@ function Education_Forex_Advance() {
             <div className="card-bottom-grid">
                 {/* Lesson 5 */}
                 <div className="card-bottom">
-                    <div className="card-bottom-image" style={{ backgroundImage: "url('a5.webp')" }}>
+                    <div className="card-bottom-image" style={{ backgroundImage: "url(/'a5.webp')" }}>
 
                     </div>
                     <div className="card-bottom-title">Forex 303: Lesson 5 of 5</div>

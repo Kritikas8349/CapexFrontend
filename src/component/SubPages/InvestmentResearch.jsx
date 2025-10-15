@@ -4,16 +4,7 @@ import { Link } from 'react-router-dom';
 
 function InvestmentResearch() {
     //   ------- Daily News Data--------
-    const scrollRef = useRef(null);
 
-    const scroll = (direction) => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({
-                left: direction === "left" ? -300 : 300,
-                behavior: "smooth",
-            });
-        }
-    };
 
     const cardsData = [
         {
@@ -68,7 +59,7 @@ function InvestmentResearch() {
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5 text-white">
                                 Daily Expert{" "}
-                                <span className="text-white"></span>    
+                                <span className="text-white"></span>
                                 <br />
                                 Stock Research
                             </h1>
@@ -95,8 +86,8 @@ function InvestmentResearch() {
             </div>
 
             {/* -----Start Free Trial -----------      */}
-            <div className="container-fluid py-5">
-                <div className="container py-5">
+            <div className="container-fluid py-2 py-lg-5 py-md-5">
+                <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center text-start text-white p-5 text-lg-start bg-free-trial rounded rounded-4">
 
                         {/* Left Content */}
@@ -123,59 +114,60 @@ function InvestmentResearch() {
 
             {/* --------Daily News ---------- */}
 
-            <div className="container-fluid  py-5 bg-home">
+            <div className="container-fluid  py-2 py-lg-5 py-md-5 bg-home">
                 <div className="container ">
                     {/* Section Header */}
-                    <div className="text-center mb-4">
+                    <div className="text-start text-lg-center text-md-center mb-4">
                         <h1 className="fw-bold text-heading  display-3">Daily News</h1>
                         <p className="text-muted">
                             Never miss an opportunity with high-impact economic event coverage,
-                            expert commentary,<br/> videos, and more from our global market analysts,{" "}
+                            expert commentary,<br /> videos, and more from our global market analysts,{" "}
                             <a href="#">view more</a>.
                         </p>
                     </div>
 
                     {/* Cards Wrapper */}
-                    <div className="position-relative">
-                        <div
-                            className="d-flex overflow-auto px-2"
-                            style={{ scrollBehavior: "smooth" }}
-                            ref={scrollRef}
-                        >
+                    <div className="container-fluid py-4">
+                        <div className="row justify-content-center g-3">
                             {cardsData.map((card) => (
                                 <div
                                     key={card.id}
-                                    className=" shadow-sm mb-4 mx-2 custom-card"
-                                    style={{ minWidth: "300px", maxWidth: "300px" }}
+                                    className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
                                 >
-                                    <img
-                                        src={card.img}
-                                        className="card-img-top"
-                                        alt={card.title}
-                                        style={{ height: "200px", objectFit: "cover" }}
-                                    />
-                                    <div className="p-3">
-                                        <h5 className="card-title fw-bold text-start text-heading">
-                                            {card.title}
-                                        </h5>
-                                        <p className="card-text text-start text-muted">{card.desc}</p>
-                                        <p className=" text-heading small text-start mb-0">{card.date}</p>
+                                    <div className="card shadow-sm p-1 bg-transparent h-100" style={{ borderRadius: "12px" }}>
+                                        <img
+                                            src={card.img}
+                                            className="card-img-top"
+                                            alt={card.title}
+                                            style={{
+                                                height: "200px",
+                                                objectFit: "cover",
+                                                borderTopLeftRadius: "12px",
+                                                borderTopRightRadius: "12px",
+                                            }}
+                                        />
+                                        <div className="card-body">
+                                            <h5 className="card-title fw-bold text-start text-heading">
+                                                {card.title}
+                                            </h5>
+                                            <p className="card-text text-start text-muted mb-2">{card.desc}</p>
+                                            <p className="text-heading small text-start mb-0">{card.date}</p>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
-
-                      
                     </div>
+
                 </div>
             </div>
             {/* --------Choose Your Plan ------------ */}
-            
-            <div className="container-fluid  py-5 " >
+
+            <div className="container-fluid  py-2 py-lg-5 py-md-5 " >
                 <div className="container text-center">
                     {/* Heading */}
-                    <h2 className="fw-bold text-heading display-6">Choose Your Plan</h2>
-                    <p className=" text-muted mb-5">
+                    <h2 className="fw-bold text-heading text-start display-6">Choose Your Plan</h2>
+                    <p className=" text-muted text-start mb-5">
                         <i className="bi bi-lock-fill  me-2"></i>
                         Access market intelligence tailored for serious investors. Choose a plan that fits your needs—whether you’re looking for timely insights, in-depth analysis, or custom research solutions backed by real expertise, view more.
                     </p>
