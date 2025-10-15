@@ -1,338 +1,259 @@
+/* ===== GLOBAL ===== */
 body,
 html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
+/* ===== MAIN CONTAINER ===== */
 #Main7 {
     width: 100%;
     min-height: 300px;
 }
 
+/* ===== NEWS SECTION ===== */
+/* ===== NEWS SECTION ===== */
 .R-news-section {
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    background-image: url('trd.jpg');
-    /* 👈 Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  height: clamp(20vh, 35vh, 40vh); /* responsive height */
+  background-image: url('trd.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
 .R-overlay {
-    /* background-color: rgba(0, 0, 0, 0.5); dark overlay for readability */
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: start;
-    color: white;
-    width: 75%;
+  padding: clamp(1rem, 3vw, 2rem); /* responsive padding */
+  border-radius: 10px;
+  text-align: start;
+  color: white;
+  width: clamp(80%, 90%, 95%); /* responsive width */
+  max-width: 800px;
 }
 
 .R1-news {
-    font-size: 80px;
+  font-size: clamp(2rem, 6vw, 5rem); /* responsive heading */
+  margin: 0;
+  line-height: 1.1;
 }
 
 .R-news-des {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-top: 10px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem); /* responsive description */
+  line-height: 1.6;
+  margin-top: 1rem;
 }
 
-/* StockRecommendations.css */
-/* .stock-section {
+/* ===== MEDIA QUERY ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .R-news-section {
+      height: clamp(20vh, 25vh, 30vh);
+  }
+
+  .R-overlay {
+      width: 95%;
+      padding: 1rem;
+  }
+
+  .R1-news {
+      font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+
+  .R-news-des {
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .R-news-section {
+      height: clamp(15vh, 20vh, 25vh);
+  }
+
+  .R1-news {
+      font-size: clamp(1.2rem, 10vw, 2rem);
+  }
+
+  .R-news-des {
+      font-size: clamp(0.7rem, 3vw, 0.9rem);
+  }
+}
+
+
+/* ===== STOCK GRID CONTAINER ===== */
+.stock-grid-unique-container {
     padding: 2rem 1rem;
-    max-width: 1200px;
+    max-width: 1100px;
+    text-align: start;
     margin: auto;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
-.stock-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: center;
-    color: #0052ff;
-    margin-bottom: 2rem;
-}
-
-.table-wrapper {
-    overflow-x: auto;
-}
-
-.stock-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 700px;
-}
-
-.stock-table th,
-.stock-table td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid #eee;
-    vertical-align: middle;
-}
-
-.stock-table th {
-    font-weight: bold;
-    color: #000;
-}
-.stock-table #left{
-    padding-left: 80px;
-}
-
-.stock-info {
-    display: flex;
-    align-items: center;
+.stock-grid-unique-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* fully responsive */
     gap: 1rem;
 }
 
-.stock-logo {
+/* ===== STOCK CARD ===== */
+.stock-grid-unique-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* wrap on small screens */
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.stock-grid-unique-card:hover {
+    transform: translateY(-2px);
+}
+
+.stock-grid-unique-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 auto;
+}
+
+.stock-grid-unique-logo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: contain;
-    background: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
-.ticker {
+.stock-grid-unique-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.stock-grid-unique-ticker {
     font-weight: 600;
-    font-size: 1rem;
+    color: #000;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
 }
 
-.name {
-    font-size: 0.9rem;
-    color: #555;
+.stock-grid-unique-name {
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    color: #666;
 }
 
-.recommendation {
+/* ===== RIGHT SIDE OF CARD ===== */
+.stock-grid-unique-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.stock-grid-unique-price {
     font-weight: 500;
+    color: #000;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
-.recommendation.buy {
-    color: #007bff;
-}
-
-.overview-btn {
+.stock-grid-unique-btn {
     background-color: #003d99;
     color: white;
     border: none;
-    padding: 10px 18px;
+    padding: clamp(6px, 1vw, 10px) clamp(10px, 2vw, 14px);
     border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.stock-grid-unique-btn:hover {
+    background-color: #002f80;
+    transform: scale(1.03);
+}
+
+/* ===== LOAD MORE ===== */
+.stock-grid-unique-loadmore {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.stock-grid-unique-loadmore-btn {
+    background-color: #003d99;
+    color: white;
+    padding: clamp(10px, 1.5vw, 12px) clamp(20px, 3vw, 28px);
+    border: none;
+    border-radius: 6px;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.overview-btn:hover {
+.stock-grid-unique-loadmore-btn:hover {
     background-color: #002f80;
 }
 
-.footer-note {
-    margin-top: 2rem;
+/* ===== FOOTER NOTE ===== */
+.footer-note2 {
+    margin: 2rem 0 3rem 0;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     color: #0052ff;
     font-weight: 600;
-} */
+}
 
-/* Responsive */
-/* @media (max-width: 768px) {
-    .stock-title {
-        font-size: 1.2rem;
-        padding: 0 1rem;
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 1024px) {
+    .stock-grid-unique-grid {
+        grid-template-columns: 1fr;
     }
 
-    .stock-table th,
-    .stock-table td {
-        padding: 0.75rem 0.5rem;
+    .stock-grid-unique-right {
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .R-news-section {
+        height: 30vh;
     }
 
-    .overview-btn {
-        padding: 8px 14px;
-        font-size: 0.9rem;
-    }
-
-    .stock-logo {
-        width: 32px;
-        height: 32px;
-    }
-
-    .ticker {
-        font-size: 0.95rem;
-    }
-
-    .name {
-        font-size: 0.8rem;
+    .R-overlay {
+        width: 95%;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-    .stock-section {
-        padding: 1rem 0.5rem;
+    .stock-grid-unique-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
 
-    .stock-title {
-        font-size: 1rem;
+    .stock-grid-unique-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .overview-btn {
-        padding: 6px 12px;
+    .stock-grid-unique-btn {
+        padding: 5px 10px;
         font-size: 0.85rem;
     }
 
-    .stock-logo {
-        width: 28px;
-        height: 28px;
+    .stock-grid-unique-loadmore-btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
     }
-} */
-
-/* StockListGridUnique.css */
-.stock-grid-unique-container {
-  padding: 2rem 1rem;
-  max-width: 1100px;
-  text-align: start;
-  margin: auto;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-}
-
-.stock-grid-unique-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.stock-grid-unique-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid #e0e0e0;
-  background-color: #fff;
-  border-radius: 6px;
-}
-
-.stock-grid-unique-left {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-note2 {
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #0052ff;
-    font-weight: 600;
-}
-.stock-grid-unique-logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: contain;
-  background-color: #f5f5f5;
-}
-
-.stock-grid-unique-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.stock-grid-unique-ticker {
-  font-weight: 600;
-  color: #000;
-}
-
-.stock-grid-unique-name {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-.stock-grid-unique-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
-}
-
-.stock-grid-unique-price {
-  font-weight: 500;
-  color: #000;
-}
-
-.stock-grid-unique-btn {
-  background-color: #003d99;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.stock-grid-unique-btn:hover {
-  background-color: #002f80;
-}
-
-.stock-grid-unique-loadmore {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.stock-grid-unique-loadmore-btn {
-  background-color: #003d99;
-  color: white;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.stock-grid-unique-loadmore-btn:hover {
-  background-color: #002f80;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .stock-grid-unique-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stock-grid-unique-right {
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 480px) {
-  .stock-grid-unique-card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .stock-grid-unique-right {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .stock-grid-unique-btn {
-    padding: 6px 12px;
-    font-size: 0.9rem;
-  }
-
-  .stock-grid-unique-loadmore-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
 }

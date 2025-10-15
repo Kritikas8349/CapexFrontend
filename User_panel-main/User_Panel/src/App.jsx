@@ -41,7 +41,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/userdashboard" element={<Dashboard />} />
           <Route path="/profile" element={<ProfileSetting />} />
           <Route path="/manage-order" element={<ManageOrder />} />
           <Route path="/trade" element={<TradePage />} />

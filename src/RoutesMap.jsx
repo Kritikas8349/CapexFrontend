@@ -146,7 +146,7 @@ export const routesMap = {
 
 // Top-level menu items
 "Daily News": "/research/daily-news",
-"Equity Research": "/research/equity-research",
+// "Equity Research": "/research/equity-research",
 "Technical Analysis": "/research/technical-analysis",
 
 // Sub-items under Equity Research

@@ -178,14 +178,28 @@ function ResearchNavbar() {
             <img src="/Frame 1.png" alt="Logo" className="navbar-logo" />
           </div>
           <div className="navbar-center">
-            <ul className="nav-links">
-              {Object.keys(dropdowns).map((menu) => (
-                <li key={menu} className="dropdown">
-                  {menu} <FiChevronDown className="dropdown-icon" />
-                  {renderDropdown(dropdowns[menu])}
-                </li>
-              ))}
-            </ul>
+          <ul className="nav-links">
+  {Object.keys(dropdowns).map((menu) => (
+    <li key={menu} className="dropdown">
+    {routesMap[menu] ? (
+      <Link to={routesMap[menu]} className="nav-link">
+        {menu}
+      </Link>
+    ) : (
+      <span className="nav-link">{menu}</span>
+    )}
+  
+    {/* Show dropdown arrow if there are sub-items */}
+    {dropdowns[menu].length > 0 && <FiChevronDown className="dropdown-icon" />}
+  
+    {/* Render dropdown items */}
+    {dropdowns[menu].length > 0 && renderDropdown(dropdowns[menu])}
+  </li>
+  
+  ))}
+</ul>
+
+
           </div>
           <div className="navbar-right">
             <a href="#" className="refer-link">
@@ -208,14 +222,26 @@ function ResearchNavbar() {
   </div>
 
   <ul className="res-overlay-links">
-    {Object.keys(dropdowns).map((menu) => (
-      <li key={menu} className={`res-has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
-        <div className="res-submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
-          {menu} <FiChevronRight className="res-dropdown-icon" />
-        </div>
-        {mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
-      </li>
-    ))}
+  {Object.keys(dropdowns).map((menu) => (
+  <li key={menu} className={`res-has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
+    {dropdowns[menu].length > 0 ? (
+      <div className="res-submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
+        {menu} <FiChevronRight className="res-dropdown-icon" />
+      </div>
+    ) : (
+      <Link
+        to={routesMap[menu] || "#"}
+        onClick={() => setMenuOpen(false)}
+        className="res-submenu-header"
+      >
+        {menu}
+      </Link>
+    )}
+
+    {dropdowns[menu].length > 0 && mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
+  </li>
+))}
+
 
     <li>
       <a href="#" className="res-refer-link">Refer a friends</a>

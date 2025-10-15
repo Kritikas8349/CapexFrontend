@@ -316,34 +316,47 @@
   <div className="close-btn" onClick={() => setMenuOpen(false)}>✖</div>
 
   <ul className="overlay-links">
-    {Object.keys(dropdowns).map((menu) => (
+  {Object.keys(dropdowns).map((menu) => {
+    const hasSubmenu = dropdowns[menu] && dropdowns[menu].length > 0;
+
+    return (
       <li key={menu} className={`has-submenu ${mobileOpenMenus[menu] ? "open" : ""}`}>
-        <div className="submenu-header" onClick={() => toggleMobileSubMenu(menu)}>
-          {menu} <FiChevronRight className="dropdown-icon" />
-        </div>
-        {dropdowns[menu] && mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
+        {/* Make parent clickable if it has a route */}
+        {routesMap[menu] ? (
+          <Link
+            to={routesMap[menu]}
+            className="submenu-header"
+            onClick={() => setMenuOpen(false)}
+          >
+            {menu} {hasSubmenu && <FiChevronRight className="dropdown-icon" />}
+          </Link>
+        ) : (
+          <div className="submenu-header" onClick={() => hasSubmenu && toggleMobileSubMenu(menu)}>
+            {menu} {hasSubmenu && <FiChevronRight className="dropdown-icon" />}
+          </div>
+        )}
+
+        {hasSubmenu && mobileOpenMenus[menu] && renderOverlayMenuRecursive(dropdowns[menu], menu)}
       </li>
-    ))}
+    );
+  })}
 
-    {/* 🔹 Login & Join buttons first */}
-    <li>
-      <Link to="/loginform" className="login-btn" onClick={() => setMenuOpen(false)}>
-        Log In
-      </Link>
-    </li>
-    <li>
-      <Link to="/create-account" className="join-bttn" onClick={() => setMenuOpen(false)}>
-        Join Now
-      </Link>
-    </li>
+  {/* Login & Join buttons */}
+  <li>
+    <Link to="/loginform" className="login-btn" onClick={() => setMenuOpen(false)}>Log In</Link>
+  </li>
+  <li>
+    <Link to="/create-account" className="join-bttn" onClick={() => setMenuOpen(false)}>Join Now</Link>
+  </li>
 
-    {/* 🔹 Personal, Partner, Research below buttons */}
-    <li className="overlay-bottom-row">
-      <Link to="/" onClick={() => setMenuOpen(false)}>Personal</Link>
-      <Link to="/partners" onClick={() => setMenuOpen(false)}>Partner</Link>
-      <Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link>
-    </li>
-  </ul>
+  {/* Personal / Partners / Research links */}
+  <li className="overlay-bottom-row">
+    <Link to="/" onClick={() => setMenuOpen(false)}>Personal</Link>
+    <Link to="/partners" onClick={() => setMenuOpen(false)}>Partner</Link>
+    <Link to="/research" onClick={() => setMenuOpen(false)}>Research</Link>
+  </li>
+</ul>
+
 </div>
 
 

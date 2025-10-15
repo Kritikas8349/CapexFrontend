@@ -24,7 +24,7 @@ const LoginForm1 = () => {
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
       // ✅ Redirect to dashboard after login
-      navigate("/dashboard");
+      navigate("/userdashboard");
     } catch (err) {
       console.error("Login error:", err.response || err);
       alert(err.response?.data?.message || err.message);

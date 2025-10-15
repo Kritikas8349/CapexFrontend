@@ -11,7 +11,6 @@ html {
   /* background-color: red; */
 
 }
-
 .landing-section3 {
   display: flex;
   margin: 10px;
@@ -19,22 +18,21 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 88vh;
-  padding-top: 40px;
   padding: 40px 20px;
-  /* background-image: url('https://via.placeholder.com/1200x800');  */
   background: linear-gradient(to bottom right, #000000, #493ffd);
-  /* margin-top: 30px; */
   color: #fff;
   background-size: cover;
   background-position: center;
+  flex-wrap: wrap;
 }
 
+/* LEFT SECTION */
 .left-section3 {
   width: 50%;
   color: white;
   text-align: left;
   padding-left: 20px;
-  margin-top:80px ;
+  margin-top: 80px;
 }
 
 .title3 {
@@ -49,124 +47,159 @@ html {
   color: gray;
 }
 
-.left-section3 form{
-  gap: 10px;
-}
-
+/* EMAIL FORM */
 .email-form31 {
   display: flex;
+  align-items: center;
   gap: 15px;
-  margin-right: 10px;
-  /* border: 1px solid black; */
-  padding: 5px;
-  width: 550px;
-
+  width: 100%;
+  max-width: 550px;
+  flex-wrap: wrap; /* ✅ stack when needed */
 }
 
 .email-input31 {
-  /* padding: 10px; */
+  flex: 1;
   font-size: 1rem;
-  border-radius: 5px;
-  border: none;
+  border-radius: 30px;
   border: 1px solid black;
-
+  padding: 12px 18px;
+  min-width: 200px;
+  box-sizing: border-box;
 }
 
 .join-btn3 {
   height: 50px;
-  margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   background-color: #493ffd;
   color: white;
   font-size: 1rem;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
-  /* min-width: 200px; */
+  border: none;
+  white-space: nowrap;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
 }
 
 .join-btn3:hover {
   background-color: #381bdc;
 }
 
+/* RIGHT SECTION */
 .right-section3 {
   width: 50%;
   display: flex;
-  height: 500px;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .phone-image3 {
-  max-width: 100%;
+  width: 90%;
+  max-width: 380px;
   height: auto;
   object-fit: contain;
-  max-width: 500px;
-  /* Ensures phone image is not too big */
+  transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
+.phone-image3:hover {
+  transform: scale(1.03);
+}
+
+/* ===================== TABLET ===================== */
 @media (max-width: 1024px) {
   .landing-section3 {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 40px 20px;
+    height: auto;
+    padding: 60px 20px;
   }
 
-  .left-section3,
-  .right-section3 {
+  .left-section3 {
     width: 100%;
+    margin-top: 40px;
+    padding-left: 0;
   }
 
-  .title3 {
-    font-size: 2.5rem;
-  }
-
-  .description3 {
-    font-size: 1rem;
-  }
-
-  .email-form3 {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .email-input3,
-  .join-btn3 {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 600px) {
-
-
-  .landing-section3 {
-    min-height: 70%;
-  }
-
-  .title3 {
-    font-size: 2.5rem;
-  }
-
-  .description3 {
-    font-size: 0.9rem;
+  .email-form31 {
+    justify-content: center;
+    max-width: 400px;
   }
 
   .email-input31 {
-    width: 300px;
+    width: 100%;
+  }
+
+  .join-btn3 {
+    width: 100%;
+    height: 50px;
+  }
+
+  .right-section3 {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .phone-image3 {
+    max-width: 380px;
+  }
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 600px) {
+  .landing-section3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 100px 15px;
+  }
+
+  .left-section3 {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .title3 {
+    font-size: 2rem;
+  }
+
+  .description3 {
+    font-size: 0.9rem;
+  }
+
+  .email-form31 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .email-input31 {
+    width: 90%;
     font-size: 0.9rem;
   }
 
   .join-btn3 {
-    width: 150px;
+    width: 90%;
     height: 45px;
     font-size: 0.9rem;
-    
+  }
+
+  .right-section3 {
+    width: 100%;
+    margin-top: 30px;
   }
 
   .phone-image3 {
+    width: 90%;
     max-width: 300px;
+    height: auto;
   }
 }
+
 
 .home-platforms-section-Q1-1 {
   /* margin: 10px 20px 0px 20px; */
