@@ -170,58 +170,70 @@
     }, [menuOpen]);
   
     const renderDropdown = (items) => (
-      <ul>
+      <ul className="dropdown-menu">
         {items.map((item, i) => {
+          // If item is a string
           if (typeof item === "string") {
             return (
               <li key={i}>
-                {routesMap[item] ? (
-                  <Link to={routesMap[item]} onClick={(e) => e.stopPropagation()} className="nav-link">
-                    {item}
-                  </Link>
-                ) : (
-                  <span className="nav-link">{item}</span>
-                )}
-                {dropdowns[item] && (
-                  <button
-                    className="dropdown-btn"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      toggleSubMenu(item);
-                    }}
-                  >
-                    {openMenus[item] ? <FiChevronUp /> : <FiChevronDown />}
-                  </button>
-                )}
-                {openMenus[item] && renderDropdown(dropdowns[item])}
+                <Link
+                  to={routesMap[item] || "#"}  // fallback to "#" if route missing
+                  className="nav-link"
+                >
+                  {item}
+                </Link>
               </li>
             );
           }
-  
+    
+          // If item has subItems
           return (
             <li key={i} className="has-submenu">
-              {routesMap[item.title] ? (
-                <Link to={routesMap[item.title]} onClick={(e) => e.stopPropagation()} className="nav-link">
-                  {item.title}
-                </Link>
-              ) : (
-                <span className="nav-link">{item.title}</span>
-              )}
-              <button
-                className="dropdown-btn"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  toggleSubMenu(item.title);
-                }}
+              <Link
+                to={routesMap[item.title] || "#"} // fallback
+                className="nav-link submenu-title"
+                onClick={(e) => e.preventDefault()} // prevent navigation if has submenu
               >
-                {openMenus[item.title] ? <FiChevronUp /> : <FiChevronDown />}
-              </button>
-              {item.subItems && openMenus[item.title] && renderDropdown(item.subItems)}
+                {item.title} <FiChevronDown className="dropdown-icon" />
+              </Link>
+    
+              {item.subItems && (
+                <ul className="dropdown-submenu">
+                  {item.subItems.map((subItem, j) => {
+                    if (typeof subItem === "string") {
+                      return (
+                        <li key={j}>
+                          <Link
+                            to={routesMap[subItem] || "#"}
+                            className="nav-link"
+                          >
+                            {subItem}
+                          </Link>
+                        </li>
+                      );
+                    }
+                    // nested sub-subItems
+                    return (
+                      <li key={j} className="has-submenu">
+                        <Link
+                          to={routesMap[subItem.title] || "#"}
+                          className="nav-link submenu-title"
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          {subItem.title} <FiChevronDown className="dropdown-icon" />
+                        </Link>
+                        {subItem.subItems && renderDropdown(subItem.subItems)}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </li>
           );
         })}
       </ul>
     );
+    
   
     const toggleMobileSubMenu = (key) => {
       setMobileOpenMenus((prev) => ({
@@ -235,31 +247,37 @@
     const renderOverlayMenuRecursive = (items, parentKey = "") => (
       <ul className="overlay-submenu">
         {items.map((item) => {
-          const key = typeof item === "string" ? getMenuKey(parentKey, item) : getMenuKey(parentKey, item.title);
+          const key = typeof item === "string" ? `${parentKey}-${item}` : `${parentKey}-${item.title}`;
+    
           if (typeof item === "string") {
             return (
               <li key={key}>
-                {routesMap[item] ? (
-                  <Link to={routesMap[item]} onClick={() => setMenuOpen(false)}>
-                    {item}
-                  </Link>
-                ) : (
-                  <span>{item}</span>
-                )}
+                <Link to={routesMap[item] || "#"} onClick={() => setMenuOpen(false)}>
+                  {item}
+                </Link>
               </li>
             );
           }
+    
           return (
             <li key={key} className={`has-submenu ${mobileOpenMenus[key] ? "open" : ""}`}>
-              <div className="submenu-header" onClick={() => toggleMobileSubMenu(key)}>
-                {item.title} <FiChevronRight className="dropdown-icon" />
+              <div
+                className="submenu-header"
+                onClick={() => item.subItems && toggleMobileSubMenu(key)}
+              >
+                <Link to={routesMap[item.title] || "#"} className="submenu-title">
+                  {item.title}
+                </Link>
+                {item.subItems && <FiChevronRight className="dropdown-icon" />}
               </div>
+    
               {item.subItems && mobileOpenMenus[key] && renderOverlayMenuRecursive(item.subItems, key)}
             </li>
           );
         })}
       </ul>
     );
+    
   
     return (
       <div id="nav_main_blue">
