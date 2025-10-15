@@ -59,6 +59,10 @@ const Sidebar = () => {
             <BiTransfer className="icon" />
             <Link to="/get-support" className="text-decoration-none">Get Support</Link>
           </li>
+          <li>
+            <BiTransfer className="icon" />
+            <Link to="/security" className="text-decoration-none">Security</Link>
+          </li>
         </ul>
       </div>
 

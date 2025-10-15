@@ -65,7 +65,7 @@ function TransactionHistory() {
 
                 {/* Filters Section */}
                 <div className="col">
-                    <button className='btn btn-primary bi bi-filter mt-4 w-100 fs-5 '>Filter</button>
+                    <button className='btn btn-nav bi bi-filter mt-4 w-100 fs-5 '>Filter</button>
                 </div>
             </div>
 

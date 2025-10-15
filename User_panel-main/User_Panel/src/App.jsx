@@ -1,3 +1,4 @@
+
 import { Routes, Route, useLocation } from "react-router-dom"; 
 import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -34,7 +35,7 @@ function App() {
     <div className="app-container">
       {/* Sidebar tab show karein jab current route trade na ho */}
       {!shouldHideSidebarAndNavbar && <Sidebar />}
-
+      {shouldHideSidebarAndNavbar && <TradeNavbar />}
       <div className="dashboard-wrapper">
         {/* TopRightNavbar tab show karein jab current route trade na ho */}
         {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
