@@ -23,6 +23,7 @@ import TransactionHistory from "./component/TransactionHistory";
 import GetSupport from "./component/GetSupport";
 import OpenTicket from "./component/OpenTicket";
 import ReplyTicket from "./component/ReplyTicket";
+import TradeNavbar from "./component/TradeNavbar";
 
 function App() {
   const location = useLocation();  
@@ -33,7 +34,7 @@ function App() {
     <div className="app-container">
       {/* Sidebar tab show karein jab current route trade na ho */}
       {!shouldHideSidebarAndNavbar && <Sidebar />}
-
+      {shouldHideSidebarAndNavbar && <TradeNavbar />}
       <div className="dashboard-wrapper">
         {/* TopRightNavbar tab show karein jab current route trade na ho */}
         {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
@@ -54,6 +55,8 @@ function App() {
           <Route path="/manage-wallet" element={<ManageWallet />} />
           <Route path="/wallet/:symbol" element={<WalletDetails />} />
           <Route path="/security" element={<TwoFactor />} />
+          <Route path="/trade-navbar" element={<TradeNavbar/>} />
+          <Route path="/security" element={<TwoFactor/>} />
         </Routes>
       </div>
     </div>

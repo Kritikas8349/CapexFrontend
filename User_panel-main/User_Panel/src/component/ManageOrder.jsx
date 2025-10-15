@@ -8,7 +8,7 @@ function ManageOrder() {
     const tabs = ["Open", "Complete", "Pending", "Cancelled", "History"];
 
     return (
-        <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container">
+        <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container min-vh-100">
             {/* Title */}
             <h2 className="fw-semibold  text-start text-md-start text-lg-start">
                 {activeTab} Orders
@@ -37,7 +37,7 @@ function ManageOrder() {
                 {/* Filters Section */}
                 <div className="col-12 col-md-6   ">
                     <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-end">
-                        <select className="form-select form-select-sm dashboard-container text-dark border-dark">
+                        <select className="form-select form-select-sm bg-transparent text-dark border-dark">
                             <option>Order Type</option>
                             <option>All</option>
                             <option>Limit</option>
@@ -51,11 +51,18 @@ function ManageOrder() {
                             <option>Completed</option>
                         </select> */}
 
-                        <div class="input-group w-50 ">
-                            <input type="text" class="form-control bg-transparent border-dark text-dark custom-placeholder" placeholder="Pair,coin....." aria-label="Recipient’s username with two button addons"/>
-                                
-                                <button class="btn btn-outline-dark bi bi-search" type="button"></button>
+                        <div class="input-group w-50">
+                            <input
+                                type="text"
+                                class="form-control bg-transparent border-dark text-dark custom-placeholder"
+                                placeholder="Pair, coin....."
+                                aria-label="Search"
+                            />
+                            <button class="btn btn-outline-dark p-0 px-1" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
                         </div>
+
 
 
                     </div>
