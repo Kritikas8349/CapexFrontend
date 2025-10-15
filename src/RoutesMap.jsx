@@ -56,7 +56,7 @@ export const routesMap = {
     "Beginner Commodities Tutorial": "/education/commodities/beginner",
     "Intermediate Commodities Tutorial": "/education/commodities/intermediate",
     "Advanced Commodities Tutorial": "/education/commodities/advanced",
-    "Economic Calendar": "/education/economic-calendar",
+    "Economic calendar": "/education/economic-calendar",
     "Research ": "/education/research/hub",
     "Research Hub": "/education/research/hub",
     "Daily Market Analysis Snapshot": "/education/research/daily-analysis",
