@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 18px;
-  z-index: 1;
+  z-index: 2000;
   font-size: 13px;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -116,7 +116,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 1500;
   padding: 0 50px;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -134,6 +134,7 @@
   color: black;
   text-decoration: none;  /* underline hata dega */
   font-weight: 500;
+  z-index: 9999;
 }
 
 .nav-link:hover {
@@ -227,6 +228,13 @@
   color: black;
 }
 
+.nav-links li ul li.has-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* keep arrow to the right side */
+  padding: 10px 18px;
+}
+
 /* Nested dropdowns (open to right) */
 .nav-links li ul li ul {
   display: none;
@@ -266,6 +274,19 @@
 
 .has-submenu:hover > .dropdown-icon {
   transform: rotate(180deg);
+}
+
+.nav-links li ul li.has-submenu .dropdown-icon {
+  margin-left: 6px;
+  font-size: 11px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-links li ul li.has-submenu {
+  flex-direction: row !important;
+  text-align: left;
 }
 
 /* ===== Navbar Right Section ===== */
@@ -396,7 +417,7 @@
 }
 
 .has-submenu ul li a {
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
 }
 
@@ -423,7 +444,7 @@
   transition: 0.3s;
   margin: 0 auto;        
   background-color: #493ffd;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
 }
 

@@ -163,6 +163,26 @@
   color: #fff; /* white icon */
 }
 
+
+/* Remove underline from all overlay links, submenus, and nested items */
+.res-hamburger-overlay a,
+.res-hamburger-overlay span,
+.res-hamburger-overlay button {
+  text-decoration: none; /* remove underline */
+  color: #000;           /* ensures all text is black */
+}
+
+/* Optional: make hover background still work nicely */
+.res-hamburger-overlay a:hover,
+.res-hamburger-overlay span:hover,
+.res-hamburger-overlay button:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+  text-decoration: none; /* ensure underline never appears */
+}
+
+
+
 /* Responsive */
 @media screen and (max-width: 768px) {
   .res-nav-links {
