@@ -156,75 +156,77 @@ function ForexTutorials() {
   return (
     <div className='bg-home'>
       <style>
-                {
-                    `.bg-forex
+        {
+          `.bg-forex
                      {
                          background: linear-gradient(to bottom right, #000000, #231586)}
                          
                        
 
                     `
-                }
+        }
 
-            </style>
+      </style>
       <div className="container-fluid bg-forex text-white pt-4 " >
         <div className="container bg-transparent mt-4 mt-lg-5 pt-4">
           <h2 className="fw-bold bg-transparent text-white text-center display-5 mt-5 mt-lg-4 py-4"> Forex Tutorial</h2>
 
-          <div className="row bg-transparent  pt-2">
-            <div className="col-lg-6 mb-4 bg-transparent">
-              <div className="d-flex flex-column bg-transparent text-white">
+          <div className="row bg-transparent pt-2 g-4">
+            {/* Left Column */}
+            <div className="col-12 col-md-6 mb-4 bg-transparent">
+              <div className="d-flex flex-column bg-transparent text-white h-100">
                 <div className="position-relative flex-fill">
                   <img
                     src={lessons[0].img}
-                    className="img-fluid w-100 h-100 opacity-75 "
+                    className="img-fluid w-100 h-100 opacity-75"
                     alt="Lesson 1"
-                    style={{ objectFit: 'cover' }}
+                    style={{ objectFit: "cover" }}
                   />
-                  <div className="position-absolute  top-50 start-50 translate-middle text-center bg-transparent px-3">
+                  <div className="position-absolute top-50 start-50 translate-middle text-center bg-transparent px-3">
                     <h3 className="fw-bold">{lessons[0].title}</h3>
                   </div>
                 </div>
-                <div className="bg-transparent text-start text-white p-3" style={{ height: '150px' }}>
-                  <h5 className="fw-bold ">{lessons[0].title}</h5>
+                <div className="bg-transparent text-start text-white p-3">
+                  <h5 className="fw-bold">{lessons[0].title}</h5>
                   <p className="mb-0 fs-5">{lessons[0].desc}</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-6 bg-transparent mt-4 ">
+            {/* Right Column */}
+            <div className="col-12 col-md-6 bg-transparent">
               {lessons.slice(2).map((lesson, index) => (
                 <div
                   key={index}
-                  className="d-flex flex-column flex-md-row bg-transparent text-white mb-4 border-bottom border-primary  border-2"
-                  style={{ minHeight: '180px' }}
+                  className="d-flex flex-column flex-md-row bg-transparent text-white mb-4 border-bottom border-primary border-2"
+                  style={{ minHeight: "180px" }}
                 >
                   <div
                     className="flex-shrink-0"
                     style={{
-                      width: '100%',
-                      height: '180px',
-                      maxWidth: '180px',
+                      width: "100%",
+                      height: "180px",
+                      maxWidth: "180px",
                     }}
                   >
                     <img
                       src={lesson.img}
                       alt={lesson.title}
                       className="w-100 h-100 opacity-75"
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: "cover" }}
                     />
                   </div>
                   <div className="p-3 d-flex flex-column justify-content-center text-start bg-transparent text-white" style={{ flex: 1 }}>
-                    <h6 className="fw-bold h3  mb-2">{lesson.title}</h6>
+                    <h6 className="fw-bold h3 mb-2">{lesson.title}</h6>
                     <p className="mb-0 fs-5">{lesson.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
-
           </div>
+
         </div>
-      </div> 
+      </div>
 
       {/* ---------For multiple cards------------  */}
       <div className="container py-4">
@@ -250,7 +252,7 @@ function ForexTutorials() {
             </div>
           ))}
         </div>
-      </div>  
+      </div>
 
     </div>
   )
