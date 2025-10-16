@@ -77,7 +77,7 @@
             "Advanced Commodities Tutorial",
           ],
         },
-        "Economic calendar",
+        "Economic Calendar",
         {
           title: "Research",
           subItems: [
