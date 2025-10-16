@@ -14,20 +14,21 @@
     height: 98vh;
     background: linear-gradient(to top right, #493ffd, #000000);
     padding: 160px 20px 20px 20px;
+    /* margin: 0px 10px  0px 0px ; */
     border-radius: 16px;
     
   }
 
 
   .partner-home-container {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    max-width: 1500px;
-    /* margin: 40px auto; */
-    padding: 10px 10px 20px 10px; /* Adds spacing left/right */
+    max-width: 1650px;
+    margin: 1px auto;
+    padding: 10px 10px 20px 10px; 
     border-radius: 12px;
     overflow: hidden;
-    margin: auto 20px 20px 10px;
+   
     text-align: left;
   }
   

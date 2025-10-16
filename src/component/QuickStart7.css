@@ -111,13 +111,15 @@ html {
         font-size: 0.95rem;
     }
 
-    .withdrawwithdraw-right7 {
+    .withdraw-right7 {
         justify-content: center;
+        width: 600px;
+        margin-left: 100px;
     }
 
     withdraw-right7 img {
-        transform: translateX(0);
-        max-width: 70%;
+        /* transform: translateX(0); */
+        background-color: red;
     }
 }
 
