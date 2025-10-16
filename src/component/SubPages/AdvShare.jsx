@@ -30,12 +30,12 @@ function AdvShare() {
         <div id='AdvShareMain'>
 
             <div className="adv-tutorial">
-                <h1 className="adv-tutorial-heading">Advanced Shares Tutorial</h1>
+               
 
                 <div className="adv-tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="adv-left-section">
-                        <div className="adv-lesson1-image" style={{ backgroundImage: 'url(/stocks-303.webp)' }}>
+                        <div className="adv-lesson1-image" style={{ backgroundImage: 'url(/a1.png)' }}>
                             <div className="adv-lesson1-title"></div>
                         </div>
                         <div className="adv-lesson1-text">
