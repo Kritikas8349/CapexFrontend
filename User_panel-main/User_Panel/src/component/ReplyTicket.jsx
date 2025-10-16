@@ -13,8 +13,8 @@ function ReplyTicket() {
                 {/* Tabs Section */}
                 <div className="d-flex justify-content-between">
                     <div>
-                        <span className='btn btn-outline-success'>Open</span>
-                        <span className='h5 text-secondary'>[Ticket#370410] f</span>
+                        <span className='btn deposit-btn'>Opend</span>
+                        <span className='h5 text-secondary ms-2'>[Ticket#370410] f</span>
                     </div>
                     <div>
                         <Link to="/open-ticket" className='btn btn-outline-danger me-3'>Close Ticket</Link>
@@ -28,7 +28,7 @@ function ReplyTicket() {
                 <label htmlFor="transactionNumber" className="form-label h5">
                     Message
                 </label>
-                <textarea name="" id="transactionNumber" className='form-control bg-transparent border border-2' rows={5}></textarea>
+                <textarea name="" id="transactionNumber" className='form-control bg-transparent border border-1' rows={5}></textarea>
                 <div className="d-flex justify-content-between py-3 py-lg-5 py-md-5">
                     <div className="">
                         <button className='btn btn-primary ' onClick={() => setShowFile(true)}> + Attachment</button>

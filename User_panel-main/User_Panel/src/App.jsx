@@ -24,6 +24,7 @@ import GetSupport from "./component/GetSupport";
 import OpenTicket from "./component/OpenTicket";
 import ReplyTicket from "./component/ReplyTicket";
 import TradeNavbar from "./component/TradeNavbar";
+import TradeLayout from "./component/TradeLayout";
 
 function App() {
   const location = useLocation();  
@@ -34,7 +35,7 @@ function App() {
     <div className="app-container">
       {/* Sidebar tab show karein jab current route trade na ho */}
       {!shouldHideSidebarAndNavbar && <Sidebar />}
-      {shouldHideSidebarAndNavbar && <TradeNavbar />}
+      {/* {shouldHideSidebarAndNavbar && <TradeNavbar />} */}
       <div className="dashboard-wrapper">
         {/* TopRightNavbar tab show karein jab current route trade na ho */}
         {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
@@ -57,6 +58,12 @@ function App() {
           <Route path="/security" element={<TwoFactor />} />
           <Route path="/trade-navbar" element={<TradeNavbar/>} />
           <Route path="/security" element={<TwoFactor/>} />
+          <Route path="/trade" element={<TradeLayout />}>
+            <Route index element={<TradePage />} /> {/* /trade */}
+            <Route path="/trade/market" element={<TradeHistory />} /> {/* /trade/history */}
+            <Route path="orders" element={<ManageOrder />} /> {/* /trade/orders */}
+             {/* Add more trade pages here */}
+           </Route>
         </Routes>
       </div>
     </div>

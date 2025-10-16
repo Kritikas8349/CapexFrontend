@@ -1,0 +1,9 @@
+/* TradeLayout.css */
+.trade-layout {
+  min-height: 100vh;
+  background-color: #f8f9fa; /* light background */
+}
+
+.trade-content {
+  padding-top: 70px; /* adjust for navbar height */
+}
