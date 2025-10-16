@@ -81,14 +81,7 @@
         {
           title: "Research",
           subItems: [
-            {
-              title: "Research Hub",
-              subItems: [
-                "Daily Market Analysis Snapshot",
-                "Watch Upcoming Trading Opportunities",
-                "Daily Insight Podcast",
-              ],
-            },
+            "Research Hub",
             "Trading Research",
             "Investment Research",
           ],
