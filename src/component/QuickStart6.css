@@ -9,14 +9,14 @@ html {
     width: 100%;
     min-height: 300px;
     /* padding: 10px; */
-    padding-right: 15px;
+    /* padding-right: 15px; */
 
 }
 
 .deposit-section {
     display: flex;
     height: 88vh;
-    margin: 10px 10px 0px 20px ;
+    margin: 10px 20px 0px 20px ;
     align-items: center;
     justify-content: space-between;
     padding: 80px 5%;
@@ -89,7 +89,7 @@ html {
         flex-direction: column;
         text-align: center;
         padding: 60px 20px;
-        height: 60vh;
+        height: 75vh;
     }
 
     .deposit-left {
@@ -109,8 +109,10 @@ html {
     }
 
     .deposit-right img {
-        transform: translateX(0);
-        max-width: 70%;
+        /* transform: translateX(0); */
+        margin-left: 100px;
+        max-width: 400px;
+        min-width: 100%;
     }
 }
 

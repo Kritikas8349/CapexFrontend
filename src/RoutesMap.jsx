@@ -101,7 +101,7 @@ export const routesMap = {
     "Contract Expiries": "/support/market/contract-expiries",
     
     "Education Hub Support": "/support/education-hub",
-    "Support Economic Calendar": "/support/economic-calendar",
+    // "Support Economic Calendar": "/support/economic-calendar",
     "Contact Us": "/support/contact",
 
    

@@ -21,9 +21,9 @@ html, body {
   display: flex;
   padding-top: 120px;
   width: 100%;
-  max-width: 1480px;
+  max-width: 1580px;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(to bottom right, #241ad5, #090552,#000000);  
   color: #fff;
   border-radius: 16px;

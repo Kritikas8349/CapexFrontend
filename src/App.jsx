@@ -267,7 +267,7 @@ function App() {
             <Route path="/education/commodities/beginner" element={<Education_Com_Beginner />}></Route>
             <Route path="/education/commodities/intermediate" element={<Education_Com_Intermediate />}></Route>
             <Route path="/education/commodities/advanced" element={<Education_Com_Advance />}></Route>
-            <Route path="/support/economic-calendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
+            {/* <Route path="/support/economic-calendar" element={<EconomicCalendar></EconomicCalendar>}></Route>*/}
             <Route path="/education/research/hub" element={<Research></Research>}></Route>
             <Route path='/education/research/opportunities' element={<TradingOpportunity></TradingOpportunity>}></Route>
             <Route path="/education/research/investmenresearch" element={<InvestmentResearch></InvestmentResearch>}></Route>
@@ -361,7 +361,7 @@ function App() {
             <Route path="/ib-program/overview" element={<IBOverview />} />
             <Route path="/ib-program/broker-models/regional-reps" element={<RegionalRepresentatives />} />
             <Route path="/ib-program/marketing-materials" element={<MarketingMaterials />} />
-            {/* <Route path="/ib-program/marketing-materials" element={<MarketingMaterials />} /> */}
+            <Route path="/ib-program/support" element={<Support2 />} />
 
             {/*------------------ About-------------------- */}
 

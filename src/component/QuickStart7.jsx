@@ -225,7 +225,7 @@ function QuickStart7() {
             <div className="payment-section7">
                 <div className="filter-buttons7">
                     <h1>Payment Mode</h1>
-                   
+
                 </div>
 
                 <div className="payment-grid7">
