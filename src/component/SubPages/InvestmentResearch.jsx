@@ -1,4 +1,5 @@
 
+
 import React, { useRef } from 'react'
 import './InvestmentResearch.css'
 import { Link } from 'react-router-dom';
