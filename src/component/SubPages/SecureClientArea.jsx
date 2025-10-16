@@ -13,8 +13,8 @@ function SecureClientArea() {
   ];
 
   return (
-    <div className='container-fluid bg-faq py-5 py-lg-5 py-md-5 pt-5 '>
-      <div className='container align-items-start py-5'>
+    <div className='container-fluid bg-faq py-5 py-lg-5 py-md-5 pt-5 min-vh-100'>
+      <div className='container align-items-start py-5 '>
         {/* <div className="d-flex"><span>Home &nbsp;</span>/&nbsp;<span>support&nbsp;</span>/&nbsp;<span>platform-support&nbsp;</span>/&nbsp;<span>secure client area</span></div> */}
         <div className='mb-4'>
           <h1 className='fw-bold text-start text-heading text-md-start'>Secure Client Area</h1>

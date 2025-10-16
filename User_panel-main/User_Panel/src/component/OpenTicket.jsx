@@ -25,7 +25,7 @@ function OpenTicket() {
                     <input
                         type="text"
                         id="transactionNumber"
-                        className="form-control bg-transparent border border-2 bg-transparent"
+                        className="form-control bg-transparent border border-1 bg-transparent"
                         placeholder="Email..."
                     />
                 </div>
@@ -33,19 +33,19 @@ function OpenTicket() {
                     <label htmlFor="transactionNumber" className="form-label h5">
                         Email
                     </label>
-                    <input type="email" name="" id="transactionNumber" className='form-control bg-transparent border border-2' />
+                    <input type="email" name="" id="transactionNumber" className='form-control bg-transparent border border-1' />
                 </div>   
                 <div className="col-6">
                     <label htmlFor="transactionNumber" className="form-label h5">
                         Subject
                     </label>
-                    <input type="email" name="" id="transactionNumber" className='form-control bg-transparent border border-2' />
+                    <input type="email" name="" id="transactionNumber" className='form-control bg-transparent border border-1' />
                 </div> 
                 <div className="col-6">
                     <label htmlFor="transactionNumber" className="form-label h5">
                         Priority
                     </label>
-                    <select name="" id="transactionNumber" className='form-control bg-transparent border border-2 form-select'>High
+                    <select name="" id="transactionNumber" className='form-control bg-transparent border border-1 form-select'>High
                         <option value="">High</option>
                         <option value="">Mid</option>
                         <option value="">Low</option>
@@ -56,7 +56,7 @@ function OpenTicket() {
                     <label htmlFor="transactionNumber" className="form-label h5">
                         Message
                     </label>
-                    <textarea name="" id="transactionNumber" className='form-control bg-transparent border border-2'></textarea>
+                    <textarea name="" id="transactionNumber" className='form-control bg-transparent border border-1'></textarea>
                 </div>  
                 <div className="d-flex justify-content-between">
                     <div className="">

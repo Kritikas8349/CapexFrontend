@@ -271,6 +271,8 @@ function App() {
             <Route path="/education/research/hub" element={<Research></Research>}></Route>
             <Route path='/education/research/opportunities' element={<TradingOpportunity></TradingOpportunity>}></Route>
             <Route path="/education/research/investmenresearch" element={<InvestmentResearch></InvestmentResearch>}></Route>
+            <Route path="/education/demo-trade" element={<CreateAccount></CreateAccount>}></Route>
+
             <Route path="/platforms/tradingview" element={<TradingView></TradingView>}></Route>
             <Route path="/platforms/ctrade" element={<CTrader></CTrader>}></Route>
             <Route path="/platforms/mt4" element={<MetaTrader4></MetaTrader4>}></Route>

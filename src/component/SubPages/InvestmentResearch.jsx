@@ -11,28 +11,28 @@ function InvestmentResearch() {
     const cardsData = [
         {
             id: 1,
-            img: "/public/awardlogo.avif", // replace with your image
+            img: "/awardlogo.avif", // replace with your image
             title: "Why is a shiny block of metal so popular?",
             desc: "I know everyone is obsessed with gold right now, because number go up...",
             date: "8 May 2025",
         },
         {
             id: 2,
-            img: "/public/awards.avif",
+            img: "/awards.avif",
             title: "Auto loans are bad; but earnings are good",
             desc: "Top of mind — yes, Microsoft had a good quarter and so did Meta...",
             date: "1 May 2025",
         },
         {
             id: 3,
-            img: "/public/awards.jpg",
+            img: "/awards.jpg",
             title: "Have you heard the one about the oil prosp...",
             desc: "I’ve been re-reading speeches Buffett gave to his inner circle...",
             date: "21 April 2025",
         },
         {
             id: 4,
-            img: "/public/supportBg.jpg",
+            img: "/supportBg.jpg",
             title: "Tech stocks are making waves",
             desc: "Technology is booming with AI and Cloud expansion...",
             date: "15 April 2025",
@@ -54,7 +54,7 @@ function InvestmentResearch() {
     ];
     return (
         <div className='bg-home'>
-            <div className=" bg-faq rounded rounded-3 m-4 py-5 ">
+            <div className=" bg-faq rounded rounded-5 mt-2 mx-3 py-5 ">
                 <div className="container py-5">
                     <div className="row align-items-center py-5">
                         {/* Left Section */}

@@ -1,5 +1,5 @@
 .btn-nav{
-    background: linear-gradient(135deg, #130486, #000000);
+    background: #493FFD;
     color: white;
 }
 .table-data{
@@ -17,5 +17,6 @@ input.custom-placeholder::placeholder {
  color: #000000;
 }
 .btn-nav:hover{
+    background: #5b56c4;
 color: white;
 }
