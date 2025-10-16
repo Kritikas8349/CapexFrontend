@@ -51,7 +51,8 @@
 }
 
 .res-submenu-header:hover {
-  background: #e0f0ff; /* light blue oval background on hover */
+  background: #e0f0ff;
+  /* light blue oval background on hover */
   border-radius: 20px;
   padding-left: 10px;
 }
@@ -62,15 +63,16 @@
   display: none;
   flex-direction: column;
   gap: 5px;
-  padding-left: 15px; /* nested items padding */
+  padding-left: 15px;
+  /* nested items padding */
 }
 
-.res-has-submenu.open > .res-overlay-submenu {
+.res-has-submenu.open>.res-overlay-submenu {
   display: flex;
 }
 
 /* Arrow rotation */
-.res-has-submenu.open > .res-submenu-header .res-dropdown-icon {
+.res-has-submenu.open>.res-submenu-header .res-dropdown-icon {
   transform: rotate(90deg);
   transition: transform 0.3s ease;
 }
@@ -98,11 +100,14 @@
 
 /* Bottom row links: personal, partner, research */
 .res-overlay-bottom-row {
-  margin-top: 10px; /* reduced top margin */
+  margin-top: 10px;
+  /* reduced top margin */
   display: flex;
-  gap: 8px; /* reduced space between links */
+  gap: 8px;
+  /* reduced space between links */
   justify-content: flex-start;
-  align-items: center; /* vertically center with button */
+  align-items: center;
+  /* vertically center with button */
   padding-top: 10px;
 }
 
@@ -112,11 +117,13 @@
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 15px;
-  font-size: 14px; /* smaller links to fit nicely */
+  font-size: 14px;
+  /* smaller links to fit nicely */
 }
 
 .res-overlay-bottom-row a:hover {
-  background: #e0f0ff; /* light blue hover */
+  background: #e0f0ff;
+  /* light blue hover */
 }
 
 /* Join Now button in overlay bottom row */
@@ -128,7 +135,8 @@
   padding: 8px 15px;
   font-size: 14px;
   cursor: pointer;
-  margin-left: 10px; /* space between last link and button */
+  margin-left: 10px;
+  /* space between last link and button */
 }
 
 .res-overlay-bottom-row .res-join-bttnn:hover {
@@ -145,14 +153,16 @@
   border: none;
   font-size: 16px;
   cursor: pointer;
-  background-color: #493ffd; /* blue */
+  background-color: #493ffd;
+  /* blue */
   color: #fff;
   text-align: center;
 }
 
 .res-overlay-links .res-login-btn:hover,
 .res-overlay-links .res-join-bttnn:hover {
-  background-color: #3227d6; /* darker blue on hover */
+  background-color: #3227d6;
+  /* darker blue on hover */
 }
 
 /* Hamburger icon */
@@ -160,7 +170,8 @@
   display: none;
   font-size: 24px;
   cursor: pointer;
-  color: #fff; /* white icon */
+  color: #fff;
+  /* white icon */
 }
 
 
@@ -168,8 +179,10 @@
 .res-hamburger-overlay a,
 .res-hamburger-overlay span,
 .res-hamburger-overlay button {
-  text-decoration: none; /* remove underline */
-  color: #000;           /* ensures all text is black */
+  text-decoration: none;
+  /* remove underline */
+  color: #000;
+  /* ensures all text is black */
 }
 
 /* Optional: make hover background still work nicely */
@@ -178,7 +191,8 @@
 .res-hamburger-overlay button:hover {
   background: #f0f0f0;
   border-radius: 5px;
-  text-decoration: none; /* ensure underline never appears */
+  text-decoration: none;
+  /* ensure underline never appears */
 }
 
 
@@ -188,6 +202,7 @@
   .res-nav-links {
     display: none;
   }
+
   .res-hamburger-menu {
     display: block;
   }
