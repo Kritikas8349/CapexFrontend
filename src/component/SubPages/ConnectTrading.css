@@ -1,12 +1,7 @@
-.connect1 {
-    padding: 10px 0 20px 0;
-    background-color: #ebefee;
-}
-
-.connectpaage {
+/* ================= BASE ================= */
+.connect1, .connectpage {
     background-color: #ebefee;
     padding-bottom: 20px;
-    padding-top: 0px;
 }
 
 .connect-page {
@@ -17,19 +12,16 @@
     color: #fff;
     background: linear-gradient(to top left, #000000, #493ffd);
     width: 100%;
-    max-width: 1480px;
     min-height: 100vh;
-    margin: 0 auto 20px auto;   /* ✅ equal left/right gap */
-    border-radius: 16px;
-    overflow: hidden;
-    padding-top: 0px;          /* ✅ prevent navbar overlap */
+    padding-top: 5px;
+    justify-content: center;
     box-sizing: border-box;
 }
 
-/* Sidebar */
+/* ================= SIDEBAR ================= */
 .connect-sidebar {
     flex-shrink: 0;
-    width: 440px;
+    width: 380px;
     min-width: 240px;
     border-right: 1px solid transparent;
     padding: 160px 0 20px 0;
@@ -40,13 +32,11 @@
 .connect-sidebar::-webkit-scrollbar {
     width: 4px;
 }
-
 .connect-sidebar::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
 }
-
 .connect-sidebar::-webkit-scrollbar-thumb {
-    background-color: transparent; 
+    background-color: transparent;
     border-radius: 2px;
 }
 
@@ -68,20 +58,15 @@
     border-radius: 6px;
     transition: background 0.3s;
     font-weight: bold;
+    font-size: 16px;
 }
-
 .connect-sidebar-header:hover {
-    color: #000;
+    color: black;
 }
-
-/* .connect-sidebar-header.active {
-    background: #eef4ff;
-    font-weight: bold;
-} */
 
 .connect-sidebar-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
     margin-right: 10px;
 }
@@ -93,10 +78,10 @@
 .connect-count {
     background: #493ffd;
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,116 +92,80 @@
     font-size: 14px;
     color: #fff;
 }
-
 .connect-dropdown p {
     margin: 4px 0;
     cursor: pointer;
 }
-
 .connect-dropdown p:hover {
     text-decoration: underline;
-   
 }
 
-/* Content */
+/* ================= CONTENT ================= */
 .connect-content {
     flex: 1;
-    padding: 140px 80px 40px 80px; 
+    padding: 140px 80px 40px 80px;
     max-width: 1250px;
     margin-left: 60px;
     position: relative;
-    box-sizing: border-box;
 }
 
-/* Breadcrumbs */
+/* ================= BREADCRUMBS ================= */
 .connect-breadcrumbs {
-    position: relative;
-    margin-bottom: 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 16px;
     color: #fff;
     gap: 6px;
+    margin-bottom: 20px;
     font-family: "Segoe UI", sans-serif;
-    flex-wrap: wrap;
 }
-
-.connect-breadcrumbs {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #fff;
-    flex-wrap: wrap;
-  }
-  
-  .connect-breadcrumbs .separator {
-    margin: 0 6px;
-    color: fff;
-  }
-  
-  .connect-breadcrumbs .breadcrumb-link {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.2s ease;
-  }
-  
-  .connect-breadcrumbs .breadcrumb-link:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  .connect-breadcrumbs .current {
-    font-weight: 600;
-    color: #000;
-  }
-  
-
-.connect-breadcrumbs span {
+.connect-breadcrumbs span,
+.connect-breadcrumbs a {
+    text-decoration: none !important;
+    color: inherit;
     cursor: pointer;
-    transition: color 0.3s;
 }
-
+.connect-breadcrumbs a:hover {
+    color: #000;
+    text-decoration: none !important;
+}
 .connect-breadcrumbs span:hover {
-    color: #493ffd;
+    color: white;
 }
-
 .connect-breadcrumbs .separator {
     color: #999;
 }
-
 .connect-breadcrumbs .current {
     color: #000;
     font-weight: bold;
     cursor: default;
 }
 
-h1 {
-    font-size: 46px;
-    margin: 20px 0;
+/* ================= TITLE ================= */
+.connect-content h1 {
+    font-size: 42px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     font-weight: bold;
-    word-break: break-word;
 }
 
-/* Video Section */
+/* ================= VIDEO ================= */
 .connect-video-section {
     border: none;
     border-radius: 8px;
-    padding: 0;
     background: #fff;
-    margin-top: 20px;
     width: 100%;
     max-width: 700px;
+    margin: 20px auto;
 }
-
 .connect-video-thumbnail {
     background: #000;
     color: white;
     padding: 20px;
-    margin-bottom: 15px;
     text-align: center;
     border-radius: 6px;
 }
-
 .connect-video-thumbnail iframe {
     background: #333;
     border-radius: 6px;
@@ -224,139 +173,7 @@ h1 {
     height: 420px;
 }
 
-/* ================= MEDIA QUERIES ================= */
-
-/* Tablets / small desktop */
-@media (max-width: 1024px) {
-    .connect-page {
-        flex-wrap: wrap;
-        margin: 0 16px 20px 16px;  /* ✅ equal left/right gap */
-    }
-
-    .connect-sidebar {
-        width: 320px;
-        padding-top: 120px;
-    }
-
-    .connect-sidebar-header {
-        font-size: 15px;
-    }
-
-    .connect-content {
-        padding: 50px 40px 30px 40px;
-        margin-left: 0;
-    }
-
-    .connect-video-thumbnail iframe {
-        height: 360px;
-    }
-}
-
-/* Mobile (width < 768px) */
-@media (max-width: 768px) {
-    .connect-page {
-        flex-direction: column;
-        margin: 0 12px 20px 12px;   /* ✅ equal left/right gap */
-        padding-top: 60px;          /* ✅ safe from navbar */
-    }
-
-    .connect-sidebar {
-        width: 100%;
-        padding-top: 80px;
-        border-right: none;
-        border-bottom: 1px solid #eee;
-    }
-
-    .connect-content {
-        padding: 30px 20px;
-        margin-left: 0;
-    }
-
-    .connect-breadcrumbs {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    h1 {
-        font-size: 28px;
-        margin-top: 20px;
-    }
-
-    .connect-video-thumbnail iframe {
-        height: 240px;
-    }
-}
-
-/* Small phones (width < 480px) */
-@media (max-width: 480px) {
-    .connect-page {
-        margin: 0 8px 16px 8px;      /* ✅ equal gap */
-        padding-top: 50px;           /* ✅ safe from navbar */
-    }
-
-    .connect-breadcrumbs {
-        font-size: 12px;
-        gap: 4px;
-        margin-bottom: 8px;
-    }
-
-    h1 {
-        font-size: 22px;
-        margin-top: 12px;
-    }
-
-    .connect-sidebar-header {
-        font-size: 14px;
-    }
-
-    .connect-video-thumbnail iframe {
-        height: 200px;
-    }
-
-    .connect-content {
-        padding: 15px 10px;
-    }
-}
-
-/* General responsive fixes */
-img, iframe, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.connect-page, .connect-content, .connect-sidebar, .connect-video-section {
-    box-sizing: border-box;
-}
-
-button, .connect-sidebar-header, .connect-dropdown p {
-    min-width: 0;
-}
-
-body, h1, h2, h3, h4, p, span, a {
-    word-break: break-word;
-}
-
-/* General responsive fixes */
-img, iframe, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.connect-page, .connect-content, .connect-sidebar, .connect-video-section {
-    box-sizing: border-box;
-}
-
-button, .connect-sidebar-header, .connect-dropdown p {
-    min-width: 0;
-}
-
-body, h1, h2, h3, h4, p, span, a {
-    word-break: break-word;
-}
-
-
+/* ================= STEPS ================= */
 .connect-steps-container {
     display: flex;
     flex-direction: column;
@@ -366,144 +183,132 @@ body, h1, h2, h3, h4, p, span, a {
     margin-right: auto;
     padding: 0 20px;
     max-width: 800px;
-    box-sizing: border-box;
-    
 }
-
 .connect-step h3 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #000;
-    word-break: break-word;
 }
-
 .connect-step p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
     color: #000;
 }
-
 .connect-step span {
     color: #493ffd;
 }
-
 .connect-step-image {
     width: 100%;
     max-width: 768px;
-    height: auto;
+    height: 432px;
     object-fit: cover;
     border-radius: 8px;
     background: #000;
 }
 
+/* ================= RESPONSIVE QUERIES ================= */
 
-@media (max-width: 1024px) {
-    .connect-sidebar {
-        width: 300px;
-        height: auto;
-        padding: 60px 0 20px 0;
-    }
-
+/* Large laptops & smaller desktops */
+@media (max-width: 1280px) {
     .connect-content {
-        padding: 30px 40px;
-        margin-left: 0;
-        padding-top: 80px;
+        padding: 120px 60px 40px 60px;
     }
-
-    h1 {
+    .connect-sidebar {
+        width: 320px;
+    }
+    .connect-content h1 {
         font-size: 36px;
     }
-
-    .connect-breadcrumbs {
-        font-size: 16px;
-    }
-
-    .connect-video-thumbnail iframe {
-        height: 320px;
-    }
-
     .connect-step h3 {
         font-size: 22px;
     }
+}
 
-    .connect-step p {
-        font-size: 15px;
+/* Tablets / mid screens */
+@media (max-width: 1024px) {
+    .connect-page {
+        flex-wrap: wrap;
+        margin: 0 16px 20px 16px;
+        justify-content: center;
+    }
+    .connect-sidebar {
+        width: 100%;
+        padding-top: 100px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .connect-content {
+        padding: 60px 40px 30px 40px;
+        margin-left: 0;
+    }
+    .connect-video-thumbnail iframe {
+        height: 360px;
+    }
+    .connect-content h1 {
+        font-size: 32px;
     }
 }
 
-
+/* Mobile (phones, iPhones, small tablets) */
 @media (max-width: 768px) {
     .connect-page {
         flex-direction: column;
+        margin: 0 12px 20px 12px;
+        padding-top: 60px;
     }
-
     .connect-sidebar {
         width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        padding: 20px 0;
+        padding-top: 80px;
     }
-
     .connect-content {
-        padding: 20px;
-        margin-left: 0;
+        padding: 30px 20px;
     }
-
-    h1 {
-        font-size: 28px;
+    .connect-content h1 {
+        font-size: 26px;
         margin-top: 10px;
     }
-
-    .connect-breadcrumbs {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
     .connect-video-thumbnail iframe {
-        height: 240px;
+        height: 280px;
     }
-
     .connect-step h3 {
         font-size: 20px;
     }
-
     .connect-step p {
         font-size: 14px;
     }
 }
 
-
+/* Small phones (iPhone SE, 480px and below) */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 22px;
-        margin-top: 8px;
+    .connect-page {
+        margin: 0 0px 16px 0px;
+        padding-top: 50px;
     }
-
-    .connect-breadcrumbs {
-        font-size: 12px;
-        gap: 4px;
-        margin-bottom: 8px;
-    }
-
     .connect-sidebar-header {
         font-size: 14px;
     }
-
+    .connect-content {
+        padding: 15px 10px;
+    }
+    .connect-content h1 {
+        font-size: 20px;
+    }
     .connect-video-thumbnail iframe {
         height: 200px;
     }
-
     .connect-step h3 {
         font-size: 18px;
     }
-
     .connect-step p {
         font-size: 13px;
     }
+}
 
-    .connect-steps-container {
-        margin-top: 30px; 
-    }
+/* General responsive fixes */
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

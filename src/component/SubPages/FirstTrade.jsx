@@ -3,14 +3,14 @@ import "./FirstTrade.css";
 import { Link } from "react-router-dom";
 
 const sections = [
-  { title: "Getting Started", img: "pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
-  { title: "TradingView", img: "Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
-  { title: "BlackBull Invest", img: "pf4.svg", count: 7 },
-  { title: "cTrader", img: "pf4.svg", count: 22 },
-  { title: "Account Support", img: "pf4.svg", count: 8 },
+  { title: "Getting Started", img: "/pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "/pf2.webp", count: 8 },
+  { title: "TradingView", img: "/Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "/pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "/pf3.webp", count: 17 },
+  { title: "BlackBull Invest", img: "/pf4.svg", count: 7 },
+  { title: "cTrader", img: "/pf4.svg", count: 22 },
+  { title: "Account Support", img: "/pf4.svg", count: 8 },
 ];
 
 const FirstTrade = () => {
@@ -94,17 +94,17 @@ const FirstTrade = () => {
         <div className="firsttrade-step">
           <h3>Step 1.</h3>
           <p>Open MetaTrader 4 and log in using your Market.trad account credentials.</p>
-          <img src="acc5.webp" alt="Step 1" className="firsttrade-step-image" />
+          <img src="/acc5.webp" alt="Step 1" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 2.</h3>
           <p>Select the asset (e.g., EUR/USD), set your lot size, and click Buy or Sell.</p>
-          <img src="acc2.webp" alt="Step 2" className="firsttrade-step-image" />
+          <img src="/acc2.webp" alt="Step 2" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 3.</h3>
           <p>Confirm the order and track it under “Trade” tab in MT4.</p>
-          <img src="acc3.webp" alt="Step 3" className="firsttrade-step-image" />
+          <img src="/acc3.webp" alt="Step 3" className="firsttrade-step-image" />
         </div>
 
         {/* MetaTrader 5 */}
@@ -112,17 +112,17 @@ const FirstTrade = () => {
         <div className="firsttrade-step">
           <h3>Step 1.</h3>
           <p>Launch MT5 platform and sign in with your Market.trad account details.</p>
-          <img src="acc7.webp" alt="Step 1" className="firsttrade-step-image" />
+          <img src="/acc7.webp" alt="Step 1" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 2.</h3>
           <p>Pick your trading instrument, set trade volume, and choose Buy or Sell.</p>
-          <img src="acc2.webp" alt="Step 2" className="firsttrade-step-image" />
+          <img src="/acc2.webp" alt="Step 2" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 3.</h3>
           <p>Confirm trade placement and check it under your “Toolbox → Trade” tab.</p>
-          <img src="acc6.webp" alt="Step 3" className="firsttrade-step-image" />
+          <img src="/acc6.webp" alt="Step 3" className="firsttrade-step-image" />
         </div>
 
         {/* TradingView */}
@@ -130,17 +130,17 @@ const FirstTrade = () => {
         <div className="firsttrade-step">
           <h3>Step 1.</h3>
           <p>Log in to TradingView and connect your Market.trad account.</p>
-          <img src="acc3.webp" alt="Step 1" className="firsttrade-step-image" />
+          <img src="/acc3.webp" alt="Step 1" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 2.</h3>
           <p>From the chart, choose an instrument and open the trading panel.</p>
-          <img src="acc2.webp" alt="Step 2" className="firsttrade-step-image" />
+          <img src="/acc2.webp" alt="Step 2" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 3.</h3>
           <p>Enter trade details (size, SL/TP) and click “Buy” or “Sell” to execute.</p>
-          <img src="acc7.webp" alt="Step 3" className="firsttrade-step-image" />
+          <img src="/acc7.webp" alt="Step 3" className="firsttrade-step-image" />
         </div>
 
         {/* cTrader */}
@@ -148,17 +148,17 @@ const FirstTrade = () => {
         <div className="firsttrade-step">
           <h3>Step 1.</h3>
           <p>Open cTrader and log in with your Market.trad account credentials.</p>
-          <img src="acc5.webp" alt="Step 1" className="firsttrade-step-image" />
+          <img src="/acc5.webp" alt="Step 1" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 2.</h3>
           <p>Select an asset from the watchlist and open a new order window.</p>
-          <img src="acc3.webp" alt="Step 2" className="firsttrade-step-image" />
+          <img src="/acc3.webp" alt="Step 2" className="firsttrade-step-image" />
         </div>
         <div className="firsttrade-step">
           <h3>Step 3.</h3>
           <p>Set trade size, place Stop-Loss/Take-Profit if needed, and execute Buy/Sell.</p>
-          <img src="acc6.webp" alt="Step 3" className="firsttrade-step-image" />
+          <img src="/acc6.webp" alt="Step 3" className="firsttrade-step-image" />
         </div>
       </div>
     </div>
