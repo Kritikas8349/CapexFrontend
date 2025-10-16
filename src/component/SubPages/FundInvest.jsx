@@ -5,14 +5,14 @@ import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const sections = [
-  { title: "Getting Started", img: "pf4.svg", count: 6 },
-  { title: "Secure Client Area", img: "pf2.webp", count: 8 },
-  { title: "TradingView", img: "Pf1.webp", count: 29 },
-  { title: "MetaTrader 5", img: "pf3.webp", count: 28 },
-  { title: "MetaTrader 4", img: "pf3.webp", count: 17 },
-  { title: "Market.trad Invest", img: "pf4.svg", count: 7 },
-  { title: "cTrader", img: "pf4.svg", count: 22 },
-  { title: "Account Support", img: "pf4.svg", count: 8 },
+  { title: "Getting Started", img: "/pf4.svg", count: 6 },
+  { title: "Secure Client Area", img: "/pf2.webp", count: 8 },
+  { title: "TradingView", img: "/Pf1.webp", count: 29 },
+  { title: "MetaTrader 5", img: "/pf3.webp", count: 28 },
+  { title: "MetaTrader 4", img: "/pf3.webp", count: 17 },
+  { title: "Market.trad Invest", img: "/pf4.svg", count: 7 },
+  { title: "cTrader", img: "/pf4.svg", count: 22 },
+  { title: "Account Support", img: "/pf4.svg", count: 8 },
 ];
 
 const FundInvest = () => {
@@ -70,7 +70,7 @@ const FundInvest = () => {
               <iframe
                 width="700"
                 height="420"
-                src="https://www.youtube.com/embed/your-video-id" // replace with actual video
+                src="https://www.youtube.com/embed/your-video-id" 
                 title="Fund Invest Tutorial"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -168,14 +168,7 @@ const FundInvest = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="fundinvest-article-nav">
-          <a href="#" className="prev-link">
-            ← How to open a Share Investing Account?
-          </a>
-          <a href="#" className="next-link">
-            Managing Your Investments →
-          </a>
-        </div>
+        
       </div>
     </div>
   );
