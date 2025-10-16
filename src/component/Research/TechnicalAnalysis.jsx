@@ -118,7 +118,7 @@ export default function TechnicalAnalysis() {
 
             <div className="news-section" style={{ backgroundImage: `url(${trd})` }}>
                 <div className="overlay">
-                    <h1 className="news">Technical Analysis </h1>
+                    <h1 className="newsh">Technical Analysis </h1>
                     <p className="news-des">
                         Read the latest news and updates on Technical analysis
 

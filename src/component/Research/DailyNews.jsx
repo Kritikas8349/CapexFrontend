@@ -50,7 +50,7 @@ function DailyNews() {
         <div id='Main'>
              <div className="news-section" style={{ backgroundImage: `url(${trd})` }}>
                 <div className="overlay">
-                    <h1 className="news">News</h1>
+                    <h1 className="newsh">News</h1>
                     <p className="news-des">
                         Stay ahead with real-time updates on major economic events, expert insights, videos,<br />
                         and more from our global market specialists.

@@ -12,8 +12,8 @@
   padding-bottom: 20px;
   font-family: Arial, sans-serif;
   background: linear-gradient(360deg,#000000, #130486, #000000);
-  width: 97%;
-  margin-left: 20px;
+  width: 98%;
+  margin-left: 15px;
   border-radius: 16px;
 }
 
@@ -154,6 +154,9 @@
 
 /* Mobile Portrait (≤480px) */
 @media (max-width: 480px) {
+  .news{
+    margin-right: 20px;
+  }
   .news-heading {
     font-size: 20px; /* Even smaller heading for very small screens */
   }

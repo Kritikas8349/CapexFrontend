@@ -26,24 +26,30 @@ html {
     justify-content: center;
 }
 
+/* Overlay content stacking */
 .overlay {
-    /* background-color: rgba(0, 0, 0, 0.5); dark overlay for readability */
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: start;
-    color: white;
-    width: 75%;
+  display: flex;
+  flex-direction: column; /* stack headline and list vertically */
+  align-items: flex-start; /* left-align text on desktop */
+  text-align: start;
+  color: white;
+  width: 75%;
+  padding: 2rem;
 }
 
-.news {
-    font-size: 60px;
+/* Headline */
+.newsh {
+  font-size: 60px;
+  margin: 0 0 1rem 0; /* spacing below headline */
+  line-height: 1.1;
 }
 
+/* Article list appears below the headline */
 .article-list {
-    margin-top: 50px;
+  margin-top: 0; /* remove extra top margin */
   list-style: none;
   text-align: start;
-  
+  width: 100%;
 }
 
 .article-item {
@@ -64,13 +70,65 @@ html {
 }
 
 .description {
-  margin-top: 6px;
+  margin-top: 4px;
   font-size: 14px;
   font-weight: 400;
   color: #000;
   max-width: 100%;
   line-height: 1.4;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .newsh {
+      font-size: 45px;
+  }
+
+  .article-link {
+      font-size: 16px;
+  }
+
+  .description {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+      width: 90%;
+      align-items: flex-start;
+      padding: 1.5rem;
+  }
+  .newsh {
+      font-size: 36px;
+      text-align: start;
+  }
+  .article-link {
+      font-size: 15px;
+  }
+  .description {
+      font-size: 12.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+      width: 95%;
+      align-items: center; /* center for mobile */
+      text-align: center;
+      padding: 1rem;
+  }
+  .newsh {
+      font-size: 28px;
+  }
+  .article-link {
+      font-size: 14px;
+  }
+  .description {
+      font-size: 12px;
+  }
+}
+
 
 hr {
   margin-top: 12px;
