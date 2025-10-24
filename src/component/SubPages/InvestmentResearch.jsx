@@ -32,7 +32,7 @@ function InvestmentResearch() {
         },
         {
             id: 4,
-            img: "/supportBg.jpg",
+            img: "/SupportBg.jpg",
             title: "Tech stocks are making waves",
             desc: "Technology is booming with AI and Cloud expansion...",
             date: "15 April 2025",

@@ -128,7 +128,7 @@ function Research() {
                         {/* Right Section */}
                         <div className="col-lg-6 text-center mt-4 mt-lg-0">
                             <img
-                                src="/public/mobile.png" // Replace with your image
+                                src="/mobile.png" // Replace with your image
                                 alt="Daily Market Analysis"
                                 className="img-fluid"
                                 style={{ maxHeight: '500px', width: '100%', objectFit: 'contain' }}

@@ -72,7 +72,7 @@ function Webinars() {
                       </span>
                     )}
                   </div>
-                  <div className="p-3">
+                  <div className="p-3 text-start">
                     <h6 className="fw-bold text-dark">{video.title}</h6>
                     <p className="text-secondary mb-0 small">{video.date}</p>
                   </div>

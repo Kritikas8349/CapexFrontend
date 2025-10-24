@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import SidebarAccordion from "./SideBarAccordian";
 
 const ContractSpecification = () => {
     const [search, setSearch] = useState("");
+     const [feedback, setFeedback] = useState(null);
 
     const data = [
         {
@@ -290,13 +292,19 @@ const ContractSpecification = () => {
                         </div>
 
                         {/* Feedback Section */}
-                        <div className="p-4 border rounded d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 bg-light-subtle">
-                            <h5 className="mb-0 text-dark">Did this answer your question?</h5>
-                            <div className="d-flex gap-4 fs-4 text-warning">
-                                <i className="bi bi-emoji-smile-fill"></i>
-                                <i className="bi bi-emoji-angry-fill"></i>
-                                <i className="bi bi-emoji-neutral-fill"></i>
-                            </div>
+                        <div className="fundinvest-feedback-box p-4">
+                            {feedback ? (
+                                <p className="thank-you ">Thanks for your Feedback!</p>
+                            ) : (
+                                <>
+                                    <p className="text-dark ">Did this answer your question?</p>
+                                    <div className="fundinvest-feedback-icons">
+                                        <FaSmile className="feedback-icon" onClick={() => setFeedback("positive")} />
+                                        <FaMeh className="feedback-icon" onClick={() => setFeedback("neutral")} />
+                                        <FaFrown className="feedback-icon" onClick={() => setFeedback("negative")} />
+                                    </div>
+                                </>
+                            )}
                         </div>
 
                         {/* Navigation Links */}

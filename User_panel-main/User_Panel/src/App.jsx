@@ -25,6 +25,8 @@ import OpenTicket from "./component/OpenTicket";
 import ReplyTicket from "./component/ReplyTicket";
 import TradeNavbar from "./component/TradeNavbar";
 import TradeLayout from "./component/TradeLayout";
+import MarketOverview from "./component/MarketOverview";
+import CryptoCurrency from "./component/CryptoCurrency";
 
 function App() {
   const location = useLocation();  
@@ -60,10 +62,14 @@ function App() {
           <Route path="/security" element={<TwoFactor/>} />
           <Route path="/trade" element={<TradeLayout />}>
             <Route index element={<TradePage />} /> {/* /trade */}
-            <Route path="/trade/market" element={<TradeHistory />} /> {/* /trade/history */}
+            <Route path="/trade/market-overview" element={<TradeHistory />} /> {/* /trade/history */}
             <Route path="orders" element={<ManageOrder />} /> {/* /trade/orders */}
              {/* Add more trade pages here */}
            </Route>
+          <Route path="/market-overview" element={<MarketOverview></MarketOverview>} />
+          <Route path="/crypto-currency" element={<CryptoCurrency></CryptoCurrency>} />
+
+
         </Routes>
       </div>
     </div>

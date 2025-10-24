@@ -2,6 +2,9 @@
     background: #493FFD;
     color: white;
 }
+.text-heading{
+    color: #493FFD;
+}
 .table-data{
      background: white;
     color: dark;
@@ -11,6 +14,9 @@
     
     background: #f5f6fa;
     color: dark;
+}
+.card-bg{
+    background-color: rgb(233, 233, 233);
 }
 input.custom-placeholder::placeholder {
 
