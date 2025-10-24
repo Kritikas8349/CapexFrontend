@@ -5,7 +5,7 @@
     gap: 20px;
     max-width: 1480px;
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto 20px auto;
     justify-content: space-between;
     background-color: black;
     padding: 180px 40px 40px 40px;
@@ -68,6 +68,10 @@
 
 /* Medium screens / Tablets */
 @media (max-width: 992px) {
+    .blog-partner-container{
+        margin-top: 0;
+        border-radius: 0;
+    }
     .blog-card {
         flex: 1 1 calc(50% - 20px); /* 2 cards per row */
     }
@@ -75,7 +79,14 @@
 
 /* Mobile / Small screens */
 @media (max-width: 768px) {
+    .blog-partner-container{
+        margin-top: 0;
+        border-radius: 0;
+    }
     .blog-card {
         flex: 1 1 100%; /* stacked vertically */
     }
 }
+
+
+

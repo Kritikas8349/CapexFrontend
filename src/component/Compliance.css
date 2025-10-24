@@ -5,8 +5,9 @@
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
-  color: #111;
+  /* color: #111; */
   background-color: #ebefee;
+  padding-top: 10px;
 }
 
 /* ================= Image Container ================= */
@@ -22,7 +23,7 @@
   align-items: center;
   padding: 40px 20px;
   box-sizing: border-box;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   border-radius: 16px;
 }
 
@@ -122,6 +123,10 @@
   line-height: 1.6;
 }
 
+.mt-para {
+  color: white;
+}
+
 /* ================= Responsive Media Queries ================= */
 
 /* Large Desktops */
@@ -189,7 +194,7 @@
 
   .mt-compliance-box {
     width: 100%;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .compliance-image-container .compliance-heading {
@@ -222,11 +227,63 @@
   .mt-compliance-box {
     padding: 15px;
     width: 100%;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .compliance-image-container .compliance-heading {
     font-size: 1.6rem;
     white-space: nowrap; /* keeps text in one line */
+  }
+}
+
+
+@media (max-width: 767px) {
+  .compliance-image-container,
+  .mt-compliance-container {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* ✅ Maintain vertical gap between the two inner divs */
+  .compliance-image-container {
+    margin-bottom: 20px !important; /* creates gap below image container */
+  }
+
+  .mt-compliance-container {
+    margin-top: 0 !important; /* avoids double stacking gap */
+  }
+
+  /* keep overall vertical spacing inside the page */
+  .compliance-container {
+    /* padding-top: 20px !important; */
+    padding-bottom: 20px !important;
+  }
+}
+
+/* ========== Very Small Devices (≤480px): same behavior ========== */
+@media (max-width: 480px) {
+  .compliance-image-container,
+  .mt-compliance-container {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* ✅ Ensure clear gap between the two sections */
+  .compliance-image-container {
+    margin-bottom: 20px !important;
+  }
+
+  .compliance-container{
+    padding-top: 0;
   }
 }

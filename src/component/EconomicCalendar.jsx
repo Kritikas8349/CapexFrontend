@@ -71,7 +71,7 @@ const EconomicCalendar = () => {
   }, [selectedTimezone, timeFormat]);
 
   return (
-    <>
+    <> 
       {/* ---------- FIRST PAGE ---------- */}
       <div className="calendar-container">
         <div className="content">

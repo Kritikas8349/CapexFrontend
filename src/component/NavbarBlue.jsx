@@ -137,7 +137,7 @@
         },
         "Account Support",
         "Education Hub",
-        "Economic Calendar",
+        "Economic calendar",
         "Contact Support",
       ],
     };

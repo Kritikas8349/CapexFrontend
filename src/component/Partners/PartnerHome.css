@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
   
   /* Make image inset a bit from the edges */
@@ -137,7 +137,7 @@
       margin: 0;
     }
     .partner-home-image-container {
-      height: 73vh;
+      height: 76vh;
     }
   
     .partner-home-heading {
@@ -1272,4 +1272,26 @@
     .partner-resources-heading-new {
       font-size: 2rem;
     }
+}
+
+@media (max-width: 768px) {
+  .partnerhomecontainer,
+  .partner-home-container,
+  .partner-home-account-section,
+  .ph-container,
+  .ph-container-reverse,
+  .affiliate-container,
+  .affiliate-container1,
+  .copytrade-container,
+  .partner-resources-main,
+  .ratings-section,
+  .promote-wrapper {
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+
+  .partner-home-container{
+    padding: 0;
+  }
+
 }

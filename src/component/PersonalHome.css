@@ -174,7 +174,7 @@
   /* Small Screens */
   @media (max-width: 600px) {
     .home-container {
-      padding: 60px 6vw;
+      padding: 80px 6vw;
       height: 65vh;
       display: flex;
       flex-direction: column;
@@ -1089,4 +1089,25 @@
   .video-grid { gap: 12px; }
   .trading-education { padding: 12px; }
 
+}
+
+
+/* ========== Remove border-radius & margin for small screens ========== */
+@media (max-width: 600px) {
+  .home-container,
+  .features-section,
+  .tradeable-assets-section,
+  .home-platforms-section,
+  .home-compare-accounts-container,
+  .market-section,
+  .features-container,
+  .execution-section,
+  .trading-education {
+    border-radius: 0 !important;
+    /* margin: 0 !important; */
+  }
+
+  .homecontainer{
+    padding: 0 0 10px 0;
+  }
 }

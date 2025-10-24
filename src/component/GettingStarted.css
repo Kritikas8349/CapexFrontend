@@ -9,16 +9,16 @@
 .gettingcontainer {
   background-color: #ebefee;
   width: 100%;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .getting-container {
-  max-width: 1480px;
-  margin: 0 auto;
+  /* max-width: 1480px; */
+  /* margin: 0 auto; */
   padding: 180px 40px 40px 40px; /* top padding for navbar overlap */
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom right, #000000, #493ffd);
-  border-radius: 12px;
+  /* border-radius: 12px; */
   color: #ffffff;
   min-height: 70vh; /* ensures it covers most of the viewport but grows with content */
   box-sizing: border-box;
@@ -178,3 +178,5 @@
     font-size: 13px;
   }
 }
+
+

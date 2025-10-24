@@ -189,3 +189,38 @@
   }
 }
 
+
+
+/* ========== Mobile: Remove border-radius & side margins (keep vertical gaps) ========== */
+@media (max-width: 600px) {
+  .news-container {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* keep vertical spacing (top/bottom gaps) */
+  .news-container {
+    /* margin-top: 20px !important; */
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Optional: also remove margins on very small portrait screens (≤480px) */
+@media (max-width: 480px) {
+  .news {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0;
+  }
+  .news-container {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}

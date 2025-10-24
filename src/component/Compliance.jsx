@@ -81,7 +81,7 @@ const ComplianceSection = () => {
           </div>
         </div>
         <br />
-          <p>If you have any questions regarding our Compliance policies or procedures, please feel free to reach out to the Market.trad support team. We are always happy to provide clarification and assist you with any inquiries related to our Compliance framework.</p>
+          <p className="mt-para">If you have any questions regarding our Compliance policies or procedures, please feel free to reach out to the Market.trad support team. We are always happy to provide clarification and assist you with any inquiries related to our Compliance framework.</p>
       
       </div>
 
