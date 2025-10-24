@@ -19,7 +19,7 @@ function CopyTrader() {
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 bg-ctrade">
+            <div className=" bg-black text-white py-5 bg-ctrade mt-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     <div className="row align-items-center mt-5">
                         {/* Left Section */}
@@ -177,7 +177,7 @@ function CopyTrader() {
                 </div>
             </div>
             {/* -----------Why Join Market Trad------------ */}
-            <div className="container-fluid gradient-bg px-2 px-lg-5 px-md-5 mt-2">
+            <div className=" gradient-bg px-2 px-lg-5 px-md-5 mt-2  mx-lg-3 rounded rounded-4">
                 <div className="row g-0 align-items-center">
 
                     {/* LEFT: Gradient Background + Text */}
@@ -208,7 +208,7 @@ function CopyTrader() {
 
 
             {/* -------Copy only the best--------- */}
-            <div className="container-fluid px-0 gradient-bg px-2 px-lg-5 px-md-5 mt-2">
+            <div className=" px-0 gradient-bg px-2 px-lg-5 px-md-5 mt-2  mx-lg-3 rounded rounded-4">
                 <div className="row g-0 align-items-center">
                     {/* LEFT: Gradient Background + Text */}
                     <div className="col-lg-6 col-md-12 d-flex justify-content-center align-items-center p-4">
@@ -238,7 +238,7 @@ function CopyTrader() {
             </div>
 
             {/* --------Risk Management----------     */}
-            <div className="container-fluid px-0 gradient-bg mt-2">
+            <div className=" px-0 gradient-bg mt-2  mx-lg-3 rounded rounded-4">
                 <div className="row g-0 align-items-center">
 
                     {/* LEFT: Gradient Background + Text */}
@@ -364,7 +364,7 @@ function CopyTrader() {
             {/* ----FAQ'S--------------- */}
 
 
-            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
+            <div className="bg-black text-white py-2 py-lg-5 py-md-5 my-lg-2  mx-lg-3 rounded rounded-4 ">
                 <div class="container my-5 bg-black text-white p-2 p-lg-5 p-md-5 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 

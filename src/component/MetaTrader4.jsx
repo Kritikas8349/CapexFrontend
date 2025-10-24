@@ -12,7 +12,7 @@ function MetaTrader4() {
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 trading-view">
+            <div className=" bg-black text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container py-5">
                     <div className="row align-items-center mt-3">
                         {/* Left Section */}
@@ -390,7 +390,7 @@ function MetaTrader4() {
 
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-2 py-lg-5 py-md-5">
+            <div className="bg-dark text-white py-2 py-lg-5 py-md-5 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     <div className="row align-items-center  g-5">
 
@@ -449,7 +449,7 @@ function MetaTrader4() {
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 trading-view">
+            <div className=" bg-black text-white py-2 py-lg-5 py-md-5 trading-view my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -526,7 +526,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
+            <div className=" bg-black text-white py-2 py-lg-5 py-md-5 mx-lg-3 rounded rounded-4">
                 <div class="container my-5 bg-black text-white p-4 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 

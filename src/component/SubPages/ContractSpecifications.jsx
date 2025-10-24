@@ -153,7 +153,7 @@ const ContractSpecification = () => {
     ];
 
     return (
-        <div className="container-fluid bg-faq py-lg-5 py-md-5 pt-5">
+        <div className=" bg-faq py-lg-5 py-md-5 pt-5 mt-lg-2 mx-lg-3 rounded rounded-4">
             <div className="row justify-content-center  my-lg-6 my-md-6 mt-5  bg-transparent">
                 {/* Sidebar with Accordion */}
                 <SidebarAccordion className="bg-transparent" Sections={Sections}></SidebarAccordion>

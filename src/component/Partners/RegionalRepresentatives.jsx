@@ -3,7 +3,7 @@ import React from 'react'
 function RegionalRepresentatives() {
   return (
     <div className='bg-home'>
-      <div className="d-flex align-items-center justify-content-center text-white" style={{
+      <div className="d-flex align-items-center justify-content-center text-white my-2 mt-lg-2 mx-lg-3 rounded rounded-4" style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url('/compliance.avif')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -14,7 +14,7 @@ function RegionalRepresentatives() {
         </div>
       </div>
 
-      <div className="container-fluid  bg-free-trial text-white py-3 py-lg-5 py-md-5">
+      <div className=" bg-free-trial text-white py-3 py-lg-5 py-md-5 mt-lg-2 mx-lg-3 rounded rounded-4 ">
         <div className="container py-3 py-lg-5 py-md-5">
           <div className="row text-start">
             <div className="col-lg-6 ps-lg-5 border-end">
@@ -72,7 +72,7 @@ function RegionalRepresentatives() {
 
 
       {/* ---------------- */}
-      <div className="container-fluid py-3 py-lg-5 py-md-5" style={{
+      <div className=" py-3 py-lg-5 py-md-5 mx-lg-3 rounded rounded-4" style={{
         backgroundImage: `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),
             url('/compliance.avif')`,
         backgroundSize: 'cover',

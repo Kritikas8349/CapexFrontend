@@ -16,7 +16,7 @@ function TradingView() {
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 trading-view ">
+            <div className="bg-black text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     <div className="row align-items-center mt-5">
                         {/* Left Section */}
@@ -105,7 +105,7 @@ function TradingView() {
 
             {/* -------------How to get trading------------ */}
 
-            <div className="container-fluid bg-home align-content-center py-3 py-lg-5 py-md-5" >
+            <div className="container-fluid bg-home align-content-center py-3 py-lg-5 py-md-5 " >
                 <div className="container">
                     <div className="row align-items-center border rounded p-2 p-lg-4 p-md-4">
                         {/* Left Section */}
@@ -138,7 +138,7 @@ function TradingView() {
             </div>
 
             {/* -----------TradingView primium----------------- */}
-            <div className="container-fluid bg-primary text-white py-2 py-lg-5 py-md-5 trading-primium" >
+            <div className=" bg-primary text-white py-2 py-lg-5 py-md-5 trading-primium mx-lg-3 rounded rounded-3 " >
                 <div className="container text-start">
                     {/* Heading */}
                     <h2 className="fw-bold display-6">Get Free TradingView Premium</h2>
@@ -283,7 +283,7 @@ function TradingView() {
 
             {/* -------------How to Connect------------ */}
 
-            <div className="container-fluid align-content-center py-3 py-lg-5 py-md-5 how-to-connect" >
+            <div className=" align-content-center py-3 py-lg-5 py-md-5 how-to-connect mx-lg-3 rounded rounded-3" >
                 <div className="container">
                     <div className="row align-items-center  rounded p-0 p-lg-4 p-md-4">
                         {/* Left Section */}

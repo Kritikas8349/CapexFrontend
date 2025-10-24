@@ -72,7 +72,7 @@ function SharesTutorials() {
 
   return (
     <div className='bg-home'>
-      <div className="container-fluid  bg-shares text-white py-4">
+      <div className=" bg-shares text-white py-4 mt-lg-2 mx-lg-3 rounded rounded-4">
         <style>
           {
             `.bg-shares
@@ -85,7 +85,7 @@ function SharesTutorials() {
           }
 
         </style>
-        <div className="container">
+        <div className="container ">
           <h2 className="fw-bold bg-transparent text-white text-center display-4  mt-5 mb-2">Shares Tutorials</h2>
 
           <div className="row bg-transparent pt-4 g-4">

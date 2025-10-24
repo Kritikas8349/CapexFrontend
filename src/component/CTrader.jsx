@@ -12,7 +12,7 @@ function CTrader() {
                 }
 
             </style>
-            <div className="container-fluid bg-home text-white py-5 trading-view">
+            <div className=" bg-home text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-3">
                 <div className="container">
                     <div className="row align-items-center mt-5">
 
@@ -390,7 +390,7 @@ function CTrader() {
 
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-1 py-5 py-lg-5 py-md-5">
+            <div className=" bg-dark text-white py-1 py-5 py-lg-5 py-md-5 mx-lg-3 rounded rounded-3">
                 <div className="container py-1 py-lg-5 py-md-5">
                     <div className="row align-items-center  g-5">
 
@@ -449,7 +449,7 @@ function CTrader() {
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid  text-white py-2 py-lg-5 py-md-5 trading-view">
+            <div className=" text-white py-2 py-lg-5 py-md-5 trading-view my-lg-2 mx-lg-3 rounded rounded-3">
                 <div className="container py-lg-5">
                     <div className="row align-items-center py-lg-4">
                         {/* Left Section */}
@@ -522,7 +522,7 @@ function CTrader() {
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-lg-5 ">
+            <div className=" bg-black text-white py-lg-5 mx-lg-3 rounded rounded-3 ">
                 <div class="container bg-black text-white p-4 py-lg-5 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 

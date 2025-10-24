@@ -90,7 +90,7 @@
   color: #777;
 }
 
-.view-btn {
+.wallet-view-btn {
   background: none;
   border: 1px solid #1b8cff;
   color: #1b8cff;
@@ -101,7 +101,7 @@
   transition: 0.3s;
 }
 
-.view-btn:hover {
+.wallet-view-btn:hover {
   background: #1b8cff;
   color: #fff;
   border-color: #1b8cff;
@@ -184,7 +184,7 @@
     height: 35px;
   }
 
-  .view-btn {
+  .wallet-view-btn {
     padding: 6px 10px;
     font-size: 12px;
   }
@@ -217,7 +217,7 @@
     padding: 10px;
   }
 
-  .view-btn {
+  .wallet-view-btn {
     width: 100%;
     padding: 8px;
     text-align: center;

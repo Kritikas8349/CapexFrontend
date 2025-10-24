@@ -30,7 +30,7 @@ const TopRightNavbar = () => {
       </div>
 
       <div className="right-section">
-        <button className="trade-btn" onClick={goToTradePage}>
+        <button className="trade-btn btn btn-nav" onClick={goToTradePage}>
           Trade
         </button>
 

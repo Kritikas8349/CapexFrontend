@@ -106,7 +106,7 @@ export default function ManageWallets() {
               <span className={w.inOrder === "0.0000" ? "zero-balance" : ""}>{w.inOrder}</span>
               <span className={w.total === "0.0000" ? "zero-balance" : ""}>{w.total}</span>
               <button 
-                className="view-btn" 
+                className="wallet-view-btn" 
                 onClick={() => navigate(`/wallet/${w.symbol}`)}
               >
                 <FaEye className="view-icon" /> View

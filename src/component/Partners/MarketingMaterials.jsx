@@ -51,18 +51,18 @@ function MarketingMaterials() {
     ];
     return (
         <div className='bg-home'>
-            <div className="d-flex align-items-center justify-content-center text-white" style={{
+            <div className="d-flex align-items-center justify-content-center text-white my-2 mt-lg-2 mx-lg-3 rounded rounded-4" style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('/compliance.avif')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                minHeight: '50vh'
+                minHeight: '98vh'
             }}>
                 <div>
                     <h3 className='fw-bolder display-4'>Marketing Materials</h3>
                 </div>
             </div>
 
-            <div className="container-fluid py-5 bg-free-trial py-lg-5 py-md-5 ">
+            <div className=" py-5 bg-free-trial py-lg-5 py-md-5 mt-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="row align-items-center justify-content-between px-3 px-md-5 py-lg-5 py-md-5">
 
                     {/* Left Column */}

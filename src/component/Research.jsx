@@ -96,7 +96,7 @@ function Research() {
   `}
             </style>
 
-            <div className="container-fluid py-5 research-section ">
+            <div className=" py-5 research-section mt-lg-2 mx-lg-3 rounded rounded-4 ">
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -372,7 +372,7 @@ function Research() {
 
 
             {/* --------Trading Research---------- */}
-            <section className=" border align-content-center  py-lg-5 bg-primary text-white p-lg-5 p-5 tr-container" id='tr-container-bg'>
+            <section className=" border align-content-center  py-lg-5 bg-primary text-white p-lg-5 p-5 tr-container  mx-lg-3 rounded rounded-4" id='tr-container-bg'>
                 <div className="row my-5 my-lg-5 g-6 align-items-center">
 
                     {/* Text and Button Column */}

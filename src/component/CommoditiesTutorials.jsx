@@ -84,7 +84,7 @@ function CommoditiesTutorials() {
         }
 
       </style>
-      <div className="container-fluid bg-commodities  text-white py-5 ">
+      <div className="bg-commodities  text-white py-5 mt-lg-2 mx-lg-3 rounded rounded-4">
         <div className="container bg-tranpraent pt-5" >
           {/* <h2 className="fw-bold bg-tranpraent text-white text-center display-5 mb-5">Commodities Tutorial</h2> */}
 

@@ -17,35 +17,35 @@ function CryptoCurrency() {
       change1h: "0.3433%",
       change24h: "2.6602%",
       marketcap: "470287996243.9293",
-      icon: "./tedher.png "   },
+      icon: "/tedher.png "   },
     {
       pair: "USDT_USD",
       price: "1.0005",
       change1h: "0.01%",
       change24h: "0.01%",
       marketcap: "175812931819.3300",
-      icon: "./tedher.png "   },
+      icon: "/tedher.png "   },
     {
       pair: "BTC_USD",
       price: "120,631.5432",
       change1h: "0.16%",
       change24h: "2.58%",
       marketcap: "2403969881508.6001",
-      icon: "./tedher.png "   },
+      icon: "/tedher.png "   },
     {
       pair: "BNB_EUR",
       price: "923.7162",
       change1h: "0.68%",
       change24h: "5.86%",
       marketcap: "128567688439.9000",
-      icon: "./tedher.png"},
+      icon: "/tedher.png"},
     {
       pair: "ETH_BTC",
       price: "0.0372",
       change1h: "0.16%",
       change24h: "3.92%",
       marketcap: "4495494.5408",
-      icon: "./tedher.png"
+      icon: "/tedher.png"
     },
     {
       pair: "BTC_USDC",
@@ -53,7 +53,7 @@ function CryptoCurrency() {
       change1h: "0.0118%",
       change24h: "0.0207%",
       marketcap: "181363822076.2277",
-      icon: "./tedher.png",
+      icon: "/tedher.png",
     },
     {
       pair: "BTC_USDT",
@@ -61,35 +61,35 @@ function CryptoCurrency() {
       change1h: "0.3433%",
       change24h: "2.6602%",
       marketcap: "470287996243.9293",
-      icon: "./tedher.png "   },
+      icon: "/tedher.png "   },
     {
       pair: "USDT_USD",
       price: "1.0005",
       change1h: "0.01%",
       change24h: "0.01%",
       marketcap: "175812931819.3300",
-      icon: "./tedher.png "   },
+      icon: "/tedher.png "   },
     {
       pair: "BTC_USD",
       price: "120,631.5432",
       change1h: "0.16%",
       change24h: "2.58%",
       marketcap: "2403969881508.6001",
-      icon: "./tedher.png "   },
+      icon: "/tedher.png "   },
     {
       pair: "BNB_EUR",
       price: "923.7162",
       change1h: "0.68%",
       change24h: "5.86%",
       marketcap: "128567688439.9000",
-      icon: "./tedher.png"},
+      icon: "/tedher.png"},
     {
       pair: "ETH_BTC",
       price: "0.0372",
       change1h: "0.16%",
       change24h: "3.92%",
       marketcap: "4495494.5408",
-      icon: "./tedher.png"
+      icon: "/tedher.png"
     },
     {
       pair: "BTC_USDC",
@@ -97,7 +97,7 @@ function CryptoCurrency() {
       change1h: "0.0118%",
       change24h: "0.0207%",
       marketcap: "181363822076.2277",
-      icon: "./tedher.png",
+      icon: "/tedher.png",
     },
   ];
 
@@ -108,28 +108,28 @@ function CryptoCurrency() {
     {
       top: "Top Exchanges Coin",
       items: [
-        { id: 1, name: "USDT", img: "./tedher.png", price: "$1.0004", change: "0.01%", color: "text-danger" },
-        { id: 2, name: "BTC", img: "./xrp.jpg", price: "$120,758.7856", change: "0.07%", color: "text-danger" },
-        { id: 3, name: "BNB", img: "./binanceusd.jpg", price: "$1,086.0861", change: "0.85%", color: "text-success" },
-        { id: 4, name: "DOT", img: "./australiandollar.png", price: "$4.3273", change: "0.09%", color: "text-success" },
+        { id: 1, name: "USDT", img: "/tedher.png", price: "$1.0004", change: "0.01%", color: "text-danger" },
+        { id: 2, name: "BTC", img: "/xrp.jpg", price: "$120,758.7856", change: "0.07%", color: "text-danger" },
+        { id: 3, name: "BNB", img: "/binanceusd.jpg", price: "$1,086.0861", change: "0.85%", color: "text-success" },
+        { id: 4, name: "DOT", img: "/australiandollar.png", price: "$4.3273", change: "0.09%", color: "text-success" },
       ],
     },
     {
       top: "Highlight Coin",
       items: [
-        { id: 1, name: "BTC", img: "./xrp.jpg", price: "$120,758.7856", change: "0.07%", color: "text-danger" },
-        { id: 2, name: "ETH", img: "./australiandollar.png", price: "$4,497.5629", change: "0.16%", color: "text-success" },
-        { id: 3, name: "DOGE", img: "./binanceusd.jpg", price: "$0.2617", change: "0.88%", color: "text-success" },
-        { id: 4, name: "TON", img: "./tedher.png", price: "$2.8578", change: "0.33%", color: "text-danger" },
+        { id: 1, name: "BTC", img: "/xrp.jpg", price: "$120,758.7856", change: "0.07%", color: "text-danger" },
+        { id: 2, name: "ETH", img: "/australiandollar.png", price: "$4,497.5629", change: "0.16%", color: "text-success" },
+        { id: 3, name: "DOGE", img: "/binanceusd.jpg", price: "$0.2617", change: "0.88%", color: "text-success" },
+        { id: 4, name: "TON", img: "/tedher.png", price: "$2.8578", change: "0.33%", color: "text-danger" },
       ],
     },
     {
       top: "New Coin",
       items: [
-        { id: 1, name: "BTC", img: "./xrp.jpg", price: "$120,758.7856", change: "0.07%", color: "text-danger" },
-        { id: 2, name: "ETH", img: "./australiandollar.png", price: "$4,497.5629", change: "0.16%", color: "text-success" },
-        { id: 3, name: "XRP", img: "./binanceusd.jpg", price: "$3.0621", change: "0.28%", color: "text-danger" },
-        { id: 4, name: "USDT", img: "./tedher.png", price: "$1.0004", change: "0.01%", color: "text-danger" },
+        { id: 1, name: "BTC", img: "/xrp.jpg", price: "$120,758.7856", change: "0.07%", color: "text-danger" },
+        { id: 2, name: "ETH", img: "/australiandollar.png", price: "$4,497.5629", change: "0.16%", color: "text-success" },
+        { id: 3, name: "XRP", img: "/binanceusd.jpg", price: "$3.0621", change: "0.28%", color: "text-danger" },
+        { id: 4, name: "USDT", img: "/tedher.png", price: "$1.0004", change: "0.01%", color: "text-danger" },
       ],
     },
   ];
@@ -150,8 +150,17 @@ function CryptoCurrency() {
             Explore available Cryptocurrency on Vinance
           </p>
           </div>
-          <div className=" col input-group w-100 w-md-50" style={{ maxWidth: "350px" }}>
-                    <span className="input-group-text bg-tarsnsparent border-secondary text-dark">
+          <div className=" col input-group w-100 w-md-50 justify-content-end" style={{ maxWidth: "350px" }}>
+            <div className="">
+                        <div class=" ">
+                            <input type="text" class="form-control bg-transparent border-dark text-dark custom-placeholder" placeholder="Search by transactions" aria-label="Recipient’s username with two button addons" />
+
+                            {/* <button class="btn btn-outline-dark bi bi-search p-0 px-1" type="button"></button> */}
+                        </div>
+
+
+                    </div>
+                    {/* <span className="input-group-text bg-tarsnsparent border-secondary text-dark">
                       <BsSearch />
                     </span>
                     <input
@@ -160,7 +169,7 @@ function CryptoCurrency() {
                       placeholder="Search here..."
                       value={search}
                       onChange={(e) => setSearch(e.target.value)}
-                    />
+                    /> */}
                   </div>
         </div>
 
@@ -238,8 +247,8 @@ function CryptoCurrency() {
           </tbody>
         </table>
       </div>
-      <div>
-        button
+      <div className=" d-flex justify-content-center">
+       <button className="btn btn-nav  bi bi-dash-circle-dotted  "> Load More</button>
       </div>
     </div>
 
