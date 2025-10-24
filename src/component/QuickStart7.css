@@ -120,6 +120,13 @@ html {
     withdraw-right7 img {
         /* transform: translateX(0); */
         background-color: red;
+   
+    }
+}
+@media (max-width: 768px){
+    .withdraw-section7{
+         margin: 0px -10px 20px -10px !important;
+    border-radius: 0px;
     }
 }
 
@@ -379,6 +386,12 @@ html {
         font-size: 0.95rem;
     }
 }
+@media(max-width:600px){
+   .withdraw7{
+     margin: 20px -10px 20px -10px !important;
+    border-radius: 0px;
+   } 
+}
 
 @media (max-width: 480px) {
 
@@ -513,7 +526,12 @@ html {
         padding: 14px;
     } */
 }
-
+@media(max-width:600px){
+   .withdraw-container7{
+     margin: 20px -10px 20px -10px !important;
+    border-radius: 0px;
+   } 
+}
 @media (max-width: 480px) {
     .withdraw-text7 h1 {
         font-size: 1.5rem;
@@ -612,6 +630,13 @@ html {
     .faq-answer7 {
         font-size: 0.95rem;
     }
+}
+@media(max-width:600px){
+   .faq-container7{
+    padding-left: 20px;
+     margin: 20px -10px 20px -10px !important;
+    border-radius: 0px;
+   } 
 }
 
 @media (max-width: 480px) {

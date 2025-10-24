@@ -86,6 +86,14 @@ body {
 
   }
 }
+@media (max-width: 500px){
+
+  .m-section{
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+
+}
 
 .m1-stats-container {
   background: transparent;
@@ -473,6 +481,13 @@ body {
   .home-learn-more-btn-m1 {
     margin-top: 8px;
   }
+}
+@media (max-width:600px) {
+  .home-platforms-section-m1{
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+  
 }
 
 
