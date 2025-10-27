@@ -280,11 +280,11 @@ function ResearchNavbar() {
       <a href="#" className="res-refer-link">Refer a friends</a>
     </li>
     <li>
-      <button className="res-login-btn">Log In</button>
-    </li>
-    <li>
-      <button className="res-join-bttnn">Join Now</button>
-    </li>
+    <Link to="/loginform" className="res-login-btn" onClick={() => setMenuOpen(false)}>Log In</Link>
+  </li>
+  <li>
+    <Link to="/create-account" className="res-join-bttnn" onClick={() => setMenuOpen(false)}>Join Now</Link>
+  </li>
   </ul>
 
   <div className="res-overlay-bottom-row">
