@@ -55,4 +55,4 @@ function DepositeHistory() {
     )
 }
 
-export default DepositeHistory
+export default DepositeHistory;
