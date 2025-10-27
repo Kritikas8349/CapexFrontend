@@ -426,9 +426,9 @@
 
 /* Responsive Panel */
 @media (max-width: 768px) {
-  .side-form-panel {
+  /* .side-form-panel {
     width: 100%;
-  }
+  } */
 }
 /* =============================
    SLIDING FORM PANEL STYLING
@@ -553,10 +553,10 @@
 
 /* Responsive Panel */
 @media (max-width: 1024px) {
-  .side-form-panel {
+  /* .side-form-panel {
     width: 320px;
     padding: 20px;
-  }
+  } */
   .form-content h3 {
     font-size: 18px;
   }
@@ -571,10 +571,10 @@
 }
 
 @media (max-width: 768px) {
-  .side-form-panel {
+  /* .side-form-panel {
     width: 100%;
     padding: 20px;
-  }
+  } */
   .form-content h3 {
     font-size: 18px;
   }
@@ -590,10 +590,10 @@
 
 
 @media (max-width: 480px) {
-  .side-form-panel {
+  /* .side-form-panel {
     width: 100%;
     padding: 15px;
-  }
+  } */
   .close-panel {
     font-size: 20px;
     margin-bottom: 10px;

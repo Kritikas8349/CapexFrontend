@@ -13,7 +13,7 @@ function InvestmentResearch() {
             id: 1,
             img: "/awardlogo.avif", // replace with your image
             title: "Why is a shiny block of metal so popular?",
-            desc: "I know everyone is obsessed with gold right now, because number go up...",
+            desc: "I know everyone is obsessed t with gold right now, because number go up...",
             date: "8 May 2025",
         },
         {

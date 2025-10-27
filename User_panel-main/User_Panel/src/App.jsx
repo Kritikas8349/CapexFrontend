@@ -59,7 +59,8 @@ function App() {
           <Route path="about/about-us" element={<QuickStart />} />
           <Route path="support/contact-support" element={<ContactSupport />} />
           </Route>
-
+          <Route path="/manage-order" element={<ManageOrder></ManageOrder>} />
+        
           <Route path="/t-history" element={<TradeHistory />} />
           <Route path="/deposit-history" element={<DepositeHistory />} />
           <Route path="/withdraw-history" element={<WithdrawHistory />} />
