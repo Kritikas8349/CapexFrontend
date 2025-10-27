@@ -27,26 +27,33 @@ import ReplyTicket from "./Component/ReplyTicket";
 // import TradeNavbar from "./component/TradeNavbar";
 
 function App() {
-  const location = useLocation();  
-  const hideSidebarAndNavbarRoutes = ["/trade"]; 
-  const shouldHideSidebarAndNavbar = hideSidebarAndNavbarRoutes.includes(location.pathname);
+  const location = useLocation();
+  const shouldHideSidebarAndNavbar = location.pathname.startsWith("/trade");
 
   return (
     <div className="app-container">
-      {/* Sidebar tab show karein jab current route trade na ho */}
       {!shouldHideSidebarAndNavbar && <Sidebar />}
-      {shouldHideSidebarAndNavbar && <TradeNavbar />}
       <div className="dashboard-wrapper">
-        {/* TopRightNavbar tab show karein jab current route trade na ho */}
         {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
 
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/userdashboard" element={<Dashboard />} />
           <Route path="/profile" element={<ProfileSetting />} />
-          <Route path="/manage-order" element={<ManageOrder />} />
-          <Route path="/trade" element={<TradePage />} />
-          <Route path="/trade-history" element={<TradeHistory />} />
+          <Route path="/change-password" element={<ChangePassword></ChangePassword>} />
+          <Route path="/change-password" element={<ChangePassword></ChangePassword>} />
+          {/* <Route path="/logout" element={<Logout></Logout>} /> */}
+
+          {/* Trade Layout */}
+          <Route path="/trade" element={<TradeLayout />}>
+            <Route index element={<TradePage />} />
+            <Route path="market-overview" element={<MarketOverview />} />
+          <Route path="crypto-currency" element={<CryptoCurrency />} />
+          <Route path="about/about-us" element={<QuickStart />} />
+          <Route path="support/contact-support" element={<ContactSupport />} />
+          </Route>
+
+          <Route path="/t-history" element={<TradeHistory />} />
           <Route path="/deposit-history" element={<DepositeHistory />} />
           <Route path="/withdraw-history" element={<WithdrawHistory />} />
           <Route path="/transaction-history" element={<TransactionHistory />} />
@@ -63,5 +70,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

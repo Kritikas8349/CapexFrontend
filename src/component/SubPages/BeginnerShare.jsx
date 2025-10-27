@@ -30,12 +30,12 @@ function BeginnerShare() {
         <div id='BeginnerMain'>
 
             <div className="beginner-forex-tutorial">
-                <h1 className="beginner-tutorial-heading">Beginner Shares Tutorial</h1>
+              
 
                 <div className="beginner-tutorial-grid">
                     {/* Left Section: Lesson 1 */}
                     <div className="beginner-left-section">
-                        <div className="beginner-lesson1-image" style={{ backgroundImage: 'url(/stocks-101.1.png)' }}>
+                        <div className="beginner-lesson1-image" style={{ backgroundImage: 'url(/b1.webp)' }}>
                             <div className="beginner-lesson1-title"></div>
                         </div>
                         <div className="beginner-lesson1-text">

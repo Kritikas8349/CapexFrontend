@@ -112,7 +112,7 @@ function Market2() {
     return (
 
 
-        <div id='Main'>
+        <div id='Main1'>
 
 
 

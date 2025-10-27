@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import SidebarAccordion from "./SideBarAccordian";
 
 const ContractExpiries = () => {
     const [search, setSearch] = useState("");
+     const [feedback, setFeedback] = useState(null);
 
     const expiryData = [
         { symbol: "JPN225.f", closeDate: "05/09/2025 (Fri)", expiryDate: "09/09/2025 (Tue)", time: "10:00 a. m." },
@@ -32,37 +34,37 @@ const ContractExpiries = () => {
             row.time.toLowerCase().includes(search.toLowerCase())
     );
 
-     const Sections = [
-  {
-    title: "Trading Conditions",
-    icon: "bi bi-graph-up-arrow",
-    items: [
-      { label: "Leverage" },
-      { label: "Swap Free Accounts" },
-      { label: "Trading conditions overview" },
-      { label: "Contract Specifications" },
-      { label: "Contract Expiries" },
-      { label: "What are your minimum deposits?" },
-      { label: "Trading Hour Changes", active: true }, // active key added
-      { label: "Why is a triple swap charged?" },
-      { label: "Who are your liquidity providers?" },
-      { label: "Restricted Countries" },
-    ],
-  },
-  {
-    title: "Security of Funds",
-    icon: "bi bi-bank",
-    items: [
-      { label: "Segregated Client Accounts" },
-      { label: "Investor Compensation Fund" },
-      { label: "Negative Balance Protection" },
-      { label: "Tier 1 Banking Partners" }
-    ],
-  }
-];
+    const Sections = [
+        {
+            title: "Trading Conditions",
+            icon: "bi bi-graph-up-arrow",
+            items: [
+                { label: "Leverage" },
+                { label: "Swap Free Accounts" },
+                { label: "Trading conditions overview" },
+                { label: "Contract Specifications" },
+                { label: "Contract Expiries" },
+                { label: "What are your minimum deposits?" },
+                { label: "Trading Hour Changes", active: true }, // active key added
+                { label: "Why is a triple swap charged?" },
+                { label: "Who are your liquidity providers?" },
+                { label: "Restricted Countries" },
+            ],
+        },
+        {
+            title: "Security of Funds",
+            icon: "bi bi-bank",
+            items: [
+                { label: "Segregated Client Accounts" },
+                { label: "Investor Compensation Fund" },
+                { label: "Negative Balance Protection" },
+                { label: "Tier 1 Banking Partners" }
+            ],
+        }
+    ];
 
     return (
-        <div className="container-fluid bg-faq py-lg-5 py-md-5 pt-5">
+        <div className=" bg-faq py-lg-5 py-md-5 pt-5 mt-lg-2 mx-lg-3 rounded rounded-4">
             <div className="row justify-content-center my-lg-6 my-md-6 mt-5  bg-transparent">
                 {/* Sidebar with Accordion */}
                 <SidebarAccordion Sections={Sections}></SidebarAccordion>
@@ -154,13 +156,19 @@ const ContractExpiries = () => {
                         </div>
 
                         {/* Feedback Section */}
-                        <div className="p-4 border rounded d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 bg-light-subtle">
-                            <h5 className="mb-0 text-dark">Did this answer your question?</h5>
-                            <div className="d-flex gap-4 fs-4 text-warning">
-                                <i className="bi bi-emoji-smile-fill"></i>
-                                <i className="bi bi-emoji-angry-fill"></i>
-                                <i className="bi bi-emoji-neutral-fill"></i>
-                            </div>
+                        <div className="fundinvest-feedback-box p-4">
+                            {feedback ? (
+                                <p className="thank-you ">Thanks for your Feedback!</p>
+                            ) : (
+                                <>
+                                    <p className="text-dark ">Did this answer your question?</p>
+                                    <div className="fundinvest-feedback-icons">
+                                        <FaSmile className="feedback-icon" onClick={() => setFeedback("positive")} />
+                                        <FaMeh className="feedback-icon" onClick={() => setFeedback("neutral")} />
+                                        <FaFrown className="feedback-icon" onClick={() => setFeedback("negative")} />
+                                    </div>
+                                </>
+                            )}
                         </div>
 
                         {/* Navigation Links */}

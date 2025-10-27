@@ -174,7 +174,7 @@
   /* Small Screens */
   @media (max-width: 600px) {
     .home-container {
-      padding: 60px 6vw;
+      padding: 80px 6vw;
       height: 65vh;
       display: flex;
       flex-direction: column;
@@ -1090,3 +1090,45 @@
   .trading-education { padding: 12px; }
 
 }
+
+
+/* ========== Remove border-radius & margin for small screens ========== */
+@media (max-width: 600px) {
+  .home-container,
+  .features-section,
+  .tradeable-assets-section,
+  .home-platforms-section,
+  .home-compare-accounts-container,
+  .market-section,
+  .features-container,
+  .execution-section,
+  .trading-education {
+    border-radius: 0 !important;
+    /* margin: 0 !important; */
+  }
+
+  .homecontainer{
+    padding: 0 0 10px 0;
+  }
+  
+}
+
+
+/* ---------- FIXED CRYPTO ICONS FOR SMALL SCREENS ---------- */
+@media (max-width: 600px) {
+  .crypto-icon {
+    width: 80px !important;     /* 🔒 Smaller and fixed size */
+    height: 80px !important;
+    opacity: 0.7;
+    animation: none !important; /* Stop floating */
+    position: absolute;
+    z-index: 2;                 /* Ensure icons appear above background */
+  }
+
+  /* Adjusted fixed positions to fit mobile layout */
+  .btc { top: 30%; left: 2%; }
+  .eth { top: 30%; right: 2%; }
+  .ltc { bottom: 20%; left: 10%; }
+  .ada { bottom: 20%; right: 10%; }
+}
+

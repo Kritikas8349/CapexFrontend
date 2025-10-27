@@ -66,7 +66,7 @@
 
 .sidebar-menu li:hover,
 .sidebar-menu li.active {
-  background: linear-gradient(135deg, #130486, #000000);
+  background: linear-gradient(to top left, #000000, #493ffd);
   /* background: white; */
   color: white !important;
   transform: scale(1.03);

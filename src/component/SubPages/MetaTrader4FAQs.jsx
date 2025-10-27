@@ -24,7 +24,7 @@ function MetaTrader4FAQs() {
 ];
 
   return (
-    <div className='container-fluid py-4 py-lg-5 py-md-5 pt-5 r bg-faq'>
+    <div className=' py-4 py-lg-5 py-md-5 pt-5 mt-lg-2 mx-lg-3 rounded rounded-4 r bg-faq'>
       <div className='container align-items-start'>
         {/* <div className="d-flex"><span>Home &nbsp;</span>/&nbsp;<span>support&nbsp;</span>/&nbsp;<span>platform-support&nbsp;</span>/&nbsp;<span>secure client area</span></div> */}
         <div className='mb-4'>

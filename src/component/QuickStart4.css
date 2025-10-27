@@ -1,3 +1,4 @@
+/* Reset */
 body,
 html {
     margin: 0;
@@ -5,11 +6,9 @@ html {
     box-sizing: border-box;
 }
 
-#Main {
-    /* background-color: yellow; */
+/* Main Container */
+#Main4 {
     width: 100%;
-    /* background-color: red; */
-
 }
 
 body {
@@ -20,71 +19,71 @@ body {
     background: #fff;
 }
 
-
-
 /* Outer Container */
 .outer {
-    padding: 90px;
-    margin: 10px 20px 0px 20px;
+    padding: 80px 20px;
+    margin: 10px 20px 0 20px;
     background: linear-gradient(to bottom right, #000000, #493ffd);
     border-radius: 20px;
+    /* width: 100%;
+    max-width: 1480px; */
 }
 
 /* Top Section */
-
 .top-section {
-    line-height: 50px;
+    line-height: 40px; /* reduced line-height */
 }
 
 .top-section h1 {
-    font-size: 40px;
+    font-size: 32px; /* reduced font size */
     font-weight: 800;
-    margin-top: 60px;
+    margin-top: 60px; /* reduced margin */
     color: #fff;
 }
 
-/* Table */
-
+/* Table Section */
 .table-section {
-
-    justify-items: center;
+    width: 100%;
+    overflow-x: auto; /* horizontal scroll if needed */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
     color: #0066ff;
+    justify-items: center;
 }
 
 .table-section table {
-    width: 80%;
-    /* border-collapse: collapse; */
+    width: 100%;
+    min-width: 300px; /* small enough for mobile */
+    border-collapse: collapse;
+    margin-bottom: 20px;
     border: transparent;
-    margin-bottom: 22px;
-
-}
-
-#background {
-    background-color: #e2eaf7;
-}
-#white{
-    background-color: #fff;
 }
 
 .table-section th,
 .table-section td {
-    /* border: 1px solid #ddd; */
-    border: 4px solid #fff;
-    padding: 15px;
+    border: 2px solid #fff; /* thinner border */
+    padding: 6px 10px; /* smaller padding */
     text-align: center;
+    font-size: 0.8rem; /* smaller font */
 }
 
-
 .table-section th {
-
-    font-size: 1.3rem;
+    font-size: 0.9rem;
+    height: 40px; /* reduced height */
 }
 
 .table-section th.blue {
     background-color: #0066ff;
     color: white;
-    font-size: 1.2rem;
-    height: 100px;
+    font-size: 0.85rem;
+    height: 40px; /* reduced height */
+}
+
+#background {
+    background-color: #e2eaf7;
+}
+
+#white {
+    background-color: #fff;
 }
 
 #end {
@@ -96,7 +95,7 @@ body {
 }
 
 .table-section th span {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: normal;
     display: block;
 }
@@ -105,68 +104,95 @@ body {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 13%;
+    gap: 10%;
 }
 
-.btn {
-    padding: 10px 20px;
-    font-size: 1rem;
+.btn4 {
+    padding: 8px 16px; /* smaller padding */
+    font-size: 0.6rem; /* smaller font */
     border: none;
-    border-radius: 4px;
     color: white;
     cursor: pointer;
-
 }
 
 .btn.blue {
     background: #0066ff;
+    border-radius: 30px;
+    font-size: 0.6rem;
 }
 
 .btn.green {
-    background: #00b050;
+    background: #0066ff;
+    border-radius: 30px;
+    font-size: 0.6rem;
+}
+
+/* Scrollbar Styling for Table */
+.table-section::-webkit-scrollbar {
+    height: 5px;
+}
+
+.table-section::-webkit-scrollbar-thumb {
+    background: #0051ff;
+    border-radius: 3px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
-    .top-section h1{
-        font-size: 18px;
-    }
-
-    .table-section {
-        width: 100%;
-        overflow-x: auto;
-        /* ✅ Horizontal scroll enable karega */
+    .top-section h1 {
+        font-size: 24px;
     }
 
     .table-section table {
-        width: 100%;
-        border-collapse: collapse;
-        min-width: 600px;
-        /* ✅ Table chhota hone par scroll aayega */
+        min-width: 280px;
     }
 
-    /* Optional styling */
-    .table-section::-webkit-scrollbar {
-        height: 6px;
+    .table-section th,
+    .table-section td {
+        padding: 5px 8px;
+        font-size: 0.75rem;
     }
 
-    .table-section::-webkit-scrollbar-thumb {
-        background: #0051ff;
-        border-radius: 3px;
-    }
-
-    @media (max-width: 300px) {
-        .top-section h1 {
-            font-size: 8px;
-        }
-
-        .btn {
-            font-size: 0.8rem;
-            padding: 8px 12px;
-        }
+    .btn4 {
+        padding: 6px 12px;
+        font-size: 0.8rem;
     }
 }
+
+@media (max-width: 768px){
+    .outer{
+        margin: 0px !important;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section h1 {
+        font-size: 20px;
+    }
+
+    .table-section table {
+        min-width: 260px;
+    }
+
+    .table-section th,
+    .table-section td {
+        padding: 4px 6px;
+        font-size: 0.7rem;
+    }
+
+    .btn4 {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .top-section h1 {
+        font-size: 14px;
+    }
+}
+
 
 
 .account-section {
@@ -242,6 +268,7 @@ body {
 @media (max-width: 768px) {
     .account-section {
         padding: 1.5rem;
+        border-radius: 0px;
     }
 
     .account-content h1 {
@@ -394,6 +421,7 @@ body {
 @media (max-width: 768px) {
     .quiz-container {
         padding: 15px;
+        border-radius: 0px;
     }
 
     .quiz-header h1 {
@@ -454,7 +482,7 @@ body {
 /* Container for the entire section */
 /* Main container for the section */
 .blackbull-section-p {
-    /* background-image: url('/public/Rectangle4389.png'); */
+    /* background-image: url('c/Rectangle4389.png'); */
     /* background-size: cover;  */
     object-fit: cover;
     background-position: center;
@@ -541,6 +569,12 @@ body {
 
     .card p {
         font-size: 1rem;
+    }
+}
+@media (max-width: 600px){
+    .blackbull-section-p{
+        border-radius: 0px;
+        margin: 20px 0px 20px 0PX !important;
     }
 }
 
@@ -831,6 +865,7 @@ body {
 @media (max-width: 768px) {
     .faq-container {
         padding: 30px 15px;
+        border-radius: 0px;
     }
 
     .faq-title {
@@ -843,6 +878,11 @@ body {
 
     .faq-answer {
         font-size: 0.95rem;
+    }
+}
+@media (max-width: 768px) {
+    .faq-container{
+        margin: 0px;
     }
 }
 

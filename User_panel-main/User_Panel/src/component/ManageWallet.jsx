@@ -98,15 +98,15 @@ export default function ManageWallets() {
               <div className="wallet-info">
                 <img src={w.img} alt={w.symbol} className="wallet-icon" />
                 <div className="wallet-names">
-                  <span className="wallet-name">{w.name}</span>
-                  <span className="wallet-symbol">{w.symbol}</span>
+                  <h6 className="wallet-name">{w.name}</h6>
+                  <small className="wallet-symbol">{w.symbol}</small>
                 </div>
               </div>
               <span className={w.available === "0.0000" ? "zero-balance" : ""}>{w.available}</span>
               <span className={w.inOrder === "0.0000" ? "zero-balance" : ""}>{w.inOrder}</span>
               <span className={w.total === "0.0000" ? "zero-balance" : ""}>{w.total}</span>
               <button 
-                className="view-btn" 
+                className="wallet-view-btn" 
                 onClick={() => navigate(`/wallet/${w.symbol}`)}
               >
                 <FaEye className="view-icon" /> View

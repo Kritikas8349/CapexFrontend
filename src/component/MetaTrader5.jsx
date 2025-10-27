@@ -13,7 +13,7 @@ function MetaTrader5() {
                 }
 
             </style>
-            <div className="container-fluid bg-black text-white py-5 trading-view">
+            <div className=" bg-black text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     <div className="row align-items-center mt-4">
                         {/* Left Section */}
@@ -48,7 +48,7 @@ function MetaTrader5() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-flex align-items-center px-3">
+                        <a href="#" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
@@ -388,7 +388,7 @@ function MetaTrader5() {
 
 
             {/* -------How to Copy Trad------------     */}
-            <div className="container-fluid bg-dark text-white py-2 py-md-5 py-lg-5">
+            <div className=" bg-dark text-white py-2 py-md-5 py-lg-5 mx-lg-3 rounded rounded-4">
                 <div className="container py-md-5 py-lg-5">
                     <div className="row align-items-center  g-5">
 
@@ -448,7 +448,7 @@ function MetaTrader5() {
             </div>
 
             {/* -------Download trader------------- */}
-            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5trading-view">
+            <div className=" bg-black text-white py-2 py-lg-5 py-md-5 trading-view my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center py-4">
                         {/* Left Section */}
@@ -467,7 +467,7 @@ function MetaTrader5() {
                         {/* TradingView Button */}
                         <a
                             href="#"
-                            className="btn btn-dark d-flex align-items-center px-3"
+                            className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3"
                         >
                             <img
                                 src="/Frame8417.png"
@@ -525,7 +525,7 @@ function MetaTrader5() {
                 </div>
             </div>
             {/* ----FAQ'S--------------- */}
-            <div className="container-fluid bg-black text-white py-2 py-lg-5 py-md-5 ">
+            <div className=" bg-black text-white py-2 py-lg-5 py-md-5 mx-lg-3 rounded rounded-4 ">
                 <div class="container my-5 bg-black text-white p-4 rounded">
                     <h2 class="mb-4 text-center">FAQs</h2>
 

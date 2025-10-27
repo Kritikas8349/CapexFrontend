@@ -2,8 +2,8 @@
    WALLET DETAILS PAGE STYLING
 ============================= */
 .wallet-detail-container {
-  background-color: #0c1b24;
-  color: #e4e8eb;
+  background-color: #f5f6fa;
+  color: black;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   padding: 30px 15px; /* mobile friendly padding */
@@ -21,14 +21,14 @@
 .wallet-detail-header h2 {
   font-size: 22px;
   font-weight: 600;
-  color: #eaf1f6;
+  color: black;
   margin-bottom: 10px;
 }
 
 .back-btn {
-  background-color: #09202b;
+  background-color: white;
   border: 1px solid #0f3b4a;
-  color: #46b4ff;
+  color: #182f3e;
   padding: 8px 15px;
   border-radius: 8px;
   font-size: 14px;
@@ -36,7 +36,7 @@
   transition: 0.3s;
 }
 .back-btn:hover {
-  background-color: #10384e;
+  background-color: whitesmoke;
 }
 
 /* =============================
@@ -50,12 +50,12 @@
 }
 
 .stat-card {
-  background: #10242f;
+  background: white;
   border: 1px solid #163947;
   border-radius: 10px;
   text-align: center;
   padding: 12px 8px;
-  color: #a9bbc5;
+  color: black;
   font-size: 13px;
   transition: 0.3s;
   display: flex;
@@ -64,7 +64,7 @@
 }
 .stat-card span {
   font-size: 18px;
-  color: #fff;
+  color: black;
   font-weight: 500;
   margin-top: 4px;
 }
@@ -86,7 +86,7 @@
 /* Left - Coin Info */
 .coin-card {
   flex: 1 1 280px;
-  background: #10242f;
+  background: white;
   border: 1px solid #163947;
   border-radius: 12px;
   padding: 25px 15px;
@@ -103,13 +103,13 @@
 }
 
 .coin-card h3 {
-  color: #fff;
+  color: black;
   font-size: 18px;
   font-weight: 600;
 }
 
 .coin-card p {
-  color: #7da4b2;
+  color: black;
   font-size: 13px;
   margin-bottom: 18px;
 }
@@ -123,13 +123,13 @@
 }
 
 .balances h4 {
-  color: #46b4ff;
+  color: #1581ca;
   font-size: 16px;
   margin: 4px 0;
 }
 
 .balances p {
-  color: #94a6ad;
+  color: #7c8a90;
   font-size: 12px;
 }
 
@@ -155,27 +155,25 @@
 
 /* Button Colors */
 .deposit-btn {
-  background-color: #0f5132;
-  color: #31d17a;
-  border: 1px solid #198754;
+  background-color: #198754;
+  color: #c3decf;
+  
 }
 .deposit-btn:hover {
   background-color: #198754;
 }
 
 .withdraw-btn {
-  background-color: #511212;
-  color: #ff4d4d;
-  border: 1px solid #dc3545;
+    background-color: #902626;
+    color: #ddd2d2;
 }
 .withdraw-btn:hover {
   background-color: #dc3545;
 }
 
 .transfer-btn {
-  background-color: #0d3d7a;
-  color: #46b4ff;
-  border: 1px solid #0d6efd;
+      background-color: #2362b5;
+    color: #c4d4de;
 }
 .transfer-btn:hover {
   background-color: #0d6efd;
@@ -186,7 +184,7 @@
 ============================= */
 .transaction-card {
   flex: 2 1 280px;
-  background: #10242f;
+  background: white;
   border: 1px solid #163947;
   border-radius: 12px;
   padding: 20px;
@@ -195,7 +193,7 @@
 }
 
 .transaction-card h3 {
-  color: #fff;
+  color: black;
   font-size: 16px;
   margin-bottom: 12px;
 }
@@ -203,7 +201,7 @@
 .transaction-card table {
   width: 100%;
   border-collapse: collapse;
-  color: #d9e2e8;
+  color: black;
   font-size: 13px;
   min-width: 500px; /* ensures scroll on tiny devices */
 }
@@ -216,12 +214,12 @@
 }
 
 .transaction-card th {
-  color: #a8c4d3;
+  color: #286180;
   font-weight: 500;
 }
 
 .transaction-card tbody tr:hover {
-  background-color: #0f2d3d;
+  background-color: whitesmoke;
 }
 
 /* No Transaction */
@@ -358,7 +356,7 @@
   width: 350px;
   max-width: 90%;
   height: 100%;
-  background: #10242f;
+  background: #f5f6fa;
   border-left: 1px solid #163947;
   padding: 20px;
   box-shadow: -2px 0 10px rgba(0,0,0,0.3);
@@ -375,7 +373,7 @@
   background: transparent;
   border: none;
   font-size: 20px;
-  color: #fff;
+  color: black;
   cursor: pointer;
   float: right;
 }
@@ -388,12 +386,12 @@
 }
 
 .form-content h3 {
-  color: #fff;
+  color: black;
   margin-bottom: 15px;
 }
 
 .form-content label {
-  color: #94a6ad;
+  color: grey;
   font-size: 13px;
 }
 
@@ -402,13 +400,13 @@
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid #163947;
-  background: #0c1b24;
-  color: #fff;
+  background: #f5f6fa;
+  color: #7C7C7C;
 }
 
 .submit-btn {
-  background-color: #46b4ff;
-  color: #fff;
+  background-color: #493FFD;
+  color: black;
   padding: 10px 0;
   border: none;
   border-radius: 6px;
@@ -417,7 +415,7 @@
 }
 
 .max-btn {
-  background-color: #ffbb33;
+  background-color: #ffc247;
   border: none;
   border-radius: 4px;
   color: #000;
@@ -442,8 +440,8 @@
   width: 360px;
   max-width: 95%;
   height: 100%;
-  background: #0c1b24; /* Dark background */
-  border-left: 1px solid #163947;
+  background: #f5f6fa; /* Dark background */
+  border-left: 1px solid #f5f6fa;
   padding: 25px 20px;
   box-shadow: -3px 0 15px rgba(0, 0, 0, 0.4);
   transition: right 0.35s ease-in-out;
@@ -461,14 +459,14 @@
   background: transparent;
   border: none;
   font-size: 22px;
-  color: #46b4ff;
+  color: dark;
   cursor: pointer;
   align-self: flex-end;
   margin-bottom: 15px;
   transition: 0.2s;
 }
 .close-panel:hover {
-  color: #31d17a;
+  color: #232925;
 }
 
 .form-content {
@@ -478,20 +476,20 @@
 }
 
 .form-content h3 {
-  color: #ffffff;
+  color: dark;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .form-content p {
-  color: #94a6ad;
+  color: #7C7C7C;
   font-size: 13px;
   line-height: 1.5;
 }
 
 .form-content label {
-  color: #a9bbc5;
+  color: #7C7C7C;
   font-size: 13px;
   margin-bottom: 4px;
 }
@@ -501,8 +499,8 @@
   padding: 10px 12px;
   border-radius: 6px;
   border: 1px solid #163947;
-  background: #10242f;
-  color: #e4e8eb;
+  background: #f5f6fa;
+  color: #7C7C7C;
   font-size: 14px;
   transition: 0.2s;
 }
@@ -516,7 +514,7 @@
 
 /* MAX & Submit Buttons */
 .submit-btn {
-  background-color: #46b4ff;
+  background-color: #493FFD;
   color: #fff;
   padding: 10px 0;
   border: none;
@@ -527,11 +525,11 @@
   transition: 0.3s;
 }
 .submit-btn:hover {
-  background-color: #31d17a;
+  background-color: #5f5acc;
 }
 
 .max-btn {
-  background-color: #ffbb33;
+  background-color: #ffc247;
   border: none;
   border-radius: 4px;
   color: #000;

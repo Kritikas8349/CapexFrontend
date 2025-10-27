@@ -5,7 +5,7 @@ html {
   box-sizing: border-box;
 }
 
-#Main {
+#Main{
   /* background-color: yellow; */
   width: 100%;
   /* background-color: red; */
@@ -153,7 +153,9 @@ html {
     align-items: center;
     text-align: center;
     height: auto;
-    padding: 100px 15px;
+    padding: 100px 15px; 
+    margin: -10px; 
+    border-radius: 0px;
   }
 
   .left-section3 {
@@ -303,6 +305,12 @@ html {
 
   .home-learn-more-btn-Q-1 {
     margin-top: 8px;
+  }
+}
+@media (max-width: 768px){
+  .home-platforms-section-Q1-1{
+    margin: 30px -10px 10px -10px;
+    border-radius: 0px;
   }
 }
 

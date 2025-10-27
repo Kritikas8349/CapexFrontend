@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaSmile, FaMeh, FaFrown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -7,6 +8,7 @@ import SidebarAccordion from "./SideBarAccordian";
 
 const TradingHourChange = () => {
     const [search, setSearch] = useState("");
+      const [feedback, setFeedback] = useState(null);
 
     const tradingData = [
         { symbol: "Cryptos", type: "Cryptos", dateInfo: "Normal Hours" },
@@ -59,7 +61,7 @@ const TradingHourChange = () => {
   
 
     return (
-        <div className="container-fluid bg-faq py-lg-5 py-md-5 pt-5 ">
+        <div className=" bg-faq py-lg-5 py-md-5 pt-5 mt-lg-2 mx-lg-3 rounded rounded-4 ">
             <div className="row justify-content-center my-lg-6 my-md-6 mt-5  bg-transparent">
                 {/* Sidebar with Accordion */}
                 <SidebarAccordion className="bg-transparent" Sections={Sections}></SidebarAccordion>
@@ -149,23 +151,38 @@ const TradingHourChange = () => {
                         </div>
 
                         {/* Feedback Section */}
-                        <div className="p-4 border rounded d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 bg-light-subtle">
+                        {/* <div className="p-4 border rounded d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 bg-light-subtle">
                             <h5 className="mb-0 text-dark">Did this answer your question?</h5>
                             <div className="d-flex gap-4 fs-4 text-warning">
                                 <i className="bi bi-emoji-smile-fill"></i>
                                 <i className="bi bi-emoji-angry-fill"></i>
                                 <i className="bi bi-emoji-neutral-fill"></i>
                             </div>
-                        </div>
+                        </div> */}
+                         {/* Feedback Section */}
+                                <div className="fundinvest-feedback-box p-4">
+                                  {feedback ? (
+                                    <p className="thank-you ">Thanks for your Feedback!</p>
+                                  ) : (
+                                    <>
+                                      <p className="text-dark ">Did this answer your question?</p>
+                                      <div className="fundinvest-feedback-icons">
+                                        <FaSmile className="feedback-icon" onClick={() => setFeedback("positive")} />
+                                        <FaMeh className="feedback-icon" onClick={() => setFeedback("neutral")} />
+                                        <FaFrown className="feedback-icon" onClick={() => setFeedback("negative")} />
+                                      </div>
+                                    </>
+                                  )}
+                                </div>
 
                         {/* Navigation Links */}
                         <div className="d-flex flex-row flex-md-row justify-content-between align-items-start align-items-md-center mt-4">
-                            <p className="h6 mb-2 mb-md-0  text-heading cursor-pointer">
+                            <Link to="" className="h6 mb-2 mb-md-0  text-heading cursor-pointer">
                                 <i className="bi bi-arrow-left me-2"></i>Contract Expiries
-                            </p>
-                            <p className="h6 text-decoration text-heading cursor-pointer">
+                            </Link>
+                            <Link className="h6 text-decoration text-heading cursor-pointer">
                                 Trading Hours<i className="bi bi-arrow-right ms-2"></i>
-                            </p>
+                            </Link>
                         </div>
                     </div>
                 </div>

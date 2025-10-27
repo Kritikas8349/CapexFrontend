@@ -4,12 +4,12 @@ body {
 }
 
 .m-section {
-  max-width: 1500px;
+  max-width: 1750px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 50px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-bottom: 20px;
   border-radius: 12px;
   background: linear-gradient(to bottom right, #000000, #493ffd);

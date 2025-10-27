@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import './Manageorder.css'
+import { BsSearch } from "react-icons/bs";
 
 
 function ManageOrder() {
     const [activeTab, setActiveTab] = useState("Open");
+    const [search, setSearch] = useState("");
 
     const tabs = ["Open", "Complete", "Pending", "Cancelled", "History"];
 
@@ -51,16 +53,17 @@ function ManageOrder() {
                             <option>Completed</option>
                         </select> */}
 
-                        <div class="input-group w-50">
+                        <div className="input-group w-100 w-md-50" style={{ maxWidth: "350px" }}>
+                            <span className="input-group-text bg-tarsnsparent border-secondary text-dark">
+                                <BsSearch />
+                            </span>
                             <input
                                 type="text"
-                                class="form-control bg-transparent border-dark text-dark custom-placeholder"
-                                placeholder="Pair, coin....."
-                                aria-label="Search"
+                                className="form-control bg-tarnsparent text-dark border-secondary"
+                                placeholder="Search here..."
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
                             />
-                            <button class="btn btn-outline-dark p-0 px-1" type="button">
-                                <i class="bi bi-search"></i>
-                            </button>
                         </div>
 
 

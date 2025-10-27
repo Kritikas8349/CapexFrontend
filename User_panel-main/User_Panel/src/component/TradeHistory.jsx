@@ -1,8 +1,11 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import TradePage from './TradePage'
+import { BsSearch } from "react-icons/bs";
 function TradeHistory() {
+     const [search, setSearch] = useState("");
     return (
-        <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container h-100 ">
+
+        <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container h-100   ">
             {/* Title */}
 
 
@@ -25,13 +28,22 @@ function TradeHistory() {
                             <option>Market</option>
                         </select>
 
-                       
 
-                        <div class="input-group w-50 ">
-                            <input type="text" class="form-control bg-transparent border-dark text-dark custom-placeholder" placeholder="Pair,coin....." aria-label="Recipient’s username with two button addons" />
 
-                            <button class="btn btn-outline-dark bi bi-search p-0 px-2" type="button"></button>
+                        <div className="input-group w-100 w-md-50" style={{ maxWidth: "350px" }}>
+                            <span className="input-group-text bg-tarsnsparent border-secondary text-dark">
+                                <BsSearch />
+                            </span>
+                            <input
+                                type="text"
+                                className="form-control bg-tarnsparent text-dark border-secondary"
+                                placeholder="Search here..."
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
+                            />
                         </div>
+
+
 
 
                     </div>
@@ -46,7 +58,7 @@ function TradeHistory() {
                     <h6 className="col">Trade Side</h6>
                     <h6 className="col">Rate</h6>
                     <h6 className="col">Ammount</h6>
-                   
+
                 </div>
 
                 <div className="py-5">
@@ -60,6 +72,8 @@ function TradeHistory() {
                 </div>
             </div>
         </div>
+
+
     )
 }
 

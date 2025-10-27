@@ -6,10 +6,10 @@
 
 /* Orderbook */
 .orderbook-container {
-  background-color: #0b1b24;
+  background-color: #f5f6fa;
   padding: 20px;
   width: 320px;
-  color: #fff;
+  color: #181818;
   font-family: "Poppins", sans-serif;
 }
 
@@ -93,9 +93,9 @@
 
 /* Tradechart */
 .tradechart-container {
-  background-color: #0b1b24;
+  background-color: #f5f6fa;
   padding: 15px 20px;
-  color: #fff;
+  color: #191919;
   font-family: "Poppins", sans-serif;
   flex: 1;
   min-width: 0;
@@ -111,7 +111,7 @@
 
 .tradechart-header h2 {
   font-size: 20px;
-  color: #ffffff;
+  color: #493FFD;
   margin-bottom: 6px;
   font-weight: 600;
 }
@@ -131,7 +131,7 @@
 .tradechart-stats .value {
   display: block;
   font-weight: 600;
-  color: #eaeaea;
+  color: #2c2929;
 }
 
 .tradechart-stats .green {
@@ -158,9 +158,9 @@
 /* Markets Panel */
 .markets-panel {
   width: 23vw;
-  background: #0b1b24;
+  background: #f5f6fa;
   padding: 15px;
-  color: #fff;
+  color: black;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -174,18 +174,21 @@
 }
 
 .markets-header h3 {
-  color: #2980ff;
+  color: #493FFD;
   font-size: 18px;
   font-weight: 600;
 }
 
 .markets-header input {
-  background: #07171f;
+  background: #493FFD;
   border: none;
   color: #fff;
   padding: 6px 10px;
   outline: none;
   width: 100px;
+}
+.markets-header input::placeholder{
+  color: #fff;
 }
 
 .markets-tabs {
@@ -198,7 +201,7 @@
 
 .markets-tabs span {
   font-size: 13px;
-  color: #ccc;
+  color: #666565;
   padding: 4px 8px;
   cursor: pointer;
   background: transparent;
@@ -206,9 +209,10 @@
 }
 
 .markets-tabs span.active {
-  background: #07171f;
+  background: #493FFD;
   color: #fff;
   border: 1px solid #2980ff;
+  border-radius: 20%;
 }
 
 .markets-tabs .more {
@@ -244,7 +248,7 @@
 }
 
 .market-row:hover {
-  background: #07171f;
+  background: #a0a0a9;
 }
 
 .market-row .pair i {
@@ -269,11 +273,12 @@
 
 /* Tradebox */
 .tradebox-container {
-  background: #0e1116;
+  background: white;
   margin-top: 15px;
   padding: 14px;
-  color: #fff;
+  color: dark;
   font-size: 13px;
+ 
 }
 
 .tradebox-tabs {
@@ -299,7 +304,7 @@
 }
 
 .tradebox-tabs span.active {
-  color: #fff;
+  color: dark;
 }
 
 .tradebox-tabs span.active::after {
@@ -321,7 +326,7 @@
 
 .tradebox {
   flex: 1;
-  background: #11151b;
+  background: white;
   padding: 10px 12px;
   display: flex;
   flex-direction: column;
@@ -346,20 +351,24 @@
 .input-group label {
   display: block;
   font-size: 12.5px;
-  color: #ccc;
+  color: #5f5f5f;
   margin-bottom: 4px;
   letter-spacing: 0.3px;
 }
 
 .input-group input {
   width: 100%;
-  background: #0c0f14;
-  border: 1px solid #222;
+  background: white;
+  border: 1px solid #5f5f5f;
   padding: 7px 38px 7px 10px;
-  color: #fff;
+  color: dark;
   font-size: 13px;
   height: 34px;
   line-height: 1.3;
+ 
+}
+.input-group input::placeholder{
+  color: dark;
 }
 
 .input-group .unit {
@@ -367,7 +376,7 @@
   right: 10px;
   top: 34px;
   transform: translateY(-50%);
-  color: #aaa;
+  color: #5f5f5f;
   font-size: 11.5px;
 }
 
@@ -378,7 +387,7 @@
 .slider-marks {
   display: flex;
   justify-content: space-between;
-  color: #aaa;
+  color: #595959;
   font-size: 11px;
   margin-top: 3px;
 }
@@ -390,7 +399,7 @@
 
 .total label {
   display: block;
-  color: #ccc;
+  color: #595959;
   margin-bottom: 4px;
   font-size: 12.5px;
   letter-spacing: 0.3px;
@@ -457,14 +466,15 @@
 
 /* Trade History */
 .trade-history-section {
-  background-color: #0b1e2e;
+  background-color: #f5f6fa;
   padding: 12px 10px;
-  color: #f1f5f9;
+  color: #535455;
   font-family: "Inter", sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   height: auto;
   max-height: 90vh;
   overflow-y: auto;
+  border: 1px solid#07171f;
 }
 
 .trade-history-section h3 {
@@ -489,7 +499,7 @@
 }
 
 .trade-history-header {
-  color: #94a3b8;
+  color: #2c2c2c;
   border-bottom: 1px solid #1fa3a;
   font-weight: 600;
   text-transform: uppercase;
@@ -512,7 +522,8 @@
 }
 
 .trade-history-row:hover {
-  background-color: #14212b;
+  background-color: #b1babf;
+  color: white;
 }
 
 .trade-history-row span {
@@ -531,12 +542,12 @@
 
 /* My Orders */
 .myorder-container {
-  background-color: #0b1b24;
+  background-color: #f5f6fa;
   padding: 20px;
   font-family: "Poppins", sans-serif;
   color: #fff;
   width: 100%;
-  border: 1px solid #1a2b36;
+  border: 1px solid #787f83;
 }
 
 .myorder-header {
@@ -554,7 +565,7 @@
 .myorder-tabs span {
   margin-left: 15px;
   cursor: pointer;
-  color: #9aa5b1;
+  color: #6f7071;
   transition: 0.2s;
 }
 
@@ -575,7 +586,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
   padding: 12px 0;
-  color: #94a3b8;
+  color: #666666;
   font-size: 13px;
   font-weight: 500;
 }

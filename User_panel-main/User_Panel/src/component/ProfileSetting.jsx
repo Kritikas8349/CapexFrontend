@@ -35,7 +35,7 @@ const ProfilePage = () => {
       <div className="pp-card">
         <div className="pp-left">
           <div className="pp-avatar">
-            <img src="/public/pp.jpg" alt="Profile" />
+            <img src="/pp.jpg" alt="Profile" />
           </div>
           <h3 className="pp-username">kajal3212</h3>
           <p className="pp-info">[Email is protected for the demo]</p>

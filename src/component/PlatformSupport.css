@@ -274,3 +274,71 @@ body {
   .support-card-list li { font-size: 13px; }
   .explore-btn { font-size: 13px; padding: 6px 12px; }
 }
+
+
+
+/* ================= RESPONSIVE ADJUSTMENTS FOR MAIN DIV AND SUPPORT GRID ================= */
+
+/* For tablets and below */
+@media (max-width: 992px) {
+  .platform{
+    padding-top: 0;
+  }
+
+  .platformcontainer,
+  .support-grid {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* For mobile landscape */
+@media (max-width: 768px) {
+  .platform{
+    padding-top: 0;
+  }
+  
+  .platformcontainer,
+  .support-grid {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* For mobile portrait / small devices */
+@media (max-width: 480px) {
+  .platform{
+    padding-top: 0;
+  }
+  
+  .platformcontainer,
+  .support-grid {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .platform{
+    padding-top: 0;
+  }
+  
+  .platformcontainer,
+  .support-grid {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

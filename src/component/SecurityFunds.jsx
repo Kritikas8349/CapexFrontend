@@ -6,7 +6,7 @@ const SecurityFunds = () => {
 
     <div className="securitycontainer">
 
-    <div className="security-container">
+    <div className="security-container" >
       {/* Breadcrumb Navigation */}
       <nav className="breadcrumb">
         <a href="/">Home</a> <span>›</span>

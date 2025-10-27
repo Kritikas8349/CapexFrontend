@@ -28,24 +28,69 @@ html {
     
 }
 
+/* Make overlay content stack nicely */
 .overlay {
-    /* background-color: rgba(0, 0, 0, 0.5); dark overlay for readability */
-   padding-bottom: 10px;
-   /* background-color: red; */
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* left-align text */
     text-align: start;
     color: white;
     width: 85%;
-    /* white-space: nowrap; */
+    padding: 40px 20px 20px 20px; /* adjust padding */
 }
 
-.news {
-    font-size: 60px;
+/* Headline */
+.newsh {
+    font-size: 30px;
     background-color: transparent;
-    padding-bottom: 50px;
-    padding-right: 50px;
-
+    padding: 100px 0 10px 0; /* remove huge top/bottom padding */
+    margin: 0;
+    line-height: 1.2;
 }
+
+/* Description under the headline */
+.news-des {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .newsh {
+        font-size: 24px;
+    }
+    .news-des {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsh {
+        font-size: 20px;
+    }
+    .news-des {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        width: 95%; /* fill more space on mobile */
+        padding: 20px 15px;
+        align-items: center; /* center for mobile */
+        text-align: center;
+    }
+    .newsh {
+        font-size: 18px;
+    }
+    .news-des {
+        font-size: 0.85rem;
+    }
+}
+
+
 
 
 .newsfeed-container {
@@ -271,7 +316,7 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.btn {
+.btn1 {
     background: #024e74;
     color: #fff;
     border: none;

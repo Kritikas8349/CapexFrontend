@@ -79,7 +79,7 @@ export const routesMap = {
     "Account Support": "/support/account-support",
     "Platform Support": "/support/platform-support",
     "Market Support": "/support/market-support",
-    "Economic Calendar": "/support/economic-calendar",
+    "Economic calendar": "/support/economic-calendar",
     "Contact Support": "/support/contact-support",
     "How to create an account?": "/support/getting-started/create-account",
     "How to verify your account?": "/support/getting-started/verify-account",
@@ -101,7 +101,7 @@ export const routesMap = {
     "Contract Expiries": "/support/market/contract-expiries",
     
     "Education Hub Support": "/support/education-hub",
-    "Support Economic Calendar": "/support/economic-calendar",
+    // "Support Economic Calendar": "/support/economic-calendar",
     "Contact Us": "/support/contact",
 
    

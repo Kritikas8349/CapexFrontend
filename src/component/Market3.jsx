@@ -110,7 +110,7 @@ function Market3() {
     return (
 
 
-        <div id='Main'>
+        <div id='Main2'>
 
 
             <section className="m-section">

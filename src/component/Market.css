@@ -3,21 +3,24 @@ body {
 }
 
 #Main-m {
+  
   width: 100%;
   justify-content: center;
-  background-color: #ebefee;
-  padding-top: 5px;
+  background-color:#ebefee;
+  /* padding-top: 5px; */
   
 }
 
 .m-section {
   max-width: 1750px;
+  /* width: 100%; */
   height: 90vh;
+  /* padding-right: 10px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-height: 86vh;
-  margin: 8px 18px 0px 15px ;
+  margin: 20px 20px 0px 20px ;
   border-radius: 12px;
   background: linear-gradient(to bottom right, #000000, #493ffd);
 }
@@ -82,6 +85,14 @@ body {
     min-width: 100%;
 
   }
+}
+@media (max-width: 500px){
+
+  .m-section{
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+
 }
 
 .m1-stats-container {
@@ -470,6 +481,13 @@ body {
   .home-learn-more-btn-m1 {
     margin-top: 8px;
   }
+}
+@media (max-width:600px) {
+  .home-platforms-section-m1{
+    margin: 0px !important;
+    border-radius: 0px !important;
+  }
+  
 }
 
 

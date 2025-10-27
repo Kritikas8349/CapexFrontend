@@ -10,10 +10,18 @@ html, body {
     width: 100%;
     background-color:transparent;
     padding: 10px 20px 20px 20px;
-    
-    
 
 }
+
+@media (max-width:600px){
+  #main{
+    padding: 0px !important;
+  }
+  .home-platforms-section-Q{
+    margin: 0px !important;
+  }
+}
+
 
 .quickstart-page {
   
@@ -21,9 +29,9 @@ html, body {
   display: flex;
   padding-top: 120px;
   width: 100%;
-  max-width: 1480px;
+  max-width: 1580px;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(to bottom right, #241ad5, #090552,#000000);  
   color: #fff;
   border-radius: 16px;
@@ -74,6 +82,9 @@ html, body {
 
   .quickstart-page{
     min-height: 400px;
+    max-width: 500px;
+    width: 100%;
+    
     /* border-radius: 20px; */
   }
   
@@ -985,6 +996,26 @@ html, body {
   .video-grids{
     justify-content: center;
 
+  }
+}
+
+
+@media (max-width: 600px) {
+  #main,
+  .quickstart-page,
+  .institutional-section,
+  .history-section,
+  .tradeable-assets-section,
+  .home-platforms-section-Q,
+  .home-compare-accounts-container,
+  .protect-section,
+  .education-container,
+  .main-video,
+  .video-grids,
+  .asset-box,
+  .home-platform-card-Q,
+  .protect-card {
+    border-radius: 0 !important;
   }
 }
 

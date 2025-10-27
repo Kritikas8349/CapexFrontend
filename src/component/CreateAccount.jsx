@@ -55,7 +55,7 @@ function CreateAccount() {
     };
 
     return (
-        <div id='Main'>
+        <div id='Main9'>
             <div className="signup-container">
                 <div className="signup-left">
                     <div className="logo">
@@ -135,7 +135,7 @@ function CreateAccount() {
                             <input
                                 type="tel"
                                 name="phone"
-                                placeholder="+91 Mobile Phone"
+                                placeholder=" Mobile Number"
                                 onChange={handleChange}
                                 value={formData.phone}
                                 required
@@ -167,7 +167,7 @@ function CreateAccount() {
                     </div>
 
                     <p className="signin">
-                        Already have an account? <a href="#">Sign in</a>
+                        Already have an account? <a href="/loginform">Sign in</a>
                     </p>
                 </div>
 

@@ -4,9 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./TradeNavbar.css";
 
+
 function TradeNavbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark user-nav-bg px-3 py-2 fixed-top">
+    <>
+    <nav className="navbar navbar-expand-lg navbar-dark user-nav-bg px-3 py-2">
       <div className="container-fluid">
         {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
@@ -28,19 +30,19 @@ function TradeNavbar() {
         <div className="collapse navbar-collapse justify-content-between bg-transparent" id="navbarNav">
           <ul className="navbar-nav mx-auto d-flex flex-lg-row flex-column align-items-lg-center gap-lg-4 gap-2 text-start">
             <li className="nav-item">
-              <NavLink className="nav-link fw-semibold text-white" to="market">Market</NavLink>
+              <NavLink className="nav-link fw-semibold text-white" to="market-overview">Market</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold text-white" to="/trade">Trade</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link fw-semibold text-white" to="/crypto-currency">Crypto Currency</NavLink>
+              <NavLink className="nav-link fw-semibold text-white" to="crypto-currency">Crypto Currency</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link fw-semibold text-white" to="about">About</NavLink>
+              <NavLink className="nav-link fw-semibold text-white" to="about/about-us">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link fw-semibold text-white" to="contact">Contact</NavLink>
+              <NavLink className="nav-link fw-semibold text-white" to="support/contact-support">Contact</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link fw-semibold text-white" to="/dashboard">Go to Website</NavLink>
@@ -69,7 +71,15 @@ function TradeNavbar() {
         </div>
       </div>
     </nav>
+    
+    </>
   );
 }
 
 export default TradeNavbar;
+
+
+
+
+
+

@@ -50,7 +50,7 @@ function DailyNews() {
         <div id='Main'>
              <div className="news-section" style={{ backgroundImage: `url(${trd})` }}>
                 <div className="overlay">
-                    <h1 className="news">News</h1>
+                    <h1 className="newsh">News</h1>
                     <p className="news-des">
                         Stay ahead with real-time updates on major economic events, expert insights, videos,<br />
                         and more from our global market specialists.
@@ -96,7 +96,7 @@ function DailyNews() {
                         <p className="description">
                             Ideal for active investors who want to stay informed without a long-term commitment.
                         </p>
-                        <button className="btn">Subscribe Now</button>
+                        <button className="btn1">Subscribe Now</button>
                     </div>
 
                     {/* Annual Plan */}
@@ -109,7 +109,7 @@ function DailyNews() {
                         <p className="description">
                             Perfect for serious investors who rely on consistent, high-quality market insights.
                         </p>
-                        <button className="btn">Subscribe Now</button>
+                        <button className="btn1">Subscribe Now</button>
                     </div>
 
                     {/* Custom Research */}
@@ -121,7 +121,7 @@ function DailyNews() {
                         <p className="description">
                             Our team can deliver tailored insights and deep-dive reports to support your investment.
                         </p>
-                        <button className="btn secondary">Request a Quote</button>
+                        <button className="btn1 secondary">Request a Quote</button>
                     </div>
                 </div>
             </section>

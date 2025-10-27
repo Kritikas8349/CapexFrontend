@@ -9,16 +9,16 @@
 .securitycontainer {
   background-color: #ebefee;
   width: 100%;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .security-container {
-  max-width: 1480px;
-  margin: 0 auto;
+  /* max-width: 1480px;   */
+  /* margin: 0 auto; */
   padding: 180px 40px 40px 40px; /* top padding for navbar overlap */
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom right, #000000, #493ffd);
-  border-radius: 12px;
+  /* border-radius: 12px; */
   color: #ffffff;
   min-height: 70vh; /* ensures it covers most of the viewport but grows with content */
   box-sizing: border-box;
@@ -145,7 +145,7 @@
 @media (max-width: 480px) {
   .security-container {
     min-height: 50vh; /* replace fixed height */
-    padding: 120px 12px 20px 12px;
+    padding: 140px 12px 20px 12px;
   }
   .page-heading {
     font-size: 22px;
@@ -178,5 +178,76 @@
   }
   .security-links a {
     font-size: 12px;
+  }
+}
+
+
+/* ================= RESPONSIVE ADJUSTMENTS ================= */
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+  .security-container {
+    padding: 140px 20px 20px 20px;
+    border-radius: 0 !important;      /* remove border radius */
+    margin-left: 0 !important;        /* remove left margin */
+    margin-right: 0 !important;       /* remove right margin */
+    width: 100% !important;           /* ensure full width */
+    max-width: 100% !important;       /* ensure no max width restriction */
+    margin-bottom: 20px;
+  }
+
+  .securitycontainer {
+    padding: 0;
+  }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+  .security-container {
+    padding: 140px 15px 20px 15px;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .securitycontainer {
+    padding: 0 !important;
+  }
+}
+
+/* Mobile Portrait / Small devices */
+@media (max-width: 480px) {
+  .security-container {
+    min-height: 50vh;
+    padding: 140px 12px 20px 12px;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .securitycontainer {
+    padding: 0 !important;
+  }
+}
+
+/* Very Small Screens (<=360px) */
+@media (max-width: 360px) {
+  .security-container {
+    padding: 140px 10px 20px 10px;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+
+  .securitycontainer {
+    padding: 0 !important;
   }
 }

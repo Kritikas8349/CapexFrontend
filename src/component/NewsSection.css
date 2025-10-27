@@ -12,8 +12,8 @@
   padding-bottom: 20px;
   font-family: Arial, sans-serif;
   background: linear-gradient(360deg,#000000, #130486, #000000);
-  width: 97%;
-  margin-left: 20px;
+  width: 98%;
+  margin-left: 15px;
   border-radius: 16px;
 }
 
@@ -154,6 +154,9 @@
 
 /* Mobile Portrait (≤480px) */
 @media (max-width: 480px) {
+  .news{
+    margin-right: 20px;
+  }
   .news-heading {
     font-size: 20px; /* Even smaller heading for very small screens */
   }
@@ -186,3 +189,38 @@
   }
 }
 
+
+
+/* ========== Mobile: Remove border-radius & side margins (keep vertical gaps) ========== */
+@media (max-width: 600px) {
+  .news-container {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* keep vertical spacing (top/bottom gaps) */
+  .news-container {
+    /* margin-top: 20px !important; */
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Optional: also remove margins on very small portrait screens (≤480px) */
+@media (max-width: 480px) {
+  .news {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0;
+  }
+  .news-container {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}

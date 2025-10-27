@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: auto;
     background-color: #ebefee;
-     margin-top: 0px;
+    margin-top: 0px;
 }
 
 .compliancenew-hero-container {
@@ -401,9 +401,38 @@ body {
 /* Mobile / Small screens */
 @media (max-width: 768px) {
     .compliance-card {
-        flex: 0 1 100%; /* stacked vertically */
-    }
+        flex: 0 1 85%; /* narrower width than full width */
+        max-width: 350px; /* optional: keeps cards compact */
+        margin: 0 auto 20px auto; /* centers each card with space below */
+      }
     .compliance-topics-container {
         padding: 30px 15px; /* reduce padding on mobile */
     }
 }
+
+
+
+/* ===== REMOVE BORDER RADIUS & SIDE MARGINS ON SMALL SCREENS ===== */
+@media (max-width: 768px) {
+    .compliancenew-hero-container{
+        margin-top: 0;
+    }
+    .compliancenew-hero-container,
+    .compliancenew-info-container,
+    .guidelines-container,
+    .compliance-topics-container {
+      border-radius: 0 !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+    }
+  
+    /* Optional – remove padding on sides if needed */
+    .compliancenew-hero-container,
+    .guidelines-container,
+    .compliance-topics-container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  

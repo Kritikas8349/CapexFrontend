@@ -34,6 +34,7 @@ const LoginForm1 = () => {
   };
 
   return (
+    
     <div className="login-wrapper">
       {/* Left Side - Login Form */}
       <div className="login-left">
@@ -94,7 +95,7 @@ const LoginForm1 = () => {
           </div>
 
           <p className="signup-text">
-            Don't have an account? <a href="/register">Sign up</a>
+            Don't have an account? <a href="/create-account">Sign up</a>
           </p>
         </div>
       </div>

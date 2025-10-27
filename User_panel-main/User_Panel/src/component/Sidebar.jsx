@@ -37,7 +37,7 @@ const Sidebar = () => {
           </li>
           <li>
             <FaHistory className="icon" />
-            <Link to="/trade-history" className="text-decoration-none">Trade History</Link>
+            <Link to="/t-history" className="text-decoration-none">Trade History</Link>
           </li>
           <li>
             <FaWallet className="icon" />

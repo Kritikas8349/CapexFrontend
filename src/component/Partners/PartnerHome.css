@@ -14,20 +14,21 @@
     height: 98vh;
     background: linear-gradient(to top right, #493ffd, #000000);
     padding: 160px 20px 20px 20px;
+    /* margin: 0px 10px  0px 0px ; */
     border-radius: 16px;
     
   }
 
 
   .partner-home-container {
-    position: relative;
+    /* position: relative; */
     width: 100%;
-    max-width: 1500px;
-    /* margin: 40px auto; */
-    padding: 10px 10px 20px 10px; /* Adds spacing left/right */
+    max-width: 1650px;
+    margin: 1px auto;
+    padding: 10px 10px 20px 10px; 
     border-radius: 12px;
     overflow: hidden;
-    margin: auto 20px 20px 10px;
+   
     text-align: left;
   }
   
@@ -39,7 +40,7 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
   
   /* Make image inset a bit from the edges */
@@ -136,7 +137,7 @@
       margin: 0;
     }
     .partner-home-image-container {
-      height: 73vh;
+      height: 76vh;
     }
   
     .partner-home-heading {
@@ -1271,4 +1272,26 @@
     .partner-resources-heading-new {
       font-size: 2rem;
     }
+}
+
+@media (max-width: 768px) {
+  .partnerhomecontainer,
+  .partner-home-container,
+  .partner-home-account-section,
+  .ph-container,
+  .ph-container-reverse,
+  .affiliate-container,
+  .affiliate-container1,
+  .copytrade-container,
+  .partner-resources-main,
+  .ratings-section,
+  .promote-wrapper {
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+
+  .partner-home-container{
+    padding: 0;
+  }
+
 }

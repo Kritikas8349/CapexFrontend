@@ -30,7 +30,7 @@ function Intermediate() {
         <div id='IntermediateMain'>
 
             <div className="intermediate-tutorial">
-                <h1 className="intermediate-tutorial-heading">Intermediate Shares Tutorial</h1>
+               
 
                 <div className="intermediate-tutorial-grid">
                     {/* Left Section: Lesson 1 */}

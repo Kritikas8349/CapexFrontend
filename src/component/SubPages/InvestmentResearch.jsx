@@ -1,3 +1,5 @@
+
+
 import React, { useRef } from 'react'
 import './InvestmentResearch.css'
 import { Link } from 'react-router-dom';
@@ -9,28 +11,28 @@ function InvestmentResearch() {
     const cardsData = [
         {
             id: 1,
-            img: "/public/awardlogo.avif", // replace with your image
+            img: "/awardlogo.avif", // replace with your image
             title: "Why is a shiny block of metal so popular?",
             desc: "I know everyone is obsessed with gold right now, because number go up...",
             date: "8 May 2025",
         },
         {
             id: 2,
-            img: "/public/awards.avif",
+            img: "/awards.avif",
             title: "Auto loans are bad; but earnings are good",
             desc: "Top of mind — yes, Microsoft had a good quarter and so did Meta...",
             date: "1 May 2025",
         },
         {
             id: 3,
-            img: "/public/awards.jpg",
+            img: "/awards.jpg",
             title: "Have you heard the one about the oil prosp...",
             desc: "I’ve been re-reading speeches Buffett gave to his inner circle...",
             date: "21 April 2025",
         },
         {
             id: 4,
-            img: "/public/supportBg.jpg",
+            img: "/SupportBg.jpg",
             title: "Tech stocks are making waves",
             desc: "Technology is booming with AI and Cloud expansion...",
             date: "15 April 2025",
@@ -52,7 +54,7 @@ function InvestmentResearch() {
     ];
     return (
         <div className='bg-home'>
-            <div className=" bg-faq rounded rounded-3 m-4 py-5 ">
+            <div className=" bg-faq rounded rounded-5 mt-0 mt-lg-2 mt-md-2 mx-0 mx-lg-3 mx-md-3 py-5 ">
                 <div className="container py-5">
                     <div className="row align-items-center py-5">
                         {/* Left Section */}
@@ -86,9 +88,9 @@ function InvestmentResearch() {
             </div>
 
             {/* -----Start Free Trial -----------      */}
-            <div className="container-fluid py-2 py-lg-5 py-md-5">
-                <div className="container py-2 py-lg-5 py-md-5">
-                    <div className="row align-items-center text-start text-white p-5 text-lg-start bg-free-trial rounded rounded-4">
+            <div className="py-1 py-lg-5 py-md-5 mt-2 mt-lg-2 mt-md-2 mx-0 mx-lg-3 mx-md-3 bg-free-trial rounded rounded-4">
+                <div className=" py-1 py-lg-3 py-md-3">
+                    <div className="row align-items-center text-start text-white p-4 text-lg-start ">
 
                         {/* Left Content */}
                         <div className="col-12 col-md-8 col-lg-8 mb-4 mb-lg-0">

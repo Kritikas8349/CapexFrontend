@@ -56,7 +56,7 @@ function IBOverview() {
                 opacity: 1; /* Ensures it’s not faded */}`
                 }
             </style>
-            <div className="education-section d-flex align-items-center text-white" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+            <div className="education-section d-flex align-items-center text-white my-2 mt-lg-2 mx-lg-3 rounded rounded-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
                 <div className="container align-items-start ">
                     <div className="row bg-transparent">
                         <div className="col-12 col-lg-12 bg-transparent">
@@ -76,7 +76,7 @@ function IBOverview() {
 
 
             {/* ---------------- */}
-            <section className="container-fluid py-5 bg-free-trial ">
+            <section className=" py-5 bg-free-trial mt-lg-2 mx-lg-3 rounded rounded-4 ">
                 <div className="row align-items-center justify-content-around px-3 px-md-5">
 
                     {/* Left Column */}

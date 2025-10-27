@@ -13,7 +13,7 @@ body{
 .forex-tutorial {
   background: linear-gradient(to left, #241ad5, #090552,#000000);
   color: #fff;
-  max-height:100vh ;
+  height:100vh ;
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
 }

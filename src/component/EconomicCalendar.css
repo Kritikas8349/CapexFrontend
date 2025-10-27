@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Ensure wrappers stay inside viewport */
@@ -17,6 +18,7 @@ html, body {
   max-width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  
 }
 
 /* ✅ Flex items wrap properly */
@@ -1114,5 +1116,63 @@ html, body {
 
   .market-status {
     font-size: 0.65rem;
+  }
+}
+
+
+/* ================= RESPONSIVE FULL-WIDTH FIX ================= */
+@media (max-width: 992px) {
+  .calendar-container,
+  .economic-calendar-wrapper,
+  .economic-calendar-section,
+  .trading-banner {
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-container,
+  .economic-calendar-wrapper,
+  .economic-calendar-section,
+  .trading-banner {
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container,
+  .economic-calendar-wrapper,
+  .economic-calendar-section,
+  .trading-banner {
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .calendar-container,
+  .economic-calendar-wrapper,
+  .economic-calendar-section,
+  .trading-banner {
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }

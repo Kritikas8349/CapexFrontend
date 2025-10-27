@@ -1,48 +1,42 @@
+/* ================= BASE ================= */
 .fundacc {
     background-color: #ebefee;
     padding-bottom: 20px;
-    padding-top: 10px;
-}
-
-.fundaccount {
-    background: linear-gradient(to top left, #000000, #493ffd); 
-    width: 100%;
-    max-width: 1480px;
-    margin: 0 auto 20px auto;   /* ✅ equal gap left-right */
-    border-radius: 16px;
-    padding-top: 10px;          /* ✅ space from navbar */
 }
 
 .fund-page {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     font-family: Arial, sans-serif;
     color: #fff;
+    background: linear-gradient(to top left, #000000, #493ffd);
     width: 100%;
-    max-width: 1480px;
-    height: auto;
-    margin: 0 auto 20px auto;   /* ✅ equal gap left-right */
-    flex-wrap: wrap;
-    border-radius: 16px;
+    min-height: 100vh;
+    padding-top: 5px;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
-/* Sidebar */
+/* ================= SIDEBAR ================= */
 .fund-sidebar {
-    width: 440px;
-    border-right: 1px solid transparent;
-    padding: 160px 0 20px 0; 
-    height: 100vh;
-    overflow-y: auto;
     flex-shrink: 0;
+    width: 380px;
+    min-width: 240px;
+    border-right: 1px solid transparent;
+    padding: 160px 0 20px 0;
+    height: auto;
+    overflow-y: auto;
 }
 
 .fund-sidebar::-webkit-scrollbar {
     width: 4px;
 }
 .fund-sidebar::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
 }
 .fund-sidebar::-webkit-scrollbar-thumb {
-    background-color: transparent; 
+    background-color: transparent;
     border-radius: 2px;
 }
 
@@ -65,28 +59,32 @@
     border-radius: 6px;
     transition: background 0.3s;
     font-weight: bold;
+    font-size: 16px;
 }
+
 .fund-sidebar-header:hover {
-    color: #000;
+    color: black;
 }
 
 .fund-sidebar-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     object-fit: contain;
     margin-right: 10px;
 }
+
 .fund-title {
     flex: 1;
 }
+
 .fund-count {
     background: #493ffd;
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 50%;
-    width: 36px;      
-    height: 36px;    
-    display: flex;    
+    width: 32px;
+    height: 32px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -102,67 +100,40 @@
 }
 .fund-dropdown p:hover {
     text-decoration: underline;
-   
 }
 
-/* Content */
+/* ================= CONTENT ================= */
 .fund-content {
     flex: 1;
-    padding: 40px 80px;
+    padding: 140px 80px 40px 80px;
     max-width: 1250px;
     margin-left: 60px;
     position: relative;
 }
 
-/* Breadcrumbs */
+/* ================= BREADCRUMBS ================= */
 .fund-breadcrumbs {
-    position: relative;
-    top: 90px;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 16px;
     color: #fff;
-    display: flex;
-    align-items: center;
     gap: 6px;
+    margin-bottom: 20px;
     font-family: "Segoe UI", sans-serif;
-    flex-wrap: wrap;
 }
-
-.fund-breadcrumbs {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #fff;
-    flex-wrap: wrap;
-  }
-  
-  .separator {
-    margin: 0 6px;
-    color: #fff;
-  }
-  
-  .breadcrumb-link {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.2s ease;
-  }
-  
-  .breadcrumb-link:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  .current {
-    font-weight: 600;
-    color: #000;
-  }
-  
-.fund-breadcrumbs span {
+.fund-breadcrumbs span,
+.fund-breadcrumbs a {
+    text-decoration: none !important;
+    color: inherit;
     cursor: pointer;
-    transition: color 0.3s;
+}
+.fund-breadcrumbs a:hover {
+    color: #000;
+    text-decoration: none !important;
 }
 .fund-breadcrumbs span:hover {
-    color: #493ffd;
+    color: white;
 }
 .fund-breadcrumbs .separator {
     color: #999;
@@ -173,120 +144,38 @@
     cursor: default;
 }
 
-/* Title */
+/* ================= TITLE ================= */
 .fund-content h1 {
-    font-size: 46px;
-    margin-top: 100px;
-    margin-bottom: 0px;
+    font-size: 42px;
+    margin-top: 25px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Video Section */
+/* ================= VIDEO ================= */
 .fund-video-section {
     border: none;
     border-radius: 8px;
-    padding: 0;
     background: #fff;
-    margin-top: 20px;
     width: 100%;
     max-width: 700px;
+    margin: 20px auto;
 }
 .fund-video-thumbnail {
     background: #000;
     color: white;
     padding: 20px;
-    margin-bottom: 15px;
     text-align: center;
     border-radius: 6px;
 }
 .fund-video-thumbnail iframe {
     background: #333;
     border-radius: 6px;
-    margin-top: 10px;
     width: 100%;
     height: 420px;
 }
 
-/* 📱 Tablet (<= 1024px) */
-@media (max-width: 1024px) {
-    .fund-page {
-        flex-wrap: wrap;
-        margin: 0 16px 20px 16px;   /* ✅ smaller but equal gap */
-    }
-    .fund-sidebar {
-        width: 320px;
-        height: auto;
-    }
-    .fund-content {
-        padding: 30px 40px;
-        margin-left: 0;
-    }
-    .fund-video-thumbnail iframe {
-        height: 360px;
-    }
-}
-
-/* 📱 Mobile (<= 768px) */
-@media (max-width: 768px) {
-    .fund-page {
-        flex-direction: column;
-        margin: 0 12px 20px 12px;   /* ✅ equal smaller margin */
-    }
-    .fundaccount {
-        padding-top: 60px;          /* ✅ prevent navbar overlap */
-    }
-    .fund-sidebar {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        padding: 40px 0 20px 0;
-    }
-    .fund-content {
-        padding: 20px;
-        margin-left: 0;
-    }
-    .fund-breadcrumbs {
-        font-size: 14px;
-        top: auto;
-        margin-bottom: 10px;
-    }
-    .fund-content h1 {
-        font-size: 28px;
-        margin-top: 20px;
-    }
-    .fund-video-thumbnail iframe {
-        height: 240px;
-    }
-}
-
-/* 📱 Small Phones (<= 480px) */
-@media (max-width: 480px) {
-    .fund-page {
-        margin: 0 8px 16px 8px;   /* ✅ balanced smaller gap */
-    }
-    .fundaccount {
-        padding-top: 80px;       /* ✅ compact spacing for navbar */
-    }
-    .fund-breadcrumbs {
-        font-size: 12px;
-        gap: 4px;
-        margin-bottom: 8px;
-    }
-    .fund-content h1 {
-        font-size: 22px;
-        margin-top: 12px;
-    }
-    .fund-sidebar-header {
-        font-size: 14px;
-    }
-    .fund-video-thumbnail iframe {
-        height: 200px;
-    }
-}
-
-
-/* Steps Section */
+/* ================= STEPS ================= */
 .fund-steps-container {
     display: flex;
     flex-direction: column;
@@ -297,25 +186,21 @@
     padding: 0 20px;
     max-width: 800px;
 }
-
 .fund-step h3 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #000;
 }
-
 .fund-step p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
     color: #000;
 }
-
 .fund-step span {
     color: #493ffd;
 }
-
 .fund-step-image {
     width: 100%;
     max-width: 768px;
@@ -325,41 +210,107 @@
     background: #000;
 }
 
-/* Steps Responsive */
-@media (max-width: 1024px) {
+/* ================= RESPONSIVE QUERIES ================= */
+
+/* Large laptops & smaller desktops */
+@media (max-width: 1280px) {
+    .fund-content {
+        padding: 120px 60px 40px 60px;
+    }
+    .fund-sidebar {
+        width: 320px;
+    }
+    .fund-content h1 {
+        font-size: 36px;
+    }
     .fund-step h3 {
         font-size: 22px;
     }
+}
 
-    .fund-step p {
-        font-size: 15px;
+/* Tablets / mid screens */
+@media (max-width: 1024px) {
+    .fund-page {
+        flex-wrap: wrap;
+        margin: 0 16px 20px 16px;
+        justify-content: center;
     }
-
-    .fund-step-image {
-        height: auto;
+    .fund-sidebar {
+        width: 100%;
+        padding-top: 100px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .fund-content {
+        padding: 60px 40px 30px 40px;
+        margin-left: 0;
+    }
+    .fund-video-thumbnail iframe {
+        height: 360px;
+    }
+    .fund-content h1 {
+        font-size: 32px;
     }
 }
 
+/* Mobile (phones, small tablets) */
 @media (max-width: 768px) {
-    .fund-steps-container {
-        padding: 0 15px;
+    .fund-page {
+        flex-direction: column;
+        margin: 0 12px 20px 12px;
+        padding-top: 60px;
     }
-
+    .fund-sidebar {
+        width: 100%;
+        padding-top: 80px;
+    }
+    .fund-content {
+        padding: 30px 20px;
+    }
+    .fund-content h1 {
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    .fund-video-thumbnail iframe {
+        height: 280px;
+    }
     .fund-step h3 {
         font-size: 20px;
     }
-
     .fund-step p {
         font-size: 14px;
     }
 }
 
+/* Small phones (480px and below) */
 @media (max-width: 480px) {
+    .fund-page {
+        margin: 0 0px 16px 0px;
+        padding-top: 50px;
+    }
+    .fund-sidebar-header {
+        font-size: 14px;
+    }
+    .fund-content {
+        padding: 15px 10px;
+    }
+    .fund-content h1 {
+        font-size: 20px;
+    }
+    .fund-video-thumbnail iframe {
+        height: 200px;
+    }
     .fund-step h3 {
         font-size: 18px;
     }
-
     .fund-step p {
         font-size: 13px;
     }
+}
+
+/* General responsive fixes */
+img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
