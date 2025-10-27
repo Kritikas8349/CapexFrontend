@@ -130,9 +130,9 @@ function QuickStart4() {
                             </tr>
                             <tr id='white'>
                                 <td></td>
-                                <td><button className="btn blue">Open Standard</button></td>
-                                <td><button className="btn green">Open Raw</button></td>
-                                <td><button className="btn blue">Open Pro</button></td>
+                                <td><button className="btn4 blue">Open Standard</button></td>
+                                <td><button className="btn4 green">Open Raw</button></td>
+                                <td><button className="btn4 blue">Open Pro</button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -216,8 +216,8 @@ function QuickStart4() {
                     )}
 
                     <div className="navigation-buttons">
-                        <button className="prev-btn" onClick={previousStep} disabled={step === 1}>Previous</button>
-                        <button className="next-btn" onClick={nextStep} disabled={!selectedOption}>Next</button>
+                        <button className="prev-btn4" onClick={previousStep} disabled={step === 1}>Previous</button>
+                        <button className="next-btn4" onClick={nextStep} disabled={!selectedOption}>Next</button>
                     </div>
                 </div>
             </div>
@@ -278,7 +278,7 @@ function QuickStart4() {
 
                         <div className="hero-form4">
                             <input type="email" placeholder="Email address" />
-                            <button className="join-btn4">Join Now</button>
+                            <button className="join-btn44">Join Now</button>
                         </div>
                     </div>
 

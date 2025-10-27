@@ -29,6 +29,9 @@ import MarketOverview from "./component/MarketOverview";
 import CryptoCurrency from "./component/CryptoCurrency";
 import ContactSupport from "../../../src/component/ContactSupport";
 import QuickStart from "../../../src/component/QuickStart";
+import ChangePassword from "./component/ChangePassword";
+// import Logout from "./component/Logout";
+
 
 function App() {
   const location = useLocation();
@@ -44,7 +47,9 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/userdashboard" element={<Dashboard />} />
           <Route path="/profile" element={<ProfileSetting />} />
-          <Route path="/manage-order" element={<ManageOrder />} />
+          <Route path="/change-password" element={<ChangePassword></ChangePassword>} />
+          <Route path="/change-password" element={<ChangePassword></ChangePassword>} />
+          {/* <Route path="/logout" element={<Logout></Logout>} /> */}
 
           {/* Trade Layout */}
           <Route path="/trade" element={<TradeLayout />}>

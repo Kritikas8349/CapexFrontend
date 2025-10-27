@@ -82,10 +82,10 @@
 
 .pp-field input {
   padding: 10px;
-  background: linear-gradient(135deg, #130486, #000000);
+  background: white;
   border: 1px solid #333;
   border-radius: 6px;
-  color: #fff;
+  color: rgb(42, 41, 41);
   outline: none;
   transition: 0.2s;
 }
@@ -99,7 +99,7 @@
 .pp-submit-btn {
   width: 100%;
   padding: 12px;
-  background: linear-gradient(135deg, #130486, #000000);
+  background: linear-gradient(to top left, #000000, #493ffd);
   color: white;
   font-weight: bold;
   border: none;
@@ -110,7 +110,7 @@
 }
 
 .pp-submit-btn:hover {
-  background: linear-gradient(135deg, #000000, #130486);
+  background: linear-gradient(to top right, #000000, #493ffd);
   transform: translateY(-2px);
 }
 

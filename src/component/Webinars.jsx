@@ -29,7 +29,7 @@ function Webinars() {
   ];
   return (
     <>
-      <div className="trading-view py-5 m-3 rounded rounded-4">
+      <div className="trading-view py-5 m-0 m-lg-3 m-md-3 rounded rounded-4">
         <style>
           {
             `.trading-view {

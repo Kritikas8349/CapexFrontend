@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TradePage from './TradePage'
-
+import { BsSearch } from "react-icons/bs";
 function TradeHistory() {
+     const [search, setSearch] = useState("");
     return (
 
         <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container h-100   ">
@@ -29,9 +30,17 @@ function TradeHistory() {
 
 
 
-                        <div class="d-flex flex-column flex-sm-row gap-0 justify-content-center justify-content-md-end w-50">
-                            <input type="text" class="form-control bg-transparent border-dark text-dark custom-placeholder" placeholder="Pair, coin..." />
-                            <button class="btn btn-outline-dark bi bi-search px-3" type="button"></button>
+                        <div className="input-group w-100 w-md-50" style={{ maxWidth: "350px" }}>
+                            <span className="input-group-text bg-tarsnsparent border-secondary text-dark">
+                                <BsSearch />
+                            </span>
+                            <input
+                                type="text"
+                                className="form-control bg-tarnsparent text-dark border-secondary"
+                                placeholder="Search here..."
+                                value={search}
+                                onChange={(e) => setSearch(e.target.value)}
+                            />
                         </div>
 
 
