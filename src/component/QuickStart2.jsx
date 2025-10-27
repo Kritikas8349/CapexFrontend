@@ -201,51 +201,6 @@ function QuickStart2() {
       </div>
 
       {/* Tradable Assets Section */}
-      
-              <div className="tradeable-assets-section">
-          <h2 className="assets-heading">Tradable Assets</h2>
-
-          <div className="assets-grid">
-            <div className="asset-box">
-              
-              <img src="/t1.png" alt="Equities" className="asset-logo" />
-              <h3 className="asset-title">Equities</h3>
-              <p className="asset-desc">We offer stocks across 27 global markets like Apple, Alibaba, BMW and Netflix.</p>
-            </div>
-
-            <div className="asset-box">
-              
-              <img src="/t2.png" alt="Forex" className="asset-logo" />
-              <h3 className="asset-title">Forex</h3>
-              <p className="asset-desc">70+ major, minor, and exotic currency pairs.</p>
-            </div>
-
-            <div className="asset-box">
-            
-              <img src="/t3.png" alt="Commodities" className="asset-logo" />
-              <h3 className="asset-title">Commodities</h3>
-              <p className="asset-desc">Energies like crude oil, and agricultural cash crops.</p>
-            </div>
-
-            <div className="asset-box">
-              <img src="/t4.png" alt="Indices" className="asset-logo" />
-              <h3 className="asset-title">Indices</h3>
-              <p className="asset-desc">Major stock indices like US30, S&P500, and NAS100.</p>
-            </div>
-
-            <div className="asset-box">
-              <img src="/t5.png" alt="Metals" className="asset-logo" />
-              <h3 className="asset-title">Metals</h3>
-              <p className="asset-desc">Precious and industry metals like gold, silver, and copper.</p>
-            </div>
-
-            <div className="asset-box">
-              <img src="/t6.png" alt="View All" className="asset-logo" />
-              <h3 className="asset-title">View all</h3>
-              <p className="asset-desc">Explore Market. Trade a diverse range of tradable assets.</p>
-            </div>
-          </div>
-        </div>
 
             <div className="q2-trading-opportunities-section">
         <h2 className="q2-section-title">Trading Opportunities</h2>

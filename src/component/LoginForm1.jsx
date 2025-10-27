@@ -34,6 +34,7 @@ const LoginForm1 = () => {
   };
 
   return (
+    
     <div className="login-wrapper">
       {/* Left Side - Login Form */}
       <div className="login-left">

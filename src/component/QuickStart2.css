@@ -1110,7 +1110,7 @@ body {
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(8, 7, 7, 0.348);
   transition: transform 0.3s ease;
 }
 
@@ -1164,8 +1164,15 @@ body {
 }
 
 @media (max-width: 600px) {
+  .q2-trading-opportunities-section{
+    margin: auto;
+  }
+  .q2-opportunity-card{
+    border-radius: 10px;
+  }
   .q2-opportunity-grid {
     grid-template-columns: 1fr;
+   
   }
 
   .q2-section-title {
@@ -1191,13 +1198,11 @@ body {
   
   .q2-tradable-assets-section,
   .q2-tradable-assets-section2,
-  .q2-trading-opportunities-section,
   .q2-assets-grid,
   .q2-opportunity-grid,
   .q2-platform-card,
   .q2-asset-card,
   .q2-asset-card2,
-  .q2-opportunity-card,
   .q2-card-content,
   .q2-hero,
   .q2-hero-left,

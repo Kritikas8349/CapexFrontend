@@ -25,7 +25,7 @@
 
   background: linear-gradient(to bottom right, #000000, #493ffd);
   border-radius: 16px;
-  margin: 10px auto;               /* centers horizontally */
+  margin: 10px 10px 10px 20px;               /* centers horizontally */
   padding: 80px 80px 60px 80px;    /* equal padding left & right */
   gap: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -212,8 +212,9 @@
     .signup-container {
       flex-direction: column;
       align-items: center;
-      width: 90%;
+      width: 95%;
       padding: 40px 20px;
+      
     }
 
     .signup-left,
@@ -233,9 +234,11 @@
   /* Mobile (≤ 600px) */
   @media (max-width: 600px) {
     .signup-container {
+      margin: 0px !important;
+      border-radius: 0px;
       flex-direction: column;
-      width: 95%;
-      padding: 120px 15px 20px 15px;
+      width: 100% ;
+      padding: 150px 18px 20px 13px;
       gap: 20px;
     }
 
@@ -243,7 +246,7 @@
     .signup-right {
       width: 100%;
       padding: 20px;
-      margin: 0 auto;
+      margin:10px 10px 20px 2px ;
     }
 
     .input-row {
