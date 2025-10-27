@@ -11,6 +11,8 @@
   flex-direction: column;
   overflow-y: auto;
   padding: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 .res-hamburger-overlay.open {
@@ -20,7 +22,7 @@
 /* Close button */
 .res-close-btn {
   align-self: flex-end;
-  font-size: 24px;
+  font-size: 26px;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -32,29 +34,37 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  max-width: 320px; /* limit for clean center layout */
 }
 
+/* Each list item */
 .res-overlay-links li {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0; /* light gray divider line */
+  padding-bottom: 5px;
 }
 
 /* Submenu header */
 .res-submenu-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 8px;
   padding: 10px 0;
   cursor: pointer;
   font-weight: 500;
+  width: 100%;
 }
 
 .res-submenu-header:hover {
   background: #e0f0ff;
-  /* light blue oval background on hover */
   border-radius: 20px;
-  padding-left: 10px;
 }
 
 /* Submenu dropdown */
@@ -63,16 +73,16 @@
   display: none;
   flex-direction: column;
   gap: 5px;
-  padding-left: 15px;
-  /* nested items padding */
+  align-items: center;
+  padding: 5px 0;
 }
 
-.res-has-submenu.open>.res-overlay-submenu {
+.res-has-submenu.open > .res-overlay-submenu {
   display: flex;
 }
 
 /* Arrow rotation */
-.res-has-submenu.open>.res-submenu-header .res-dropdown-icon {
+.res-has-submenu.open > .res-submenu-header .res-dropdown-icon {
   transform: rotate(90deg);
   transition: transform 0.3s ease;
 }
@@ -81,7 +91,7 @@
 .res-overlay-links li a,
 .res-overlay-links li span,
 .res-overlay-links li button {
-  text-align: left;
+  text-align: center;
   width: 100%;
   font-size: 16px;
   padding: 8px 10px;
@@ -98,17 +108,40 @@
   border-radius: 5px;
 }
 
+/* Buttons in overlay (Log In & Join Now) */
+.res-overlay-links .res-login-btn,
+.res-overlay-links .res-join-bttnn {
+  width: 90%; /* increased width */
+  max-width: 340px; /* keep consistent size */
+  padding: 12px 0;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #493ffd;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.res-overlay-links .res-login-btn:hover,
+.res-overlay-links .res-join-bttnn:hover {
+  background-color: #3227d6;
+}
+
 /* Bottom row links: personal, partner, research */
 .res-overlay-bottom-row {
   margin-top: 10px;
-  /* reduced top margin */
   display: flex;
-  gap: 8px;
-  /* reduced space between links */
-  justify-content: flex-start;
+  gap: 12px;
+  justify-content: center;
   align-items: center;
-  /* vertically center with button */
-  padding-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0; /* light gray divider line */
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
 }
 
 .res-overlay-bottom-row a {
@@ -118,12 +151,10 @@
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 14px;
-  /* smaller links to fit nicely */
 }
 
 .res-overlay-bottom-row a:hover {
   background: #e0f0ff;
-  /* light blue hover */
 }
 
 /* Join Now button in overlay bottom row */
@@ -136,33 +167,10 @@
   font-size: 14px;
   cursor: pointer;
   margin-left: 10px;
-  /* space between last link and button */
 }
 
 .res-overlay-bottom-row .res-join-bttnn:hover {
   background-color: #3227d6;
-}
-
-/* Buttons in overlay */
-.res-overlay-links .res-login-btn,
-.res-overlay-links .res-join-bttnn {
-  width: 100%;
-  padding: 10px 15px;
-  margin-top: 5px;
-  border-radius: 30px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #493ffd;
-  /* blue */
-  color: #fff;
-  text-align: center;
-}
-
-.res-overlay-links .res-login-btn:hover,
-.res-overlay-links .res-join-bttnn:hover {
-  background-color: #3227d6;
-  /* darker blue on hover */
 }
 
 /* Hamburger icon */
@@ -171,31 +179,23 @@
   font-size: 24px;
   cursor: pointer;
   color: #fff;
-  /* white icon */
 }
-
 
 /* Remove underline from all overlay links, submenus, and nested items */
 .res-hamburger-overlay a,
 .res-hamburger-overlay span,
 .res-hamburger-overlay button {
   text-decoration: none;
-  /* remove underline */
   color: #000;
-  /* ensures all text is black */
 }
 
-/* Optional: make hover background still work nicely */
 .res-hamburger-overlay a:hover,
 .res-hamburger-overlay span:hover,
 .res-hamburger-overlay button:hover {
   background: #f0f0f0;
   border-radius: 5px;
   text-decoration: none;
-  /* ensure underline never appears */
 }
-
-
 
 /* Responsive */
 @media screen and (max-width:1100px) {

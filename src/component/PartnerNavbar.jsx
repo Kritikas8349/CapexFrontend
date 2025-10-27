@@ -272,11 +272,11 @@ function PartnerNavbar() {
       <a href="#" className="part-refer-link">Refer a friends</a>
     </li>
     <li>
-      <button className="part-login-btn">Log In</button>
-    </li>
-    <li>
-      <button className="part-join-bttnn">Join Now</button>
-    </li>
+    <Link to="/loginform" className="part-login-btn" onClick={() => setMenuOpen(false)}>Log In</Link>
+  </li>
+  <li>
+    <Link to="/create-account" className="part-join-bttnn" onClick={() => setMenuOpen(false)}>Join Now</Link>
+  </li>
   </ul>
 
   <div className="part-overlay-bottom-row">
