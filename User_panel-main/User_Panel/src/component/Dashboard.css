@@ -12,6 +12,8 @@
 /* Dashboard Header */
 .dash-header {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .dash-header h2 {
@@ -28,11 +30,12 @@
   gap: 20px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  
   width: 100%;
 }
 
 .dash-stat-card {
-  background: linear-gradient(135deg, #130486, #000000);
+  background: linear-gradient(to top left, #000000, #493ffd);
   padding: 20px;
   flex: 1;
   display: flex;
@@ -44,11 +47,11 @@
 }
 
 .dash-icon {
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
-.open-order .dash-icon { color: #ffa500; }
+.open-order .dash-icon { color: #ffa500 ; }
 .completed-order .dash-icon { color: #00ff00; }
 .canceled-order .dash-icon { color: #ff4c4c; }
 .total-trade .dash-icon { color: #1e90ff; }
@@ -56,11 +59,13 @@
 .dash-stat-card h4 {
   margin-bottom: 5px;
   color: #fff;
+  font-size: medium;
 }
 
 .dash-stat-card p {
   font-size: 18px;
   font-weight: bold;
+  color: white;
 }
 .class{
 color: white;
@@ -95,7 +100,7 @@ color: white;
 }
 
 .dash-recent-card {
-  background: linear-gradient(135deg, #130486, #000000);
+background: linear-gradient(to top left, #000000, #493ffd);
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -136,7 +141,8 @@ color: white;
 
 /* Wallet Card */
 .dash-wallet-overview {
-  background: linear-gradient(135deg, #130486, #000000);
+  background: linear-gradient(to top left, #000000, #493ffd);
+
   padding: 20px;
   border-radius: 10px;
   color: #fff;
@@ -192,7 +198,7 @@ color: white;
   object-fit: cover;
 }
 
-.wallet-name {
+.wallet-name1{
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -226,7 +232,8 @@ color: white;
    DEPOSIT / WITHDRAW CARD
 ======================= */
 .dash-money-card {
-  background: linear-gradient(135deg, #130486, #000000);
+  background: linear-gradient(to top left, #000000, #493ffd);
+
   border-radius: 12px;
   padding: 20px;
   color: #fff;
@@ -261,6 +268,14 @@ color: white;
   margin-bottom: 15px;
   flex-wrap: wrap;
 }
+.money-input-group input::placeholder{
+  color: rgb(186, 184, 184);
+}
+
+.money-input-group select, .form-group select{
+  color:rgb(186, 184, 184); ;
+}
+
 
 .money-input,
 .money-select {
@@ -269,7 +284,7 @@ color: white;
   border-radius: 8px;
   border: 1px solid #444;
   background-color: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  color: rgb(186, 184, 184);
   outline: none;
   font-size: 14px;
 }
@@ -320,7 +335,7 @@ color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(135deg, #130486, #000000);
+background: linear-gradient(to top left, #000000, #493ffd);
   border-radius: 12px;
   padding: 25px;
   width: 90%;
@@ -376,9 +391,9 @@ color: white;
 .preview-content select {
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #444;
-  background-color: rgba(255,255,255,0.05);
-  color: #fff;
+  border: 1px solid #dee2e6;
+  background-color: transparent;
+  color: rgb(186, 184, 184);
   outline: none;
   font-size: 14px;
   width: 100%;
@@ -426,7 +441,7 @@ color: white;
 }
 
 .custom-popup .popup-content {
-  background: linear-gradient(145deg, #1a0ea6, #000000);
+      background: linear-gradient(to top left, #000000, #493ffd);
   padding: 25px 30px;
   border-radius: 16px;
   color: #fff;

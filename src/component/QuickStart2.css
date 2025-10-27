@@ -1217,6 +1217,6 @@ body {
   iframe,
   video {
     border-radius: 0 !important;
-    width: 100% !important;
+    width: 100%;
   }
 }

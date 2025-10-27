@@ -98,8 +98,8 @@ export default function ManageWallets() {
               <div className="wallet-info">
                 <img src={w.img} alt={w.symbol} className="wallet-icon" />
                 <div className="wallet-names">
-                  <span className="wallet-name">{w.name}</span>
-                  <span className="wallet-symbol">{w.symbol}</span>
+                  <h6 className="wallet-name">{w.name}</h6>
+                  <small className="wallet-symbol">{w.symbol}</small>
                 </div>
               </div>
               <span className={w.available === "0.0000" ? "zero-balance" : ""}>{w.available}</span>

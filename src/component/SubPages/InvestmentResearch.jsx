@@ -54,7 +54,7 @@ function InvestmentResearch() {
     ];
     return (
         <div className='bg-home'>
-            <div className=" bg-faq rounded rounded-5 mt-2 mx-3 py-5 ">
+            <div className=" bg-faq rounded rounded-5 mt-0 mt-lg-2 mt-md-2 mx-0 mx-lg-3 mx-md-3 py-5 ">
                 <div className="container py-5">
                     <div className="row align-items-center py-5">
                         {/* Left Section */}
@@ -88,9 +88,9 @@ function InvestmentResearch() {
             </div>
 
             {/* -----Start Free Trial -----------      */}
-            <div className="container-fluid py-2 py-lg-5 py-md-5">
-                <div className="container py-2 py-lg-5 py-md-5">
-                    <div className="row align-items-center text-start text-white p-5 text-lg-start bg-free-trial rounded rounded-4">
+            <div className="py-1 py-lg-5 py-md-5 mt-2 mt-lg-2 mt-md-2 mx-0 mx-lg-3 mx-md-3 bg-free-trial rounded rounded-4">
+                <div className=" py-1 py-lg-3 py-md-3">
+                    <div className="row align-items-center text-start text-white p-4 text-lg-start ">
 
                         {/* Left Content */}
                         <div className="col-12 col-md-8 col-lg-8 mb-4 mb-lg-0">
