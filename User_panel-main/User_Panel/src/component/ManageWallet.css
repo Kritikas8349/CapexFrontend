@@ -41,17 +41,17 @@
 
 .tab.active,
 .tab:hover,
-.btn-nav {
+.btn-nav1 {
   color: #fff;
-  background-color: #1b8cff;
-  border: 1px solid #1b8cff;
+  background-color: #493FFD;
+  border: 1px solid #493FFD;
   padding: 6px 16px;
   border-radius: 8px;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
-.btn-nav:hover {
+.btn-nav1:hover {
   background-color: #0072ff;
 }
 

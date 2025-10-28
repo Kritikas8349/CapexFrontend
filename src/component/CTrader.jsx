@@ -1,7 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function CTrader() {
+    const [email, setEmail] = useState("");
+    const [placeholder, setPlaceholder] = useState("Email address");
+    const navigate = useNavigate();
+
+    const handleJoinNow = () => {
+        if (email.trim() === "") {
+            // Clear input and show error message in placeholder
+            setEmail("");
+            setPlaceholder("*Email is required!");
+        } else {
+            navigate("/quickstart/create-account");
+        }
+    };
     return (
         <div className='bg-home'>
             <style>
@@ -12,7 +25,7 @@ function CTrader() {
                 }
 
             </style>
-            <div className=" bg-home text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-3">
+            <div className=" bg-home text-white py-5 py-lg-4 py-md-4 trading-view my-lg-2 mx-lg-3 rounded rounded-3 min-vh-90">
                 <div className="container">
                     <div className="row align-items-center mt-5">
 
@@ -30,18 +43,31 @@ function CTrader() {
                             <div className="row g-3 justify-content-center">
                                 {/* Email Input */}
                                 <div className="col-12 col-md-8">
+
                                     <input
                                         type="email"
                                         className="form-control form-control-lg"
-                                        placeholder="Email address"
+                                        placeholder={placeholder}
+                                        value={email}
+                                        onChange={(e) => {
+                                            setEmail(e.target.value);
+                                            // Reset placeholder when user starts typing again
+                                            if (placeholder !== "Email address") {
+                                                setPlaceholder("Email address");
+                                            }
+                                        }}
                                     />
+
                                 </div>
 
-                                {/* Button */}
+                                {/* Join Button */}
                                 <div className="col-12 col-md-4 d-grid">
-                                    <Link to="/quickstart/create-account" className="btn btn-bg-start text-white ">
+                                    <button
+                                        onClick={handleJoinNow}
+                                        className="btn btn-bg-start text-white d-flex align-items-center justify-content-center"
+                                    >
                                         Join Now
-                                    </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -90,7 +116,7 @@ function CTrader() {
 
             {/* ----------- WHy choose CTrader ----------- */}
 
-            <div className="container-fluid bg-home text-black py-2 py-lg-5 py-md-5">
+            <div className=" bg-home text-black py-2 py-lg-5 py-md-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center g-5">
 
@@ -152,7 +178,7 @@ function CTrader() {
             </div>
 
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center py-2 py-lg-5 py-md-5 " >
+            <div className=" bg-home align-content-center py-2 py-lg-5 py-md-5 " >
                 <div className="container py-1 py-lg-5 py-md-5">
                     <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function TradingView() {
+    
     return (
         <div className='bg-home'>
             <style>
@@ -16,7 +17,7 @@ function TradingView() {
                 }
 
             </style>
-            <div className="bg-black text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-4">
+            <div className="bg-black text-white  trading-view py-5 py-lg-4 py-md-4 mt-lg-2  mx-lg-3 rounded rounded-4 min-vh-90">
                 <div className="container">
                     <div className="row align-items-center mt-5">
                         {/* Left Section */}
@@ -105,7 +106,7 @@ function TradingView() {
 
             {/* -------------How to get trading------------ */}
 
-            <div className="container-fluid bg-home align-content-center py-3 py-lg-5 py-md-5 " >
+            <div className=" border border-3 bg-home align-content-center py-3 py-lg-5 py-md-5 my-lg-2 mx-lg-3 rounded rounded-4 " >
                 <div className="container">
                     <div className="row align-items-center border rounded p-2 p-lg-4 p-md-4">
                         {/* Left Section */}
@@ -218,7 +219,7 @@ function TradingView() {
 
             {/* -----------Why MarketTrad----------------- */}
 
-            <div className="container-fluid bg-light py-3 py-lg-5 py-md-5 min-vh-90">
+            <div className=" bg-light py-3 py-lg-5 py-md-5 min-vh-90 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container py-3 py-lg-4 py-md-4">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}

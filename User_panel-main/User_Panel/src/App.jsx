@@ -12,6 +12,14 @@ import Sidebar from "./Component/Sidebar";
 import TopRightNavbar from "./Component/TopRightNavbar";
 import Dashboard from "./Component/Dashboard";
 import ProfileSetting from "./Component/ProfileSetting";
+import ChangePassword from "./component/ChangePassword";
+import TradeLayout from "./component/TradeLayout";
+import MarketOverview from "./component/MarketOverview";
+import CryptoCurrency from "./component/CryptoCurrency";
+import QuickStart from "../../../src/component/QuickStart";
+import ContactSupport from "../../../src/component/ContactSupport";
+
+
 import ManageOrder from "./Component/ManageOrder";
 import TradePage from "./Component/TradePage";
 import ManageWallet from "./Component/ManageWallet";
@@ -21,7 +29,7 @@ import TradeHistory from "./Component/TradeHistory";
 import DepositeHistory from "./Component/DepositeHistory";
 import WithdrawHistory from "./Component/WithdrawHistory";
 import TransactionHistory from "./Component/TransactionHistory";
-import GetSupport from "./Component/GetSupport";
+import GetSupport from "./component/GetSupport";
 import OpenTicket from "./Component/OpenTicket";
 import ReplyTicket from "./Component/ReplyTicket";
 // import TradeNavbar from "./component/TradeNavbar";

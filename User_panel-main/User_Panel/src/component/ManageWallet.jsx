@@ -77,7 +77,7 @@ export default function ManageWallets() {
 
         <div className="wallet-tabs d-flex justify-content-between mx-4 px-5">
           <h2 className="">Wallet</h2>
-          <button className="btn btn-nav px-4" >Spot</button>
+          <button className="btn btn-nav1 px-4" >Spot</button>
 
           {/* <button className={activeTab === "Spot" ? "tab active" : "tab"} onClick={() => handleTabClick("Spot")}>Spot</button> */}
           {/* <button className={activeTab === "Funding" ? "tab active" : "tab"} onClick={() => handleTabClick("Funding")}>Funding</button>

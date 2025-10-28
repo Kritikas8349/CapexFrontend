@@ -147,15 +147,41 @@ const TradePage = () => {
           </div>
         </div>
 
-        <div className="chart-box">
-          <iframe
-            title="TradingView Chart"
-            src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=1D&theme=dark&style=1&locale=en"
-            frameBorder="0"
-            allowFullScreen
-            className="chart-frame"
-          ></iframe>
-        </div>
+        <div className="chart-box position-relative">
+  {/* Chart */}
+  <iframe
+    title="TradingView Chart"
+    src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=1D&theme=dark&style=1&locale=en"
+    frameBorder="0"
+    allowFullScreen
+    className="chart-frame w-100"
+    style={{
+      height: "500px",
+      borderRadius: "10px",
+    }}
+  ></iframe>
+
+  {/* Buttons Overlay */}
+  <div
+    className="position-absolute d-flex justify-content-center align-items-center flex-wrap gap-3"
+    style={{
+      top: "5%",
+      left: "75%",
+      transform: "translate(-50%, -50%)",
+      zIndex: 2,
+      width: "100%",
+      padding: "0 10px",
+    }}
+  >
+    <button className="btn btn-success d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm">
+      BUY BTC
+    </button>
+    <button className="btn btn-danger d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm">
+      SELL BTC
+    </button>
+  </div>
+</div>
+
 
         {/* BOTTOM - TRADE BOX SECTION */}
         <div className="tradebox-container">

@@ -1,8 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function MetaTrader5() {
+    const [email, setEmail] = useState("");
+        const [placeholder, setPlaceholder] = useState("Email address");
+        const navigate = useNavigate();
+    
+        const handleJoinNow = () => {
+            if (email.trim() === "") {
+                // Clear input and show error message in placeholder
+                setEmail("");
+                setPlaceholder("*Email is required!");
+            } else {
+                navigate("/quickstart/create-account");
+            }
+        };
     return (
         <div className='bg-home'>
             <style>
@@ -13,31 +26,57 @@ function MetaTrader5() {
                 }
 
             </style>
-            <div className=" bg-black text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-4">
-                <div className="container">
-                    <div className="row align-items-center mt-4">
+
+            <div className=" bg-black text-white py-5 py-lg-4 py-md-4 trading-view mt-lg-2 mx-lg-3 rounded rounded-4 min-vh-90">
+                <div className="container py-5">
+                    <div className="row align-items-center mt-3">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
-                                MetaTrader 5 (MT5)
+                                MetaTrader 5 (MT5){" "}
+                                <span className="text-primary"></span>
+                                <br />
+                                with BlackBull Markets
                             </h1>
                             <p className="fs-3 mt-3 text-white ">
                                 Access MetaTrader 5<br />with no minimum deposit.
                             </p>
 
-                            {/* Buttons */}
-                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
-                                <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white px-4 py-2 fw-bold">
-                                    Join Now
-                                </Link>
+                            {/* Email Input & Button */}
+                            <div className="row g-3 justify-content-center">
+                                {/* Email Input */}
+                                <div className="col-12 col-md-8">
+                                   <input
+                                        type="email"
+                                        className="form-control form-control-lg"
+                                        placeholder={placeholder}
+                                        value={email}
+                                        onChange={(e) => {
+                                            setEmail(e.target.value);
+                                            // Reset placeholder when user starts typing again
+                                            if (placeholder !== "Email address") {
+                                                setPlaceholder("Email address");
+                                            }
+                                        }}
+                                    />
+                                </div>
+
+                                {/* Join Button */}
+                                <div className="col-12 col-md-4 d-grid">
+                                    <button
+                                        onClick={handleJoinNow}
+                                        className="btn btn-bg-start text-white d-flex align-items-center justify-content-center"
+                                    >
+                                        Join Now
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                         {/* Right Section */}
                         <div className="col-lg-6 text-center">
                             <img
-                                src="/mac1.png"
+                                src="/leptop1.webp"
                                 alt="TradingView Chart"
                                 className="img-fluid mt-3 mt-lg-0"
                                 style={{ maxHeight: "500px", objectFit: "contain" }}
@@ -48,50 +87,51 @@ function MetaTrader5() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <a href="#" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
                                 style={{ height: "20px", marginRight: "8px" }}
                             />
                             GET IT FOR WEB
-                        </a>
+                        </Link>
 
                         {/* Other Store Logos */}
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/microsoft.svg"
                                 alt="Microsoft Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="Mac App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center  px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center  px-3 py-2 rounded">
                             <img
                                 src="/Google-Play (1).svg"
                                 alt="Google Play"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
 
-                        <a href="#" className="d-flex align-items-center px-3 py-2 rounded">
+                        <Link to="#" className="d-flex align-items-center px-3 py-2 rounded">
                             <img
                                 src="/Mac.webp"
                                 alt="App Store"
                                 style={{ height: "35px" }}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
+            
             {/* ----------- WHy choose Market Trade5 ----------- */}
 
             <div className="container-fluid bg-home text-black py-3 py-md-5 py-lg-5">

@@ -1,7 +1,20 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{useState} from 'react'
+import { Link,useNavigate } from 'react-router-dom'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function MetaTrader4() {
+        const [email, setEmail] = useState("");
+           const [placeholder, setPlaceholder] = useState("Email address");
+           const navigate = useNavigate();
+       
+           const handleJoinNow = () => {
+               if (email.trim() === "") {
+                   // Clear input and show error message in placeholder
+                   setEmail("");
+                   setPlaceholder("*Email is required!");
+               } else {
+                   navigate("/quickstart/create-account");
+               }
+           };
     return (
         <div className='bg-home'>
             <style>
@@ -12,7 +25,7 @@ function MetaTrader4() {
                 }
 
             </style>
-            <div className=" bg-black text-white py-5 trading-view mt-lg-2 mx-lg-3 rounded rounded-4">
+            <div className=" bg-black text-white py-5 py-lg-4 py-md-4 trading-view mt-lg-2 mx-lg-3 rounded rounded-4 min-vh-90">
                 <div className="container py-5">
                     <div className="row align-items-center mt-3">
                         {/* Left Section */}
@@ -27,12 +40,34 @@ function MetaTrader4() {
                                 Access MetaTrader 4 <br />with no minimum deposit.
                             </p>
 
-                            {/* Buttons */}
-                            <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mt-4">
-                                <input type="email" name="" id="" className='form-control w-50 form-control-sm ' placeholder='Email address' />
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white px-4 py-2 fw-bold">
-                                    Join Now
-                                </Link>
+                             {/* Email Input & Button */}
+                            <div className="row g-3 justify-content-center">
+                                {/* Email Input */}
+                                <div className="col-12 col-md-8">
+                                    <input
+                                        type="email"
+                                        className="form-control form-control-lg"
+                                        placeholder={placeholder}
+                                        value={email}
+                                        onChange={(e) => {
+                                            setEmail(e.target.value);
+                                            // Reset placeholder when user starts typing again
+                                            if (placeholder !== "Email address") {
+                                                setPlaceholder("Email address");
+                                            }
+                                        }}
+                                    />
+                                </div>
+
+                                {/* Join Button */}
+                                <div className="col-12 col-md-4 d-grid">
+                                    <button
+                                        onClick={handleJoinNow}
+                                        className="btn btn-bg-start text-white d-flex align-items-center justify-content-center"
+                                    >
+                                        Join Now
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
