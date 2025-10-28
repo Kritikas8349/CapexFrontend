@@ -158,12 +158,57 @@ import EquityResearch from "./component/Research/EquityResearch";
 import Australia from "./component/Research/Australia";
 import NewZealand from "./component/Research/NewZealand";
 import USA from "./component/Research/USA";
-import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";
+import TechnicalAnalysis from "./component/Research/TechnicalAnalysis"; 4
+
+
+//--------------------------------------------user-panel-----------------------------------//
+
+// import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// import "bootstrap-icons/font/bootstrap-icons.css";
+
+// import Sidebar from "./user-panel/Sidebar";
+// import TopRightNavbar from "./user-panel/TopRightNavbar";
+// import Dashboard from "./user-panel/Dashboard";
+// import ProfileSetting from "./user-panel/ProfileSetting";
+// import ManageOrder from "./user-panel/ManageOrder";
+// import TradePage from "./user-panel/TradePage";
+// import ManageWallet from "./user-panel/ManageWallet";
+// import WalletDetails from "./user-panel/WalletDetails";
+// import TwoFactor from "./user-panel/TwoFactor";
+// import TradeHistory from "./user-panel/TradeHistory";
+// import DepositeHistory from "./user-panel/DepositeHistory";
+// import WithdrawHistory from "./user-panel/WithdrawHistory";
+// import TransactionHistory from "./user-panel/TransactionHistory";
+// import GetSupport from "./user-panel/GetSupport";
+// import OpenTicket from "./user-panel/OpenTicket";
+// import ReplyTicket from "./user-panel/ReplyTicket";
+// import TradeNavbar from "./user-panel/TradeNavbar";
+// import TradeLayout from "./user-panel/TradeLayout";
+// import MarketOverview from "./user-panel/MarketOverview";
+// import CryptoCurrency from "./user-panel/CryptoCurrency";
+// import ContactSupport from "../../../src/user-panel/ContactSupport"; 
+// import QuickStart from "../../../src/user-panel/QuickStart";
+//mport ChangePassword from "./user-panel/ChangePassword";
+// import Logout from "./user-panel/Logout";
+
+
 
 
 
 
 function Layout({ children }) {
+
+
+
+
+
+
+
+  
   const location = useLocation();
 
   const isPartnerPage = location.pathname.startsWith("/partners") ||
@@ -198,13 +243,16 @@ function Layout({ children }) {
 
 
 function App() {
+
+  const location = useLocation();
+  const shouldHideSidebarAndNavbar = location.pathname.startsWith("/trade");
+
+ 
+
   return (
 
 
-
-
-
-    <div className='app-container'>
+    <div className='app-container1'>
 
 
       <div className="app-section">
@@ -217,8 +265,6 @@ function App() {
 
             <Route path="/loginform" element={<LoginForm1 />} />
             <Route path="/create-account" element={<CreateAccount />} />
-
-
             <Route path="/quickstart/create-account" element={<CreateAccount />}></Route>
             {/* Aryan */}
             {/* Quick Start */}
@@ -248,11 +294,7 @@ function App() {
             <Route path="/markets/futures/other" element={<Market_Future_Other />} />
 
 
-
-
             {/* Rohan */}
-
-
             <Route path="/education/education-hub" element={<EducationHub />}></Route>
             <Route path="/education/webinars" element={<Webinars></Webinars>}></Route>
             <Route path="/education/forex" element={<ForexTutorials></ForexTutorials>}></Route>
@@ -283,9 +325,6 @@ function App() {
             <Route path="/platform/tradingtools/fixapi" element={<FixAPI />} />
             <Route path="/platform/tradingtools/zulutrade" element={<ZuluTrade />} />
             <Route path="/platform/tradingtools/myfxbook" element={<Myfxbook />} />
-
-
-
 
             {/* kritika */}
 
@@ -395,21 +434,49 @@ function App() {
             <Route path="/research/equity-research/usa" element={<USA />}></Route>
             <Route path="/research/technical-analysis" element={<TechnicalAnalysis />}></Route>
 
-
-
-
-
-
           </Routes>
         </>
         <Footers />
 
-
-
-
-
-
       </div>
+
+
+      {/* <div className="dashboard-wrapper">
+        {!shouldHideSidebarAndNavbar && <Sidebar />}
+        {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
+
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/userdashboard" element={<Dashboard />} />
+          <Route path="/profile" element={<ProfileSetting />} />
+          <Route path="/change-password" element={<ChangePassword></ChangePassword>} />
+          <Route path="/change-password" element={<ChangePassword></ChangePassword>} /> */}
+          {/* <Route path="/logout" element={<Logout></Logout>} /> */}
+
+          {/* Trade Layout */}
+          {/* <Route path="/trade" element={<TradeLayout />}>
+            <Route index element={<TradePage />} />
+            <Route path="market-overview" element={<MarketOverview />} />
+            <Route path="crypto-currency" element={<CryptoCurrency />} />
+            <Route path="about/about-us" element={<QuickStart />} />
+            <Route path="support/contact-support" element={<ContactSupport />} />
+          </Route>
+
+          <Route path="/t-history" element={<TradeHistory />} />
+          <Route path="/deposit-history" element={<DepositeHistory />} />
+          <Route path="/withdraw-history" element={<WithdrawHistory />} />
+          <Route path="/transaction-history" element={<TransactionHistory />} />
+          <Route path="/get-support" element={<GetSupport />} />
+          <Route path="/open-ticket" element={<OpenTicket />} />
+          <Route path="/reply-ticket" element={<ReplyTicket />} />
+          <Route path="/manage-wallet" element={<ManageWallet />} />
+          <Route path="/wallet/:symbol" element={<WalletDetails />} />
+          <Route path="/security" element={<TwoFactor />} />
+
+        </Routes>
+      </div> */}
+
+
 
     </div>
 
