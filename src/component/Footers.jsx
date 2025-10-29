@@ -60,22 +60,22 @@ function Footers() {
             <img src="/logo2.png" alt="Market Trad Logo" />
           </div>
           <div className="footersocial1">
-            <a href="#">
+            <a href="https://www.facebook.com/">
               <img src="/facebook.png" alt="Facebook" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/mynetwork/grow/">
               <img src="/ri_linkedin-fill.png" alt="LinkedIn" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/">
               <img src="/insta.png" alt="Instagram" />
             </a>
-            <a href="#">
+            <a href="https://x.com/?lang=en">
               <img src="/X.png" alt="X" />
             </a>
-            <a href="#">
+            <a href="https://www.whatsapp.com/?lang=en">
               <img src="/whatsapp.png" alt="WhatsApp" />
             </a>
-            <a href="#">
+            <a href="https://telegram.org/">
               <img src="/name.png" alt="Telegram" />
             </a>
           </div>
@@ -159,15 +159,45 @@ function Footers() {
 </div>
 
 
-        {/* Bottom */}
-        <div className="footerbottom1">
-          <div className="footercontact1">
-            <p>Customer Support Contacts</p>
-            <p>Whatsapp Support: +41 xxx xxx xxxx</p>
-            <p>Support: +41 xxx xxx xxxx</p>
-            <p>Email: support@market.trad.com</p>
-          </div>
-        </div>
+<div className="footerbottom1">
+  <div className="footercontact1">
+    <div className="footercol">
+      <p>Customer Support Contacts</p>
+      <p>
+  WhatsApp Support:{" "}
+  <a
+    href="https://wa.me/918349102005" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="whatsapp-link"
+  >
+    +91 99xxx xxxxx
+  </a>
+</p>
+
+      <p>Support: +41 xxx xxx xxxx</p>
+    </div>
+
+    <div className="footercol">
+    <p>
+   Email:{" "}
+  <a
+    href="https://mail.google.com/mail/?view=cm&fs=1&to=support@market.trad.com&su=Customer%20Support%20Request&body=Hello%20Market.Trad%20Support,"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    support@market.trad.com
+  </a>
+</p>
+
+    </div>
+
+    <div className="footercol">
+      <p><strong>Copyright © 2025 Market.trad Group Limited. All Rights Reserved.</strong></p>
+    </div>
+  </div>
+</div>
+
       </div>
       </div>
     </>

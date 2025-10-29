@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+  import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // ✅ Import for redirection
 import axios from "axios";
 import "./LoginForm1.css";
@@ -17,7 +17,7 @@ const LoginForm1 = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post(`${BACKEND_URL}/api/auth/login`, { email, password });
+      const res = await axios.post(`${BACKEND_URL}/api/auth/login, { email, password }`);
 
       // ✅ Show message and store user info
       alert(res.data.message);

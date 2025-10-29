@@ -1,3 +1,45 @@
+/* Main container: sidebar + content */
+.app-container {
+  display: flex;
+  /* background-color: #0817ba; */
+}
+
+/* Sidebar: fixed width, scrollable independently but scrollbar hidden */
+.sidebar {
+  width: 20vw;
+  /* background: #1e1f29; */
+  color: #fff;
+  position: fixed;
+  height: 100vh;
+  overflow-y: scroll;
+  /* allow scroll */
+  z-index: 100;
+  /* padding: 20px; */
+  scrollbar-width: none;
+  /* Firefox hide scrollbar */
+  /* border: 2px solid yellow; */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Edge, Safari */
+}
+
+
+.dashboard-wrapper {
+  flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  
+  width: 83vw;
+  scrollbar-width: none;
+ 
+}
+
+.dashboard-wrapper::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Edge */
+}
 
 
 /* 🌍 Main Flex Container */
@@ -16,7 +58,7 @@
 .left-container,
 .right-container {
   flex: 1;
-  min-width: 280px; 
+  min-width: 280px;
   box-sizing: border-box;
 }
 
@@ -45,7 +87,8 @@
   font-size: 14px;
   color: #555;
 }
-.bg-home{
+
+.bg-home {
   background-color: #ebefee;
 }
 
@@ -124,4 +167,3 @@
     font-size: 11px;
   }
 }
-

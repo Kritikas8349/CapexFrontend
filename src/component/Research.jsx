@@ -42,7 +42,7 @@ function Research() {
         {
             id: 2,
             title: "Episode 2",
-            youtubeLink: "https://www.youtube.com/shorts/3JZ_D3ELwOQ"
+            youtubeLink: "https://www.youtube.com/shorts/QU65j9eQobc"
         }, {
             id: 3,
             title: "Episode 3",
@@ -219,12 +219,15 @@ function Research() {
 
                 {/* Horizontal Scrollable Row */}
                 <div
-                    style={{
-                        display: 'flex',
-                        overflowX: 'auto',
-                        gap: '16px',
-                        paddingBottom: '8px'
-                    }}
+                    className="row justify-content-center"
+                    // style={{
+                    //     display: 'flex',
+                    //     overflowX: 'auto',
+                    //     gap: '15px',
+                    //     paddingBottom: '8px',
+                    //     WebkitOverflowScrolling: 'touch',
+                    //     scrollBehavior: 'smooth',
+                    // }}
                 >
                     {episodes.map((episode) => {
                         const videoId = episode.youtubeLink.split('/shorts/')[1]?.split('?')[0];
@@ -233,21 +236,22 @@ function Research() {
                         return (
                             <div
                                 key={episode.id}
+                                className='  col-12'
                                 style={{
                                     width: '320px',
-                                    flexShrink: 0 // Prevent shrinking in scroll
+                                    flexShrink: 0,
                                 }}
                             >
-                                <div
+                                <div 
                                     style={{
                                         position: 'relative',
-                                        paddingBottom: '177%', // 9:16 aspect ratio
+                                        paddingBottom: '177%',
                                         height: 0,
                                         overflow: 'hidden',
-                                        borderRadius: '8px'
+                                        borderRadius: '8px',
                                     }}
                                 >
-                                    <iframe
+                                    <iframe className='border rounded rounded-3 border-primary-subtle border-3'
                                         src={embedUrl}
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -258,7 +262,7 @@ function Research() {
                                             top: 0,
                                             left: 0,
                                             width: '100%',
-                                            height: '90%'
+                                            height: '90%',
                                         }}
                                     ></iframe>
                                 </div>
@@ -267,6 +271,9 @@ function Research() {
                     })}
                 </div>
             </div>
+            
+
+
             {/* ---------For Daily Analysis podcast---------------------- */}
             <div className="container  p-3 my-2 py-lg-5 align-content-center">
                 <div className="row align-items-center p-3 py-lg-5  px-sm-2">
@@ -359,7 +366,7 @@ function Research() {
                         <Link
                             to="/education/demo-trade"
                             className="btn btn-bg-start text-white btn-lg"
-                            
+
                             rel="noopener noreferrer"
                         >
                             Subscribe
@@ -421,7 +428,7 @@ function Research() {
                         <Link
                             to="/loginform"
                             className="btn btn-bg-start text-white btn-lg d-inline-flex align-items-center"
-                            
+
                             rel="noopener noreferrer"
                         >
 
@@ -445,4 +452,4 @@ function Research() {
     );
 }
 
-export default Research;
+export default Research; 

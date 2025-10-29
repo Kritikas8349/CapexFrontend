@@ -198,45 +198,54 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* center on small screens */
-  gap: 2px;
+  gap: 8px; /* reduced gap */
   border-bottom: 2px solid grey;
-  padding-top: 50px;
+  padding-top: 30px; /* reduced top space */
   text-align: start;
-   text-decoration: none;
 }
 
-.footersection1 ul li a {
-  color: white;          /* White text */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-.footersection1 ul li a:hover {
-  color: #cccccc; /* Optional: light grey on hover */
-}
-
-
+/* Each footer section */
 .footersection1 {
-  flex: 1 1 180px;
-  margin: 10px;
-  min-width: 140px;
-  /* background-color: red;  */
+  flex: 1 1 140px;
+  margin: 2px 8px; /* tighter margins */
+  min-width: 120px;
 }
 
 .footersection1 h3 {
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 4px;
   font-weight: bold;
+  color: white;
 }
 
 .footersection1 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footersection1 ul li {
-  font-size: 10px;
-  margin-bottom: 8px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Footer links */
+.footersection1 ul li a {
+  color: white;               /* pure white text */
+  text-decoration: none;      /* no underline */
+  transition: color 0.3s ease;
+}
+
+.footersection1 ul li a:hover {
+  color: #cccccc;             /* light grey hover */
+}
+
+/* Prevent blue or purple color after visit */
+.footersection1 ul li a:visited,
+.footersection1 ul li a:active,
+.footersection1 ul li a:focus {
+  color: white;               /* always white */
+  text-decoration: none;      /* no underline ever */
 }
 
 /* Footer Bottom */
@@ -247,9 +256,74 @@
 }
 
 .footercontact1 p {
-  font-size: 14px;
+  font-size: 16px;
   margin: 5px 0;
+  color: white;
 }
+
+
+.footerbottom1 {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footercontact1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 18 px;
+}
+
+.footercol p {
+  margin: 4px 0;
+  color: #fff ; 
+}
+
+.footercol strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+
+.footercol p {
+  color: white;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.footercol a {
+  color: white;              
+  text-decoration: none;      
+  font-weight: 500;           
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footercol a:hover {
+  color: #cccccc;             
+  text-decoration: underline; 
+}
+
+.footercol a:visited,
+.footercol a:active,
+.footercol a:focus {
+  color: white;             
+  text-decoration: none;     
+}
+
+
+
+
+/* Responsive - stack on mobile */
+@media (max-width: 768px) {
+  .footercontact1 {
+    grid-template-columns: 1fr; /* stack vertically */
+    text-align: center;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -269,6 +343,21 @@
   }
 }
 
+
+/* For medium screens (~768px to ~1146px) show 3 sections per row */
+@media (min-width: 750px) and (max-width: 1200px) {
+  .footercontent1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 15px; /* small even spacing */
+    justify-items: start; /* align items nicely */
+  }
+
+  .footersection1 {
+    text-align: left;
+    margin: 0 auto;
+  }
+}
 
 /* Responsive Styles */
 
@@ -292,6 +381,14 @@
   .footerlogo1 img {
     width: 140px;
   }
+
+  .footersection1 h3{
+    font-size: 14px;
+  }
+
+ .footersection1 ul li{
+  font-size: 14px;
+ }
 }
 
 /* Small Tablets / Large Phones */
@@ -335,6 +432,14 @@
     display: none;
   }
 
+  .footersection1 h3{
+    font-size: 14px;
+  }
+
+ .footersection1 ul li{
+  font-size: 14px;
+ }
+
   /* Show mobile button */
   .mobile-btn {
     display: block;
@@ -361,6 +466,7 @@
     padding: 30px 15px;
   }
 }
+
 
 /* Mobile */
 @media (max-width: 480px) {
@@ -398,6 +504,15 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .footersection1 h3{
+    font-size: 18px;
+  }
+
+ .footersection1 ul li{
+  font-size: 14px;
+ }
+  
 
   .footersocial1 img {
     width: 28px;

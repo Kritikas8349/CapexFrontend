@@ -56,7 +56,7 @@ function TradeNavbar() {
             
 
             <Link
-              to="/"
+              to="/dashboard"
               className="btn btn-primary fw-semibold px-3 py-1"
             >
               Dashboard
@@ -66,7 +66,7 @@ function TradeNavbar() {
               Logout
             </Link>
 
-            {/* <i className="bi bi-moon-fill text-white fs-5"></i> */}
+            <i className="bi bi-moon-fill text-white fs-5"></i>
           </div>
         </div>
       </div>

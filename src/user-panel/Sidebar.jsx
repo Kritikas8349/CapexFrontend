@@ -22,7 +22,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar-logo">
-          <img src="public/logo.png" alt="Logo" className="sidebar-logo-img" />
+          <img src="/logo.png" alt="Logo" className="sidebar-logo-img" />
           <p>Digital Trading Platform</p>
         </div>
 
