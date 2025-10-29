@@ -12,17 +12,6 @@ function ComplianceP() {
       />
 
       <div className="compliancenew-hero-text">
-        {/* Breadcrumbs */}
-        <nav className="compliancenew-breadcrumbs">
-          <span className="compliancenew-breadcrumb-item">Home</span>
-          <span className="compliancenew-breadcrumb-separator">{">"}</span>
-          <span className="compliancenew-breadcrumb-item">About</span>
-          <span className="compliancenew-breadcrumb-separator">{">"}</span>
-          <span className="compliancenew-breadcrumb-item">Legal Hub</span>
-          <span className="compliancenew-breadcrumb-separator">{">"}</span>
-          <span className="compliancenew-breadcrumb-item-current">Compliance</span>
-        </nav>
-
         <h1 className="compliancenew-hero-heading">
           Compliance
         </h1>
