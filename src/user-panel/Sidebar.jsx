@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import { routesMap } from "../RoutesMap";
+
 import { 
   FaTachometerAlt, FaWallet, FaHistory, FaBars, FaTimes, FaLifeRing, FaLock, FaSignOutAlt 
 } from "react-icons/fa";
@@ -22,7 +24,7 @@ const Sidebar = () => {
       {/* Sidebar */}
       <div className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="sidebar-logo">
-          <img src="/logo.png" alt="Logo" className="sidebar-logo-img" />
+          <img src="public/logo.png" alt="Logo" className="sidebar-logo-img" />
           <p>Digital Trading Platform</p>
         </div>
 
@@ -45,7 +47,7 @@ const Sidebar = () => {
           </li>
           <li>
             <BiTransfer className="icon" />
-            <Link to="/deposit-history" className="text-decoration-none">Deposit History</Link>
+            <Link to="/deposit-history" className="text-decoration-none">Deposite History</Link>
           </li>
           <li>
             <BiTransfer className="icon" />

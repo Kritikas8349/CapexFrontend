@@ -22,47 +22,47 @@ const TopRightNavbar = () => {
   };
 
   return (
-    <div className="topright-navbar">
-      <div className="referral-box">
-        <span className="ref-link">{referralLink}</span>
-        <FaCopy className="copy-icon" onClick={copyLink} />
-        {showPopup && <div className="copy-popup">Link copied!</div>}
+    <div className="add-t-topright-navbar">
+      <div className="add-t-referral-box">
+        <span className="add-t-ref-link">{referralLink}</span>
+        <FaCopy className="add-t-copy-icon" onClick={copyLink} />
+        {showPopup && <div className="add-t-copy-popup">Link copied!</div>}
       </div>
 
-      <div className="right-section">
-        <button className="trade-btn btn btn-nav" onClick={goToTradePage}>
+      <div className="add-t-right-section">
+        <button className="add-t-trade-btn btn btn-nav" onClick={goToTradePage}>
           Trade
         </button>
 
-        <div className="user-dropdown" style={{ position: "relative" }}>
-          <span className="username">{username}</span>
+        <div className="add-t-user-dropdown" style={{ position: "relative" }}>
+          <span className="add-t-username">{username}</span>
           <span
-            className="dropdown-arrow"
+            className="add-t-dropdown-arrow"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
             {dropdownOpen ? <FaCaretUp /> : <FaCaretDown />}
           </span>
 
           {dropdownOpen && (
-            <div className="dropdown-menu">
+            <div className="add-t-dropdown-menu">
               <Link
                 to="/profile"
                 onClick={() => setDropdownOpen(false)}
-                className="dropdown-item"
+                className="add-t-dropdown-item"
               >
                 Profile
               </Link>
               <Link
                 to="/change-password"
                 onClick={() => setDropdownOpen(false)}
-                className="dropdown-item"
+                className="add-t-dropdown-item"
               >
                 Change Password
               </Link>
               <Link
                 to="/logout"
                 onClick={() => setDropdownOpen(false)}
-                className="dropdown-item"
+                className="add-t-dropdown-item"
               >
                 Log-Out
               </Link>

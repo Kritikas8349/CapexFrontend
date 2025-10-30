@@ -1,42 +1,48 @@
-  import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ Import for redirection
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./LoginForm1.css";
 
 const LoginForm1 = () => {
-  const navigate = useNavigate(); // ✅ Hook for navigation
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // Backend URL from Vite env
+  // ✅ Backend URL (from .env or fallback)
   const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+
     try {
-      const res = await axios.post(`${BACKEND_URL}/api/auth/login, { email, password }`);
+      // ✅ Fixed POST request syntax
+      const res = await axios.post(`${BACKEND_URL}/api/auth/login`, { email, password });
 
-      // ✅ Show message and store user info
-      alert(res.data.message);
+      alert(res.data.message || "Login successful!");
+
+      // ✅ Store login info for protected routes
       localStorage.setItem("user", JSON.stringify(res.data.user));
+      if (res.data.token) {
+        localStorage.setItem("token", res.data.token);
+      }
+      localStorage.setItem("isAuthenticated", "true");
 
-      // ✅ Redirect to dashboard after login
+      // ✅ Redirect to user dashboard
       navigate("/userdashboard");
     } catch (err) {
       console.error("Login error:", err.response || err);
-      alert(err.response?.data?.message || err.message);
+      alert(err.response?.data?.message || "Invalid credentials or server error");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    
     <div className="login-wrapper">
-      {/* Left Side - Login Form */}
+      {/* Left Side */}
       <div className="login-left">
         <div className="logo">
           <h1>
@@ -95,7 +101,7 @@ const LoginForm1 = () => {
           </div>
 
           <p className="signup-text">
-            Don't have an account? <a href="/create-account">Sign up</a>
+            Don’t have an account? <a href="/create-account">Sign up</a>
           </p>
         </div>
       </div>

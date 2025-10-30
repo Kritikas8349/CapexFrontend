@@ -1,6 +1,7 @@
 /* Main container: sidebar + content */
 .app-container {
   display: flex;
+ 
   /* background-color: #0817ba; */
 }
 

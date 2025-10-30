@@ -1,7 +1,7 @@
 /* ============================
    TOP RIGHT NAVBAR CONTAINER
 ============================ */
-.topright-navbar {
+.add-t-topright-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 /* Popup notification for copy */
-.copy-popup {
+.add-t-copy-popup {
   position: absolute;
   top: 35px;
   left: 50%;
@@ -36,7 +36,7 @@
 /* ============================
    LEFT SIDE: REFERRAL BOX
 ============================ */
-.referral-box {
+.add-t-referral-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +52,7 @@
   box-sizing: border-box;
 }
 
-.ref-link {
+.add-t-ref-link {
   font-size: 14px;
   color: #0e0d0d;
   white-space: nowrap;
@@ -61,21 +61,21 @@
   flex: 1;
 }
 
-.copy-icon {
+.add-t-copy-icon {
   color: #050505;
   cursor: pointer;
   font-size: 16px;
   transition: color 0.2s ease;
 }
 
-.copy-icon:hover {
+.add-t-copy-icon:hover {
   color: #171717;
 }
 
 /* ============================
    RIGHT SIDE: BUTTON + USER
 ============================ */
-.right-section {
+.add-t-right-section {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -83,7 +83,7 @@
 }
 
 /* Trade Button */
-.trade-btn {
+.add-t-trade-btn {
   background: linear-gradient(135deg, #130486, #000000);
   border: none;
   padding: 10px 20px;
@@ -94,14 +94,14 @@
   transition: all 0.3s ease;
 }
 
-.trade-btn:hover {
+.add-t-trade-btn:hover {
   /* background: transparent;
   border: 2px solid #000;
   color: #000; */
 }
 
 /* User Dropdown */
-.user-dropdown {
+.add-t-user-dropdown {
   position: relative;
   display: flex;
   align-items: center;
@@ -112,16 +112,16 @@
   transition: color 0.2s ease;
 }
 
-.user-dropdown:hover {
+.add-t-user-dropdown:hover {
   color: #333;
 }
 
-.username {
+.add-t-username {
   font-weight: 600;
   color: #000;
 }
 
-.dropdown-arrow {
+.add-t-dropdown-arrow {
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -130,21 +130,21 @@
 }
 
 /* Dropdown Menu */
-.dropdown-menu {
+.add-t-dropdown-menu {
   position: absolute;
   top: 40px;
   right: 0;
   background: #010c29;
   border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   z-index: 999;
   display: flex;
   flex-direction: column;
   min-width: 200px;
 }
 
-.dropdown-menu a {
+.add-t-dropdown-menu a {
   padding: 10px 15px;
   color: #fff;
   text-decoration: none;
@@ -152,14 +152,14 @@
   transition: background 0.2s ease;
 }
 
-/* .dropdown-menu a:hover {
+/* .add-t-dropdown-menu a:hover {
   background-color: #1e242b;
 } */
 
-.dropdown-menu button {
-  display: flex;           /* Flex layout for icon + text */
-  align-items: center;     /* Vertically center */
-  gap: 8px;                /* Space between icon and text */
+.add-t-dropdown-menu button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 8px 15px;
   background: none;
   border: none;
@@ -171,94 +171,95 @@
   transition: background 0.2s ease;
 }
 
-.dropdown-menu button:hover {
+.add-t-dropdown-menu button:hover {
   background-color: #1e242b;
 }
 
 /* ============================
    RESPONSIVENESS
 ============================ */
+
 /* ===== Tablet (900px and below) ===== */
 @media (max-width: 900px) {
-  .topright-navbar {
+  .add-t-topright-navbar {
     flex-direction: column;
-    align-items: center; /* center everything horizontally */
+    align-items: center;
     text-align: center;
     gap: 12px;
   }
 
-  .referral-box {
+  .add-t-referral-box {
     width: 100%;
-    justify-content: center; /* center referral link */
+    justify-content: center;
     padding: 8px 12px;
   }
 
-  .right-section {
+  .add-t-right-section {
     width: 100%;
-    justify-content: center; /* center trade button + user dropdown */
+    justify-content: center;
     gap: 10px;
   }
 
-  .trade-btn {
-    flex: none; /* do not stretch */
+  .add-t-trade-btn {
+    flex: none;
     text-align: center;
   }
 
-  .dropdown-menu {
+  .add-t-dropdown-menu {
     right: 10px;
   }
 }
 
 /* ===== Mobile (600px and below) ===== */
 @media (max-width: 600px) {
-  .topright-navbar {
+  .add-t-topright-navbar {
     padding: 10px 15px;
     gap: 10px;
   }
 
-  .referral-box {
+  .add-t-referral-box {
     flex-direction: column;
-    align-items: center; /* center the content */
+    align-items: center;
     width: 100%;
     gap: 6px;
   }
 
-  .ref-link {
+  .add-t-ref-link {
     max-width: 100%;
-    text-align: center; /* center text */
+    text-align: center;
   }
 
-  .right-section {
+  .add-t-right-section {
     flex-direction: column;
-    align-items: center; /* center buttons and dropdown */
+    align-items: center;
     gap: 10px;
     width: 100%;
   }
 
-  .trade-btn {
+  .add-t-trade-btn {
     width: auto;
     text-align: center;
   }
 
-  .user-dropdown {
-    justify-content: center; /* center user dropdown */
+  .add-t-user-dropdown {
+    justify-content: center;
     width: 100%;
     background: #fff;
     border-radius: 6px;
     padding: 8px 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .dropdown-menu {
+  .add-t-dropdown-menu {
     position: relative;
     top: 8px;
     right: auto;
     left: 0;
     width: 100%;
-    text-align: center; /* center links inside dropdown */
+    text-align: center;
   }
 
-  .dropdown-menu a {
+  .add-t-dropdown-menu a {
     text-align: center;
     padding: 12px 10px;
   }
@@ -266,64 +267,65 @@
 
 /* ===== Extra Small Screens (400px and below) ===== */
 @media (max-width: 400px) {
-  .referral-box {
+  .add-t-referral-box {
     font-size: 13px;
     gap: 5px;
   }
 
-  .trade-btn {
+  .add-t-trade-btn {
     font-size: 14px;
     padding: 8px;
   }
 
-  .dropdown-menu a {
+  .add-t-dropdown-menu a {
     font-size: 13px;
     padding: 10px;
   }
 }
+
 /* ===== Extra Small Screens (450px and below) ===== */
 @media (max-width: 450px) {
-  .topright-navbar {
+  .add-t-topright-navbar {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding-top: 60px; /* space for hamburger */
+    padding-top: 60px;
   }
 
-  .referral-box {
+  .add-t-referral-box {
     width: 90%;
     justify-content: center;
     align-items: center;
     gap: 5px;
   }
 
-  .ref-link {
+  .add-t-ref-link {
     text-align: center;
     max-width: 100%;
   }
 
-  .right-section {
+  .add-t-right-section {
     flex-direction: column;
     align-items: center;
     width: 100%;
     gap: 8px;
   }
 
-  .trade-btn {
+  .add-t-trade-btn {
     width: auto;
     text-align: center;
   }
 
-  .user-dropdown {
+  .add-t-user-dropdown {
     justify-content: center;
     width: 100%;
     background: #fff;
     border-radius: 6px;
     padding: 8px 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .dropdown-menu {
+  .add-t-dropdown-menu {
     position: relative;
     top: 5px;
     left: 0;
@@ -331,14 +333,14 @@
     text-align: center;
   }
 
-  .dropdown-menu a {
+  .add-t-dropdown-menu a {
     padding: 10px;
     font-size: 13px;
     text-align: center;
   }
 
   /* Hamburger z-index fix */
-  .hamburger {
-    z-index: 2000; /* top layer so it won't overlap content */
+  .add-t-hamburger {
+    z-index: 2000;
   }
 }

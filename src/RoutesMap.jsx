@@ -155,6 +155,17 @@ export const routesMap = {
 "USA": "/research/equity-research/usa",
 
 
+
+//  "Dashboard": "/userdashboard", 
+//   "Manage Order": "/manage-order",
+// "Trade History": "/t-history",
+// "Manage Wallet": "/manage-wallet", 
+// "Deposit History": "/deposit-history",
+// "Withdraw History": "/withdraw-history",
+// "Transactions History": "/transaction-history",
+// "Get Support": "/get-support",
+// "Security": "/security",
+
 };
   
 

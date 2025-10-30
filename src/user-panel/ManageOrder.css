@@ -24,5 +24,30 @@ input.custom-placeholder::placeholder {
 }
 .btn-nav:hover{
     background: #5b56c4;
-color: white;
+color: white;.btn-nav-m {
+    background: #493FFD;
+    color: white;
+}
+.text-heading-m {
+    color: #493FFD;
+}
+.table-data-m {
+    background: white;
+    color: dark;
+}
+.dashboard-container-m {
+    background: #f5f6fa;
+    color: dark;
+}
+.card-bg-m {
+    background-color: rgb(233, 233, 233);
+}
+input.custom-placeholder-m::placeholder {
+    color: #000000;
+}
+.btn-nav-m:hover {
+    background: #5b56c4;
+    color: white;
+}
+
 }
