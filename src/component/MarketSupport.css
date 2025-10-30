@@ -240,3 +240,43 @@
         padding: 140px 10px 15px 10px;
     }
 }
+
+
+/* ========== REMOVE BORDER-RADIUS & MARGINS ON SMALL SCREENS ========== */
+@media (max-width: 768px) {
+    .market-container  {
+        border-radius: 0 ; /* remove curved corners */
+        margin: 0; /* ensure full width */
+        margin-bottom: 10px;
+    }
+
+    .market-grid {
+        border-radius: 0; 
+        margin: 0; 
+        padding: 15px; 
+        margin-bottom: 10px;
+    }
+    .marketcontainer{
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .market-container {
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .market-grid {
+        border-radius: 0;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .marketcontainer{
+        padding: 0;
+    }
+}
+
