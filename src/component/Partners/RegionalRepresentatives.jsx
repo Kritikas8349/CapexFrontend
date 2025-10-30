@@ -3,7 +3,7 @@ import React from 'react'
 function RegionalRepresentatives() {
   return (
     <div className='bg-home'>
-      <div className="d-flex align-items-center justify-content-center text-white my-2 mt-lg-2 mx-lg-3 rounded rounded-4" style={{
+      <div className="d-flex align-items-center justify-content-center text-white  mt-lg-2 mx-lg-3 rounded rounded-4" style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url('/compliance.avif')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',

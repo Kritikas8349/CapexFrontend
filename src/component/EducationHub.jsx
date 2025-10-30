@@ -161,13 +161,13 @@ function EducationHub() {
       </div>
 
       {/* ----------For Learn Trad--------------------- */}
-      <div className='bg-home  align-content-center border border-3 py-3 py-md-5 py-lg-5'  >
+      <div className='bg-home  align-content-center border border-3 py-3 py-md-5 py-lg-5 min-vh-100'  >
         <div className="container py-md-5 py-lg-5">
           <h1 className='text-heading fw-bold text-center mb-4 display-4'>Learn to Trade Courses</h1>
           <div className='row justify-content-center'>
             {cardsData.map((card, index) => (
               <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
-                <div className='bg-white p-4 m-2 w-100 shadow-sm'>
+                <div className='bg-white p-4 m-2 trade-card-border rounded w-100 shadow-sm'>
                   <h2 className='mb-3 fw-bold text-dark'>{card.title}</h2>
                   <p className='text-secondary mb-4'>{card.desc}</p>
                   <div className='d-flex flex-wrap input-group mt-auto justify-content-center'>
@@ -290,7 +290,7 @@ function EducationHub() {
   {/* Row of Posts */}
   <div className="row g-4">
     {posts.map((post) => (
-      <div className="col-12 col-sm-6 col-lg-4" key={post.id}>
+      <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center " key={post.id}>
         <div className="card border-0 custom-card h-100 shadow-sm rounded-3 overflow-hidden p-0">
           {/* Image Section */}
           <div className="ratio ratio-16x9">

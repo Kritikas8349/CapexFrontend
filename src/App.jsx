@@ -158,7 +158,8 @@ import EquityResearch from "./component/Research/EquityResearch";
 import Australia from "./component/Research/Australia";
 import NewZealand from "./component/Research/NewZealand";
 import USA from "./component/Research/USA";
-import TechnicalAnalysis from "./component/Research/TechnicalAnalysis"; 4
+import TechnicalAnalysis from "./component/Research/TechnicalAnalysis";import TopScrollbtn from "./component/TopScrollbtn";
+ 4
 
 
 //--------------------------------------------user-panel-----------------------------------//
@@ -258,6 +259,7 @@ function App() {
       <div className="app-section">
         <ScrollToTop />
         <Layout />
+        
         <>
           {/* <NavbarBlue /> */}
 
@@ -435,6 +437,7 @@ function App() {
             <Route path="/research/technical-analysis" element={<TechnicalAnalysis />}></Route>
 
           </Routes>
+          
         </>
         <Footers />
 

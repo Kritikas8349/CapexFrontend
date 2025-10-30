@@ -24,16 +24,19 @@
     background-color: aquamarine;
     color:white;
 }
+.trade-card-border{
+    border: 1px solid #493FFD;
+}
 
 /* /---------------For Learn Trade-------------------------------/ */
 .s1{
- background-color: rgba(22, 110, 190, 0.921);
+ background-color: #6c65f7;
 }
 .s2{
-background-color: rgba(22, 110, 220, 0.928);
+background-color: #5b53ee;
 }
 .s3{
-background-color: rgba(22, 110, 280, 0.929);
+background-color: #493FFD;
 }
 
 

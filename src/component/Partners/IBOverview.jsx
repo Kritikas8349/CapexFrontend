@@ -56,7 +56,7 @@ function IBOverview() {
                 opacity: 1; /* Ensures it’s not faded */}`
                 }
             </style>
-            <div className="education-section d-flex align-items-center text-white my-2 mt-lg-2 mx-lg-3 rounded rounded-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+            <div className="education-section d-flex align-items-center text-white  mt-lg-2 mx-lg-3 rounded rounded-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
                 <div className="container align-items-start ">
                     <div className="row bg-transparent">
                         <div className="col-12 col-lg-12 bg-transparent">
@@ -158,7 +158,7 @@ function IBOverview() {
                     <div className="col-lg-6">
                         <div className="row g-4 justify-content-center">
                             {cardData.map((card, index) => (
-                                <div key={index} className="col-12 col-sm-6">
+                                <div key={index} className="col-12 col-sm-6 d-flex justify-content-center">
                                     <div className="card h-100 text-center shadow-sm border-0 p-4">
                                         <div className="card-body d-flex flex-column justify-content-center">
                                             {card.icon && (
@@ -179,10 +179,10 @@ function IBOverview() {
             <section className="container-fluid bg-home py-5">
                 <div className="row align-items-center g-3 px-lg-5">
                     {/* Cards Column */}
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 ">
                         <div className="row g-4 justify-content-center">
                             {cardData.map((card, index) => (
-                                <div key={index} className="col-12 col-sm-6">
+                                <div key={index} className="col-12 col-sm-6 d-flex justify-content-center">
                                     <div className="card h-100 text-center shadow-sm border-0 p-4">
                                         <div className="card-body d-flex flex-column justify-content-center">
                                             {card.icon && (

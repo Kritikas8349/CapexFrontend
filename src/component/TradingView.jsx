@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import TopScrollbtn from './TopScrollbtn'
 
 function TradingView() {
     
     return (
-        <div className='bg-home'>
+        <div className='bg-home  '>
             <style>
                 {
                     `.trading-view {
@@ -17,6 +18,7 @@ function TradingView() {
                 }
 
             </style>
+            
             <div className="bg-black text-white  trading-view py-5 py-lg-4 py-md-4 mt-lg-2  mx-lg-3 rounded rounded-4 min-vh-90">
                 <div className="container">
                     <div className="row align-items-center mt-5">
