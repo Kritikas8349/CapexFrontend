@@ -130,11 +130,13 @@
   cursor: pointer;
   border-radius: 20px;
   transition: background 0.3s ease;
+  text-decoration: none;
 }
 
 .searchbox1 .button1:hover {
   background: #2563eb;
 }
+
 
 /* Mobile Button Below Searchbox */
 .mobile-btn {

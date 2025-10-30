@@ -497,6 +497,50 @@
 
 .hamburger-menu { display: none; font-size: 28px; cursor: pointer; color: white; padding: 10px; padding-right: 30px; background: none; border: none; }
 
+
+/* 🔹 When submenu is open, add soft shadow around that section */
+.has-submenu.open {
+  background: #f8f8ff; /* very light tint for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px 12px;
+  transition: all 0.3s ease;
+}
+
+/* 🔹 Header of open submenu (highlighted text + arrow rotation) */
+.submenu-header.active {
+  color: #1a1aff;
+  font-weight: 600;
+}
+
+/* 🔹 Arrow rotation animation */
+.submenu-arrow {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.submenu-header.active .submenu-arrow {
+  transform: rotate(90deg);
+}
+
+/* 🔹 Hide submenu by default */
+.has-submenu ul {
+  display: none;
+}
+
+/* 🔹 Show submenu when open */
+.has-submenu.open ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+/* 🔹 Add a smooth slide animation for submenu opening */
+.has-submenu ul li {
+  transition: all 0.2s ease;
+}
+
+
 /* ===== RESPONSIVE (Optional) ===== */
 @media (min-width: 1100px) {
   .hamburger-overlay {

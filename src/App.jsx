@@ -11,6 +11,10 @@ import NavbarBlue from "./component/NavbarBlue";
 
 import Footers from "./component/Footers";
 
+import ScrollToTopButton from "./component/ScrollToTopButton";
+
+
+
 import CreateAccount from "./component/CreateAccount";
 import PersonalHome from "./component/PersonalHome";
 
@@ -257,6 +261,7 @@ function App() {
 
 
       <div className="app-section">
+        <ScrollToTopButton/>
         <ScrollToTop />
         <Layout />
         

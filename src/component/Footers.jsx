@@ -43,7 +43,9 @@ function Footers() {
     <div className="searchbox1">
       <input type="email" placeholder="Email Address" />
       {/* Keep button inside for large screens */}
-      <button className="button1 desktop-btn">Join now</button>
+      <Link to="/create-account" className="button1 desktop-btn">
+  Join now
+</Link>
     </div>
 
     {/* Button for mobile below searchbox */}
