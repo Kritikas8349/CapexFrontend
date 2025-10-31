@@ -14,17 +14,17 @@ import "./Dashboard.css";
 const Dashboard = () => {
   const navigate = useNavigate();
 
-  // ✅ Get user from localStorage
-  // const user = JSON.parse(localStorage.getItem("user"));
+  // ✅ Get logged-in user from localStorage
+  const user = JSON.parse(localStorage.getItem("user"));
 
-  // // Redirect to login if not authenticated
-  // useEffect(() => {
-  //   if (!user) {
-  //     navigate("/login", { replace: true });
-  //   }
-  // }, [user, navigate]);
+  // ✅ Redirect if not logged in
+  useEffect(() => {
+    if (!user) {
+      navigate("/login", { replace: true });
+    }
+  }, [user, navigate]);
 
-  // if (!user) return null; // Prevent flash
+  if (!user) return null; // Prevent UI flash
 
   // Deposit state
   const [showDepositPreview, setShowDepositPreview] = useState(false);
@@ -85,19 +85,18 @@ const Dashboard = () => {
     <div className="dash-main-container">
       {/* Header */}
       <div className="dash-header">
-        {/* <h2>Welcome, {user.firstName || user.email}</h2> */}
-        <h2>Welcome, John</h2>
+        {/* ✅ Dynamic user name */}
+        <h2>Welcome, {user?.firstName || user?.username || user?.email}</h2>
 
-        {/* <button className="btn btn-nav" onClick={handleLogout}>
-          Logout
-        </button> */}
+        {/* Logout button (optional) */}
+        {/* <button className="btn btn-nav" onClick={handleLogout}>Logout</button> */}
       </div>
 
       {/* Stats */}
       <div className="dash-stats">
         <div className="dash-stat-card open-order">
           <FiClock size={40} className="dash-icon" />
-          <div className="">
+          <div>
             <h4>Open Order</h4>
             <p>0</p>
           </div>
@@ -127,7 +126,7 @@ const Dashboard = () => {
 
       {/* Content */}
       <div className="dash-content">
-        {/* Left */}
+        {/* Left side */}
         <div className="dash-left">
           <div className="dash-recent-card">
             <h4>Recent Orders</h4>
@@ -145,9 +144,8 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* Right */}
+        {/* Right side */}
         <div className="dash-right">
-          {/* Wallet Overview */}
           <div className="dash-wallet-overview">
             <h4>Wallet Overview</h4>
             <p className="wallet-desc">Available wallet balance including the converted total balance</p>
@@ -182,14 +180,14 @@ const Dashboard = () => {
               />
               <select
                 value={depositData.currency}
-                className="form-select  bg-transparent"
+                className="form-select bg-transparent"
                 onChange={(e) => setDepositData({ ...depositData, currency: e.target.value })}
               >
-                <option className=" bg-transparent" value="">Select Currency</option>
-                <option className=" bg-transparent" value="BTC">BTC</option>
-                <option className=" bg-transparent" value="ETH">ETH</option>
-                <option className=" bg-transparent" value="USDT">USDT</option>
-                <option className=" bg-transparent" value="BNB">BNB</option>
+                <option value="">Select Currency</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT">USDT</option>
+                <option value="BNB">BNB</option>
               </select>
             </div>
             <button className="money-btn deposit-btn" onClick={handleDepositClick}>
@@ -213,14 +211,14 @@ const Dashboard = () => {
               />
               <select
                 value={withdrawData.currency}
-                className="form-select  bg-transparent"
+                className="form-select bg-transparent"
                 onChange={(e) => setWithdrawData({ ...withdrawData, currency: e.target.value })}
               >
-                <option className=" bg-transparent" value="">Select Currency</option>
-                <option className=" bg-transparent" value="BTC">BTC</option>
-                <option className=" bg-transparent" value="ETH">ETH</option>
-                <option className=" bg-transparent" value="USDT">USDT</option>
-                <option className=" bg-transparent" value="BNB">BNB</option>
+                <option value="">Select Currency</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="USDT">USDT</option>
+                <option value="BNB">BNB</option>
               </select>
             </div>
             <button className="money-btn withdraw-btn" onClick={handleWithdrawClick}>
@@ -263,7 +261,6 @@ const Dashboard = () => {
   );
 };
 
-// ✅ Reusable Preview Modal Component
 const PreviewModal = ({ title, data, onClose, onChange }) => (
   <div className="deposit-preview">
     <div className="preview-header">
@@ -286,11 +283,11 @@ const PreviewModal = ({ title, data, onClose, onChange }) => (
           className="form-select bg-transparent"
           onChange={(e) => onChange({ ...data, gateway: e.target.value })}
         >
-          <option className="bg-transparent" value="">Select Gateway</option>
-          <option className="bg-transparent" value="BTC">BTC</option>
-          <option className="bg-transparent" value="ETH">ETH</option>
-          <option className="bg-transparent" value="USDT">USDT</option>
-          <option className="bg-transparent" value="BNB">BNB</option>
+          <option value="">Select Gateway</option>
+          <option value="BTC">BTC</option>
+          <option value="ETH">ETH</option>
+          <option value="USDT">USDT</option>
+          <option value="BNB">BNB</option>
         </select>
       </div>
       <div className="form-group">
@@ -300,9 +297,9 @@ const PreviewModal = ({ title, data, onClose, onChange }) => (
           className="form-select bg-transparent"
           onChange={(e) => onChange({ ...data, wallet: e.target.value })}
         >
-          <option  className="bg-transparent" value="">Select Wallet</option>
-          <option className="bg-transparent" value="Main Wallet">Main Wallet</option>
-          <option className="bg-transparent" value="Trading Wallet">Trading Wallet</option>
+          <option value="">Select Wallet</option>
+          <option value="Main Wallet">Main Wallet</option>
+          <option value="Trading Wallet">Trading Wallet</option>
         </select>
       </div>
       <button className="preview-submit-btn">Submit</button>

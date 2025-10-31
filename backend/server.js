@@ -8,34 +8,40 @@ dotenv.config();
 
 const app = express();
 
-// Middlewares
+// ✅ Middleware
 app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Routes
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/tickets', require('./routes/tickets'));
+// ✅ Import Routes
+const contactRoutes = require('./routes/contactRoute');
 
-// MongoDB connection
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+const authRoutes = require('./routes/auth');
+const ticketRoutes = require('./routes/tickets');
+
+// ✅ Use Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/tickets', ticketRoutes);
+app.use("/api/contact", contactRoutes);  
+
+// ✅ MongoDB Connection
+mongoose
+.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 })
 .then(() => {
-    console.log('✅ MongoDB connected');
-    app.listen(process.env.PORT || 5000, () =>
-        console.log(`🚀 Server running on port ${process.env.PORT || 5000}`)
-    );
+  console.log('✅ MongoDB connected');
+  app.listen(process.env.PORT || 5000, () =>
+    console.log(`🚀 Server running on port ${process.env.PORT || 5000}`)
+  );
 })
-.catch(err => {
-    console.error('❌ MongoDB connection error:', err.message);
-    process.exit(1);
+.catch((err) => {
+  console.error('❌ MongoDB connection error:', err.message);
+  process.exit(1);
 });
 
-// Default route
+// ✅ Base Route
 app.get('/', (req, res) => {
-    res.send('API is running...');
+  res.send('API is running...');
 });
-
-
