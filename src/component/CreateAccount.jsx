@@ -1,188 +1,118 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
-import './CreateAccount.css';
+import "./LoginForm1.css";
 
-function CreateAccount() {
-    const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        dob: '',
-        applicationType: '',
-        country: '',
-        phone: '',
-        password: ''
-    });
+const LoginForm1 = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-    const [loading, setLoading] = useState(false);
+  // ✅ Backend URL only from .env (NO default hardcode)
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
-    // ✅ Get backend URL from Vite env
-    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
-    console.log("Backend URL:", BACKEND_URL); // Debug: check if it's correct
+  if (!BACKEND_URL) {
+    console.error("❌ VITE_BACKEND_URL not found in .env file");
+  }
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
-        try {
-            if (!BACKEND_URL) throw new Error("Backend URL is not defined");
+    try {
+      const res = await axios.post(
+        `${BACKEND_URL}/api/auth/login`,
+        { email, password },
+        { withCredentials: true }
+      );
 
-            const res = await axios.post(`${BACKEND_URL}/api/auth/register`, formData);
-            alert(res.data.message);
+      alert(res.data.message || "Login successful!");
 
-            // Reset form after success
-            setFormData({
-                firstName: '',
-                lastName: '',
-                email: '',
-                dob: '',
-                applicationType: '',
-                country: '',
-                phone: '',
-                password: ''
-            });
-        } catch (err) {
-            console.error("Axios error:", err.response || err);
-            alert(err.response?.data?.message || err.message);
-        } finally {
-            setLoading(false);
-        }
-    };
+      localStorage.setItem("user", JSON.stringify(res.data.user));
+      if (res.data.token) {
+        localStorage.setItem("token", res.data.token);
+      }
+      localStorage.setItem("isAuthenticated", "true");
 
-    return (
-        <div id='Main9'>
-            <div className="signup-container">
-                <div className="signup-left">
-                    <div className="logo">
-                        <img src="/logo.png" alt="Market.trad Logo" />
-                    </div>
+      navigate("/userdashboard");
+    } catch (err) {
+      console.error("Login error:", err);
+      alert(err.response?.data?.message || "Invalid credentials");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-                    <h2>Get started absolutely free</h2>
-                    <p>Welcome to Market.Trad – Let’s Create Account</p>
-
-                    <form className="signup-form" onSubmit={handleSubmit} autoComplete="off">
-                        <input type="password" style={{ display: 'none' }} />
-
-                        <div className="input-row">
-                            <input
-                                type="text"
-                                name="firstName"
-                                placeholder="First Name"
-                                onChange={handleChange}
-                                value={formData.firstName}
-                                autoComplete="given-name"
-                                required
-                            />
-                            <input
-                                type="text"
-                                name="lastName"
-                                placeholder="Last Name"
-                                onChange={handleChange}
-                                value={formData.lastName}
-                                autoComplete="family-name"
-                                required
-                            />
-                        </div>
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Email Address"
-                            onChange={handleChange}
-                            value={formData.email}
-                            autoComplete="email"
-                            required
-                        />
-
-                        <div className="input-row">
-                            <input
-                                type="date"
-                                name="dob"
-                                onChange={handleChange}
-                                value={formData.dob}
-                                autoComplete="bday"
-                                required
-                            />
-                            <select
-                                name="applicationType"
-                                onChange={handleChange}
-                                value={formData.applicationType}
-                                required
-                            >
-                                <option value="">Application Types</option>
-                                <option value="Individual">Individual</option>
-                                <option value="Business">Business</option>
-                            </select>
-                        </div>
-
-                        <div className="input-row">
-                            <select
-                                name="country"
-                                onChange={handleChange}
-                                value={formData.country}
-                                required
-                            >
-                                <option value="">Select Country</option>
-                                <option value="India">India</option>
-                                <option value="USA">USA</option>
-                                <option value="UK">UK</option>
-                            </select>
-                            <input
-                                type="tel"
-                                name="phone"
-                                placeholder=" Mobile Number"
-                                onChange={handleChange}
-                                value={formData.phone}
-                                required
-                            />
-                        </div>
-
-                        <input
-                            type="password"
-                            name="password"
-                            placeholder="Password (6+ characters)"
-                            onChange={handleChange}
-                            value={formData.password}
-                            autoComplete="new-password"
-                            required
-                        />
-
-                        <button className="create-btn" type="submit" disabled={loading}>
-                            {loading ? "Creating..." : "Create account"}
-                        </button>
-                    </form>
-
-                    <p className="terms">
-                        By signing up, I agree to the <a href="#">Market.Trad FSA Policies</a>
-                    </p>
-
-                    <div className="social-login">
-                        <button className="google"><FcGoogle size={20} /> Sign up with Google</button>
-                        <button className="apple"><FaApple size={20} /> Sign up with Apple</button>
-                    </div>
-
-                    <p className="signin">
-                        Already have an account? <a href="/loginform">Sign in</a>
-                    </p>
-                </div>
-
-                <div className="signup-right">
-                    <h1>
-                        Welcome back!<br />
-                        Please sign in to your <span>Market.Trad Account</span>
-                    </h1>
-                    <p>Ranked #1 forex broker in execution speed by CompareForexBrokers.com</p>
-                    <img src="/lapi.webp" alt="Laptop trading screen" className="laptop-img" />
-                </div>
-            </div>
+  return (
+    <div className="login-wrapper">
+      <div className="login-left">
+        <div className="logo">
+          <h1>
+            Market.<span className="logo-blue">trad</span>
+          </h1>
         </div>
-    );
-}
 
-export default CreateAccount;
+        <div className="login-box">
+          <h2>Sign in to your account</h2>
+          <p>Welcome back! Please enter your details</p>
 
+          <form onSubmit={handleSubmit}>
+            <label>Email address</label>
+            <input
+              type="email"
+              placeholder="demo@minimals.cc"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+
+            <label>Password</label>
+            <div className="password-wrapper">
+              <input
+                type={showPassword ? "text" : "password"}
+                placeholder="6+ characters"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <span
+                className="toggle-password"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? "Hide" : "Show"}
+              </span>
+            </div>
+
+            <div className="form-footer">
+              <label>
+                <input type="checkbox" /> Remember me
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" className="sign-in-btn" disabled={loading}>
+              {loading ? "Signing in..." : "Sign in"}
+            </button>
+          </form>
+
+          <div className="or-divider">OR</div>
+
+          <div className="social-buttons">
+            <button className="google-btn">Sign up with Google</button>
+            <button className="apple-btn">Sign up with Apple</button>
+          </div>
+
+          <p className="signup-text">
+            Don’t have an account? <a href="/create-account">Sign up</a>
+          </p>
+        </div>
+      </div>
+
+      <div className="login-right"></div>
+    </div>
+  );
+};
+
+export default LoginForm1;

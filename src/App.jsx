@@ -180,7 +180,7 @@ function App() {
       {isDashboardPage && (
         <div className="dashboard-wrapper">
           
-          <TopRightNavbar />
+          <TopRightNavbar/>
 
           <Routes>
             <Route path="/userdashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
