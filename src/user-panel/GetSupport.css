@@ -1,0 +1,185 @@
+/* ============================= */
+/* Container */
+.support-container {
+  min-height: 100vh;
+  width: 100%;
+  padding: 24px;
+  background: #f8f9fb;
+}
+
+/* ============================= */
+/* Header */
+.support-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.support-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0d1b2a;
+}
+
+.support-btn {
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.support-btn:hover {
+  background: #084298;
+  transform: translateY(-1px);
+}
+
+/* ============================= */
+/* Card */
+.support-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  border: none;
+}
+
+/* ============================= */
+/* Table */
+.support-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.support-table thead {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.support-table thead th {
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.support-table tbody tr {
+  transition: background 0.25s ease;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.support-table tbody tr:hover {
+  background: rgba(13, 110, 253, 0.08);
+}
+
+.support-table td {
+  padding: 14px 16px !important;
+  font-size: 15px;
+  color: #333;
+  vertical-align: middle;
+}
+
+/* ============================= */
+/* Badges */
+.badge {
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* ============================= */
+/* Empty State */
+.support-empty {
+  text-align: center;
+  padding: 70px 0;
+}
+
+.support-empty img {
+  max-width: 130px;
+  opacity: 0.85;
+}
+
+.support-empty h6 {
+  color: #6c757d;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* Responsive Table (Mobile View) */
+@media (max-width: 768px) {
+  .support-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .support-title {
+    font-size: 1.3rem;
+  }
+
+  .support-btn {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .support-table {
+    border: none;
+  }
+
+  .support-table thead {
+    display: none;
+  }
+
+  .support-table tbody tr {
+    display: block;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+  }
+
+  .support-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 !important;
+    font-size: 14px;
+    border: none;
+  }
+
+  .support-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #495057;
+    text-transform: capitalize;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+}
+
+/* ============================= */
+/* Small devices (extra fine-tuning) */
+@media (max-width: 480px) {
+  .support-container {
+    padding: 16px;
+  }
+
+  .support-title {
+    font-size: 1.2rem;
+  }
+
+  .support-table td {
+    font-size: 13px;
+  }
+}

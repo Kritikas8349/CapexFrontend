@@ -88,7 +88,7 @@ function DailyNews() {
 
                 <div className="pricing-cards">
                     {/* Monthly Plan */}
-                    <div className="card">
+                    <div className="price-card">
                         <h2>Monthly</h2>
                         <p className="billing">Billed Monthly/NZD</p>
                         <div className="price">$45</div>
@@ -100,7 +100,7 @@ function DailyNews() {
                     </div>
 
                     {/* Annual Plan */}
-                    <div className="card ">
+                    <div className="price-card ">
                         <div className="badge">$37.5 P/M</div>
                         <h2>Annually</h2>
                         <p className="billing">Billed Annually/NZD</p>
@@ -113,7 +113,7 @@ function DailyNews() {
                     </div>
 
                     {/* Custom Research */}
-                    <div className="card">
+                    <div className="price-card">
                         <h2>Custom Research</h2>
                         <p className="billing">$200 Per Hour/NZD</p>
                         <div className="price">$5K</div>

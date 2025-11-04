@@ -43,7 +43,7 @@
 .tab:hover,
 .btn-nav {
   color: #fff;
-  background-color: #1b8cff;
+  background: linear-gradient(to top left, #000000, #493ffd);
   border: 1px solid #1b8cff;
   padding: 6px 16px;
   border-radius: 8px;
@@ -52,7 +52,8 @@
 }
 
 .btn-nav:hover {
-  background-color: #0072ff;
+  background: linear-gradient(to top right, #000000, #493ffd);
+  color: #fff;
 }
 
 /* ======================== */

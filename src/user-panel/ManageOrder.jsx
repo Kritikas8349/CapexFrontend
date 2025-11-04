@@ -14,52 +14,52 @@ function ManageOrder() {
       <h2 className="fw-semibold-m text-start-m mb-3-m">{activeTab} Orders</h2>
 
       {/* Navigation + Filters */}
-      <div className="row-m align-items-center-m g-3-m mb-4-m">
-        {/* Tabs Section */}
-        <div className="col-12-m col-md-6-m">
-          <div className="d-flex-m flex-wrap-m justify-content-start-m gap-2-m gap-sm-3-m">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                className={`btn-m btn-md-m fw-medium-m text-nowrap-m ${
-                  activeTab === tab ? "btn-nav-m" : "text-dark-m"
-                }`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </div>
+      <div className="row align-items-center g-3 mb-4">
+  {/* Tabs Section */}
+  <div className="col-12 col-md-6">
+    <div className="d-flex flex-wrap justify-content-start gap-2 gap-sm-3">
+      {tabs.map((tab) => (
+        <button
+          key={tab}
+          className={`btn fw-medium text-nowrap ${
+            activeTab === tab ? "btn-primary" : "btn-outline-secondary"
+          }`}
+          onClick={() => setActiveTab(tab)}
+        >
+          {tab}
+        </button>
+      ))}
+    </div>
+  </div>
 
-        {/* Filters Section */}
-        <div className="col-12-m col-md-6-m">
-          <div className="d-flex-m flex-column-m flex-sm-row-m gap-3-m justify-content-center-m justify-content-md-end-m w-100-m">
-            <select className="form-select-m form-select-sm-m bg-transparent-m text-dark-m border-dark-m w-100-m w-sm-auto-m">
-              <option>Order Type</option>
-              <option>All</option>
-              <option>Limit</option>
-              <option>Market</option>
-            </select>
+  {/* Filters Section */}
+  <div className="col-12 col-md-6">
+    <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-end w-100">
+      {/* Order Type Dropdown */}
+      <select className="form-select form-select-sm w-100 w-sm-auto">
+        <option>Order Type</option>
+        <option>All</option>
+        <option>Limit</option>
+        <option>Market</option>
+      </select>
 
-            <div
-              className="input-group-m w-100-m w-sm-auto-m"
-              style={{ maxWidth: "350px" }}
-            >
-              <span className="input-group-text-m bg-transparent-m border-secondary-m text-dark-m">
-                <BsSearch />
-              </span>
-              <input
-                type="text"
-                className="form-control-m bg-transparent-m text-dark-m border-secondary-m"
-                placeholder="Search here..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
-          </div>
-        </div>
+      {/* Search Bar */}
+      <div className="input-group w-100 w-sm-auto" style={{ maxWidth: "350px" }}>
+        <span className="input-group-text bg-transparent border-secondary text-dark">
+          <BsSearch />
+        </span>
+        <input
+          type="text"
+          className="form-control bg-transparent text-dark border-secondary"
+          placeholder="Search here..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </div>
+    </div>
+  </div>
+</div>
+
 
       {/* Table / Empty Section */}
       <div className="rounded-3-m py-3-m text-center-m table-data-m">

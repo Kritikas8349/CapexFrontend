@@ -10,31 +10,35 @@ const LoginForm1 = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // ✅ Backend URL (from .env or fallback)
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+  const BACKEND_URL =
+    import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      // ✅ Fixed POST request syntax
-      const res = await axios.post(`${BACKEND_URL}/api/auth/login`, { email, password });
+      const res = await axios.post(`${BACKEND_URL}/api/auth/login`, {
+        email,
+        password,
+      });
 
       alert(res.data.message || "Login successful!");
 
-      // ✅ Store login info for protected routes
-      localStorage.setItem("user", JSON.stringify(res.data.user));
-      if (res.data.token) {
-        localStorage.setItem("token", res.data.token);
+      if (!res.data.user.email) {
+        alert("Login failed: Invalid response from server");
+        return;
       }
+
+      // ✅ Save user info to localStorage
+      localStorage.setItem("email", res.data.user.email);
+      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("user", JSON.stringify(res.data.user));
       localStorage.setItem("isAuthenticated", "true");
 
-      // ✅ Redirect to user dashboard
-      navigate("/userdashboard");
+      navigate("/profile"); // ✅ Profile route correct
     } catch (err) {
-      console.error("Login error:", err.response || err);
-      alert(err.response?.data?.message || "Invalid credentials or server error");
+      alert(err.response?.data?.message || "Login failed");
     } finally {
       setLoading(false);
     }
@@ -42,6 +46,7 @@ const LoginForm1 = () => {
 
   return (
     <div className="login-wrapper">
+      
       {/* Left Side */}
       <div className="login-left">
         <div className="logo">
@@ -55,6 +60,7 @@ const LoginForm1 = () => {
           <p>Welcome back! Please enter your details</p>
 
           <form onSubmit={handleSubmit}>
+            
             <label>Email address</label>
             <input
               type="email"
@@ -106,7 +112,7 @@ const LoginForm1 = () => {
         </div>
       </div>
 
-      {/* Right Side - Image / Branding */}
+      {/* Right Side */}
       <div className="login-right"></div>
     </div>
   );
