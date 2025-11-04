@@ -262,49 +262,54 @@ const Dashboard = () => {
 };
 
 const PreviewModal = ({ title, data, onClose, onChange }) => (
-  <div className="deposit-preview">
-    <div className="preview-header">
-      <h3>{title}</h3>
-      <span className="close-btn" onClick={onClose}>×</span>
-    </div>
-    <div className="preview-content">
-      <div className="form-group">
-        <label>Amount</label>
-        <input
-          type="text"
-          value={data.amount}
-          onChange={(e) => onChange({ ...data, amount: e.target.value })}
-        />
+  <div className="side-modal-overlay">
+    <div className="side-modal">
+      <div className="preview-header">
+        <h3>{title}</h3>
+        <span className="close-btn" onClick={onClose}>×</span>
       </div>
-      <div className="form-group">
-        <label>Payment Gateway</label>
-        <select
-          value={data.gateway || ""}
-          className="form-select bg-transparent"
-          onChange={(e) => onChange({ ...data, gateway: e.target.value })}
-        >
-          <option value="">Select Gateway</option>
-          <option value="BTC">BTC</option>
-          <option value="ETH">ETH</option>
-          <option value="USDT">USDT</option>
-          <option value="BNB">BNB</option>
-        </select>
+
+      <div className="preview-content">
+        <div className="form-group">
+          <label>Amount</label>
+          <input
+            type="text"
+            value={data.amount}
+            onChange={(e) => onChange({ ...data, amount: e.target.value })}
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Payment Gateway</label>
+          <select
+            value={data.gateway || ""}
+            onChange={(e) => onChange({ ...data, gateway: e.target.value })}
+          >
+            <option value="">Select Gateway</option>
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+            <option value="USDT">USDT</option>
+            <option value="BNB">BNB</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label>Wallet Type</label>
+          <select
+            value={data.wallet || ""}
+            onChange={(e) => onChange({ ...data, wallet: e.target.value })}
+          >
+            <option value="">Select Wallet</option>
+            <option value="Main Wallet">Main Wallet</option>
+            <option value="Trading Wallet">Trading Wallet</option>
+          </select>
+        </div>
+
+        <button className="preview-submit-btn">Submit</button>
       </div>
-      <div className="form-group">
-        <label>Wallet Type</label>
-        <select
-          value={data.wallet || ""}
-          className="form-select bg-transparent"
-          onChange={(e) => onChange({ ...data, wallet: e.target.value })}
-        >
-          <option value="">Select Wallet</option>
-          <option value="Main Wallet">Main Wallet</option>
-          <option value="Trading Wallet">Trading Wallet</option>
-        </select>
-      </div>
-      <button className="preview-submit-btn">Submit</button>
     </div>
   </div>
 );
+
 
 export default Dashboard;

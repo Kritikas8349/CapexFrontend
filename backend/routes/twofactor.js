@@ -12,7 +12,7 @@ router.post("/generate", async (req, res) => {
     if (!userId || !email) return res.status(400).json({ message: "User ID & Email required" });
 
     const secret = speakeasy.generateSecret({
-      name: `CapexTrade (${email})`,
+      name: `MarketTrade (${email})`,
     });
 
     const qrCodeUrl = await QRCode.toDataURL(secret.otpauth_url);
