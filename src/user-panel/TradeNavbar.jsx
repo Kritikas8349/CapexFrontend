@@ -45,7 +45,7 @@ function TradeNavbar() {
               <NavLink className="nav-link fw-semibold text-white" to="support/contact-support">Contact</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link fw-semibold text-white" to="/dashboard">Go to Website</NavLink>
+              <NavLink className="nav-link fw-semibold text-white" to="/">Go to Website</NavLink>
             </li>
           </ul>
 
@@ -56,7 +56,7 @@ function TradeNavbar() {
             
 
             <Link
-              to="/"
+              to="/userdashboard"
               className="btn btn-primary fw-semibold px-3 py-1"
             >
               Dashboard
@@ -77,9 +77,3 @@ function TradeNavbar() {
 }
 
 export default TradeNavbar;
-
-
-
-
-
-

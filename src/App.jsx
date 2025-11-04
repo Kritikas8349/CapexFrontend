@@ -99,6 +99,7 @@ function Layout({ children }) {
 
 function App() {
   const location = useLocation();
+  const shouldHideSidebarAndNavbar = location.pathname.startsWith("/trade");
 
   const isDashboardPage = location.pathname.startsWith("/userdashboard") ||
     location.pathname.startsWith("/profile") ||
@@ -176,11 +177,13 @@ function App() {
       )}
 
 <div className="app-container">
-  <Sidebar />
+   {!shouldHideSidebarAndNavbar && <Sidebar />}
+
       {isDashboardPage && (
         <div className="dashboard-wrapper">
           
-          <TopRightNavbar/>
+           {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
+
 
           <Routes>
             <Route path="/userdashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />

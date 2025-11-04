@@ -1,62 +1,99 @@
-import React from 'react'
+import React, { useState } from "react";
+import { BsSearch } from "react-icons/bs";
 
 function WithdrawHistory() {
+  const [search, setSearch] = useState("");
+
+  const containerStyle = {
+    background: "#fff",
+    borderRadius: "12px",
+    padding: "25px",
+    minHeight: "80vh"
+  };
+
+  const tableBoxStyle = {
+    background: "#f9fafc",
+    borderRadius: "12px",
+    padding: "20px",
+    textAlign: "center",
+  };
+
+  const inputGroupStyle = {
+    border: "1px solid #9aa0b9",
+    borderRadius: "8px",
+    overflow: "hidden",
+    maxWidth: "350px",
+    width: "100%"
+  };
+
+  const inputStyle = {
+    border: "none",
+    fontSize: "14px",
+    background: "transparent",
+    boxShadow: "none"
+  };
+
+  const headingRowStyle = {
+    fontWeight: "600",
+    fontSize: "14px",
+    color: "#2e2f32",
+    marginBottom: "8px",
+    borderBottom: "1px solid #ccc",
+    paddingBottom: "8px"
+  };
+
   return (
-    <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container h-100 ">
-            {/* Title */}
-
-
-            {/* Navigation + Filters */}
-            <div className="row align-items-center g-2 mb-2 py-md-3 py-lg-3">
-                {/* Tabs Section */}
-                <div className="col-12 col-md-6 ">
-                    <h2 className="fw-semibold  text-start text-md-start text-lg-start">
-                        Withdraw log
-                    </h2>
-                </div>
-
-                {/* Filters Section */}
-                <div className="col-12 col-md-6   ">
-                    <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-end">
-                        
-
-                       
-
-                        <div class="input-group w-50 ">
-                            <input type="text" class="form-control bg-transparent border-dark text-dark custom-placeholder" placeholder="Search by transactions" aria-label="Recipient’s username with two button addons" />
-
-                            <button class="btn btn-outline-dark bi bi-search p-0 px-1" type="button"></button>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-
-            {/* Table / Empty Section */}
-            <div className=" rounded-3  py-3 text-center  table-data">
-                <div className="row  fw-semibold  pb-2 mb-3 d-none d-lg-flex">
-                    <h6 className="col">Currency | Wallet</h6>
-                    <h6 className="col">	Gateway | Transaction</h6>
-                    <h6 className="col">Initiated</h6>
-                    <h6 className="col">Amount</h6>
-                    <h6 className="col">Status</h6>
-                    <h6 className="col">Action</h6>
-                   
-                </div>
-
-                <div className="py-5">
-                    <img
-                        src="emptybox.png"
-                        alt="Empty Orders"
-                        className="img-fluid mb-3"
-                        style={{ maxWidth: "120px", opacity: 0.8 }}
-                    />
-                    <p className="text-dark">No withdraw transaction found </p>
-                </div>
-            </div>
+    <div className="container-fluid" style={containerStyle}>
+      {/* Title + Search */}
+      <div className="row align-items-center g-2 mb-3">
+        <div className="col-12 col-md-6">
+          <h2 className="fw-semibold">Withdraw Log</h2>
         </div>
-  )
+
+        {/* Search */}
+        <div className="col-12 col-md-6 d-flex justify-content-md-end justify-content-start mt-2 mt-md-0">
+          <div className="input-group" style={inputGroupStyle}>
+            <span className="input-group-text bg-transparent border-0">
+              <BsSearch />
+            </span>
+            <input
+              type="text"
+              className="form-control"
+              style={inputStyle}
+              placeholder="Search transactions"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Table */}
+      <div style={tableBoxStyle}>
+        {/* Header Row */}
+        <div className="row d-none d-lg-flex" style={headingRowStyle}>
+          <div className="col">Currency | Wallet</div>
+          <div className="col">Gateway | Txn ID</div>
+          <div className="col">Initiated</div>
+          <div className="col">Amount</div>
+          <div className="col">Status</div>
+          <div className="col">Action</div>
+        </div>
+
+        {/* Empty State */}
+        <div className="py-5 text-center">
+          <img
+            src="emptybox.png"
+            alt="empty"
+            style={{ maxWidth: "120px", opacity: 0.8 }}
+          />
+          <p className="mt-2" style={{ fontSize: "15px", color: "#333" }}>
+            No withdraw transaction found
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default WithdrawHistory
+export default WithdrawHistory;

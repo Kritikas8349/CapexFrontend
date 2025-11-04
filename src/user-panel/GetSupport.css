@@ -1,0 +1,117 @@
+/* Container */
+.support-container {
+  min-height: 100vh;
+  padding: 24px;
+  width: 100%;
+  background: #f7f9fc;
+}
+
+/* Header Section */
+.support-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.support-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Card */
+.support-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  border: none;
+}
+
+/* Table */
+.support-table {
+  width: 100% !important;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.support-table thead {
+  background-color: #0d6efd;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.support-table thead th {
+  padding: 12px 14px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.support-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.support-table tbody tr:hover {
+  background: rgba(13, 110, 253, 0.08);
+}
+
+.support-table td {
+  padding: 14px 14px !important;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Empty state */
+.support-empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.support-empty img {
+  max-width: 120px;
+  opacity: 0.85;
+}
+
+.support-empty h6 {
+  color: #6c757d;
+  margin-top: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .support-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .support-title {
+    font-size: 20px;
+  }
+
+  .support-table thead {
+    display: none;
+  }
+
+  .support-table tr {
+    display: block;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #eee;
+    padding: 8px;
+  }
+
+  .support-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px !important;
+    font-size: 14px;
+    border: none;
+  }
+
+  .support-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #444;
+  }
+}

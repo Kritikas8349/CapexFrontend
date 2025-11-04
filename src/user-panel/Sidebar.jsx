@@ -47,7 +47,7 @@ const Sidebar = () => {
           </li>
           <li>
             <BiTransfer className="icon" />
-            <Link to="/deposit-history" className="text-decoration-none">Deposite History</Link>
+            <Link to="/deposit-history" className="text-decoration-none">Deposit History</Link>
           </li>
           <li>
             <BiTransfer className="icon" />
