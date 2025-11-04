@@ -49,7 +49,7 @@ import CopyTrader from "./component/CopyTrader";
 
 
 
-
+import CreateAccount from "./component/CreateAccount";
 import QuickStart from "./component/QuickStart";
 import QuickStart2 from "./component/QuickStart2";
 import QuickStart3 from "./component/QuickStart3";
@@ -67,6 +67,7 @@ import Market7 from "./component/Market7";
 
 
 // Sub Pages
+import GettingStarted from "./component/GettingStarted";
 import Market_com_Energies from "./component/SubPages/Market_com_Energies";
 import Market_com_Metal from "./component/SubPages/Market_com_Metal";
 import Market_Future_Energy from "./component/SubPages/Market_Future_Energy";
@@ -210,7 +211,7 @@ function App() {
   const isDashboardPage = location.pathname.startsWith("/userdashboard") ||
     location.pathname.startsWith("/profile") ||
     location.pathname.startsWith("/change-password") ||
-    location.pathname.startsWith("/manage-order") ||
+    location.pathname.startsWith("/manage-order") ||  
     location.pathname.startsWith("/manage-wallet") ||
     location.pathname.startsWith("/wallet") ||
     location.pathname.startsWith("/deposit-history") ||
@@ -250,7 +251,7 @@ function App() {
           <Routes>
             <Route path="/" element={<PersonalHome />} />
             <Route path="/loginform" element={<LoginForm1 />} />
-            <Route path="/create-account" element={<CreateAccount />} />
+            <Route path="/create-account" element={<CreateAccount></CreateAccount>} />
 
             {/* Market Overview */}
             <Route path="/markets" element={<Market />} />

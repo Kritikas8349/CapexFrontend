@@ -134,7 +134,7 @@ const TradePage = () => {
       {/* 📈 CENTER PANEL - CHART + BUTTONS + ORDERS */}
       <div className="tradechart-container">
         <div className="tradechart-header">
-          <h2>{selectedPair}</h2>
+          <h2 className="text-start">{selectedPair}</h2>
           <div className="tradechart-stats">
             <div>
               <span className="label">Price</span>
@@ -174,6 +174,7 @@ const TradePage = () => {
             className="chart-frame w-100"
             style={{ height: "500px", borderRadius: "10px" }}
           ></iframe>
+          
 
           {/* Floating Buy/Sell Buttons */}
           <div
@@ -188,7 +189,7 @@ const TradePage = () => {
             }}
           >
             <button
-              className="btn btn-success d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm"
+              className="btn btn-success d-none d-lg-block d-md-block btn-sm px-4 py-2 fw-semibold shadow-sm"
               onClick={() => {
                 setTradeType("buy");
                 setShowTradePopup(true);
@@ -197,7 +198,7 @@ const TradePage = () => {
               BUY {selectedPair.split("/")[0]}
             </button>
             <button
-              className="btn btn-danger d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm"
+              className="btn btn-danger d-none d-lg-block d-md-block btn-sm px-4 py-2 fw-semibold shadow-sm"
               onClick={() => {
                 setTradeType("sell");
                 setShowTradePopup(true);
@@ -207,6 +208,26 @@ const TradePage = () => {
             </button>
           </div>
         </div>
+        <div className="d-flex justify-content-between my-2">
+             <button
+              className="btn btn-success d-flex d-lg-none d-md-none btn-sm px-4 py-2 fw-semibold shadow-sm"
+              onClick={() => {
+                setTradeType("buy");
+                setShowTradePopup(true);
+              }}
+            >
+              BUY {selectedPair.split("/")[0]}
+            </button>
+            <button
+              className="btn btn-danger d-flex d-lg-none d-md-none btn-sm px-4 py-2 fw-semibold shadow-sm"
+              onClick={() => {
+                setTradeType("sell");
+                setShowTradePopup(true);
+              }}
+            >
+              SELL {selectedPair.split("/")[0]}
+            </button>
+          </div>
 
         {/* 💹 BUY/SELL POPUP BOX */}
         {showTradePopup && (

@@ -1,26 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 
 function TradeHistory() {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="container-fluid py-4 py-md-5 px-3 px-md-4 rounded-3 dashboard-container h-100">
-      {/* Header */}
-      <div className="row align-items-center g-2 mb-2 py-md-3">
-        <div className="col-12 col-md-6">
-          <h2 className="fw-semibold text-start">Trading History</h2>
+    <div className="container-fluid py-4 py-md-5 px-3 px-md-4 rounded-3 dashboard-container min-vh-100 bg-light">
+      {/* ===== Header Section ===== */}
+      <div className="row align-items-center g-3 mb-4">
+        {/* Title */}
+        <div className="col-12 col-md-6 text-center text-md-start">
+          <h2 className="fw-semibold mb-0">Trading History</h2>
         </div>
 
+        {/* Filters */}
         <div className="col-12 col-md-6">
           <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-end w-100">
-            <select className="form-select form-select-sm dashboard-container text-dark border-dark w-100 w-sm-auto">
+            {/* Order Type Dropdown */}
+            <select className="form-select form-select-sm text-dark border-dark w-100 w-sm-auto">
               <option>Order Type</option>
               <option>All</option>
               <option>Limit</option>
               <option>Market</option>
             </select>
 
+            {/* Search Bar */}
             <div className="input-group w-100 w-sm-auto" style={{ maxWidth: "350px" }}>
               <span className="input-group-text bg-transparent border-secondary text-dark">
                 <BsSearch />
@@ -37,24 +41,33 @@ function TradeHistory() {
         </div>
       </div>
 
-      {/* Table / Empty Section */}
-      <div className="rounded-3 py-3 text-center table-data">
-        <div className="row fw-semibold pb-2 mb-3 d-none d-md-flex">
-          <h6 className="col">Order Date | Pair</h6>
-          <h6 className="col">Trade Date</h6>
-          <h6 className="col">Trade Side</h6>
-          <h6 className="col">Rate</h6>
-          <h6 className="col">Amount</h6>
-        </div>
+      {/* ===== Table Section / Empty State ===== */}
+      <div className="card shadow-sm border-0">
+        <div className="card-body p-3">
+          {/* Table Header */}
+          <div className="row fw-semibold border-bottom pb-2 mb-3 d-none d-md-flex text-secondary">
+            <div className="col">Order Date | Pair</div>
+            <div className="col">Trade Date</div>
+            <div className="col">Trade Side</div>
+            <div className="col">Rate</div>
+            <div className="col">Amount</div>
+          </div>
 
-        <div className="py-5">
-          <img
-            src="emptybox.png"
-            alt="Empty Orders"
-            className="img-fluid mb-3"
-            style={{ maxWidth: "120px", opacity: 0.8 }}
-          />
-          <p className="text-dark">No orders found</p>
+          {/* Empty State (Centered) */}
+          <div
+            className="d-flex flex-column justify-content-center align-items-center text-center py-5"
+            style={{ minHeight: "300px" }}
+          >
+            <img
+              src="/emptybox.png"
+              alt="Empty Orders"
+              className="img-fluid mb-3"
+              style={{ maxWidth: "120px", opacity: 0.8 }}
+            />
+            <p className="text-secondary mb-0 fs-6">
+              No trade history found
+            </p>
+          </div>
         </div>
       </div>
     </div>
