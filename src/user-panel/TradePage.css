@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+   background-color: #f5f6fa;
+ 
 }
 
 /* Orderbook */
@@ -791,4 +793,110 @@
   .markets-tabs {
     gap: 0 !important;
   }
+}
+
+/* 🌐 Overlay */
+.trade-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 40, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+}
+
+/* 📦 Popup Container */
+.tradebox-container.popup {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  width: 420px;
+  max-width: 90%;
+  color: #1b1f3b;
+  box-shadow: 0 8px 24px rgba(0, 0, 80, 0.15);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 🧭 Tabs (Buy / Sell) */
+.tradebox-tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  background: #e8ecf9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tradebox-tabs span {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #1b1f3b;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.tradebox-tabs span.active {
+  background: linear-gradient(90deg, #003366, #0059b3);
+  color: #fff;
+}
+
+/* ❌ Close Button */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color: #003366;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close-btn:hover {
+  color: #0059b3;
+}
+
+/* 💰 Total + Fee */
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f8fd;
+  border: 1px solid #ccd8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #003366; /* ✅ Dark Blue for label text instead of black */
+}
+
+.total label {
+  font-weight: 500;
+  color: #003366; /* ✅ Unified dark-blue tone */
+}
+
+.total input {
+  background: transparent;
+  border: none;
+  text-align: right;
+  color: #1b1f3b; /* ✅ Deep navy text for values */
+  font-weight: 600;
+  outline: none;
+  width: 100%;
+}
+
+.total .unit {
+  color: #0059b3;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.fee {
+  text-align: right;
+  font-size: 12px;
+  color: #003366; /* ✅ Fixed — now visible and consistent */
+  margin-top: 6px;
 }

@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./TradePage.css";
-// import your empty icon image here
-// import emptybox from "./emptybox.png";
 
 const TradePage = () => {
   const [search, setSearch] = useState("");
   const [activeMarketTab, setActiveMarketTab] = useState("BTC");
   const [activeOrderTab, setActiveOrderTab] = useState("All");
+  const [selectedPair, setSelectedPair] = useState("BTC/USDT");
+  const [tradeType, setTradeType] = useState("buy");
+  const [showTradePopup, setShowTradePopup] = useState(false);
+  const [livePrice, setLivePrice] = useState(null);
+  const [amount, setAmount] = useState("");
 
   const tabs = ["All", "Open", "Completed", "Canceled"];
 
@@ -18,7 +21,7 @@ const TradePage = () => {
     { pair: "USDT/USD", price: 1.0005, change: 0.01 },
     { pair: "WBTC/USD", price: 120573.8107, change: 0.16 },
     { pair: "DOT/USD", price: 4.316, change: 0.09 },
-    { pair: "MATIC/USD", price: 0.0000, change: -0.95 },
+    { pair: "MATIC/USD", price: 0.0, change: -0.95 },
     { pair: "TRX/EUR", price: 0.2926, change: -0.19 },
     { pair: "SOL/EUR", price: 198.5727, change: 0.09 },
     { pair: "DOGE/EUR", price: 0.2225, change: 0.52 },
@@ -46,17 +49,6 @@ const TradePage = () => {
     { price: 59253.7019, amount: 0.05, total: 2962.6851 },
     { price: 59253.0, amount: 0.005, total: 296.265 },
     { price: 51910.9592, amount: 0.1839, total: 9546.4254 },
-    { price: 50964.2857, amount: 0.0092, total: 468.8714 },
-    { price: 43691.4907, amount: 0.0046, total: 200.9809 },
-    { price: 38747.7045, amount: 0.0158, total: 612.2137 },
-    // Added New Orders
-    { price: 97506.5536, amount: 0.0038, total: 370.5249 },
-    { price: 97486.7022, amount: 0.0003, total: 29.2460 },
-    { price: 84980.9674, amount: 0.0100, total: 849.8097 },
-    { price: 71792.3062, amount: 0.0334, total: 2397.8630 },
-    { price: 69492.6767, amount: 0.0007, total: 48.6449 },
-    { price: 69347.8313, amount: 0.0002, total: 13.8696 },
-    { price: 69347.8313, amount: 0.0035, total: 242.7174 },
   ];
 
   const buyOrders = [
@@ -71,9 +63,31 @@ const TradePage = () => {
     { price: 100000.0, amount: 1.0, total: 100000.0 },
   ];
 
+  // ✅ Fetch Live Price from Binance API
+  useEffect(() => {
+    const symbol = selectedPair.replace("/", "");
+    const fetchPrice = async () => {
+      try {
+        const response = await fetch(
+          `https://api.binance.com/api/v3/ticker/price?symbol=${symbol}`
+        );
+        const data = await response.json();
+        if (data.price) setLivePrice(parseFloat(data.price));
+      } catch (err) {
+        console.error("Error fetching live price:", err);
+      }
+    };
+
+    fetchPrice();
+    const interval = setInterval(fetchPrice, 5000); // refresh every 5s
+    return () => clearInterval(interval);
+  }, [selectedPair]);
+
+  const total = livePrice && amount ? (livePrice * parseFloat(amount)).toFixed(2) : "0.00";
+
   return (
     <div className="tradepage-wrapper">
-      {/* LEFT SIDE - ORDER BOOK */}
+      {/* 🧭 LEFT PANEL - ORDER BOOK */}
       <div className="orderbook-container large-orderbook">
         <div className="orderbook-header">
           <h3>Order Book</h3>
@@ -94,9 +108,7 @@ const TradePage = () => {
           <div className="orderbook-sell">
             {sellOrders.map((order, index) => (
               <div className="order-row sell-row" key={index}>
-                <span className="sell-price">
-                  {order.price.toLocaleString()}
-                </span>
+                <span className="sell-price">{order.price.toLocaleString()}</span>
                 <span>{order.amount}</span>
                 <span>{order.total.toLocaleString()}</span>
               </div>
@@ -119,18 +131,20 @@ const TradePage = () => {
         </div>
       </div>
 
-      {/* CENTER - CHART */}
+      {/* 📈 CENTER PANEL - CHART + BUTTONS + ORDERS */}
       <div className="tradechart-container">
         <div className="tradechart-header">
-          <h2>BTC/USDT</h2>
+          <h2>{selectedPair}</h2>
           <div className="tradechart-stats">
             <div>
               <span className="label">Price</span>
-              <span className="value green">120,561.6045</span>
+              <span className="value green">
+                {livePrice ? livePrice.toFixed(2) : "Loading..."}
+              </span>
             </div>
             <div>
               <span className="label">Last Price</span>
-              <span className="value">120,481.2768</span>
+              <span className="value">{buyOrders[0].price.toLocaleString()}</span>
             </div>
             <div>
               <span className="label">1H Change</span>
@@ -147,132 +161,126 @@ const TradePage = () => {
           </div>
         </div>
 
+        {/* TradingView Chart */}
         <div className="chart-box position-relative">
-  {/* Chart */}
-  <iframe
-    title="TradingView Chart"
-    src="https://s.tradingview.com/widgetembed/?symbol=BINANCE:BTCUSDT&interval=1D&theme=dark&style=1&locale=en"
-    frameBorder="0"
-    allowFullScreen
-    className="chart-frame w-100"
-    style={{
-      height: "500px",
-      borderRadius: "10px",
-    }}
-  ></iframe>
+          <iframe
+            title="TradingView Chart"
+            src={`https://s.tradingview.com/widgetembed/?symbol=BINANCE:${selectedPair.replace(
+              "/",
+              ""
+            )}&interval=1D&theme=dark&style=1&locale=en`}
+            frameBorder="0"
+            allowFullScreen
+            className="chart-frame w-100"
+            style={{ height: "500px", borderRadius: "10px" }}
+          ></iframe>
 
-  {/* Buttons Overlay */}
-  <div
-    className="position-absolute d-flex justify-content-center align-items-center flex-wrap gap-3"
-    style={{
-      top: "5%",
-      left: "75%",
-      transform: "translate(-50%, -50%)",
-      zIndex: 2,
-      width: "100%",
-      padding: "0 10px",
-    }}
-  >
-    <button className="btn btn-success d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm">
-      BUY BTC
-    </button>
-    <button className="btn btn-danger d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm">
-      SELL BTC
-    </button>
-  </div>
-</div>
-
-
-        {/* BOTTOM - TRADE BOX SECTION */}
-        <div className="tradebox-container">
-          <div className="tradebox-tabs">
-            <span className="active">Limit</span>
-            <span>Market</span>
-            <span>Stop Limit</span>
-          </div>
-
-          <div className="tradebox-panels">
-            {/* BUY BOX */}
-            <div className="tradebox buy-box">
-              <div className="available">
-                <span>Available</span>
-                <span>0.0000 USDT</span>
-              </div>
-
-              <div className="input-group">
-                <label>Price</label>
-                <input type="text" value="69347.8313" readOnly />
-                <span className="unit">USDT</span>
-              </div>
-
-              <div className="input-group">
-                <label>Amount</label>
-                <input type="text" placeholder="Minimum 0.0002 BTC" />
-                <span className="unit">BTC</span>
-              </div>
-
-              <div className="slider">
-                <div className="slider-marks">
-                  <span>0%</span>
-                  <span>25%</span>
-                  <span>50%</span>
-                  <span>75%</span>
-                  <span>100%</span>
-                </div>
-              </div>
-
-              <div className="total">
-                <label>Total</label>
-                <input type="text" value="0.00" readOnly />
-                <span className="unit">USDT</span>
-              </div>
-
-              <div className="fee">Fee 0.6%</div>
-              <button className="buy-btn">BUY BTC</button>
-            </div>
-
-            {/* SELL BOX */}
-            <div className="tradebox sell-box">
-              <div className="available">
-                <span>Available</span>
-                <span>0.0000 BTC</span>
-              </div>
-
-              <div className="input-group">
-                <label>Price</label>
-                <input type="text" value="69347.8313" readOnly />
-                <span className="unit">USDT</span>
-              </div>
-
-              <div className="input-group">
-                <label>Amount</label>
-                <input type="text" placeholder="Minimum 0.0040 BTC" />
-                <span className="unit">BTC</span>
-              </div>
-
-              <div className="slider">
-                <div className="slider-marks">
-                  <span>0%</span>
-                  <span>25%</span>
-                  <span>50%</span>
-                  <span>75%</span>
-                  <span>100%</span>
-                </div>
-              </div>
-
-              <div className="total">
-                <label>Total</label>
-                <input type="text" value="0.00" readOnly />
-                <span className="unit">USDT</span>
-              </div>
-
-              <div className="fee">Fee 1.1%</div>
-              <button className="sell-btn">SELL BTC</button>
-            </div>
+          {/* Floating Buy/Sell Buttons */}
+          <div
+            className="position-absolute d-flex justify-content-center align-items-center flex-wrap gap-3"
+            style={{
+              top: "5%",
+              left: "75%",
+              transform: "translate(-50%, -50%)",
+              zIndex: 2,
+              width: "100%",
+              padding: "0 10px",
+            }}
+          >
+            <button
+              className="btn btn-success d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm"
+              onClick={() => {
+                setTradeType("buy");
+                setShowTradePopup(true);
+              }}
+            >
+              BUY {selectedPair.split("/")[0]}
+            </button>
+            <button
+              className="btn btn-danger d-none d-lg-block btn-sm px-4 py-2 fw-semibold shadow-sm"
+              onClick={() => {
+                setTradeType("sell");
+                setShowTradePopup(true);
+              }}
+            >
+              SELL {selectedPair.split("/")[0]}
+            </button>
           </div>
         </div>
 
-        {/* MY ORDERS SECTION */}
+        {/* 💹 BUY/SELL POPUP BOX */}
+        {showTradePopup && (
+          <div className="trade-popup-overlay" onClick={() => setShowTradePopup(false)}>
+            <div className="tradebox-container popup" onClick={(e) => e.stopPropagation()}>
+              <div className="tradebox-tabs">
+                <span
+                  className={tradeType === "buy" ? "active" : ""}
+                  onClick={() => setTradeType("buy")}
+                >
+                  Buy
+                </span>
+                <span
+                  className={tradeType === "sell" ? "active" : ""}
+                  onClick={() => setTradeType("sell")}
+                >
+                  Sell
+                </span>
+                <button className="close-btn" onClick={() => setShowTradePopup(false)}>
+                  ❌
+                </button>
+              </div>
+
+              <div className="tradebox-panels">
+                <div className="tradebox">
+                  <div className="available">
+                    <span>Available</span>
+                    <span>0.0000 {tradeType === "buy" ? "USDT" : selectedPair.split("/")[0]}</span>
+                  </div>
+
+                  <div className="input-group">
+                    <label>Price</label>
+                    <input
+                      type="text"
+                      value={livePrice ? livePrice.toFixed(4) : "Loading..."}
+                      readOnly
+                    />
+                    <span className="unit">USDT</span>
+                  </div>
+
+                  <div className="input-group">
+                    <label>Amount</label>
+                    <input
+                      type="text"
+                      placeholder={`Enter ${selectedPair.split("/")[0]} amount`}
+                      value={amount}
+                      onChange={(e) => setAmount(e.target.value)}
+                    />
+                    <span className="unit">{selectedPair.split("/")[0]}</span>
+                  </div>
+
+                  <div className="slider">
+                    <div className="slider-marks">
+                      <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                    </div>
+                  </div>
+
+                  <div className="total">
+                    <label>Total</label>
+                    <input type="text" value={total} readOnly />
+                    <span className="unit">USDT</span>
+                  </div>
+
+                  <div className="fee">{tradeType === "buy" ? "Fee 0.6%" : "Fee 1.1%"}</div>
+                  <button className={tradeType === "buy" ? "buy-btn" : "sell-btn"}>
+                    {tradeType.toUpperCase()} {selectedPair.split("/")[0]}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* My Orders */}
         <div className="order-div">
           <div className="myorder-container">
             <div className="myorder-header">
@@ -303,7 +311,6 @@ const TradePage = () => {
 
               <div className="table-body empty">
                 <img src="/emptybox.png" alt="No order found" />
-
                 <p>No order found</p>
               </div>
             </div>
@@ -311,7 +318,7 @@ const TradePage = () => {
         </div>
       </div>
 
-      {/* RIGHT SIDE - MARKETS PANEL */}
+      {/* 📊 RIGHT PANEL - MARKETS */}
       <div className="marketfull">
         <div className="markets-panel">
           <div className="markets-header">
@@ -346,65 +353,22 @@ const TradePage = () => {
 
             <div className="markets-list">
               {filteredMarkets.map((item, index) => (
-                <div className="market-row" key={index}>
+                <div
+                  className="market-row"
+                  key={index}
+                  onClick={() => setSelectedPair(item.pair)}
+                  style={{ cursor: "pointer" }}
+                >
                   <span className="pair">
                     <i className="fa fa-star-o" aria-hidden="true"></i>{" "}
                     {item.pair}
                   </span>
-                  <span
-                    className={item.change < 0 ? "price red" : "price green"}
-                  >
+                  <span className={item.change < 0 ? "price red" : "price green"}>
                     {item.price.toLocaleString()}
                   </span>
-                  <span
-                    className={item.change < 0 ? "change red" : "change green"}
-                  >
+                  <span className={item.change < 0 ? "change red" : "change green"}>
                     {Math.abs(item.change).toFixed(2)}%
                   </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* TRADE HISTORY SECTION */}
-        <div className="trade-history-section">
-          <h3>Trade History</h3>
-
-          <div className="trade-history-table">
-            <div className="trade-history-header">
-              <span>Price (USDT)</span>
-              <span>Amount (BTC)</span>
-              <span>Date/Time</span>
-            </div>
-
-            <div className="trade-history-list">
-              {[
-                { price: 104325.3716, amount: 0.001, date: "25.06.24 05:50" },
-                { price: 104325.3716, amount: 0.001, date: "25.06.24 05:50" },
-                { price: 97486.7022, amount: 0.0005, date: "25.02.26 06:25" },
-                { price: 96347.4619, amount: 0.0005, date: "25.01.30 03:05" },
-                { price: 96347.4619, amount: 0.0013, date: "25.01.30 01:25" },
-                { price: 96347.4619, amount: 0.0010, date: "25.01.30 01:25" },
-                { price: 96347.4619, amount: 0.0003, date: "25.01.30 01:25" },
-                { price: 96347.4619, amount: 0.0020, date: "25.01.30 01:25" },
-                { price: 69492.6767, amount: 0.0129, date: "24.11.30 12:20" },
-                { price: 59396.9256, amount: 0.0002, date: "24.08.10 11:30" },
-                { price: 96347.4619, amount: 0.0005, date: "25.01.30 03:05" },
-                { price: 96347.4619, amount: 0.0013, date: "25.01.30 01:25" },
-                { price: 96347.4619, amount: 0.0010, date: "25.01.30 01:25" },
-                { price: 96347.4619, amount: 0.0003, date: "25.01.30 01:25" },
-                { price: 96347.4619, amount: 0.0020, date: "25.01.30 01:25" },
-                { price: 69492.6767, amount: 0.0129, date: "24.11.30 12:20" },
-                { price: 59396.9256, amount: 0.0002, date: "24.08.10 11:30" },
-                
-              ].map((t, i) => (
-                <div className="trade-history-row" key={i}>
-                  <span className={t.price >= 96347 ? "green" : "red"}>
-                    {t.price.toLocaleString()}
-                  </span>
-                  <span>{t.amount.toFixed(4)}</span>
-                  <span>{t.date}</span>
                 </div>
               ))}
             </div>
