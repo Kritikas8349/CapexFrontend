@@ -545,14 +545,15 @@
   font-weight: 500;
 }
 
-//* My Orders */
+/* My Orders */
 .myorder-container {
   background-color: #f5f6fa;
   padding: 20px;
   font-family: "Poppins", sans-serif;
   width: 100%;
-  border: 1px solid #787f83;
+  border: 1px solid #b0b0b0;
   color: #000;
+  margin-top: 1rem;
 }
 
 /* Header */
