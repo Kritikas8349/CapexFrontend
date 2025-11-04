@@ -23,20 +23,23 @@ const LoginForm1 = () => {
         password,
       });
 
-      alert(res.data.message || "Login successful!");
-
-      if (!res.data.user.email) {
-        alert("Login failed: Invalid response from server");
+      const user = res.data.user;
+      
+      if (!user?.email) {
+        alert("Login failed: No user data returned");
         return;
       }
 
-      // ✅ Save user info to localStorage
-      localStorage.setItem("email", res.data.user.email);
+      alert(res.data.message || "Login successful!");
+
+      // ✅ Save data to localStorage
+      localStorage.setItem("email", user.email);
+      localStorage.setItem("username", user.username);   // ✅ Username saved
       localStorage.setItem("token", res.data.token);
-      localStorage.setItem("user", JSON.stringify(res.data.user));
+      localStorage.setItem("user", JSON.stringify(user));
       localStorage.setItem("isAuthenticated", "true");
 
-      navigate("/profile"); // ✅ Profile route correct
+      navigate("/profile"); 
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     } finally {
@@ -60,7 +63,6 @@ const LoginForm1 = () => {
           <p>Welcome back! Please enter your details</p>
 
           <form onSubmit={handleSubmit}>
-            
             <label>Email address</label>
             <input
               type="email"

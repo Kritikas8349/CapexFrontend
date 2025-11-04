@@ -7,8 +7,11 @@ const TopRightNavbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
-  const navigate = useNavigate(); // hook for navigation
-  const username = "KajalSingh";
+  const navigate = useNavigate(); 
+
+  // ✅ Get email from localStorage (from login)
+  const email = localStorage.getItem("email") || "User";
+
   const referralLink = "https://script.viserlab.com/vinance?reference";
 
   const copyLink = () => {
@@ -18,7 +21,7 @@ const TopRightNavbar = () => {
   };
 
   const goToTradePage = () => {
-    navigate("/trade"); // navigate to your Trade page
+    navigate("/trade");
   };
 
   return (
@@ -35,7 +38,10 @@ const TopRightNavbar = () => {
         </button>
 
         <div className="add-t-user-dropdown" style={{ position: "relative" }}>
-          <span className="add-t-username">{username}</span>
+          
+          {/* ✅ Show email instead of KajalSingh */}
+          <span className="add-t-username">{email}</span>
+
           <span
             className="add-t-dropdown-arrow"
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -61,7 +67,11 @@ const TopRightNavbar = () => {
               </Link>
               <Link
                 to="/logout"
-                onClick={() => setDropdownOpen(false)}
+                onClick={() => {
+                  localStorage.clear(); // ✅ logout clear
+                  setDropdownOpen(false);
+                  navigate("/login");
+                }}
                 className="add-t-dropdown-item"
               >
                 Log-Out

@@ -103,6 +103,7 @@ function App() {
 
   const isDashboardPage = location.pathname.startsWith("/userdashboard") ||
     location.pathname.startsWith("/profile") ||
+    location.pathname.startsWith("/change-password") ||
     location.pathname.startsWith("/manage-order") ||
     location.pathname.startsWith("/manage-wallet") ||
     location.pathname.startsWith("/wallet") ||

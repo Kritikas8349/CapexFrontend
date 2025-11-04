@@ -30,11 +30,16 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 const contactRoutes = require('./routes/contactRoute');
 const authRoutes = require('./routes/auth');
 const ticketRoutes = require('./routes/tickets');
+// const twofaRoute = require("./routes/twofactor");
+
+const twoFactorRoutes = require("./routes/twofactor");
+app.use("/api/2fa", twoFactorRoutes);
 
 // ✅ Use Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tickets', ticketRoutes);
 app.use("/api/contact", contactRoutes);
+// app.use("/api/2fa", twofaRoute);
 
 // ✅ MongoDB
 mongoose.connect(process.env.MONGO_URI, {

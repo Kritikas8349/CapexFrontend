@@ -19,8 +19,12 @@ const UserSchema = new mongoose.Schema({
     address: { type: String, default: "" },
     avatar: { type: String, default: "" },
 
-    // ✅ Two-Factor Authentication Secret
+    // ✅ Old 2FA Field (optional but keeping)
     google2fa: { type: String, default: null },
+
+    // ✅ New 2FA Fields (Required)
+    twoFactorSecret: { type: String, default: "" },
+    isTwoFactorEnabled: { type: Boolean, default: false },
 }, { timestamps: true });
 
 module.exports = mongoose.model('User', UserSchema);
