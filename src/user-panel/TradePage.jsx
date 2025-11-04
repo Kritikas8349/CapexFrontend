@@ -101,7 +101,7 @@ const TradePage = () => {
         <div className="orderbook-table">
           <div className="orderbook-headings">
             <span>Price (USDT)</span>
-            <span>Amount (BTC)</span>
+            <span>Amount (wBTC)</span>
             <span>Total</span>
           </div>
 
