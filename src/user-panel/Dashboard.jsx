@@ -81,15 +81,53 @@ const Dashboard = () => {
     navigate("/login", { replace: true });
   };
 
+  /* ✅ NEW: Handle Deposit Submit */
+  const handleDepositSubmit = () => {
+    if (!depositData.gateway || !depositData.wallet) {
+      setPopupMsg("Please select gateway and wallet type!");
+      setShowPopup(true);
+      return;
+    }
+
+    // For now, just show success
+    setPopupMsg("Deposit submitted successfully!");
+    setShowPopup(true);
+    setShowDepositPreview(false);
+
+    // Reset
+    setDepositData({
+      amount: "",
+      currency: "",
+      gateway: "",
+      wallet: "",
+    });
+  };
+
+  /* ✅ NEW: Handle Withdraw Submit */
+  const handleWithdrawSubmit = () => {
+    if (!withdrawData.gateway || !withdrawData.wallet) {
+      setPopupMsg("Please select gateway and wallet type!");
+      setShowPopup(true);
+      return;
+    }
+
+    setPopupMsg("Withdraw submitted successfully!");
+    setShowPopup(true);
+    setShowWithdrawPreview(false);
+
+    setWithdrawData({
+      amount: "",
+      currency: "",
+      gateway: "",
+      wallet: "",
+    });
+  };
+
   return (
     <div className="dash-main-container">
       {/* Header */}
       <div className="dash-header">
-        {/* ✅ Dynamic user name */}
         <h2>Welcome, {user?.firstName || user?.username || user?.email}</h2>
-
-        {/* Logout button (optional) */}
-        {/* <button className="btn btn-nav" onClick={handleLogout}>Logout</button> */}
       </div>
 
       {/* Stats */}
@@ -235,6 +273,7 @@ const Dashboard = () => {
           data={depositData}
           onClose={() => setShowDepositPreview(false)}
           onChange={setDepositData}
+          onSubmit={handleDepositSubmit} // ✅ added
         />
       )}
 
@@ -245,6 +284,7 @@ const Dashboard = () => {
           data={withdrawData}
           onClose={() => setShowWithdrawPreview(false)}
           onChange={setWithdrawData}
+          onSubmit={handleWithdrawSubmit} // ✅ added
         />
       )}
 
@@ -261,7 +301,8 @@ const Dashboard = () => {
   );
 };
 
-const PreviewModal = ({ title, data, onClose, onChange }) => (
+/* ✅ UPDATED PreviewModal */
+const PreviewModal = ({ title, data, onClose, onChange, onSubmit }) => (
   <div className="side-modal-overlay">
     <div className="side-modal">
       <div className="preview-header">
@@ -305,11 +346,13 @@ const PreviewModal = ({ title, data, onClose, onChange }) => (
           </select>
         </div>
 
-        <button className="preview-submit-btn">Submit</button>
+        {/* ✅ Added onClick */}
+        <button className="preview-submit-btn" onClick={onSubmit}>
+          Submit
+        </button>
       </div>
     </div>
   </div>
 );
-
 
 export default Dashboard;
