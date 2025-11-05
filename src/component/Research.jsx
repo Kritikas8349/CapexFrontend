@@ -84,13 +84,13 @@ function Research() {
             <style>
                 {`
     .research-section {
-      background: linear-gradient(to right, #ebefee 61%, #493FFD 35%);
+      background: linear-gradient(to right, #a2bae5ff 61%, #493FFD 35%);
     }
 
     /* Mobile + Tablet (up to 991.98px = Bootstrap md breakpoint) */
     @media (max-width: 991.98px) {
       .research-section {
-        background: linear-gradient(to bottom, #ebefee 80%, #493FFD 20%);
+        background: linear-gradient(to bottom, #a2bae5ff 80%, #493FFD 20%);
       }
     }
   `}
@@ -139,8 +139,9 @@ function Research() {
             </div>
             {/* ---------For YouTube Videos------------ */}
 
-            <div className="container py-5  my-5">
-                <div className="d-flex align-items-center mb-4">
+            <div className=" py-5  my-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container">
+                    <div className="d-flex align-items-center mb-4">
                     <h2 className="fw-bold fs-1 text-heading  me-2">Discover More Episodes</h2>
                     <i className="bi bi-youtube text-danger fs-2"></i>
                 </div>
@@ -206,13 +207,15 @@ function Research() {
                         </div>
                     </div>
                 </div>
+                </div>
 
             </div>
 
             {/* ----------For youTube Shorts--------------- */}
 
-            <div className="container py-2 bg-home">
-                <div className="d-flex align-items-center mb-4">
+            <div className=" py-2 bg-home border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container">
+                    <div className="d-flex align-items-center mb-4">
                     <h2 className="fw-bold fs-1 text-heading me-2">Discover More Episodes</h2>
                     <i className="bi bi-youtube text-danger fs-2"></i>
                 </div>
@@ -220,14 +223,14 @@ function Research() {
                 {/* Horizontal Scrollable Row */}
                 <div
                     className="row justify-content-center"
-                    // style={{
-                    //     display: 'flex',
-                    //     overflowX: 'auto',
-                    //     gap: '15px',
-                    //     paddingBottom: '8px',
-                    //     WebkitOverflowScrolling: 'touch',
-                    //     scrollBehavior: 'smooth',
-                    // }}
+                // style={{
+                //     display: 'flex',
+                //     overflowX: 'auto',
+                //     gap: '15px',
+                //     paddingBottom: '8px',
+                //     WebkitOverflowScrolling: 'touch',
+                //     scrollBehavior: 'smooth',
+                // }}
                 >
                     {episodes.map((episode) => {
                         const videoId = episode.youtubeLink.split('/shorts/')[1]?.split('?')[0];
@@ -242,7 +245,7 @@ function Research() {
                                     flexShrink: 0,
                                 }}
                             >
-                                <div 
+                                <div
                                     style={{
                                         position: 'relative',
                                         paddingBottom: '177%',
@@ -270,13 +273,15 @@ function Research() {
                         );
                     })}
                 </div>
+                </div>
             </div>
-            
+
 
 
             {/* ---------For Daily Analysis podcast---------------------- */}
-            <div className="container  p-3 my-2 py-lg-5 align-content-center">
-                <div className="row align-items-center p-3 py-lg-5  px-sm-2">
+            <div className="  p-3 my-2 py-lg-5 align-content-center border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container">
+                    <div className="row align-items-center p-3 py-lg-5  px-sm-2">
                     <div className="col-md-8 col-lg-6 text-start">
                         <h1 className="text-heading fs-1 fw-bold mb-4">Daily Analysis Podcast <span className='bi bi-spotify text-success'></span></h1>
                         <p className='text-secondary fs-4'>Catch up on the key trends, breaking news, and market moves with our daily Trading Analysis Podcast—your quick, essential market recap.</p>
@@ -285,18 +290,20 @@ function Research() {
                         </Link>
                     </div>
                     <div className="col-md-6 col-lg-6 text-center position-relative ">
-                        <div className="card bg-light mt-3  p-3 ">
+                        <div className="card  bg-light mt-3  p-3 ">
                             <img src="/pho.avif" alt="" srcset="" className='bg-white' width={"130px"} height={"140px"} />
                             <span className='bi bi-spotify position-absolute top-0 end-0 me-2'></span>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
 
 
             {/* -----------Daily Research Artical----------------- */}
-            <div className="container py-5 mb-5 tr-container">
-                {/* Heading */}
+            <div className=" py-5 mb-5 tr-container border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container">
+                    {/* Heading */}
                 <h2 className="fw-bold text-heading display-6 display-md-5 text-center mb-4">
                     Daily Research Articles
                 </h2>
@@ -337,13 +344,14 @@ function Research() {
                         View More
                     </Link>
                 </div>
+                </div>
             </div>
 
 
 
 
             {/* -------------Investment Research---------- */}
-            <section className=" border py-2 align-content-center py-lg-2 my-1 ir-container">
+            <section className=" border py-2 align-content-center py-lg-2 my-1 ir-container border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="row g-4 px-4 align-items-center">
                     {/* Image Column */}
                     <div className="col-12 col-lg-6 text-center">
@@ -414,7 +422,7 @@ function Research() {
                 </div>
             </section>
             {/* -------------Economic Calender--------        */}
-            <section className=" border align-content-center  py-lg-5   p-lg-5 p-5 ec-container ">
+            <section className=" border align-content-center  py-lg-5   p-lg-5 p-5 ec-container border border-3 my-lg-2 mx-lg-3 rounded rounded-4 ">
                 <div className="row my-5 my-lg-5 g-6 align-items-center">
 
                     {/* Text and Button Column */}

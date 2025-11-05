@@ -104,7 +104,7 @@ function IBOverview() {
 
             {/* ------------------- */}
             <section
-                className="container-fluid bg-home  my-5 d-flex align-items-center"
+                className=" bg-home  my-5 d-flex align-items-center border border-3 my-lg-2 mx-lg-3 rounded rounded-4"
                 style={{ minHeight: "85vh" }}
             >
                 <div className="container">
@@ -139,7 +139,7 @@ function IBOverview() {
 
             {/* ----Introducing Broker------ */}
 
-            <section className="container-fluid bg-home border border-bottom border-primary py-5">
+            <section className=" bg-home  py-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="row align-items-center g-3 px-lg-5">
                     {/* Text Column */}
                     <div className="col-lg-6 text-start p-4">
@@ -176,8 +176,9 @@ function IBOverview() {
             </section>
 
             {/* -------Who Should join ------------ */}
-            <section className="container-fluid bg-home py-5">
-                <div className="row align-items-center g-3 px-lg-5">
+            <section className=" bg-home py-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container">
+                    <div className="row align-items-center g-3 px-lg-5">
                     {/* Cards Column */}
                     <div className="col-lg-6 ">
                         <div className="row g-4 justify-content-center">
@@ -212,11 +213,13 @@ function IBOverview() {
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* ------Convert More Client ------- */}
-            <section className="container-fluid border-color  bg-home   py-5">
-                <div className="row align-items-center g-3 px-lg-5 py-4">
+            <section className=" border-color  bg-home   py-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container">
+                    <div className="row align-items-center g-3 px-lg-5 py-4">
                     {/* Text Column */}
                     <div className="col-lg-6 text-start">
                         <h3 className='btn btn-outline-primary fw-bold border-2'>REFERRAL PROMOTIONS</h3>
@@ -238,10 +241,11 @@ function IBOverview() {
                         />
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* ---------How to join---------- */}
-            <div className="container-fluid py-5 bg-home">
+            <div className=" py-5 bg-home border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     <h1 className='text-center fw-bold'>How to join <span className='text-heading'>Market Trad Partners?</span></h1>
                     {/* --Step1-- */}
@@ -313,7 +317,7 @@ function IBOverview() {
                 </div>
             </div>
             {/* ---------Partners Commission Plan Table----------   */}
-            <section className=" my-5">
+            <section className=" my-5 ">
                 <h1 className=" fw-bold text-heading mb-4">Partner Commission Plan</h1>
                 <div className="table-responsive mt-4" >
                     <table className="table table-bordered  align-middle">

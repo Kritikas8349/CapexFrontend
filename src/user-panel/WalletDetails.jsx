@@ -15,7 +15,7 @@ export default function WalletDetails() {
     // ... baki coins
   };
 
-  const wallet = walletData[symbol] || { name: symbol, img: "/defaultcoin.png" };
+  const wallet = walletData[symbol] || { name: symbol, img: "/dai.png" };
 
   const stats = [
     { title: "Open Order", value: 0, icon: <FaShoppingCart color="#FFB400" /> },
@@ -40,8 +40,13 @@ export default function WalletDetails() {
       </div>
 
       <div className="wallet-balance-section">
-        <div className="coin-card">
-          <img src={wallet.img} alt={symbol} className="coin-img" />
+        <div className="coin-card text-center">
+          <img
+  src={wallet.img}
+  alt={symbol}
+  className="coin-img d-block mx-auto"
+ />
+
           <h3>{wallet.name}</h3>
           <p>{symbol}</p>
           <div className="balances">

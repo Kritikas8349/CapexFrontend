@@ -141,14 +141,14 @@ function CopyTrader() {
 
 
             {/* ---------How to Copy Trade---------   */}
-            <div className="container-fluid bg-home align-content-center border py-0 py-lg-5 py-md-5 my-3" >
+            <div className=" bg-home align-content-center border py-0 py-lg-5 py-md-5 my-3 border border-3 my-lg-2 mx-lg-3 rounded rounded-4" >
                 <div className="container py-0 py-lg-5 py-md-5">
                     <h1 className='text-start display-4 fw-bold'><span className='text-heading'>Key features of</span> BlackBull CopyTrader</h1>
                     <div className="row align-items-center  py-5 border-primary rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
 
-                            <p className="text-secondary mt-3 fs-5">
+                            <p className="text-secondary mt-3 fs-5 lh-lg">
                                 BlackBull CopyTrader is an award-winning platform designed to connect traders to elite fund managers with a track record of success and proven trading strategies.<br />You can copy-trade with confidence on the BlackBull CopyTrader platform by using its advanced risk management features that let you determine exactly how you want to deploy your funds.
                             </p>
                         </div>
@@ -169,7 +169,7 @@ function CopyTrader() {
                 </div>
             </div>
             {/* -----Award-winning Platform----------     */}
-            <div className="container-fluid bg-home border py-2 py-lg-5 py-md-5">
+            <div className=" bg-home border py-2 py-lg-5 py-md-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
                     {/* Content Row */}
                     <div className="row align-items-center border-primary rounded p-4">
@@ -306,7 +306,7 @@ function CopyTrader() {
 
 
             {/* -----How to Start-------     */}
-            <div className="container-fluid py-2 py-lg-3 py-md-5">
+            <div className="container-fluid py-2 py-lg-3 py-md-5 ">
                 <div className="container text-start">
                     <h1 className="text-heading-emphasis fw-bold">How to get started?</h1>
                     <p className='mt-2 fs-5'>Before Joining BlackBull CopyTrader, you will need a BlackBull Markets account. Sign up in less than 5 minutes to get started.</p>

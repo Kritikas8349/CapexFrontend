@@ -25,7 +25,7 @@ function CTrader() {
                 }
 
             </style>
-            <div className=" bg-home text-white py-5 py-lg-4 py-md-4 trading-view my-lg-2 mx-lg-3 rounded rounded-3 min-vh-90">
+            <div className=" bg-page text-white py-5 py-lg-4 py-md-5 trading-view my-lg-2 mx-lg-3 rounded rounded-3 min-vh-90">
                 <div className="container">
                     <div className="row align-items-center mt-5">
 
@@ -116,7 +116,7 @@ function CTrader() {
 
             {/* ----------- WHy choose CTrader ----------- */}
 
-            <div className=" bg-home text-black py-2 py-lg-5 py-md-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+            <div className=" bg-page text-black py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center g-5">
 
@@ -178,7 +178,7 @@ function CTrader() {
             </div>
 
             {/* -------How to Trade--------- */}
-            <div className=" bg-home align-content-center py-2 py-lg-5 py-md-5 " >
+            <div className=" bg-page align-content-center py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4 " >
                 <div className="container py-1 py-lg-5 py-md-5">
                     <div className="row align-items-center  py-5 border-color rounded p-4">
                         {/* Left Section */}
@@ -211,7 +211,7 @@ function CTrader() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5">
+            <div className=" bg-page py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container rounded-4 p-3 py-1 py-lg-5 py-md-5">
                     <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
@@ -299,9 +299,9 @@ function CTrader() {
 
 
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border py-2 py-lg-5 py-md-5 " >
+            <div className=" bg-page align-content-center border py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4 " >
                 <div className="container py-2 py-lg-5 py-md-5">
-                    <div className="row align-items-center  py-5 border-color rounded p-4">
+                    <div className="row align-items-center  py-5  rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-heading">
@@ -330,7 +330,7 @@ function CTrader() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-3 py-lg-5 py-md-5 my-1">
+            <div className=" bg-page py-3 py-lg-5 py-md-5 my-1  my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container rounded-4 p-3 py-3 py-lg-5 py-md-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}

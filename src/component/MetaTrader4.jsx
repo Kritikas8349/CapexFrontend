@@ -131,7 +131,7 @@ function MetaTrader4() {
             </div>
             {/* ----------- WHy choose CTrader ----------- */}
 
-            <div className="container-fluid bg-home text-black py-2 py-lg-5 py-md-5">
+            <div className=" bg-page text-black py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container py-2 py-lg-5 py-md-5">
                     <div className="row align-items-center  g-5">
 
@@ -189,9 +189,9 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* -------How to Trade--------- */}
-            <div className="container-fluid bg-home align-content-center border " >
+            <div className=" bg-page align-content-center border  my-lg-2 mx-lg-3 rounded rounded-4 " >
                 <div className="container">
-                    <div className="row align-items-center border py-5 border-primary rounded p-4">
+                    <div className="row align-items-center  py-5  rounded p-4">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold">
@@ -222,7 +222,7 @@ function MetaTrader4() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className="container-fluid bg-home py-2 py-lg-5 py-md-5">
+            <div className=" bg-page py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
                     <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
@@ -308,7 +308,7 @@ function MetaTrader4() {
                 </div>
             </div>
             {/* --------Why Market Trad Markets?-------- */}
-            <div className="container-fluid bg-home align-content-center border " >
+            <div className=" bg-page align-content-center  my-lg-2 mx-lg-3 rounded rounded-4 " >
                 <div className="container">
                     <div className="row align-items-center border py-5 border-primary rounded p-4">
                         {/* Left Section */}
@@ -339,7 +339,7 @@ function MetaTrader4() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className="container-fluid bg-home py-3 py-lg-5 py-md-5 my-1">
+            <div className=" bg-page py-3 py-lg-5 py-md-5 my-1  my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}

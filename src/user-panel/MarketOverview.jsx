@@ -149,7 +149,7 @@ function MarketOverview() {
   return (
     <div className="dashboard-container text-white py-5">
       {/* ---top---- */}
-      <div className="container  px-md-5">
+      <div className="  px-md-5">
         {/* Heading */}
         <div className="text-start mb-5">
           <h3 className="fw-bold text-heading">Markets Overview</h3>
@@ -193,78 +193,86 @@ function MarketOverview() {
           ))}
         </div>
       </div>
-      <div className="container-fluid card-bg">
-        <div className="container card-bg px-lg-4 px-md-4 mt-5 py-5 text-white" >
-          {/* Tabs and Search Bar */}
-          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 ">
-            <div className="d-flex mb-3 mb-md-0">
-              {["All", "Crypto", "Fiat"].map((tab) => (
-                <button
-                  key={tab}
-                  className={`btn btn-sm me-2 fw-semibold ${activeTab === tab ? "btn-nav" : "btn-outline-secondary"
-                    }`}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab === "Crypto" && <i className="me-2 bi bi-currency-bitcoin"></i>}
-                  {tab}
-                </button>
-              ))}
-            </div>
-            <div className="input-group w-100 w-md-50" style={{ maxWidth: "350px" }}>
-              <span className="input-group-text bg-tarsnsparent border-secondary text-dark">
-                <BsSearch />
-              </span>
-              <input
-                type="text"
-                className="form-control bg-tarnsparent text-dark border-secondary"
-                placeholder="Search here..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
-            </div>
-          </div>
-
-          {/* Table */}
-          <div className="table-responsive rounded rounded-3">
-            <table className="table dashboard-container table-hover align-middle text-center rounded rounded-4">
-              <thead className="py-3 ">
-                <tr className="py-5"  >
-                  <th className="text-secondary fw-midium">Pair</th>
-                  <th className="text-secondary fw-midium">Price</th>
-                  <th className="text-secondary fw-midium">1h Change</th>
-                  <th className="text-secondary fw-midium">24h Change</th>
-                  <th className="text-secondary fw-midium">Marketcap</th>
-                  <th className="text-secondary fw-medium">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-
-                {filteredCoins.map((coin, index) => (
-                  <tr key={index}>
-                    <td className="d-flex align-items-center justify-content-center gap-2">
-                      <img
-                        src={coin.icon}
-                        alt={coin.pair}
-                        width="32"
-                        height="32"
-                        style={{ borderRadius: "50%" }}
-                      />
-                      <span>{coin.pair}</span>
-                    </td>
-                    <td className="text-danger">{coin.price}</td>
-                    <td className="text-danger">{coin.change1h}</td>
-                    <td className="text-success">{coin.change24h}</td>
-                    <td>{coin.marketcap}</td>
-                    <td>
-                      <button onClick={tradeClick} className="btn b btn-nav">Trade</button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <div className=" card-bg py-5">
+  <div className=" card-bg px-lg-4 px-md-4 text-white">
+    {/* Tabs and Search Bar */}
+    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3">
+      {/* Tabs */}
+      <div className="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+        {["All", "Crypto", "Fiat"].map((tab) => (
+          <button
+            key={tab}
+            className={`btn btn-sm fw-semibold ${
+              activeTab === tab ? "btn-nav" : "btn-outline-secondary"
+            }`}
+            onClick={() => setActiveTab(tab)}
+          >
+            {tab === "Crypto" && <i className="me-2 bi bi-currency-bitcoin"></i>}
+            {tab}
+          </button>
+        ))}
       </div>
+
+      {/* Search Bar */}
+      <div className="input-group" style={{ maxWidth: "350px", width: "100%" }}>
+        <span className="input-group-text bg-transparent border-secondary text-dark">
+          <BsSearch />
+        </span>
+        <input
+          type="text"
+          className="form-control bg-transparent text-dark border-secondary"
+          placeholder="Search here..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+    </div>
+
+    {/* Table */}
+    <div className=" container-fluid table-responsive rounded rounded-3">
+      <table className="table table-hover align-middle text-center rounded rounded-4">
+        <thead className="table-dark">
+          <tr>
+            <th className="text-secondary fw-medium">Pair</th>
+            <th className="text-secondary fw-medium">Price</th>
+            <th className="text-secondary fw-medium">1h Change</th>
+            <th className="text-secondary fw-medium">24h Change</th>
+            <th className="text-secondary fw-medium">Marketcap</th>
+            <th className="text-secondary fw-medium">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredCoins.map((coin, index) => (
+            <tr key={index}>
+              <td>
+                <div className="d-flex align-items-center justify-content-center gap-2">
+                  <img
+                    src={coin.icon}
+                    alt={coin.pair}
+                    width="32"
+                    height="32"
+                    className="rounded-circle"
+                  />
+                  <span>{coin.pair}</span>
+                </div>
+              </td>
+              <td className="text-danger">{coin.price}</td>
+              <td className="text-danger">{coin.change1h}</td>
+              <td className="text-success">{coin.change24h}</td>
+              <td>{coin.marketcap}</td>
+              <td>
+                <button onClick={tradeClick} className="btn btn-sm btn-nav">
+                  Trade
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 
 
     </div>

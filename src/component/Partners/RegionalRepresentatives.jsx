@@ -31,7 +31,7 @@ function RegionalRepresentatives() {
         </div>
       </div>
       {/* -----Key Fetures -------- */}
-      <div className="container-fluid bg-home py-3 py-lg-5 py-md-5">
+      <div className=" bg-home py-3 py-lg-5 py-md-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
         <div className="container py-3 py-lg-5 py-md-5">
           <h1 className="text-center text-heading mb-5">
             Key Features Of Our Becoming A Regional Representative

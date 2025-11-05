@@ -116,7 +116,7 @@ function InvestmentResearch() {
 
             {/* --------Daily News ---------- */}
 
-            <div className="container-fluid  py-2 py-lg-5 py-md-5 bg-home">
+            <div className=" py-2 py-lg-5 py-md-5 bg-home border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container ">
                     {/* Section Header */}
                     <div className="text-start text-lg-center text-md-center mb-4">
@@ -165,7 +165,7 @@ function InvestmentResearch() {
             </div>
             {/* --------Choose Your Plan ------------ */}
 
-            <div className="container-fluid  py-2 py-lg-5 py-md-5 " >
+            <div className="  py-2 py-lg-5 py-md-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4 " >
                 <div className="container text-center">
                     {/* Heading */}
                     <h2 className="fw-bold text-heading text-start display-6">Choose Your Plan</h2>

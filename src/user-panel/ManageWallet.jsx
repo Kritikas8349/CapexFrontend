@@ -1,130 +1,113 @@
 import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
-import { useNavigate } from "react-router-dom"; 
-import "./ManageWallet.css";
+import { useNavigate } from "react-router-dom";
 
 export default function ManageWallets() {
   const navigate = useNavigate();
 
   const wallets = [
-     { id: 1, name: "XRP", symbol: "XRP", img: "./xrp.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 2, name: "Australian Dollar", symbol: "AUD", img: "./australiandollar.png", available: "A$0.0000", inOrder: "A$0.0000", total: "A$0.0000" },
+    { id: 1, name: "Bitcoin", symbol: "BTC", img: "./bitcoin.jpg", available: "₿0.0000", inOrder: "₿0.0000", total: "₿0.0000" },
+    { id: 2, name: "Ethereum", symbol: "ETH", img: "./eth.png", available: "Ξ0.0000", inOrder: "Ξ0.0000", total: "Ξ0.0000" },
     { id: 3, name: "Tether", symbol: "USDT", img: "./tedher.png", available: "₮0.0000", inOrder: "₮0.0000", total: "₮0.0000" },
-    { id: 4, name: "Binance USD", symbol: "BUSD", img: "./binanceusd.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 5, name: "Dai", symbol: "DAI", img: "./dai.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 6, name: "TrueUSD", symbol: "TUSD", img: "./tureusd.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 7, name: "Polkadot", symbol: "DOT", img: "./polkadot.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 8, name: "Japanese Yen", symbol: "JPY", img: "./japneseyen.jpg", available: "¥0.0000", inOrder: "¥0.0000", total: "¥0.0000" },
+    { id: 4, name: "BNB", symbol: "BNB", img: "./bnb.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
+    { id: 5, name: "Solana", symbol: "SOL", img: "./solana.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
+    { id: 6, name: "Polygon", symbol: "MATIC", img: "./polygon.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
+    { id: 7, name: "Cardano", symbol: "ADA", img: "./cardano.jpg", available: "₳0.0000", inOrder: "₳0.0000", total: "₳0.0000" },
+    { id: 8, name: "Litecoin", symbol: "LTC", img: "./litecoin.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
     { id: 9, name: "TRON", symbol: "TRX", img: "./tron.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 10, name: "Pound Sterling", symbol: "GBP", img: "./poundstrling.jpg", available: "£0.0000", inOrder: "£0.0000", total: "£0.0000" },
-    { id: 11, name: "Cardano", symbol: "ADA", img: "./cardano.jpg", available: "₳0.0000", inOrder: "₳0.0000", total: "₳0.0000" },
-    { id: 12, name: "Canadian Dollar", symbol: "CAD", img: "./canadiandollar.png", available: "C$0.0000", inOrder: "C$0.0000", total: "C$0.0000" },
-    { id: 13, name: "BNB", symbol: "BNB", img: "./bnb.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 14, name: "Bitcoin Cash", symbol: "BCH", img: "./bitcoincash.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 15, name: "Bitcoin", symbol: "BTC", img: "./bitcoin.jpg", available: "₿0.0000", inOrder: "₿0.0000", total: "₿0.0000" },
-    { id: 16, name: "Shiba Inu", symbol: "SHIB", img: "./shiba.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 17, name: "Taka", symbol: "BDT", img: "./taka.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 18, name: "Toncoin", symbol: "TON", img: "./toncoin.png", available: "t0.0000", inOrder: "t0.0000", total: "t0.0000" },
-    { id: 19, name: "South Korean Won", symbol: "KRW", img: "./southkoreanwon.png", available: "₩0.0000", inOrder: "₩0.0000", total: "₩0.0000" },
-    { id: 20, name: "Litecoin", symbol: "LTC", img: "./litecoin.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 21, name: "Polygon", symbol: "MATIC", img: "./polygon.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 22, name: "Indian Rupee", symbol: "INR", img: "./rupee.jpg", available: "₹0.0000", inOrder: "₹0.0000", total: "₹0.0000" },
-    { id: 23, name: "Solana", symbol: "SOL", img: "./solana.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 24, name: "Euro", symbol: "EUR", img: "./euro.jpg", available: "€0.0000", inOrder: "€0.0000", total: "€0.0000" },
-    { id: 25, name: "XRP", symbol: "XRP", img: "./xrp.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 26, name: "Australian Dollar", symbol: "AUD", img: "./australiandollar.png", available: "A$0.0000", inOrder: "A$0.0000", total: "A$0.0000" },
-    { id: 27, name: "Tether", symbol: "USDT", img: "./tedher.png", available: "₮0.0000", inOrder: "₮0.0000", total: "₮0.0000" },
-    { id: 28, name: "Binance USD", symbol: "BUSD", img: "./binanceusd.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 29, name: "Dai", symbol: "DAI", img: "./dai.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 30, name: "TrueUSD", symbol: "TUSD", img: "./tureusd.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 31, name: "Polkadot", symbol: "DOT", img: "./polkadot.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 32, name: "Japanese Yen", symbol: "JPY", img: "./japneseyen.jpg", available: "¥0.0000", inOrder: "¥0.0000", total: "¥0.0000" },
-    { id: 33, name: "TRON", symbol: "TRX", img: "./tron.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
-    { id: 34, name: "Pound Sterling", symbol: "GBP", img: "./poundstrling.jpg", available: "£0.0000", inOrder: "£0.0000", total: "£0.0000" }
-
+    { id: 10, name: "XRP", symbol: "XRP", img: "./xrp.jpg", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
   ];
 
-    const [currentPage, setCurrentPage] = useState(1);
-  const [activeTab, setActiveTab] = useState("Spot");
-  const walletsPerPage = 10;
+  const [currentPage, setCurrentPage] = useState(1);
+  const walletsPerPage = 5;
+  const totalPages = Math.ceil(wallets.length / walletsPerPage);
 
-  // Shuffle array function
-  const shuffleArray = (arr) => [...arr].sort(() => Math.random() - 0.5);
-
-  // Get wallets depending on tab
-  const getWalletsForTab = () => {
-    if (activeTab === "Spot") return wallets;
-    if (activeTab === "Funding") return shuffleArray(wallets);
-    if (activeTab === "Future") return shuffleArray(wallets);
-  };
-
-  const currentWallets = getWalletsForTab().slice(
+  const currentWallets = wallets.slice(
     (currentPage - 1) * walletsPerPage,
     currentPage * walletsPerPage
   );
 
-  const totalPages = Math.ceil(getWalletsForTab().length / walletsPerPage);
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-    setCurrentPage(1);
-  };
-
   return (
-    <div className="wallet-container">
-      <div className="wallet-wrapper">
-        {/* <h1 className="wallet-title">Wallet</h1> */}
+    <div className="container-fluid px-lg-5 py-4 py-md-5">
+      {/* Header */}
+      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+        <h3 className="fw-bold text-dark text-center text-md-start mb-3 mb-md-0">
+          Manage Wallets
+        </h3>
+        <button className="btn btn-primary px-4 py-2 fw-semibold rounded-pill shadow-sm">
+          Spot Wallet
+        </button>
+      </div>
 
-        <div className="wallet-tabs d-flex justify-content-between mx-4 px-5">
-          <h2 className="">Wallet</h2>
-          <button className="btn btn-nav1 px-4" >Spot</button>
-
-          {/* <button className={activeTab === "Spot" ? "tab active" : "tab"} onClick={() => handleTabClick("Spot")}>Spot</button> */}
-          {/* <button className={activeTab === "Funding" ? "tab active" : "tab"} onClick={() => handleTabClick("Funding")}>Funding</button>
-          <button className={activeTab === "Future" ? "tab active" : "tab"} onClick={() => handleTabClick("Future")}>Future</button> */}
+      {/* Table Container */}
+      <div className="bg-white shadow-sm rounded-4 p-3 p-md-4">
+        {/* Table Header (Desktop Only) */}
+        <div className="d-none d-md-flex border-bottom pb-2 mb-2 fw-semibold text-muted small">
+          <div className="col-md-3">Currency</div>
+          <div className="col-md-2 text-center">Available</div>
+          <div className="col-md-2 text-center">In Order</div>
+          <div className="col-md-2 text-center">Total</div>
+          <div className="col-md-3 text-end">Action</div>
         </div>
 
-        <div className="wallet-card">
-          <div className="wallet-header">
-            <span>Currency</span>
-            <span>Available Balance</span>
-            <span>In Order</span>
-            <span>Total Balance</span>
-            <span>Action</span>
-          </div>
-
-          {currentWallets.map((w) => (
-            <div key={w.id} className="wallet-row">
-              <div className="wallet-info">
-                <img src={w.img} alt={w.symbol} className="wallet-icon" />
-                <div className="wallet-names">
-                  <h6 className="wallet-name">{w.name}</h6>
-                  <small className="wallet-symbol">{w.symbol}</small>
-                </div>
+        {/* Table Rows */}
+        {currentWallets.map((w) => (
+          <div
+            key={w.id}
+            className="row align-items-center py-3 border-bottom mx-0"
+          >
+            {/* Currency Column */}
+            <div className="col-12 col-md-3 d-flex align-items-center mb-2 mb-md-0">
+              <img
+                src={w.img}
+                alt={w.symbol}
+                className="me-3 rounded-circle border"
+                style={{ width: "40px", height: "40px", objectFit: "cover" }}
+              />
+              <div>
+                <div className="fw-semibold text-dark">{w.name}</div>
+                <small className="text-muted">{w.symbol}</small>
               </div>
-              <span className={w.available === "0.0000" ? "zero-balance" : ""}>{w.available}</span>
-              <span className={w.inOrder === "0.0000" ? "zero-balance" : ""}>{w.inOrder}</span>
-              <span className={w.total === "0.0000" ? "zero-balance" : ""}>{w.total}</span>
-              <button 
-                className="wallet-view-btn" 
+            </div>
+
+            {/* Balances */}
+            <div className="col-4 col-md-2 text-center small text-secondary fw-semibold">
+              {w.available}
+            </div>
+            <div className="col-4 col-md-2 text-center small text-secondary fw-semibold">
+              {w.inOrder}
+            </div>
+            <div className="col-4 col-md-2 text-center small text-secondary fw-semibold">
+              {w.total}
+            </div>
+
+            {/* Action Button */}
+            <div className="col-12 col-md-3 text-center text-md-end mt-3 mt-md-0">
+              <button
+                className="btn btn-outline-primary btn-sm rounded-pill px-3 py-1 d-inline-flex align-items-center"
                 onClick={() => navigate(`/wallet/${w.symbol}`)}
               >
-                <FaEye className="view-icon" /> View
+                <FaEye className="me-1" /> View
               </button>
             </div>
-          ))}
-
-          <div className="pagination">
-            {Array.from({ length: totalPages }, (_, i) => (
-              <button
-                key={i + 1}
-                className={currentPage === i + 1 ? "page-btn active" : "page-btn"}
-                onClick={() => setCurrentPage(i + 1)}
-              >
-                {i + 1}
-              </button>
-            ))}
           </div>
+        ))}
+
+        {/* Pagination */}
+        <div className="d-flex justify-content-center mt-4 flex-wrap gap-2">
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i + 1}
+              className={`btn btn-sm rounded-pill ${
+                currentPage === i + 1
+                  ? "btn-primary text-white"
+                  : "btn-outline-primary"
+              }`}
+              onClick={() => setCurrentPage(i + 1)}
+            >
+              {i + 1}
+            </button>
+          ))}
         </div>
       </div>
     </div>

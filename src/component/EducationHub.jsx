@@ -161,17 +161,17 @@ function EducationHub() {
       </div>
 
       {/* ----------For Learn Trad--------------------- */}
-      <div className='bg-home  align-content-center border border-3 py-3 py-md-5 py-lg-5 min-vh-100'  >
+      <div className='bg-page  align-content-center  py-3 py-md-5 py-lg-5 min-vh-100  my-lg-2 mx-lg-3 rounded rounded-4'  >
         <div className="container py-md-5 py-lg-5">
           <h1 className='text-heading fw-bold text-center mb-4 display-4'>Learn to Trade Courses</h1>
-          <div className='row justify-content-center'>
+          <div className='row justify-content-center mt-5'>
             {cardsData.map((card, index) => (
               <div className='col-12 col-md-6 col-lg-3 d-flex ' key={card.title}>
-                <div className='bg-white p-4 m-2 trade-card-border rounded w-100 shadow-sm'>
+                <div className='bg-white p-4 m-2 trade-card-border rounded w-100 shadow-lg custom-card'>
                   <h2 className='mb-3 fw-bold text-dark'>{card.title}</h2>
                   <p className='text-secondary mb-4'>{card.desc}</p>
                   <div className='d-flex flex-wrap input-group mt-auto justify-content-center'>
-                    <Link to={card.begpath} className='badge  text-white p-2 m-1 s1 text-decoration-none'>BEGINNER</Link>
+                    <Link to={card.begpath} className='badge  text-white p-2 m-1 s1 text-decoration-none  '>BEGINNER</Link>
                     <Link to={card.intpath} className='badge text-white p-2 m-1 s2 text-decoration-none'>MIDIUM</Link>
                     <Link to={card.advpath} className='badge  text-white p-2 m-1 s3 text-decoration-none'>PRO</Link>
                   </div>
@@ -184,7 +184,7 @@ function EducationHub() {
 
 
       {/* -------For Trading Platform------------------ */}
-      <section className="bg-home py-2 py-lg-5 py-md-5 mt-md-4">
+      <section className="bg-page py-2 py-lg-5 py-md-5 mt-md-4  my-lg-2 mx-lg-3 rounded rounded-4">
         <div className="container">
           <h1 className="text-center fw-bold mb-5 display-4  text-heading">Trading Platforms</h1>
 
@@ -192,7 +192,7 @@ function EducationHub() {
             {platforms.map((platform, index) => (
               <div className="col-md-6 col-lg-4 " key={index}>
                 <div className="border border-2 border-primary bg-opacity-10 rounded p-4 position-relative h-100">
-                  <div className="d-flex align-items-center  bg-home mb-3">
+                  <div className="d-flex align-items-center  bg-page mb-3">
                     <img
                       src={platform.icon}
                       alt={platform.name}
@@ -227,7 +227,7 @@ function EducationHub() {
 
 
       {/* -----------For TradingVideo----------------- */}
-      <div className="bg-home py-2 py-lg-5 py-md-5">
+      <div className="bg-page py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
         <div className="container">
           <div className="text-start mb-2 mb-lg-4 mb-md-4">
             <h1 className="fw-bold text-heading mb-3 text-sm-start display-4">Trading Video Tutorials</h1>
@@ -281,63 +281,65 @@ function EducationHub() {
 
 
       {/* ----------For Trading Opportu..------------ */}
-      <div className="container py-2 py-lg-5 py-md-5">
-  {/* Heading */}
-  <h2 className="fw-bold text-heading display-5 mb-4 text-center text-md-start">
-    Trading Opportunities
-  </h2>
+      <div className=" py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
+        <div className="container">
+          {/* Heading */}
+        <h2 className="fw-bold text-heading display-5 mb-4 text-center text-md-start">
+          Trading Opportunities
+        </h2>
 
-  {/* Row of Posts */}
-  <div className="row g-4">
-    {posts.map((post) => (
-      <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center " key={post.id}>
-        <div className="card border-0 custom-card h-100 shadow-sm rounded-3 overflow-hidden p-0">
-          {/* Image Section */}
-          <div className="ratio ratio-16x9">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="card-img-top object-fit-cover"
-            />
-          </div>
+        {/* Row of Posts */}
+        <div className="row g-4">
+          {posts.map((post) => (
+            <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center " key={post.id}>
+              <div className="card border-0 custom-card h-100 shadow-sm rounded-3 overflow-hidden p-0">
+                {/* Image Section */}
+                <div className="ratio ratio-16x9">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="card-img-top object-fit-cover"
+                  />
+                </div>
 
-          {/* Content Section */}
-          <div className="card-body p-3 d-flex flex-column justify-content-between">
-            <div>
-              <h5 className="fw-bold text-start text-dark mb-2">{post.title}</h5>
+                {/* Content Section */}
+                <div className="card-body p-3 d-flex flex-column justify-content-between">
+                  <div>
+                    <h5 className="fw-bold text-start text-dark mb-2">{post.title}</h5>
+                  </div>
+
+                  <div className="d-flex justify-content-between align-items-center mt-2 flex-wrap">
+                    <small className="text-secondary">{post.date}</small>
+                    <a
+                      href={post.link}
+                      className="text-heading text-decoration-none fw-semibold mt-2 mt-sm-0"
+                    >
+                      VIEW POST
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <div className="d-flex justify-content-between align-items-center mt-2 flex-wrap">
-              <small className="text-secondary">{post.date}</small>
-              <a
-                href={post.link}
-                className="text-heading text-decoration-none fw-semibold mt-2 mt-sm-0"
-              >
-                VIEW POST
-              </a>
-            </div>
-          </div>
+        {/* View More Button */}
+        <div className="text-center mt-5">
+          <Link
+            to="/education/research/opportunities"
+            className="btn btn-bg-start text-white fs-6 fw-semibold px-4 py-2"
+          >
+            View More
+          </Link>
+        </div>
         </div>
       </div>
-    ))}
-  </div>
-
-  {/* View More Button */}
-  <div className="text-center mt-5">
-    <Link
-      to="/education/research/opportunities"
-      className="btn btn-bg-start text-white fs-6 fw-semibold px-4 py-2"
-    >
-      View More
-    </Link>
-  </div>
-</div>
 
 
 
 
       {/* ---------For Past Webinar------------ */}
-      <div className="bg-home py-2 py-lg-5 py-md-5">
+      <div className="bg-page py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4 ">
         <div className="container">
           <div className="text-start mb-2 mb-lg-4 mb-md-4">
             <h1 className="fw-bold text-heading mb-3 display-4">Past Webinars</h1>
@@ -382,8 +384,9 @@ function EducationHub() {
 
 
       {/* ------For Spotify story/podcast------- */}
-      <section className="container align-content-center  mt-0 py-3 py-md-5 py-lg-5" >
-        <div className="row g-6 align-items-center py-md-5 py-lg-5 text-start">
+      <section className=" align-content-center  mt-0 py-3 py-md-5 py-lg-5  my-lg-2 mx-lg-3 rounded rounded-4" >
+        <div className="container">
+          <div className="row g-6 align-items-center py-md-5 py-lg-5 text-start">
           {/* Image Column */}
           <div className="col-lg-6 mb-4 mb-lg-0" >
             <img
@@ -416,6 +419,7 @@ function EducationHub() {
               Listen Now
             </Link>
           </div>
+        </div>
         </div>
       </section>
 

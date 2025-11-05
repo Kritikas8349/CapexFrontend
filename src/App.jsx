@@ -30,7 +30,7 @@ import CommoditiesTutorials from "./component/CommoditiesTutorials";
 import Education_Com_Beginner from "./component/SubPages/Education_Com_Beginner";
 import Education_Com_Intermediate from "./component/SubPages/Education_Com_Intermediate";
 import Education_Com_Advance from "./component/SubPages/Educaiton_Com_Advance";
-//  import EconomicCalendar from "./component/EconomicCalendar"; 
+// import EconomicCalendar from "./component/EconomicCalendar"; 
 import Research from "./component/Research";
 import TradingOpportunity from "./component/SubPages/TradingOpportunity";
 import InvestmentResearch from "./component/SubPages/InvestmentResearch";
@@ -211,7 +211,7 @@ function App() {
   const isDashboardPage = location.pathname.startsWith("/userdashboard") ||
     location.pathname.startsWith("/profile") ||
     location.pathname.startsWith("/change-password") ||
-    location.pathname.startsWith("/manage-order") ||  
+    location.pathname.startsWith("/manage-order") ||
     location.pathname.startsWith("/manage-wallet") ||
     location.pathname.startsWith("/wallet") ||
     location.pathname.startsWith("/deposit-history") ||
@@ -237,8 +237,8 @@ function App() {
             <Route path="/create-account" element={<CreateAccount />} />
             <Route path="/quickstart/create-account" element={<CreateAccount />}></Route>
             {/* Aryan */}
-            {/* Quick Start */}
-            {/* <Route path="/quickstart/why-markets" element={<QuickStart />} />
+      {/* Quick Start */}
+      {/* <Route path="/quickstart/why-markets" element={<QuickStart />} />
             <Route path="/quickstart/assets" element={<QuickStart2 />} />
             <Route path="/quickstart/platform-options" element={<QuickStart3 />} />
             <Route path="/quickstart/account-types" element={<QuickStart4 />} />
@@ -252,6 +252,16 @@ function App() {
             <Route path="/" element={<PersonalHome />} />
             <Route path="/loginform" element={<LoginForm1 />} />
             <Route path="/create-account" element={<CreateAccount></CreateAccount>} />
+
+            {/* Quick Start */}
+            <Route path="/quickstart/why-markets" element={<QuickStart />} />
+            <Route path="/quickstart/assets" element={<QuickStart2 />} />
+            <Route path="/quickstart/platform-options" element={<QuickStart3 />} />
+            <Route path="/quickstart/account-types" element={<QuickStart4 />} />
+            <Route path="/quickstart/verify-account" element={<QuickStart5 />} />
+            <Route path="/quickstart/deposit-funds" element={<QuickStart6 />} />
+            <Route path="/quickstart/withdraw-funds" element={<QuickStart7 />} />
+            <Route path="/quickstart/create-account" element={<CreateAccount></CreateAccount>} />
 
             {/* Market Overview */}
             <Route path="/markets" element={<Market />} />
@@ -289,7 +299,7 @@ function App() {
             <Route path="/education/commodities/beginner" element={<Education_Com_Beginner />}></Route>
             <Route path="/education/commodities/intermediate" element={<Education_Com_Intermediate />}></Route>
             <Route path="/education/commodities/advanced" element={<Education_Com_Advance />}></Route>
-            <Route path="/support/economic-calendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
+            <Route path="/education/economic-calendar" element={<EconomicCalendar></EconomicCalendar>}></Route>
             <Route path="/education/research/hub" element={<Research></Research>}></Route>
             <Route path='/education/research/opportunities' element={<TradingOpportunity></TradingOpportunity>}></Route>
             <Route path="/education/research/investmenresearch" element={<InvestmentResearch></InvestmentResearch>}></Route>
@@ -420,7 +430,8 @@ function App() {
         </Layout>
       )}
 
-      <div className="app-container">
+      {/* Dashboard Section */}
+      {isDashboardPage && !location.pathname.startsWith("/trade") && (<div className="app-container">
         {!shouldHideSidebarAndNavbar && <Sidebar></Sidebar>}
 
         {isDashboardPage && (
@@ -449,11 +460,13 @@ function App() {
                 <Route index element={<TradePage />} />
                 <Route path="market-overview" element={<MarketOverview />} />
                 <Route path="crypto-currency" element={<CryptoCurrency />} />
+                <Route path="about-us" element={<AboutUs />} />
+                <Route path="contact" element={<ContactSupport />} />
               </Route>
             </Routes>
           </div>
         )}
-      </div>
+      </div>)}
     </div>
   );
 }

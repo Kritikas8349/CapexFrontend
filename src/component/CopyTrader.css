@@ -7,6 +7,10 @@
   border:1px solid #493FFD
 }
 
+.bg-page{
+  background-color: rgb(226, 226, 226);
+}
+
 /* Small screens (flipped gradient: white on top, blue bottom) */
 @media (max-width: 768px) {
   .gradient-bg {

@@ -141,7 +141,7 @@ function CryptoCurrency() {
   return (
     <div className="dashboard-container text-white py-5">
         {/* ---top---- */}
-      <div className="container   px-lg-5 px-md-5">
+      <div className="  px-lg-5 px-md-5">
         {/* Heading */}
         <div className=" row text-start mb-5">
           <div className="col">
@@ -174,7 +174,7 @@ function CryptoCurrency() {
         </div>
 
         {/* Responsive Cards */}
-        <div className="row g-4">
+        <div className="  row g-4">
           {wallets.map((wallet) => (
             <div key={wallet.top} className="col-12 col-sm-12 col-md-6 col-lg-4">
               <div className="card card-bg text-dark border-0 rounded-4 shadow-sm p-4 h-100 custom-card">
@@ -208,7 +208,7 @@ function CryptoCurrency() {
           ))}
         </div>
       </div>
-       <div className="container card-bg px-lg-4 px-md-4 mt-5 py-5 text-white" >
+       <div className=" card-bg px-lg-4 px-md-4 mt-5 py-5 text-white" >
       
 
       {/* Table */}

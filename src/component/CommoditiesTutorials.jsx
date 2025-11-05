@@ -84,7 +84,7 @@ function CommoditiesTutorials() {
         }
 
       </style>
-      <div className="bg-commodities  text-white py-5 mt-lg-2 mx-lg-3 rounded rounded-4">
+      <div className="bg-commodities  text-white py-5 mt-lg-2 mx-lg-3 rounded rounded-4 ">
         <div className="container bg-tranpraent pt-5" >
           {/* <h2 className="fw-bold bg-tranpraent text-white text-center display-5 mb-5">Commodities Tutorial</h2> */}
 
@@ -143,8 +143,9 @@ function CommoditiesTutorials() {
       </div>
 
       {/* ---------For multiple cards------------  */}
-      <div className="container  py-4">
-        <div className="row">
+      <div className="  py-4 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
+        <div className="container">
+          <div className="row">
           {lessons1.map((lesson, index) => (
             <div className="col-md-4 col-sm-6 mb-4" key={index}>
               <div className="position-relative" style={{ height: '200px', overflow: 'hidden' }}>
@@ -167,6 +168,7 @@ function CommoditiesTutorials() {
               <p className="fs-5 fw-bold mt-2">{lesson.title}</p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>

@@ -108,7 +108,7 @@ function TradingView() {
 
             {/* -------------How to get trading------------ */}
 
-            <div className=" border border-3 bg-home align-content-center py-3 py-lg-5 py-md-5 my-lg-2 mx-lg-3 rounded rounded-4 " >
+            <div className="  bg-page align-content-center py-3 py-lg-5 py-md-5 my-lg-2 mx-lg-3 rounded rounded-4 vh-100 " >
                 <div className="container">
                     <div className="row align-items-center border rounded p-2 p-lg-4 p-md-4">
                         {/* Left Section */}
