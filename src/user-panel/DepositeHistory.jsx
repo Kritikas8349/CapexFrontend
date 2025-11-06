@@ -3,6 +3,14 @@ import { BsSearch } from "react-icons/bs";
 
 function DepositeHistory() {
   const [search, setSearch] = useState("");
+  const rows = [
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", account:"-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", account:"-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", account:"-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", account:"-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", account:"-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", account:"-" },
+  ];
 
   return (
     <div className="container-fluid py-4 py-md-5 px-3 px-md-4 bg-light min-vh-100">
@@ -10,7 +18,7 @@ function DepositeHistory() {
       <div className="row align-items-center g-3 mb-4">
         {/* Title */}
         <div className="col-12 col-md-6 text-center text-md-start">
-          <h2 className="fw-semibold mb-0">Deposit History</h2>
+          <h2 className="fw-semibold text-heading mb-0">Deposit History</h2>
         </div>
 
         {/* Search Bar */}
@@ -30,34 +38,47 @@ function DepositeHistory() {
         </div>
       </div>
 
-      {/* ===== Table / Empty Section ===== */}
-      <div className="card border-0 shadow-sm rounded-3">
-        <div className="card-body p-3 p-md-4">
-          {/* Table Header (Desktop Only) */}
-          <div className="row fw-semibold border-bottom pb-2 mb-3 text-secondary d-none d-lg-flex">
-            <div className="col">Currency | Wallet</div>
-            <div className="col">Gateway | Txn ID</div>
-            <div className="col">Initiated</div>
-            <div className="col">Amount</div>
-            <div className="col">Status</div>
-            <div className="col">Action</div>
-          </div>
+     
 
-          {/* Empty State */}
-          <div
-            className="d-flex flex-column justify-content-center align-items-center text-center py-5"
-            style={{ minHeight: "300px" }}
-          >
-            <img
-              src="/emptybox.png"
-              alt="Empty Transactions"
-              className="img-fluid mb-3"
-              style={{ maxWidth: "120px", opacity: 0.85 }}
-            />
-            <p className="text-secondary mb-0 fs-6">No transactions found</p>
-          </div>
+       {/* Responsive Table */}
+        <div className="card table-responsive t">
+          <table className="table align-middle text-center mb-0">
+            <thead className="table-light">
+              <tr>
+                <th>Currency | Wallet</th>
+                <th>Gatway</th>
+                <th>Initiated</th>
+                <th>Ammount</th>
+                <th>Status</th>
+                <th>Account</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i}>
+                  <td>
+                    <div>{row.date}</div>
+                    <small className="text-muted">{row.pair}</small>
+                  </td>
+                  <td>
+                    <div>{row.side}</div>
+                    <small className="text-muted">{row.type}</small>
+                  </td>
+                  <td>
+                    <div>{row.amount}</div>
+                    <small className="text-muted">{row.rate}</small>
+                  </td>
+                  <td>
+                    <div>{row.charge}</div>
+                    <small className="text-muted">{row.total}</small>
+                  </td>
+                  <td>{row.filled}</td>
+                  <td>{row.account}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-      </div>
     </div>
   );
 }

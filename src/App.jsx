@@ -431,7 +431,7 @@ function App() {
       )}
 
       {/* Dashboard Section */}
-      {isDashboardPage && !location.pathname.startsWith("/trade") && (<div className="app-container">
+      <div className="app-container">
         {!shouldHideSidebarAndNavbar && <Sidebar></Sidebar>}
 
         {isDashboardPage && (
@@ -466,7 +466,7 @@ function App() {
             </Routes>
           </div>
         )}
-      </div>)}
+      </div>
     </div>
   );
 }

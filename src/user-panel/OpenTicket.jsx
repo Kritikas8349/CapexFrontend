@@ -44,24 +44,26 @@ function OpenTicket() {
   };
 
   return (
-    <div className="container py-4 py-md-5 py-lg-5 mx-0 rounded-3 dashboard-container h-100">
-      {/* Title */}
-      <div className="row align-items-center justify-content-between g-2 mb-2 py-md-3 py-lg-3">
-        <div className="d-flex justify-content-between">
-          <h3>Open Ticket</h3>
+    <div className="container-fluid border py-4 py-md-5 px-3 dashboard-container">
+     <div className="mx-3">
+       {/* Title Section */}
+      <div className="row align-items-center justify-content-between g-2 mb-4 ">
+        <div className="col-12 d-flex justify-content-between flex-wrap gap-2 my-3">
+          <h3 className="mb-0 fw-bold text-heading">Open Ticket</h3>
           <button className="btn btn-nav" onClick={() => navigate("/get-support")}>
             # My Tickets
           </button>
         </div>
       </div>
 
-      {/* Form */}
+      {/* Form Section */}
       <form
-        className="row align-items-center g-4 rounded rounded-2 text-start m-2 py-md-3 py-lg-3 table-data"
+        className="row g-4 p-3 rounded-3 text-start bg-white bg-opacity-50"
         onSubmit={handleSubmit}
       >
-        <div className="col-6">
-          <label className="form-label h5">Name</label>
+        {/* Name */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-semibold">Name</label>
           <input
             type="text"
             className="form-control bg-transparent border border-1"
@@ -72,8 +74,9 @@ function OpenTicket() {
           />
         </div>
 
-        <div className="col-6">
-          <label className="form-label h5">Email</label>
+        {/* Email */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-semibold">Email</label>
           <input
             type="email"
             className="form-control bg-transparent border border-1"
@@ -84,8 +87,9 @@ function OpenTicket() {
           />
         </div>
 
-        <div className="col-6">
-          <label className="form-label h5">Subject</label>
+        {/* Subject */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-semibold">Subject</label>
           <input
             type="text"
             className="form-control bg-transparent border border-1"
@@ -96,8 +100,9 @@ function OpenTicket() {
           />
         </div>
 
-        <div className="col-6">
-          <label className="form-label h5">Priority</label>
+        {/* Priority */}
+        <div className="col-12 col-md-6">
+          <label className="form-label fw-semibold">Priority</label>
           <select
             className="form-select bg-transparent border border-1"
             value={priority}
@@ -109,8 +114,9 @@ function OpenTicket() {
           </select>
         </div>
 
+        {/* Message */}
         <div className="col-12">
-          <label className="form-label h5">Message</label>
+          <label className="form-label fw-semibold">Message</label>
           <textarea
             className="form-control bg-transparent border border-1"
             rows="4"
@@ -121,29 +127,31 @@ function OpenTicket() {
           ></textarea>
         </div>
 
-        <div className="d-flex justify-content-between align-items-center">
-          <div>
-            <button
-              type="button"
-              className="btn btn-nav"
-              onClick={() => setShowFile(true)}
-            >
-              + Attachment
-            </button>
-          </div>
-          <div>
-            <button type="submit" className="btn btn-nav">
-              Submit
-            </button>
-          </div>
+        {/* Buttons */}
+        <div className="col-12 d-flex flex-wrap justify-content-between align-items-center gap-2">
+          <button
+            type="button"
+            className="btn btn-nav"
+            onClick={() => setShowFile(true)}
+          >
+            + Attachment
+          </button>
+
+          <button type="submit" className="btn btn-nav">
+            Submit
+          </button>
         </div>
 
-        <small className="mt-2">
-          Max 5 files | Max size: 128MB | Allowed: .jpg, .jpeg, .png, .pdf, .doc, .docx
-        </small>
+        {/* Info Text */}
+        <div className="col-12">
+          <small className="text-muted">
+            Max 5 files | Max size: 128MB | Allowed: .jpg, .jpeg, .png, .pdf, .doc, .docx
+          </small>
+        </div>
 
+        {/* File Upload */}
         {showFile && (
-          <div className="mt-2">
+          <div className="col-12">
             <input
               type="file"
               multiple
@@ -153,7 +161,9 @@ function OpenTicket() {
           </div>
         )}
       </form>
+     </div>
     </div>
+
   );
 }
 

@@ -59,7 +59,7 @@
   }
 
   .navbar-nav,
-  .navbar-right {
+  .trade-navbar-right {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,12 +68,12 @@
   }
 
   .navbar-nav .nav-link,
-  .navbar-right a {
+  .trade-navbar-right a {
     width: 100%;
     padding: 8px 0;
   }
 
-  .navbar-right .btn {
+  .trade-navbar-right .btn {
     width: 100%;
     text-align: center;
   }

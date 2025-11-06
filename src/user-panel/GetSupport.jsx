@@ -19,8 +19,8 @@ function GetSupport() {
         const ticketList = Array.isArray(data)
           ? data
           : Array.isArray(data.tickets)
-          ? data.tickets
-          : [];
+            ? data.tickets
+            : [];
         setTickets(ticketList);
       } catch (error) {
         console.log("Error fetching tickets:", error);
@@ -33,8 +33,8 @@ function GetSupport() {
   return (
     <div className="container-fluid py-4 bg-light" style={{ minHeight: "100vh" }}>
       {/* Header Section */}
-      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3 px-3">
-        <h3 className="fw-bold text-center text-md-start mb-0">Support Tickets</h3>
+      <div className="d-flex  flex-md-row justify-content-between align-items-center mb-4 gap-3 px-3">
+        <h3 className="fw-bold text-center text-heading text-md-start mb-0">Support Tickets</h3>
         <Link
           to="/open-ticket"
           className="btn btn-nav fw-semibold px-4 py-2 rounded-3"
@@ -45,7 +45,7 @@ function GetSupport() {
 
       {/* Tickets Section */}
       <div className="card shadow-sm border-0 mx-2 mx-md-3">
-        <div className="card-body p-0">
+        <div className="">
           {tickets.length === 0 ? (
             <div className="text-center py-5">
               <img
@@ -58,29 +58,29 @@ function GetSupport() {
             </div>
           ) : (
             <div className="table-responsive">
-              <table className="table table-hover align-middle mb-0">
-                <thead className="table-dark">
+              <table className="table table-hover align-middle text-center mb-0">
+                <thead className="table-primary align-middle">
                   <tr>
-                    <th style={{ width: "45%" }}>Subject</th>
-                    <th>Status</th>
-                    <th>Priority</th>
+                    <th className="text-nowrap" style={{ width: "40%" }}>Subject</th>
+                    <th className="text-nowrap">Status</th>
+                    <th className="text-nowrap">Priority</th>
                     <th className="text-nowrap">Last Updated</th>
                   </tr>
                 </thead>
+
                 <tbody>
                   {tickets.map((t) => (
                     <tr key={t._id}>
-                      <td className="fw-medium">{t.subject}</td>
+                      <td className="fw-medium text-break">{t.subject}</td>
 
                       <td>
                         <span
-                          className={`badge rounded-pill ${
-                            t.status === "Open"
+                          className={`badge rounded-pill px-3 py-2 ${t.status === "Open"
                               ? "bg-success"
                               : t.status === "Pending"
-                              ? "bg-warning text-dark"
-                              : "bg-secondary"
-                          }`}
+                                ? "bg-warning text-dark"
+                                : "bg-secondary"
+                            }`}
                         >
                           {t.status}
                         </span>
@@ -88,24 +88,26 @@ function GetSupport() {
 
                       <td>
                         <span
-                          className={`badge rounded-pill ${
-                            t.priority === "High"
+                          className={`badge rounded-pill px-3 py-2 ${t.priority === "High"
                               ? "bg-danger"
                               : t.priority === "Medium"
-                              ? "bg-info text-dark"
-                              : "bg-secondary"
-                          }`}
+                                ? "bg-info text-dark"
+                                : "bg-secondary"
+                            }`}
                         >
                           {t.priority}
                         </span>
                       </td>
 
-                      <td>{new Date(t.updatedAt).toLocaleString()}</td>
+                      <td className="text-nowrap">
+                        {new Date(t.updatedAt).toLocaleString()}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
+
           )}
         </div>
       </div>

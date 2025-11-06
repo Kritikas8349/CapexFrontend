@@ -246,7 +246,7 @@
 }
 
 /* Table Styling */
-table {
+.table-container table {
   width: 100%;
   max-width: 1000px;
   border-collapse: collapse;

@@ -7,11 +7,19 @@ function ManageOrder() {
   const [search, setSearch] = useState("");
 
   const tabs = ["Open", "Complete", "Pending", "Cancelled", "History"];
+   const rows = [
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", status: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", status: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", status: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", status: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", status: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-", status: "-" },
+  ];
 
   return (
     <div className="container-fluid py-4 py-md-5 px-3 px-md-4 bg-light min-vh-100 rounded-3">
       {/* Title */}
-      <h2 className="fw-semibold text-start mb-4 text-primary">
+      <h2 className="fw-semibold text-start mb-4 text-heading">
         {activeTab} Orders
       </h2>
 
@@ -23,9 +31,8 @@ function ManageOrder() {
             {tabs.map((tab) => (
               <button
                 key={tab}
-                className={`btn fw-semibold text-nowrap px-3 py-2 ${
-                  activeTab === tab ? "btn-primary" : "btn-outline-secondary"
-                }`}
+                className={`btn fw-semibold text-nowrap px-3 py-2 ${activeTab === tab ? "btn-nav" : "btn-outline-secondary"
+                  }`}
                 onClick={() => setActiveTab(tab)}
               >
                 {tab}
@@ -63,35 +70,65 @@ function ManageOrder() {
       </div>
 
       {/* Orders Table / Empty State */}
-      <div className="card border-0 shadow-sm">
-        <div className="card-body text-center p-4">
-          {/* Table Header for Desktop */}
-          <div className="row fw-semibold text-muted border-bottom pb-2 mb-3 d-none d-md-flex">
-            <div className="col">Date | Pair</div>
-            <div className="col">Side | Type</div>
-            <div className="col">Amount | Rate</div>
-            <div className="col">Charge | Total</div>
-            <div className="col">Filled</div>
-            <div className="col">Status</div>
-          </div>
+      
+      
+        
 
-          {/* Empty State */}
-          {/* Empty State (Centered) */}
-<div className="d-flex flex-column justify-content-center align-items-center py-5" style={{ minHeight: "300px" }}>
-  <img
-    src="/emptybox.png"
-    alt="No Orders"
-    className="img-fluid mb-3"
-    style={{ maxWidth: "120px", opacity: 0.8 }}
-  />
-  <p className="text-secondary mb-0">
-    No orders found for <span className="fw-semibold text-dark">{activeTab}</span>
-  </p>
-</div>
-
+        {/* Responsive Table */}
+        <div className=" table-responsive t">
+          <table className="table align-middle text-center mb-0">
+            <thead className="table-light">
+              <tr>
+                <th>Date | Pair</th>
+                <th>Side | Type</th>
+                <th>Amount | Rate</th>
+                <th>Charge | Total</th>
+                <th>Filled</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i}>
+                  <td>
+                    <div>{row.date}</div>
+                    <small className="text-muted">{row.pair}</small>
+                  </td>
+                  <td>
+                    <div>{row.side}</div>
+                    <small className="text-muted">{row.type}</small>
+                  </td>
+                  <td>
+                    <div>{row.amount}</div>
+                    <small className="text-muted">{row.rate}</small>
+                  </td>
+                  <td>
+                    <div>{row.charge}</div>
+                    <small className="text-muted">{row.total}</small>
+                  </td>
+                  <td>{row.filled}</td>
+                  <td>{row.status}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-      </div>
+
+        {/* Empty State */}
+        <div className="text-center py-5 d-none">
+          <img
+            src="/emptybox.png"
+            alt="No Orders"
+            className="img-fluid mb-3"
+            style={{ maxWidth: "120px", opacity: 0.8 }}
+          />
+          <p className="text-secondary mb-0">
+            No orders found for <span className="fw-semibold text-dark">Orders</span>
+          </p>
+        </div>
+      
     </div>
+    
   );
 }
 

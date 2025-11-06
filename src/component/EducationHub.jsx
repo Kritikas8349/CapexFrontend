@@ -143,7 +143,7 @@ function EducationHub() {
   ];
   return (
     <div className='bg-home '>
-      <div className="education-section d-flex align-items-center text-white mt-lg-2 mx-lg-3 rounded rounded-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+      <div className="education-section d-flex align-items-center text-white mt-lg-2 mx-lg-3 rounded rounded-4 " style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '98vh' }}>
         <div className="container ">
           <div className="row bg-transparent">
             <div className="col-12 col-lg-6 bg-transparent">

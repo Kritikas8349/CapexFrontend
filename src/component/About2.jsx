@@ -1,232 +1,232 @@
 import React, { useState } from 'react';
-  import { FiSearch } from 'react-icons/fi';
-  import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
-  import { HiOutlineMenu } from 'react-icons/hi';
-  import { FaSearch } from "react-icons/fa";
-  import "./About2.css";
+import { FiSearch } from 'react-icons/fi';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { HiOutlineMenu } from 'react-icons/hi';
+import { FaSearch } from "react-icons/fa";
+import "./About2.css";
 
-  const About2 = () => {
-    const [language, setLanguage] = useState("en");
+const About2 = () => {
+  const [language, setLanguage] = useState("en");
 
-    const languages = [
-      { code: "en", label: "English" },
-      { code: "hi", label: "Hindi" },
-      { code: "fr", label: "French" },
-      { code: "de", label: "German" },
-      { code: "es", label: "Spanish" },
-      { code: "ja", label: "Japanese" },
-    ];
+  const languages = [
+    { code: "en", label: "English" },
+    { code: "hi", label: "Hindi" },
+    { code: "fr", label: "French" },
+    { code: "de", label: "German" },
+    { code: "es", label: "Spanish" },
+    { code: "ja", label: "Japanese" },
+  ];
 
-    const handleLanguageChange = (e) => {
-      setLanguage(e.target.value);
-      alert(`Language changed to: ${e.target.value}`);
-    };
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value);
+    alert(`Language changed to: ${e.target.value}`);
+  };
 
-    return (
-      <div className="about2-container">
-      
-
-    
+  return (
+    <div className="about2-container">
 
 
-       {/* 🏆 Hero Section */}
-<section
-  className="hero"
-  style={{ backgroundImage: "url('/awards.jpg')" }}
->
-  <div className="hero-content">
-    <h1>Awards</h1>
-    <p>
-      Market.trad is a proud recipient of numerous awards and recognition
-      for its exceptional service and commitment to the trading community.
-    </p>
-  </div>
-</section>
 
 
-        <div className="container">
-    {/* Award 1 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 1" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> Fast Execution Broker</h3>
-        <p className="award-description">Market.trad recognised for ultra-low latency order speed.</p>
+
+      {/* 🏆 Hero Section */}
+      <section
+        className="hero"
+        style={{ backgroundImage: "url('/awards.jpg')" }}
+      >
+        <div className="hero-content">
+          <h1>Awards</h1>
+          <p>
+            Market.trad is a proud recipient of numerous awards and recognition
+            for its exceptional service and commitment to the trading community.
+          </p>
+        </div>
+      </section>
+
+
+      <div className="container">
+        {/* Award 1 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 1" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> Fast Execution Broker</h3>
+            <p className="award-description">Market.trad recognised for ultra-low latency order speed.</p>
+          </div>
+        </div>
+
+        {/* Award 2 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 2" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> Best Forex Platform</h3>
+            <p className="award-description">Honoured for trusted and competitive forex services.</p>
+          </div>
+        </div>
+
+        {/* Award 3 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 3" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> Investment Excellence</h3>
+            <p className="award-description">Acknowledged for wide access to global assets & markets.</p>
+          </div>
+        </div>
+
+        {/* Award 4 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 4" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> Crypto Trading Tools</h3>
+            <p className="award-description">Praised for advanced crypto tools like VPS & TradingView.</p>
+          </div>
+        </div>
+
+        {/* Award 5 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 5" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> Best Crypto Spreads</h3>
+            <p className="award-description">Recognised for low-cost trading on BTC, ETH, and more.</p>
+          </div>
+        </div>
+
+        {/* Award 6 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 6" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> Best Scalping Broker</h3>
+            <p className="award-description">Celebrated for efficiency and execution speed for scalpers.</p>
+          </div>
+        </div>
+
+        {/* Award 7 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 7" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> TradingView Integration</h3>
+            <p className="award-description">Praised for seamless TradingView connectivity & usability.</p>
+          </div>
+        </div>
+
+        {/* Award 8 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 8" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2025 <br /> NZ Forex Leader</h3>
+            <p className="award-description">Top-rated among FMA-regulated brokers in New Zealand.</p>
+          </div>
+        </div>
+
+        {/* Award 9 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 9" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2024 <br /> Best ECN Broker</h3>
+            <p className="award-description">Recognised for transparent ECN trading conditions.</p>
+          </div>
+        </div>
+
+        {/* Award 10 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 10" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2024 <br /> Fastest Trade Execution</h3>
+            <p className="award-description">Awarded at Dubai Expo for speed and reliability.</p>
+          </div>
+        </div>
+
+        {/* Award 11 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 11" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2024 <br /> Best Copy Trading</h3>
+            <p className="award-description">Recognised for innovation in copy trading solutions.</p>
+          </div>
+        </div>
+
+        {/* Award 12 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 12" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2024 <br /> Growth Recognition</h3>
+            <p className="award-description">Featured in Deloitte’s Master of Growth Index.</p>
+          </div>
+        </div>
+
+        {/* Award 13 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 13" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2023 <br /> Fast Execution Speeds</h3>
+            <p className="award-description">Praised for low latency and reduced slippage trading.</p>
+          </div>
+        </div>
+
+        {/* Award 14 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 14" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2023 <br /> Best NZ Broker</h3>
+            <p className="award-description">Rated for trust, platform quality, and service.</p>
+          </div>
+        </div>
+
+        {/* Award 15 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 15" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2023 <br /> Investment Excellence</h3>
+            <p className="award-description">Recognised for broad market access worldwide.</p>
+          </div>
+        </div>
+
+        {/* Award 16 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 16" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2022 <br /> Global FX Broker</h3>
+            <p className="award-description">Celebrated at Dubai Expo for trading innovation.</p>
+          </div>
+        </div>
+
+        {/* Award 17 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 17" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2022 <br /> Excellence in Trade</h3>
+            <p className="award-description">Honoured at Auckland Awards for global trade success.</p>
+          </div>
+        </div>
+
+        {/* Award 18 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 18" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2021 <br /> Deloitte Fast 50</h3>
+            <p className="award-description">Listed among NZ’s fastest-growing companies.</p>
+          </div>
+        </div>
+
+        {/* Award 19 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 19" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2020 <br /> Best NZ Forex Broker</h3>
+            <p className="award-description">Recognised for service, spreads, and customer support.</p>
+          </div>
+        </div>
+
+        {/* Award 20 */}
+        <div className="award-card">
+          <div className="award-icon"><img src="/awardlogo.avif" alt="Award 20" /></div>
+          <div className="award-content">
+            <h3 className="award-title">2019 <br /> Deloitte Fast 50</h3>
+            <p className="award-description">Celebrated for consistent business growth.</p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    {/* Award 2 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 2" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> Best Forex Platform</h3>
-        <p className="award-description">Honoured for trusted and competitive forex services.</p>
-      </div>
-    </div>
-
-    {/* Award 3 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 3" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> Investment Excellence</h3>
-        <p className="award-description">Acknowledged for wide access to global assets & markets.</p>
-      </div>
-    </div>
-
-    {/* Award 4 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 4" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> Crypto Trading Tools</h3>
-        <p className="award-description">Praised for advanced crypto tools like VPS & TradingView.</p>
-      </div>
-    </div>
-
-    {/* Award 5 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 5" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> Best Crypto Spreads</h3>
-        <p className="award-description">Recognised for low-cost trading on BTC, ETH, and more.</p>
-      </div>
-    </div>
-
-    {/* Award 6 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 6" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> Best Scalping Broker</h3>
-        <p className="award-description">Celebrated for efficiency and execution speed for scalpers.</p>
-      </div>
-    </div>
-
-    {/* Award 7 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 7" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> TradingView Integration</h3>
-        <p className="award-description">Praised for seamless TradingView connectivity & usability.</p>
-      </div>
-    </div>
-
-    {/* Award 8 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 8" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2025 <br /> NZ Forex Leader</h3>
-        <p className="award-description">Top-rated among FMA-regulated brokers in New Zealand.</p>
-      </div>
-    </div>
-
-    {/* Award 9 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 9" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2024 <br /> Best ECN Broker</h3>
-        <p className="award-description">Recognised for transparent ECN trading conditions.</p>
-      </div>
-    </div>
-
-    {/* Award 10 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 10" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2024 <br /> Fastest Trade Execution</h3>
-        <p className="award-description">Awarded at Dubai Expo for speed and reliability.</p>
-      </div>
-    </div>
-
-    {/* Award 11 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 11" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2024 <br /> Best Copy Trading</h3>
-        <p className="award-description">Recognised for innovation in copy trading solutions.</p>
-      </div>
-    </div>
-
-    {/* Award 12 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 12" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2024 <br /> Growth Recognition</h3>
-        <p className="award-description">Featured in Deloitte’s Master of Growth Index.</p>
-      </div>
-    </div>
-
-    {/* Award 13 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 13" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2023 <br /> Fast Execution Speeds</h3>
-        <p className="award-description">Praised for low latency and reduced slippage trading.</p>
-      </div>
-    </div>
-
-    {/* Award 14 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 14" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2023 <br /> Best NZ Broker</h3>
-        <p className="award-description">Rated for trust, platform quality, and service.</p>
-      </div>
-    </div>
-
-    {/* Award 15 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 15" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2023 <br /> Investment Excellence</h3>
-        <p className="award-description">Recognised for broad market access worldwide.</p>
-      </div>
-    </div>
-
-    {/* Award 16 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 16" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2022 <br /> Global FX Broker</h3>
-        <p className="award-description">Celebrated at Dubai Expo for trading innovation.</p>
-      </div>
-    </div>
-
-    {/* Award 17 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 17" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2022 <br /> Excellence in Trade</h3>
-        <p className="award-description">Honoured at Auckland Awards for global trade success.</p>
-      </div>
-    </div>
-
-    {/* Award 18 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 18" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2021 <br /> Deloitte Fast 50</h3>
-        <p className="award-description">Listed among NZ’s fastest-growing companies.</p>
-      </div>
-    </div>
-
-    {/* Award 19 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 19" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2020 <br /> Best NZ Forex Broker</h3>
-        <p className="award-description">Recognised for service, spreads, and customer support.</p>
-      </div>
-    </div>
-
-    {/* Award 20 */}
-    <div className="award-card">
-      <div className="award-icon"><img src="/awardlogo.avif" alt="Award 20" /></div>
-      <div className="award-content">
-        <h3 className="award-title">2019 <br /> Deloitte Fast 50</h3>
-        <p className="award-description">Celebrated for consistent business growth.</p>
-      </div>
-    </div>
-  </div>
-
-  {/* <div className="paymentgrid">
+      {/* <div className="paymentgrid">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" />
           <img src="/mastercard.png" alt="MasterCard" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay" className="small-logo"/>
@@ -356,9 +356,9 @@ import React, { useState } from 'react';
             </div>
           </div>
         </div> */}
-              
-      </div>
-    );
-  };
 
-  export default About2;
+    </div>
+  );
+};
+
+export default About2;

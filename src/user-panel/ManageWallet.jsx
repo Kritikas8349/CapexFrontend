@@ -31,10 +31,10 @@ export default function ManageWallets() {
     <div className="container-fluid px-lg-5 py-4 py-md-5">
       {/* Header */}
       <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
-        <h3 className="fw-bold text-dark text-center text-md-start mb-3 mb-md-0">
+        <h3 className="fw-bold text-heading text-center text-md-start mb-3 mb-md-0">
           Manage Wallets
         </h3>
-        <button className="btn btn-primary px-4 py-2 fw-semibold rounded-pill shadow-sm">
+        <button className="btn btn-nav px-4 py-2 fw-semibold rounded-pill shadow-sm">
           Spot Wallet
         </button>
       </div>

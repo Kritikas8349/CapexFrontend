@@ -60,7 +60,7 @@ function TradeNavbar() {
   </ul>
 
   {/* Right Section */}
-  <div className="navbar-right d-flex flex-lg-row flex-column align-items-lg-center align-items-start gap-3 mb-3 mb-lg-0">
+  <div className="trade-navbar-right d-flex flex-lg-row flex-column align-items-lg-center align-items-start gap-3 mb-3 mb-lg-0">
     <Link to="/userdashboard" className="btn btn-primary fw-semibold px-3 py-1 rounded-3">
       Dashboard
     </Link>

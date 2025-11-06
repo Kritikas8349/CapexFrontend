@@ -3,6 +3,14 @@ import { BsSearch } from "react-icons/bs";
 
 function TradeHistory() {
   const [search, setSearch] = useState("");
+  const rows = [
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-" },
+    { date: "-", pair: "-", side: "-", type: "-", amount: "-", rate: "-", charge: "-", total: "-", filled: "-" },
+  ];
 
   return (
     <div className="container-fluid py-4 py-md-5 px-3 px-md-4 rounded-3 dashboard-container min-vh-100 bg-light">
@@ -10,7 +18,7 @@ function TradeHistory() {
       <div className="row align-items-center g-3 mb-4">
         {/* Title */}
         <div className="col-12 col-md-6 text-center text-md-start">
-          <h2 className="fw-semibold mb-0">Trading History</h2>
+          <h2 className="fw-semibold text-heading mb-0">Trading History</h2>
         </div>
 
         {/* Filters */}
@@ -41,35 +49,46 @@ function TradeHistory() {
         </div>
       </div>
 
-      {/* ===== Table Section / Empty State ===== */}
-      <div className="card shadow-sm border-0">
-        <div className="card-body p-3">
-          {/* Table Header */}
-          <div className="row fw-semibold border-bottom pb-2 mb-3 d-none d-md-flex text-secondary">
-            <div className="col">Order Date | Pair</div>
-            <div className="col">Trade Date</div>
-            <div className="col">Trade Side</div>
-            <div className="col">Rate</div>
-            <div className="col">Amount</div>
-          </div>
+      
 
-          {/* Empty State (Centered) */}
-          <div
-            className="d-flex flex-column justify-content-center align-items-center text-center py-5"
-            style={{ minHeight: "300px" }}
-          >
-            <img
-              src="/emptybox.png"
-              alt="Empty Orders"
-              className="img-fluid mb-3"
-              style={{ maxWidth: "120px", opacity: 0.8 }}
-            />
-            <p className="text-secondary mb-0 fs-6">
-              No trade history found
-            </p>
-          </div>
+       {/* Responsive Table */}
+        <div className=" table-responsive t">
+          <table className="table align-middle text-center mb-0">
+            <thead className="table-light">
+              <tr>
+                <th>Date | Pair</th>
+                <th>Trade Date</th>
+                <th>Trade Side</th>
+                <th>Rate</th>
+                <th>Ammount</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, i) => (
+                <tr key={i}>
+                  <td>
+                    <div>{row.date}</div>
+                    <small className="text-muted">{row.pair}</small>
+                  </td>
+                  <td>
+                    <div>{row.side}</div>
+                    <small className="text-muted">{row.type}</small>
+                  </td>
+                  <td>
+                    <div>{row.amount}</div>
+                    <small className="text-muted">{row.rate}</small>
+                  </td>
+                  <td>
+                    <div>{row.charge}</div>
+                    <small className="text-muted">{row.total}</small>
+                  </td>
+                  <td>{row.filled}</td>
+                  
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
-      </div>
     </div>
   );
 }

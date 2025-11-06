@@ -19,4 +19,36 @@
     text-align: left;
     padding: 2rem 1.5rem;
   }
+ 
+}
+
+/* Default height (for large desktops) */
+.custom-height {
+  height: 97vh;
+}
+
+/* Medium screens (tablets, <= 1200px) */
+@media (max-width: 1200px) {
+  .custom-height {
+    height: 80vh;
+  }
+}
+@media (max-width: 995px) {
+  .custom-height {
+    height: 90vh;
+  }
+}
+
+/* Small screens (<= 768px) */
+@media (max-width: 768px) {
+  .custom-height {
+    height: 80vh;
+  }
+}
+
+/* Extra small screens (<= 576px) */
+@media (max-width: 576px) {
+  .custom-height {
+    height: 70vh;
+  }
 }

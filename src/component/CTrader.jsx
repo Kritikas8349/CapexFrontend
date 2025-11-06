@@ -25,7 +25,7 @@ function CTrader() {
                 }
 
             </style>
-            <div className=" bg-page text-white py-5 py-lg-4 py-md-5 trading-view my-lg-2 mx-lg-3 rounded rounded-3 min-vh-90">
+            <div className=" bg-page text-white py-5 py-lg-4 py-md-5 trading-view my-lg-2 mx-lg-3 rounded rounded-4 min-vh-90">
                 <div className="container">
                     <div className="row align-items-center mt-5">
 

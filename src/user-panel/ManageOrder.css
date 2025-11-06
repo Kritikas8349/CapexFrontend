@@ -22,6 +22,15 @@
   font-weight: 600;
   
 }
+ .t .table th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.t .table td {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
 
 /* .btn-m:hover {
   background: rgba(0, 68, 204, 0.1);
