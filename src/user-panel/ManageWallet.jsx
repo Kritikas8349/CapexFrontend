@@ -7,7 +7,7 @@ export default function ManageWallets() {
 
   const wallets = [
     { id: 1, name: "Bitcoin", symbol: "BTC", img: "./bitcoin.jpg", available: "₿0.0000", inOrder: "₿0.0000", total: "₿0.0000" },
-    { id: 2, name: "Ethereum", symbol: "ETH", img: "./eth.png", available: "Ξ0.0000", inOrder: "Ξ0.0000", total: "Ξ0.0000" },
+    { id: 2, name: "Ethereum", symbol: "ETH", img: "./bnb.png", available: "Ξ0.0000", inOrder: "Ξ0.0000", total: "Ξ0.0000" },
     { id: 3, name: "Tether", symbol: "USDT", img: "./tedher.png", available: "₮0.0000", inOrder: "₮0.0000", total: "₮0.0000" },
     { id: 4, name: "BNB", symbol: "BNB", img: "./bnb.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },
     { id: 5, name: "Solana", symbol: "SOL", img: "./solana.png", available: "0.0000", inOrder: "0.0000", total: "0.0000" },

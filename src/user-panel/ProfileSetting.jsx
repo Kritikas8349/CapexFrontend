@@ -73,17 +73,17 @@ const ProfilePage = () => {
         <div className="pp-left">
           <div className="pp-avatar">
             <img
-  src={
-    formData.avatar
-      ? (typeof formData.avatar === "string"
-          ? `http://localhost:5000${formData.avatar}`
-          : URL.createObjectURL(formData.avatar)
-        )
-      : "/pp.jpg"
-  }
-  alt="Profile"
-  className="profile-img"
-/>
+              src={
+                formData.avatar
+                  ? (typeof formData.avatar === "string"
+                    ? `http://localhost:5000${formData.avatar}`
+                    : URL.createObjectURL(formData.avatar)
+                  )
+                  : "/pp.jpg"
+              }
+              alt="Profile"
+              className="profile-img"
+            />
           </div>
           <h3 className="pp-username">{formData.firstName} {formData.lastName}</h3>
           <p className="pp-info">{formData.email}</p>

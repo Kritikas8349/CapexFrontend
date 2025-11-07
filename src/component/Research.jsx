@@ -96,7 +96,7 @@ function Research() {
   `}
             </style>
 
-            <div className=" py-5 research-section mt-lg-2 mx-lg-3 rounded rounded-4 ">
+            <div className=" py-5 research-section mt-lg-2 mx-lg-3 rounded rounded-4 " style={{minHeight: '98vh'}}>
                 <div className="container">
                     <div className="row align-items-center">
                         {/* Left Section */}
@@ -150,13 +150,13 @@ function Research() {
                     {videos.map((video) => (
                         <div className="col-md-4" key={video.id}>
                             <div
-                                className="p-2 h-100"
+                                className="p-2 h-100 "
                                 role="button"
                                 data-bs-toggle="modal"
                                 data-bs-target="#videoModal"
                                 onClick={() => setSelectedVideo(video.url)}
                             >
-                                <div className="position-relative">
+                                <div className="position-relative custom-card">
                                     <img
                                         src={video.thumbnail}
                                         alt={video.heading}
@@ -285,7 +285,7 @@ function Research() {
                     <div className="col-md-8 col-lg-6 text-start">
                         <h1 className="text-heading fs-1 fw-bold mb-4">Daily Analysis Podcast <span className='bi bi-spotify text-success'></span></h1>
                         <p className='text-secondary fs-4'>Catch up on the key trends, breaking news, and market moves with our daily Trading Analysis Podcast—your quick, essential market recap.</p>
-                        <Link to="htttp:/spotify.com" className="btn btn-bg-start text-white fs-4  justify-content-center">
+                        <Link to="htttp:/spotify.com" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white fs-4  justify-content-center">
                             <span className=" bi bi-spotify me-2 "></span> Listen Now
                         </Link>
                     </div>
@@ -312,7 +312,7 @@ function Research() {
                 <div className="row g-4">
                     {articles.map((article) => (
                         <div className="col-12 col-sm-6 col-md-4" key={article.id}>
-                            <div className="card h-100 border-0 shadow-sm p-0 custom-card">
+                            <div className="card h-100 border-0 custom-card p-0 custom-card">
                                 {/* Image */}
                                 <img
                                     src={article.image}
@@ -340,7 +340,7 @@ function Research() {
 
                 {/* View More Button */}
                 <div className="text-center mt-5">
-                    <Link to="/education/research/opportunities" className="btn btn-bg-start text-white fs-4">
+                    <Link to="/education/research/opportunities" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white fs-4">
                         View More
                     </Link>
                 </div>
@@ -373,7 +373,7 @@ function Research() {
                         </p>
                         <Link
                             to="/education/demo-trade"
-                            className="btn btn-bg-start text-white btn-lg"
+                            className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white btn-lg"
 
                             rel="noopener noreferrer"
                         >
@@ -400,7 +400,7 @@ function Research() {
                         </p>
                         <Link
                             to="/education/research/opportunities"
-                            className="btn text-white btn-lg d-inline-flex align-items-center btn-bg-start"
+                            className="btn text-white btn-lg rounded rounded-5 p-2 px-4 d-inline-flex align-items-center btn-bg-start"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -435,7 +435,7 @@ function Research() {
                         </p>
                         <Link
                             to="/loginform"
-                            className="btn btn-bg-start text-white btn-lg d-inline-flex align-items-center"
+                            className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white btn-lg d-inline-flex align-items-center"
 
                             rel="noopener noreferrer"
                         >

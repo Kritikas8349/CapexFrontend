@@ -32,13 +32,13 @@ function CopyTrader() {
                 }
 
             </style>
-            <div className=" bg-black text-white py-5 py-lg-4 py-md-4 bg-ctrade mt-lg-2 mx-lg-3 rounded rounded-4 min-vh-90">
-                <div className="container">
+            <div className=" bg-black align-content-center text-white py-5 py-lg-4 py-md-4 bg-ctrade mt-lg-2 mx-lg-3 rounded rounded-4 min-vh-90" style={{minHeight: '98vh'}}>
+                <div className="container align-items-center">
                     <div className="row align-items-center mt-5">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
-                                cTrader{" "}
+                                <span className='text-heading'>cTrader{" "}</span>
                                 <span className="text-heading"></span>
                                 <br />
                                 With Market Trad
@@ -54,7 +54,7 @@ function CopyTrader() {
 
                                     <input
                                         type="email"
-                                        className="form-control form-control-lg"
+                                        className="form-control form-control-lg rounded rounded-5 p-2 px-4"
                                         placeholder={placeholder}
                                         value={email}
                                         onChange={(e) => {
@@ -72,7 +72,7 @@ function CopyTrader() {
                                 <div className="col-12 col-md-4 d-grid">
                                     <button
                                         onClick={handleJoinNow}
-                                        className="btn btn-bg-start text-white d-flex align-items-center justify-content-center"
+                                        className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white d-flex align-items-center justify-content-center"
                                     >
                                         Join Now
                                     </button>
@@ -94,7 +94,7 @@ function CopyTrader() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark rounded rounded-5 p-2 px-4  d-none d-lg-flex d-md-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
@@ -335,7 +335,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 1</h2>
                             <h2 className="fw-bold mb-3">Create a BlackBull Markets account</h2>
                             <p className="mb-4">Create an account in less than 5 minutes.</p>
-                            <Link to="/quickstart/create-account" className="btn btn-bg-start fs-5 text-white">Create Account</Link>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 fs-5 text-white">Create Account</Link>
                         </div>
 
                     </div>
@@ -363,7 +363,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 2</h2>
                             <h2 className="fw-bold mb-3">Explore Providers</h2>
                             <p className="mb-4">Explore our range of elite fund managers.</p>
-                            <Link to="/quickstart/create-account" className="btn btn-bg-start fs-5 text-white">Explore</Link>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 fs-5 text-white">Explore</Link>
                         </div>
 
                     </div>
@@ -391,7 +391,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 3</h2>
                             <h2 className="fw-bold mb-3">Activate copy-trading</h2>
                             <p className="mb-4">Select a fund manager and start copy trading</p>
-                            <Link to="/quickstart/create-account" className="btn btn-bg-start fs-5 text-white">Activate</Link>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 fs-5 text-white">Activate</Link>
                         </div>
 
                     </div>

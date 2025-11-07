@@ -2,12 +2,12 @@ import React from 'react'
 import './TradingOpportunity.css'
 function TradingOpportunity() {
     return (
-        <div className='bg-faq mt-lg-2 mx-lg-3 rounded rounded-4  pt-5'>
+        <div className='bg-faq mt-lg-2 mx-lg-3 rounded rounded-4  pt-5' style={{minHeight: '98vh'}}>
             <div className="m1-t-container mt-5 pt-5 ">
                 <h1 className="m1-t-heading  text-start mb-5 pb-4 ">Trading Opportunities</h1>
                 <div className="m1-t-card-container text-start">
                     {[1, 2, 3, 4].map(i => (
-                        <div className="m1-t-card" key={i}>
+                        <div className="m1-t-card custom-card" key={i}>
                             <img src={`/card${i}.webp`} alt={`card${i}`} className="m1-t-card-image " />
                             <div className="m1-t-card-content">
                                 <h2 className="m1-t-card-title">Title for card {i}</h2>

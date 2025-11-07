@@ -29,7 +29,7 @@ function Webinars() {
   ];
   return (
     <>
-      <div className="trading-view py-5 m-0 m-lg-3 m-md-3 rounded rounded-4">
+      <div className="trading-view py-5 py-lg-4 py-md-4 mt-lg-2  mx-lg-3 rounded rounded-4 rounded rounded-4" style={{minHeight: '98vh'}}>
         <style>
           {
             `.trading-view {
@@ -41,8 +41,8 @@ function Webinars() {
           }
 
         </style>
-        <div className="container ">
-          <div className="text-center mb-2 mb-lg-5 mb-md-5">
+        <div className="container mt-5 " >
+          <div className="text-center mt-4 mt-lg-5 mt-md-5">
             <h1 className="fw-bold text-white mb-3 text-start display-4">Past Webinars</h1>
             <p className="lead text-white text-start d-flex align-items-center justify-content-center">
               Watch all of our past webinars on YouTube

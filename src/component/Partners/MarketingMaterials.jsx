@@ -101,7 +101,7 @@ function MarketingMaterials() {
                     <div className="row g-4 my-2 justify-content-center">
                         {resources.map((item, index) => (
                             <div key={index} className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                                <div className="card shadow-sm p-4 lh-lg w-100 d-flex flex-column">
+                                <div className="card custom-card p-4 lh-lg w-100 d-flex flex-column">
                                     {/* Top Icons */}
                                     <div className="d-flex justify-content-between gap-2 mb-3 text-heading">
                                         <i className={`bi ${item.icon} fs-2`}></i>

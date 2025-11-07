@@ -155,9 +155,12 @@
 }
 
 /* Button Colors */
+.dash-money-card .money-btn{
+  margin-top: 1rem;
+}
 .deposit-btn {
-  background-color: #198754;
-  color: #c3decf;
+  background-color: #28b673;
+  color: white;
   
 }
 .deposit-btn:hover {
@@ -165,16 +168,16 @@
 }
 
 .withdraw-btn {
-    background-color: #902626;
-    color: #ddd2d2;
+    background-color: #dc3545;
+    color: white;
 }
 .withdraw-btn:hover {
-  background-color: #dc3545;
+  background-color:#902626;
 }
 
 .transfer-btn {
       background-color: #2362b5;
-    color: #c4d4de;
+    color: white;
 }
 .transfer-btn:hover {
   background-color: #0d6efd;

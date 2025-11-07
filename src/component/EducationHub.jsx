@@ -152,7 +152,7 @@ function EducationHub() {
                 <h6 className="mb-4  fs-5 text-start text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                   Learn to trade forex, crypto, commodities, and shares, with our trading tutorials. Explore trading videos, podcasts, webinars, and market analysis.
                 </h6>
-                <Link to='/education/demo-trade' className="btn btn-bg-start text-white btn-lg fw-bold">Demo Trade </Link> {/* btn-lg for a larger button */}
+                <Link to='/education/demo-trade' type='button' className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white btn-lg fw-medium">Demo Trade </Link> {/* btn-lg for a larger button */}
 
               </div>
             </div>
@@ -191,7 +191,7 @@ function EducationHub() {
           <div className="row g-4">
             {platforms.map((platform, index) => (
               <div className="col-md-6 col-lg-4 " key={index}>
-                <div className="border border-2 border-primary bg-opacity-10 rounded p-4 position-relative h-100">
+                <div className="border border-2 border-primary custom-card bg-opacity-10 rounded p-4 position-relative h-100">
                   <div className="d-flex align-items-center  bg-page mb-3">
                     <img
                       src={platform.icon}
@@ -214,7 +214,7 @@ function EducationHub() {
                   <p className="text-dark text-start">{platform.desc}</p>
 
                   <div className="text-start">
-                    <Link to={platform.path} className="btn btn-bg-start    bg-opacity-10 text-white fw-semibold">
+                    <Link to={platform.path} className="btn btn-bg-start rounded rounded-5 p-2 px-4    bg-opacity-10 text-white fw-semibold">
                       Learn More
                     </Link>
                   </div>
@@ -269,7 +269,7 @@ function EducationHub() {
             <div className="col-12 text-center mt-5">
               <Link
                 to="https://www.youtube.com/"
-                className="btn btn-bg-start text-white px-4 py-2 fw-semibold btn-lg"
+                className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white px-4 py-2 fw-semibold btn-lg"
               >
                 View More Videos
               </Link>
@@ -292,7 +292,7 @@ function EducationHub() {
         <div className="row g-4">
           {posts.map((post) => (
             <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center " key={post.id}>
-              <div className="card border-0 custom-card h-100 shadow-sm rounded-3 overflow-hidden p-0">
+              <div className="card border-0 custom-card h-100  rounded-3 custom-card overflow-hidden p-0">
                 {/* Image Section */}
                 <div className="ratio ratio-16x9">
                   <img
@@ -327,7 +327,7 @@ function EducationHub() {
         <div className="text-center mt-5">
           <Link
             to="/education/research/opportunities"
-            className="btn btn-bg-start text-white fs-6 fw-semibold px-4 py-2"
+            className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white fs-6 fw-semibold px-4 py-2"
           >
             View More
           </Link>
@@ -411,7 +411,7 @@ function EducationHub() {
             </p>
             <Link
               to="https://spotify.com" // Replace with your Spotify podcast link
-              className="btn btn-bg-start text-white btn-lg d-inline-flex align-items-center"
+              className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white btn-lg d-inline-flex align-items-center"
               target="_blank"
               rel="noopener noreferrer"
             >

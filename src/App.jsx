@@ -431,12 +431,10 @@ function App() {
       )}
 
       {/* Dashboard Section */}
-      <div className="app-container">
-        {!shouldHideSidebarAndNavbar && <Sidebar></Sidebar>}
-
-        {isDashboardPage && (
+      {isDashboardPage && (
+        <div className="app-container">
+          {!shouldHideSidebarAndNavbar && <Sidebar />}
           <div className="dashboard-wrapper">
-
             {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
 
 
@@ -465,8 +463,8 @@ function App() {
               </Route>
             </Routes>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

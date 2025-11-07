@@ -218,7 +218,7 @@ const Dashboard = () => {
               />
               <select
                 value={depositData.currency}
-                className="form-select bg-transparent"
+                className="form-select bg-transparent text-select"
                 onChange={(e) => setDepositData({ ...depositData, currency: e.target.value })}
               >
                 <option value="">Select Currency</option>
@@ -249,7 +249,7 @@ const Dashboard = () => {
               />
               <select
                 value={withdrawData.currency}
-                className="form-select bg-transparent"
+                className="form-select bg-transparent text-select"
                 onChange={(e) => setWithdrawData({ ...withdrawData, currency: e.target.value })}
               >
                 <option value="">Select Currency</option>

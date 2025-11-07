@@ -27,14 +27,14 @@ function MetaTrader5() {
 
             </style>
 
-            <div className=" bg-black text-white py-5 py-lg-4 py-md-4 trading-view mt-lg-2 mx-lg-3 rounded rounded-4 min-vh-90">
-                <div className="container py-5">
+            <div className=" bg-black align-content-center text-white py-5 py-lg-4 py-md-4 trading-view mt-lg-2 mx-lg-3 rounded rounded-4 min-vh-90" style={{minHeight: '98vh'}}>
+                <div className="container align-items-center py-5">
                     <div className="row align-items-center mt-3">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
                             <h1 className="fw-bold display-5">
-                                MetaTrader 5 (MT5){" "}
-                                <span className="text-primary"></span>
+                                
+                                <span className="text-heading">MetaTrader 5 (MT5){" "}</span>
                                 <br />
                                 with BlackBull Markets
                             </h1>
@@ -87,7 +87,7 @@ function MetaTrader5() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark rounded rounded-5 p-2 px-4 d-none d-lg-flex d-md-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
@@ -225,14 +225,14 @@ function MetaTrader5() {
 
             {/* ---------Tradable Assets----------   */}
 
-            <div className=" bg-page py-2 py-lg-5 py-md-5 my-lg-2 mx-lg-3 rounded rounded-4">
-                <div className="container rounded-4 p-3 py-2 py-lg-5 py-md-5">
+             <div className=" bg-page py-2 py-lg-5 py-md-5  my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container rounded-4 p-3 py-1 py-lg-5 py-md-5">
                     <h1 className="text-center mb-5 fw-bold text-heading">Tradable Assets</h1>
 
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"  onClick={()=>{navigate('/markets/forex')}}>
+                            <div className="p-4 rounded-4 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
@@ -244,8 +244,8 @@ function MetaTrader5() {
                         </div>
 
                         {/* Commodities */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center" onClick={()=>{navigate('/markets/commodities')}}>
+                            <div className="p-4 rounded-4 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
@@ -257,8 +257,8 @@ function MetaTrader5() {
                         </div>
 
                         {/* Equities */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center" onClick={()=>{navigate('/market/equities')}}>
+                            <div className="p-4 rounded-4 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
@@ -270,8 +270,8 @@ function MetaTrader5() {
                         </div>
 
                         {/* Indices */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center" onClick={()=>{navigate('/markets/indices')}}>
+                            <div className="p-4 rounded-4 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
@@ -283,8 +283,8 @@ function MetaTrader5() {
                         </div>
 
                         {/* Metals */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center" >
+                            <div className="p-4 rounded-4 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
@@ -296,8 +296,8 @@ function MetaTrader5() {
                         </div>
 
                         {/* View All */}
-                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-4 shadow bg-body w-100 h-100 text-start">
+                        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center" onClick={()=>{navigate('/markets/futures')}}>
+                            <div className="p-4 rounded-4 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
@@ -342,12 +342,12 @@ function MetaTrader5() {
 
             {/* ------------Blue Theme multiple Cards---------- */}
 
-            <div className=" bg-page py-2 py-lg-5 py-md-5 my-1 my-lg-2 mx-lg-3 rounded rounded-4">
-                <div className="container rounded-4 p-3 py-1 py-lg-5 py-md-5">
+           <div className=" bg-page py-3 py-lg-5 py-md-5 my-1  my-lg-2 mx-lg-3 rounded rounded-4">
+                <div className="container rounded-4 p-3 py-3 py-lg-5 py-md-5">
                     <div className="row g-4 justify-content-center">
                         {/* Forex */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                            <div className="p-4 rounded-2 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8415.png" alt="Forex" style={{ width: "50px" }} />
                                 </div>
@@ -360,7 +360,7 @@ function MetaTrader5() {
 
                         {/* Commodities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                            <div className="p-4 rounded-2 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8416.png" alt="Commodities" style={{ width: "50px" }} />
                                 </div>
@@ -373,7 +373,7 @@ function MetaTrader5() {
 
                         {/* Equities */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                            <div className="p-4 rounded-2 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8417.png" alt="Equities" style={{ width: "50px" }} />
                                 </div>
@@ -386,7 +386,7 @@ function MetaTrader5() {
 
                         {/* Indices */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                            <div className="p-4 rounded-2 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8418.png" alt="Indices" style={{ width: "50px" }} />
                                 </div>
@@ -399,7 +399,7 @@ function MetaTrader5() {
 
                         {/* Metals */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                            <div className="p-4 rounded-2 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8419.png" alt="Metals" style={{ width: "50px" }} />
                                 </div>
@@ -412,7 +412,7 @@ function MetaTrader5() {
 
                         {/* View All */}
                         <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
-                            <div className="p-4 rounded-2 shadow bg-body w-100 h-100 text-start">
+                            <div className="p-4 rounded-2 custom-card bg-body w-100 h-100 text-start">
                                 <div className="mb-3">
                                     <img src="/Frame8411.png" alt="View All" style={{ width: "50px" }} />
                                 </div>
@@ -507,7 +507,7 @@ function MetaTrader5() {
                         {/* TradingView Button */}
                         <a
                             href="#"
-                            className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3"
+                            className="btn btn-dark rounded rounded-5 p-2 px-4 d-none d-lg-flex d-md-flex align-items-center px-3"
                         >
                             <img
                                 src="/Frame8417.png"

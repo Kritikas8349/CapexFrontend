@@ -19,8 +19,8 @@ function TradingView() {
 
             </style>
             
-            <div className="bg-black text-white  trading-view py-5 py-lg-4 py-md-4 mt-lg-2  mx-lg-3 rounded rounded-4 min-vh-90">
-                <div className="container">
+            <div className="bg-black text-white align-content-center  trading-view py-5 py-lg-4 py-md-4 mt-lg-2  mx-lg-3 rounded rounded-4 " style={{minHeight: '98vh'}}>
+                <div className="container align-items-center">
                     <div className="row align-items-center mt-5">
                         {/* Left Section */}
                         <div className="col-lg-6 text-start text-lg-start mb-4 mb-lg-0">
@@ -36,11 +36,11 @@ function TradingView() {
                             </p>
 
                             {/* Buttons */}
-                            <div className="d-flex flex-column flex-sm-row gap-2 justify-content-start mt-4">
-                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white  mt-3">
+                            <div className="d-flex flex-column flex-sm-row gap-4 justify-content-start mt-4">
+                                <Link to='/education/demo-trade' className="btn btn-bg-start rounded rounded-5 p-2 px-4 rounded rounded-5 p-2 px-4 text-white  mt-3">
                                     Join Now
                                 </Link>
-                                <Link to="/loginform" className="btn btn-bg-start text-white  mt-3 ">
+                                <Link to="/loginform" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white rounded rounded-5 p-2 px-4   mt-3 ">
                                     Log In
                                 </Link>
                             </div>
@@ -61,7 +61,7 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark d-none d-lg-flex d-md-flex align-items-center rounded rounded-5 p-2 px-4 px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"
@@ -154,7 +154,7 @@ function TradingView() {
                     <div className="row g-4">
                         {/* Plan 1 */}
                         <div className="col-12 col-md-6 col-lg-4 ">
-                            <div className="p-4 bg-white text-dark rounded  shadow align-content-center h-100 custom-card " style={{ height: "70vh" }}>
+                            <div className="p-4 bg-white text-dark rounded   align-content-center h-100 custom-card border border-primary border-2 " style={{ height: "70vh" }}>
                                 <h5 className="fw-bold fs-1 text-heading">TradingView Essential</h5>
                                 <span className="badge bg-light text-heading mt-2">
                                     FREE WITH 1 LOT TRADED P/M
@@ -169,13 +169,13 @@ function TradingView() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
+                                <Link to='/education/demo-trade' className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
                         {/* Plan 2 */}
                         <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-light text-secondary rounded shadow align-content-center h-100 custom-card" >
+                            <div className="p-4 bg-light text-secondary rounded  align-content-center h-100 custom-card border border-primary border-2" >
                                 <h5 className="fw-bold fs-1 text-heading">TradingView Plus</h5>
                                 <span className="badge bg-light text-dark mt-2">
                                     FREE WITH 5 LOTS TRADED P/M
@@ -190,13 +190,13 @@ function TradingView() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <Link to="/education/demo-trade" className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
                         {/* Plan 3 */}
                         <div className="col-12 col-md-6 col-lg-4">
-                            <div className="p-4 bg-white text-dark rounded shadow h-100 align-content-center custom-card ">
+                            <div className="p-4 bg-white text-dark rounded  h-100 align-content-center custom-card border border-primary border-2 ">
                                 <h5 className="fw-bold fs-1 text-heading">TradingView Premium</h5>
                                 <span className="badge bg-light text-heading mt-2">
                                     FREE WITH 10 LOTS TRADED P/M
@@ -211,7 +211,7 @@ function TradingView() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <Link to="/education/demo-trade" className="btn btn-bg-start text-white  mt-3">Claim Offer</Link>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
                     </div>
@@ -221,8 +221,8 @@ function TradingView() {
 
             {/* -----------Why MarketTrad----------------- */}
 
-            <div className=" bg-light py-3 py-lg-5 py-md-5 min-vh-90 my-lg-2 mx-lg-3 rounded rounded-4">
-                <div className="container py-3 py-lg-4 py-md-4">
+            <div className=" bg-light align-content-center  min-vh-90 my-lg-2 mx-lg-3 rounded rounded-4" style={{minHeight: '98vh'}}>
+                <div className="container align-items-center ">
                     <div className="row align-items-center g-5">
                         {/* Left Section */}
                         <div className="col-12 col-lg-6 text-start text-md-start text-sm-start">
@@ -286,9 +286,9 @@ function TradingView() {
 
             {/* -------------How to Connect------------ */}
 
-            <div className=" align-content-center py-3 py-lg-5 py-md-5 how-to-connect mx-lg-3 rounded rounded-3" >
-                <div className="container">
-                    <div className="row align-items-center  rounded p-0 p-lg-4 p-md-4">
+            <div className=" align-content-center  how-to-connect mx-lg-3 rounded rounded-3"style={{minHeight: '98vh'}} >
+                <div className="container align-items-center">
+                    <div className="row align-items-center  rounded p-0 ">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-start text-lg-start">
                             <h1 className="fw-bold text-white">
@@ -316,7 +316,7 @@ function TradingView() {
                     {/* Bottom Store Buttons */}
                     <div className="d-flex flex-wrap justify-content-center gap-3 mt-5">
                         {/* TradingView Button */}
-                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark text-white d-none d-lg-flex d-md-flex align-items-center px-3">
+                        <Link to="https://www.tradingview.com/chart/" className="btn btn-dark rounded rounded-5 p-2 px-4 text-white d-none d-lg-flex d-md-flex align-items-center px-3">
                             <img
                                 src="/Frame8417.png"
                                 alt="TV Logo"

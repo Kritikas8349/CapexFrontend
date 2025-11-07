@@ -353,7 +353,7 @@
 }
 
 /* General responsive fixes */
-img, iframe, video {
+.changepage img, iframe, video {
   max-width: 100%;
   height: auto;
   display: block;

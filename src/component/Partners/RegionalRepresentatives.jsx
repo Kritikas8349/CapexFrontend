@@ -7,7 +7,7 @@ function RegionalRepresentatives() {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)),url('/compliance.avif')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '85vh'
+        minHeight: '98vh'
       }}>
         <div>
           <h1 className='fw-bolder display-2 p-4 '>Regional Representatives</h1>

@@ -1213,7 +1213,7 @@ body {
   }
 
   /* ✅ Images & inner elements also full-width */
-  img,
+  .q2-market-wrapper img,
   iframe,
   video {
     border-radius: 0 !important;

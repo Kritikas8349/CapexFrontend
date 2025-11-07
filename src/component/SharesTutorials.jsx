@@ -5,7 +5,7 @@ function SharesTutorials() {
     {
       title: 'Shares 101: Lesson 1 of 7',
       desc: 'In this lesson, we explore: What are shares and how do they work, How the stock market operates, and Key share trading terminology...',
-      img: '/trade.avif',
+      img: '/background.png',
     },
     {
       title: 'Shares 101: Lesson 2 of 7',
@@ -72,30 +72,26 @@ function SharesTutorials() {
 
   return (
     <div className='bg-home'>
-      <div className=" bg-shares text-white py-4 mt-lg-2 mx-lg-3 rounded rounded-4">
         <style>
-          {
-            `.bg-shares
+        {
+          `.bg-forex
                      {
-                         background: linear-gradient(to bottom right, #000000, #231586)}
-                         
-                       
+                         background: linear-gradient(to bottom right, #000000, #231586)}`                 
+        }
 
-                    `
-          }
+      </style>
+      <div className=" bg-forex text-white pt-4 mt-lg-2 mx-lg-3 rounded rounded-4 " style={{minHeight: '98vh'}} >
+        <div className="container bg-transparent mt-4 mt-lg-5 pt-4">
+          <h2 className="fw-bold bg-transparent text-white text-center display-5 mt-5 mt-lg-4 py-4"> Shares Tutorial</h2>
 
-        </style>
-        <div className="container ">
-          <h2 className="fw-bold bg-transparent text-white text-center display-4  mt-5 mb-2">Shares Tutorials</h2>
-
-          <div className="row bg-transparent pt-4 g-4">
+          <div className="row bg-transparent pt-2 g-4">
             {/* Left Column */}
             <div className="col-12 col-md-6 mb-4 bg-transparent">
               <div className="d-flex flex-column bg-transparent text-white h-100">
                 <div className="position-relative flex-fill">
                   <img
                     src={lessons[0].img}
-                    className="img-fluid w-100 h-100"
+                    className="img-fluid w-100 h-100 opacity-75"
                     alt="Lesson 1"
                     style={{ objectFit: "cover" }}
                   />
@@ -112,10 +108,10 @@ function SharesTutorials() {
 
             {/* Right Column */}
             <div className="col-12 col-md-6 bg-transparent">
-              {lessons.slice(1).map((lesson, index) => (
+              {lessons.slice(2).map((lesson, index) => (
                 <div
                   key={index}
-                  className="d-flex flex-column flex-md-row bg-transparent text-white mb-4 border-bottom border-primary border-2 opacity-75"
+                  className="d-flex flex-column flex-md-row bg-transparent text-white mb-4 border-bottom border-primary border-2"
                   style={{ minHeight: "180px" }}
                 >
                   <div
@@ -129,7 +125,7 @@ function SharesTutorials() {
                     <img
                       src={lesson.img}
                       alt={lesson.title}
-                      className="w-100 h-100"
+                      className="w-100 h-100 opacity-75"
                       style={{ objectFit: "cover" }}
                     />
                   </div>

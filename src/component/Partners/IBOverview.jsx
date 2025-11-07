@@ -56,7 +56,7 @@ function IBOverview() {
                 opacity: 1; /* Ensures it’s not faded */}`
                 }
             </style>
-            <div className="education-section d-flex align-items-center text-white  mt-lg-2 mx-lg-3 rounded rounded-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+            <div className="education-section d-flex align-items-center text-white  mt-lg-2 mx-lg-3 rounded rounded-4" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url('/compliance.avif')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '98vh' }}>
                 <div className="container align-items-start ">
                     <div className="row bg-transparent">
                         <div className="col-12 col-lg-12 bg-transparent">
@@ -66,7 +66,7 @@ function IBOverview() {
                                 <h6 className="mb-4  fs-5 text-start text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
                                     Access commissions with no limits
                                 </h6>
-                                <Link to='/education/demo-trade' className="btn btn-bg-start text-white btn-lg fw-bold">Partner Now </Link> {/* btn-lg for a larger button */}
+                                <Link to='/education/demo-trade' className="btn btn-bg-start  rounded-5 p-2 px-4 text-white ">Partner Now </Link> {/* btn-lg for a larger button */}
 
                             </div>
                         </div>
@@ -140,13 +140,19 @@ function IBOverview() {
             {/* ----Introducing Broker------ */}
 
             <section className=" bg-home  py-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
-                <div className="row align-items-center g-3 px-lg-5">
+                <div className="row  g-3 px-lg-5">
                     {/* Text Column */}
                     <div className="col-lg-6 text-start p-4">
                         <h2 className="display-5 fw-bold mb-4 ">
                             Introducing Broker (IB) program benefits
                         </h2>
                         <p className="lead mb-4 text-start text-lg-start">
+                            Partnering with BlackBull Markets offers unlimited earning potential,
+                            competitive rebates, and custom structures to suit your needs. You’ll
+                            also benefit from advanced tracking tools, marketing resources, and
+                            support from a personal Account Manager.
+                        </p>
+                         <p className="lead mb-4 text-start text-lg-start">
                             Partnering with BlackBull Markets offers unlimited earning potential,
                             competitive rebates, and custom structures to suit your needs. You’ll
                             also benefit from advanced tracking tools, marketing resources, and
@@ -159,7 +165,7 @@ function IBOverview() {
                         <div className="row g-4 justify-content-center">
                             {cardData.map((card, index) => (
                                 <div key={index} className="col-12 col-sm-6 d-flex justify-content-center">
-                                    <div className="card h-100 text-center shadow-sm border-0 p-4">
+                                    <div className="card h-100 text-center custom-card border-0 p-4 custom-card">
                                         <div className="card-body d-flex flex-column justify-content-center">
                                             {card.icon && (
                                                 <i className={`${card.icon} fs-2 text-heading mb-3`}></i>
@@ -178,13 +184,13 @@ function IBOverview() {
             {/* -------Who Should join ------------ */}
             <section className=" bg-home py-5 border border-3 my-lg-2 mx-lg-3 rounded rounded-4">
                 <div className="container">
-                    <div className="row align-items-center g-3 px-lg-5">
+                    <div className="row  g-3 px-lg-5">
                     {/* Cards Column */}
                     <div className="col-lg-6 ">
                         <div className="row g-4 justify-content-center">
                             {cardData.map((card, index) => (
                                 <div key={index} className="col-12 col-sm-6 d-flex justify-content-center">
-                                    <div className="card h-100 text-center shadow-sm border-0 p-4">
+                                    <div className="card h-100 text-center custom-card border-0 p-4">
                                         <div className="card-body d-flex flex-column justify-content-center">
                                             {card.icon && (
                                                 <i className={`${card.icon} fs-2 text-heading mb-3`}></i>
@@ -203,6 +209,12 @@ function IBOverview() {
                             Introducing Broker (IB) program benefits
                         </h2>
                         <p className="lead mb-4 text-start text-lg-start">
+                            Partnering with BlackBull Markets offers unlimited earning potential,
+                            competitive rebates, and custom structures to suit your needs. You’ll
+                            also benefit from advanced tracking tools, marketing resources, and
+                            support from a personal Account Manager.
+                        </p>
+                         <p className="lead mb-4 text-start text-lg-start">
                             Partnering with BlackBull Markets offers unlimited earning potential,
                             competitive rebates, and custom structures to suit your needs. You’ll
                             also benefit from advanced tracking tools, marketing resources, and
@@ -229,7 +241,7 @@ function IBOverview() {
                         <p className="lead mb-4 text-start text-lg-start">
                             Give your referrals access to free TradingView Essential, Plus, or Premium to support their trading and strengthen your client relationships.
                         </p>
-                        <Link to="/education/demo-trade" className='btn btn-bg-start fs-5 text-white'>Partner Now</Link>
+                        <Link to="/education/demo-trade" className='btn btn-bg-start  rounded-5 p-2 px-4 fs-5 text-white'>Partner Now</Link>
                     </div>
 
                     {/* Image Column */}
@@ -310,7 +322,7 @@ function IBOverview() {
                             <h1 className="text-heading fw-bold">Step 3</h1>
                             <h2 className="fw-bold mb-3">Earn commissions</h2>
                             <p className="mb-4">Benefit from highly competitive, volume-based rebate structures with no limits. Enjoy fast and frequent payouts.</p>
-                            <Link to='/education/demo-trade' className='btn btn-bg-start text-white'>Sign Up Now</Link>
+                            <Link to='/education/demo-trade' className='btn btn-bg-start  rounded-5 p-2 px-4 text-white'>Sign Up Now</Link>
                         </div>
 
                     </div>

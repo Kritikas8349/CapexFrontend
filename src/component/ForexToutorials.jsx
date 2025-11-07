@@ -167,7 +167,7 @@ function ForexTutorials() {
         }
 
       </style>
-      <div className=" bg-forex text-white pt-4 mt-lg-2 mx-lg-3 rounded rounded-4 " >
+      <div className=" bg-forex text-white pt-4 mt-lg-2 mx-lg-3 rounded rounded-4 " style={{minHeight: '98vh'}} >
         <div className="container bg-transparent mt-4 mt-lg-5 pt-4">
           <h2 className="fw-bold bg-transparent text-white text-center display-5 mt-5 mt-lg-4 py-4"> Forex Tutorial</h2>
 

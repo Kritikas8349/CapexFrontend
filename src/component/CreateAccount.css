@@ -84,7 +84,7 @@
     gap: 10px;
   }
 
-  input,
+  .signup-form input,
   select {
     padding: 10px;
     border: 1px solid #ddd;

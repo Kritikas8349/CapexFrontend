@@ -33,6 +33,7 @@
   border-right: 1px solid #222;
   color: #0c0c0c;
   min-width: 280px;
+  justify-content: center;
 }
 
 .pp-avatar img {
@@ -43,6 +44,8 @@
   margin-bottom: 15px;
   object-fit: cover;
   border: 2px solid #ddd;
+  
+  
 }
 
 /* 📄 Right section */
@@ -78,6 +81,7 @@
   color: #0c0c0c;
   font-size: 14px;
   font-weight: 500;
+  text-align: left;
 }
 
 .pp-field input {

@@ -54,7 +54,7 @@ function InvestmentResearch() {
     ];
     return (
         <div className='bg-home'>
-            <div className=" bg-faq rounded rounded-5 mt-0 mt-lg-2 mt-md-2 mx-0 mx-lg-3 mx-md-3 py-5 ">
+            <div className=" bg-faq rounded rounded-5 mt-0 mt-lg-2 mt-md-2 mx-0 mx-lg-3 mx-md-3 py-5 " style={{minHeight: '98vh'}}>
                 <div className="container py-5">
                     <div className="row align-items-center py-5">
                         {/* Left Section */}
@@ -104,7 +104,7 @@ function InvestmentResearch() {
 
                         {/* Right Button */}
                         <div className="col-12 col-md-4 col-lg-4 text-center text-md-end">
-                            <button className=" btn-bg-start btn text-white  fs-5 px-4 py-2">
+                            <button className=" btn-bg-start rounded rounded-5 p-2 px-4 btn text-white  fs-5 px-4 py-2">
                                 Start Free Trial
                             </button>
                         </div>
@@ -136,7 +136,7 @@ function InvestmentResearch() {
                                     key={card.id}
                                     className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center"
                                 >
-                                    <div className="card shadow-sm p-1 bg-transparent h-100" style={{ borderRadius: "12px" }}>
+                                    <div className="card  p-1 bg-transparent custom-card h-100" style={{ borderRadius: "12px" }}>
                                         <img
                                             src={card.img}
                                             className="card-img-top"
@@ -178,7 +178,7 @@ function InvestmentResearch() {
                     <div className="row g-4">
                         {/* Plan 1 */}
                         <div className="col-12 col-md-6 col-lg-4 ">
-                            <div className="p-4 bg-white text-dark rounded  shadow align-content-center border border-primary custom-card h-100 " style={{ height: "70vh" }}>
+                            <div className="p-4 bg-white text-dark rounded   align-content-center border border-primary custom-card h-100 " style={{ height: "70vh" }}>
                                 <h5 className="fw-bold fs-1 text-heading">TradingView Essential</h5>
                                 <span className="badge bg-home text-heading mt-2">
                                     FREE WITH 1 LOT TRADED P/M
@@ -193,13 +193,13 @@ function InvestmentResearch() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Subscribe Now</Link>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
                         {/* Plan 2 */}
                         <div className="col-12 col-md-6 col-lg-4 ">
-                            <div className="p-4 bg-white text-dark rounded shadow align-content-center border border-primary custom-card h-100" >
+                            <div className="p-4 bg-white text-dark rounded  align-content-center border border-primary custom-card h-100" >
                                 <h5 className="fw-bold fs-1 text-heading ">TradingView Plus</h5>
                                 <span className="badge bg-home text-dark mt-2">
                                     FREE WITH 5 LOTS TRADED P/M
@@ -214,13 +214,13 @@ function InvestmentResearch() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Subscribe Now</Link>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
                         {/* Plan 3 */}
                         <div className="col-12 col-md-6 col-lg-4 ">
-                            <div className="p-4 bg-white text-dark border border-primary rounded shadow h-100 align-content-center custom-card">
+                            <div className="p-4 bg-white text-dark border border-primary rounded  h-100 align-content-center custom-card">
                                 <h5 className="fw-bold fs-1 text-heading">Custom Research</h5>
                                 <span className="badge bg-home text-heading mt-2">
                                     FREE WITH 10 LOTS TRADED P/M
@@ -235,7 +235,7 @@ function InvestmentResearch() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start text-white  mt-3">Request a Quote</Link>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Request a Quote</Link>
                             </div>
                         </div>
                     </div>

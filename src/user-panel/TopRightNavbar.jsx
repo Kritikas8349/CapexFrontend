@@ -7,7 +7,7 @@ const TopRightNavbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   // ✅ Get email from localStorage (from login)
   const email = localStorage.getItem("email") || "User";
@@ -38,7 +38,7 @@ const TopRightNavbar = () => {
         </button>
 
         <div className="add-t-user-dropdown" style={{ position: "relative" }}>
-          
+
           {/* ✅ Show email instead of KajalSingh */}
           <span className="add-t-username">{email}</span>
 
@@ -66,7 +66,8 @@ const TopRightNavbar = () => {
                 Change Password
               </Link>
               <Link
-                to="/logout"
+                to="/"
+                
                 onClick={() => {
                   localStorage.clear(); // ✅ logout clear
                   setDropdownOpen(false);
@@ -76,6 +77,8 @@ const TopRightNavbar = () => {
               >
                 Log-Out
               </Link>
+              
+              
             </div>
           )}
         </div>
