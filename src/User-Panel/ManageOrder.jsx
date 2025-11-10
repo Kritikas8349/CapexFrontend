@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Manageorder.css";
+import "./ManageOrder.css";
 import { BsSearch } from "react-icons/bs";
 
 function ManageOrder() {
