@@ -39,7 +39,7 @@ const LoginForm1 = () => {
       localStorage.setItem("user", JSON.stringify(user));
       localStorage.setItem("isAuthenticated", "true");
 
-      navigate("/profile"); 
+      navigate("/userdashboard"); 
     } catch (err) {
       alert(err.response?.data?.message || "Login failed");
     } finally {

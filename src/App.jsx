@@ -433,36 +433,39 @@ function App() {
       {/* Dashboard Section */}
       {isDashboardPage && (
         <div className="app-container">
-          {!shouldHideSidebarAndNavbar && <Sidebar />}
-          <div className="dashboard-wrapper">
-            {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
+          <ProtectedRoute>
+            {!shouldHideSidebarAndNavbar && <Sidebar />}
+            <div className="dashboard-wrapper">
+              {!shouldHideSidebarAndNavbar && <TopRightNavbar />}
 
 
-            <Routes>
-              <Route path="/userdashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-              <Route path="/profile" element={<ProfileSetting />} />
-              <Route path="/manage-order" element={<ManageOrder />} />
-              <Route path="/change-password" element={<ChangePassword />} />
-              <Route path="/manage-wallet" element={<ManageWallet />} />
-              <Route path="/wallet/:symbol" element={<WalletDetails />} />
-              <Route path="/security" element={<TwoFactor />} />
-              <Route path="/t-history" element={<TradeHistory />} />
-              <Route path="/deposit-history" element={<DepositeHistory />} />
-              <Route path="/withdraw-history" element={<WithdrawHistory />} />
-              <Route path="/transaction-history" element={<TransactionHistory />} />
-              <Route path="/get-support" element={<GetSupport />} />
-              <Route path="/open-ticket" element={<OpenTicket />} />
-              <Route path="/reply-ticket" element={<ReplyTicket />} />
+              <Routes>
+                <Route path="/userdashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+                <Route path="/profile" element={<ProfileSetting />} />
+                <Route path="/manage-order" element={<ManageOrder />} />
+                <Route path="/change-password" element={<ChangePassword />} />
+                <Route path="/manage-wallet" element={<ManageWallet />} />
+                <Route path="/wallet/:symbol" element={<WalletDetails />} />
+                <Route path="/security" element={<TwoFactor />} />
+                <Route path="/t-history" element={<TradeHistory />} />
+                <Route path="/deposit-history" element={<DepositeHistory />} />
+                <Route path="/withdraw-history" element={<WithdrawHistory />} />
+                <Route path="/transaction-history" element={<TransactionHistory />} />
+                <Route path="/get-support" element={<GetSupport />} />
+                <Route path="/open-ticket" element={<OpenTicket />} />
+                <Route path="/reply-ticket" element={<ReplyTicket />} />
 
-              <Route path="/trade" element={<TradeLayout />}>
-                <Route index element={<TradePage />} />
-                <Route path="market-overview" element={<MarketOverview />} />
-                <Route path="crypto-currency" element={<CryptoCurrency />} />
-                <Route path="about-us" element={<AboutUs />} />
-                <Route path="contact" element={<ContactSupport />} />
-              </Route>
-            </Routes>
-          </div>
+                <Route path="/trade" element={<TradeLayout />}>
+                  <Route index element={<TradePage />} />
+                  <Route path="market-overview" element={<MarketOverview />} />
+                  <Route path="crypto-currency" element={<CryptoCurrency />} />
+                  <Route path="about-us" element={<AboutUs />} />
+                  <Route path="contact" element={<ContactSupport />} />
+                </Route>
+              </Routes>
+
+            </div>
+          </ProtectedRoute>
         </div>
       )}
     </div>

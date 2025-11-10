@@ -19,11 +19,15 @@
 .sidebar-logo {
   text-align: center;
   margin-bottom:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar-logo-img {
   width: 120px;
-  height: 100px;
+  height: 80px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }

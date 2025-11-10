@@ -33,8 +33,13 @@
   border-right: 1px solid #222;
   color: #0c0c0c;
   min-width: 280px;
-  justify-content: center;
+
+  /* Horizontally center the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal centering */
 }
+
 
 .pp-avatar img {
   width: 120px;
@@ -134,12 +139,13 @@
 
 /* 🪄 Popup content */
 .pp-popup-content {
-  background: #fff;
+  background: #c6c3c3;
   padding: 30px 35px;
   border-radius: 12px;
   text-align: center;
   width: 280px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  color: #130486;
 }
 
 /* ⏳ Loader spinner */
@@ -194,7 +200,7 @@
 
 .pp-popup-content p {
   font-weight: 500;
-  color: #333;
+  color: #130486;
 }
 
 /* 🧭 RESPONSIVE DESIGN */
