@@ -84,29 +84,29 @@ function Research() {
             <style>
                 {`
     .research-section {
-      background: linear-gradient(to right, #a2bae5ff 61%, #493FFD 35%);
+      background: linear-gradient(to top right , #b2aef7ff , #8983f8ff , #6661c7ff, #554cfbff 25%);
     }
 
     /* Mobile + Tablet (up to 991.98px = Bootstrap md breakpoint) */
     @media (max-width: 991.98px) {
       .research-section {
-        background: linear-gradient(to bottom, #a2bae5ff 80%, #493FFD 20%);
+        background: linear-gradient(to top right , #b2aef7ff , #8983f8ff , #6661c7ff, #554cfbff 25%);
       }
     }
   `}
             </style>
 
-            <div className=" py-5 research-section mt-lg-2 mx-lg-3 rounded rounded-4 " style={{minHeight: '98vh'}}>
-                <div className="container">
-                    <div className="row align-items-center">
+            <div className=" py-5 align-content-center research-section  mt-lg-2 mx-lg-3 rounded rounded-4 " style={{minHeight: '98vh'}}>
+                <div className="container align-items-center ">
+                    <div className="row align-items-center mt-3">
                         {/* Left Section */}
                         <div className="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
-                            <h2 className="fw-bold text-heading display-5">Daily Market Analysis</h2>
-                            <p className="text-secondary fs-4 mt-3 mb-4 px-3 px-lg-0">
+                            <h2 className="fw-bold text-light display-5">Daily Market Analysis</h2>
+                            <i><p className="text-light fs-4 mt-3 mb-4 px-3 px-lg-0">
                                 Our daily market analysis videos deliver concise fundamental and technical
                                 analysis on price action, chart patterns, and market trends—insights vital to
                                 navigate the trading landscape.
-                            </p>
+                            </p></i>
 
                             {/* Social Icons */}
                             <div className="d-flex justify-content-center justify-content-lg-start gap-3">
