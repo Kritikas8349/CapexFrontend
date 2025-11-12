@@ -104,7 +104,7 @@ function InvestmentResearch() {
 
                         {/* Right Button */}
                         <div className="col-12 col-md-4 col-lg-4 text-center text-md-end">
-                            <button className=" btn-bg-start rounded rounded-5 p-2 px-4 btn text-white  fs-5 px-4 py-2">
+                            <button className=" btn-bg-start rounded-btn rounded-5 p-2 px-4 btn text-white  fs-5 px-4 py-2">
                                 Start Free Trial
                             </button>
                         </div>
@@ -193,7 +193,7 @@ function InvestmentResearch() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Subscribe Now</Link>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
@@ -214,7 +214,7 @@ function InvestmentResearch() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Subscribe Now</Link>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">Subscribe Now</Link>
                             </div>
                         </div>
 
@@ -235,7 +235,7 @@ function InvestmentResearch() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Request a Quote</Link>
+                                <Link to="/quickstart/create-account" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">Request a Quote</Link>
                             </div>
                         </div>
                     </div>

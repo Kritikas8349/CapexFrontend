@@ -2,9 +2,13 @@
   display: none !important;
 }
 @media (max-width: 576px) {
-  .bg-faq,
+  
   .rounded {
     border-radius: 0 !important;
   }
+  .rounded-btn {
+    border-radius: 2rem;
+  }
+
 }
 

@@ -64,7 +64,7 @@ function CTrader() {
                                 <div className="col-12 col-md-4 d-grid">
                                     <button
                                         onClick={handleJoinNow}
-                                        className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white d-flex align-items-center justify-content-center"
+                                        className="btn btn-bg-start rounded-btn  rounded-5 p-2 px-4 text-white d-flex align-items-center justify-content-center"
                                     >
                                         Join Now
                                     </button>

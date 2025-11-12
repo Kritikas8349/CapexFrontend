@@ -45,13 +45,13 @@ function GetSupport() {
 
       {/* Tickets Section */}
       <div className="card shadow-sm border-0 mx-2 mx-md-3">
-        <div className="">
+        <div className=" justify-content-center align-content-center">
           {tickets.length === 0 ? (
-            <div className="text-center py-5">
+            <div className="text-center justify-content-center align-items-center py-5">
               <img
                 src="/emptybox.png"
                 alt="Empty"
-                className="img-fluid mb-3"
+                className="img-fluid mx-auto justify-content-center"
                 style={{ maxWidth: "120px", opacity: 0.8 }}
               />
               <h6 className="text-muted fw-normal">No support ticket found</h6>

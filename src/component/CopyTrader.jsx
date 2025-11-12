@@ -54,7 +54,7 @@ function CopyTrader() {
 
                                     <input
                                         type="email"
-                                        className="form-control form-control-lg rounded rounded-5 p-2 px-4"
+                                        className="form-control form-control-lg rounded-btn rounded-5 p-2 px-4"
                                         placeholder={placeholder}
                                         value={email}
                                         onChange={(e) => {
@@ -72,7 +72,7 @@ function CopyTrader() {
                                 <div className="col-12 col-md-4 d-grid">
                                     <button
                                         onClick={handleJoinNow}
-                                        className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white d-flex align-items-center justify-content-center"
+                                        className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white d-flex align-items-center justify-content-center"
                                     >
                                         Join Now
                                     </button>
@@ -335,7 +335,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 1</h2>
                             <h2 className="fw-bold mb-3">Create a BlackBull Markets account</h2>
                             <p className="mb-4">Create an account in less than 5 minutes.</p>
-                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 fs-5 text-white">Create Account</Link>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 fs-5 text-white">Create Account</Link>
                         </div>
 
                     </div>
@@ -363,7 +363,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 2</h2>
                             <h2 className="fw-bold mb-3">Explore Providers</h2>
                             <p className="mb-4">Explore our range of elite fund managers.</p>
-                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 fs-5 text-white">Explore</Link>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 fs-5 text-white">Explore</Link>
                         </div>
 
                     </div>
@@ -391,7 +391,7 @@ function CopyTrader() {
                             <h2 className="text-heading fw-bold">Step 3</h2>
                             <h2 className="fw-bold mb-3">Activate copy-trading</h2>
                             <p className="mb-4">Select a fund manager and start copy trading</p>
-                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded rounded-5 p-2 px-4 fs-5 text-white">Activate</Link>
+                            <Link to="/quickstart/create-account" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 fs-5 text-white">Activate</Link>
                         </div>
 
                     </div>

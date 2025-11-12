@@ -37,10 +37,10 @@ function TradingView() {
 
                             {/* Buttons */}
                             <div className="d-flex flex-column flex-sm-row gap-4 justify-content-start mt-4">
-                                <Link to='/education/demo-trade' className="btn btn-bg-start rounded rounded-5 p-2 px-4 rounded rounded-5 p-2 px-4 text-white  mt-3">
+                                <Link to='/education/demo-trade' className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">
                                     Join Now
                                 </Link>
-                                <Link to="/loginform" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white rounded rounded-5 p-2 px-4   mt-3 ">
+                                <Link to="/loginform" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">
                                     Log In
                                 </Link>
                             </div>
@@ -154,7 +154,7 @@ function TradingView() {
                     <div className="row g-4">
                         {/* Plan 1 */}
                         <div className="col-12 col-md-6 col-lg-4 ">
-                            <div className="p-4 bg-white text-dark rounded   align-content-center h-100 custom-card border border-primary border-2 " style={{ height: "70vh" }}>
+                            <div className="p-4 bg-white text-dark rounded    align-content-center h-100 custom-card border border-primary border-2 " style={{ height: "70vh" }}>
                                 <h5 className="fw-bold fs-1 text-heading">TradingView Essential</h5>
                                 <span className="badge bg-light text-heading mt-2">
                                     FREE WITH 1 LOT TRADED P/M
@@ -169,7 +169,7 @@ function TradingView() {
                                     Trade one lot per month and the cost of TradingView Essential will
                                     be credited to your trading account.
                                 </p>
-                                <Link to='/education/demo-trade' className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
+                                <Link to='/education/demo-trade' className="btn btn-bg-start rounded-btn  rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
@@ -190,7 +190,7 @@ function TradingView() {
                                     Trade five lots per month and the cost of TradingView Plus will be
                                     credited to your trading account.
                                 </p>
-                                <Link to="/education/demo-trade" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
 
@@ -211,7 +211,7 @@ function TradingView() {
                                     Trade ten lots per month and the cost of TradingView Premium will
                                     be credited to your trading account.
                                 </p>
-                                <Link to="/education/demo-trade" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
+                                <Link to="/education/demo-trade" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white  mt-3">Claim Offer</Link>
                             </div>
                         </div>
                     </div>

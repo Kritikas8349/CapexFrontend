@@ -110,16 +110,16 @@ function Research() {
 
                             {/* Social Icons */}
                             <div className="d-flex justify-content-center justify-content-lg-start gap-3">
-                                <Link href="#" className="btn btn-bg-start text-white rounded p-2">
+                                <Link href="#" className="btn btn-bg-start text-white rounded rounded-btn  p-2">
                                     <i className="bi bi-youtube fs-4"></i>
                                 </Link>
-                                <Link href="#" className="btn btn-bg-start text-white rounded p-2">
+                                <Link href="#" className="btn btn-bg-start text-white rounded rounded-btn p-2">
                                     <i className="bi bi-tiktok fs-4"></i>
                                 </Link>
-                                <Link href="#" className="btn btn-bg-start text-white rounded p-2">
+                                <Link href="#" className="btn btn-bg-start text-white rounded rounded-btn p-2">
                                     <i className="bi bi-twitter-x fs-4"></i>
                                 </Link>
-                                <Link href="#" className="btn btn-bg-start text-white rounded p-2">
+                                <Link href="#" className="btn btn-bg-start text-white rounded rounded-btn p-2">
                                     <i className="bi bi-instagram fs-4"></i>
                                 </Link>
                             </div>
@@ -285,7 +285,7 @@ function Research() {
                     <div className="col-md-8 col-lg-6 text-start">
                         <h1 className="text-heading fs-1 fw-bold mb-4">Daily Analysis Podcast <span className='bi bi-spotify text-success'></span></h1>
                         <p className='text-secondary fs-4'>Catch up on the key trends, breaking news, and market moves with our daily Trading Analysis Podcast—your quick, essential market recap.</p>
-                        <Link to="htttp:/spotify.com" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white fs-4  justify-content-center">
+                        <Link to="htttp:/spotify.com" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white fs-4  justify-content-center">
                             <span className=" bi bi-spotify me-2 "></span> Listen Now
                         </Link>
                     </div>
@@ -340,7 +340,7 @@ function Research() {
 
                 {/* View More Button */}
                 <div className="text-center mt-5">
-                    <Link to="/education/research/opportunities" className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white fs-4">
+                    <Link to="/education/research/opportunities" className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white fs-4">
                         View More
                     </Link>
                 </div>
@@ -373,7 +373,7 @@ function Research() {
                         </p>
                         <Link
                             to="/education/demo-trade"
-                            className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white btn-lg"
+                            className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white btn-lg"
 
                             rel="noopener noreferrer"
                         >
@@ -400,7 +400,7 @@ function Research() {
                         </p>
                         <Link
                             to="/education/research/opportunities"
-                            className="btn text-white btn-lg rounded rounded-5 p-2 px-4 d-inline-flex align-items-center btn-bg-start"
+                            className="btn text-white btn-lg rounded-btn rounded-5 p-2 px-4 d-inline-flex align-items-center btn-bg-start"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -435,7 +435,7 @@ function Research() {
                         </p>
                         <Link
                             to="/loginform"
-                            className="btn btn-bg-start rounded rounded-5 p-2 px-4 text-white btn-lg d-inline-flex align-items-center"
+                            className="btn btn-bg-start rounded-btn rounded-5 p-2 px-4 text-white btn-lg d-inline-flex align-items-center"
 
                             rel="noopener noreferrer"
                         >

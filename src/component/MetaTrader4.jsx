@@ -46,7 +46,7 @@ function MetaTrader4() {
                                 <div className="col-12 col-md-8">
                                     <input
                                         type="email"
-                                        className="form-control form-control-lg"
+                                        className="form-control form-control-lg rounded-btn rounded-5"
                                         placeholder={placeholder}
                                         value={email}
                                         onChange={(e) => {
@@ -63,7 +63,7 @@ function MetaTrader4() {
                                 <div className="col-12 col-md-4 d-grid">
                                     <button
                                         onClick={handleJoinNow}
-                                        className="btn btn-bg-start text-white d-flex align-items-center justify-content-center"
+                                        className="btn btn-bg-start rounded-btn rounded-5 text-white d-flex align-items-center justify-content-center"
                                     >
                                         Join Now
                                     </button>
