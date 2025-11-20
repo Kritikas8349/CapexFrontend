@@ -149,7 +149,7 @@ import VerificationPayments from "./component/Partners/VerificationPayments";
 
 
 //--------------------------------------- Research------------------------------------------ //
-
+import Maintenance from "./component/Maintenance";
 import ResearchNavbar from "./component/ResearchNavbar";
 import ResearchHome from "./component/Research/ResearchHome";
 import DailyNews from "./component/Research/DailyNews";
@@ -182,10 +182,12 @@ import CryptoCurrency from "./User-Panel/CryptoCurrency";
 import ChangePassword from "./User-Panel/ChangePassword";
 import TradePage from "./User-Panel/TradePage";
 import ProtectedRoute from "./User-Panel/ProtectedRoute";
+import Searchbox from "./component/Searchbox";
+import Searchbox1 from "./component/Searchbox1";
 
 
 
-
+const isMaintenance = true;
 
 function Layout({ children }) {
   const location = useLocation();
@@ -205,6 +207,8 @@ function Layout({ children }) {
 }
 
 function App() {
+
+  if (isMaintenance) return <Maintenance />;
   const location = useLocation();
   const shouldHideSidebarAndNavbar = location.pathname.startsWith("/trade");
 
@@ -285,6 +289,9 @@ function App() {
             <Route path="/research/technical-analysis" element={<TechnicalAnalysis />} />
 
             {/* Rohan */}
+            <Route path="/education/search" element={<Searchbox />}></Route>
+            <Route path="/education/search1" element={<Searchbox1></Searchbox1>}></Route>
+
             <Route path="/education/education-hub" element={<EducationHub />}></Route>
             <Route path="/education/webinars" element={<Webinars></Webinars>}></Route>
             <Route path="/education/forex" element={<ForexTutorials></ForexTutorials>}></Route>

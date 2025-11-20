@@ -11,6 +11,7 @@
     const [openMenus, setOpenMenus] = useState({});
     const [showNavbar, setShowNavbar] = useState(true);
     const [mobileOpenMenus, setMobileOpenMenus] = useState({});
+    
 
     const languages = [
       { code: "en", label: "English" },
@@ -296,7 +297,7 @@
           <div className="top-center">
             <div className="top-search-wrapper">
               <FiSearch className="search-icon" />
-              <input type="text" className="top-search" placeholder="Search..." />
+              <input type="text" className="top-search" placeholder="Search..."  />
             </div>
           </div>
           <div className="top-right">

@@ -123,6 +123,7 @@
   flex-wrap: wrap;
   gap: 20px;
   font-size: 14px;
+  text-align: left;
 }
 
 .tradechart-stats .label {
@@ -407,6 +408,7 @@
   margin-bottom: 4px;
   font-size: 12.5px;
   letter-spacing: 0.3px;
+  text-wrap-mode: nowrap;
 }
 
 .total input {
@@ -423,7 +425,7 @@
 .total .unit {
   position: absolute;
   right: 10px;
-  top: 34px;
+  top: 26px;
   transform: translateY(-50%);
   color: #aaa;
   font-size: 11.5px;
@@ -642,7 +644,8 @@
 
   .order-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     background: #ffffff;
     border: 1px solid #e5e7eb;
     padding: 15px;
@@ -711,7 +714,9 @@
 /* Small screens - Mobile / 768px and below */
 @media screen and (max-width: 768px) {
   .tradechart-stats {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
     gap: 0;
   }
 

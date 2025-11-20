@@ -189,7 +189,7 @@ const TradePage = () => {
             }}
           >
             <button
-              className="btn btn-success d-none d-lg-block d-md-block btn-sm px-4 py-2 fw-semibold shadow-sm"
+              className="btn btn-success d-none d-lg-block d-md-block mt-md-2 btn-sm px-4 py-2 fw-semibold shadow-sm"
               onClick={() => {
                 setTradeType("buy");
                 setShowTradePopup(true);
@@ -198,7 +198,7 @@ const TradePage = () => {
               BUY {selectedPair.split("/")[0]}
             </button>
             <button
-              className="btn btn-danger d-none d-lg-block d-md-block btn-sm px-4 py-2 fw-semibold shadow-sm"
+              className="btn btn-danger d-none d-lg-block d-md-block mt-md-2 btn-sm px-4 py-2 fw-semibold shadow-sm"
               onClick={() => {
                 setTradeType("sell");
                 setShowTradePopup(true);

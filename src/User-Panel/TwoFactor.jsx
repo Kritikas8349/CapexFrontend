@@ -71,7 +71,7 @@ function TwoFactor() {
           {qr ? (
             <img src={qr} alt="QR Code" className="qr-img" />
           ) : (
-            <button onClick={generate2FA}>Generate QR & Key</button>
+            <button className="btn btn-nav" onClick={generate2FA}>Generate QR & Key</button>
           )}
 
           {secret && (
